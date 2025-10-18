@@ -1,0 +1,32 @@
+pool.dataset
+------------
+
+.. toctree::
+
+   api_methods_pool.dataset.attachments
+   api_methods_pool.dataset.change_key
+   api_methods_pool.dataset.checksum_choices
+   api_methods_pool.dataset.compression_choices
+   api_methods_pool.dataset.create
+   api_methods_pool.dataset.delete
+   api_methods_pool.dataset.destroy_snapshots
+   api_methods_pool.dataset.details
+   api_methods_pool.dataset.encryption_algorithm_choices
+   api_methods_pool.dataset.encryption_summary
+   api_methods_pool.dataset.export_key
+   api_methods_pool.dataset.export_keys
+   api_methods_pool.dataset.export_keys_for_replication
+   api_methods_pool.dataset.get_instance
+   api_methods_pool.dataset.get_quota
+   api_methods_pool.dataset.inherit_parent_encryption_properties
+   api_methods_pool.dataset.lock
+   api_methods_pool.dataset.processes
+   api_methods_pool.dataset.promote
+   api_methods_pool.dataset.query
+   api_methods_pool.dataset.recommended_zvol_blocksize
+   api_methods_pool.dataset.recordsize_choices
+   api_methods_pool.dataset.rename
+   api_methods_pool.dataset.set_quota
+   api_methods_pool.dataset.snapshot_count
+   api_methods_pool.dataset.unlock
+   api_methods_pool.dataset.update

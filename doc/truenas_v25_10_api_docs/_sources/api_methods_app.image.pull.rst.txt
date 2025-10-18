@@ -1,0 +1,160 @@
+app.image.pull
+==============
+
+`image` is the name of the image to pull. Format for the name is "registry/repo/image:v1.2.3" where registry may be omitted and it will default to docker registry in this case. It can or cannot contain the tag - this will be passed as is to docker so this should be analogous to what `docker pull` expects.
+
+`auth_config` should be specified if image to be retrieved is under a private repository.
+
+This method is a job.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: image_pull</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>image_pull</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>AppImagePullArgs parameters.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_auth_config">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_auth_config">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_auth_config" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_auth_config" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_auth_config')" type="button"><span class="property-name">auth_config</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_auth_config" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_auth_config" id="Call_parameters_items_i0_auth_config">
+    <div class="card-body pl-5">
+    <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Authentication configuration for private registries or <code>null</code> for public images.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_auth_config_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_auth_config_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_auth_config_anyOf_i0" id="Call_parameters_items_i0_auth_config_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_auth_config_anyOf_i0')" role="tab">AppImageAuthConfig</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_auth_config_anyOf_i1" id="Call_parameters_items_i0_auth_config_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_auth_config_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_auth_config_anyOf_i0" role="tabpanel">
+    <h4>AppImageAuthConfig</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_auth_config_anyOf_i0_username">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_auth_config_anyOf_i0_username">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_auth_config_anyOf_i0_username" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_auth_config_anyOf_i0_username" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_auth_config_anyOf_i0_username')" type="button"><span class="property-name">username</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_auth_config_anyOf_i0_username" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_auth_config_anyOf_i0_username" id="Call_parameters_items_i0_auth_config_anyOf_i0_username">
+    <div class="card-body pl-5">
+    <h4>Username</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Username for container registry authentication.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_auth_config_anyOf_i0_password">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_auth_config_anyOf_i0_password">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_auth_config_anyOf_i0_password" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_auth_config_anyOf_i0_password" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_auth_config_anyOf_i0_password')" type="button"><span class="property-name">password</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_auth_config_anyOf_i0_password" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_auth_config_anyOf_i0_password" id="Call_parameters_items_i0_auth_config_anyOf_i0_password">
+    <div class="card-body pl-5">
+    <h4>Password</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Password or access token for container registry authentication.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_auth_config_anyOf_i0_registry_uri">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_auth_config_anyOf_i0_registry_uri">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_auth_config_anyOf_i0_registry_uri" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_auth_config_anyOf_i0_registry_uri" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_auth_config_anyOf_i0_registry_uri')" type="button"><span class="property-name">registry_uri</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_auth_config_anyOf_i0_registry_uri" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_auth_config_anyOf_i0_registry_uri" id="Call_parameters_items_i0_auth_config_anyOf_i0_registry_uri">
+    <div class="card-body pl-5">
+    <h4>Registry Uri</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Container registry URI or <code>null</code> to use default registry.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_auth_config_anyOf_i0_registry_uri_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_auth_config_anyOf_i0_registry_uri_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_auth_config_anyOf_i0_registry_uri_anyOf_i0" id="Call_parameters_items_i0_auth_config_anyOf_i0_registry_uri_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_auth_config_anyOf_i0_registry_uri_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_auth_config_anyOf_i0_registry_uri_anyOf_i1" id="Call_parameters_items_i0_auth_config_anyOf_i0_registry_uri_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_auth_config_anyOf_i0_registry_uri_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_auth_config_anyOf_i0_registry_uri_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_auth_config_anyOf_i0_registry_uri_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_auth_config_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_image">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_image">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_image" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_image" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_image')" type="button"><span class="property-name">image</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_image" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_image" id="Call_parameters_items_i0_image">
+    <div class="card-body pl-5">
+    <h4>Image</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Container image reference to pull (registry/repository:tag).</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_image_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: null</span><br/>
+    <span class="description"><p>Returns <code>null</code> when the image is successfully pulled.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* APPS_WRITE
+

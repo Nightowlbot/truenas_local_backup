@@ -1,0 +1,108 @@
+interface.services_restarted_on_sync
+====================================
+
+Returns which services will be set to listen on 0.0.0.0 (and, thus, restarted) on sync.
+
+Example result: [
+    // Samba service will be set ot listen on 0.0.0.0 and restarted because it was set up to listen on // 192.168.0.1 which is being removed. {"type": "SYSTEM_SERVICE", "service": "cifs", "ips": ["192.168.0.1"]}, ]
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="description"><p>List of services that were restarted during interface synchronization.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_items">
+    <h4>InterfaceServicesRestartedOnSyncItem</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_items_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_type" data-toggle="collapse" onclick="setAnchor('#Return_value_items_type')" type="button"><span class="property-name">type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_type" id="Return_value_items_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The type of service restart event.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_service">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_service">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_service" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_service" data-toggle="collapse" onclick="setAnchor('#Return_value_items_service')" type="button"><span class="property-name">service</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_service" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_service" id="Return_value_items_service">
+    <div class="card-body pl-5">
+    <h4>Service</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The name of the service that was restarted.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_ips">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_ips">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_ips" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_ips" data-toggle="collapse" onclick="setAnchor('#Return_value_items_ips')" type="button"><span class="property-name">ips</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_ips" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_ips" id="Return_value_items_ips">
+    <div class="card-body pl-5">
+    <h4>Ips</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>List of IP addresses associated with the service restart.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_items_ips_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* NETWORK_INTERFACE_READ
+

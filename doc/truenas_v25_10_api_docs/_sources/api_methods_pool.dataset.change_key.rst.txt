@@ -1,0 +1,171 @@
+pool.dataset.change_key
+=======================
+
+Change encryption properties for `id` encrypted dataset.
+
+Changing dataset encryption to use passphrase instead of a key is not allowed if:
+
+1) It has encrypted roots as children which are encrypted with a key 2) If it is a root dataset where the system dataset is located
+
+This method is a job.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: id</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The dataset ID (full path) to change the encryption key for.</p>
+    </span>
+    </div>
+    </div>
+    <h5>Parameter 2: options</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>options</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Configuration options for changing the encryption key.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_generate_key">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_generate_key">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_generate_key" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_generate_key" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_generate_key')" type="button"><span class="property-name">generate_key</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_generate_key" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_generate_key" id="Call_parameters_items_i1_generate_key">
+    <div class="card-body pl-5">
+    <h4>Generate Key</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Generate a new random encryption key instead of using a provided key or passphrase.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_key_file">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_key_file">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_key_file" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_key_file" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_key_file')" type="button"><span class="property-name">key_file</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_key_file" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_key_file" id="Call_parameters_items_i1_key_file">
+    <div class="card-body pl-5">
+    <h4>Key File</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether the provided key is from a key file rather than entered directly.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_pbkdf2iters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_pbkdf2iters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_pbkdf2iters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_pbkdf2iters" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_pbkdf2iters')" type="button"><span class="property-name">pbkdf2iters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_pbkdf2iters" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_pbkdf2iters" id="Call_parameters_items_i1_pbkdf2iters">
+    <div class="card-body pl-5">
+    <h4>Pbkdf2Iters</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 350000</span><br/>
+    <span class="description"><p>Number of PBKDF2 iterations for passphrase-based keys. Higher values improve security against     brute force attacks but increase unlock time. Default 350,000 balances security and performance.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i1_pbkdf2iters_number">Value must be greater or equal to <code>100000</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_passphrase">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_passphrase">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_passphrase" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_passphrase" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_passphrase')" type="button"><span class="property-name">passphrase</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_passphrase" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_passphrase" id="Call_parameters_items_i1_passphrase">
+    <div class="card-body pl-5">
+    <h4>Passphrase</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Passphrase to use for encryption key derivation.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i1_passphrase_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i1_passphrase_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_passphrase_anyOf_i0" id="Call_parameters_items_i1_passphrase_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i1_passphrase_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_passphrase_anyOf_i1" id="Call_parameters_items_i1_passphrase_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i1_passphrase_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i1_passphrase_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i1_passphrase_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i1_passphrase_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_key">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_key">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_key" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_key" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_key')" type="button"><span class="property-name">key</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_key" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_key" id="Call_parameters_items_i1_key">
+    <div class="card-body pl-5">
+    <h4>Key</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Raw hex-encoded encryption key.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i1_key_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i1_key_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_key_anyOf_i0" id="Call_parameters_items_i1_key_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i1_key_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_key_anyOf_i1" id="Call_parameters_items_i1_key_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i1_key_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i1_key_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i1_key_anyOf_i0_minLength">Must be at least <code>64</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="Call_parameters_items_i1_key_anyOf_i0_maxLength">Must be at most <code>64</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i1_key_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: null</span><br/>
+    <span class="description"><p>Returns <code>null</code> on successful key change.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* DATASET_WRITE
+

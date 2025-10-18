@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#run one test. start from main directory
+
+python -m unittest discover tests $@ -vvvf

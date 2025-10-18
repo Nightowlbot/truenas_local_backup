@@ -1,0 +1,704 @@
+app.image.query
+===============
+
+Sent on app.image changes.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionADDED">
+    <div class="card">
+    <div class="card-header" id="headingADDED">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED" data-toggle="collapse" onclick="setAnchor('#ADDED')" type="button"><span class="property-name">ADDED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED" class="collapse property-definition-div" data-parent="#accordionADDED" id="ADDED">
+    <div class="card-body pl-5">
+    <h4>AppImageAddedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_id" data-toggle="collapse" onclick="setAnchor('#ADDED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_id" class="collapse property-definition-div" data-parent="#accordionADDED_id" id="ADDED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields" data-toggle="collapse" onclick="setAnchor('#ADDED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields" class="collapse property-definition-div" data-parent="#accordionADDED_fields" id="ADDED_fields">
+    <div class="card-body pl-5">
+    <h4>AppImageEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_id" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_id" class="collapse property-definition-div" data-parent="#accordionADDED_fields_id" id="ADDED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Unique identifier for the container image (usually SHA256 hash).</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_id_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_repo_tags">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_repo_tags">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_repo_tags" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_repo_tags" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_repo_tags')" type="button"><span class="property-name">repo_tags</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_repo_tags" class="collapse property-definition-div" data-parent="#accordionADDED_fields_repo_tags" id="ADDED_fields_repo_tags">
+    <div class="card-body pl-5">
+    <h4>Repo Tags</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of repository tags associated with this image.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="ADDED_fields_repo_tags_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_repo_digests">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_repo_digests">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_repo_digests" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_repo_digests" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_repo_digests')" type="button"><span class="property-name">repo_digests</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_repo_digests" class="collapse property-definition-div" data-parent="#accordionADDED_fields_repo_digests" id="ADDED_fields_repo_digests">
+    <div class="card-body pl-5">
+    <h4>Repo Digests</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of repository digests (content-addressable identifiers) for this image.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="ADDED_fields_repo_digests_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_size">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_size">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_size" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_size" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_size')" type="button"><span class="property-name">size</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_size" class="collapse property-definition-div" data-parent="#accordionADDED_fields_size" id="ADDED_fields_size">
+    <div class="card-body pl-5">
+    <h4>Size</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Size of the container image in bytes.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_dangling">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_dangling">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_dangling" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_dangling" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_dangling')" type="button"><span class="property-name">dangling</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_dangling" class="collapse property-definition-div" data-parent="#accordionADDED_fields_dangling" id="ADDED_fields_dangling">
+    <div class="card-body pl-5">
+    <h4>Dangling</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this is a dangling image (no tags or references).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_update_available">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_update_available">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_update_available" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_update_available" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_update_available')" type="button"><span class="property-name">update_available</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_update_available" class="collapse property-definition-div" data-parent="#accordionADDED_fields_update_available" id="ADDED_fields_update_available">
+    <div class="card-body pl-5">
+    <h4>Update Available</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether a newer version of this image is available for download.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_created">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_created">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_created" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_created" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_created')" type="button"><span class="property-name">created</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_created" class="collapse property-definition-div" data-parent="#accordionADDED_fields_created" id="ADDED_fields_created">
+    <div class="card-body pl-5">
+    <h4>Created</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Timestamp when the container image was created (ISO format).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_author">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_author">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_author" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_author" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_author')" type="button"><span class="property-name">author</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_author" class="collapse property-definition-div" data-parent="#accordionADDED_fields_author" id="ADDED_fields_author">
+    <div class="card-body pl-5">
+    <h4>Author</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Author or maintainer of the container image.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_comment">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_comment">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_comment" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_comment" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_comment')" type="button"><span class="property-name">comment</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_comment" class="collapse property-definition-div" data-parent="#accordionADDED_fields_comment" id="ADDED_fields_comment">
+    <div class="card-body pl-5">
+    <h4>Comment</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Comment or description provided by the image author.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_parsed_repo_tags">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_parsed_repo_tags">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_parsed_repo_tags" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_parsed_repo_tags" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_parsed_repo_tags')" type="button"><span class="property-name">parsed_repo_tags</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_parsed_repo_tags" class="collapse property-definition-div" data-parent="#accordionADDED_fields_parsed_repo_tags" id="ADDED_fields_parsed_repo_tags">
+    <div class="card-body pl-5">
+    <h4>Parsed Repo Tags</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Parsed repository tag information or <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="ADDED_fields_parsed_repo_tags_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_parsed_repo_tags_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_parsed_repo_tags_anyOf_i0" id="ADDED_fields_parsed_repo_tags_anyOf_i0" onclick="setAnchor('#ADDED_fields_parsed_repo_tags_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_parsed_repo_tags_anyOf_i1" id="ADDED_fields_parsed_repo_tags_anyOf_i1" onclick="setAnchor('#ADDED_fields_parsed_repo_tags_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_parsed_repo_tags_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="ADDED_fields_parsed_repo_tags_anyOf_i0_items">
+    <h4>AppImageParsedRepoTags</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_parsed_repo_tags_anyOf_i0_items_reference">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_parsed_repo_tags_anyOf_i0_items_reference">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_parsed_repo_tags_anyOf_i0_items_reference" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_parsed_repo_tags_anyOf_i0_items_reference" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_parsed_repo_tags_anyOf_i0_items_reference')" type="button"><span class="property-name">reference</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_parsed_repo_tags_anyOf_i0_items_reference" class="collapse property-definition-div" data-parent="#accordionADDED_fields_parsed_repo_tags_anyOf_i0_items_reference" id="ADDED_fields_parsed_repo_tags_anyOf_i0_items_reference">
+    <div class="card-body pl-5">
+    <h4>Reference</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Full reference to the container image (registry/repository:tag).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_parsed_repo_tags_anyOf_i0_items_image">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_parsed_repo_tags_anyOf_i0_items_image">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_parsed_repo_tags_anyOf_i0_items_image" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_parsed_repo_tags_anyOf_i0_items_image" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_parsed_repo_tags_anyOf_i0_items_image')" type="button"><span class="property-name">image</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_parsed_repo_tags_anyOf_i0_items_image" class="collapse property-definition-div" data-parent="#accordionADDED_fields_parsed_repo_tags_anyOf_i0_items_image" id="ADDED_fields_parsed_repo_tags_anyOf_i0_items_image">
+    <div class="card-body pl-5">
+    <h4>Image</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Container image name without registry or tag.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_parsed_repo_tags_anyOf_i0_items_tag">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_parsed_repo_tags_anyOf_i0_items_tag">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_parsed_repo_tags_anyOf_i0_items_tag" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_parsed_repo_tags_anyOf_i0_items_tag" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_parsed_repo_tags_anyOf_i0_items_tag')" type="button"><span class="property-name">tag</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_parsed_repo_tags_anyOf_i0_items_tag" class="collapse property-definition-div" data-parent="#accordionADDED_fields_parsed_repo_tags_anyOf_i0_items_tag" id="ADDED_fields_parsed_repo_tags_anyOf_i0_items_tag">
+    <div class="card-body pl-5">
+    <h4>Tag</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Image tag (version) or digest identifier.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_parsed_repo_tags_anyOf_i0_items_registry">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_parsed_repo_tags_anyOf_i0_items_registry">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_parsed_repo_tags_anyOf_i0_items_registry" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_parsed_repo_tags_anyOf_i0_items_registry" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_parsed_repo_tags_anyOf_i0_items_registry')" type="button"><span class="property-name">registry</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_parsed_repo_tags_anyOf_i0_items_registry" class="collapse property-definition-div" data-parent="#accordionADDED_fields_parsed_repo_tags_anyOf_i0_items_registry" id="ADDED_fields_parsed_repo_tags_anyOf_i0_items_registry">
+    <div class="card-body pl-5">
+    <h4>Registry</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Container registry hostname (e.g., docker.io, quay.io).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_parsed_repo_tags_anyOf_i0_items_complete_tag">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_parsed_repo_tags_anyOf_i0_items_complete_tag">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_parsed_repo_tags_anyOf_i0_items_complete_tag" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_parsed_repo_tags_anyOf_i0_items_complete_tag" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_parsed_repo_tags_anyOf_i0_items_complete_tag')" type="button"><span class="property-name">complete_tag</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_parsed_repo_tags_anyOf_i0_items_complete_tag" class="collapse property-definition-div" data-parent="#accordionADDED_fields_parsed_repo_tags_anyOf_i0_items_complete_tag" id="ADDED_fields_parsed_repo_tags_anyOf_i0_items_complete_tag">
+    <div class="card-body pl-5">
+    <h4>Complete Tag</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Complete image reference including registry, image name, and tag.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_parsed_repo_tags_anyOf_i0_items_reference_is_digest">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_parsed_repo_tags_anyOf_i0_items_reference_is_digest">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_parsed_repo_tags_anyOf_i0_items_reference_is_digest" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_parsed_repo_tags_anyOf_i0_items_reference_is_digest" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_parsed_repo_tags_anyOf_i0_items_reference_is_digest')" type="button"><span class="property-name">reference_is_digest</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_parsed_repo_tags_anyOf_i0_items_reference_is_digest" class="collapse property-definition-div" data-parent="#accordionADDED_fields_parsed_repo_tags_anyOf_i0_items_reference_is_digest" id="ADDED_fields_parsed_repo_tags_anyOf_i0_items_reference_is_digest">
+    <div class="card-body pl-5">
+    <h4>Reference Is Digest</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether the reference uses a digest hash instead of a tag name.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_parsed_repo_tags_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED" data-toggle="collapse" onclick="setAnchor('#CHANGED')" type="button"><span class="property-name">CHANGED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED" class="collapse property-definition-div" data-parent="#accordionCHANGED" id="CHANGED">
+    <div class="card-body pl-5">
+    <h4>AppImageChangedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_id" id="CHANGED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields" id="CHANGED_fields">
+    <div class="card-body pl-5">
+    <h4>AppImageEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_id" id="CHANGED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Unique identifier for the container image (usually SHA256 hash).</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_id_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_repo_tags">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_repo_tags">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_repo_tags" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_repo_tags" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_repo_tags')" type="button"><span class="property-name">repo_tags</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_repo_tags" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_repo_tags" id="CHANGED_fields_repo_tags">
+    <div class="card-body pl-5">
+    <h4>Repo Tags</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of repository tags associated with this image.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="CHANGED_fields_repo_tags_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_repo_digests">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_repo_digests">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_repo_digests" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_repo_digests" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_repo_digests')" type="button"><span class="property-name">repo_digests</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_repo_digests" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_repo_digests" id="CHANGED_fields_repo_digests">
+    <div class="card-body pl-5">
+    <h4>Repo Digests</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of repository digests (content-addressable identifiers) for this image.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="CHANGED_fields_repo_digests_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_size">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_size">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_size" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_size" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_size')" type="button"><span class="property-name">size</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_size" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_size" id="CHANGED_fields_size">
+    <div class="card-body pl-5">
+    <h4>Size</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Size of the container image in bytes.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_dangling">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_dangling">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_dangling" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_dangling" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_dangling')" type="button"><span class="property-name">dangling</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_dangling" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_dangling" id="CHANGED_fields_dangling">
+    <div class="card-body pl-5">
+    <h4>Dangling</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this is a dangling image (no tags or references).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_update_available">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_update_available">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_update_available" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_update_available" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_update_available')" type="button"><span class="property-name">update_available</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_update_available" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_update_available" id="CHANGED_fields_update_available">
+    <div class="card-body pl-5">
+    <h4>Update Available</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether a newer version of this image is available for download.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_created">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_created">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_created" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_created" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_created')" type="button"><span class="property-name">created</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_created" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_created" id="CHANGED_fields_created">
+    <div class="card-body pl-5">
+    <h4>Created</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Timestamp when the container image was created (ISO format).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_author">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_author">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_author" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_author" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_author')" type="button"><span class="property-name">author</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_author" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_author" id="CHANGED_fields_author">
+    <div class="card-body pl-5">
+    <h4>Author</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Author or maintainer of the container image.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_comment">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_comment">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_comment" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_comment" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_comment')" type="button"><span class="property-name">comment</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_comment" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_comment" id="CHANGED_fields_comment">
+    <div class="card-body pl-5">
+    <h4>Comment</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Comment or description provided by the image author.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_parsed_repo_tags">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_parsed_repo_tags">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_parsed_repo_tags" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_parsed_repo_tags" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_parsed_repo_tags')" type="button"><span class="property-name">parsed_repo_tags</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_parsed_repo_tags" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_parsed_repo_tags" id="CHANGED_fields_parsed_repo_tags">
+    <div class="card-body pl-5">
+    <h4>Parsed Repo Tags</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Parsed repository tag information or <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_parsed_repo_tags_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_parsed_repo_tags_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_parsed_repo_tags_anyOf_i0" id="CHANGED_fields_parsed_repo_tags_anyOf_i0" onclick="setAnchor('#CHANGED_fields_parsed_repo_tags_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_parsed_repo_tags_anyOf_i1" id="CHANGED_fields_parsed_repo_tags_anyOf_i1" onclick="setAnchor('#CHANGED_fields_parsed_repo_tags_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_parsed_repo_tags_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="CHANGED_fields_parsed_repo_tags_anyOf_i0_items">
+    <h4>AppImageParsedRepoTags</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_parsed_repo_tags_anyOf_i0_items_reference">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_parsed_repo_tags_anyOf_i0_items_reference">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_parsed_repo_tags_anyOf_i0_items_reference" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_parsed_repo_tags_anyOf_i0_items_reference" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_parsed_repo_tags_anyOf_i0_items_reference')" type="button"><span class="property-name">reference</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_parsed_repo_tags_anyOf_i0_items_reference" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_parsed_repo_tags_anyOf_i0_items_reference" id="CHANGED_fields_parsed_repo_tags_anyOf_i0_items_reference">
+    <div class="card-body pl-5">
+    <h4>Reference</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Full reference to the container image (registry/repository:tag).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_parsed_repo_tags_anyOf_i0_items_image">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_parsed_repo_tags_anyOf_i0_items_image">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_parsed_repo_tags_anyOf_i0_items_image" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_parsed_repo_tags_anyOf_i0_items_image" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_parsed_repo_tags_anyOf_i0_items_image')" type="button"><span class="property-name">image</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_parsed_repo_tags_anyOf_i0_items_image" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_parsed_repo_tags_anyOf_i0_items_image" id="CHANGED_fields_parsed_repo_tags_anyOf_i0_items_image">
+    <div class="card-body pl-5">
+    <h4>Image</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Container image name without registry or tag.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_parsed_repo_tags_anyOf_i0_items_tag">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_parsed_repo_tags_anyOf_i0_items_tag">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_parsed_repo_tags_anyOf_i0_items_tag" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_parsed_repo_tags_anyOf_i0_items_tag" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_parsed_repo_tags_anyOf_i0_items_tag')" type="button"><span class="property-name">tag</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_parsed_repo_tags_anyOf_i0_items_tag" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_parsed_repo_tags_anyOf_i0_items_tag" id="CHANGED_fields_parsed_repo_tags_anyOf_i0_items_tag">
+    <div class="card-body pl-5">
+    <h4>Tag</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Image tag (version) or digest identifier.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_parsed_repo_tags_anyOf_i0_items_registry">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_parsed_repo_tags_anyOf_i0_items_registry">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_parsed_repo_tags_anyOf_i0_items_registry" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_parsed_repo_tags_anyOf_i0_items_registry" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_parsed_repo_tags_anyOf_i0_items_registry')" type="button"><span class="property-name">registry</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_parsed_repo_tags_anyOf_i0_items_registry" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_parsed_repo_tags_anyOf_i0_items_registry" id="CHANGED_fields_parsed_repo_tags_anyOf_i0_items_registry">
+    <div class="card-body pl-5">
+    <h4>Registry</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Container registry hostname (e.g., docker.io, quay.io).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_parsed_repo_tags_anyOf_i0_items_complete_tag">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_parsed_repo_tags_anyOf_i0_items_complete_tag">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_parsed_repo_tags_anyOf_i0_items_complete_tag" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_parsed_repo_tags_anyOf_i0_items_complete_tag" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_parsed_repo_tags_anyOf_i0_items_complete_tag')" type="button"><span class="property-name">complete_tag</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_parsed_repo_tags_anyOf_i0_items_complete_tag" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_parsed_repo_tags_anyOf_i0_items_complete_tag" id="CHANGED_fields_parsed_repo_tags_anyOf_i0_items_complete_tag">
+    <div class="card-body pl-5">
+    <h4>Complete Tag</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Complete image reference including registry, image name, and tag.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_parsed_repo_tags_anyOf_i0_items_reference_is_digest">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_parsed_repo_tags_anyOf_i0_items_reference_is_digest">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_parsed_repo_tags_anyOf_i0_items_reference_is_digest" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_parsed_repo_tags_anyOf_i0_items_reference_is_digest" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_parsed_repo_tags_anyOf_i0_items_reference_is_digest')" type="button"><span class="property-name">reference_is_digest</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_parsed_repo_tags_anyOf_i0_items_reference_is_digest" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_parsed_repo_tags_anyOf_i0_items_reference_is_digest" id="CHANGED_fields_parsed_repo_tags_anyOf_i0_items_reference_is_digest">
+    <div class="card-body pl-5">
+    <h4>Reference Is Digest</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether the reference uses a digest hash instead of a tag name.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_parsed_repo_tags_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionREMOVED">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED" data-toggle="collapse" onclick="setAnchor('#REMOVED')" type="button"><span class="property-name">REMOVED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED" class="collapse property-definition-div" data-parent="#accordionREMOVED" id="REMOVED">
+    <div class="card-body pl-5">
+    <h4>AppImageRemovedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionREMOVED_id">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED_id">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED_id" data-toggle="collapse" onclick="setAnchor('#REMOVED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED_id" class="collapse property-definition-div" data-parent="#accordionREMOVED_id" id="REMOVED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* APPS_READ
+

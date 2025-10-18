@@ -1,0 +1,11 @@
+api_key
+-------
+
+.. toctree::
+
+   api_methods_api_key.create
+   api_methods_api_key.delete
+   api_methods_api_key.get_instance
+   api_methods_api_key.my_keys
+   api_methods_api_key.query
+   api_methods_api_key.update

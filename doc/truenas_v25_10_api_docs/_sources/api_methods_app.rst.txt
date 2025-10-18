@@ -1,0 +1,33 @@
+app
+---
+
+.. toctree::
+
+   api_methods_app.available
+   api_methods_app.available_space
+   api_methods_app.categories
+   api_methods_app.certificate_choices
+   api_methods_app.config
+   api_methods_app.container_console_choices
+   api_methods_app.container_ids
+   api_methods_app.convert_to_custom
+   api_methods_app.create
+   api_methods_app.delete
+   api_methods_app.get_instance
+   api_methods_app.gpu_choices
+   api_methods_app.ip_choices
+   api_methods_app.latest
+   api_methods_app.outdated_docker_images
+   api_methods_app.pull_images
+   api_methods_app.query
+   api_methods_app.redeploy
+   api_methods_app.rollback
+   api_methods_app.rollback_versions
+   api_methods_app.similar
+   api_methods_app.start
+   api_methods_app.stop
+   api_methods_app.update
+   api_methods_app.upgrade
+   api_methods_app.upgrade_summary
+   api_methods_app.used_host_ips
+   api_methods_app.used_ports

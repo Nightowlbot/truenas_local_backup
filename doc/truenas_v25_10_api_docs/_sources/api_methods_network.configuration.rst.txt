@@ -1,0 +1,8 @@
+network.configuration
+---------------------
+
+.. toctree::
+
+   api_methods_network.configuration.activity_choices
+   api_methods_network.configuration.config
+   api_methods_network.configuration.update

@@ -1,0 +1,79 @@
+app.pull_images
+===============
+
+Pulls docker images for the specified app `name`.
+
+This method is a job.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: app_name</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>app_name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name of the application to pull images for.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    <h5>Parameter 2: options</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>options</h4><span class="badge badge-dark value-type">Type: object</span> <span class="badge badge-success default-value">Default: {"redeploy": true}</span><br/>
+    <span class="description"><p>Options for pulling images including whether to redeploy.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_redeploy">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_redeploy">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_redeploy" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_redeploy" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_redeploy')" type="button"><span class="property-name">redeploy</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_redeploy" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_redeploy" id="Call_parameters_items_i1_redeploy">
+    <div class="card-body pl-5">
+    <h4>Redeploy</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Whether to redeploy the application after pulling new images.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: null</span><br/>
+    <span class="description"><p>Returns <code>null</code> when the application images are successfully pulled.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* APPS_WRITE
+

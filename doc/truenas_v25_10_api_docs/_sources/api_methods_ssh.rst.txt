@@ -1,0 +1,8 @@
+ssh
+---
+
+.. toctree::
+
+   api_methods_ssh.bindiface_choices
+   api_methods_ssh.config
+   api_methods_ssh.update

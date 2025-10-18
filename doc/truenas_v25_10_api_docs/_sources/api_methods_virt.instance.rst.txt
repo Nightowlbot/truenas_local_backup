@@ -1,0 +1,19 @@
+virt.instance
+-------------
+
+.. toctree::
+
+   api_methods_virt.instance.create
+   api_methods_virt.instance.delete
+   api_methods_virt.instance.device_add
+   api_methods_virt.instance.device_delete
+   api_methods_virt.instance.device_list
+   api_methods_virt.instance.device_update
+   api_methods_virt.instance.get_instance
+   api_methods_virt.instance.image_choices
+   api_methods_virt.instance.query
+   api_methods_virt.instance.restart
+   api_methods_virt.instance.set_bootable_disk
+   api_methods_virt.instance.start
+   api_methods_virt.instance.stop
+   api_methods_virt.instance.update

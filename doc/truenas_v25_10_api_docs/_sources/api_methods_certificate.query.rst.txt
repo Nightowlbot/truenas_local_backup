@@ -1,0 +1,2343 @@
+certificate.query
+=================
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: filters</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>filters</h4><span class="badge badge-dark value-type">Type: array</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>List of filters for query results. See API documentation for "Query Methods" for more guidance.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_items">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div>
+    </div><br/>
+    <div class="badge badge-secondary">Examples:</div>
+    <br/><div class="jumbotron examples" id="Call_parameters_items_i0_ex1"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="w">    </span><span class="p">[</span>
+    <span class="w">        </span><span class="s2">"name"</span><span class="p">,</span>
+    <span class="w">        </span><span class="s2">"="</span><span class="p">,</span>
+    <span class="w">        </span><span class="s2">"bob"</span>
+    <span class="w">    </span><span class="p">]</span>
+    <span class="p">]</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Call_parameters_items_i0_ex2"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="w">    </span><span class="p">[</span>
+    <span class="w">        </span><span class="s2">"OR"</span><span class="p">,</span>
+    <span class="w">        </span><span class="p">[</span>
+    <span class="w">            </span><span class="p">[</span>
+    <span class="w">                </span><span class="p">[</span>
+    <span class="w">                    </span><span class="s2">"name"</span><span class="p">,</span>
+    <span class="w">                    </span><span class="s2">"="</span><span class="p">,</span>
+    <span class="w">                    </span><span class="s2">"bob"</span>
+    <span class="w">                </span><span class="p">]</span>
+    <span class="w">            </span><span class="p">],</span>
+    <span class="w">            </span><span class="p">[</span>
+    <span class="w">                </span><span class="p">[</span>
+    <span class="w">                    </span><span class="s2">"name"</span><span class="p">,</span>
+    <span class="w">                    </span><span class="s2">"="</span><span class="p">,</span>
+    <span class="w">                    </span><span class="s2">"larry"</span>
+    <span class="w">                </span><span class="p">]</span>
+    <span class="w">            </span><span class="p">]</span>
+    <span class="w">        </span><span class="p">]</span>
+    <span class="w">    </span><span class="p">]</span>
+    <span class="p">]</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    <h5>Parameter 2: options</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>options</h4><span class="badge badge-dark value-type">Type: object</span> <div class="json-default-value">Default:<div class="value">{
+      "extra": {},
+      "order_by": [],
+      "select": [],
+      "count": false,
+      "get": false,
+      "offset": 0,
+      "limit": 0,
+      "force_sql_filters": false
+    }</div></div><br/>
+    <span class="description"><p>Query options including pagination, ordering, and additional parameters.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_extra">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_extra">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_extra" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_extra" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_extra')" type="button"><span class="property-name">extra</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_extra" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_extra" id="Call_parameters_items_i1_extra">
+    <div class="card-body pl-5">
+    <h4>Extra</h4><span class="badge badge-dark value-type">Type: object</span> <span class="badge badge-success default-value">Default: {}</span><br/>
+    <span class="description"><p>Extra options are defined on a per-endpoint basis and are described in the documentation for the associated     query method. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_order_by">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_order_by">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_order_by" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_order_by" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_order_by')" type="button"><span class="property-name">order_by</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_order_by" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_order_by" id="Call_parameters_items_i1_order_by">
+    <div class="card-body pl-5">
+    <h4>Order By</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>An array of field names describing the manner in which query results should be ordered. The field names may     also have one of more of the following special prefixes: <code>-</code> (reverse sort direction), <code>nulls_first:</code> (place     any null values at the head of the results list), <code>nulls_last:</code> (place any null values at the tail of the     results list). </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1_order_by_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div><br/>
+    <div class="badge badge-secondary">Example:</div>
+    <br/><div class="jumbotron examples" id="Call_parameters_items_i1_order_by_ex1"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="w">    </span><span class="s2">"size"</span><span class="p">,</span>
+    <span class="w">    </span><span class="s2">"-devname"</span><span class="p">,</span>
+    <span class="w">    </span><span class="s2">"nulls_first:-expiretime"</span>
+    <span class="p">]</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_select">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_select">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_select" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_select" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_select')" type="button"><span class="property-name">select</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_select" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_select" id="Call_parameters_items_i1_select">
+    <div class="card-body pl-5">
+    <h4>Select</h4><span class="badge badge-dark value-type">Type: array</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>An array of field names specifying the exact fields to include in the query return. The dot character <code>.</code>     may be used to explicitly select only subkeys of the query result. </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1_select_items">
+    <br/>
+    <div class="any-of-value" id="Call_parameters_items_i1_select_items_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i1_select_items_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_select_items_anyOf_i0" id="Call_parameters_items_i1_select_items_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i1_select_items_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_select_items_anyOf_i1" id="Call_parameters_items_i1_select_items_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i1_select_items_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i1_select_items_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i1_select_items_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1_select_items_anyOf_i1_items">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div>
+    </div>
+    </div></div></div>
+    </div>
+    </div><br/>
+    <div class="badge badge-secondary">Example:</div>
+    <br/><div class="jumbotron examples" id="Call_parameters_items_i1_select_ex1"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="w">    </span><span class="s2">"username"</span><span class="p">,</span>
+    <span class="w">    </span><span class="s2">"Authentication.status"</span>
+    <span class="p">]</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_count">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_count">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_count" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_count" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_count')" type="button"><span class="property-name">count</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_count" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_count" id="Call_parameters_items_i1_count">
+    <div class="card-body pl-5">
+    <h4>Count</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Return a numeric value representing the number of items that match the specified <code>query-filters</code>. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_get">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_get">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_get" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_get" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_get')" type="button"><span class="property-name">get</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_get" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_get" id="Call_parameters_items_i1_get">
+    <div class="card-body pl-5">
+    <h4>Get</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Return the JSON object of the first result matching the specified <code>query-filters</code>. The query fails     if there specified <code>query-filters</code> return no results. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_offset">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_offset">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_offset" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_offset" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_offset')" type="button"><span class="property-name">offset</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_offset" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_offset" id="Call_parameters_items_i1_offset">
+    <div class="card-body pl-5">
+    <h4>Offset</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+    <span class="description"><p>This specifies the beginning offset of the results array. When combined with the <code>limit</code> query-option     it may be used to implement pagination of large results arrays. WARNING: some query methods provide     volatile results and the onus is on the developer to understand whether pagination is appropriate     for a particular query API method. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_limit">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_limit">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_limit" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_limit" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_limit')" type="button"><span class="property-name">limit</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_limit" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_limit" id="Call_parameters_items_i1_limit">
+    <div class="card-body pl-5">
+    <h4>Limit</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+    <span class="description"><p>This specifies the maximum number of results matching the specified <code>query-filters</code> to return. When     combined wtih the <code>offset</code> query-option it may be used to implement pagination of large results arrays.</p>
+    <p>WARNING: Some query methods provide volatile results and the onus is on the developer to understand whether     pagination is appropriate for a particular query API method. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_force_sql_filters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_force_sql_filters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_force_sql_filters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_force_sql_filters" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_force_sql_filters')" type="button"><span class="property-name">force_sql_filters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_force_sql_filters" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_force_sql_filters" id="Call_parameters_items_i1_force_sql_filters">
+    <div class="card-body pl-5">
+    <h4>Force Sql Filters</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Force use of SQL for result filtering to reduce response time. May not work for all methods.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><br/>
+    <div class="any-of-value" id="Return_value_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0" id="Return_value_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1" id="Return_value_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1')" role="tab">CertificateQueryResultItem</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i2" id="Return_value_anyOf_i2" onclick="setAnchor('#Return_value_anyOf_i2')" role="tab">Option 3</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_anyOf_i0_items">
+    <h4>CertificateQueryResultItem</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_id" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_id')" type="button"><span class="property-name">id</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_id" id="Return_value_anyOf_i0_items_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for this certificate entry.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_type" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_type')" type="button"><span class="property-name">type</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_type" id="Return_value_anyOf_i0_items_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Internal certificate type identifier used to determine certificate capabilities.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_name" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_name')" type="button"><span class="property-name">name</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_name" id="Return_value_anyOf_i0_items_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable name for this certificate. Must be unique and contain only alphanumeric characters,     dashes, and underscores.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_anyOf_i0_items_name_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_certificate">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_certificate">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_certificate" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_certificate" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_certificate')" type="button"><span class="property-name">certificate</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_certificate" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_certificate" id="Return_value_anyOf_i0_items_certificate">
+    <div class="card-body pl-5">
+    <h4>Certificate</h4><br/>
+    <span class="description"><p>PEM-encoded X.509 certificate data. <code>null</code> for certificate signing requests (CSR) that have not yet     been signed.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_certificate_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_certificate_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_certificate_anyOf_i0" id="Return_value_anyOf_i0_items_certificate_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_certificate_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_certificate_anyOf_i1" id="Return_value_anyOf_i0_items_certificate_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_certificate_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_certificate_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_certificate_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_privatekey">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_privatekey">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_privatekey" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_privatekey" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_privatekey')" type="button"><span class="property-name">privatekey</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_privatekey" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_privatekey" id="Return_value_anyOf_i0_items_privatekey">
+    <div class="card-body pl-5">
+    <h4>Privatekey</h4><br/>
+    <span class="description"><p>PEM-encoded private key corresponding to the certificate. <code>null</code> if no private key is available or for     imported certificates without keys.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_privatekey_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_privatekey_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_privatekey_anyOf_i0" id="Return_value_anyOf_i0_items_privatekey_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_privatekey_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_privatekey_anyOf_i1" id="Return_value_anyOf_i0_items_privatekey_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_privatekey_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_privatekey_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_privatekey_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_CSR">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_CSR">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_CSR" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_CSR" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_CSR')" type="button"><span class="property-name">CSR</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_CSR" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_CSR" id="Return_value_anyOf_i0_items_CSR">
+    <div class="card-body pl-5">
+    <h4>Csr</h4><br/>
+    <span class="description"><p>PEM-encoded Certificate Signing Request (CSR) data. <code>null</code> for imported certificates or completed     ACME certificates.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_CSR_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_CSR_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_CSR_anyOf_i0" id="Return_value_anyOf_i0_items_CSR_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_CSR_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_CSR_anyOf_i1" id="Return_value_anyOf_i0_items_CSR_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_CSR_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_CSR_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_CSR_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_acme_uri">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_acme_uri">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_acme_uri" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_acme_uri" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_acme_uri')" type="button"><span class="property-name">acme_uri</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_acme_uri" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_acme_uri" id="Return_value_anyOf_i0_items_acme_uri">
+    <div class="card-body pl-5">
+    <h4>Acme Uri</h4><br/>
+    <span class="description"><p>ACME directory server URI used for automated certificate management. <code>null</code> for non-ACME certificates.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_acme_uri_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_acme_uri_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_acme_uri_anyOf_i0" id="Return_value_anyOf_i0_items_acme_uri_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_acme_uri_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_acme_uri_anyOf_i1" id="Return_value_anyOf_i0_items_acme_uri_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_acme_uri_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_acme_uri_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_acme_uri_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_domains_authenticators">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_domains_authenticators">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_domains_authenticators" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_domains_authenticators" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_domains_authenticators')" type="button"><span class="property-name">domains_authenticators</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_domains_authenticators" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_domains_authenticators" id="Return_value_anyOf_i0_items_domains_authenticators">
+    <div class="card-body pl-5">
+    <h4>Domains Authenticators</h4><br/>
+    <span class="description"><p>Mapping of domain names to ACME DNS authenticator IDs for domain validation. <code>null</code> for non-ACME     certificates.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_domains_authenticators_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_domains_authenticators_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_domains_authenticators_anyOf_i0" id="Return_value_anyOf_i0_items_domains_authenticators_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_domains_authenticators_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_domains_authenticators_anyOf_i1" id="Return_value_anyOf_i0_items_domains_authenticators_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_domains_authenticators_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_domains_authenticators_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_domains_authenticators_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_renew_days">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_renew_days">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_renew_days" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_renew_days" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_renew_days')" type="button"><span class="property-name">renew_days</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_renew_days" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_renew_days" id="Return_value_anyOf_i0_items_renew_days">
+    <div class="card-body pl-5">
+    <h4>Renew Days</h4><br/>
+    <span class="description"><p>Number of days before expiration to attempt automatic renewal. Only applicable for ACME certificates.     <code>null</code> for non-renewable certificates.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_renew_days_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_renew_days_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_renew_days_anyOf_i0" id="Return_value_anyOf_i0_items_renew_days_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_renew_days_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_renew_days_anyOf_i1" id="Return_value_anyOf_i0_items_renew_days_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_renew_days_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_renew_days_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_renew_days_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_acme">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_acme">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_acme" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_acme" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_acme')" type="button"><span class="property-name">acme</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_acme" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_acme" id="Return_value_anyOf_i0_items_acme">
+    <div class="card-body pl-5">
+    <h4>Acme</h4><br/>
+    <span class="description"><p>ACME registration and account information used for certificate lifecycle management. <code>null</code> for     non-ACME certificates.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_acme_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_acme_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_acme_anyOf_i0" id="Return_value_anyOf_i0_items_acme_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_acme_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_acme_anyOf_i1" id="Return_value_anyOf_i0_items_acme_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_acme_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_acme_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_acme_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_add_to_trusted_store">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_add_to_trusted_store">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_add_to_trusted_store" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_add_to_trusted_store" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_add_to_trusted_store')" type="button"><span class="property-name">add_to_trusted_store</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_add_to_trusted_store" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_add_to_trusted_store" id="Return_value_anyOf_i0_items_add_to_trusted_store">
+    <div class="card-body pl-5">
+    <h4>Add To Trusted Store</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this certificate should be added to the system's trusted certificate store.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_root_path">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_root_path">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_root_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_root_path" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_root_path')" type="button"><span class="property-name">root_path</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_root_path" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_root_path" id="Return_value_anyOf_i0_items_root_path">
+    <div class="card-body pl-5">
+    <h4>Root Path</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Filesystem path where certificate-related files are stored.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_anyOf_i0_items_root_path_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_certificate_path">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_certificate_path">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_certificate_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_certificate_path" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_certificate_path')" type="button"><span class="property-name">certificate_path</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_certificate_path" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_certificate_path" id="Return_value_anyOf_i0_items_certificate_path">
+    <div class="card-body pl-5">
+    <h4>Certificate Path</h4><br/>
+    <span class="description"><p>Filesystem path to the certificate file (.crt). <code>null</code> if no certificate is available.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_certificate_path_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_certificate_path_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_certificate_path_anyOf_i0" id="Return_value_anyOf_i0_items_certificate_path_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_certificate_path_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_certificate_path_anyOf_i1" id="Return_value_anyOf_i0_items_certificate_path_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_certificate_path_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_certificate_path_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_anyOf_i0_items_certificate_path_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_certificate_path_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_privatekey_path">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_privatekey_path">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_privatekey_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_privatekey_path" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_privatekey_path')" type="button"><span class="property-name">privatekey_path</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_privatekey_path" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_privatekey_path" id="Return_value_anyOf_i0_items_privatekey_path">
+    <div class="card-body pl-5">
+    <h4>Privatekey Path</h4><br/>
+    <span class="description"><p>Filesystem path to the private key file (.key). <code>null</code> if no private key is available.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_privatekey_path_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_privatekey_path_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_privatekey_path_anyOf_i0" id="Return_value_anyOf_i0_items_privatekey_path_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_privatekey_path_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_privatekey_path_anyOf_i1" id="Return_value_anyOf_i0_items_privatekey_path_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_privatekey_path_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_privatekey_path_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_anyOf_i0_items_privatekey_path_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_privatekey_path_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_csr_path">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_csr_path">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_csr_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_csr_path" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_csr_path')" type="button"><span class="property-name">csr_path</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_csr_path" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_csr_path" id="Return_value_anyOf_i0_items_csr_path">
+    <div class="card-body pl-5">
+    <h4>Csr Path</h4><br/>
+    <span class="description"><p>Filesystem path to the certificate signing request file (.csr). <code>null</code> if no CSR is available.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_csr_path_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_csr_path_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_csr_path_anyOf_i0" id="Return_value_anyOf_i0_items_csr_path_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_csr_path_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_csr_path_anyOf_i1" id="Return_value_anyOf_i0_items_csr_path_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_csr_path_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_csr_path_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_anyOf_i0_items_csr_path_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_csr_path_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_cert_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_cert_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_cert_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_cert_type" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_cert_type')" type="button"><span class="property-name">cert_type</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_cert_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_cert_type" id="Return_value_anyOf_i0_items_cert_type">
+    <div class="card-body pl-5">
+    <h4>Cert Type</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable certificate type, typically 'CERTIFICATE' for standard certificates.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_anyOf_i0_items_cert_type_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_cert_type_existing">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_cert_type_existing">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_cert_type_existing" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_cert_type_existing" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_cert_type_existing')" type="button"><span class="property-name">cert_type_existing</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_cert_type_existing" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_cert_type_existing" id="Return_value_anyOf_i0_items_cert_type_existing">
+    <div class="card-body pl-5">
+    <h4>Cert Type Existing</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this is an existing certificate (imported or generated).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_cert_type_CSR">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_cert_type_CSR">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_cert_type_CSR" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_cert_type_CSR" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_cert_type_CSR')" type="button"><span class="property-name">cert_type_CSR</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_cert_type_CSR" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_cert_type_CSR" id="Return_value_anyOf_i0_items_cert_type_CSR">
+    <div class="card-body pl-5">
+    <h4>Cert Type Csr</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this entry represents a Certificate Signing Request (CSR) rather than a signed certificate.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_cert_type_CA">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_cert_type_CA">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_cert_type_CA" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_cert_type_CA" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_cert_type_CA')" type="button"><span class="property-name">cert_type_CA</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_cert_type_CA" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_cert_type_CA" id="Return_value_anyOf_i0_items_cert_type_CA">
+    <div class="card-body pl-5">
+    <h4>Cert Type Ca</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this certificate is a Certificate Authority (CA) certificate.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_chain_list">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_chain_list">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_chain_list" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_chain_list" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_chain_list')" type="button"><span class="property-name">chain_list</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_chain_list" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_chain_list" id="Return_value_anyOf_i0_items_chain_list">
+    <div class="card-body pl-5">
+    <h4>Chain List</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of PEM-encoded certificates in the certificate chain, starting with the leaf certificate.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_anyOf_i0_items_chain_list_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_key_length">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_key_length">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_key_length" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_key_length" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_key_length')" type="button"><span class="property-name">key_length</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_key_length" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_key_length" id="Return_value_anyOf_i0_items_key_length">
+    <div class="card-body pl-5">
+    <h4>Key Length</h4><br/>
+    <span class="description"><p>Size of the cryptographic key in bits. <code>null</code> if key information is unavailable.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_key_length_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_key_length_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_key_length_anyOf_i0" id="Return_value_anyOf_i0_items_key_length_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_key_length_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_key_length_anyOf_i1" id="Return_value_anyOf_i0_items_key_length_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_key_length_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_key_length_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_key_length_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_key_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_key_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_key_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_key_type" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_key_type')" type="button"><span class="property-name">key_type</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_key_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_key_type" id="Return_value_anyOf_i0_items_key_type">
+    <div class="card-body pl-5">
+    <h4>Key Type</h4><br/>
+    <span class="description"><p>Type of cryptographic key algorithm (e.g., 'RSA', 'EC', 'DSA'). <code>null</code> if key information is unavailable.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_key_type_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_key_type_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_key_type_anyOf_i0" id="Return_value_anyOf_i0_items_key_type_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_key_type_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_key_type_anyOf_i1" id="Return_value_anyOf_i0_items_key_type_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_key_type_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_key_type_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_anyOf_i0_items_key_type_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_key_type_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_country">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_country">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_country" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_country" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_country')" type="button"><span class="property-name">country</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_country" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_country" id="Return_value_anyOf_i0_items_country">
+    <div class="card-body pl-5">
+    <h4>Country</h4><br/>
+    <span class="description"><p>ISO 3166-1 alpha-2 country code from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_country_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_country_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_country_anyOf_i0" id="Return_value_anyOf_i0_items_country_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_country_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_country_anyOf_i1" id="Return_value_anyOf_i0_items_country_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_country_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_country_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_country_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_state">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_state">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_state" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_state" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_state')" type="button"><span class="property-name">state</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_state" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_state" id="Return_value_anyOf_i0_items_state">
+    <div class="card-body pl-5">
+    <h4>State</h4><br/>
+    <span class="description"><p>State or province name from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_state_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_state_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_state_anyOf_i0" id="Return_value_anyOf_i0_items_state_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_state_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_state_anyOf_i1" id="Return_value_anyOf_i0_items_state_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_state_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_state_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_state_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_city">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_city">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_city" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_city" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_city')" type="button"><span class="property-name">city</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_city" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_city" id="Return_value_anyOf_i0_items_city">
+    <div class="card-body pl-5">
+    <h4>City</h4><br/>
+    <span class="description"><p>City or locality name from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_city_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_city_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_city_anyOf_i0" id="Return_value_anyOf_i0_items_city_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_city_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_city_anyOf_i1" id="Return_value_anyOf_i0_items_city_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_city_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_city_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_city_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_organization">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_organization">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_organization" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_organization" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_organization')" type="button"><span class="property-name">organization</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_organization" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_organization" id="Return_value_anyOf_i0_items_organization">
+    <div class="card-body pl-5">
+    <h4>Organization</h4><br/>
+    <span class="description"><p>Organization name from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_organization_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_organization_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_organization_anyOf_i0" id="Return_value_anyOf_i0_items_organization_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_organization_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_organization_anyOf_i1" id="Return_value_anyOf_i0_items_organization_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_organization_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_organization_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_organization_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_organizational_unit">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_organizational_unit">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_organizational_unit" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_organizational_unit" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_organizational_unit')" type="button"><span class="property-name">organizational_unit</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_organizational_unit" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_organizational_unit" id="Return_value_anyOf_i0_items_organizational_unit">
+    <div class="card-body pl-5">
+    <h4>Organizational Unit</h4><br/>
+    <span class="description"><p>Organizational unit from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_organizational_unit_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_organizational_unit_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_organizational_unit_anyOf_i0" id="Return_value_anyOf_i0_items_organizational_unit_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_organizational_unit_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_organizational_unit_anyOf_i1" id="Return_value_anyOf_i0_items_organizational_unit_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_organizational_unit_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_organizational_unit_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_organizational_unit_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_common">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_common">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_common" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_common" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_common')" type="button"><span class="property-name">common</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_common" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_common" id="Return_value_anyOf_i0_items_common">
+    <div class="card-body pl-5">
+    <h4>Common</h4><br/>
+    <span class="description"><p>Common name (CN) from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_common_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_common_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_common_anyOf_i0" id="Return_value_anyOf_i0_items_common_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_common_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_common_anyOf_i1" id="Return_value_anyOf_i0_items_common_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_common_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_common_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_common_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_san">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_san">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_san" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_san" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_san')" type="button"><span class="property-name">san</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_san" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_san" id="Return_value_anyOf_i0_items_san">
+    <div class="card-body pl-5">
+    <h4>San</h4><br/>
+    <span class="description"><p>Subject Alternative Names (SAN) from the certificate extension. <code>null</code> if no SAN extension is present.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_san_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_san_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_san_anyOf_i0" id="Return_value_anyOf_i0_items_san_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_san_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_san_anyOf_i1" id="Return_value_anyOf_i0_items_san_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_san_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_san_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_anyOf_i0_items_san_anyOf_i0_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_san_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_email">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_email">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_email" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_email" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_email')" type="button"><span class="property-name">email</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_email" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_email" id="Return_value_anyOf_i0_items_email">
+    <div class="card-body pl-5">
+    <h4>Email</h4><br/>
+    <span class="description"><p>Email address from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_email_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_email_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_email_anyOf_i0" id="Return_value_anyOf_i0_items_email_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_email_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_email_anyOf_i1" id="Return_value_anyOf_i0_items_email_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_email_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_email_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_email_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_DN">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_DN">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_DN" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_DN" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_DN')" type="button"><span class="property-name">DN</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_DN" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_DN" id="Return_value_anyOf_i0_items_DN">
+    <div class="card-body pl-5">
+    <h4>Dn</h4><br/>
+    <span class="description"><p>Distinguished Name (DN) of the certificate subject in RFC 2253 format. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_DN_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_DN_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_DN_anyOf_i0" id="Return_value_anyOf_i0_items_DN_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_DN_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_DN_anyOf_i1" id="Return_value_anyOf_i0_items_DN_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_DN_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_DN_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_DN_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_subject_name_hash">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_subject_name_hash">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_subject_name_hash" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_subject_name_hash" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_subject_name_hash')" type="button"><span class="property-name">subject_name_hash</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_subject_name_hash" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_subject_name_hash" id="Return_value_anyOf_i0_items_subject_name_hash">
+    <div class="card-body pl-5">
+    <h4>Subject Name Hash</h4><br/>
+    <span class="description"><p>Hash of the certificate subject name. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_subject_name_hash_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_subject_name_hash_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_subject_name_hash_anyOf_i0" id="Return_value_anyOf_i0_items_subject_name_hash_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_subject_name_hash_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_subject_name_hash_anyOf_i1" id="Return_value_anyOf_i0_items_subject_name_hash_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_subject_name_hash_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_subject_name_hash_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_subject_name_hash_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_extensions">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_extensions">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_extensions" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_extensions" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_extensions')" type="button"><span class="property-name">extensions</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_extensions" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_extensions" id="Return_value_anyOf_i0_items_extensions">
+    <div class="card-body pl-5">
+    <h4>Extensions</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>X.509 certificate extensions parsed into a dictionary structure.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_digest_algorithm">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_digest_algorithm">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_digest_algorithm" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_digest_algorithm" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_digest_algorithm')" type="button"><span class="property-name">digest_algorithm</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_digest_algorithm" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_digest_algorithm" id="Return_value_anyOf_i0_items_digest_algorithm">
+    <div class="card-body pl-5">
+    <h4>Digest Algorithm</h4><br/>
+    <span class="description"><p>Cryptographic hash algorithm used for certificate signing (e.g., 'SHA256'). <code>null</code> if unavailable.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_digest_algorithm_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_digest_algorithm_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_digest_algorithm_anyOf_i0" id="Return_value_anyOf_i0_items_digest_algorithm_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_digest_algorithm_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_digest_algorithm_anyOf_i1" id="Return_value_anyOf_i0_items_digest_algorithm_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_digest_algorithm_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_digest_algorithm_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_digest_algorithm_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_lifetime">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_lifetime">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_lifetime" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_lifetime" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_lifetime')" type="button"><span class="property-name">lifetime</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_lifetime" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_lifetime" id="Return_value_anyOf_i0_items_lifetime">
+    <div class="card-body pl-5">
+    <h4>Lifetime</h4><br/>
+    <span class="description"><p>Certificate validity period in seconds. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_lifetime_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_lifetime_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_lifetime_anyOf_i0" id="Return_value_anyOf_i0_items_lifetime_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_lifetime_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_lifetime_anyOf_i1" id="Return_value_anyOf_i0_items_lifetime_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_lifetime_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_lifetime_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_lifetime_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_from">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_from">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_from" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_from" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_from')" type="button"><span class="property-name">from</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_from" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_from" id="Return_value_anyOf_i0_items_from">
+    <div class="card-body pl-5">
+    <h4>From</h4><br/>
+    <span class="description"><p>Certificate validity start date in ISO 8601 format. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_from_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_from_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_from_anyOf_i0" id="Return_value_anyOf_i0_items_from_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_from_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_from_anyOf_i1" id="Return_value_anyOf_i0_items_from_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_from_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_from_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_from_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_until">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_until">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_until" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_until" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_until')" type="button"><span class="property-name">until</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_until" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_until" id="Return_value_anyOf_i0_items_until">
+    <div class="card-body pl-5">
+    <h4>Until</h4><br/>
+    <span class="description"><p>Certificate validity end date in ISO 8601 format. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_until_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_until_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_until_anyOf_i0" id="Return_value_anyOf_i0_items_until_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_until_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_until_anyOf_i1" id="Return_value_anyOf_i0_items_until_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_until_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_until_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_until_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_serial">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_serial">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_serial" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_serial" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_serial')" type="button"><span class="property-name">serial</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_serial" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_serial" id="Return_value_anyOf_i0_items_serial">
+    <div class="card-body pl-5">
+    <h4>Serial</h4><br/>
+    <span class="description"><p>Certificate serial number. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_serial_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_serial_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_serial_anyOf_i0" id="Return_value_anyOf_i0_items_serial_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_serial_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_serial_anyOf_i1" id="Return_value_anyOf_i0_items_serial_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_serial_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_serial_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_serial_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_chain">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_chain">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_chain" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_chain" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_chain')" type="button"><span class="property-name">chain</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_chain" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_chain" id="Return_value_anyOf_i0_items_chain">
+    <div class="card-body pl-5">
+    <h4>Chain</h4><br/>
+    <span class="description"><p>Whether this certificate has an associated certificate chain. <code>null</code> if unavailable.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_chain_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_chain_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_chain_anyOf_i0" id="Return_value_anyOf_i0_items_chain_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_chain_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_chain_anyOf_i1" id="Return_value_anyOf_i0_items_chain_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_chain_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_chain_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_chain_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_fingerprint">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_fingerprint">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_fingerprint" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_fingerprint" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_fingerprint')" type="button"><span class="property-name">fingerprint</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_fingerprint" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_fingerprint" id="Return_value_anyOf_i0_items_fingerprint">
+    <div class="card-body pl-5">
+    <h4>Fingerprint</h4><br/>
+    <span class="description"><p>SHA-256 fingerprint of the certificate in hexadecimal format. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_fingerprint_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_fingerprint_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_fingerprint_anyOf_i0" id="Return_value_anyOf_i0_items_fingerprint_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_fingerprint_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_fingerprint_anyOf_i1" id="Return_value_anyOf_i0_items_fingerprint_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_fingerprint_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_fingerprint_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_fingerprint_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_expired">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_expired">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_expired" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_expired" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_expired')" type="button"><span class="property-name">expired</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_expired" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_expired" id="Return_value_anyOf_i0_items_expired">
+    <div class="card-body pl-5">
+    <h4>Expired</h4><br/>
+    <span class="description"><p>Whether the certificate has expired. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_expired_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_expired_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_expired_anyOf_i0" id="Return_value_anyOf_i0_items_expired_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_expired_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_expired_anyOf_i1" id="Return_value_anyOf_i0_items_expired_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_expired_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_expired_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_expired_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_parsed">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_parsed">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_parsed" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_parsed" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_parsed')" type="button"><span class="property-name">parsed</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_parsed" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_parsed" id="Return_value_anyOf_i0_items_parsed">
+    <div class="card-body pl-5">
+    <h4>Parsed</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether the certificate data was successfully parsed and validated.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1" role="tabpanel">
+    <h4>CertificateQueryResultItem</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_id" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_id')" type="button"><span class="property-name">id</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_id" id="Return_value_anyOf_i1_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for this certificate entry.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_type" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_type')" type="button"><span class="property-name">type</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_type" id="Return_value_anyOf_i1_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Internal certificate type identifier used to determine certificate capabilities.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_name" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_name')" type="button"><span class="property-name">name</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_name" id="Return_value_anyOf_i1_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable name for this certificate. Must be unique and contain only alphanumeric characters,     dashes, and underscores.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_anyOf_i1_name_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_certificate">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_certificate">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_certificate" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_certificate" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_certificate')" type="button"><span class="property-name">certificate</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_certificate" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_certificate" id="Return_value_anyOf_i1_certificate">
+    <div class="card-body pl-5">
+    <h4>Certificate</h4><br/>
+    <span class="description"><p>PEM-encoded X.509 certificate data. <code>null</code> for certificate signing requests (CSR) that have not yet     been signed.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_certificate_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_certificate_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_certificate_anyOf_i0" id="Return_value_anyOf_i1_certificate_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_certificate_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_certificate_anyOf_i1" id="Return_value_anyOf_i1_certificate_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_certificate_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_certificate_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_certificate_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_privatekey">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_privatekey">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_privatekey" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_privatekey" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_privatekey')" type="button"><span class="property-name">privatekey</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_privatekey" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_privatekey" id="Return_value_anyOf_i1_privatekey">
+    <div class="card-body pl-5">
+    <h4>Privatekey</h4><br/>
+    <span class="description"><p>PEM-encoded private key corresponding to the certificate. <code>null</code> if no private key is available or for     imported certificates without keys.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_privatekey_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_privatekey_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_privatekey_anyOf_i0" id="Return_value_anyOf_i1_privatekey_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_privatekey_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_privatekey_anyOf_i1" id="Return_value_anyOf_i1_privatekey_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_privatekey_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_privatekey_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_privatekey_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_CSR">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_CSR">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_CSR" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_CSR" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_CSR')" type="button"><span class="property-name">CSR</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_CSR" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_CSR" id="Return_value_anyOf_i1_CSR">
+    <div class="card-body pl-5">
+    <h4>Csr</h4><br/>
+    <span class="description"><p>PEM-encoded Certificate Signing Request (CSR) data. <code>null</code> for imported certificates or completed     ACME certificates.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_CSR_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_CSR_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_CSR_anyOf_i0" id="Return_value_anyOf_i1_CSR_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_CSR_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_CSR_anyOf_i1" id="Return_value_anyOf_i1_CSR_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_CSR_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_CSR_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_CSR_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_acme_uri">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_acme_uri">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_acme_uri" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_acme_uri" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_acme_uri')" type="button"><span class="property-name">acme_uri</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_acme_uri" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_acme_uri" id="Return_value_anyOf_i1_acme_uri">
+    <div class="card-body pl-5">
+    <h4>Acme Uri</h4><br/>
+    <span class="description"><p>ACME directory server URI used for automated certificate management. <code>null</code> for non-ACME certificates.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_acme_uri_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_acme_uri_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_acme_uri_anyOf_i0" id="Return_value_anyOf_i1_acme_uri_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_acme_uri_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_acme_uri_anyOf_i1" id="Return_value_anyOf_i1_acme_uri_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_acme_uri_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_acme_uri_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_acme_uri_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_domains_authenticators">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_domains_authenticators">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_domains_authenticators" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_domains_authenticators" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_domains_authenticators')" type="button"><span class="property-name">domains_authenticators</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_domains_authenticators" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_domains_authenticators" id="Return_value_anyOf_i1_domains_authenticators">
+    <div class="card-body pl-5">
+    <h4>Domains Authenticators</h4><br/>
+    <span class="description"><p>Mapping of domain names to ACME DNS authenticator IDs for domain validation. <code>null</code> for non-ACME     certificates.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_domains_authenticators_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_domains_authenticators_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_domains_authenticators_anyOf_i0" id="Return_value_anyOf_i1_domains_authenticators_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_domains_authenticators_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_domains_authenticators_anyOf_i1" id="Return_value_anyOf_i1_domains_authenticators_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_domains_authenticators_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_domains_authenticators_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_domains_authenticators_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_renew_days">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_renew_days">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_renew_days" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_renew_days" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_renew_days')" type="button"><span class="property-name">renew_days</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_renew_days" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_renew_days" id="Return_value_anyOf_i1_renew_days">
+    <div class="card-body pl-5">
+    <h4>Renew Days</h4><br/>
+    <span class="description"><p>Number of days before expiration to attempt automatic renewal. Only applicable for ACME certificates.     <code>null</code> for non-renewable certificates.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_renew_days_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_renew_days_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_renew_days_anyOf_i0" id="Return_value_anyOf_i1_renew_days_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_renew_days_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_renew_days_anyOf_i1" id="Return_value_anyOf_i1_renew_days_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_renew_days_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_renew_days_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_renew_days_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_acme">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_acme">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_acme" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_acme" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_acme')" type="button"><span class="property-name">acme</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_acme" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_acme" id="Return_value_anyOf_i1_acme">
+    <div class="card-body pl-5">
+    <h4>Acme</h4><br/>
+    <span class="description"><p>ACME registration and account information used for certificate lifecycle management. <code>null</code> for     non-ACME certificates.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_acme_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_acme_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_acme_anyOf_i0" id="Return_value_anyOf_i1_acme_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_acme_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_acme_anyOf_i1" id="Return_value_anyOf_i1_acme_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_acme_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_acme_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_acme_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_add_to_trusted_store">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_add_to_trusted_store">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_add_to_trusted_store" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_add_to_trusted_store" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_add_to_trusted_store')" type="button"><span class="property-name">add_to_trusted_store</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_add_to_trusted_store" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_add_to_trusted_store" id="Return_value_anyOf_i1_add_to_trusted_store">
+    <div class="card-body pl-5">
+    <h4>Add To Trusted Store</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this certificate should be added to the system's trusted certificate store.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_root_path">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_root_path">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_root_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_root_path" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_root_path')" type="button"><span class="property-name">root_path</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_root_path" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_root_path" id="Return_value_anyOf_i1_root_path">
+    <div class="card-body pl-5">
+    <h4>Root Path</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Filesystem path where certificate-related files are stored.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_anyOf_i1_root_path_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_certificate_path">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_certificate_path">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_certificate_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_certificate_path" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_certificate_path')" type="button"><span class="property-name">certificate_path</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_certificate_path" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_certificate_path" id="Return_value_anyOf_i1_certificate_path">
+    <div class="card-body pl-5">
+    <h4>Certificate Path</h4><br/>
+    <span class="description"><p>Filesystem path to the certificate file (.crt). <code>null</code> if no certificate is available.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_certificate_path_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_certificate_path_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_certificate_path_anyOf_i0" id="Return_value_anyOf_i1_certificate_path_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_certificate_path_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_certificate_path_anyOf_i1" id="Return_value_anyOf_i1_certificate_path_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_certificate_path_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_certificate_path_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_anyOf_i1_certificate_path_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_certificate_path_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_privatekey_path">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_privatekey_path">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_privatekey_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_privatekey_path" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_privatekey_path')" type="button"><span class="property-name">privatekey_path</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_privatekey_path" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_privatekey_path" id="Return_value_anyOf_i1_privatekey_path">
+    <div class="card-body pl-5">
+    <h4>Privatekey Path</h4><br/>
+    <span class="description"><p>Filesystem path to the private key file (.key). <code>null</code> if no private key is available.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_privatekey_path_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_privatekey_path_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_privatekey_path_anyOf_i0" id="Return_value_anyOf_i1_privatekey_path_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_privatekey_path_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_privatekey_path_anyOf_i1" id="Return_value_anyOf_i1_privatekey_path_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_privatekey_path_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_privatekey_path_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_anyOf_i1_privatekey_path_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_privatekey_path_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_csr_path">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_csr_path">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_csr_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_csr_path" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_csr_path')" type="button"><span class="property-name">csr_path</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_csr_path" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_csr_path" id="Return_value_anyOf_i1_csr_path">
+    <div class="card-body pl-5">
+    <h4>Csr Path</h4><br/>
+    <span class="description"><p>Filesystem path to the certificate signing request file (.csr). <code>null</code> if no CSR is available.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_csr_path_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_csr_path_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_csr_path_anyOf_i0" id="Return_value_anyOf_i1_csr_path_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_csr_path_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_csr_path_anyOf_i1" id="Return_value_anyOf_i1_csr_path_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_csr_path_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_csr_path_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_anyOf_i1_csr_path_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_csr_path_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_cert_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_cert_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_cert_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_cert_type" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_cert_type')" type="button"><span class="property-name">cert_type</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_cert_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_cert_type" id="Return_value_anyOf_i1_cert_type">
+    <div class="card-body pl-5">
+    <h4>Cert Type</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable certificate type, typically 'CERTIFICATE' for standard certificates.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_anyOf_i1_cert_type_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_cert_type_existing">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_cert_type_existing">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_cert_type_existing" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_cert_type_existing" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_cert_type_existing')" type="button"><span class="property-name">cert_type_existing</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_cert_type_existing" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_cert_type_existing" id="Return_value_anyOf_i1_cert_type_existing">
+    <div class="card-body pl-5">
+    <h4>Cert Type Existing</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this is an existing certificate (imported or generated).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_cert_type_CSR">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_cert_type_CSR">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_cert_type_CSR" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_cert_type_CSR" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_cert_type_CSR')" type="button"><span class="property-name">cert_type_CSR</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_cert_type_CSR" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_cert_type_CSR" id="Return_value_anyOf_i1_cert_type_CSR">
+    <div class="card-body pl-5">
+    <h4>Cert Type Csr</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this entry represents a Certificate Signing Request (CSR) rather than a signed certificate.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_cert_type_CA">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_cert_type_CA">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_cert_type_CA" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_cert_type_CA" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_cert_type_CA')" type="button"><span class="property-name">cert_type_CA</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_cert_type_CA" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_cert_type_CA" id="Return_value_anyOf_i1_cert_type_CA">
+    <div class="card-body pl-5">
+    <h4>Cert Type Ca</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this certificate is a Certificate Authority (CA) certificate.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_chain_list">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_chain_list">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_chain_list" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_chain_list" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_chain_list')" type="button"><span class="property-name">chain_list</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_chain_list" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_chain_list" id="Return_value_anyOf_i1_chain_list">
+    <div class="card-body pl-5">
+    <h4>Chain List</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of PEM-encoded certificates in the certificate chain, starting with the leaf certificate.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_anyOf_i1_chain_list_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_key_length">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_key_length">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_key_length" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_key_length" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_key_length')" type="button"><span class="property-name">key_length</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_key_length" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_key_length" id="Return_value_anyOf_i1_key_length">
+    <div class="card-body pl-5">
+    <h4>Key Length</h4><br/>
+    <span class="description"><p>Size of the cryptographic key in bits. <code>null</code> if key information is unavailable.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_key_length_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_key_length_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_key_length_anyOf_i0" id="Return_value_anyOf_i1_key_length_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_key_length_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_key_length_anyOf_i1" id="Return_value_anyOf_i1_key_length_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_key_length_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_key_length_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_key_length_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_key_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_key_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_key_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_key_type" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_key_type')" type="button"><span class="property-name">key_type</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_key_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_key_type" id="Return_value_anyOf_i1_key_type">
+    <div class="card-body pl-5">
+    <h4>Key Type</h4><br/>
+    <span class="description"><p>Type of cryptographic key algorithm (e.g., 'RSA', 'EC', 'DSA'). <code>null</code> if key information is unavailable.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_key_type_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_key_type_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_key_type_anyOf_i0" id="Return_value_anyOf_i1_key_type_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_key_type_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_key_type_anyOf_i1" id="Return_value_anyOf_i1_key_type_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_key_type_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_key_type_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_anyOf_i1_key_type_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_key_type_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_country">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_country">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_country" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_country" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_country')" type="button"><span class="property-name">country</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_country" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_country" id="Return_value_anyOf_i1_country">
+    <div class="card-body pl-5">
+    <h4>Country</h4><br/>
+    <span class="description"><p>ISO 3166-1 alpha-2 country code from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_country_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_country_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_country_anyOf_i0" id="Return_value_anyOf_i1_country_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_country_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_country_anyOf_i1" id="Return_value_anyOf_i1_country_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_country_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_country_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_country_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_state">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_state">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_state" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_state" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_state')" type="button"><span class="property-name">state</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_state" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_state" id="Return_value_anyOf_i1_state">
+    <div class="card-body pl-5">
+    <h4>State</h4><br/>
+    <span class="description"><p>State or province name from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_state_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_state_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_state_anyOf_i0" id="Return_value_anyOf_i1_state_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_state_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_state_anyOf_i1" id="Return_value_anyOf_i1_state_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_state_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_state_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_state_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_city">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_city">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_city" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_city" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_city')" type="button"><span class="property-name">city</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_city" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_city" id="Return_value_anyOf_i1_city">
+    <div class="card-body pl-5">
+    <h4>City</h4><br/>
+    <span class="description"><p>City or locality name from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_city_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_city_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_city_anyOf_i0" id="Return_value_anyOf_i1_city_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_city_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_city_anyOf_i1" id="Return_value_anyOf_i1_city_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_city_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_city_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_city_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_organization">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_organization">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_organization" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_organization" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_organization')" type="button"><span class="property-name">organization</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_organization" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_organization" id="Return_value_anyOf_i1_organization">
+    <div class="card-body pl-5">
+    <h4>Organization</h4><br/>
+    <span class="description"><p>Organization name from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_organization_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_organization_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_organization_anyOf_i0" id="Return_value_anyOf_i1_organization_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_organization_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_organization_anyOf_i1" id="Return_value_anyOf_i1_organization_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_organization_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_organization_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_organization_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_organizational_unit">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_organizational_unit">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_organizational_unit" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_organizational_unit" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_organizational_unit')" type="button"><span class="property-name">organizational_unit</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_organizational_unit" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_organizational_unit" id="Return_value_anyOf_i1_organizational_unit">
+    <div class="card-body pl-5">
+    <h4>Organizational Unit</h4><br/>
+    <span class="description"><p>Organizational unit from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_organizational_unit_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_organizational_unit_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_organizational_unit_anyOf_i0" id="Return_value_anyOf_i1_organizational_unit_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_organizational_unit_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_organizational_unit_anyOf_i1" id="Return_value_anyOf_i1_organizational_unit_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_organizational_unit_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_organizational_unit_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_organizational_unit_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_common">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_common">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_common" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_common" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_common')" type="button"><span class="property-name">common</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_common" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_common" id="Return_value_anyOf_i1_common">
+    <div class="card-body pl-5">
+    <h4>Common</h4><br/>
+    <span class="description"><p>Common name (CN) from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_common_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_common_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_common_anyOf_i0" id="Return_value_anyOf_i1_common_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_common_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_common_anyOf_i1" id="Return_value_anyOf_i1_common_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_common_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_common_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_common_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_san">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_san">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_san" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_san" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_san')" type="button"><span class="property-name">san</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_san" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_san" id="Return_value_anyOf_i1_san">
+    <div class="card-body pl-5">
+    <h4>San</h4><br/>
+    <span class="description"><p>Subject Alternative Names (SAN) from the certificate extension. <code>null</code> if no SAN extension is present.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_san_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_san_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_san_anyOf_i0" id="Return_value_anyOf_i1_san_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_san_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_san_anyOf_i1" id="Return_value_anyOf_i1_san_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_san_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_san_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_anyOf_i1_san_anyOf_i0_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_san_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_email">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_email">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_email" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_email" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_email')" type="button"><span class="property-name">email</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_email" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_email" id="Return_value_anyOf_i1_email">
+    <div class="card-body pl-5">
+    <h4>Email</h4><br/>
+    <span class="description"><p>Email address from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_email_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_email_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_email_anyOf_i0" id="Return_value_anyOf_i1_email_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_email_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_email_anyOf_i1" id="Return_value_anyOf_i1_email_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_email_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_email_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_email_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_DN">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_DN">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_DN" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_DN" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_DN')" type="button"><span class="property-name">DN</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_DN" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_DN" id="Return_value_anyOf_i1_DN">
+    <div class="card-body pl-5">
+    <h4>Dn</h4><br/>
+    <span class="description"><p>Distinguished Name (DN) of the certificate subject in RFC 2253 format. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_DN_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_DN_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_DN_anyOf_i0" id="Return_value_anyOf_i1_DN_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_DN_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_DN_anyOf_i1" id="Return_value_anyOf_i1_DN_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_DN_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_DN_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_DN_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_subject_name_hash">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_subject_name_hash">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_subject_name_hash" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_subject_name_hash" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_subject_name_hash')" type="button"><span class="property-name">subject_name_hash</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_subject_name_hash" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_subject_name_hash" id="Return_value_anyOf_i1_subject_name_hash">
+    <div class="card-body pl-5">
+    <h4>Subject Name Hash</h4><br/>
+    <span class="description"><p>Hash of the certificate subject name. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_subject_name_hash_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_subject_name_hash_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_subject_name_hash_anyOf_i0" id="Return_value_anyOf_i1_subject_name_hash_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_subject_name_hash_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_subject_name_hash_anyOf_i1" id="Return_value_anyOf_i1_subject_name_hash_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_subject_name_hash_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_subject_name_hash_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_subject_name_hash_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_extensions">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_extensions">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_extensions" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_extensions" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_extensions')" type="button"><span class="property-name">extensions</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_extensions" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_extensions" id="Return_value_anyOf_i1_extensions">
+    <div class="card-body pl-5">
+    <h4>Extensions</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>X.509 certificate extensions parsed into a dictionary structure.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_digest_algorithm">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_digest_algorithm">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_digest_algorithm" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_digest_algorithm" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_digest_algorithm')" type="button"><span class="property-name">digest_algorithm</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_digest_algorithm" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_digest_algorithm" id="Return_value_anyOf_i1_digest_algorithm">
+    <div class="card-body pl-5">
+    <h4>Digest Algorithm</h4><br/>
+    <span class="description"><p>Cryptographic hash algorithm used for certificate signing (e.g., 'SHA256'). <code>null</code> if unavailable.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_digest_algorithm_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_digest_algorithm_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_digest_algorithm_anyOf_i0" id="Return_value_anyOf_i1_digest_algorithm_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_digest_algorithm_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_digest_algorithm_anyOf_i1" id="Return_value_anyOf_i1_digest_algorithm_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_digest_algorithm_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_digest_algorithm_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_digest_algorithm_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_lifetime">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_lifetime">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_lifetime" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_lifetime" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_lifetime')" type="button"><span class="property-name">lifetime</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_lifetime" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_lifetime" id="Return_value_anyOf_i1_lifetime">
+    <div class="card-body pl-5">
+    <h4>Lifetime</h4><br/>
+    <span class="description"><p>Certificate validity period in seconds. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_lifetime_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_lifetime_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_lifetime_anyOf_i0" id="Return_value_anyOf_i1_lifetime_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_lifetime_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_lifetime_anyOf_i1" id="Return_value_anyOf_i1_lifetime_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_lifetime_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_lifetime_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_lifetime_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_from">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_from">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_from" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_from" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_from')" type="button"><span class="property-name">from</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_from" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_from" id="Return_value_anyOf_i1_from">
+    <div class="card-body pl-5">
+    <h4>From</h4><br/>
+    <span class="description"><p>Certificate validity start date in ISO 8601 format. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_from_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_from_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_from_anyOf_i0" id="Return_value_anyOf_i1_from_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_from_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_from_anyOf_i1" id="Return_value_anyOf_i1_from_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_from_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_from_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_from_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_until">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_until">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_until" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_until" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_until')" type="button"><span class="property-name">until</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_until" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_until" id="Return_value_anyOf_i1_until">
+    <div class="card-body pl-5">
+    <h4>Until</h4><br/>
+    <span class="description"><p>Certificate validity end date in ISO 8601 format. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_until_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_until_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_until_anyOf_i0" id="Return_value_anyOf_i1_until_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_until_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_until_anyOf_i1" id="Return_value_anyOf_i1_until_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_until_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_until_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_until_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_serial">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_serial">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_serial" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_serial" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_serial')" type="button"><span class="property-name">serial</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_serial" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_serial" id="Return_value_anyOf_i1_serial">
+    <div class="card-body pl-5">
+    <h4>Serial</h4><br/>
+    <span class="description"><p>Certificate serial number. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_serial_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_serial_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_serial_anyOf_i0" id="Return_value_anyOf_i1_serial_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_serial_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_serial_anyOf_i1" id="Return_value_anyOf_i1_serial_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_serial_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_serial_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_serial_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_chain">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_chain">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_chain" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_chain" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_chain')" type="button"><span class="property-name">chain</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_chain" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_chain" id="Return_value_anyOf_i1_chain">
+    <div class="card-body pl-5">
+    <h4>Chain</h4><br/>
+    <span class="description"><p>Whether this certificate has an associated certificate chain. <code>null</code> if unavailable.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_chain_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_chain_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_chain_anyOf_i0" id="Return_value_anyOf_i1_chain_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_chain_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_chain_anyOf_i1" id="Return_value_anyOf_i1_chain_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_chain_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_chain_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_chain_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_fingerprint">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_fingerprint">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_fingerprint" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_fingerprint" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_fingerprint')" type="button"><span class="property-name">fingerprint</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_fingerprint" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_fingerprint" id="Return_value_anyOf_i1_fingerprint">
+    <div class="card-body pl-5">
+    <h4>Fingerprint</h4><br/>
+    <span class="description"><p>SHA-256 fingerprint of the certificate in hexadecimal format. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_fingerprint_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_fingerprint_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_fingerprint_anyOf_i0" id="Return_value_anyOf_i1_fingerprint_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_fingerprint_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_fingerprint_anyOf_i1" id="Return_value_anyOf_i1_fingerprint_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_fingerprint_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_fingerprint_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_fingerprint_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_expired">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_expired">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_expired" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_expired" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_expired')" type="button"><span class="property-name">expired</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_expired" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_expired" id="Return_value_anyOf_i1_expired">
+    <div class="card-body pl-5">
+    <h4>Expired</h4><br/>
+    <span class="description"><p>Whether the certificate has expired. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_expired_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_expired_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_expired_anyOf_i0" id="Return_value_anyOf_i1_expired_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_expired_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_expired_anyOf_i1" id="Return_value_anyOf_i1_expired_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_expired_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_expired_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_expired_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_parsed">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_parsed">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_parsed" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_parsed" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_parsed')" type="button"><span class="property-name">parsed</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_parsed" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_parsed" id="Return_value_anyOf_i1_parsed">
+    <div class="card-body pl-5">
+    <h4>Parsed</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether the certificate data was successfully parsed and validated.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i2" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* CERTIFICATE_READ
+

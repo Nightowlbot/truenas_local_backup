@@ -1,0 +1,13 @@
+vmware
+------
+
+.. toctree::
+
+   api_methods_vmware.create
+   api_methods_vmware.dataset_has_vms
+   api_methods_vmware.delete
+   api_methods_vmware.get_datastores
+   api_methods_vmware.get_instance
+   api_methods_vmware.match_datastores_with_datasets
+   api_methods_vmware.query
+   api_methods_vmware.update

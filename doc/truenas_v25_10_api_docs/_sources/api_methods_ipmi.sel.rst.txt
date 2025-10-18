@@ -1,0 +1,8 @@
+ipmi.sel
+--------
+
+.. toctree::
+
+   api_methods_ipmi.sel.clear
+   api_methods_ipmi.sel.elist
+   api_methods_ipmi.sel.info

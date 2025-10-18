@@ -1,0 +1,331 @@
+user.get_user_obj
+=================
+
+Returns dictionary containing information from struct passwd for the user specified by either the username or uid. Bypasses user cache.
+
+NOTE: results will not include nested groups for Active Directory users.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: get_user_obj</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>get_user_obj</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>UserGetUserObjArgs parameters.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_username">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_username">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_username" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_username" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_username')" type="button"><span class="property-name">username</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_username" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_username" id="Call_parameters_items_i0_username">
+    <div class="card-body pl-5">
+    <h4>Username</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Username to lookup. Either <code>username</code> or <code>uid</code> must be specified.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_username_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_username_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_username_anyOf_i0" id="Call_parameters_items_i0_username_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_username_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_username_anyOf_i1" id="Call_parameters_items_i0_username_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_username_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_username_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_username_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_uid">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_uid">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_uid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_uid" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_uid')" type="button"><span class="property-name">uid</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_uid" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_uid" id="Call_parameters_items_i0_uid">
+    <div class="card-body pl-5">
+    <h4>Uid</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>User ID to lookup. Either <code>username</code> or <code>uid</code> must be specified.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_uid_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_uid_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_uid_anyOf_i0" id="Call_parameters_items_i0_uid_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_uid_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_uid_anyOf_i1" id="Call_parameters_items_i0_uid_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_uid_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_uid_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_uid_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_get_groups">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_get_groups">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_get_groups" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_get_groups" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_get_groups')" type="button"><span class="property-name">get_groups</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_get_groups" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_get_groups" id="Call_parameters_items_i0_get_groups">
+    <div class="card-body pl-5">
+    <h4>Get Groups</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Retrieve group list for the specified user.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_sid_info">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_sid_info">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_sid_info" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_sid_info" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_sid_info')" type="button"><span class="property-name">sid_info</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_sid_info" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_sid_info" id="Call_parameters_items_i0_sid_info">
+    <div class="card-body pl-5">
+    <h4>Sid Info</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Retrieve SID and domain information for the user.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>UserGetUserObj</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>User account information in Unix passwd format.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_pw_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_pw_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_pw_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_pw_name" data-toggle="collapse" onclick="setAnchor('#Return_value_pw_name')" type="button"><span class="property-name">pw_name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_pw_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_pw_name" id="Return_value_pw_name">
+    <div class="card-body pl-5">
+    <h4>Pw Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name of the user.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_pw_gecos">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_pw_gecos">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_pw_gecos" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_pw_gecos" data-toggle="collapse" onclick="setAnchor('#Return_value_pw_gecos')" type="button"><span class="property-name">pw_gecos</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_pw_gecos" class="collapse property-definition-div" data-parent="#accordionReturn_value_pw_gecos" id="Return_value_pw_gecos">
+    <div class="card-body pl-5">
+    <h4>Pw Gecos</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Full username or comment field.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_pw_dir">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_pw_dir">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_pw_dir" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_pw_dir" data-toggle="collapse" onclick="setAnchor('#Return_value_pw_dir')" type="button"><span class="property-name">pw_dir</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_pw_dir" class="collapse property-definition-div" data-parent="#accordionReturn_value_pw_dir" id="Return_value_pw_dir">
+    <div class="card-body pl-5">
+    <h4>Pw Dir</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>User home directory.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_pw_shell">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_pw_shell">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_pw_shell" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_pw_shell" data-toggle="collapse" onclick="setAnchor('#Return_value_pw_shell')" type="button"><span class="property-name">pw_shell</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_pw_shell" class="collapse property-definition-div" data-parent="#accordionReturn_value_pw_shell" id="Return_value_pw_shell">
+    <div class="card-body pl-5">
+    <h4>Pw Shell</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>User command line interpreter.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_pw_uid">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_pw_uid">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_pw_uid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_pw_uid" data-toggle="collapse" onclick="setAnchor('#Return_value_pw_uid')" type="button"><span class="property-name">pw_uid</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_pw_uid" class="collapse property-definition-div" data-parent="#accordionReturn_value_pw_uid" id="Return_value_pw_uid">
+    <div class="card-body pl-5">
+    <h4>Pw Uid</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Numerical user ID of the user.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_pw_gid">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_pw_gid">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_pw_gid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_pw_gid" data-toggle="collapse" onclick="setAnchor('#Return_value_pw_gid')" type="button"><span class="property-name">pw_gid</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_pw_gid" class="collapse property-definition-div" data-parent="#accordionReturn_value_pw_gid" id="Return_value_pw_gid">
+    <div class="card-body pl-5">
+    <h4>Pw Gid</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Numerical group id for the user's primary group.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_grouplist">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_grouplist">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_grouplist" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_grouplist" data-toggle="collapse" onclick="setAnchor('#Return_value_grouplist')" type="button"><span class="property-name">grouplist</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_grouplist" class="collapse property-definition-div" data-parent="#accordionReturn_value_grouplist" id="Return_value_grouplist">
+    <div class="card-body pl-5">
+    <h4>Grouplist</h4><br/>
+    <span class="description"><p>Optional array of group IDs for groups of which this account is a member. If <code>get_groups</code> is not specified,     this value will be <code>null</code>.</p>
+    </span><div class="any-of-value" id="Return_value_grouplist_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_grouplist_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_grouplist_anyOf_i0" id="Return_value_grouplist_anyOf_i0" onclick="setAnchor('#Return_value_grouplist_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_grouplist_anyOf_i1" id="Return_value_grouplist_anyOf_i1" onclick="setAnchor('#Return_value_grouplist_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_grouplist_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array of integer</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_grouplist_anyOf_i0_items">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_grouplist_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_sid">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_sid">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_sid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_sid" data-toggle="collapse" onclick="setAnchor('#Return_value_sid')" type="button"><span class="property-name">sid</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_sid" class="collapse property-definition-div" data-parent="#accordionReturn_value_sid" id="Return_value_sid">
+    <div class="card-body pl-5">
+    <h4>Sid</h4><br/>
+    <span class="description"><p>Optional SID value for the account that is present if <code>sid_info</code> is specified in payload.</p>
+    </span><div class="any-of-value" id="Return_value_sid_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_sid_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_sid_anyOf_i0" id="Return_value_sid_anyOf_i0" onclick="setAnchor('#Return_value_sid_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_sid_anyOf_i1" id="Return_value_sid_anyOf_i1" onclick="setAnchor('#Return_value_sid_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_sid_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_sid_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_source">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_source">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_source" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_source" data-toggle="collapse" onclick="setAnchor('#Return_value_source')" type="button"><span class="property-name">source</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_source" class="collapse property-definition-div" data-parent="#accordionReturn_value_source" id="Return_value_source">
+    <div class="card-body pl-5">
+    <h4>Source</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>The source for the user account.</p>
+    </span><div class="enum-value" id="Return_value_source_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"LOCAL"</li><li class="list-group-item enum-item">"ACTIVEDIRECTORY"</li><li class="list-group-item enum-item">"LDAP"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_local">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_local">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_local" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_local" data-toggle="collapse" onclick="setAnchor('#Return_value_local')" type="button"><span class="property-name">local</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_local" class="collapse property-definition-div" data-parent="#accordionReturn_value_local" id="Return_value_local">
+    <div class="card-body pl-5">
+    <h4>Local</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>The account is local to TrueNAS or provided by a directory service.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* ACCOUNT_READ
+

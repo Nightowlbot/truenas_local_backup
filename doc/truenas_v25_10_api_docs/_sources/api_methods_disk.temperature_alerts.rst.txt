@@ -1,0 +1,316 @@
+disk.temperature_alerts
+=======================
+
+Returns existing temperature alerts for specified disks.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: names</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>names</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of disk names to check for temperature-related alerts.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="description"><p>Array of active temperature alerts for the specified disks.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_items">
+    <h4>Alert</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_items_uuid">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_uuid">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_uuid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_uuid" data-toggle="collapse" onclick="setAnchor('#Return_value_items_uuid')" type="button"><span class="property-name">uuid</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_uuid" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_uuid" id="Return_value_items_uuid">
+    <div class="card-body pl-5">
+    <h4>Uuid</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Unique identifier for the alert.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_source">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_source">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_source" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_source" data-toggle="collapse" onclick="setAnchor('#Return_value_items_source')" type="button"><span class="property-name">source</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_source" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_source" id="Return_value_items_source">
+    <div class="card-body pl-5">
+    <h4>Source</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Source component that generated the alert.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_klass">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_klass">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_klass" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_klass" data-toggle="collapse" onclick="setAnchor('#Return_value_items_klass')" type="button"><span class="property-name">klass</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_klass" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_klass" id="Return_value_items_klass">
+    <div class="card-body pl-5">
+    <h4>Klass</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Alert class identifier for categorization.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_args">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_args">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_args" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_args" data-toggle="collapse" onclick="setAnchor('#Return_value_items_args')" type="button"><span class="property-name">args</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_args" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_args" id="Return_value_items_args">
+    <div class="card-body pl-5">
+    <h4>Args</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Arguments and parameters specific to the alert type.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_node">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_node">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_node" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_node" data-toggle="collapse" onclick="setAnchor('#Return_value_items_node')" type="button"><span class="property-name">node</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_node" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_node" id="Return_value_items_node">
+    <div class="card-body pl-5">
+    <h4>Node</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Node identifier in HA systems or hostname for single-node systems.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_key">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_key">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_key" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_key" data-toggle="collapse" onclick="setAnchor('#Return_value_items_key')" type="button"><span class="property-name">key</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_key" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_key" id="Return_value_items_key">
+    <div class="card-body pl-5">
+    <h4>Key</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Unique key used for alert deduplication and identification.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_datetime">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_datetime">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_datetime" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_datetime" data-toggle="collapse" onclick="setAnchor('#Return_value_items_datetime')" type="button"><span class="property-name">datetime</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_datetime" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_datetime" id="Return_value_items_datetime">
+    <div class="card-body pl-5">
+    <h4>Datetime</h4><span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: date-time</span><br/>
+    <span class="description"><p>Timestamp when the alert was first created.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_last_occurrence">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_last_occurrence">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_last_occurrence" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_last_occurrence" data-toggle="collapse" onclick="setAnchor('#Return_value_items_last_occurrence')" type="button"><span class="property-name">last_occurrence</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_last_occurrence" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_last_occurrence" id="Return_value_items_last_occurrence">
+    <div class="card-body pl-5">
+    <h4>Last Occurrence</h4><span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: date-time</span><br/>
+    <span class="description"><p>Timestamp of the most recent occurrence of this alert.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_dismissed">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_dismissed">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_dismissed" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_dismissed" data-toggle="collapse" onclick="setAnchor('#Return_value_items_dismissed')" type="button"><span class="property-name">dismissed</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_dismissed" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_dismissed" id="Return_value_items_dismissed">
+    <div class="card-body pl-5">
+    <h4>Dismissed</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether the alert has been manually dismissed by a user.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_mail">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_mail">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_mail" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_mail" data-toggle="collapse" onclick="setAnchor('#Return_value_items_mail')" type="button"><span class="property-name">mail</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_mail" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_mail" id="Return_value_items_mail">
+    <div class="card-body pl-5">
+    <h4>Mail</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Email notification configuration and status for this alert.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_text">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_text">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_text" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_text" data-toggle="collapse" onclick="setAnchor('#Return_value_items_text')" type="button"><span class="property-name">text</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_text" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_text" id="Return_value_items_text">
+    <div class="card-body pl-5">
+    <h4>Text</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable description of the alert.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_id" data-toggle="collapse" onclick="setAnchor('#Return_value_items_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_id" id="Return_value_items_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Alert identifier used for API operations.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_level">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_level">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_level" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_level" data-toggle="collapse" onclick="setAnchor('#Return_value_items_level')" type="button"><span class="property-name">level</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_level" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_level" id="Return_value_items_level">
+    <div class="card-body pl-5">
+    <h4>Level</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Severity level of the alert (INFO, WARNING, ERROR, etc.).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_formatted">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_formatted">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_formatted" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_formatted" data-toggle="collapse" onclick="setAnchor('#Return_value_items_formatted')" type="button"><span class="property-name">formatted</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_formatted" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_formatted" id="Return_value_items_formatted">
+    <div class="card-body pl-5">
+    <h4>Formatted</h4><br/>
+    <span class="description"><p>Formatted alert message with HTML.</p>
+    </span><div class="any-of-value" id="Return_value_items_formatted_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_formatted_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_formatted_anyOf_i0" id="Return_value_items_formatted_anyOf_i0" onclick="setAnchor('#Return_value_items_formatted_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_formatted_anyOf_i1" id="Return_value_items_formatted_anyOf_i1" onclick="setAnchor('#Return_value_items_formatted_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_formatted_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_formatted_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_one_shot">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_one_shot">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_one_shot" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_one_shot" data-toggle="collapse" onclick="setAnchor('#Return_value_items_one_shot')" type="button"><span class="property-name">one_shot</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_one_shot" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_one_shot" id="Return_value_items_one_shot">
+    <div class="card-body pl-5">
+    <h4>One Shot</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this alert will not be dismissed automatically.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* REPORTING_READ
+

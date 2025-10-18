@@ -1,0 +1,1158 @@
+app.create
+==========
+
+Create an app with `app_name` using `catalog_app` with `train` and `version`.
+
+TODO: Add support for advanced mode which will enable users to use their own compose files
+
+This method is a job.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: app_create</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>app_create</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>AppCreateArgs parameters.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_custom_app">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_custom_app">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_custom_app" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_custom_app" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_custom_app')" type="button"><span class="property-name">custom_app</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_custom_app" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_custom_app" id="Call_parameters_items_i0_custom_app">
+    <div class="card-body pl-5">
+    <h4>Custom App</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to create a custom application (<code>true</code>) or install from catalog (<code>false</code>).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_values">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_values">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_values" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_values" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_values')" type="button"><span class="property-name">values</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_values" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_values" id="Call_parameters_items_i0_values">
+    <div class="card-body pl-5">
+    <h4>Values</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Configuration values for the application installation.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_custom_compose_config">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_custom_compose_config">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_custom_compose_config" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_custom_compose_config" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_custom_compose_config')" type="button"><span class="property-name">custom_compose_config</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_custom_compose_config" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_custom_compose_config" id="Call_parameters_items_i0_custom_compose_config">
+    <div class="card-body pl-5">
+    <h4>Custom Compose Config</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Docker Compose configuration as a structured object for custom applications.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_custom_compose_config_string">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_custom_compose_config_string">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_custom_compose_config_string" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_custom_compose_config_string" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_custom_compose_config_string')" type="button"><span class="property-name">custom_compose_config_string</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_custom_compose_config_string" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_custom_compose_config_string" id="Call_parameters_items_i0_custom_compose_config_string">
+    <div class="card-body pl-5">
+    <h4>Custom Compose Config String</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+    <span class="description"><p>Docker Compose configuration as a YAML string for custom applications.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_catalog_app">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_catalog_app">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_catalog_app" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_catalog_app" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_catalog_app')" type="button"><span class="property-name">catalog_app</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_catalog_app" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_catalog_app" id="Call_parameters_items_i0_catalog_app">
+    <div class="card-body pl-5">
+    <h4>Catalog App</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Name of the catalog application to install. Required when <code>custom_app</code> is <code>false</code>.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_catalog_app_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_catalog_app_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_catalog_app_anyOf_i0" id="Call_parameters_items_i0_catalog_app_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_catalog_app_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_catalog_app_anyOf_i1" id="Call_parameters_items_i0_catalog_app_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_catalog_app_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_catalog_app_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_catalog_app_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_app_name">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_app_name">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_app_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_app_name" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_app_name')" type="button"><span class="property-name">app_name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_app_name" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_app_name" id="Call_parameters_items_i0_app_name">
+    <div class="card-body pl-5">
+    <h4>App Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Application name must have the following:</p>
+    <ul>
+    <li>Lowercase alphanumeric characters can be specified.</li>
+    <li>Name must start with an alphabetic character and can end with alphanumeric character.</li>
+    <li>Hyphen '-' is allowed but not as the first or last character.</li>
+    </ul>
+    </span><span class="pattern-value" id="Call_parameters_items_i0_app_name_pattern">Must match regular expression: <code>^[a-z]([-a-z0-9]*[a-z0-9])?$</code></span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_app_name_minLength">Must be at least <code>1</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="Call_parameters_items_i0_app_name_maxLength">Must be at most <code>40</code> characters long</span></p>
+    <br/>
+    <div class="badge badge-secondary">Examples:</div>
+    <br/><div class="jumbotron examples" id="Call_parameters_items_i0_app_name_ex1"><div class="highlight"><pre><span></span><span class="s2">"abc123"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Call_parameters_items_i0_app_name_ex2"><div class="highlight"><pre><span></span><span class="s2">"abc"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Call_parameters_items_i0_app_name_ex3"><div class="highlight"><pre><span></span><span class="s2">"abcd-1232"</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_train">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_train">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_train" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_train" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_train')" type="button"><span class="property-name">train</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_train" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_train" id="Call_parameters_items_i0_train">
+    <div class="card-body pl-5">
+    <h4>Train</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "stable"</span><br/>
+    <span class="description"><p>The catalog train to install from.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_train_minLength">Must be at least <code>1</code> characters long</span></p>
+    <br/>
+    <div class="badge badge-secondary">Examples:</div>
+    <br/><div class="jumbotron examples" id="Call_parameters_items_i0_train_ex1"><div class="highlight"><pre><span></span><span class="s2">"stable"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Call_parameters_items_i0_train_ex2"><div class="highlight"><pre><span></span><span class="s2">"enterprise"</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_version">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_version">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_version" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_version" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_version')" type="button"><span class="property-name">version</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_version" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_version" id="Call_parameters_items_i0_version">
+    <div class="card-body pl-5">
+    <h4>Version</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "latest"</span><br/>
+    <span class="description"><p>The version of the application to install.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_version_minLength">Must be at least <code>1</code> characters long</span></p>
+    <br/>
+    <div class="badge badge-secondary">Examples:</div>
+    <br/><div class="jumbotron examples" id="Call_parameters_items_i0_version_ex1"><div class="highlight"><pre><span></span><span class="s2">"latest"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Call_parameters_items_i0_version_ex2"><div class="highlight"><pre><span></span><span class="s2">"1.2.3"</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>AppEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The newly created application entry with all configuration details.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_name" data-toggle="collapse" onclick="setAnchor('#Return_value_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_name" id="Return_value_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The display name of the application.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_name_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Unique identifier for the application instance.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_id_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_state">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_state">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_state" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_state" data-toggle="collapse" onclick="setAnchor('#Return_value_state')" type="button"><span class="property-name">state</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_state" class="collapse property-definition-div" data-parent="#accordionReturn_value_state" id="Return_value_state">
+    <div class="card-body pl-5">
+    <h4>State</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Current operational state of the application.</p>
+    </span><div class="enum-value" id="Return_value_state_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"CRASHED"</li><li class="list-group-item enum-item">"DEPLOYING"</li><li class="list-group-item enum-item">"RUNNING"</li><li class="list-group-item enum-item">"STOPPED"</li><li class="list-group-item enum-item">"STOPPING"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_upgrade_available">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_upgrade_available">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_upgrade_available" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_upgrade_available" data-toggle="collapse" onclick="setAnchor('#Return_value_upgrade_available')" type="button"><span class="property-name">upgrade_available</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_upgrade_available" class="collapse property-definition-div" data-parent="#accordionReturn_value_upgrade_available" id="Return_value_upgrade_available">
+    <div class="card-body pl-5">
+    <h4>Upgrade Available</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether a newer version of the application is available for upgrade.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_latest_version">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_latest_version">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_latest_version" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_latest_version" data-toggle="collapse" onclick="setAnchor('#Return_value_latest_version')" type="button"><span class="property-name">latest_version</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_latest_version" class="collapse property-definition-div" data-parent="#accordionReturn_value_latest_version" id="Return_value_latest_version">
+    <div class="card-body pl-5">
+    <h4>Latest Version</h4><br/>
+    <span class="description"><p>The latest available version string, or <code>null</code> if no updates are available.</p>
+    </span><div class="any-of-value" id="Return_value_latest_version_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_latest_version_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_latest_version_anyOf_i0" id="Return_value_latest_version_anyOf_i0" onclick="setAnchor('#Return_value_latest_version_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_latest_version_anyOf_i1" id="Return_value_latest_version_anyOf_i1" onclick="setAnchor('#Return_value_latest_version_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_latest_version_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_latest_version_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_latest_version_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_image_updates_available">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_image_updates_available">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_image_updates_available" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_image_updates_available" data-toggle="collapse" onclick="setAnchor('#Return_value_image_updates_available')" type="button"><span class="property-name">image_updates_available</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_image_updates_available" class="collapse property-definition-div" data-parent="#accordionReturn_value_image_updates_available" id="Return_value_image_updates_available">
+    <div class="card-body pl-5">
+    <h4>Image Updates Available</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether newer Docker images are available for the containers in this application.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_custom_app">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_custom_app">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_custom_app" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_custom_app" data-toggle="collapse" onclick="setAnchor('#Return_value_custom_app')" type="button"><span class="property-name">custom_app</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_custom_app" class="collapse property-definition-div" data-parent="#accordionReturn_value_custom_app" id="Return_value_custom_app">
+    <div class="card-body pl-5">
+    <h4>Custom App</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this is a custom application (<code>true</code>) or from a catalog (<code>false</code>).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_migrated">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_migrated">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_migrated" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_migrated" data-toggle="collapse" onclick="setAnchor('#Return_value_migrated')" type="button"><span class="property-name">migrated</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_migrated" class="collapse property-definition-div" data-parent="#accordionReturn_value_migrated" id="Return_value_migrated">
+    <div class="card-body pl-5">
+    <h4>Migrated</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this application has been migrated from kubernetes.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_human_version">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_human_version">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_human_version" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_human_version" data-toggle="collapse" onclick="setAnchor('#Return_value_human_version')" type="button"><span class="property-name">human_version</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_human_version" class="collapse property-definition-div" data-parent="#accordionReturn_value_human_version" id="Return_value_human_version">
+    <div class="card-body pl-5">
+    <h4>Human Version</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable version string for display purposes.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_human_version_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_version">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_version">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_version" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_version" data-toggle="collapse" onclick="setAnchor('#Return_value_version')" type="button"><span class="property-name">version</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_version" class="collapse property-definition-div" data-parent="#accordionReturn_value_version" id="Return_value_version">
+    <div class="card-body pl-5">
+    <h4>Version</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Technical version identifier of the currently installed application.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_version_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_metadata">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_metadata">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_metadata" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_metadata" data-toggle="collapse" onclick="setAnchor('#Return_value_metadata')" type="button"><span class="property-name">metadata</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_metadata" class="collapse property-definition-div" data-parent="#accordionReturn_value_metadata" id="Return_value_metadata">
+    <div class="card-body pl-5">
+    <h4>Metadata</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Application metadata including description, category, and other catalog information.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads')" type="button"><span class="property-name">active_workloads</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads" id="Return_value_active_workloads">
+    <div class="card-body pl-5">
+    <h4>AppActiveWorkloads</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Information about the running containers, ports, and resources used by this application.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_active_workloads_containers">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_containers">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_containers" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_containers" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_containers')" type="button"><span class="property-name">containers</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_containers" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_containers" id="Return_value_active_workloads_containers">
+    <div class="card-body pl-5">
+    <h4>Containers</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Total number of containers currently running for this application.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads_used_ports">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_used_ports">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_used_ports" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_used_ports" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_used_ports')" type="button"><span class="property-name">used_ports</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_used_ports" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_used_ports" id="Return_value_active_workloads_used_ports">
+    <div class="card-body pl-5">
+    <h4>Used Ports</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="description"><p>Array of all port mappings used by the application.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_active_workloads_used_ports_items">
+    <h4>UsedPorts</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_active_workloads_used_ports_items_container_port">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_used_ports_items_container_port">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_used_ports_items_container_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_used_ports_items_container_port" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_used_ports_items_container_port')" type="button"><span class="property-name">container_port</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_used_ports_items_container_port" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_used_ports_items_container_port" id="Return_value_active_workloads_used_ports_items_container_port">
+    <div class="card-body pl-5">
+    <h4>Container Port</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>The port number inside the container.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads_used_ports_items_protocol">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_used_ports_items_protocol">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_used_ports_items_protocol" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_used_ports_items_protocol" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_used_ports_items_protocol')" type="button"><span class="property-name">protocol</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_used_ports_items_protocol" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_used_ports_items_protocol" id="Return_value_active_workloads_used_ports_items_protocol">
+    <div class="card-body pl-5">
+    <h4>Protocol</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The network protocol used.</p>
+    </span>
+    <br/>
+    <div class="badge badge-secondary">Examples:</div>
+    <br/><div class="jumbotron examples" id="Return_value_active_workloads_used_ports_items_protocol_ex1"><div class="highlight"><pre><span></span><span class="s2">"tcp"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_active_workloads_used_ports_items_protocol_ex2"><div class="highlight"><pre><span></span><span class="s2">"udp"</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads_used_ports_items_host_ports">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_used_ports_items_host_ports">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_used_ports_items_host_ports" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_used_ports_items_host_ports" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_used_ports_items_host_ports')" type="button"><span class="property-name">host_ports</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_used_ports_items_host_ports" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_used_ports_items_host_ports" id="Return_value_active_workloads_used_ports_items_host_ports">
+    <div class="card-body pl-5">
+    <h4>Host Ports</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="description"><p>Array of host port mappings for this container port.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_active_workloads_used_ports_items_host_ports_items">
+    <h4>HostPorts</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_active_workloads_used_ports_items_host_ports_items_host_port">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_used_ports_items_host_ports_items_host_port">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_used_ports_items_host_ports_items_host_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_used_ports_items_host_ports_items_host_port" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_used_ports_items_host_ports_items_host_port')" type="button"><span class="property-name">host_port</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_used_ports_items_host_ports_items_host_port" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_used_ports_items_host_ports_items_host_port" id="Return_value_active_workloads_used_ports_items_host_ports_items_host_port">
+    <div class="card-body pl-5">
+    <h4>Host Port</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>The port number on the host system.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads_used_ports_items_host_ports_items_host_ip">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_used_ports_items_host_ports_items_host_ip">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_used_ports_items_host_ports_items_host_ip" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_used_ports_items_host_ports_items_host_ip" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_used_ports_items_host_ports_items_host_ip')" type="button"><span class="property-name">host_ip</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_used_ports_items_host_ports_items_host_ip" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_used_ports_items_host_ports_items_host_ip" id="Return_value_active_workloads_used_ports_items_host_ports_items_host_ip">
+    <div class="card-body pl-5">
+    <h4>Host Ip</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The IP address on the host system that the port is bound to.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads_used_host_ips">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_used_host_ips">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_used_host_ips" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_used_host_ips" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_used_host_ips')" type="button"><span class="property-name">used_host_ips</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_used_host_ips" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_used_host_ips" id="Return_value_active_workloads_used_host_ips">
+    <div class="card-body pl-5">
+    <h4>Used Host Ips</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of host IP addresses in use by the application.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_active_workloads_used_host_ips_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads_container_details">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_container_details">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_container_details" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_container_details" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_container_details')" type="button"><span class="property-name">container_details</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_container_details" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_container_details" id="Return_value_active_workloads_container_details">
+    <div class="card-body pl-5">
+    <h4>Container Details</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="description"><p>Detailed information about each container in the application.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_active_workloads_container_details_items">
+    <h4>AppContainerDetails</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_active_workloads_container_details_items_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_container_details_items_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_container_details_items_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_container_details_items_id" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_container_details_items_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_container_details_items_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_container_details_items_id" id="Return_value_active_workloads_container_details_items_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Unique identifier for the container.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads_container_details_items_service_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_container_details_items_service_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_container_details_items_service_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_container_details_items_service_name" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_container_details_items_service_name')" type="button"><span class="property-name">service_name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_container_details_items_service_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_container_details_items_service_name" id="Return_value_active_workloads_container_details_items_service_name">
+    <div class="card-body pl-5">
+    <h4>Service Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name of the service this container provides.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads_container_details_items_image">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_container_details_items_image">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_container_details_items_image" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_container_details_items_image" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_container_details_items_image')" type="button"><span class="property-name">image</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_container_details_items_image" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_container_details_items_image" id="Return_value_active_workloads_container_details_items_image">
+    <div class="card-body pl-5">
+    <h4>Image</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Docker image name and tag used by this container.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads_container_details_items_port_config">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_container_details_items_port_config">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_container_details_items_port_config" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_container_details_items_port_config" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_container_details_items_port_config')" type="button"><span class="property-name">port_config</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_container_details_items_port_config" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_container_details_items_port_config" id="Return_value_active_workloads_container_details_items_port_config">
+    <div class="card-body pl-5">
+    <h4>Port Config</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="description"><p>Array of port mappings for this container.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_active_workloads_container_details_items_port_config_items">
+    <h4>UsedPorts</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_active_workloads_container_details_items_port_config_items_container_port">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_container_details_items_port_config_items_container_port">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_container_details_items_port_config_items_container_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_container_details_items_port_config_items_container_port" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_container_details_items_port_config_items_container_port')" type="button"><span class="property-name">container_port</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_container_details_items_port_config_items_container_port" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_container_details_items_port_config_items_container_port" id="Return_value_active_workloads_container_details_items_port_config_items_container_port">
+    <div class="card-body pl-5">
+    <h4>Container Port</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>The port number inside the container.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads_container_details_items_port_config_items_protocol">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_container_details_items_port_config_items_protocol">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_container_details_items_port_config_items_protocol" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_container_details_items_port_config_items_protocol" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_container_details_items_port_config_items_protocol')" type="button"><span class="property-name">protocol</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_container_details_items_port_config_items_protocol" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_container_details_items_port_config_items_protocol" id="Return_value_active_workloads_container_details_items_port_config_items_protocol">
+    <div class="card-body pl-5">
+    <h4>Protocol</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The network protocol used.</p>
+    </span>
+    <br/>
+    <div class="badge badge-secondary">Examples:</div>
+    <br/><div class="jumbotron examples" id="Return_value_active_workloads_container_details_items_port_config_items_protocol_ex1"><div class="highlight"><pre><span></span><span class="s2">"tcp"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_active_workloads_container_details_items_port_config_items_protocol_ex2"><div class="highlight"><pre><span></span><span class="s2">"udp"</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads_container_details_items_port_config_items_host_ports">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_container_details_items_port_config_items_host_ports">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_container_details_items_port_config_items_host_ports" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_container_details_items_port_config_items_host_ports" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_container_details_items_port_config_items_host_ports')" type="button"><span class="property-name">host_ports</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_container_details_items_port_config_items_host_ports" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_container_details_items_port_config_items_host_ports" id="Return_value_active_workloads_container_details_items_port_config_items_host_ports">
+    <div class="card-body pl-5">
+    <h4>Host Ports</h4><span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="description"><p>Array of host port mappings for this container port.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_active_workloads_container_details_items_port_config_items_host_ports_items">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads_container_details_items_state">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_container_details_items_state">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_container_details_items_state" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_container_details_items_state" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_container_details_items_state')" type="button"><span class="property-name">state</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_container_details_items_state" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_container_details_items_state" id="Return_value_active_workloads_container_details_items_state">
+    <div class="card-body pl-5">
+    <h4>State</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Current state of the container.</p>
+    </span><div class="enum-value" id="Return_value_active_workloads_container_details_items_state_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"crashed"</li><li class="list-group-item enum-item">"created"</li><li class="list-group-item enum-item">"exited"</li><li class="list-group-item enum-item">"running"</li><li class="list-group-item enum-item">"starting"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads_container_details_items_volume_mounts">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_container_details_items_volume_mounts">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_container_details_items_volume_mounts" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_container_details_items_volume_mounts" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_container_details_items_volume_mounts')" type="button"><span class="property-name">volume_mounts</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_container_details_items_volume_mounts" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_container_details_items_volume_mounts" id="Return_value_active_workloads_container_details_items_volume_mounts">
+    <div class="card-body pl-5">
+    <h4>Volume Mounts</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="description"><p>Array of volume mounts configured for this container.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_active_workloads_container_details_items_volume_mounts_items">
+    <h4>AppVolumes</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_active_workloads_container_details_items_volume_mounts_items_source">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_container_details_items_volume_mounts_items_source">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_container_details_items_volume_mounts_items_source" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_container_details_items_volume_mounts_items_source" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_container_details_items_volume_mounts_items_source')" type="button"><span class="property-name">source</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_container_details_items_volume_mounts_items_source" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_container_details_items_volume_mounts_items_source" id="Return_value_active_workloads_container_details_items_volume_mounts_items_source">
+    <div class="card-body pl-5">
+    <h4>Source</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The source path or volume name on the host system.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads_container_details_items_volume_mounts_items_destination">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_container_details_items_volume_mounts_items_destination">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_container_details_items_volume_mounts_items_destination" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_container_details_items_volume_mounts_items_destination" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_container_details_items_volume_mounts_items_destination')" type="button"><span class="property-name">destination</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_container_details_items_volume_mounts_items_destination" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_container_details_items_volume_mounts_items_destination" id="Return_value_active_workloads_container_details_items_volume_mounts_items_destination">
+    <div class="card-body pl-5">
+    <h4>Destination</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The mount path inside the container.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads_container_details_items_volume_mounts_items_mode">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_container_details_items_volume_mounts_items_mode">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_container_details_items_volume_mounts_items_mode" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_container_details_items_volume_mounts_items_mode" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_container_details_items_volume_mounts_items_mode')" type="button"><span class="property-name">mode</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_container_details_items_volume_mounts_items_mode" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_container_details_items_volume_mounts_items_mode" id="Return_value_active_workloads_container_details_items_volume_mounts_items_mode">
+    <div class="card-body pl-5">
+    <h4>Mode</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The mount mode (e.g., 'rw' for read-write, 'ro' for read-only).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads_container_details_items_volume_mounts_items_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_container_details_items_volume_mounts_items_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_container_details_items_volume_mounts_items_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_container_details_items_volume_mounts_items_type" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_container_details_items_volume_mounts_items_type')" type="button"><span class="property-name">type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_container_details_items_volume_mounts_items_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_container_details_items_volume_mounts_items_type" id="Return_value_active_workloads_container_details_items_volume_mounts_items_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The volume type.</p>
+    </span>
+    <br/>
+    <div class="badge badge-secondary">Examples:</div>
+    <br/><div class="jumbotron examples" id="Return_value_active_workloads_container_details_items_volume_mounts_items_type_ex1"><div class="highlight"><pre><span></span><span class="s2">"bind"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_active_workloads_container_details_items_volume_mounts_items_type_ex2"><div class="highlight"><pre><span></span><span class="s2">"volume"</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads_volumes">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_volumes">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_volumes" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_volumes" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_volumes')" type="button"><span class="property-name">volumes</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_volumes" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_volumes" id="Return_value_active_workloads_volumes">
+    <div class="card-body pl-5">
+    <h4>Volumes</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="description"><p>Array of all volume mounts used by the application.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_active_workloads_volumes_items">
+    <h4>AppVolumes</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_active_workloads_volumes_items_source">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_volumes_items_source">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_volumes_items_source" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_volumes_items_source" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_volumes_items_source')" type="button"><span class="property-name">source</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_volumes_items_source" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_volumes_items_source" id="Return_value_active_workloads_volumes_items_source">
+    <div class="card-body pl-5">
+    <h4>Source</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The source path or volume name on the host system.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads_volumes_items_destination">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_volumes_items_destination">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_volumes_items_destination" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_volumes_items_destination" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_volumes_items_destination')" type="button"><span class="property-name">destination</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_volumes_items_destination" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_volumes_items_destination" id="Return_value_active_workloads_volumes_items_destination">
+    <div class="card-body pl-5">
+    <h4>Destination</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The mount path inside the container.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads_volumes_items_mode">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_volumes_items_mode">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_volumes_items_mode" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_volumes_items_mode" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_volumes_items_mode')" type="button"><span class="property-name">mode</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_volumes_items_mode" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_volumes_items_mode" id="Return_value_active_workloads_volumes_items_mode">
+    <div class="card-body pl-5">
+    <h4>Mode</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The mount mode (e.g., 'rw' for read-write, 'ro' for read-only).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads_volumes_items_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_volumes_items_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_volumes_items_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_volumes_items_type" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_volumes_items_type')" type="button"><span class="property-name">type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_volumes_items_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_volumes_items_type" id="Return_value_active_workloads_volumes_items_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The volume type.</p>
+    </span>
+    <br/>
+    <div class="badge badge-secondary">Examples:</div>
+    <br/><div class="jumbotron examples" id="Return_value_active_workloads_volumes_items_type_ex1"><div class="highlight"><pre><span></span><span class="s2">"bind"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_active_workloads_volumes_items_type_ex2"><div class="highlight"><pre><span></span><span class="s2">"volume"</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads_images">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_images">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_images" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_images" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_images')" type="button"><span class="property-name">images</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_images" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_images" id="Return_value_active_workloads_images">
+    <div class="card-body pl-5">
+    <h4>Images</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of Docker image names used by the application.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_active_workloads_images_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_active_workloads_images_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads_networks">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_networks">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_networks" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_networks" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_networks')" type="button"><span class="property-name">networks</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_networks" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_networks" id="Return_value_active_workloads_networks">
+    <div class="card-body pl-5">
+    <h4>Networks</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="description"><p>Array of Docker networks associated with the application.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_active_workloads_networks_items">
+    <h4>AppNetworks</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionReturn_value_active_workloads_networks_items_Name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_networks_items_Name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_networks_items_Name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_networks_items_Name" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_networks_items_Name')" type="button"><span class="property-name">Name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_networks_items_Name" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_networks_items_Name" id="Return_value_active_workloads_networks_items_Name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The name of the Docker network.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads_networks_items_Id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_networks_items_Id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_networks_items_Id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_networks_items_Id" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_networks_items_Id')" type="button"><span class="property-name">Id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_networks_items_Id" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_networks_items_Id" id="Return_value_active_workloads_networks_items_Id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Unique identifier for the Docker network.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads_networks_items_Labels">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_networks_items_Labels">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_networks_items_Labels" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_networks_items_Labels" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_networks_items_Labels')" type="button"><span class="property-name">Labels</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_networks_items_Labels" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_networks_items_Labels" id="Return_value_active_workloads_networks_items_Labels">
+    <div class="card-body pl-5">
+    <h4>Labels</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Key-value pairs of labels associated with the network.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active_workloads_networks_items_additionalProperties">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active_workloads_networks_items_additionalProperties">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active_workloads_networks_items_additionalProperties" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active_workloads_networks_items_additionalProperties" data-toggle="collapse" onclick="setAnchor('#Return_value_active_workloads_networks_items_additionalProperties')" type="button"><em><span class="property-name">Additional Properties</span></em></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active_workloads_networks_items_additionalProperties" class="collapse property-definition-div" data-parent="#accordionReturn_value_active_workloads_networks_items_additionalProperties" id="Return_value_active_workloads_networks_items_additionalProperties">
+    <div class="card-body pl-5"><p class="additional-properties">Additional Properties of any type are allowed.</p>
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_notes">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_notes">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_notes" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_notes" data-toggle="collapse" onclick="setAnchor('#Return_value_notes')" type="button"><span class="property-name">notes</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_notes" class="collapse property-definition-div" data-parent="#accordionReturn_value_notes" id="Return_value_notes">
+    <div class="card-body pl-5">
+    <h4>Notes</h4><br/>
+    <span class="description"><p>User-provided notes or comments about this application instance.</p>
+    </span><div class="any-of-value" id="Return_value_notes_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_notes_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_notes_anyOf_i0" id="Return_value_notes_anyOf_i0" onclick="setAnchor('#Return_value_notes_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_notes_anyOf_i1" id="Return_value_notes_anyOf_i1" onclick="setAnchor('#Return_value_notes_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_notes_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_notes_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_portals">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_portals">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_portals" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_portals" data-toggle="collapse" onclick="setAnchor('#Return_value_portals')" type="button"><span class="property-name">portals</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_portals" class="collapse property-definition-div" data-parent="#accordionReturn_value_portals" id="Return_value_portals">
+    <div class="card-body pl-5">
+    <h4>Portals</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Web portals and access points provided by the application (URLs, ports, etc.).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_version_details">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_version_details">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_version_details" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_version_details" data-toggle="collapse" onclick="setAnchor('#Return_value_version_details')" type="button"><span class="property-name">version_details</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_version_details" class="collapse property-definition-div" data-parent="#accordionReturn_value_version_details" id="Return_value_version_details">
+    <div class="card-body pl-5">
+    <h4>Version Details</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Detailed version information including changelog and upgrade notes. <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="Return_value_version_details_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_version_details_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_version_details_anyOf_i0" id="Return_value_version_details_anyOf_i0" onclick="setAnchor('#Return_value_version_details_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_version_details_anyOf_i1" id="Return_value_version_details_anyOf_i1" onclick="setAnchor('#Return_value_version_details_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_version_details_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_version_details_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_config">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_config">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_config" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_config" data-toggle="collapse" onclick="setAnchor('#Return_value_config')" type="button"><span class="property-name">config</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_config" class="collapse property-definition-div" data-parent="#accordionReturn_value_config" id="Return_value_config">
+    <div class="card-body pl-5">
+    <h4>Config</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Current configuration values for the application. <code>null</code> if configuration is not requested.</p>
+    </span><div class="any-of-value" id="Return_value_config_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_config_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_config_anyOf_i0" id="Return_value_config_anyOf_i0" onclick="setAnchor('#Return_value_config_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_config_anyOf_i1" id="Return_value_config_anyOf_i1" onclick="setAnchor('#Return_value_config_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_config_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_config_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* APPS_WRITE
+

@@ -1,0 +1,60 @@
+smb.unixcharset_choices
+=======================
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Available character set choices for Unix charset configuration.</p>
+    </span>
+    <div class="accordion" id="accordionReturn_value_additionalProperties">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_additionalProperties">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_additionalProperties" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_additionalProperties" data-toggle="collapse" onclick="setAnchor('#Return_value_additionalProperties')" type="button"><em><span class="property-name">Additional Properties</span></em></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_additionalProperties" class="collapse property-definition-div" data-parent="#accordionReturn_value_additionalProperties" id="Return_value_additionalProperties">
+    <div class="card-body pl-5"><p class="additional-properties">Each additional property must conform to the following schema</p>
+    <span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <div class="enum-value" id="Return_value_additionalProperties_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"UTF-8"</li><li class="list-group-item enum-item">"GB2312"</li><li class="list-group-item enum-item">"HZ-GB-2312"</li><li class="list-group-item enum-item">"CP1361"</li><li class="list-group-item enum-item">"BIG5"</li><li class="list-group-item enum-item">"BIG5HKSCS"</li><li class="list-group-item enum-item">"CP037"</li><li class="list-group-item enum-item">"CP273"</li><li class="list-group-item enum-item">"CP424"</li><li class="list-group-item enum-item">"CP437"</li><li class="list-group-item enum-item">"CP500"</li><li class="list-group-item enum-item">"CP775"</li><li class="list-group-item enum-item">"CP850"</li><li class="list-group-item enum-item">"CP852"</li><li class="list-group-item enum-item">"CP855"</li><li class="list-group-item enum-item">"CP857"</li><li class="list-group-item enum-item">"CP858"</li><li class="list-group-item enum-item">"CP860"</li><li class="list-group-item enum-item">"CP861"</li><li class="list-group-item enum-item">"CP862"</li><li class="list-group-item enum-item">"CP863"</li><li class="list-group-item enum-item">"CP864"</li><li class="list-group-item enum-item">"CP865"</li><li class="list-group-item enum-item">"CP866"</li><li class="list-group-item enum-item">"CP869"</li><li class="list-group-item enum-item">"CP932"</li><li class="list-group-item enum-item">"CP949"</li><li class="list-group-item enum-item">"CP950"</li><li class="list-group-item enum-item">"CP1026"</li><li class="list-group-item enum-item">"CP1125"</li><li class="list-group-item enum-item">"CP1140"</li><li class="list-group-item enum-item">"CP1250"</li><li class="list-group-item enum-item">"CP1251"</li><li class="list-group-item enum-item">"CP1252"</li><li class="list-group-item enum-item">"CP1253"</li><li class="list-group-item enum-item">"CP1254"</li><li class="list-group-item enum-item">"CP1255"</li><li class="list-group-item enum-item">"CP1256"</li><li class="list-group-item enum-item">"CP1257"</li><li class="list-group-item enum-item">"CP1258"</li><li class="list-group-item enum-item">"EUC_JIS_2004"</li><li class="list-group-item enum-item">"EUC_JISX0213"</li><li class="list-group-item enum-item">"EUC_JP"</li><li class="list-group-item enum-item">"EUC_KR"</li><li class="list-group-item enum-item">"GB18030"</li><li class="list-group-item enum-item">"GBK"</li><li class="list-group-item enum-item">"HZ"</li><li class="list-group-item enum-item">"ISO2022_JP"</li><li class="list-group-item enum-item">"ISO2022_JP_1"</li><li class="list-group-item enum-item">"ISO2022_JP_2"</li><li class="list-group-item enum-item">"ISO2022_JP_2004"</li><li class="list-group-item enum-item">"ISO2022_JP_3"</li><li class="list-group-item enum-item">"ISO2022_JP_EXT"</li><li class="list-group-item enum-item">"ISO2022_KR"</li><li class="list-group-item enum-item">"ISO8859_1"</li><li class="list-group-item enum-item">"ISO8859_2"</li><li class="list-group-item enum-item">"ISO8859_3"</li><li class="list-group-item enum-item">"ISO8859_4"</li><li class="list-group-item enum-item">"ISO8859_5"</li><li class="list-group-item enum-item">"ISO8859_6"</li><li class="list-group-item enum-item">"ISO8859_7"</li><li class="list-group-item enum-item">"ISO8859_8"</li><li class="list-group-item enum-item">"ISO8859_9"</li><li class="list-group-item enum-item">"ISO8859_10"</li><li class="list-group-item enum-item">"ISO8859_11"</li><li class="list-group-item enum-item">"ISO8859_13"</li><li class="list-group-item enum-item">"ISO8859_14"</li><li class="list-group-item enum-item">"ISO8859_15"</li><li class="list-group-item enum-item">"ISO8859_16"</li><li class="list-group-item enum-item">"JOHAB"</li><li class="list-group-item enum-item">"KOI8_R"</li><li class="list-group-item enum-item">"KZ1048"</li><li class="list-group-item enum-item">"LATIN_1"</li><li class="list-group-item enum-item">"MAC_CYRILLIC"</li><li class="list-group-item enum-item">"MAC_GREEK"</li><li class="list-group-item enum-item">"MAC_ICELAND"</li><li class="list-group-item enum-item">"MAC_LATIN2"</li><li class="list-group-item enum-item">"MAC_ROMAN"</li><li class="list-group-item enum-item">"MAC_TURKISH"</li><li class="list-group-item enum-item">"PTCP154"</li><li class="list-group-item enum-item">"SHIFT_JIS"</li><li class="list-group-item enum-item">"SHIFT_JIS_2004"</li><li class="list-group-item enum-item">"SHIFT_JISX0213"</li><li class="list-group-item enum-item">"TIS_620"</li><li class="list-group-item enum-item">"UTF_16"</li><li class="list-group-item enum-item">"UTF_16_BE"</li><li class="list-group-item enum-item">"UTF_16_LE"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* READONLY_ADMIN | SHARING_SMB_READ
+

@@ -1,0 +1,7 @@
+alertclasses
+------------
+
+.. toctree::
+
+   api_methods_alertclasses.config
+   api_methods_alertclasses.update

@@ -1,0 +1,613 @@
+docker.network.query
+====================
+
+Sent on docker.network changes.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionADDED">
+    <div class="card">
+    <div class="card-header" id="headingADDED">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED" data-toggle="collapse" onclick="setAnchor('#ADDED')" type="button"><span class="property-name">ADDED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED" class="collapse property-definition-div" data-parent="#accordionADDED" id="ADDED">
+    <div class="card-body pl-5">
+    <h4>DockerNetworkAddedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_id" data-toggle="collapse" onclick="setAnchor('#ADDED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_id" class="collapse property-definition-div" data-parent="#accordionADDED_id" id="ADDED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><br/>
+    <div class="any-of-value" id="ADDED_id_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_id_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_id_anyOf_i0" id="ADDED_id_anyOf_i0" onclick="setAnchor('#ADDED_id_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_id_anyOf_i1" id="ADDED_id_anyOf_i1" onclick="setAnchor('#ADDED_id_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_id_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_id_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_id_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields" data-toggle="collapse" onclick="setAnchor('#ADDED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields" class="collapse property-definition-div" data-parent="#accordionADDED_fields" id="ADDED_fields">
+    <div class="card-body pl-5">
+    <h4>DockerNetworkEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_ipam">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_ipam">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_ipam" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_ipam" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_ipam')" type="button"><span class="property-name">ipam</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_ipam" class="collapse property-definition-div" data-parent="#accordionADDED_fields_ipam" id="ADDED_fields_ipam">
+    <div class="card-body pl-5">
+    <h4>Ipam</h4><br/>
+    <span class="description"><p>IP Address Management configuration for the network or <code>null</code>.</p>
+    </span><div class="any-of-value" id="ADDED_fields_ipam_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_ipam_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_ipam_anyOf_i0" id="ADDED_fields_ipam_anyOf_i0" onclick="setAnchor('#ADDED_fields_ipam_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_ipam_anyOf_i1" id="ADDED_fields_ipam_anyOf_i1" onclick="setAnchor('#ADDED_fields_ipam_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_ipam_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_ipam_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_labels">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_labels">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_labels" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_labels" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_labels')" type="button"><span class="property-name">labels</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_labels" class="collapse property-definition-div" data-parent="#accordionADDED_fields_labels" id="ADDED_fields_labels">
+    <div class="card-body pl-5">
+    <h4>Labels</h4><br/>
+    <span class="description"><p>Metadata labels attached to the network or <code>null</code>.</p>
+    </span><div class="any-of-value" id="ADDED_fields_labels_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_labels_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_labels_anyOf_i0" id="ADDED_fields_labels_anyOf_i0" onclick="setAnchor('#ADDED_fields_labels_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_labels_anyOf_i1" id="ADDED_fields_labels_anyOf_i1" onclick="setAnchor('#ADDED_fields_labels_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_labels_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_labels_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_created">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_created">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_created" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_created" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_created')" type="button"><span class="property-name">created</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_created" class="collapse property-definition-div" data-parent="#accordionADDED_fields_created" id="ADDED_fields_created">
+    <div class="card-body pl-5">
+    <h4>Created</h4><br/>
+    <span class="description"><p>Timestamp when the network was created or <code>null</code>.</p>
+    </span><div class="any-of-value" id="ADDED_fields_created_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_created_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_created_anyOf_i0" id="ADDED_fields_created_anyOf_i0" onclick="setAnchor('#ADDED_fields_created_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_created_anyOf_i1" id="ADDED_fields_created_anyOf_i1" onclick="setAnchor('#ADDED_fields_created_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_created_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_created_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_created_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_driver">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_driver">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_driver" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_driver" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_driver')" type="button"><span class="property-name">driver</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_driver" class="collapse property-definition-div" data-parent="#accordionADDED_fields_driver" id="ADDED_fields_driver">
+    <div class="card-body pl-5">
+    <h4>Driver</h4><br/>
+    <span class="description"><p>Network driver type (bridge, host, overlay, etc.) or <code>null</code>.</p>
+    </span><div class="any-of-value" id="ADDED_fields_driver_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_driver_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_driver_anyOf_i0" id="ADDED_fields_driver_anyOf_i0" onclick="setAnchor('#ADDED_fields_driver_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_driver_anyOf_i1" id="ADDED_fields_driver_anyOf_i1" onclick="setAnchor('#ADDED_fields_driver_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_driver_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_driver_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_driver_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_id" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_id" class="collapse property-definition-div" data-parent="#accordionADDED_fields_id" id="ADDED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><br/>
+    <span class="description"><p>Full network identifier or <code>null</code>.</p>
+    </span><div class="any-of-value" id="ADDED_fields_id_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_id_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_id_anyOf_i0" id="ADDED_fields_id_anyOf_i0" onclick="setAnchor('#ADDED_fields_id_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_id_anyOf_i1" id="ADDED_fields_id_anyOf_i1" onclick="setAnchor('#ADDED_fields_id_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_id_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_id_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_id_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_name">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_name">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_name" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_name" class="collapse property-definition-div" data-parent="#accordionADDED_fields_name" id="ADDED_fields_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><br/>
+    <span class="description"><p>Human-readable name of the network or <code>null</code>.</p>
+    </span><div class="any-of-value" id="ADDED_fields_name_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_name_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_name_anyOf_i0" id="ADDED_fields_name_anyOf_i0" onclick="setAnchor('#ADDED_fields_name_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_name_anyOf_i1" id="ADDED_fields_name_anyOf_i1" onclick="setAnchor('#ADDED_fields_name_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_name_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_name_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_name_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_scope">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_scope">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_scope" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_scope" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_scope')" type="button"><span class="property-name">scope</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_scope" class="collapse property-definition-div" data-parent="#accordionADDED_fields_scope" id="ADDED_fields_scope">
+    <div class="card-body pl-5">
+    <h4>Scope</h4><br/>
+    <span class="description"><p>Network scope (local, global, swarm) or <code>null</code>.</p>
+    </span><div class="any-of-value" id="ADDED_fields_scope_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_scope_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_scope_anyOf_i0" id="ADDED_fields_scope_anyOf_i0" onclick="setAnchor('#ADDED_fields_scope_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_scope_anyOf_i1" id="ADDED_fields_scope_anyOf_i1" onclick="setAnchor('#ADDED_fields_scope_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_scope_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_scope_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_scope_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_short_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_short_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_short_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_short_id" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_short_id')" type="button"><span class="property-name">short_id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_short_id" class="collapse property-definition-div" data-parent="#accordionADDED_fields_short_id" id="ADDED_fields_short_id">
+    <div class="card-body pl-5">
+    <h4>Short Id</h4><br/>
+    <span class="description"><p>Shortened network identifier or <code>null</code>.</p>
+    </span><div class="any-of-value" id="ADDED_fields_short_id_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_short_id_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_short_id_anyOf_i0" id="ADDED_fields_short_id_anyOf_i0" onclick="setAnchor('#ADDED_fields_short_id_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_short_id_anyOf_i1" id="ADDED_fields_short_id_anyOf_i1" onclick="setAnchor('#ADDED_fields_short_id_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_short_id_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_short_id_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_short_id_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED" data-toggle="collapse" onclick="setAnchor('#CHANGED')" type="button"><span class="property-name">CHANGED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED" class="collapse property-definition-div" data-parent="#accordionCHANGED" id="CHANGED">
+    <div class="card-body pl-5">
+    <h4>DockerNetworkChangedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_id" id="CHANGED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><br/>
+    <div class="any-of-value" id="CHANGED_id_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_id_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_id_anyOf_i0" id="CHANGED_id_anyOf_i0" onclick="setAnchor('#CHANGED_id_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_id_anyOf_i1" id="CHANGED_id_anyOf_i1" onclick="setAnchor('#CHANGED_id_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_id_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_id_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_id_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields" id="CHANGED_fields">
+    <div class="card-body pl-5">
+    <h4>DockerNetworkEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_ipam">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_ipam">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_ipam" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_ipam" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_ipam')" type="button"><span class="property-name">ipam</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_ipam" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_ipam" id="CHANGED_fields_ipam">
+    <div class="card-body pl-5">
+    <h4>Ipam</h4><br/>
+    <span class="description"><p>IP Address Management configuration for the network or <code>null</code>.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_ipam_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_ipam_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_ipam_anyOf_i0" id="CHANGED_fields_ipam_anyOf_i0" onclick="setAnchor('#CHANGED_fields_ipam_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_ipam_anyOf_i1" id="CHANGED_fields_ipam_anyOf_i1" onclick="setAnchor('#CHANGED_fields_ipam_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_ipam_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_ipam_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_labels">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_labels">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_labels" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_labels" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_labels')" type="button"><span class="property-name">labels</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_labels" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_labels" id="CHANGED_fields_labels">
+    <div class="card-body pl-5">
+    <h4>Labels</h4><br/>
+    <span class="description"><p>Metadata labels attached to the network or <code>null</code>.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_labels_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_labels_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_labels_anyOf_i0" id="CHANGED_fields_labels_anyOf_i0" onclick="setAnchor('#CHANGED_fields_labels_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_labels_anyOf_i1" id="CHANGED_fields_labels_anyOf_i1" onclick="setAnchor('#CHANGED_fields_labels_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_labels_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_labels_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_created">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_created">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_created" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_created" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_created')" type="button"><span class="property-name">created</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_created" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_created" id="CHANGED_fields_created">
+    <div class="card-body pl-5">
+    <h4>Created</h4><br/>
+    <span class="description"><p>Timestamp when the network was created or <code>null</code>.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_created_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_created_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_created_anyOf_i0" id="CHANGED_fields_created_anyOf_i0" onclick="setAnchor('#CHANGED_fields_created_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_created_anyOf_i1" id="CHANGED_fields_created_anyOf_i1" onclick="setAnchor('#CHANGED_fields_created_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_created_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_created_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_created_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_driver">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_driver">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_driver" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_driver" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_driver')" type="button"><span class="property-name">driver</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_driver" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_driver" id="CHANGED_fields_driver">
+    <div class="card-body pl-5">
+    <h4>Driver</h4><br/>
+    <span class="description"><p>Network driver type (bridge, host, overlay, etc.) or <code>null</code>.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_driver_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_driver_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_driver_anyOf_i0" id="CHANGED_fields_driver_anyOf_i0" onclick="setAnchor('#CHANGED_fields_driver_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_driver_anyOf_i1" id="CHANGED_fields_driver_anyOf_i1" onclick="setAnchor('#CHANGED_fields_driver_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_driver_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_driver_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_driver_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_id" id="CHANGED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><br/>
+    <span class="description"><p>Full network identifier or <code>null</code>.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_id_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_id_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_id_anyOf_i0" id="CHANGED_fields_id_anyOf_i0" onclick="setAnchor('#CHANGED_fields_id_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_id_anyOf_i1" id="CHANGED_fields_id_anyOf_i1" onclick="setAnchor('#CHANGED_fields_id_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_id_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_id_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_id_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_name">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_name">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_name" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_name" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_name" id="CHANGED_fields_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><br/>
+    <span class="description"><p>Human-readable name of the network or <code>null</code>.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_name_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_name_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_name_anyOf_i0" id="CHANGED_fields_name_anyOf_i0" onclick="setAnchor('#CHANGED_fields_name_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_name_anyOf_i1" id="CHANGED_fields_name_anyOf_i1" onclick="setAnchor('#CHANGED_fields_name_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_name_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_name_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_name_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_scope">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_scope">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_scope" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_scope" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_scope')" type="button"><span class="property-name">scope</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_scope" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_scope" id="CHANGED_fields_scope">
+    <div class="card-body pl-5">
+    <h4>Scope</h4><br/>
+    <span class="description"><p>Network scope (local, global, swarm) or <code>null</code>.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_scope_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_scope_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_scope_anyOf_i0" id="CHANGED_fields_scope_anyOf_i0" onclick="setAnchor('#CHANGED_fields_scope_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_scope_anyOf_i1" id="CHANGED_fields_scope_anyOf_i1" onclick="setAnchor('#CHANGED_fields_scope_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_scope_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_scope_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_scope_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_short_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_short_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_short_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_short_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_short_id')" type="button"><span class="property-name">short_id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_short_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_short_id" id="CHANGED_fields_short_id">
+    <div class="card-body pl-5">
+    <h4>Short Id</h4><br/>
+    <span class="description"><p>Shortened network identifier or <code>null</code>.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_short_id_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_short_id_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_short_id_anyOf_i0" id="CHANGED_fields_short_id_anyOf_i0" onclick="setAnchor('#CHANGED_fields_short_id_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_short_id_anyOf_i1" id="CHANGED_fields_short_id_anyOf_i1" onclick="setAnchor('#CHANGED_fields_short_id_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_short_id_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_short_id_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_short_id_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionREMOVED">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED" data-toggle="collapse" onclick="setAnchor('#REMOVED')" type="button"><span class="property-name">REMOVED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED" class="collapse property-definition-div" data-parent="#accordionREMOVED" id="REMOVED">
+    <div class="card-body pl-5">
+    <h4>DockerNetworkRemovedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionREMOVED_id">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED_id">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED_id" data-toggle="collapse" onclick="setAnchor('#REMOVED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED_id" class="collapse property-definition-div" data-parent="#accordionREMOVED_id" id="REMOVED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><br/>
+    <div class="any-of-value" id="REMOVED_id_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsREMOVED_id_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_REMOVED_id_anyOf_i0" id="REMOVED_id_anyOf_i0" onclick="setAnchor('#REMOVED_id_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_REMOVED_id_anyOf_i1" id="REMOVED_id_anyOf_i1" onclick="setAnchor('#REMOVED_id_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_REMOVED_id_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="REMOVED_id_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_REMOVED_id_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* DOCKER_READ
+

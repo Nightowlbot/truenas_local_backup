@@ -1,0 +1,574 @@
+snmp.update
+===========
+
+Update SNMP Service Configuration.
+
+--- Rules --- Enabling v3: requires v3_username, v3_authtype and v3_password Disabling v3: By itself will retain the v3 user settings and config in the 'private' config, but remove the entry in the public config to block v3 access by that user. Disabling v3 and clearing the v3_username: This will do the actions described in 'Disabling v3' and take the extra step to remove the user from the 'private' config.
+
+The 'v3_*' settings are valid and enforced only when 'v3' is enabled
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: snmp_update</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>snmp_update</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>SNMPUpdateArgs parameters.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_location">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_location">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_location" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_location" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_location')" type="button"><span class="property-name">location</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_location" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_location" id="Call_parameters_items_i0_location">
+    <div class="card-body pl-5">
+    <h4>Location</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>A comment describing the physical location of the server.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_contact">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_contact">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_contact" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_contact" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_contact')" type="button"><span class="property-name">contact</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_contact" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_contact" id="Call_parameters_items_i0_contact">
+    <div class="card-body pl-5">
+    <h4>Contact</h4><br/>
+    <span class="description"><p>Contact information for the system administrator (email or name).</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_contact_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_contact_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_contact_anyOf_i0" id="Call_parameters_items_i0_contact_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_contact_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_contact_anyOf_i1" id="Call_parameters_items_i0_contact_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_contact_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_contact_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: email</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_contact_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="pattern-value" id="Call_parameters_items_i0_contact_anyOf_i1_pattern">Must match regular expression: <code>^[-_a-zA-Z0-9\s]*$</code></span>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_traps">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_traps">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_traps" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_traps" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_traps')" type="button"><span class="property-name">traps</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_traps" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_traps" id="Call_parameters_items_i0_traps">
+    <div class="card-body pl-5">
+    <h4>Traps</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether SNMP traps are enabled.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_v3">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_v3">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_v3" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_v3" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_v3')" type="button"><span class="property-name">v3</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_v3" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_v3" id="Call_parameters_items_i0_v3">
+    <div class="card-body pl-5">
+    <h4>V3</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether SNMP version 3 is enabled.  Enabling version 3 also requires username, authtype and password.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_community">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_community">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_community" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_community" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_community')" type="button"><span class="property-name">community</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_community" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_community" id="Call_parameters_items_i0_community">
+    <div class="card-body pl-5">
+    <h4>Community</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>SNMP community string for v1/v2c access. Allows letters, numbers, hyphens, underscores, and spaces.</p>
+    </span><span class="pattern-value" id="Call_parameters_items_i0_community_pattern">Must match regular expression: <code>^[-_a-zA-Z0-9\s]*$</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_v3_username">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_v3_username">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_v3_username" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_v3_username" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_v3_username')" type="button"><span class="property-name">v3_username</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_v3_username" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_v3_username" id="Call_parameters_items_i0_v3_username">
+    <div class="card-body pl-5">
+    <h4>V3 Username</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Username for SNMP version 3 authentication.</p>
+    </span>
+    <p><span class="badge badge-light restriction max-length-restriction" id="Call_parameters_items_i0_v3_username_maxLength">Must be at most <code>20</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_v3_authtype">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_v3_authtype">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_v3_authtype" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_v3_authtype" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_v3_authtype')" type="button"><span class="property-name">v3_authtype</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_v3_authtype" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_v3_authtype" id="Call_parameters_items_i0_v3_authtype">
+    <div class="card-body pl-5">
+    <h4>V3 Authtype</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Authentication type for SNMP version 3 (empty string means no authentication).</p>
+    </span><div class="enum-value" id="Call_parameters_items_i0_v3_authtype_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li><li class="list-group-item enum-item">"MD5"</li><li class="list-group-item enum-item">"SHA"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_v3_password">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_v3_password">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_v3_password" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_v3_password" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_v3_password')" type="button"><span class="property-name">v3_password</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_v3_password" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_v3_password" id="Call_parameters_items_i0_v3_password">
+    <div class="card-body pl-5">
+    <h4>V3 Password</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Password for SNMP version 3 authentication.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_v3_privproto">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_v3_privproto">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_v3_privproto" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_v3_privproto" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_v3_privproto')" type="button"><span class="property-name">v3_privproto</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_v3_privproto" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_v3_privproto" id="Call_parameters_items_i0_v3_privproto">
+    <div class="card-body pl-5">
+    <h4>V3 Privproto</h4><br/>
+    <span class="description"><p>Privacy protocol for SNMP version 3 encryption. <code>null</code> means no encryption.      If set, ['AES'|'DES'], a <code>privpassphrase</code> must be supplied.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_v3_privproto_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_v3_privproto_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_v3_privproto_anyOf_i0" id="Call_parameters_items_i0_v3_privproto_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_v3_privproto_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_v3_privproto_anyOf_i1" id="Call_parameters_items_i0_v3_privproto_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_v3_privproto_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_v3_privproto_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: enum (of null or string)</span><br/>
+    <div class="enum-value" id="Call_parameters_items_i0_v3_privproto_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">null</li><li class="list-group-item enum-item">"AES"</li><li class="list-group-item enum-item">"DES"</li></ul>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_v3_privproto_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_v3_privpassphrase">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_v3_privpassphrase">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_v3_privpassphrase" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_v3_privpassphrase" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_v3_privpassphrase')" type="button"><span class="property-name">v3_privpassphrase</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_v3_privpassphrase" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_v3_privpassphrase" id="Call_parameters_items_i0_v3_privpassphrase">
+    <div class="card-body pl-5">
+    <h4>V3 Privpassphrase</h4><br/>
+    <span class="description"><p>Privacy passphrase for SNMP version 3 encryption. This field is required when <code>privproto</code> is set.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_v3_privpassphrase_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_v3_privpassphrase_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_v3_privpassphrase_anyOf_i0" id="Call_parameters_items_i0_v3_privpassphrase_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_v3_privpassphrase_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_v3_privpassphrase_anyOf_i1" id="Call_parameters_items_i0_v3_privpassphrase_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_v3_privpassphrase_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_v3_privpassphrase_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_v3_privpassphrase_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_loglevel">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_loglevel">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_loglevel" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_loglevel" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_loglevel')" type="button"><span class="property-name">loglevel</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_loglevel" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_loglevel" id="Call_parameters_items_i0_loglevel">
+    <div class="card-body pl-5">
+    <h4>Loglevel</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Logging level for SNMP daemon (0=emergency to 7=debug).</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_loglevel_number">Value must be greater or equal to <code>0</code> and lesser or equal to <code>7</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_options">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_options">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_options" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_options" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_options')" type="button"><span class="property-name">options</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_options" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_options" id="Call_parameters_items_i0_options">
+    <div class="card-body pl-5">
+    <h4>Options</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Additional SNMP daemon configuration options.     Manual settings should be used with caution as they may render the SNMP service non-functional.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_zilstat">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_zilstat">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_zilstat" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_zilstat" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_zilstat')" type="button"><span class="property-name">zilstat</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_zilstat" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_zilstat" id="Call_parameters_items_i0_zilstat">
+    <div class="card-body pl-5">
+    <h4>Zilstat</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to enable ZFS dataset statistics collection for SNMP.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>SnmpEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The updated SNMP service configuration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_location">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_location">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_location" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_location" data-toggle="collapse" onclick="setAnchor('#Return_value_location')" type="button"><span class="property-name">location</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_location" class="collapse property-definition-div" data-parent="#accordionReturn_value_location" id="Return_value_location">
+    <div class="card-body pl-5">
+    <h4>Location</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>A comment describing the physical location of the server.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_contact">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_contact">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_contact" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_contact" data-toggle="collapse" onclick="setAnchor('#Return_value_contact')" type="button"><span class="property-name">contact</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_contact" class="collapse property-definition-div" data-parent="#accordionReturn_value_contact" id="Return_value_contact">
+    <div class="card-body pl-5">
+    <h4>Contact</h4><br/>
+    <span class="description"><p>Contact information for the system administrator (email or name).</p>
+    </span><div class="any-of-value" id="Return_value_contact_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_contact_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_contact_anyOf_i0" id="Return_value_contact_anyOf_i0" onclick="setAnchor('#Return_value_contact_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_contact_anyOf_i1" id="Return_value_contact_anyOf_i1" onclick="setAnchor('#Return_value_contact_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_contact_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: email</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_contact_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="pattern-value" id="Return_value_contact_anyOf_i1_pattern">Must match regular expression: <code>^[-_a-zA-Z0-9\s]*$</code></span>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_traps">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_traps">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_traps" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_traps" data-toggle="collapse" onclick="setAnchor('#Return_value_traps')" type="button"><span class="property-name">traps</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_traps" class="collapse property-definition-div" data-parent="#accordionReturn_value_traps" id="Return_value_traps">
+    <div class="card-body pl-5">
+    <h4>Traps</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether SNMP traps are enabled.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_v3">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_v3">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_v3" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_v3" data-toggle="collapse" onclick="setAnchor('#Return_value_v3')" type="button"><span class="property-name">v3</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_v3" class="collapse property-definition-div" data-parent="#accordionReturn_value_v3" id="Return_value_v3">
+    <div class="card-body pl-5">
+    <h4>V3</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether SNMP version 3 is enabled.  Enabling version 3 also requires username, authtype and password.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_community">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_community">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_community" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_community" data-toggle="collapse" onclick="setAnchor('#Return_value_community')" type="button"><span class="property-name">community</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_community" class="collapse property-definition-div" data-parent="#accordionReturn_value_community" id="Return_value_community">
+    <div class="card-body pl-5">
+    <h4>Community</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "public"</span><br/>
+    <span class="description"><p>SNMP community string for v1/v2c access. Allows letters, numbers, hyphens, underscores, and spaces.</p>
+    </span><span class="pattern-value" id="Return_value_community_pattern">Must match regular expression: <code>^[-_a-zA-Z0-9\s]*$</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_v3_username">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_v3_username">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_v3_username" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_v3_username" data-toggle="collapse" onclick="setAnchor('#Return_value_v3_username')" type="button"><span class="property-name">v3_username</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_v3_username" class="collapse property-definition-div" data-parent="#accordionReturn_value_v3_username" id="Return_value_v3_username">
+    <div class="card-body pl-5">
+    <h4>V3 Username</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Username for SNMP version 3 authentication.</p>
+    </span>
+    <p><span class="badge badge-light restriction max-length-restriction" id="Return_value_v3_username_maxLength">Must be at most <code>20</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_v3_authtype">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_v3_authtype">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_v3_authtype" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_v3_authtype" data-toggle="collapse" onclick="setAnchor('#Return_value_v3_authtype')" type="button"><span class="property-name">v3_authtype</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_v3_authtype" class="collapse property-definition-div" data-parent="#accordionReturn_value_v3_authtype" id="Return_value_v3_authtype">
+    <div class="card-body pl-5">
+    <h4>V3 Authtype</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Authentication type for SNMP version 3 (empty string means no authentication).</p>
+    </span><div class="enum-value" id="Return_value_v3_authtype_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li><li class="list-group-item enum-item">"MD5"</li><li class="list-group-item enum-item">"SHA"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_v3_password">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_v3_password">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_v3_password" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_v3_password" data-toggle="collapse" onclick="setAnchor('#Return_value_v3_password')" type="button"><span class="property-name">v3_password</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_v3_password" class="collapse property-definition-div" data-parent="#accordionReturn_value_v3_password" id="Return_value_v3_password">
+    <div class="card-body pl-5">
+    <h4>V3 Password</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Password for SNMP version 3 authentication.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_v3_privproto">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_v3_privproto">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_v3_privproto" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_v3_privproto" data-toggle="collapse" onclick="setAnchor('#Return_value_v3_privproto')" type="button"><span class="property-name">v3_privproto</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_v3_privproto" class="collapse property-definition-div" data-parent="#accordionReturn_value_v3_privproto" id="Return_value_v3_privproto">
+    <div class="card-body pl-5">
+    <h4>V3 Privproto</h4><br/>
+    <span class="description"><p>Privacy protocol for SNMP version 3 encryption. <code>null</code> means no encryption.      If set, ['AES'|'DES'], a <code>privpassphrase</code> must be supplied.</p>
+    </span><div class="any-of-value" id="Return_value_v3_privproto_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_v3_privproto_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_v3_privproto_anyOf_i0" id="Return_value_v3_privproto_anyOf_i0" onclick="setAnchor('#Return_value_v3_privproto_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_v3_privproto_anyOf_i1" id="Return_value_v3_privproto_anyOf_i1" onclick="setAnchor('#Return_value_v3_privproto_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_v3_privproto_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: enum (of null or string)</span><br/>
+    <div class="enum-value" id="Return_value_v3_privproto_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">null</li><li class="list-group-item enum-item">"AES"</li><li class="list-group-item enum-item">"DES"</li></ul>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_v3_privproto_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_v3_privpassphrase">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_v3_privpassphrase">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_v3_privpassphrase" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_v3_privpassphrase" data-toggle="collapse" onclick="setAnchor('#Return_value_v3_privpassphrase')" type="button"><span class="property-name">v3_privpassphrase</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_v3_privpassphrase" class="collapse property-definition-div" data-parent="#accordionReturn_value_v3_privpassphrase" id="Return_value_v3_privpassphrase">
+    <div class="card-body pl-5">
+    <h4>V3 Privpassphrase</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Privacy passphrase for SNMP version 3 encryption. This field is required when <code>privproto</code> is set.</p>
+    </span><div class="any-of-value" id="Return_value_v3_privpassphrase_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_v3_privpassphrase_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_v3_privpassphrase_anyOf_i0" id="Return_value_v3_privpassphrase_anyOf_i0" onclick="setAnchor('#Return_value_v3_privpassphrase_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_v3_privpassphrase_anyOf_i1" id="Return_value_v3_privpassphrase_anyOf_i1" onclick="setAnchor('#Return_value_v3_privpassphrase_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_v3_privpassphrase_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_v3_privpassphrase_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_loglevel">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_loglevel">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_loglevel" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_loglevel" data-toggle="collapse" onclick="setAnchor('#Return_value_loglevel')" type="button"><span class="property-name">loglevel</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_loglevel" class="collapse property-definition-div" data-parent="#accordionReturn_value_loglevel" id="Return_value_loglevel">
+    <div class="card-body pl-5">
+    <h4>Loglevel</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Logging level for SNMP daemon (0=emergency to 7=debug).</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_loglevel_number">Value must be greater or equal to <code>0</code> and lesser or equal to <code>7</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_options">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_options">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_options" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_options" data-toggle="collapse" onclick="setAnchor('#Return_value_options')" type="button"><span class="property-name">options</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_options" class="collapse property-definition-div" data-parent="#accordionReturn_value_options" id="Return_value_options">
+    <div class="card-body pl-5">
+    <h4>Options</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Additional SNMP daemon configuration options.     Manual settings should be used with caution as they may render the SNMP service non-functional.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_zilstat">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_zilstat">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_zilstat" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_zilstat" data-toggle="collapse" onclick="setAnchor('#Return_value_zilstat')" type="button"><span class="property-name">zilstat</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_zilstat" class="collapse property-definition-div" data-parent="#accordionReturn_value_zilstat" id="Return_value_zilstat">
+    <div class="card-body pl-5">
+    <h4>Zilstat</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to enable ZFS dataset statistics collection for SNMP.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Placeholder identifier.  Not used as there is only one.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SYSTEM_GENERAL_WRITE
+

@@ -1,0 +1,8 @@
+config
+------
+
+.. toctree::
+
+   api_methods_config.reset
+   api_methods_config.save
+   api_methods_config.upload

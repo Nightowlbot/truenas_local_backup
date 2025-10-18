@@ -1,0 +1,6 @@
+network.general
+---------------
+
+.. toctree::
+
+   api_methods_network.general.summary

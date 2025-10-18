@@ -1,0 +1,101 @@
+tunable.tunable_type_choices
+============================
+
+Retrieve the supported tunable types that can be changed.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>TunableTunableTypeChoices</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Available tunable types with their identifiers.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_SYSCTL">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_SYSCTL">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_SYSCTL" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_SYSCTL" data-toggle="collapse" onclick="setAnchor('#Return_value_SYSCTL')" type="button"><span class="property-name">SYSCTL</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_SYSCTL" class="collapse property-definition-div" data-parent="#accordionReturn_value_SYSCTL" id="Return_value_SYSCTL">
+    <div class="card-body pl-5">
+    <h4>Sysctl</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>System control parameters that affect kernel behavior.</p>
+    </span><div class="enum-value" id="Return_value_SYSCTL_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"SYSCTL"</li></ul>
+    </div><span class="const-value" id="Return_value_SYSCTL_const">Specific value: <code>"SYSCTL"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_UDEV">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_UDEV">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_UDEV" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_UDEV" data-toggle="collapse" onclick="setAnchor('#Return_value_UDEV')" type="button"><span class="property-name">UDEV</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_UDEV" class="collapse property-definition-div" data-parent="#accordionReturn_value_UDEV" id="Return_value_UDEV">
+    <div class="card-body pl-5">
+    <h4>Udev</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Device management rules for hardware detection and configuration.</p>
+    </span><div class="enum-value" id="Return_value_UDEV_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"UDEV"</li></ul>
+    </div><span class="const-value" id="Return_value_UDEV_const">Specific value: <code>"UDEV"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_ZFS">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_ZFS">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_ZFS" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_ZFS" data-toggle="collapse" onclick="setAnchor('#Return_value_ZFS')" type="button"><span class="property-name">ZFS</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_ZFS" class="collapse property-definition-div" data-parent="#accordionReturn_value_ZFS" id="Return_value_ZFS">
+    <div class="card-body pl-5">
+    <h4>Zfs</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>ZFS filesystem kernel module parameters.</p>
+    </span><div class="enum-value" id="Return_value_ZFS_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"ZFS"</li></ul>
+    </div><span class="const-value" id="Return_value_ZFS_const">Specific value: <code>"ZFS"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* READONLY_ADMIN | SYSTEM_TUNABLE_READ
+

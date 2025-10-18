@@ -1,0 +1,6 @@
+device
+------
+
+.. toctree::
+
+   api_methods_device.get_info

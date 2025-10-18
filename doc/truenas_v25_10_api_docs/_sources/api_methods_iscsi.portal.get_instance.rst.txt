@@ -1,0 +1,337 @@
+iscsi.portal.get_instance
+=========================
+
+Returns instance matching `id`. If `id` is not found, Validation error is raised.
+
+Please see `query` method documentation for `options`.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: id</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    <h5>Parameter 2: options</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>options</h4><span class="badge badge-dark value-type">Type: object</span> <span class="badge badge-success default-value">Default: {}</span><br/>
+    <span class="description"><p>Query options customize the results returned by a query method. More complete documentation with examples     are covered in the "Query methods" section of the TrueNAS API documentation. </p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_extra">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_extra">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_extra" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_extra" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_extra')" type="button"><span class="property-name">extra</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_extra" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_extra" id="Call_parameters_items_i1_extra">
+    <div class="card-body pl-5">
+    <h4>Extra</h4><span class="badge badge-dark value-type">Type: object</span> <span class="badge badge-success default-value">Default: {}</span><br/>
+    <span class="description"><p>Extra options are defined on a per-endpoint basis and are described in the documentation for the associated     query method. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_order_by">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_order_by">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_order_by" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_order_by" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_order_by')" type="button"><span class="property-name">order_by</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_order_by" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_order_by" id="Call_parameters_items_i1_order_by">
+    <div class="card-body pl-5">
+    <h4>Order By</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>An array of field names describing the manner in which query results should be ordered. The field names may     also have one of more of the following special prefixes: <code>-</code> (reverse sort direction), <code>nulls_first:</code> (place     any null values at the head of the results list), <code>nulls_last:</code> (place any null values at the tail of the     results list). </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1_order_by_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div><br/>
+    <div class="badge badge-secondary">Example:</div>
+    <br/><div class="jumbotron examples" id="Call_parameters_items_i1_order_by_ex1"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="w">    </span><span class="s2">"size"</span><span class="p">,</span>
+    <span class="w">    </span><span class="s2">"-devname"</span><span class="p">,</span>
+    <span class="w">    </span><span class="s2">"nulls_first:-expiretime"</span>
+    <span class="p">]</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_select">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_select">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_select" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_select" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_select')" type="button"><span class="property-name">select</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_select" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_select" id="Call_parameters_items_i1_select">
+    <div class="card-body pl-5">
+    <h4>Select</h4><span class="badge badge-dark value-type">Type: array</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>An array of field names specifying the exact fields to include in the query return. The dot character <code>.</code>     may be used to explicitly select only subkeys of the query result. </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1_select_items">
+    <br/>
+    <div class="any-of-value" id="Call_parameters_items_i1_select_items_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i1_select_items_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_select_items_anyOf_i0" id="Call_parameters_items_i1_select_items_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i1_select_items_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_select_items_anyOf_i1" id="Call_parameters_items_i1_select_items_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i1_select_items_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i1_select_items_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i1_select_items_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1_select_items_anyOf_i1_items">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div>
+    </div>
+    </div></div></div>
+    </div>
+    </div><br/>
+    <div class="badge badge-secondary">Example:</div>
+    <br/><div class="jumbotron examples" id="Call_parameters_items_i1_select_ex1"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="w">    </span><span class="s2">"username"</span><span class="p">,</span>
+    <span class="w">    </span><span class="s2">"Authentication.status"</span>
+    <span class="p">]</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_count">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_count">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_count" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_count" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_count')" type="button"><span class="property-name">count</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_count" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_count" id="Call_parameters_items_i1_count">
+    <div class="card-body pl-5">
+    <h4>Count</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Return a numeric value representing the number of items that match the specified <code>query-filters</code>. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_get">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_get">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_get" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_get" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_get')" type="button"><span class="property-name">get</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_get" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_get" id="Call_parameters_items_i1_get">
+    <div class="card-body pl-5">
+    <h4>Get</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Return the JSON object of the first result matching the specified <code>query-filters</code>. The query fails     if there specified <code>query-filters</code> return no results. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_offset">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_offset">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_offset" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_offset" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_offset')" type="button"><span class="property-name">offset</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_offset" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_offset" id="Call_parameters_items_i1_offset">
+    <div class="card-body pl-5">
+    <h4>Offset</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+    <span class="description"><p>This specifies the beginning offset of the results array. When combined with the <code>limit</code> query-option     it may be used to implement pagination of large results arrays. WARNING: some query methods provide     volatile results and the onus is on the developer to understand whether pagination is appropriate     for a particular query API method. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_limit">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_limit">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_limit" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_limit" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_limit')" type="button"><span class="property-name">limit</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_limit" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_limit" id="Call_parameters_items_i1_limit">
+    <div class="card-body pl-5">
+    <h4>Limit</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+    <span class="description"><p>This specifies the maximum number of results matching the specified <code>query-filters</code> to return. When     combined wtih the <code>offset</code> query-option it may be used to implement pagination of large results arrays.</p>
+    <p>WARNING: Some query methods provide volatile results and the onus is on the developer to understand whether     pagination is appropriate for a particular query API method. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_force_sql_filters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_force_sql_filters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_force_sql_filters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_force_sql_filters" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_force_sql_filters')" type="button"><span class="property-name">force_sql_filters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_force_sql_filters" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_force_sql_filters" id="Call_parameters_items_i1_force_sql_filters">
+    <div class="card-body pl-5">
+    <h4>Force Sql Filters</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Force use of SQL for result filtering to reduce response time. May not work for all methods.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>IscsiPortalEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the iSCSI portal.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_listen">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_listen">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_listen" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_listen" data-toggle="collapse" onclick="setAnchor('#Return_value_listen')" type="button"><span class="property-name">listen</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_listen" class="collapse property-definition-div" data-parent="#accordionReturn_value_listen" id="Return_value_listen">
+    <div class="card-body pl-5">
+    <h4>Listen</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="description"><p>Array of IP address and port combinations for the portal to listen on.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_listen_items">
+    <h4>IscsiPortalIPInfo</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_listen_items_ip">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_listen_items_ip">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_listen_items_ip" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_listen_items_ip" data-toggle="collapse" onclick="setAnchor('#Return_value_listen_items_ip')" type="button"><span class="property-name">ip</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_listen_items_ip" class="collapse property-definition-div" data-parent="#accordionReturn_value_listen_items_ip" id="Return_value_listen_items_ip">
+    <div class="card-body pl-5">
+    <h4>Ip</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>IP address for the iSCSI portal to listen on.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_listen_items_ip_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_listen_items_port">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_listen_items_port">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_listen_items_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_listen_items_port" data-toggle="collapse" onclick="setAnchor('#Return_value_listen_items_port')" type="button"><span class="property-name">port</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_listen_items_port" class="collapse property-definition-div" data-parent="#accordionReturn_value_listen_items_port" id="Return_value_listen_items_port">
+    <div class="card-body pl-5">
+    <h4>Port</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>TCP port number for the iSCSI portal.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_tag">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_tag">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_tag" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_tag" data-toggle="collapse" onclick="setAnchor('#Return_value_tag')" type="button"><span class="property-name">tag</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_tag" class="collapse property-definition-div" data-parent="#accordionReturn_value_tag" id="Return_value_tag">
+    <div class="card-body pl-5">
+    <h4>Tag</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Numeric tag used to associate this portal with iSCSI targets.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_comment">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_comment">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_comment" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_comment" data-toggle="collapse" onclick="setAnchor('#Return_value_comment')" type="button"><span class="property-name">comment</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_comment" class="collapse property-definition-div" data-parent="#accordionReturn_value_comment" id="Return_value_comment">
+    <div class="card-body pl-5">
+    <h4>Comment</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+    <span class="description"><p>Optional comment describing the portal.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SHARING_ISCSI_PORTAL_READ
+

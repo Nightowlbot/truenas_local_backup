@@ -1,0 +1,252 @@
+vmware.update
+=============
+
+Update VMWare snapshot of `id`.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: id</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>ID of the VMware configuration to update.</p>
+    </span>
+    </div>
+    </div>
+    <h5>Parameter 2: vmware_update</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>vmware_update</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Updated configuration for the VMware integration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_datastore">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_datastore">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_datastore" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_datastore" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_datastore')" type="button"><span class="property-name">datastore</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_datastore" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_datastore" id="Call_parameters_items_i1_datastore">
+    <div class="card-body pl-5">
+    <h4>Datastore</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Valid datastore name which exists on the VMWare host.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_filesystem">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_filesystem">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_filesystem" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_filesystem" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_filesystem')" type="button"><span class="property-name">filesystem</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_filesystem" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_filesystem" id="Call_parameters_items_i1_filesystem">
+    <div class="card-body pl-5">
+    <h4>Filesystem</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>ZFS filesystem or dataset to use for VMware storage.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_hostname">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_hostname">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_hostname" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_hostname" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_hostname')" type="button"><span class="property-name">hostname</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_hostname" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_hostname" id="Call_parameters_items_i1_hostname">
+    <div class="card-body pl-5">
+    <h4>Hostname</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Valid IP address / hostname of a VMWare host. When clustering, this is the vCenter server for the cluster.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_username">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_username">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_username" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_username" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_username')" type="button"><span class="property-name">username</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_username" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_username" id="Call_parameters_items_i1_username">
+    <div class="card-body pl-5">
+    <h4>Username</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Credentials used to authorize access to the VMWare host.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_password">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_password">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_password" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_password" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_password')" type="button"><span class="property-name">password</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_password" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_password" id="Call_parameters_items_i1_password">
+    <div class="card-body pl-5">
+    <h4>Password</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Password for VMware host authentication.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>VMWareEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The updated VMware integration configuration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the VMware configuration.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_datastore">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_datastore">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_datastore" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_datastore" data-toggle="collapse" onclick="setAnchor('#Return_value_datastore')" type="button"><span class="property-name">datastore</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_datastore" class="collapse property-definition-div" data-parent="#accordionReturn_value_datastore" id="Return_value_datastore">
+    <div class="card-body pl-5">
+    <h4>Datastore</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Valid datastore name which exists on the VMWare host.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_filesystem">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_filesystem">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_filesystem" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_filesystem" data-toggle="collapse" onclick="setAnchor('#Return_value_filesystem')" type="button"><span class="property-name">filesystem</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_filesystem" class="collapse property-definition-div" data-parent="#accordionReturn_value_filesystem" id="Return_value_filesystem">
+    <div class="card-body pl-5">
+    <h4>Filesystem</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>ZFS filesystem or dataset to use for VMware storage.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_hostname">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_hostname">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_hostname" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_hostname" data-toggle="collapse" onclick="setAnchor('#Return_value_hostname')" type="button"><span class="property-name">hostname</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_hostname" class="collapse property-definition-div" data-parent="#accordionReturn_value_hostname" id="Return_value_hostname">
+    <div class="card-body pl-5">
+    <h4>Hostname</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Valid IP address / hostname of a VMWare host. When clustering, this is the vCenter server for the cluster.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_username">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_username">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_username" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_username" data-toggle="collapse" onclick="setAnchor('#Return_value_username')" type="button"><span class="property-name">username</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_username" class="collapse property-definition-div" data-parent="#accordionReturn_value_username" id="Return_value_username">
+    <div class="card-body pl-5">
+    <h4>Username</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Credentials used to authorize access to the VMWare host.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_password">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_password">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_password" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_password" data-toggle="collapse" onclick="setAnchor('#Return_value_password')" type="button"><span class="property-name">password</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_password" class="collapse property-definition-div" data-parent="#accordionReturn_value_password" id="Return_value_password">
+    <div class="card-body pl-5">
+    <h4>Password</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Password for VMware host authentication.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_state">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_state">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_state" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_state" data-toggle="collapse" onclick="setAnchor('#Return_value_state')" type="button"><span class="property-name">state</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_state" class="collapse property-definition-div" data-parent="#accordionReturn_value_state" id="Return_value_state">
+    <div class="card-body pl-5">
+    <h4>State</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Current connection and synchronization state with the VMware host.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SNAPSHOT_TASK_WRITE
+

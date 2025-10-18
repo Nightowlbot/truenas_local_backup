@@ -1,0 +1,188 @@
+pool.dataset.checksum_choices
+=============================
+
+Retrieve checksums supported for ZFS dataset.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>PoolDatasetChecksumChoicesResult</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>PoolDatasetChecksumChoicesResult return fields.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_ON">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_ON">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_ON" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_ON" data-toggle="collapse" onclick="setAnchor('#Return_value_ON')" type="button"><span class="property-name">ON</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_ON" class="collapse property-definition-div" data-parent="#accordionReturn_value_ON" id="Return_value_ON">
+    <div class="card-body pl-5">
+    <h4>On</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_ON_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"ON"</li></ul>
+    </div><span class="const-value" id="Return_value_ON_const">Specific value: <code>"ON"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_FLETCHER2">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_FLETCHER2">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_FLETCHER2" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_FLETCHER2" data-toggle="collapse" onclick="setAnchor('#Return_value_FLETCHER2')" type="button"><span class="property-name">FLETCHER2</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_FLETCHER2" class="collapse property-definition-div" data-parent="#accordionReturn_value_FLETCHER2" id="Return_value_FLETCHER2">
+    <div class="card-body pl-5">
+    <h4>Fletcher2</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_FLETCHER2_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"FLETCHER2"</li></ul>
+    </div><span class="const-value" id="Return_value_FLETCHER2_const">Specific value: <code>"FLETCHER2"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_FLETCHER4">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_FLETCHER4">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_FLETCHER4" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_FLETCHER4" data-toggle="collapse" onclick="setAnchor('#Return_value_FLETCHER4')" type="button"><span class="property-name">FLETCHER4</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_FLETCHER4" class="collapse property-definition-div" data-parent="#accordionReturn_value_FLETCHER4" id="Return_value_FLETCHER4">
+    <div class="card-body pl-5">
+    <h4>Fletcher4</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_FLETCHER4_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"FLETCHER4"</li></ul>
+    </div><span class="const-value" id="Return_value_FLETCHER4_const">Specific value: <code>"FLETCHER4"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_SHA256">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_SHA256">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_SHA256" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_SHA256" data-toggle="collapse" onclick="setAnchor('#Return_value_SHA256')" type="button"><span class="property-name">SHA256</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_SHA256" class="collapse property-definition-div" data-parent="#accordionReturn_value_SHA256" id="Return_value_SHA256">
+    <div class="card-body pl-5">
+    <h4>Sha256</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_SHA256_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"SHA256"</li></ul>
+    </div><span class="const-value" id="Return_value_SHA256_const">Specific value: <code>"SHA256"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_SHA512">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_SHA512">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_SHA512" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_SHA512" data-toggle="collapse" onclick="setAnchor('#Return_value_SHA512')" type="button"><span class="property-name">SHA512</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_SHA512" class="collapse property-definition-div" data-parent="#accordionReturn_value_SHA512" id="Return_value_SHA512">
+    <div class="card-body pl-5">
+    <h4>Sha512</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_SHA512_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"SHA512"</li></ul>
+    </div><span class="const-value" id="Return_value_SHA512_const">Specific value: <code>"SHA512"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_SKEIN">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_SKEIN">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_SKEIN" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_SKEIN" data-toggle="collapse" onclick="setAnchor('#Return_value_SKEIN')" type="button"><span class="property-name">SKEIN</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_SKEIN" class="collapse property-definition-div" data-parent="#accordionReturn_value_SKEIN" id="Return_value_SKEIN">
+    <div class="card-body pl-5">
+    <h4>Skein</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_SKEIN_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"SKEIN"</li></ul>
+    </div><span class="const-value" id="Return_value_SKEIN_const">Specific value: <code>"SKEIN"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_EDONR">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_EDONR">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_EDONR" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_EDONR" data-toggle="collapse" onclick="setAnchor('#Return_value_EDONR')" type="button"><span class="property-name">EDONR</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_EDONR" class="collapse property-definition-div" data-parent="#accordionReturn_value_EDONR" id="Return_value_EDONR">
+    <div class="card-body pl-5">
+    <h4>Edonr</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_EDONR_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"EDONR"</li></ul>
+    </div><span class="const-value" id="Return_value_EDONR_const">Specific value: <code>"EDONR"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_BLAKE3">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_BLAKE3">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_BLAKE3" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_BLAKE3" data-toggle="collapse" onclick="setAnchor('#Return_value_BLAKE3')" type="button"><span class="property-name">BLAKE3</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_BLAKE3" class="collapse property-definition-div" data-parent="#accordionReturn_value_BLAKE3" id="Return_value_BLAKE3">
+    <div class="card-body pl-5">
+    <h4>Blake3</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_BLAKE3_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"BLAKE3"</li></ul>
+    </div><span class="const-value" id="Return_value_BLAKE3_const">Specific value: <code>"BLAKE3"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* DATASET_READ | READONLY_ADMIN
+

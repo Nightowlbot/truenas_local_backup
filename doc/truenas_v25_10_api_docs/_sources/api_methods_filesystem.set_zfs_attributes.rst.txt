@@ -1,0 +1,589 @@
+filesystem.set_zfs_attributes
+=============================
+
+Set special ZFS-related file flags on the specified path
+
+`readonly` - this maps to READONLY MS-DOS attribute. When set, file may not be written to (toggling does not impact existing file opens).
+
+`hidden` - this maps to HIDDEN MS-DOS attribute. When set, the SMB HIDDEN flag is set and file is "hidden" from the perspective of SMB clients.
+
+`system` - this maps to SYSTEM MS-DOS attribute. Is presented to SMB clients, but has no impact on local filesystem.
+
+`archive` - this maps to ARCHIVE MS-DOS attribute. Value is reset to True whenever file is modified.
+
+`immutable` - file may not be altered or deleted. Also appears as IMMUTABLE in attributes in `filesystem.stat` output and as STATX_ATTR_IMMUTABLE in statx() response.
+
+`nounlink` - file may be altered but not deleted.
+
+`appendonly` - file may only be opened with O_APPEND flag. Also appears as APPEND in attributes in `filesystem.stat` output and as STATX_ATTR_APPEND in statx() response.
+
+`offline` - this maps to OFFLINE MS-DOS attribute. Is presented to SMB clients, but has no impact on local filesystem.
+
+`sparse` - maps to SPARSE MS-DOS attribute. Is presented to SMB clients, but has no impact on local filesystem.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: set_zfs_file_attributes</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>set_zfs_file_attributes</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>FilesystemSetZfsAttributesArgs parameters.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_path">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_path">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_path" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_path')" type="button"><span class="property-name">path</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_path" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_path" id="Call_parameters_items_i0_path">
+    <div class="card-body pl-5">
+    <h4>Path</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Path to the file to set ZFS attributes on.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_path_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_zfs_file_attributes">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_zfs_file_attributes">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_zfs_file_attributes" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_zfs_file_attributes" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes')" type="button"><span class="property-name">zfs_file_attributes</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_zfs_file_attributes" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_zfs_file_attributes" id="Call_parameters_items_i0_zfs_file_attributes">
+    <div class="card-body pl-5">
+    <h4>ZFSFileAttrsData</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>ZFS file attributes to set.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_zfs_file_attributes_readonly">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_zfs_file_attributes_readonly">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_zfs_file_attributes_readonly" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_zfs_file_attributes_readonly" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_readonly')" type="button"><span class="property-name">readonly</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_zfs_file_attributes_readonly" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_zfs_file_attributes_readonly" id="Call_parameters_items_i0_zfs_file_attributes_readonly">
+    <div class="card-body pl-5">
+    <h4>Readonly</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>READONLY MS-DOS attribute. When set, file may not be written to (toggling     does not impact existing file opens). </p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_zfs_file_attributes_readonly_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_zfs_file_attributes_readonly_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_zfs_file_attributes_readonly_anyOf_i0" id="Call_parameters_items_i0_zfs_file_attributes_readonly_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_readonly_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_zfs_file_attributes_readonly_anyOf_i1" id="Call_parameters_items_i0_zfs_file_attributes_readonly_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_readonly_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_zfs_file_attributes_readonly_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_zfs_file_attributes_readonly_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_zfs_file_attributes_hidden">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_zfs_file_attributes_hidden">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_zfs_file_attributes_hidden" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_zfs_file_attributes_hidden" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_hidden')" type="button"><span class="property-name">hidden</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_zfs_file_attributes_hidden" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_zfs_file_attributes_hidden" id="Call_parameters_items_i0_zfs_file_attributes_hidden">
+    <div class="card-body pl-5">
+    <h4>Hidden</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>HIDDEN MS-DOS attribute. When set, the SMB HIDDEN flag is set and file     is "hidden" from the perspective of SMB clients. </p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_zfs_file_attributes_hidden_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_zfs_file_attributes_hidden_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_zfs_file_attributes_hidden_anyOf_i0" id="Call_parameters_items_i0_zfs_file_attributes_hidden_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_hidden_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_zfs_file_attributes_hidden_anyOf_i1" id="Call_parameters_items_i0_zfs_file_attributes_hidden_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_hidden_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_zfs_file_attributes_hidden_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_zfs_file_attributes_hidden_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_zfs_file_attributes_system">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_zfs_file_attributes_system">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_zfs_file_attributes_system" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_zfs_file_attributes_system" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_system')" type="button"><span class="property-name">system</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_zfs_file_attributes_system" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_zfs_file_attributes_system" id="Call_parameters_items_i0_zfs_file_attributes_system">
+    <div class="card-body pl-5">
+    <h4>System</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>SYSTEM MS-DOS attribute. Is presented to SMB clients, but has no impact on local filesystem. </p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_zfs_file_attributes_system_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_zfs_file_attributes_system_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_zfs_file_attributes_system_anyOf_i0" id="Call_parameters_items_i0_zfs_file_attributes_system_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_system_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_zfs_file_attributes_system_anyOf_i1" id="Call_parameters_items_i0_zfs_file_attributes_system_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_system_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_zfs_file_attributes_system_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_zfs_file_attributes_system_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_zfs_file_attributes_archive">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_zfs_file_attributes_archive">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_zfs_file_attributes_archive" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_zfs_file_attributes_archive" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_archive')" type="button"><span class="property-name">archive</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_zfs_file_attributes_archive" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_zfs_file_attributes_archive" id="Call_parameters_items_i0_zfs_file_attributes_archive">
+    <div class="card-body pl-5">
+    <h4>Archive</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>ARCHIVE MS-DOS attribute. Value is reset to True whenever file is modified. </p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_zfs_file_attributes_archive_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_zfs_file_attributes_archive_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_zfs_file_attributes_archive_anyOf_i0" id="Call_parameters_items_i0_zfs_file_attributes_archive_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_archive_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_zfs_file_attributes_archive_anyOf_i1" id="Call_parameters_items_i0_zfs_file_attributes_archive_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_archive_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_zfs_file_attributes_archive_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_zfs_file_attributes_archive_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_zfs_file_attributes_immutable">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_zfs_file_attributes_immutable">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_zfs_file_attributes_immutable" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_zfs_file_attributes_immutable" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_immutable')" type="button"><span class="property-name">immutable</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_zfs_file_attributes_immutable" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_zfs_file_attributes_immutable" id="Call_parameters_items_i0_zfs_file_attributes_immutable">
+    <div class="card-body pl-5">
+    <h4>Immutable</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>File may not be altered or deleted. Also appears as IMMUTABLE in attributes in     <code>filesystem.stat</code> output and as STATX<em>ATTR</em>IMMUTABLE in statx() response. </p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_zfs_file_attributes_immutable_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_zfs_file_attributes_immutable_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_zfs_file_attributes_immutable_anyOf_i0" id="Call_parameters_items_i0_zfs_file_attributes_immutable_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_immutable_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_zfs_file_attributes_immutable_anyOf_i1" id="Call_parameters_items_i0_zfs_file_attributes_immutable_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_immutable_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_zfs_file_attributes_immutable_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_zfs_file_attributes_immutable_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_zfs_file_attributes_nounlink">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_zfs_file_attributes_nounlink">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_zfs_file_attributes_nounlink" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_zfs_file_attributes_nounlink" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_nounlink')" type="button"><span class="property-name">nounlink</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_zfs_file_attributes_nounlink" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_zfs_file_attributes_nounlink" id="Call_parameters_items_i0_zfs_file_attributes_nounlink">
+    <div class="card-body pl-5">
+    <h4>Nounlink</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>File may be altered but not deleted. </p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_zfs_file_attributes_nounlink_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_zfs_file_attributes_nounlink_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_zfs_file_attributes_nounlink_anyOf_i0" id="Call_parameters_items_i0_zfs_file_attributes_nounlink_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_nounlink_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_zfs_file_attributes_nounlink_anyOf_i1" id="Call_parameters_items_i0_zfs_file_attributes_nounlink_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_nounlink_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_zfs_file_attributes_nounlink_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_zfs_file_attributes_nounlink_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_zfs_file_attributes_appendonly">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_zfs_file_attributes_appendonly">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_zfs_file_attributes_appendonly" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_zfs_file_attributes_appendonly" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_appendonly')" type="button"><span class="property-name">appendonly</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_zfs_file_attributes_appendonly" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_zfs_file_attributes_appendonly" id="Call_parameters_items_i0_zfs_file_attributes_appendonly">
+    <div class="card-body pl-5">
+    <h4>Appendonly</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>File may only be opened with O<em>APPEND flag. Also appears as APPEND in     attributes in <code>filesystem.stat</code> output and as STATX</em>ATTR_APPEND in statx() response. </p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_zfs_file_attributes_appendonly_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_zfs_file_attributes_appendonly_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_zfs_file_attributes_appendonly_anyOf_i0" id="Call_parameters_items_i0_zfs_file_attributes_appendonly_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_appendonly_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_zfs_file_attributes_appendonly_anyOf_i1" id="Call_parameters_items_i0_zfs_file_attributes_appendonly_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_appendonly_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_zfs_file_attributes_appendonly_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_zfs_file_attributes_appendonly_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_zfs_file_attributes_offline">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_zfs_file_attributes_offline">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_zfs_file_attributes_offline" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_zfs_file_attributes_offline" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_offline')" type="button"><span class="property-name">offline</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_zfs_file_attributes_offline" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_zfs_file_attributes_offline" id="Call_parameters_items_i0_zfs_file_attributes_offline">
+    <div class="card-body pl-5">
+    <h4>Offline</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>OFFLINE MS-DOS attribute. Is presented to SMB clients, but has no impact on local filesystem. </p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_zfs_file_attributes_offline_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_zfs_file_attributes_offline_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_zfs_file_attributes_offline_anyOf_i0" id="Call_parameters_items_i0_zfs_file_attributes_offline_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_offline_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_zfs_file_attributes_offline_anyOf_i1" id="Call_parameters_items_i0_zfs_file_attributes_offline_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_offline_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_zfs_file_attributes_offline_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_zfs_file_attributes_offline_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_zfs_file_attributes_sparse">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_zfs_file_attributes_sparse">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_zfs_file_attributes_sparse" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_zfs_file_attributes_sparse" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_sparse')" type="button"><span class="property-name">sparse</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_zfs_file_attributes_sparse" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_zfs_file_attributes_sparse" id="Call_parameters_items_i0_zfs_file_attributes_sparse">
+    <div class="card-body pl-5">
+    <h4>Sparse</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>SPARSE MS-DOS attribute. Is presented to SMB clients, but has no impact on local filesystem. </p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_zfs_file_attributes_sparse_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_zfs_file_attributes_sparse_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_zfs_file_attributes_sparse_anyOf_i0" id="Call_parameters_items_i0_zfs_file_attributes_sparse_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_sparse_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_zfs_file_attributes_sparse_anyOf_i1" id="Call_parameters_items_i0_zfs_file_attributes_sparse_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_zfs_file_attributes_sparse_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_zfs_file_attributes_sparse_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_zfs_file_attributes_sparse_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>ZFSFileAttrsData</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The updated ZFS file attributes.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_readonly">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_readonly">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_readonly" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_readonly" data-toggle="collapse" onclick="setAnchor('#Return_value_readonly')" type="button"><span class="property-name">readonly</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_readonly" class="collapse property-definition-div" data-parent="#accordionReturn_value_readonly" id="Return_value_readonly">
+    <div class="card-body pl-5">
+    <h4>Readonly</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>READONLY MS-DOS attribute. When set, file may not be written to (toggling     does not impact existing file opens). </p>
+    </span><div class="any-of-value" id="Return_value_readonly_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_readonly_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_readonly_anyOf_i0" id="Return_value_readonly_anyOf_i0" onclick="setAnchor('#Return_value_readonly_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_readonly_anyOf_i1" id="Return_value_readonly_anyOf_i1" onclick="setAnchor('#Return_value_readonly_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_readonly_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_readonly_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_hidden">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_hidden">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_hidden" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_hidden" data-toggle="collapse" onclick="setAnchor('#Return_value_hidden')" type="button"><span class="property-name">hidden</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_hidden" class="collapse property-definition-div" data-parent="#accordionReturn_value_hidden" id="Return_value_hidden">
+    <div class="card-body pl-5">
+    <h4>Hidden</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>HIDDEN MS-DOS attribute. When set, the SMB HIDDEN flag is set and file     is "hidden" from the perspective of SMB clients. </p>
+    </span><div class="any-of-value" id="Return_value_hidden_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_hidden_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_hidden_anyOf_i0" id="Return_value_hidden_anyOf_i0" onclick="setAnchor('#Return_value_hidden_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_hidden_anyOf_i1" id="Return_value_hidden_anyOf_i1" onclick="setAnchor('#Return_value_hidden_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_hidden_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_hidden_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_system">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_system">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_system" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_system" data-toggle="collapse" onclick="setAnchor('#Return_value_system')" type="button"><span class="property-name">system</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_system" class="collapse property-definition-div" data-parent="#accordionReturn_value_system" id="Return_value_system">
+    <div class="card-body pl-5">
+    <h4>System</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>SYSTEM MS-DOS attribute. Is presented to SMB clients, but has no impact on local filesystem. </p>
+    </span><div class="any-of-value" id="Return_value_system_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_system_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_system_anyOf_i0" id="Return_value_system_anyOf_i0" onclick="setAnchor('#Return_value_system_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_system_anyOf_i1" id="Return_value_system_anyOf_i1" onclick="setAnchor('#Return_value_system_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_system_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_system_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_archive">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_archive">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_archive" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_archive" data-toggle="collapse" onclick="setAnchor('#Return_value_archive')" type="button"><span class="property-name">archive</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_archive" class="collapse property-definition-div" data-parent="#accordionReturn_value_archive" id="Return_value_archive">
+    <div class="card-body pl-5">
+    <h4>Archive</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>ARCHIVE MS-DOS attribute. Value is reset to True whenever file is modified. </p>
+    </span><div class="any-of-value" id="Return_value_archive_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_archive_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_archive_anyOf_i0" id="Return_value_archive_anyOf_i0" onclick="setAnchor('#Return_value_archive_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_archive_anyOf_i1" id="Return_value_archive_anyOf_i1" onclick="setAnchor('#Return_value_archive_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_archive_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_archive_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_immutable">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_immutable">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_immutable" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_immutable" data-toggle="collapse" onclick="setAnchor('#Return_value_immutable')" type="button"><span class="property-name">immutable</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_immutable" class="collapse property-definition-div" data-parent="#accordionReturn_value_immutable" id="Return_value_immutable">
+    <div class="card-body pl-5">
+    <h4>Immutable</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>File may not be altered or deleted. Also appears as IMMUTABLE in attributes in     <code>filesystem.stat</code> output and as STATX<em>ATTR</em>IMMUTABLE in statx() response. </p>
+    </span><div class="any-of-value" id="Return_value_immutable_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_immutable_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_immutable_anyOf_i0" id="Return_value_immutable_anyOf_i0" onclick="setAnchor('#Return_value_immutable_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_immutable_anyOf_i1" id="Return_value_immutable_anyOf_i1" onclick="setAnchor('#Return_value_immutable_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_immutable_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_immutable_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_nounlink">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_nounlink">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_nounlink" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_nounlink" data-toggle="collapse" onclick="setAnchor('#Return_value_nounlink')" type="button"><span class="property-name">nounlink</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_nounlink" class="collapse property-definition-div" data-parent="#accordionReturn_value_nounlink" id="Return_value_nounlink">
+    <div class="card-body pl-5">
+    <h4>Nounlink</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>File may be altered but not deleted. </p>
+    </span><div class="any-of-value" id="Return_value_nounlink_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_nounlink_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_nounlink_anyOf_i0" id="Return_value_nounlink_anyOf_i0" onclick="setAnchor('#Return_value_nounlink_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_nounlink_anyOf_i1" id="Return_value_nounlink_anyOf_i1" onclick="setAnchor('#Return_value_nounlink_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_nounlink_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_nounlink_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_appendonly">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_appendonly">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_appendonly" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_appendonly" data-toggle="collapse" onclick="setAnchor('#Return_value_appendonly')" type="button"><span class="property-name">appendonly</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_appendonly" class="collapse property-definition-div" data-parent="#accordionReturn_value_appendonly" id="Return_value_appendonly">
+    <div class="card-body pl-5">
+    <h4>Appendonly</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>File may only be opened with O<em>APPEND flag. Also appears as APPEND in     attributes in <code>filesystem.stat</code> output and as STATX</em>ATTR_APPEND in statx() response. </p>
+    </span><div class="any-of-value" id="Return_value_appendonly_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_appendonly_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_appendonly_anyOf_i0" id="Return_value_appendonly_anyOf_i0" onclick="setAnchor('#Return_value_appendonly_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_appendonly_anyOf_i1" id="Return_value_appendonly_anyOf_i1" onclick="setAnchor('#Return_value_appendonly_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_appendonly_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_appendonly_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_offline">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_offline">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_offline" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_offline" data-toggle="collapse" onclick="setAnchor('#Return_value_offline')" type="button"><span class="property-name">offline</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_offline" class="collapse property-definition-div" data-parent="#accordionReturn_value_offline" id="Return_value_offline">
+    <div class="card-body pl-5">
+    <h4>Offline</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>OFFLINE MS-DOS attribute. Is presented to SMB clients, but has no impact on local filesystem. </p>
+    </span><div class="any-of-value" id="Return_value_offline_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_offline_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_offline_anyOf_i0" id="Return_value_offline_anyOf_i0" onclick="setAnchor('#Return_value_offline_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_offline_anyOf_i1" id="Return_value_offline_anyOf_i1" onclick="setAnchor('#Return_value_offline_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_offline_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_offline_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_sparse">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_sparse">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_sparse" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_sparse" data-toggle="collapse" onclick="setAnchor('#Return_value_sparse')" type="button"><span class="property-name">sparse</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_sparse" class="collapse property-definition-div" data-parent="#accordionReturn_value_sparse" id="Return_value_sparse">
+    <div class="card-body pl-5">
+    <h4>Sparse</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>SPARSE MS-DOS attribute. Is presented to SMB clients, but has no impact on local filesystem. </p>
+    </span><div class="any-of-value" id="Return_value_sparse_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_sparse_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_sparse_anyOf_i0" id="Return_value_sparse_anyOf_i0" onclick="setAnchor('#Return_value_sparse_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_sparse_anyOf_i1" id="Return_value_sparse_anyOf_i1" onclick="setAnchor('#Return_value_sparse_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_sparse_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_sparse_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* FILESYSTEM_ATTRS_WRITE
+

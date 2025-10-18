@@ -1,0 +1,789 @@
+disk.update
+===========
+
+Update disk of `id`.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: id</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Disk identifier to update.</p>
+    </span>
+    </div>
+    </div>
+    <h5>Parameter 2: data</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>data</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Updated disk configuration data.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_number">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_number">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_number" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_number" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_number')" type="button"><span class="property-name">number</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_number" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_number" id="Call_parameters_items_i1_number">
+    <div class="card-body pl-5">
+    <h4>Number</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Numeric identifier assigned to the disk.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_lunid">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_lunid">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_lunid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_lunid" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_lunid')" type="button"><span class="property-name">lunid</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_lunid" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_lunid" id="Call_parameters_items_i1_lunid">
+    <div class="card-body pl-5">
+    <h4>Lunid</h4><br/>
+    <span class="description"><p>Logical unit number identifier or <code>null</code> if not applicable.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i1_lunid_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i1_lunid_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_lunid_anyOf_i0" id="Call_parameters_items_i1_lunid_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i1_lunid_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_lunid_anyOf_i1" id="Call_parameters_items_i1_lunid_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i1_lunid_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i1_lunid_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i1_lunid_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_description">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_description">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_description" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_description')" type="button"><span class="property-name">description</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_description" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_description" id="Call_parameters_items_i1_description">
+    <div class="card-body pl-5">
+    <h4>Description</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable description of the disk device.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_hddstandby">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_hddstandby">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_hddstandby" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_hddstandby" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_hddstandby')" type="button"><span class="property-name">hddstandby</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_hddstandby" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_hddstandby" id="Call_parameters_items_i1_hddstandby">
+    <div class="card-body pl-5">
+    <h4>Hddstandby</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Hard disk standby timer in minutes or <code>ALWAYS ON</code> to disable standby.</p>
+    </span><div class="enum-value" id="Call_parameters_items_i1_hddstandby_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"ALWAYS ON"</li><li class="list-group-item enum-item">"5"</li><li class="list-group-item enum-item">"10"</li><li class="list-group-item enum-item">"20"</li><li class="list-group-item enum-item">"30"</li><li class="list-group-item enum-item">"60"</li><li class="list-group-item enum-item">"120"</li><li class="list-group-item enum-item">"180"</li><li class="list-group-item enum-item">"240"</li><li class="list-group-item enum-item">"300"</li><li class="list-group-item enum-item">"330"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_advpowermgmt">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_advpowermgmt">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_advpowermgmt" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_advpowermgmt" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_advpowermgmt')" type="button"><span class="property-name">advpowermgmt</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_advpowermgmt" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_advpowermgmt" id="Call_parameters_items_i1_advpowermgmt">
+    <div class="card-body pl-5">
+    <h4>Advpowermgmt</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Advanced power management level or <code>DISABLED</code> to turn off power management.</p>
+    </span><div class="enum-value" id="Call_parameters_items_i1_advpowermgmt_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"DISABLED"</li><li class="list-group-item enum-item">"1"</li><li class="list-group-item enum-item">"64"</li><li class="list-group-item enum-item">"127"</li><li class="list-group-item enum-item">"128"</li><li class="list-group-item enum-item">"192"</li><li class="list-group-item enum-item">"254"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_bus">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_bus">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_bus" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_bus" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_bus')" type="button"><span class="property-name">bus</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_bus" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_bus" id="Call_parameters_items_i1_bus">
+    <div class="card-body pl-5">
+    <h4>Bus</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>System bus type the disk is connected to.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_enclosure">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_enclosure">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_enclosure" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_enclosure" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_enclosure')" type="button"><span class="property-name">enclosure</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_enclosure" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_enclosure" id="Call_parameters_items_i1_enclosure">
+    <div class="card-body pl-5">
+    <br/>
+    <span class="description"><p>Physical enclosure information or <code>null</code> if not in an enclosure.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i1_enclosure_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i1_enclosure_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_enclosure_anyOf_i0" id="Call_parameters_items_i1_enclosure_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i1_enclosure_anyOf_i0')" role="tab">DiskEntryEnclosure</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_enclosure_anyOf_i1" id="Call_parameters_items_i1_enclosure_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i1_enclosure_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i1_enclosure_anyOf_i0" role="tabpanel">
+    <h4>DiskEntryEnclosure</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_enclosure_anyOf_i0_number">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_enclosure_anyOf_i0_number">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_enclosure_anyOf_i0_number" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_enclosure_anyOf_i0_number" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_enclosure_anyOf_i0_number')" type="button"><span class="property-name">number</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_enclosure_anyOf_i0_number" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_enclosure_anyOf_i0_number" id="Call_parameters_items_i1_enclosure_anyOf_i0_number">
+    <div class="card-body pl-5">
+    <h4>Number</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Enclosure number where the disk is located.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_enclosure_anyOf_i0_slot">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_enclosure_anyOf_i0_slot">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_enclosure_anyOf_i0_slot" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_enclosure_anyOf_i0_slot" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_enclosure_anyOf_i0_slot')" type="button"><span class="property-name">slot</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_enclosure_anyOf_i0_slot" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_enclosure_anyOf_i0_slot" id="Call_parameters_items_i1_enclosure_anyOf_i0_slot">
+    <div class="card-body pl-5">
+    <h4>Slot</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Physical slot position within the enclosure.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i1_enclosure_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_pool">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_pool">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_pool" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_pool" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_pool')" type="button"><span class="property-name">pool</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_pool" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_pool" id="Call_parameters_items_i1_pool">
+    <div class="card-body pl-5">
+    <h4>Pool</h4><br/>
+    <span class="description"><p>Name of the storage pool this disk belongs to. <code>null</code> if not part of any pool.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i1_pool_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i1_pool_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_pool_anyOf_i0" id="Call_parameters_items_i1_pool_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i1_pool_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_pool_anyOf_i1" id="Call_parameters_items_i1_pool_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i1_pool_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i1_pool_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i1_pool_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_passwd">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_passwd">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_passwd" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_passwd" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_passwd')" type="button"><span class="property-name">passwd</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_passwd" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_passwd" id="Call_parameters_items_i1_passwd">
+    <div class="card-body pl-5">
+    <h4>Passwd</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Disk encryption password (masked for security).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>DiskEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The updated disk configuration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_identifier">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_identifier">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_identifier" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_identifier" data-toggle="collapse" onclick="setAnchor('#Return_value_identifier')" type="button"><span class="property-name">identifier</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_identifier" class="collapse property-definition-div" data-parent="#accordionReturn_value_identifier" id="Return_value_identifier">
+    <div class="card-body pl-5">
+    <h4>Identifier</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Unique identifier for the disk device.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_name" data-toggle="collapse" onclick="setAnchor('#Return_value_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_name" id="Return_value_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>System name of the disk device.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_subsystem">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_subsystem">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_subsystem" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_subsystem" data-toggle="collapse" onclick="setAnchor('#Return_value_subsystem')" type="button"><span class="property-name">subsystem</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_subsystem" class="collapse property-definition-div" data-parent="#accordionReturn_value_subsystem" id="Return_value_subsystem">
+    <div class="card-body pl-5">
+    <h4>Subsystem</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Storage subsystem type.</p>
+    </span>
+    <br/>
+    <div class="badge badge-secondary">Examples:</div>
+    <br/><div class="jumbotron examples" id="Return_value_subsystem_ex1"><div class="highlight"><pre><span></span><span class="s2">"SCSI"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_subsystem_ex2"><div class="highlight"><pre><span></span><span class="s2">"ATA"</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_number">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_number">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_number" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_number" data-toggle="collapse" onclick="setAnchor('#Return_value_number')" type="button"><span class="property-name">number</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_number" class="collapse property-definition-div" data-parent="#accordionReturn_value_number" id="Return_value_number">
+    <div class="card-body pl-5">
+    <h4>Number</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Numeric identifier assigned to the disk.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_serial">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_serial">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_serial" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_serial" data-toggle="collapse" onclick="setAnchor('#Return_value_serial')" type="button"><span class="property-name">serial</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_serial" class="collapse property-definition-div" data-parent="#accordionReturn_value_serial" id="Return_value_serial">
+    <div class="card-body pl-5">
+    <h4>Serial</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Manufacturer serial number of the disk.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_lunid">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_lunid">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_lunid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_lunid" data-toggle="collapse" onclick="setAnchor('#Return_value_lunid')" type="button"><span class="property-name">lunid</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_lunid" class="collapse property-definition-div" data-parent="#accordionReturn_value_lunid" id="Return_value_lunid">
+    <div class="card-body pl-5">
+    <h4>Lunid</h4><br/>
+    <span class="description"><p>Logical unit number identifier or <code>null</code> if not applicable.</p>
+    </span><div class="any-of-value" id="Return_value_lunid_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_lunid_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_lunid_anyOf_i0" id="Return_value_lunid_anyOf_i0" onclick="setAnchor('#Return_value_lunid_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_lunid_anyOf_i1" id="Return_value_lunid_anyOf_i1" onclick="setAnchor('#Return_value_lunid_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_lunid_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_lunid_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_size">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_size">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_size" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_size" data-toggle="collapse" onclick="setAnchor('#Return_value_size')" type="button"><span class="property-name">size</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_size" class="collapse property-definition-div" data-parent="#accordionReturn_value_size" id="Return_value_size">
+    <div class="card-body pl-5">
+    <h4>Size</h4><br/>
+    <span class="description"><p>Total size of the disk in bytes. <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="Return_value_size_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_size_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_size_anyOf_i0" id="Return_value_size_anyOf_i0" onclick="setAnchor('#Return_value_size_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_size_anyOf_i1" id="Return_value_size_anyOf_i1" onclick="setAnchor('#Return_value_size_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_size_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_size_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_description">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_description">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_description" data-toggle="collapse" onclick="setAnchor('#Return_value_description')" type="button"><span class="property-name">description</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_description" class="collapse property-definition-div" data-parent="#accordionReturn_value_description" id="Return_value_description">
+    <div class="card-body pl-5">
+    <h4>Description</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable description of the disk device.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_transfermode">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_transfermode">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_transfermode" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_transfermode" data-toggle="collapse" onclick="setAnchor('#Return_value_transfermode')" type="button"><span class="property-name">transfermode</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_transfermode" class="collapse property-definition-div" data-parent="#accordionReturn_value_transfermode" id="Return_value_transfermode">
+    <div class="card-body pl-5">
+    <h4>Transfermode</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Data transfer mode and capabilities of the disk.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_hddstandby">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_hddstandby">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_hddstandby" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_hddstandby" data-toggle="collapse" onclick="setAnchor('#Return_value_hddstandby')" type="button"><span class="property-name">hddstandby</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_hddstandby" class="collapse property-definition-div" data-parent="#accordionReturn_value_hddstandby" id="Return_value_hddstandby">
+    <div class="card-body pl-5">
+    <h4>Hddstandby</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Hard disk standby timer in minutes or <code>ALWAYS ON</code> to disable standby.</p>
+    </span><div class="enum-value" id="Return_value_hddstandby_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"ALWAYS ON"</li><li class="list-group-item enum-item">"5"</li><li class="list-group-item enum-item">"10"</li><li class="list-group-item enum-item">"20"</li><li class="list-group-item enum-item">"30"</li><li class="list-group-item enum-item">"60"</li><li class="list-group-item enum-item">"120"</li><li class="list-group-item enum-item">"180"</li><li class="list-group-item enum-item">"240"</li><li class="list-group-item enum-item">"300"</li><li class="list-group-item enum-item">"330"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_advpowermgmt">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_advpowermgmt">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_advpowermgmt" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_advpowermgmt" data-toggle="collapse" onclick="setAnchor('#Return_value_advpowermgmt')" type="button"><span class="property-name">advpowermgmt</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_advpowermgmt" class="collapse property-definition-div" data-parent="#accordionReturn_value_advpowermgmt" id="Return_value_advpowermgmt">
+    <div class="card-body pl-5">
+    <h4>Advpowermgmt</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Advanced power management level or <code>DISABLED</code> to turn off power management.</p>
+    </span><div class="enum-value" id="Return_value_advpowermgmt_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"DISABLED"</li><li class="list-group-item enum-item">"1"</li><li class="list-group-item enum-item">"64"</li><li class="list-group-item enum-item">"127"</li><li class="list-group-item enum-item">"128"</li><li class="list-group-item enum-item">"192"</li><li class="list-group-item enum-item">"254"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_expiretime">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_expiretime">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_expiretime" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_expiretime" data-toggle="collapse" onclick="setAnchor('#Return_value_expiretime')" type="button"><span class="property-name">expiretime</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_expiretime" class="collapse property-definition-div" data-parent="#accordionReturn_value_expiretime" id="Return_value_expiretime">
+    <div class="card-body pl-5">
+    <h4>Expiretime</h4><br/>
+    <span class="description"><p>Expiration timestamp for disk data or <code>null</code> if not applicable.</p>
+    </span><div class="any-of-value" id="Return_value_expiretime_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_expiretime_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_expiretime_anyOf_i0" id="Return_value_expiretime_anyOf_i0" onclick="setAnchor('#Return_value_expiretime_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_expiretime_anyOf_i1" id="Return_value_expiretime_anyOf_i1" onclick="setAnchor('#Return_value_expiretime_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_expiretime_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: date-time</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_expiretime_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_model">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_model">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_model" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_model" data-toggle="collapse" onclick="setAnchor('#Return_value_model')" type="button"><span class="property-name">model</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_model" class="collapse property-definition-div" data-parent="#accordionReturn_value_model" id="Return_value_model">
+    <div class="card-body pl-5">
+    <h4>Model</h4><br/>
+    <span class="description"><p>Manufacturer model name/number of the disk. <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="Return_value_model_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_model_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_model_anyOf_i0" id="Return_value_model_anyOf_i0" onclick="setAnchor('#Return_value_model_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_model_anyOf_i1" id="Return_value_model_anyOf_i1" onclick="setAnchor('#Return_value_model_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_model_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_model_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_rotationrate">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_rotationrate">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_rotationrate" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_rotationrate" data-toggle="collapse" onclick="setAnchor('#Return_value_rotationrate')" type="button"><span class="property-name">rotationrate</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_rotationrate" class="collapse property-definition-div" data-parent="#accordionReturn_value_rotationrate" id="Return_value_rotationrate">
+    <div class="card-body pl-5">
+    <h4>Rotationrate</h4><br/>
+    <span class="description"><p>Disk rotation speed in RPM or <code>null</code> for SSDs and unknown devices.</p>
+    </span><div class="any-of-value" id="Return_value_rotationrate_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_rotationrate_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_rotationrate_anyOf_i0" id="Return_value_rotationrate_anyOf_i0" onclick="setAnchor('#Return_value_rotationrate_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_rotationrate_anyOf_i1" id="Return_value_rotationrate_anyOf_i1" onclick="setAnchor('#Return_value_rotationrate_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_rotationrate_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_rotationrate_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_type" data-toggle="collapse" onclick="setAnchor('#Return_value_type')" type="button"><span class="property-name">type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_type" id="Return_value_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><br/>
+    <span class="description"><p>Disk type classification or <code>null</code> if not determined.</p>
+    </span><div class="any-of-value" id="Return_value_type_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_type_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_type_anyOf_i0" id="Return_value_type_anyOf_i0" onclick="setAnchor('#Return_value_type_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_type_anyOf_i1" id="Return_value_type_anyOf_i1" onclick="setAnchor('#Return_value_type_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_type_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_type_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_zfs_guid">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_zfs_guid">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_zfs_guid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_zfs_guid" data-toggle="collapse" onclick="setAnchor('#Return_value_zfs_guid')" type="button"><span class="property-name">zfs_guid</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_zfs_guid" class="collapse property-definition-div" data-parent="#accordionReturn_value_zfs_guid" id="Return_value_zfs_guid">
+    <div class="card-body pl-5">
+    <h4>Zfs Guid</h4><br/>
+    <span class="description"><p>ZFS globally unique identifier for this disk or <code>null</code> if not used in ZFS.</p>
+    </span><div class="any-of-value" id="Return_value_zfs_guid_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_zfs_guid_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_zfs_guid_anyOf_i0" id="Return_value_zfs_guid_anyOf_i0" onclick="setAnchor('#Return_value_zfs_guid_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_zfs_guid_anyOf_i1" id="Return_value_zfs_guid_anyOf_i1" onclick="setAnchor('#Return_value_zfs_guid_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_zfs_guid_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_zfs_guid_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_bus">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_bus">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_bus" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_bus" data-toggle="collapse" onclick="setAnchor('#Return_value_bus')" type="button"><span class="property-name">bus</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_bus" class="collapse property-definition-div" data-parent="#accordionReturn_value_bus" id="Return_value_bus">
+    <div class="card-body pl-5">
+    <h4>Bus</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>System bus type the disk is connected to.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devname">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devname">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devname" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devname" data-toggle="collapse" onclick="setAnchor('#Return_value_devname')" type="button"><span class="property-name">devname</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devname" class="collapse property-definition-div" data-parent="#accordionReturn_value_devname" id="Return_value_devname">
+    <div class="card-body pl-5">
+    <h4>Devname</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Device name in the operating system.</p>
+    </span>
+    <br/>
+    <div class="badge badge-secondary">Example:</div>
+    <br/><div class="jumbotron examples" id="Return_value_devname_ex1"><div class="highlight"><pre><span></span><span class="s2">"/dev/sda"</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_enclosure">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_enclosure">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_enclosure" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_enclosure" data-toggle="collapse" onclick="setAnchor('#Return_value_enclosure')" type="button"><span class="property-name">enclosure</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_enclosure" class="collapse property-definition-div" data-parent="#accordionReturn_value_enclosure" id="Return_value_enclosure">
+    <div class="card-body pl-5">
+    <br/>
+    <span class="description"><p>Physical enclosure information or <code>null</code> if not in an enclosure.</p>
+    </span><div class="any-of-value" id="Return_value_enclosure_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_enclosure_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_enclosure_anyOf_i0" id="Return_value_enclosure_anyOf_i0" onclick="setAnchor('#Return_value_enclosure_anyOf_i0')" role="tab">DiskEntryEnclosure</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_enclosure_anyOf_i1" id="Return_value_enclosure_anyOf_i1" onclick="setAnchor('#Return_value_enclosure_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_enclosure_anyOf_i0" role="tabpanel">
+    <h4>DiskEntryEnclosure</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_enclosure_anyOf_i0_number">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_enclosure_anyOf_i0_number">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_enclosure_anyOf_i0_number" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_enclosure_anyOf_i0_number" data-toggle="collapse" onclick="setAnchor('#Return_value_enclosure_anyOf_i0_number')" type="button"><span class="property-name">number</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_enclosure_anyOf_i0_number" class="collapse property-definition-div" data-parent="#accordionReturn_value_enclosure_anyOf_i0_number" id="Return_value_enclosure_anyOf_i0_number">
+    <div class="card-body pl-5">
+    <h4>Number</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Enclosure number where the disk is located.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_enclosure_anyOf_i0_slot">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_enclosure_anyOf_i0_slot">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_enclosure_anyOf_i0_slot" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_enclosure_anyOf_i0_slot" data-toggle="collapse" onclick="setAnchor('#Return_value_enclosure_anyOf_i0_slot')" type="button"><span class="property-name">slot</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_enclosure_anyOf_i0_slot" class="collapse property-definition-div" data-parent="#accordionReturn_value_enclosure_anyOf_i0_slot" id="Return_value_enclosure_anyOf_i0_slot">
+    <div class="card-body pl-5">
+    <h4>Slot</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Physical slot position within the enclosure.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_enclosure_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_pool">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_pool">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_pool" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_pool" data-toggle="collapse" onclick="setAnchor('#Return_value_pool')" type="button"><span class="property-name">pool</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_pool" class="collapse property-definition-div" data-parent="#accordionReturn_value_pool" id="Return_value_pool">
+    <div class="card-body pl-5">
+    <h4>Pool</h4><br/>
+    <span class="description"><p>Name of the storage pool this disk belongs to. <code>null</code> if not part of any pool.</p>
+    </span><div class="any-of-value" id="Return_value_pool_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_pool_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_pool_anyOf_i0" id="Return_value_pool_anyOf_i0" onclick="setAnchor('#Return_value_pool_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_pool_anyOf_i1" id="Return_value_pool_anyOf_i1" onclick="setAnchor('#Return_value_pool_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_pool_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_pool_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_passwd">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_passwd">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_passwd" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_passwd" data-toggle="collapse" onclick="setAnchor('#Return_value_passwd')" type="button"><span class="property-name">passwd</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_passwd" class="collapse property-definition-div" data-parent="#accordionReturn_value_passwd" id="Return_value_passwd">
+    <div class="card-body pl-5">
+    <h4>Passwd</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Disk encryption password (masked for security).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_kmip_uid">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_kmip_uid">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_kmip_uid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_kmip_uid" data-toggle="collapse" onclick="setAnchor('#Return_value_kmip_uid')" type="button"><span class="property-name">kmip_uid</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_kmip_uid" class="collapse property-definition-div" data-parent="#accordionReturn_value_kmip_uid" id="Return_value_kmip_uid">
+    <div class="card-body pl-5">
+    <h4>Kmip Uid</h4><br/>
+    <span class="description"><p>KMIP (Key Management Interoperability Protocol) unique identifier or <code>null</code>.</p>
+    </span><div class="any-of-value" id="Return_value_kmip_uid_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_kmip_uid_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_kmip_uid_anyOf_i0" id="Return_value_kmip_uid_anyOf_i0" onclick="setAnchor('#Return_value_kmip_uid_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_kmip_uid_anyOf_i1" id="Return_value_kmip_uid_anyOf_i1" onclick="setAnchor('#Return_value_kmip_uid_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_kmip_uid_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_kmip_uid_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* DISK_WRITE
+

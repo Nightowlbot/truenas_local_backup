@@ -1,0 +1,6 @@
+nvmet.subsys
+------------
+
+.. toctree::
+
+   api_events_nvmet.subsys.query

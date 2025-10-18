@@ -1,0 +1,271 @@
+interface.ip_in_use
+===================
+
+Get all IPv4 / Ipv6 from all valid interfaces, excluding tap and epair.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: options</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>options</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Options for filtering IP addresses in use.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_ipv4">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_ipv4">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_ipv4" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_ipv4" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_ipv4')" type="button"><span class="property-name">ipv4</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_ipv4" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_ipv4" id="Call_parameters_items_i0_ipv4">
+    <div class="card-body pl-5">
+    <h4>Ipv4</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Include IPv4 addresses in the results.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_ipv6">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_ipv6">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_ipv6" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_ipv6" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_ipv6')" type="button"><span class="property-name">ipv6</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_ipv6" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_ipv6" id="Call_parameters_items_i0_ipv6">
+    <div class="card-body pl-5">
+    <h4>Ipv6</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Include IPv6 addresses in the results.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_ipv6_link_local">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_ipv6_link_local">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_ipv6_link_local" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_ipv6_link_local" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_ipv6_link_local')" type="button"><span class="property-name">ipv6_link_local</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_ipv6_link_local" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_ipv6_link_local" id="Call_parameters_items_i0_ipv6_link_local">
+    <div class="card-body pl-5">
+    <h4>Ipv6 Link Local</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Include IPv6 link-local addresses in the results.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_loopback">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_loopback">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_loopback" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_loopback" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_loopback')" type="button"><span class="property-name">loopback</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_loopback" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_loopback" id="Call_parameters_items_i0_loopback">
+    <div class="card-body pl-5">
+    <h4>Loopback</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Return loopback interface addresses.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_any">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_any">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_any" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_any" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_any')" type="button"><span class="property-name">any</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_any" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_any" id="Call_parameters_items_i0_any">
+    <div class="card-body pl-5">
+    <h4>Any</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Return wildcard addresses (0.0.0.0 and ::).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_static">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_static">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_static" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_static" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_static')" type="button"><span class="property-name">static</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_static" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_static" id="Call_parameters_items_i0_static">
+    <div class="card-body pl-5">
+    <h4>Static</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Only return configured static IPs.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_interfaces">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_interfaces">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_interfaces" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_interfaces" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_interfaces')" type="button"><span class="property-name">interfaces</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_interfaces" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_interfaces" id="Call_parameters_items_i0_interfaces">
+    <div class="card-body pl-5">
+    <h4>Interfaces</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Only return IPs from specified interfaces. If empty, returns IPs from all interfaces.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_interfaces_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_interfaces_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_items">
+    <h4>InterfaceIPInUseItem</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_items_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_type" data-toggle="collapse" onclick="setAnchor('#Return_value_items_type')" type="button"><span class="property-name">type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_type" id="Return_value_items_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The type of IP address (INET for IPv4, INET6 for IPv6).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_address">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_address">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_address" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_address" data-toggle="collapse" onclick="setAnchor('#Return_value_items_address')" type="button"><span class="property-name">address</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_address" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_address" id="Return_value_items_address">
+    <div class="card-body pl-5">
+    <h4>Address</h4><br/>
+    <span class="description"><p>The IP address that is in use.</p>
+    </span><div class="any-of-value" id="Return_value_items_address_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_address_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_address_anyOf_i0" id="Return_value_items_address_anyOf_i0" onclick="setAnchor('#Return_value_items_address_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_address_anyOf_i1" id="Return_value_items_address_anyOf_i1" onclick="setAnchor('#Return_value_items_address_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_address_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_items_address_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li></ul>
+    </div><span class="const-value" id="Return_value_items_address_anyOf_i0_const">Specific value: <code>""</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_address_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_netmask">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_netmask">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_netmask" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_netmask" data-toggle="collapse" onclick="setAnchor('#Return_value_items_netmask')" type="button"><span class="property-name">netmask</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_netmask" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_netmask" id="Return_value_items_netmask">
+    <div class="card-body pl-5">
+    <h4>Netmask</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>The network mask in CIDR notation.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_broadcast">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_broadcast">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_broadcast" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_broadcast" data-toggle="collapse" onclick="setAnchor('#Return_value_items_broadcast')" type="button"><span class="property-name">broadcast</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_broadcast" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_broadcast" id="Return_value_items_broadcast">
+    <div class="card-body pl-5">
+    <h4>Broadcast</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The broadcast address for IPv4 networks.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br/>
+    <div class="badge badge-secondary">Example:</div>
+    <br/><div class="jumbotron examples" id="Return_value_ex1"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="w">    </span><span class="p">{</span>
+    <span class="w">        </span><span class="s2">"address"</span><span class="o">:</span><span class="w"> </span><span class="s2">"fe80::5054:ff:fe16:4aac"</span><span class="p">,</span>
+    <span class="w">        </span><span class="s2">"netmask"</span><span class="o">:</span><span class="w"> </span><span class="mf">64</span><span class="p">,</span>
+    <span class="w">        </span><span class="s2">"type"</span><span class="o">:</span><span class="w"> </span><span class="s2">"INET6"</span>
+    <span class="w">    </span><span class="p">},</span>
+    <span class="w">    </span><span class="p">{</span>
+    <span class="w">        </span><span class="s2">"address"</span><span class="o">:</span><span class="w"> </span><span class="s2">"192.168.122.148"</span><span class="p">,</span>
+    <span class="w">        </span><span class="s2">"broadcast"</span><span class="o">:</span><span class="w"> </span><span class="s2">"192.168.122.255"</span><span class="p">,</span>
+    <span class="w">        </span><span class="s2">"netmask"</span><span class="o">:</span><span class="w"> </span><span class="mf">24</span><span class="p">,</span>
+    <span class="w">        </span><span class="s2">"type"</span><span class="o">:</span><span class="w"> </span><span class="s2">"INET"</span>
+    <span class="w">    </span><span class="p">}</span>
+    <span class="p">]</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* NETWORK_INTERFACE_READ
+

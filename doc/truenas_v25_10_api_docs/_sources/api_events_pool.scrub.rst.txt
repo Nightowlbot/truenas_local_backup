@@ -1,0 +1,6 @@
+pool.scrub
+----------
+
+.. toctree::
+
+   api_events_pool.scrub.query

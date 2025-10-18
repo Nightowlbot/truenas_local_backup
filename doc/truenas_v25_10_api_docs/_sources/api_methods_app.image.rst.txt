@@ -1,0 +1,10 @@
+app.image
+---------
+
+.. toctree::
+
+   api_methods_app.image.delete
+   api_methods_app.image.dockerhub_rate_limit
+   api_methods_app.image.get_instance
+   api_methods_app.image.pull
+   api_methods_app.image.query

@@ -1,0 +1,568 @@
+pool.snapshottask.get_instance
+==============================
+
+Returns instance matching `id`. If `id` is not found, Validation error is raised.
+
+Please see `query` method documentation for `options`.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: id</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    <h5>Parameter 2: options</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>options</h4><span class="badge badge-dark value-type">Type: object</span> <span class="badge badge-success default-value">Default: {}</span><br/>
+    <span class="description"><p>Query options customize the results returned by a query method. More complete documentation with examples     are covered in the "Query methods" section of the TrueNAS API documentation. </p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_extra">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_extra">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_extra" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_extra" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_extra')" type="button"><span class="property-name">extra</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_extra" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_extra" id="Call_parameters_items_i1_extra">
+    <div class="card-body pl-5">
+    <h4>Extra</h4><span class="badge badge-dark value-type">Type: object</span> <span class="badge badge-success default-value">Default: {}</span><br/>
+    <span class="description"><p>Extra options are defined on a per-endpoint basis and are described in the documentation for the associated     query method. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_order_by">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_order_by">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_order_by" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_order_by" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_order_by')" type="button"><span class="property-name">order_by</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_order_by" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_order_by" id="Call_parameters_items_i1_order_by">
+    <div class="card-body pl-5">
+    <h4>Order By</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>An array of field names describing the manner in which query results should be ordered. The field names may     also have one of more of the following special prefixes: <code>-</code> (reverse sort direction), <code>nulls_first:</code> (place     any null values at the head of the results list), <code>nulls_last:</code> (place any null values at the tail of the     results list). </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1_order_by_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div><br/>
+    <div class="badge badge-secondary">Example:</div>
+    <br/><div class="jumbotron examples" id="Call_parameters_items_i1_order_by_ex1"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="w">    </span><span class="s2">"size"</span><span class="p">,</span>
+    <span class="w">    </span><span class="s2">"-devname"</span><span class="p">,</span>
+    <span class="w">    </span><span class="s2">"nulls_first:-expiretime"</span>
+    <span class="p">]</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_select">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_select">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_select" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_select" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_select')" type="button"><span class="property-name">select</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_select" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_select" id="Call_parameters_items_i1_select">
+    <div class="card-body pl-5">
+    <h4>Select</h4><span class="badge badge-dark value-type">Type: array</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>An array of field names specifying the exact fields to include in the query return. The dot character <code>.</code>     may be used to explicitly select only subkeys of the query result. </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1_select_items">
+    <br/>
+    <div class="any-of-value" id="Call_parameters_items_i1_select_items_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i1_select_items_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_select_items_anyOf_i0" id="Call_parameters_items_i1_select_items_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i1_select_items_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_select_items_anyOf_i1" id="Call_parameters_items_i1_select_items_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i1_select_items_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i1_select_items_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i1_select_items_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1_select_items_anyOf_i1_items">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div>
+    </div>
+    </div></div></div>
+    </div>
+    </div><br/>
+    <div class="badge badge-secondary">Example:</div>
+    <br/><div class="jumbotron examples" id="Call_parameters_items_i1_select_ex1"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="w">    </span><span class="s2">"username"</span><span class="p">,</span>
+    <span class="w">    </span><span class="s2">"Authentication.status"</span>
+    <span class="p">]</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_count">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_count">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_count" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_count" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_count')" type="button"><span class="property-name">count</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_count" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_count" id="Call_parameters_items_i1_count">
+    <div class="card-body pl-5">
+    <h4>Count</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Return a numeric value representing the number of items that match the specified <code>query-filters</code>. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_get">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_get">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_get" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_get" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_get')" type="button"><span class="property-name">get</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_get" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_get" id="Call_parameters_items_i1_get">
+    <div class="card-body pl-5">
+    <h4>Get</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Return the JSON object of the first result matching the specified <code>query-filters</code>. The query fails     if there specified <code>query-filters</code> return no results. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_offset">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_offset">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_offset" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_offset" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_offset')" type="button"><span class="property-name">offset</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_offset" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_offset" id="Call_parameters_items_i1_offset">
+    <div class="card-body pl-5">
+    <h4>Offset</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+    <span class="description"><p>This specifies the beginning offset of the results array. When combined with the <code>limit</code> query-option     it may be used to implement pagination of large results arrays. WARNING: some query methods provide     volatile results and the onus is on the developer to understand whether pagination is appropriate     for a particular query API method. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_limit">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_limit">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_limit" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_limit" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_limit')" type="button"><span class="property-name">limit</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_limit" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_limit" id="Call_parameters_items_i1_limit">
+    <div class="card-body pl-5">
+    <h4>Limit</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+    <span class="description"><p>This specifies the maximum number of results matching the specified <code>query-filters</code> to return. When     combined wtih the <code>offset</code> query-option it may be used to implement pagination of large results arrays.</p>
+    <p>WARNING: Some query methods provide volatile results and the onus is on the developer to understand whether     pagination is appropriate for a particular query API method. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_force_sql_filters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_force_sql_filters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_force_sql_filters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_force_sql_filters" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_force_sql_filters')" type="button"><span class="property-name">force_sql_filters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_force_sql_filters" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_force_sql_filters" id="Call_parameters_items_i1_force_sql_filters">
+    <div class="card-body pl-5">
+    <h4>Force Sql Filters</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Force use of SQL for result filtering to reduce response time. May not work for all methods.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>PoolSnapshotTaskEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_dataset">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_dataset">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_dataset" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_dataset" data-toggle="collapse" onclick="setAnchor('#Return_value_dataset')" type="button"><span class="property-name">dataset</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_dataset" class="collapse property-definition-div" data-parent="#accordionReturn_value_dataset" id="Return_value_dataset">
+    <div class="card-body pl-5">
+    <h4>Dataset</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The dataset to take snapshots of.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_recursive">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_recursive">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_recursive" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_recursive" data-toggle="collapse" onclick="setAnchor('#Return_value_recursive')" type="button"><span class="property-name">recursive</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_recursive" class="collapse property-definition-div" data-parent="#accordionReturn_value_recursive" id="Return_value_recursive">
+    <div class="card-body pl-5">
+    <h4>Recursive</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to recursively snapshot child datasets.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_lifetime_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_lifetime_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_lifetime_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_lifetime_value" data-toggle="collapse" onclick="setAnchor('#Return_value_lifetime_value')" type="button"><span class="property-name">lifetime_value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_lifetime_value" class="collapse property-definition-div" data-parent="#accordionReturn_value_lifetime_value" id="Return_value_lifetime_value">
+    <div class="card-body pl-5">
+    <h4>Lifetime Value</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 2</span><br/>
+    <span class="description"><p>Number of time units to retain snapshots. <code>lifetime_unit</code> gives the time unit.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_lifetime_unit">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_lifetime_unit">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_lifetime_unit" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_lifetime_unit" data-toggle="collapse" onclick="setAnchor('#Return_value_lifetime_unit')" type="button"><span class="property-name">lifetime_unit</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_lifetime_unit" class="collapse property-definition-div" data-parent="#accordionReturn_value_lifetime_unit" id="Return_value_lifetime_unit">
+    <div class="card-body pl-5">
+    <h4>Lifetime Unit</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "WEEK"</span><br/>
+    <span class="description"><p>Unit of time for snapshot retention.</p>
+    </span><div class="enum-value" id="Return_value_lifetime_unit_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"HOUR"</li><li class="list-group-item enum-item">"DAY"</li><li class="list-group-item enum-item">"WEEK"</li><li class="list-group-item enum-item">"MONTH"</li><li class="list-group-item enum-item">"YEAR"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_enabled">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_enabled">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_enabled" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_enabled" data-toggle="collapse" onclick="setAnchor('#Return_value_enabled')" type="button"><span class="property-name">enabled</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_enabled" class="collapse property-definition-div" data-parent="#accordionReturn_value_enabled" id="Return_value_enabled">
+    <div class="card-body pl-5">
+    <h4>Enabled</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Whether this periodic snapshot task is enabled.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_exclude">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_exclude">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_exclude" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_exclude" data-toggle="collapse" onclick="setAnchor('#Return_value_exclude')" type="button"><span class="property-name">exclude</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_exclude" class="collapse property-definition-div" data-parent="#accordionReturn_value_exclude" id="Return_value_exclude">
+    <div class="card-body pl-5">
+    <h4>Exclude</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>Array of dataset patterns to exclude from recursive snapshots.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_exclude_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_naming_schema">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_naming_schema">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_naming_schema" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_naming_schema" data-toggle="collapse" onclick="setAnchor('#Return_value_naming_schema')" type="button"><span class="property-name">naming_schema</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_naming_schema" class="collapse property-definition-div" data-parent="#accordionReturn_value_naming_schema" id="Return_value_naming_schema">
+    <div class="card-body pl-5">
+    <h4>Naming Schema</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "auto-%Y-%m-%d_%H-%M"</span><br/>
+    <span class="description"><p>Naming pattern for generated snapshots using strftime format.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_allow_empty">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_allow_empty">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_allow_empty" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_allow_empty" data-toggle="collapse" onclick="setAnchor('#Return_value_allow_empty')" type="button"><span class="property-name">allow_empty</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_allow_empty" class="collapse property-definition-div" data-parent="#accordionReturn_value_allow_empty" id="Return_value_allow_empty">
+    <div class="card-body pl-5">
+    <h4>Allow Empty</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Whether to take snapshots even if no data has changed.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_schedule">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_schedule">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_schedule" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_schedule" data-toggle="collapse" onclick="setAnchor('#Return_value_schedule')" type="button"><span class="property-name">schedule</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_schedule" class="collapse property-definition-div" data-parent="#accordionReturn_value_schedule" id="Return_value_schedule">
+    <div class="card-body pl-5">
+    <h4>PoolSnapshotTaskCron</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Cron schedule for when snapshots should be taken.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_schedule_minute">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_schedule_minute">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_schedule_minute" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_schedule_minute" data-toggle="collapse" onclick="setAnchor('#Return_value_schedule_minute')" type="button"><span class="property-name">minute</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_schedule_minute" class="collapse property-definition-div" data-parent="#accordionReturn_value_schedule_minute" id="Return_value_schedule_minute">
+    <div class="card-body pl-5">
+    <h4>Minute</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "00"</span><br/>
+    <span class="description"><p>Minute when snapshots should be taken (cron format).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_schedule_hour">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_schedule_hour">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_schedule_hour" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_schedule_hour" data-toggle="collapse" onclick="setAnchor('#Return_value_schedule_hour')" type="button"><span class="property-name">hour</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_schedule_hour" class="collapse property-definition-div" data-parent="#accordionReturn_value_schedule_hour" id="Return_value_schedule_hour">
+    <div class="card-body pl-5">
+    <h4>Hour</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "*"</span><br/>
+    <span class="description"><p>"00" - "23"</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_schedule_dom">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_schedule_dom">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_schedule_dom" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_schedule_dom" data-toggle="collapse" onclick="setAnchor('#Return_value_schedule_dom')" type="button"><span class="property-name">dom</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_schedule_dom" class="collapse property-definition-div" data-parent="#accordionReturn_value_schedule_dom" id="Return_value_schedule_dom">
+    <div class="card-body pl-5">
+    <h4>Dom</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "*"</span><br/>
+    <span class="description"><p>"1" - "31"</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_schedule_month">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_schedule_month">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_schedule_month" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_schedule_month" data-toggle="collapse" onclick="setAnchor('#Return_value_schedule_month')" type="button"><span class="property-name">month</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_schedule_month" class="collapse property-definition-div" data-parent="#accordionReturn_value_schedule_month" id="Return_value_schedule_month">
+    <div class="card-body pl-5">
+    <h4>Month</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "*"</span><br/>
+    <span class="description"><p>"1" (January) - "12" (December)</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_schedule_dow">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_schedule_dow">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_schedule_dow" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_schedule_dow" data-toggle="collapse" onclick="setAnchor('#Return_value_schedule_dow')" type="button"><span class="property-name">dow</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_schedule_dow" class="collapse property-definition-div" data-parent="#accordionReturn_value_schedule_dow" id="Return_value_schedule_dow">
+    <div class="card-body pl-5">
+    <h4>Dow</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "*"</span><br/>
+    <span class="description"><p>"1" (Monday) - "7" (Sunday)</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_schedule_begin">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_schedule_begin">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_schedule_begin" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_schedule_begin" data-toggle="collapse" onclick="setAnchor('#Return_value_schedule_begin')" type="button"><span class="property-name">begin</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_schedule_begin" class="collapse property-definition-div" data-parent="#accordionReturn_value_schedule_begin" id="Return_value_schedule_begin">
+    <div class="card-body pl-5">
+    <h4>Begin</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "00:00"</span><br/>
+    <span class="description"><p>Start time of the window when snapshots can be taken.</p>
+    </span>
+    <br/>
+    <div class="badge badge-secondary">Examples:</div>
+    <br/><div class="jumbotron examples" id="Return_value_schedule_begin_ex1"><div class="highlight"><pre><span></span><span class="s2">"00:00"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_schedule_begin_ex2"><div class="highlight"><pre><span></span><span class="s2">"06:30"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_schedule_begin_ex3"><div class="highlight"><pre><span></span><span class="s2">"18:00"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_schedule_begin_ex4"><div class="highlight"><pre><span></span><span class="s2">"23:00"</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_schedule_end">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_schedule_end">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_schedule_end" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_schedule_end" data-toggle="collapse" onclick="setAnchor('#Return_value_schedule_end')" type="button"><span class="property-name">end</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_schedule_end" class="collapse property-definition-div" data-parent="#accordionReturn_value_schedule_end" id="Return_value_schedule_end">
+    <div class="card-body pl-5">
+    <h4>End</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "23:59"</span><br/>
+    <span class="description"><p>End time of the window when snapshots can be taken.</p>
+    </span>
+    <br/>
+    <div class="badge badge-secondary">Examples:</div>
+    <br/><div class="jumbotron examples" id="Return_value_schedule_end_ex1"><div class="highlight"><pre><span></span><span class="s2">"00:00"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_schedule_end_ex2"><div class="highlight"><pre><span></span><span class="s2">"06:30"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_schedule_end_ex3"><div class="highlight"><pre><span></span><span class="s2">"18:00"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_schedule_end_ex4"><div class="highlight"><pre><span></span><span class="s2">"23:00"</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the periodic snapshot task.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_state">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_state">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_state" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_state" data-toggle="collapse" onclick="setAnchor('#Return_value_state')" type="button"><span class="property-name">state</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_state" class="collapse property-definition-div" data-parent="#accordionReturn_value_state" id="Return_value_state">
+    <div class="card-body pl-5">
+    <h4>State</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Detailed state information for the task.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_vmware_sync">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_vmware_sync">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_vmware_sync" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_vmware_sync" data-toggle="collapse" onclick="setAnchor('#Return_value_vmware_sync')" type="button"><span class="property-name">vmware_sync</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_vmware_sync" class="collapse property-definition-div" data-parent="#accordionReturn_value_vmware_sync" id="Return_value_vmware_sync">
+    <div class="card-body pl-5">
+    <h4>Vmware Sync</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether VMware VMs are synced before taking snapshots.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SNAPSHOT_TASK_READ
+

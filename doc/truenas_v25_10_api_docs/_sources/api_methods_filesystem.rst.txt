@@ -1,0 +1,17 @@
+filesystem
+----------
+
+.. toctree::
+
+   api_methods_filesystem.chown
+   api_methods_filesystem.get
+   api_methods_filesystem.get_zfs_attributes
+   api_methods_filesystem.getacl
+   api_methods_filesystem.listdir
+   api_methods_filesystem.mkdir
+   api_methods_filesystem.put
+   api_methods_filesystem.set_zfs_attributes
+   api_methods_filesystem.setacl
+   api_methods_filesystem.setperm
+   api_methods_filesystem.stat
+   api_methods_filesystem.statfs

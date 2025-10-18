@@ -1,0 +1,10 @@
+alert
+-----
+
+.. toctree::
+
+   api_methods_alert.dismiss
+   api_methods_alert.list
+   api_methods_alert.list_categories
+   api_methods_alert.list_policies
+   api_methods_alert.restore

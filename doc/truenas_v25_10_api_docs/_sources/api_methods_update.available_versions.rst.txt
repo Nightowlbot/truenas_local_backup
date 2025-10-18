@@ -1,0 +1,158 @@
+update.available_versions
+=========================
+
+TrueNAS versions available for update.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="description"><p>Array of available system update versions across all trains.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_items">
+    <h4>UpdateAvailableVersion</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_items_train">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_train">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_train" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_train" data-toggle="collapse" onclick="setAnchor('#Return_value_items_train')" type="button"><span class="property-name">train</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_train" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_train" id="Return_value_items_train">
+    <div class="card-body pl-5">
+    <h4>Train</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Train that provides this version.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_version">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_version">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_version" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_version" data-toggle="collapse" onclick="setAnchor('#Return_value_items_version')" type="button"><span class="property-name">version</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_version" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_version" id="Return_value_items_version">
+    <div class="card-body pl-5">
+    <h4>UpdateStatusNewVersion</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Detailed information about this available version.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_items_version_version">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_version_version">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_version_version" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_version_version" data-toggle="collapse" onclick="setAnchor('#Return_value_items_version_version')" type="button"><span class="property-name">version</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_version_version" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_version_version" id="Return_value_items_version_version">
+    <div class="card-body pl-5">
+    <h4>Version</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Newly available version number.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_version_manifest">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_version_manifest">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_version_manifest" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_version_manifest" data-toggle="collapse" onclick="setAnchor('#Return_value_items_version_manifest')" type="button"><span class="property-name">manifest</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_version_manifest" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_version_manifest" id="Return_value_items_version_manifest">
+    <div class="card-body pl-5">
+    <h4>Manifest</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Object containing detailed version information and metadata.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_version_release_notes">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_version_release_notes">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_version_release_notes" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_version_release_notes" data-toggle="collapse" onclick="setAnchor('#Return_value_items_version_release_notes')" type="button"><span class="property-name">release_notes</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_version_release_notes" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_version_release_notes" id="Return_value_items_version_release_notes">
+    <div class="card-body pl-5">
+    <h4>Release Notes</h4><br/>
+    <span class="description"><p>Release notes.</p>
+    </span><div class="any-of-value" id="Return_value_items_version_release_notes_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_version_release_notes_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_version_release_notes_anyOf_i0" id="Return_value_items_version_release_notes_anyOf_i0" onclick="setAnchor('#Return_value_items_version_release_notes_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_version_release_notes_anyOf_i1" id="Return_value_items_version_release_notes_anyOf_i1" onclick="setAnchor('#Return_value_items_version_release_notes_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_version_release_notes_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_version_release_notes_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_version_release_notes_url">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_version_release_notes_url">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_version_release_notes_url" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_version_release_notes_url" data-toggle="collapse" onclick="setAnchor('#Return_value_items_version_release_notes_url')" type="button"><span class="property-name">release_notes_url</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_version_release_notes_url" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_version_release_notes_url" id="Return_value_items_version_release_notes_url">
+    <div class="card-body pl-5">
+    <h4>Release Notes Url</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Release notes URL.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SYSTEM_UPDATE_READ
+

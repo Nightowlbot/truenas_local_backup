@@ -1,0 +1,769 @@
+ups.update
+==========
+
+Update UPS Service Configuration.
+
+`powerdown` when enabled, sets UPS to power off after shutting down the system.
+
+`nocommwarntime` is a value in seconds which makes UPS Service wait the specified seconds before alerting that the Service cannot reach configured UPS.
+
+`shutdowntimer` is a value in seconds which tells the Service to wait specified seconds for the UPS before initiating a shutdown. This only applies when `shutdown` is set to "BATT".
+
+`shutdowncmd` is the command which is executed to initiate a shutdown. It defaults to "poweroff".
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: ups_update</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>ups_update</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>UPSUpdateArgs parameters.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_powerdown">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_powerdown">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_powerdown" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_powerdown" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_powerdown')" type="button"><span class="property-name">powerdown</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_powerdown" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_powerdown" id="Call_parameters_items_i0_powerdown">
+    <div class="card-body pl-5">
+    <h4>Powerdown</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether the UPS should power down after completing the shutdown sequence.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_rmonitor">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_rmonitor">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_rmonitor" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_rmonitor" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_rmonitor')" type="button"><span class="property-name">rmonitor</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_rmonitor" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_rmonitor" id="Call_parameters_items_i0_rmonitor">
+    <div class="card-body pl-5">
+    <h4>Rmonitor</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to enable remote monitoring of the UPS status over the network.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_nocommwarntime">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_nocommwarntime">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_nocommwarntime" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_nocommwarntime" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_nocommwarntime')" type="button"><span class="property-name">nocommwarntime</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_nocommwarntime" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_nocommwarntime" id="Call_parameters_items_i0_nocommwarntime">
+    <div class="card-body pl-5">
+    <h4>Nocommwarntime</h4><br/>
+    <span class="description"><p>Seconds to wait before warning about communication loss with UPS. <code>null</code> for default.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_nocommwarntime_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_nocommwarntime_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_nocommwarntime_anyOf_i0" id="Call_parameters_items_i0_nocommwarntime_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_nocommwarntime_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_nocommwarntime_anyOf_i1" id="Call_parameters_items_i0_nocommwarntime_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_nocommwarntime_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_nocommwarntime_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_nocommwarntime_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_remoteport">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_remoteport">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_remoteport" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_remoteport" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_remoteport')" type="button"><span class="property-name">remoteport</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_remoteport" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_remoteport" id="Call_parameters_items_i0_remoteport">
+    <div class="card-body pl-5">
+    <h4>Remoteport</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Network port for communicating with remote UPS monitoring systems.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_remoteport_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>65535</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_shutdowntimer">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_shutdowntimer">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_shutdowntimer" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_shutdowntimer" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_shutdowntimer')" type="button"><span class="property-name">shutdowntimer</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_shutdowntimer" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_shutdowntimer" id="Call_parameters_items_i0_shutdowntimer">
+    <div class="card-body pl-5">
+    <h4>Shutdowntimer</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Seconds to wait after initiating shutdown before forcing power off.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_hostsync">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_hostsync">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_hostsync" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_hostsync" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_hostsync')" type="button"><span class="property-name">hostsync</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_hostsync" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_hostsync" id="Call_parameters_items_i0_hostsync">
+    <div class="card-body pl-5">
+    <h4>Hostsync</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Maximum seconds to wait for other systems to shutdown before continuing.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_hostsync_number">Value must be greater or equal to <code>0</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_description">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_description">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_description" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_description')" type="button"><span class="property-name">description</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_description" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_description" id="Call_parameters_items_i0_description">
+    <div class="card-body pl-5">
+    <h4>Description</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable description of this UPS configuration.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_driver">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_driver">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_driver" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_driver" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_driver')" type="button"><span class="property-name">driver</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_driver" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_driver" id="Call_parameters_items_i0_driver">
+    <div class="card-body pl-5">
+    <h4>Driver</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>UPS driver name that handles communication with the specific UPS hardware model.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_extrausers">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_extrausers">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_extrausers" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_extrausers" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_extrausers')" type="button"><span class="property-name">extrausers</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_extrausers" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_extrausers" id="Call_parameters_items_i0_extrausers">
+    <div class="card-body pl-5">
+    <h4>Extrausers</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Additional user configurations for UPS monitoring access.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_identifier">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_identifier">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_identifier" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_identifier" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_identifier')" type="button"><span class="property-name">identifier</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_identifier" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_identifier" id="Call_parameters_items_i0_identifier">
+    <div class="card-body pl-5">
+    <h4>Identifier</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Unique identifier name for this UPS device within the monitoring system.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_identifier_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_mode">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_mode">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_mode" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_mode" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_mode')" type="button"><span class="property-name">mode</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_mode" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_mode" id="Call_parameters_items_i0_mode">
+    <div class="card-body pl-5">
+    <h4>Mode</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Operating mode.<br/>
+    * <code>MASTER</code> controls the UPS directly<br/>
+    * <code>SLAVE</code> monitors remotely</p>
+    </span><div class="enum-value" id="Call_parameters_items_i0_mode_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"MASTER"</li><li class="list-group-item enum-item">"SLAVE"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_monpwd">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_monpwd">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_monpwd" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_monpwd" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_monpwd')" type="button"><span class="property-name">monpwd</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_monpwd" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_monpwd" id="Call_parameters_items_i0_monpwd">
+    <div class="card-body pl-5">
+    <h4>Monpwd</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Password for UPS monitoring authentication (required for updates).</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_monpwd_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_monuser">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_monuser">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_monuser" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_monuser" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_monuser')" type="button"><span class="property-name">monuser</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_monuser" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_monuser" id="Call_parameters_items_i0_monuser">
+    <div class="card-body pl-5">
+    <h4>Monuser</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Username for UPS monitoring authentication.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_monuser_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_options">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_options">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_options" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_options" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_options')" type="button"><span class="property-name">options</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_options" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_options" id="Call_parameters_items_i0_options">
+    <div class="card-body pl-5">
+    <h4>Options</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Additional configuration options passed to the UPS driver.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_optionsupsd">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_optionsupsd">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_optionsupsd" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_optionsupsd" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_optionsupsd')" type="button"><span class="property-name">optionsupsd</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_optionsupsd" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_optionsupsd" id="Call_parameters_items_i0_optionsupsd">
+    <div class="card-body pl-5">
+    <h4>Optionsupsd</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Additional configuration options for the UPS daemon.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_port">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_port">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_port" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_port')" type="button"><span class="property-name">port</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_port" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_port" id="Call_parameters_items_i0_port">
+    <div class="card-body pl-5">
+    <h4>Port</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Serial port or device path for UPS communication.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_remotehost">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_remotehost">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_remotehost" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_remotehost" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_remotehost')" type="button"><span class="property-name">remotehost</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_remotehost" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_remotehost" id="Call_parameters_items_i0_remotehost">
+    <div class="card-body pl-5">
+    <h4>Remotehost</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Hostname or IP address of remote UPS server when operating in SLAVE mode.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_shutdown">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_shutdown">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_shutdown" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_shutdown" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_shutdown')" type="button"><span class="property-name">shutdown</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_shutdown" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_shutdown" id="Call_parameters_items_i0_shutdown">
+    <div class="card-body pl-5">
+    <h4>Shutdown</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Shutdown trigger condition: LOWBATT on low battery, BATT when on battery power.</p>
+    </span><div class="enum-value" id="Call_parameters_items_i0_shutdown_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"LOWBATT"</li><li class="list-group-item enum-item">"BATT"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_shutdowncmd">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_shutdowncmd">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_shutdowncmd" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_shutdowncmd" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_shutdowncmd')" type="button"><span class="property-name">shutdowncmd</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_shutdowncmd" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_shutdowncmd" id="Call_parameters_items_i0_shutdowncmd">
+    <div class="card-body pl-5">
+    <h4>Shutdowncmd</h4><br/>
+    <span class="description"><p>Custom command to execute during UPS shutdown sequence. <code>null</code> for default.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_shutdowncmd_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_shutdowncmd_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_shutdowncmd_anyOf_i0" id="Call_parameters_items_i0_shutdowncmd_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_shutdowncmd_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_shutdowncmd_anyOf_i1" id="Call_parameters_items_i0_shutdowncmd_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_shutdowncmd_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_shutdowncmd_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_shutdowncmd_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>UPSEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The updated UPS configuration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_powerdown">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_powerdown">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_powerdown" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_powerdown" data-toggle="collapse" onclick="setAnchor('#Return_value_powerdown')" type="button"><span class="property-name">powerdown</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_powerdown" class="collapse property-definition-div" data-parent="#accordionReturn_value_powerdown" id="Return_value_powerdown">
+    <div class="card-body pl-5">
+    <h4>Powerdown</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether the UPS should power down after completing the shutdown sequence.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_rmonitor">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_rmonitor">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_rmonitor" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_rmonitor" data-toggle="collapse" onclick="setAnchor('#Return_value_rmonitor')" type="button"><span class="property-name">rmonitor</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_rmonitor" class="collapse property-definition-div" data-parent="#accordionReturn_value_rmonitor" id="Return_value_rmonitor">
+    <div class="card-body pl-5">
+    <h4>Rmonitor</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to enable remote monitoring of the UPS status over the network.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the UPS configuration.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_nocommwarntime">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_nocommwarntime">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_nocommwarntime" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_nocommwarntime" data-toggle="collapse" onclick="setAnchor('#Return_value_nocommwarntime')" type="button"><span class="property-name">nocommwarntime</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_nocommwarntime" class="collapse property-definition-div" data-parent="#accordionReturn_value_nocommwarntime" id="Return_value_nocommwarntime">
+    <div class="card-body pl-5">
+    <h4>Nocommwarntime</h4><br/>
+    <span class="description"><p>Seconds to wait before warning about communication loss with UPS. <code>null</code> for default.</p>
+    </span><div class="any-of-value" id="Return_value_nocommwarntime_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_nocommwarntime_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_nocommwarntime_anyOf_i0" id="Return_value_nocommwarntime_anyOf_i0" onclick="setAnchor('#Return_value_nocommwarntime_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_nocommwarntime_anyOf_i1" id="Return_value_nocommwarntime_anyOf_i1" onclick="setAnchor('#Return_value_nocommwarntime_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_nocommwarntime_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_nocommwarntime_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_remoteport">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_remoteport">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_remoteport" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_remoteport" data-toggle="collapse" onclick="setAnchor('#Return_value_remoteport')" type="button"><span class="property-name">remoteport</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_remoteport" class="collapse property-definition-div" data-parent="#accordionReturn_value_remoteport" id="Return_value_remoteport">
+    <div class="card-body pl-5">
+    <h4>Remoteport</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Network port for communicating with remote UPS monitoring systems.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_remoteport_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>65535</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_shutdowntimer">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_shutdowntimer">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_shutdowntimer" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_shutdowntimer" data-toggle="collapse" onclick="setAnchor('#Return_value_shutdowntimer')" type="button"><span class="property-name">shutdowntimer</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_shutdowntimer" class="collapse property-definition-div" data-parent="#accordionReturn_value_shutdowntimer" id="Return_value_shutdowntimer">
+    <div class="card-body pl-5">
+    <h4>Shutdowntimer</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Seconds to wait after initiating shutdown before forcing power off.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_hostsync">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_hostsync">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_hostsync" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_hostsync" data-toggle="collapse" onclick="setAnchor('#Return_value_hostsync')" type="button"><span class="property-name">hostsync</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_hostsync" class="collapse property-definition-div" data-parent="#accordionReturn_value_hostsync" id="Return_value_hostsync">
+    <div class="card-body pl-5">
+    <h4>Hostsync</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Maximum seconds to wait for other systems to shutdown before continuing.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_hostsync_number">Value must be greater or equal to <code>0</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_description">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_description">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_description" data-toggle="collapse" onclick="setAnchor('#Return_value_description')" type="button"><span class="property-name">description</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_description" class="collapse property-definition-div" data-parent="#accordionReturn_value_description" id="Return_value_description">
+    <div class="card-body pl-5">
+    <h4>Description</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable description of this UPS configuration.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_driver">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_driver">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_driver" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_driver" data-toggle="collapse" onclick="setAnchor('#Return_value_driver')" type="button"><span class="property-name">driver</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_driver" class="collapse property-definition-div" data-parent="#accordionReturn_value_driver" id="Return_value_driver">
+    <div class="card-body pl-5">
+    <h4>Driver</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>UPS driver name that handles communication with the specific UPS hardware model.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_extrausers">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_extrausers">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_extrausers" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_extrausers" data-toggle="collapse" onclick="setAnchor('#Return_value_extrausers')" type="button"><span class="property-name">extrausers</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_extrausers" class="collapse property-definition-div" data-parent="#accordionReturn_value_extrausers" id="Return_value_extrausers">
+    <div class="card-body pl-5">
+    <h4>Extrausers</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Additional user configurations for UPS monitoring access.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_identifier">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_identifier">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_identifier" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_identifier" data-toggle="collapse" onclick="setAnchor('#Return_value_identifier')" type="button"><span class="property-name">identifier</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_identifier" class="collapse property-definition-div" data-parent="#accordionReturn_value_identifier" id="Return_value_identifier">
+    <div class="card-body pl-5">
+    <h4>Identifier</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Unique identifier name for this UPS device within the monitoring system.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_identifier_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_mode">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_mode">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_mode" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_mode" data-toggle="collapse" onclick="setAnchor('#Return_value_mode')" type="button"><span class="property-name">mode</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_mode" class="collapse property-definition-div" data-parent="#accordionReturn_value_mode" id="Return_value_mode">
+    <div class="card-body pl-5">
+    <h4>Mode</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Operating mode.<br/>
+    * <code>MASTER</code> controls the UPS directly<br/>
+    * <code>SLAVE</code> monitors remotely</p>
+    </span><div class="enum-value" id="Return_value_mode_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"MASTER"</li><li class="list-group-item enum-item">"SLAVE"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_monpwd">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_monpwd">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_monpwd" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_monpwd" data-toggle="collapse" onclick="setAnchor('#Return_value_monpwd')" type="button"><span class="property-name">monpwd</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_monpwd" class="collapse property-definition-div" data-parent="#accordionReturn_value_monpwd" id="Return_value_monpwd">
+    <div class="card-body pl-5">
+    <h4>Monpwd</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Password for UPS monitoring authentication.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_monuser">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_monuser">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_monuser" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_monuser" data-toggle="collapse" onclick="setAnchor('#Return_value_monuser')" type="button"><span class="property-name">monuser</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_monuser" class="collapse property-definition-div" data-parent="#accordionReturn_value_monuser" id="Return_value_monuser">
+    <div class="card-body pl-5">
+    <h4>Monuser</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Username for UPS monitoring authentication.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_monuser_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_options">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_options">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_options" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_options" data-toggle="collapse" onclick="setAnchor('#Return_value_options')" type="button"><span class="property-name">options</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_options" class="collapse property-definition-div" data-parent="#accordionReturn_value_options" id="Return_value_options">
+    <div class="card-body pl-5">
+    <h4>Options</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Additional configuration options passed to the UPS driver.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_optionsupsd">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_optionsupsd">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_optionsupsd" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_optionsupsd" data-toggle="collapse" onclick="setAnchor('#Return_value_optionsupsd')" type="button"><span class="property-name">optionsupsd</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_optionsupsd" class="collapse property-definition-div" data-parent="#accordionReturn_value_optionsupsd" id="Return_value_optionsupsd">
+    <div class="card-body pl-5">
+    <h4>Optionsupsd</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Additional configuration options for the UPS daemon.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_port">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_port">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_port" data-toggle="collapse" onclick="setAnchor('#Return_value_port')" type="button"><span class="property-name">port</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_port" class="collapse property-definition-div" data-parent="#accordionReturn_value_port" id="Return_value_port">
+    <div class="card-body pl-5">
+    <h4>Port</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Serial port or device path for UPS communication.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_remotehost">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_remotehost">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_remotehost" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_remotehost" data-toggle="collapse" onclick="setAnchor('#Return_value_remotehost')" type="button"><span class="property-name">remotehost</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_remotehost" class="collapse property-definition-div" data-parent="#accordionReturn_value_remotehost" id="Return_value_remotehost">
+    <div class="card-body pl-5">
+    <h4>Remotehost</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Hostname or IP address of remote UPS server when operating in SLAVE mode.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_shutdown">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_shutdown">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_shutdown" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_shutdown" data-toggle="collapse" onclick="setAnchor('#Return_value_shutdown')" type="button"><span class="property-name">shutdown</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_shutdown" class="collapse property-definition-div" data-parent="#accordionReturn_value_shutdown" id="Return_value_shutdown">
+    <div class="card-body pl-5">
+    <h4>Shutdown</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Shutdown trigger condition: LOWBATT on low battery, BATT when on battery power.</p>
+    </span><div class="enum-value" id="Return_value_shutdown_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"LOWBATT"</li><li class="list-group-item enum-item">"BATT"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_shutdowncmd">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_shutdowncmd">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_shutdowncmd" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_shutdowncmd" data-toggle="collapse" onclick="setAnchor('#Return_value_shutdowncmd')" type="button"><span class="property-name">shutdowncmd</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_shutdowncmd" class="collapse property-definition-div" data-parent="#accordionReturn_value_shutdowncmd" id="Return_value_shutdowncmd">
+    <div class="card-body pl-5">
+    <h4>Shutdowncmd</h4><br/>
+    <span class="description"><p>Custom command to execute during UPS shutdown sequence. <code>null</code> for default.</p>
+    </span><div class="any-of-value" id="Return_value_shutdowncmd_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_shutdowncmd_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_shutdowncmd_anyOf_i0" id="Return_value_shutdowncmd_anyOf_i0" onclick="setAnchor('#Return_value_shutdowncmd_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_shutdowncmd_anyOf_i1" id="Return_value_shutdowncmd_anyOf_i1" onclick="setAnchor('#Return_value_shutdowncmd_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_shutdowncmd_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_shutdowncmd_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_complete_identifier">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_complete_identifier">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_complete_identifier" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_complete_identifier" data-toggle="collapse" onclick="setAnchor('#Return_value_complete_identifier')" type="button"><span class="property-name">complete_identifier</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_complete_identifier" class="collapse property-definition-div" data-parent="#accordionReturn_value_complete_identifier" id="Return_value_complete_identifier">
+    <div class="card-body pl-5">
+    <h4>Complete Identifier</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Complete UPS identifier including hostname for network monitoring.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SYSTEM_GENERAL_WRITE
+

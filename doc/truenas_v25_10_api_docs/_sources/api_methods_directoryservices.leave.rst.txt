@@ -1,0 +1,121 @@
+directoryservices.leave
+=======================
+
+Leave an Active Directory or IPA domain. Calling this endpoint when the directory services status is `HEALTHY` will cause TrueNAS to remove its account from the domain and then reset the local directory services configuration on TrueNAS.
+
+This method is a job.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: credential</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>credential</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>DirectoryServicesLeaveArgs parameters.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_credential">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_credential">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_credential" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_credential" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_credential')" type="button"><span class="property-name">credential</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_credential" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_credential" id="Call_parameters_items_i0_credential">
+    <div class="card-body pl-5">
+    <h4>CredKRBUser</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Kerberos user credentials with administrative privileges to leave the domain.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_credential_credential_type">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_credential_credential_type">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_credential_credential_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_credential_credential_type" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_credential_credential_type')" type="button"><span class="property-name">credential_type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_credential_credential_type" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_credential_credential_type" id="Call_parameters_items_i0_credential_credential_type">
+    <div class="card-body pl-5">
+    <h4>Credential Type</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Credential type identifier for Kerberos user authentication.</p>
+    </span><div class="enum-value" id="Call_parameters_items_i0_credential_credential_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"KERBEROS_USER"</li></ul>
+    </div><span class="const-value" id="Call_parameters_items_i0_credential_credential_type_const">Specific value: <code>"KERBEROS_USER"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_credential_username">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_credential_username">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_credential_username" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_credential_username" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_credential_username')" type="button"><span class="property-name">username</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_credential_username" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_credential_username" id="Call_parameters_items_i0_credential_username">
+    <div class="card-body pl-5">
+    <h4>Username</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Username of the account to use to create a kerberos ticket for authentication to directory services. This     account must exist on the domain controller. </p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_credential_username_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_credential_password">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_credential_password">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_credential_password" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_credential_password" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_credential_password')" type="button"><span class="property-name">password</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_credential_password" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_credential_password" id="Call_parameters_items_i0_credential_password">
+    <div class="card-body pl-5">
+    <h4>Password</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The password for the user account that will obtain the kerberos ticket. </p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_credential_password_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: null</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* DIRECTORY_SERVICE_WRITE
+

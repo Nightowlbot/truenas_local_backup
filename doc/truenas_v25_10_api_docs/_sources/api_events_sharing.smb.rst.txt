@@ -1,0 +1,6 @@
+sharing.smb
+-----------
+
+.. toctree::
+
+   api_events_sharing.smb.query

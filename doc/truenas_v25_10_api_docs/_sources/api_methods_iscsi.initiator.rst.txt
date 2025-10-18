@@ -1,0 +1,10 @@
+iscsi.initiator
+---------------
+
+.. toctree::
+
+   api_methods_iscsi.initiator.create
+   api_methods_iscsi.initiator.delete
+   api_methods_iscsi.initiator.get_instance
+   api_methods_iscsi.initiator.query
+   api_methods_iscsi.initiator.update

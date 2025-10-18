@@ -1,0 +1,115 @@
+pool.dataset.rename
+===================
+
+Rename a pool dataset `id`.
+
+No safety checks are performed when renaming ZFS resources. If the dataset is in use by services such as SMB, iSCSI, snapshot tasks, replication, or cloud sync, renaming may cause disruptions or service failures.
+
+Proceed only if you are certain the ZFS resource is not in use and fully understand the risks. Set Force to continue.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: id</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The current dataset ID (full path) to rename.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    <h5>Parameter 2: data</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>data</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The rename operation options including the new name and safety flags.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_new_name">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_new_name">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_new_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_new_name" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_new_name')" type="button"><span class="property-name">new_name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_new_name" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_new_name" id="Call_parameters_items_i1_new_name">
+    <div class="card-body pl-5">
+    <h4>New Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The new name for the dataset.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i1_new_name_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_recursive">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_recursive">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_recursive" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_recursive" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_recursive')" type="button"><span class="property-name">recursive</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_recursive" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_recursive" id="Call_parameters_items_i1_recursive">
+    <div class="card-body pl-5">
+    <h4>Recursive</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to recursively rename child datasets.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_force">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_force">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_force" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_force" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_force')" type="button"><span class="property-name">force</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_force" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_force" id="Call_parameters_items_i1_force">
+    <div class="card-body pl-5">
+    <h4>Force</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>This operation does not check whether the dataset is currently in use. Renaming an active dataset may disrupt     SMB shares, iSCSI targets, snapshots, replication, and other services.</p>
+    <p>Set Force only if you understand and accept the risks.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: null</span><br/>
+    <span class="description"><p>Returns <code>null</code> on successful dataset rename.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* DATASET_WRITE
+

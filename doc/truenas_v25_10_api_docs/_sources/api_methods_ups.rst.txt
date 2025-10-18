@@ -1,0 +1,9 @@
+ups
+---
+
+.. toctree::
+
+   api_methods_ups.config
+   api_methods_ups.driver_choices
+   api_methods_ups.port_choices
+   api_methods_ups.update

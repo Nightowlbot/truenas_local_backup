@@ -1,0 +1,168 @@
+iscsi.initiator.update
+======================
+
+Update iSCSI initiator of `id`.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: id</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>ID of the authorized initiator group to update.</p>
+    </span>
+    </div>
+    </div>
+    <h5>Parameter 2: iscsi_initiator_update</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>iscsi_initiator_update</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Updated authorized initiator group configuration data.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_id">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_id">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_id" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_id')" type="button"><span class="property-name">id</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_id" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_id" id="Call_parameters_items_i1_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the authorized initiator group.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_initiators">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_initiators">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_initiators" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_initiators" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_initiators')" type="button"><span class="property-name">initiators</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_initiators" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_initiators" id="Call_parameters_items_i1_initiators">
+    <div class="card-body pl-5">
+    <h4>Initiators</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of iSCSI Qualified Names (IQNs) or IP addresses of authorized initiators.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1_initiators_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_comment">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_comment">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_comment" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_comment" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_comment')" type="button"><span class="property-name">comment</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_comment" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_comment" id="Call_parameters_items_i1_comment">
+    <div class="card-body pl-5">
+    <h4>Comment</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Optional comment describing the authorized initiator group.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>IscsiInitiatorEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The updated authorized initiator group configuration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the authorized initiator group.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_initiators">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_initiators">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_initiators" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_initiators" data-toggle="collapse" onclick="setAnchor('#Return_value_initiators')" type="button"><span class="property-name">initiators</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_initiators" class="collapse property-definition-div" data-parent="#accordionReturn_value_initiators" id="Return_value_initiators">
+    <div class="card-body pl-5">
+    <h4>Initiators</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>Array of iSCSI Qualified Names (IQNs) or IP addresses of authorized initiators.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_initiators_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_comment">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_comment">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_comment" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_comment" data-toggle="collapse" onclick="setAnchor('#Return_value_comment')" type="button"><span class="property-name">comment</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_comment" class="collapse property-definition-div" data-parent="#accordionReturn_value_comment" id="Return_value_comment">
+    <div class="card-body pl-5">
+    <h4>Comment</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+    <span class="description"><p>Optional comment describing the authorized initiator group.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SHARING_ISCSI_INITIATOR_WRITE
+

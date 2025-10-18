@@ -1,0 +1,38 @@
+vm
+--
+
+.. toctree::
+
+   api_methods_vm.bootloader_options
+   api_methods_vm.bootloader_ovmf_choices
+   api_methods_vm.clone
+   api_methods_vm.cpu_model_choices
+   api_methods_vm.create
+   api_methods_vm.delete
+   api_methods_vm.flags
+   api_methods_vm.get_available_memory
+   api_methods_vm.get_console
+   api_methods_vm.get_display_devices
+   api_methods_vm.get_display_web_uri
+   api_methods_vm.get_instance
+   api_methods_vm.get_memory_usage
+   api_methods_vm.get_vm_memory_info
+   api_methods_vm.get_vmemory_in_use
+   api_methods_vm.guest_architecture_and_machine_choices
+   api_methods_vm.log_file_download
+   api_methods_vm.log_file_path
+   api_methods_vm.maximum_supported_vcpus
+   api_methods_vm.port_wizard
+   api_methods_vm.poweroff
+   api_methods_vm.query
+   api_methods_vm.random_mac
+   api_methods_vm.resolution_choices
+   api_methods_vm.restart
+   api_methods_vm.resume
+   api_methods_vm.start
+   api_methods_vm.status
+   api_methods_vm.stop
+   api_methods_vm.supports_virtualization
+   api_methods_vm.suspend
+   api_methods_vm.update
+   api_methods_vm.virtualization_details

@@ -1,0 +1,192 @@
+cloudsync.providers
+===================
+
+Returns a list of dictionaries of supported providers for Cloud Sync Tasks.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="description"><p>Array of available cloud sync providers and their configurations.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_items">
+    <h4>CloudSyncProvider</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_items_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_name" data-toggle="collapse" onclick="setAnchor('#Return_value_items_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_name" id="Return_value_items_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Internal name identifier for the cloud provider.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_title">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_title">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_title" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_title" data-toggle="collapse" onclick="setAnchor('#Return_value_items_title')" type="button"><span class="property-name">title</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_title" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_title" id="Return_value_items_title">
+    <div class="card-body pl-5">
+    <h4>Title</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable title for the cloud provider.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_credentials_oauth">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_credentials_oauth">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_credentials_oauth" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_credentials_oauth" data-toggle="collapse" onclick="setAnchor('#Return_value_items_credentials_oauth')" type="button"><span class="property-name">credentials_oauth</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_credentials_oauth" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_credentials_oauth" id="Return_value_items_credentials_oauth">
+    <div class="card-body pl-5">
+    <h4>Credentials Oauth</h4><br/>
+    <span class="description"><p>OAuth setup URL for the provider or <code>null</code> if not OAuth-based.</p>
+    </span><div class="any-of-value" id="Return_value_items_credentials_oauth_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_credentials_oauth_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_credentials_oauth_anyOf_i0" id="Return_value_items_credentials_oauth_anyOf_i0" onclick="setAnchor('#Return_value_items_credentials_oauth_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_credentials_oauth_anyOf_i1" id="Return_value_items_credentials_oauth_anyOf_i1" onclick="setAnchor('#Return_value_items_credentials_oauth_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_credentials_oauth_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_credentials_oauth_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_buckets">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_buckets">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_buckets" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_buckets" data-toggle="collapse" onclick="setAnchor('#Return_value_items_buckets')" type="button"><span class="property-name">buckets</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_buckets" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_buckets" id="Return_value_items_buckets">
+    <div class="card-body pl-5">
+    <h4>Buckets</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Set to <code>true</code> if provider supports buckets.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_bucket_title">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_bucket_title">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_bucket_title" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_bucket_title" data-toggle="collapse" onclick="setAnchor('#Return_value_items_bucket_title')" type="button"><span class="property-name">bucket_title</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_bucket_title" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_bucket_title" id="Return_value_items_bucket_title">
+    <div class="card-body pl-5">
+    <h4>Bucket Title</h4><br/>
+    <span class="description"><p>Title for bucket concept in this provider or <code>null</code> if not applicable.</p>
+    </span><div class="any-of-value" id="Return_value_items_bucket_title_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_bucket_title_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_bucket_title_anyOf_i0" id="Return_value_items_bucket_title_anyOf_i0" onclick="setAnchor('#Return_value_items_bucket_title_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_bucket_title_anyOf_i1" id="Return_value_items_bucket_title_anyOf_i1" onclick="setAnchor('#Return_value_items_bucket_title_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_bucket_title_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_bucket_title_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_task_schema">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_task_schema">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_task_schema" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_task_schema" data-toggle="collapse" onclick="setAnchor('#Return_value_items_task_schema')" type="button"><span class="property-name">task_schema</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_task_schema" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_task_schema" id="Return_value_items_task_schema">
+    <div class="card-body pl-5">
+    <h4>Task Schema</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="description"><p>JSON schema for task attributes.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_items_task_schema_items">
+    <h4>CloudSyncProviderTaskSchemaItem</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_items_task_schema_items_property">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_task_schema_items_property">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_task_schema_items_property" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_task_schema_items_property" data-toggle="collapse" onclick="setAnchor('#Return_value_items_task_schema_items_property')" type="button"><span class="property-name">property</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_task_schema_items_property" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_task_schema_items_property" id="Return_value_items_task_schema_items_property">
+    <div class="card-body pl-5">
+    <h4>Property</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name of the schema property for task configuration.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* CLOUD_SYNC_READ
+

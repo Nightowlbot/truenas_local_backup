@@ -1,0 +1,255 @@
+ipmi.chassis.info
+=================
+
+Return IPMI chassis info.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><br/>
+    <span class="description"><p>IPMI chassis information or raw dictionary if parsing fails.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0" id="Return_value_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0')" role="tab">IPMIChassisInfo</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1" id="Return_value_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0" role="tabpanel">
+    <h4>IPMIChassisInfo</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_system_power">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_system_power">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_system_power" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_system_power" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_system_power')" type="button"><span class="property-name">system_power</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_system_power" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_system_power" id="Return_value_anyOf_i0_system_power">
+    <div class="card-body pl-5">
+    <h4>System Power</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Current system power state.</p>
+    </span>
+    <br/>
+    <div class="badge badge-secondary">Examples:</div>
+    <br/><div class="jumbotron examples" id="Return_value_anyOf_i0_system_power_ex1"><div class="highlight"><pre><span></span><span class="s2">"on"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_anyOf_i0_system_power_ex2"><div class="highlight"><pre><span></span><span class="s2">"off"</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_power_overload">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_power_overload">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_power_overload" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_power_overload" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_power_overload')" type="button"><span class="property-name">power_overload</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_power_overload" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_power_overload" id="Return_value_anyOf_i0_power_overload">
+    <div class="card-body pl-5">
+    <h4>Power Overload</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Power overload status indicator.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_interlock">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_interlock">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_interlock" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_interlock" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_interlock')" type="button"><span class="property-name">interlock</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_interlock" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_interlock" id="Return_value_anyOf_i0_interlock">
+    <div class="card-body pl-5">
+    <h4>Interlock</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Chassis interlock status.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_power_fault">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_power_fault">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_power_fault" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_power_fault" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_power_fault')" type="button"><span class="property-name">power_fault</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_power_fault" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_power_fault" id="Return_value_anyOf_i0_power_fault">
+    <div class="card-body pl-5">
+    <h4>Power Fault</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Power fault status indicator.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_power_control_fault">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_power_control_fault">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_power_control_fault" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_power_control_fault" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_power_control_fault')" type="button"><span class="property-name">power_control_fault</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_power_control_fault" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_power_control_fault" id="Return_value_anyOf_i0_power_control_fault">
+    <div class="card-body pl-5">
+    <h4>Power Control Fault</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Power control fault status indicator.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_power_restore_policy">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_power_restore_policy">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_power_restore_policy" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_power_restore_policy" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_power_restore_policy')" type="button"><span class="property-name">power_restore_policy</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_power_restore_policy" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_power_restore_policy" id="Return_value_anyOf_i0_power_restore_policy">
+    <div class="card-body pl-5">
+    <h4>Power Restore Policy</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Policy for restoring power after a power loss.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_last_power_event">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_last_power_event">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_last_power_event" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_last_power_event" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_last_power_event')" type="button"><span class="property-name">last_power_event</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_last_power_event" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_last_power_event" id="Return_value_anyOf_i0_last_power_event">
+    <div class="card-body pl-5">
+    <h4>Last Power Event</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Description of the last power-related event.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_chassis_intrusion">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_chassis_intrusion">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_chassis_intrusion" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_chassis_intrusion" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_chassis_intrusion')" type="button"><span class="property-name">chassis_intrusion</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_chassis_intrusion" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_chassis_intrusion" id="Return_value_anyOf_i0_chassis_intrusion">
+    <div class="card-body pl-5">
+    <h4>Chassis Intrusion</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Chassis intrusion detection status.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_front_panel_lockout">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_front_panel_lockout">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_front_panel_lockout" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_front_panel_lockout" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_front_panel_lockout')" type="button"><span class="property-name">front_panel_lockout</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_front_panel_lockout" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_front_panel_lockout" id="Return_value_anyOf_i0_front_panel_lockout">
+    <div class="card-body pl-5">
+    <h4>Front Panel Lockout</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Front panel lockout status indicator.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_drive_fault">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_drive_fault">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_drive_fault" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_drive_fault" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_drive_fault')" type="button"><span class="property-name">drive_fault</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_drive_fault" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_drive_fault" id="Return_value_anyOf_i0_drive_fault">
+    <div class="card-body pl-5">
+    <h4>Drive Fault</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Drive fault status indicator.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_cooling/fan_fault">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_cooling/fan_fault">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_cooling/fan_fault" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_cooling/fan_fault" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_cooling/fan_fault')" type="button"><span class="property-name">cooling/fan_fault</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_cooling/fan_fault" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_cooling/fan_fault" id="Return_value_anyOf_i0_cooling/fan_fault">
+    <div class="card-body pl-5">
+    <h4>Cooling/Fan Fault</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Cooling fan fault status indicator.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_chassis_identify_state">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_chassis_identify_state">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_chassis_identify_state" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_chassis_identify_state" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_chassis_identify_state')" type="button"><span class="property-name">chassis_identify_state</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_chassis_identify_state" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_chassis_identify_state" id="Return_value_anyOf_i0_chassis_identify_state">
+    <div class="card-body pl-5">
+    <h4>Chassis Identify State</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Current chassis identify LED state.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* IPMI_READ
+

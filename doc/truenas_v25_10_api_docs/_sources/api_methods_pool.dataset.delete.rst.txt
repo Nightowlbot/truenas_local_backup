@@ -1,0 +1,102 @@
+pool.dataset.delete
+===================
+
+Delete dataset/zvol `id`.
+
+.. examples(websocket)::
+
+  Delete "tank/myuser" dataset.
+
+    :::javascript {
+        "id": "6841f242-840a-11e6-a437-00e04d680384", "msg": "method", "method": "pool.dataset.delete", "params": ["tank/myuser"] }
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: id</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The dataset ID (full path) to delete.</p>
+    </span>
+    </div>
+    </div>
+    <h5>Parameter 2: options</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>options</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Options controlling the deletion behavior such as recursive and force flags.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_recursive">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_recursive">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_recursive" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_recursive" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_recursive')" type="button"><span class="property-name">recursive</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_recursive" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_recursive" id="Call_parameters_items_i1_recursive">
+    <div class="card-body pl-5">
+    <h4>Recursive</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Also delete/destroy all children datasets. When root dataset is specified as <code>id</code> with <code>recursive</code>, it will     destroy all the children of the root dataset present leaving root dataset intact.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_force">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_force">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_force" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_force" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_force')" type="button"><span class="property-name">force</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_force" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_force" id="Call_parameters_items_i1_force">
+    <div class="card-body pl-5">
+    <h4>Force</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Delete datasets even if they are busy.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: enum (of boolean or null)</span><br/>
+    <span class="description"><p>Return true on successful deletion or null if the <code>zfs destroy</code> command fails with "dataset does not exist".</p>
+    </span><div class="enum-value" id="Return_value_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">null</li><li class="list-group-item enum-item">true</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* DATASET_DELETE
+

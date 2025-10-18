@@ -1,0 +1,15 @@
+pool.snapshottask
+-----------------
+
+.. toctree::
+
+   api_methods_pool.snapshottask.create
+   api_methods_pool.snapshottask.delete
+   api_methods_pool.snapshottask.delete_will_change_retention_for
+   api_methods_pool.snapshottask.get_instance
+   api_methods_pool.snapshottask.max_count
+   api_methods_pool.snapshottask.max_total_count
+   api_methods_pool.snapshottask.query
+   api_methods_pool.snapshottask.run
+   api_methods_pool.snapshottask.update
+   api_methods_pool.snapshottask.update_will_change_retention_for

@@ -1,0 +1,11 @@
+iscsi.target
+------------
+
+.. toctree::
+
+   api_methods_iscsi.target.create
+   api_methods_iscsi.target.delete
+   api_methods_iscsi.target.get_instance
+   api_methods_iscsi.target.query
+   api_methods_iscsi.target.update
+   api_methods_iscsi.target.validate_name

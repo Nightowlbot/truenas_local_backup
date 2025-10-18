@@ -1,0 +1,216 @@
+virt.volume.update
+==================
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: id</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Identifier of the virtualization volume to update.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    <h5>Parameter 2: virt_volume_update</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>virt_volume_update</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Updated configuration for the virtualization volume.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_size">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_size">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_size" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_size" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_size')" type="button"><span class="property-name">size</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_size" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_size" id="Call_parameters_items_i1_size">
+    <div class="card-body pl-5">
+    <h4>Size</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>New size for the volume in MB (minimum 512MB).</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i1_size_number">Value must be greater or equal to <code>512</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>VirtVolumeEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The updated virtualization volume configuration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Unique identifier for the virtualization volume.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_id_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_name" data-toggle="collapse" onclick="setAnchor('#Return_value_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_name" id="Return_value_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable name of the virtualization volume.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_name_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_storage_pool">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_storage_pool">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_storage_pool" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_storage_pool" data-toggle="collapse" onclick="setAnchor('#Return_value_storage_pool')" type="button"><span class="property-name">storage_pool</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_storage_pool" class="collapse property-definition-div" data-parent="#accordionReturn_value_storage_pool" id="Return_value_storage_pool">
+    <div class="card-body pl-5">
+    <h4>Storage Pool</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name of the storage pool containing this volume.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_storage_pool_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_content_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_content_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_content_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_content_type" data-toggle="collapse" onclick="setAnchor('#Return_value_content_type')" type="button"><span class="property-name">content_type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_content_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_content_type" id="Return_value_content_type">
+    <div class="card-body pl-5">
+    <h4>Content Type</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Type of content stored in this volume (e.g., 'BLOCK', 'ISO').</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_content_type_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_created_at">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_created_at">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_created_at" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_created_at" data-toggle="collapse" onclick="setAnchor('#Return_value_created_at')" type="button"><span class="property-name">created_at</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_created_at" class="collapse property-definition-div" data-parent="#accordionReturn_value_created_at" id="Return_value_created_at">
+    <div class="card-body pl-5">
+    <h4>Created At</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Timestamp when this volume was created.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_type" data-toggle="collapse" onclick="setAnchor('#Return_value_type')" type="button"><span class="property-name">type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_type" id="Return_value_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Volume type indicating its storage backend and characteristics.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_type_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_config">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_config">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_config" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_config" data-toggle="collapse" onclick="setAnchor('#Return_value_config')" type="button"><span class="property-name">config</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_config" class="collapse property-definition-div" data-parent="#accordionReturn_value_config" id="Return_value_config">
+    <div class="card-body pl-5">
+    <h4>Config</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Object containing detailed configuration parameters for this volume.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_used_by">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_used_by">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_used_by" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_used_by" data-toggle="collapse" onclick="setAnchor('#Return_value_used_by')" type="button"><span class="property-name">used_by</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_used_by" class="collapse property-definition-div" data-parent="#accordionReturn_value_used_by" id="Return_value_used_by">
+    <div class="card-body pl-5">
+    <h4>Used By</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of virtual instance names currently using this volume.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_used_by_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_used_by_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* VIRT_IMAGE_WRITE
+

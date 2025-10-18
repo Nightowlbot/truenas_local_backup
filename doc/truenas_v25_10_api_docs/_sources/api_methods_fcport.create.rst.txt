@@ -1,0 +1,205 @@
+fcport.create
+=============
+
+Creates mapping between a FC port and a target.
+
+`port` is a FC host port `alias`, or `alias/number` for a NPIV port.
+
+`target_id` is the `id` of the target to be associated with the FC port.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: fc_Port_create</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>fc_Port_create</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Fibre Channel port configuration data for the new port.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_port">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_port">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_port" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_port')" type="button"><span class="property-name">port</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_port" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_port" id="Call_parameters_items_i0_port">
+    <div class="card-body pl-5">
+    <h4>Port</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Alias name for the Fibre Channel port.</p>
+    </span><span class="pattern-value" id="Call_parameters_items_i0_port_pattern">Must match regular expression: <code>^[a-zA-Z0-9,\-_:]+(/[1-9][0-9]*)?$</code></span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_port_minLength">Must be at least <code>1</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="Call_parameters_items_i0_port_maxLength">Must be at most <code>40</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_target_id">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_target_id">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_target_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_target_id" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_target_id')" type="button"><span class="property-name">target_id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_target_id" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_target_id" id="Call_parameters_items_i0_target_id">
+    <div class="card-body pl-5">
+    <h4>Target Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>ID of the target to associate with this FC port.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>FCPortEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The created Fibre Channel port configuration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the Fibre Channel port configuration.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_port">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_port">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_port" data-toggle="collapse" onclick="setAnchor('#Return_value_port')" type="button"><span class="property-name">port</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_port" class="collapse property-definition-div" data-parent="#accordionReturn_value_port" id="Return_value_port">
+    <div class="card-body pl-5">
+    <h4>Port</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Alias name for the Fibre Channel port.</p>
+    </span><span class="pattern-value" id="Return_value_port_pattern">Must match regular expression: <code>^[a-zA-Z0-9,\-_:]+(/[1-9][0-9]*)?$</code></span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_port_minLength">Must be at least <code>1</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="Return_value_port_maxLength">Must be at most <code>40</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_wwpn">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_wwpn">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_wwpn" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_wwpn" data-toggle="collapse" onclick="setAnchor('#Return_value_wwpn')" type="button"><span class="property-name">wwpn</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_wwpn" class="collapse property-definition-div" data-parent="#accordionReturn_value_wwpn" id="Return_value_wwpn">
+    <div class="card-body pl-5">
+    <h4>Wwpn</h4><br/>
+    <span class="description"><p>World Wide Port Name for port A or <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Return_value_wwpn_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_wwpn_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_wwpn_anyOf_i0" id="Return_value_wwpn_anyOf_i0" onclick="setAnchor('#Return_value_wwpn_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_wwpn_anyOf_i1" id="Return_value_wwpn_anyOf_i1" onclick="setAnchor('#Return_value_wwpn_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_wwpn_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="pattern-value" id="Return_value_wwpn_anyOf_i0_pattern">Must match regular expression: <code>^naa.[0-9a-fA-F]{16}$</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_wwpn_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_wwpn_b">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_wwpn_b">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_wwpn_b" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_wwpn_b" data-toggle="collapse" onclick="setAnchor('#Return_value_wwpn_b')" type="button"><span class="property-name">wwpn_b</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_wwpn_b" class="collapse property-definition-div" data-parent="#accordionReturn_value_wwpn_b" id="Return_value_wwpn_b">
+    <div class="card-body pl-5">
+    <h4>Wwpn B</h4><br/>
+    <span class="description"><p>World Wide Port Name for port B or <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Return_value_wwpn_b_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_wwpn_b_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_wwpn_b_anyOf_i0" id="Return_value_wwpn_b_anyOf_i0" onclick="setAnchor('#Return_value_wwpn_b_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_wwpn_b_anyOf_i1" id="Return_value_wwpn_b_anyOf_i1" onclick="setAnchor('#Return_value_wwpn_b_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_wwpn_b_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="pattern-value" id="Return_value_wwpn_b_anyOf_i0_pattern">Must match regular expression: <code>^naa.[0-9a-fA-F]{16}$</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_wwpn_b_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_target">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_target">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_target" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_target" data-toggle="collapse" onclick="setAnchor('#Return_value_target')" type="button"><span class="property-name">target</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_target" class="collapse property-definition-div" data-parent="#accordionReturn_value_target" id="Return_value_target">
+    <div class="card-body pl-5">
+    <h4>Target</h4><br/>
+    <span class="description"><p>Target configuration object or <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Return_value_target_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_target_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_target_anyOf_i0" id="Return_value_target_anyOf_i0" onclick="setAnchor('#Return_value_target_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_target_anyOf_i1" id="Return_value_target_anyOf_i1" onclick="setAnchor('#Return_value_target_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_target_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_target_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SHARING_ISCSI_TARGET_WRITE
+

@@ -1,0 +1,6 @@
+zfs.resource
+------------
+
+.. toctree::
+
+   api_methods_zfs.resource.query

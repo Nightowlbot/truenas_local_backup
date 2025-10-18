@@ -1,0 +1,19 @@
+cloudsync
+---------
+
+.. toctree::
+
+   api_methods_cloudsync.abort
+   api_methods_cloudsync.create
+   api_methods_cloudsync.create_bucket
+   api_methods_cloudsync.delete
+   api_methods_cloudsync.get_instance
+   api_methods_cloudsync.list_buckets
+   api_methods_cloudsync.list_directory
+   api_methods_cloudsync.onedrive_list_drives
+   api_methods_cloudsync.providers
+   api_methods_cloudsync.query
+   api_methods_cloudsync.restore
+   api_methods_cloudsync.sync
+   api_methods_cloudsync.sync_onetime
+   api_methods_cloudsync.update

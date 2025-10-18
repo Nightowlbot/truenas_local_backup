@@ -1,0 +1,212 @@
+support.config
+==============
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>SupportEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the support configuration.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_enabled">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_enabled">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_enabled" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_enabled" data-toggle="collapse" onclick="setAnchor('#Return_value_enabled')" type="button"><span class="property-name">enabled</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_enabled" class="collapse property-definition-div" data-parent="#accordionReturn_value_enabled" id="Return_value_enabled">
+    <div class="card-body pl-5">
+    <h4>Enabled</h4><br/>
+    <span class="description"><p>Whether support is enabled. <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="Return_value_enabled_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_enabled_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_enabled_anyOf_i0" id="Return_value_enabled_anyOf_i0" onclick="setAnchor('#Return_value_enabled_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_enabled_anyOf_i1" id="Return_value_enabled_anyOf_i1" onclick="setAnchor('#Return_value_enabled_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_enabled_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_enabled_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_name" data-toggle="collapse" onclick="setAnchor('#Return_value_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_name" id="Return_value_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Primary contact name for support.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_title">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_title">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_title" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_title" data-toggle="collapse" onclick="setAnchor('#Return_value_title')" type="button"><span class="property-name">title</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_title" class="collapse property-definition-div" data-parent="#accordionReturn_value_title" id="Return_value_title">
+    <div class="card-body pl-5">
+    <h4>Title</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Primary contact title or role.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_email">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_email">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_email" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_email" data-toggle="collapse" onclick="setAnchor('#Return_value_email')" type="button"><span class="property-name">email</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_email" class="collapse property-definition-div" data-parent="#accordionReturn_value_email" id="Return_value_email">
+    <div class="card-body pl-5">
+    <h4>Email</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Primary contact email address.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_phone">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_phone">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_phone" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_phone" data-toggle="collapse" onclick="setAnchor('#Return_value_phone')" type="button"><span class="property-name">phone</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_phone" class="collapse property-definition-div" data-parent="#accordionReturn_value_phone" id="Return_value_phone">
+    <div class="card-body pl-5">
+    <h4>Phone</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Primary contact phone number.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_secondary_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_secondary_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_secondary_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_secondary_name" data-toggle="collapse" onclick="setAnchor('#Return_value_secondary_name')" type="button"><span class="property-name">secondary_name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_secondary_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_secondary_name" id="Return_value_secondary_name">
+    <div class="card-body pl-5">
+    <h4>Secondary Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Secondary contact name for support.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_secondary_title">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_secondary_title">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_secondary_title" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_secondary_title" data-toggle="collapse" onclick="setAnchor('#Return_value_secondary_title')" type="button"><span class="property-name">secondary_title</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_secondary_title" class="collapse property-definition-div" data-parent="#accordionReturn_value_secondary_title" id="Return_value_secondary_title">
+    <div class="card-body pl-5">
+    <h4>Secondary Title</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Secondary contact title or role.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_secondary_email">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_secondary_email">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_secondary_email" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_secondary_email" data-toggle="collapse" onclick="setAnchor('#Return_value_secondary_email')" type="button"><span class="property-name">secondary_email</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_secondary_email" class="collapse property-definition-div" data-parent="#accordionReturn_value_secondary_email" id="Return_value_secondary_email">
+    <div class="card-body pl-5">
+    <h4>Secondary Email</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Secondary contact email address.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_secondary_phone">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_secondary_phone">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_secondary_phone" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_secondary_phone" data-toggle="collapse" onclick="setAnchor('#Return_value_secondary_phone')" type="button"><span class="property-name">secondary_phone</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_secondary_phone" class="collapse property-definition-div" data-parent="#accordionReturn_value_secondary_phone" id="Return_value_secondary_phone">
+    <div class="card-body pl-5">
+    <h4>Secondary Phone</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Secondary contact phone number.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SUPPORT_READ
+

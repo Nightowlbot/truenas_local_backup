@@ -1,0 +1,10 @@
+fc.fc_host
+----------
+
+.. toctree::
+
+   api_methods_fc.fc_host.create
+   api_methods_fc.fc_host.delete
+   api_methods_fc.fc_host.get_instance
+   api_methods_fc.fc_host.query
+   api_methods_fc.fc_host.update

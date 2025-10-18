@@ -1,0 +1,195 @@
+failover.reboot.info
+====================
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>FailoverRebootInfoResult</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>FailoverRebootInfoResult return fields.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_this_node">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_this_node">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_this_node" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_this_node" data-toggle="collapse" onclick="setAnchor('#Return_value_this_node')" type="button"><span class="property-name">this_node</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_this_node" class="collapse property-definition-div" data-parent="#accordionReturn_value_this_node" id="Return_value_this_node">
+    <div class="card-body pl-5">
+    <h4>RebootInfo</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Reboot information for the current node.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_this_node_boot_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_this_node_boot_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_this_node_boot_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_this_node_boot_id" data-toggle="collapse" onclick="setAnchor('#Return_value_this_node_boot_id')" type="button"><span class="property-name">boot_id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_this_node_boot_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_this_node_boot_id" id="Return_value_this_node_boot_id">
+    <div class="card-body pl-5">
+    <h4>Boot Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Unique identifier for the current boot session.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_this_node_reboot_required_reasons">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_this_node_reboot_required_reasons">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_this_node_reboot_required_reasons" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_this_node_reboot_required_reasons" data-toggle="collapse" onclick="setAnchor('#Return_value_this_node_reboot_required_reasons')" type="button"><span class="property-name">reboot_required_reasons</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_this_node_reboot_required_reasons" class="collapse property-definition-div" data-parent="#accordionReturn_value_this_node_reboot_required_reasons" id="Return_value_this_node_reboot_required_reasons">
+    <div class="card-body pl-5">
+    <h4>Reboot Required Reasons</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="description"><p>Array of reasons why a system reboot is required.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_this_node_reboot_required_reasons_items">
+    <h4>RebootRequiredReason</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_this_node_reboot_required_reasons_items_code">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_this_node_reboot_required_reasons_items_code">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_this_node_reboot_required_reasons_items_code" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_this_node_reboot_required_reasons_items_code" data-toggle="collapse" onclick="setAnchor('#Return_value_this_node_reboot_required_reasons_items_code')" type="button"><span class="property-name">code</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_this_node_reboot_required_reasons_items_code" class="collapse property-definition-div" data-parent="#accordionReturn_value_this_node_reboot_required_reasons_items_code" id="Return_value_this_node_reboot_required_reasons_items_code">
+    <div class="card-body pl-5">
+    <h4>Code</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Code identifying the reason for required reboot.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_this_node_reboot_required_reasons_items_reason">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_this_node_reboot_required_reasons_items_reason">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_this_node_reboot_required_reasons_items_reason" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_this_node_reboot_required_reasons_items_reason" data-toggle="collapse" onclick="setAnchor('#Return_value_this_node_reboot_required_reasons_items_reason')" type="button"><span class="property-name">reason</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_this_node_reboot_required_reasons_items_reason" class="collapse property-definition-div" data-parent="#accordionReturn_value_this_node_reboot_required_reasons_items_reason" id="Return_value_this_node_reboot_required_reasons_items_reason">
+    <div class="card-body pl-5">
+    <h4>Reason</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable description of why a reboot is required.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_other_node">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_other_node">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_other_node" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_other_node" data-toggle="collapse" onclick="setAnchor('#Return_value_other_node')" type="button"><span class="property-name">other_node</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_other_node" class="collapse property-definition-div" data-parent="#accordionReturn_value_other_node" id="Return_value_other_node">
+    <div class="card-body pl-5">
+    <br/>
+    <span class="description"><p>Reboot information for the other node in the failover pair or <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="Return_value_other_node_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_other_node_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_other_node_anyOf_i0" id="Return_value_other_node_anyOf_i0" onclick="setAnchor('#Return_value_other_node_anyOf_i0')" role="tab">RebootInfo</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_other_node_anyOf_i1" id="Return_value_other_node_anyOf_i1" onclick="setAnchor('#Return_value_other_node_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_other_node_anyOf_i0" role="tabpanel">
+    <h4>RebootInfo</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_other_node_anyOf_i0_boot_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_other_node_anyOf_i0_boot_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_other_node_anyOf_i0_boot_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_other_node_anyOf_i0_boot_id" data-toggle="collapse" onclick="setAnchor('#Return_value_other_node_anyOf_i0_boot_id')" type="button"><span class="property-name">boot_id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_other_node_anyOf_i0_boot_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_other_node_anyOf_i0_boot_id" id="Return_value_other_node_anyOf_i0_boot_id">
+    <div class="card-body pl-5">
+    <h4>Boot Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Unique identifier for the current boot session.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_other_node_anyOf_i0_reboot_required_reasons">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_other_node_anyOf_i0_reboot_required_reasons">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_other_node_anyOf_i0_reboot_required_reasons" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_other_node_anyOf_i0_reboot_required_reasons" data-toggle="collapse" onclick="setAnchor('#Return_value_other_node_anyOf_i0_reboot_required_reasons')" type="button"><span class="property-name">reboot_required_reasons</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_other_node_anyOf_i0_reboot_required_reasons" class="collapse property-definition-div" data-parent="#accordionReturn_value_other_node_anyOf_i0_reboot_required_reasons" id="Return_value_other_node_anyOf_i0_reboot_required_reasons">
+    <div class="card-body pl-5">
+    <h4>Reboot Required Reasons</h4><span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="description"><p>Array of reasons why a system reboot is required.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_other_node_anyOf_i0_reboot_required_reasons_items">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_other_node_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* FAILOVER_READ
+

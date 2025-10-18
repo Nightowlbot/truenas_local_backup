@@ -1,0 +1,9 @@
+smb
+---
+
+.. toctree::
+
+   api_methods_smb.bindip_choices
+   api_methods_smb.config
+   api_methods_smb.unixcharset_choices
+   api_methods_smb.update

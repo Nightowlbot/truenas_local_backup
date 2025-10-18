@@ -1,0 +1,9 @@
+mail
+----
+
+.. toctree::
+
+   api_methods_mail.config
+   api_methods_mail.local_administrator_email
+   api_methods_mail.send
+   api_methods_mail.update

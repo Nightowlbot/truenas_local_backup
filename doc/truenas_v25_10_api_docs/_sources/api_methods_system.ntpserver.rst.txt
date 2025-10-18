@@ -1,0 +1,10 @@
+system.ntpserver
+----------------
+
+.. toctree::
+
+   api_methods_system.ntpserver.create
+   api_methods_system.ntpserver.delete
+   api_methods_system.ntpserver.get_instance
+   api_methods_system.ntpserver.query
+   api_methods_system.ntpserver.update

@@ -1,0 +1,326 @@
+nvmet.host.update
+=================
+
+Update NVMe target `host` of `id`.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: id</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>ID of the NVMe-oF host to update.</p>
+    </span>
+    </div>
+    </div>
+    <h5>Parameter 2: nvmet_host_update</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>nvmet_host_update</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Updated NVMe-oF host configuration data.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_hostnqn">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_hostnqn">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_hostnqn" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_hostnqn" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_hostnqn')" type="button"><span class="property-name">hostnqn</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_hostnqn" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_hostnqn" id="Call_parameters_items_i1_hostnqn">
+    <div class="card-body pl-5">
+    <h4>Hostnqn</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>NQN of the host that will connect to this TrueNAS. </p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i1_hostnqn_minLength">Must be at least <code>11</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="Call_parameters_items_i1_hostnqn_maxLength">Must be at most <code>223</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_dhchap_key">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_dhchap_key">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_dhchap_key" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_dhchap_key" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_dhchap_key')" type="button"><span class="property-name">dhchap_key</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_dhchap_key" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_dhchap_key" id="Call_parameters_items_i1_dhchap_key">
+    <div class="card-body pl-5">
+    <h4>Dhchap Key</h4><br/>
+    <span class="description"><p>If set, the secret that the host must present when connecting.</p>
+    <p>A suitable secret can be generated using <code>nvme gen-dhchap-key</code>, or by using the <code>nvmet.host.generate_key</code> API.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i1_dhchap_key_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i1_dhchap_key_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_dhchap_key_anyOf_i0" id="Call_parameters_items_i1_dhchap_key_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i1_dhchap_key_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_dhchap_key_anyOf_i1" id="Call_parameters_items_i1_dhchap_key_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i1_dhchap_key_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i1_dhchap_key_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i1_dhchap_key_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i1_dhchap_key_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_dhchap_ctrl_key">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_dhchap_ctrl_key">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_dhchap_ctrl_key" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_dhchap_ctrl_key" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_dhchap_ctrl_key')" type="button"><span class="property-name">dhchap_ctrl_key</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_dhchap_ctrl_key" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_dhchap_ctrl_key" id="Call_parameters_items_i1_dhchap_ctrl_key">
+    <div class="card-body pl-5">
+    <h4>Dhchap Ctrl Key</h4><br/>
+    <span class="description"><p>If set, the secret that this TrueNAS will present to the host when the host is connecting (Bi-Directional     Authentication).</p>
+    <p>A suitable secret can be generated using <code>nvme gen-dhchap-key</code>, or by using the <code>nvmet.host.generate_key</code> API.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i1_dhchap_ctrl_key_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i1_dhchap_ctrl_key_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_dhchap_ctrl_key_anyOf_i0" id="Call_parameters_items_i1_dhchap_ctrl_key_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i1_dhchap_ctrl_key_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_dhchap_ctrl_key_anyOf_i1" id="Call_parameters_items_i1_dhchap_ctrl_key_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i1_dhchap_ctrl_key_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i1_dhchap_ctrl_key_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i1_dhchap_ctrl_key_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i1_dhchap_ctrl_key_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_dhchap_dhgroup">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_dhchap_dhgroup">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_dhchap_dhgroup" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_dhchap_dhgroup" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_dhchap_dhgroup')" type="button"><span class="property-name">dhchap_dhgroup</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_dhchap_dhgroup" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_dhchap_dhgroup" id="Call_parameters_items_i1_dhchap_dhgroup">
+    <div class="card-body pl-5">
+    <h4>Dhchap Dhgroup</h4><br/>
+    <span class="description"><p>If selected, the DH (Diffie-Hellman) key exchange built on top of CHAP to be used for authentication.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i1_dhchap_dhgroup_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i1_dhchap_dhgroup_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_dhchap_dhgroup_anyOf_i0" id="Call_parameters_items_i1_dhchap_dhgroup_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i1_dhchap_dhgroup_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_dhchap_dhgroup_anyOf_i1" id="Call_parameters_items_i1_dhchap_dhgroup_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i1_dhchap_dhgroup_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i1_dhchap_dhgroup_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <div class="enum-value" id="Call_parameters_items_i1_dhchap_dhgroup_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"2048-BIT"</li><li class="list-group-item enum-item">"3072-BIT"</li><li class="list-group-item enum-item">"4096-BIT"</li><li class="list-group-item enum-item">"6144-BIT"</li><li class="list-group-item enum-item">"8192-BIT"</li></ul>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i1_dhchap_dhgroup_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_dhchap_hash">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_dhchap_hash">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_dhchap_hash" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_dhchap_hash" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_dhchap_hash')" type="button"><span class="property-name">dhchap_hash</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_dhchap_hash" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_dhchap_hash" id="Call_parameters_items_i1_dhchap_hash">
+    <div class="card-body pl-5">
+    <h4>Dhchap Hash</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>HMAC (Hashed Message Authentication Code) to be used in conjunction if a <code>dhchap_dhgroup</code> is selected.</p>
+    </span><div class="enum-value" id="Call_parameters_items_i1_dhchap_hash_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"SHA-256"</li><li class="list-group-item enum-item">"SHA-384"</li><li class="list-group-item enum-item">"SHA-512"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>NVMetHostEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The updated NVMe-oF host configuration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the NVMe-oF host.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_hostnqn">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_hostnqn">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_hostnqn" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_hostnqn" data-toggle="collapse" onclick="setAnchor('#Return_value_hostnqn')" type="button"><span class="property-name">hostnqn</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_hostnqn" class="collapse property-definition-div" data-parent="#accordionReturn_value_hostnqn" id="Return_value_hostnqn">
+    <div class="card-body pl-5">
+    <h4>Hostnqn</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>NQN of the host that will connect to this TrueNAS. </p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_hostnqn_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_dhchap_key">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_dhchap_key">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_dhchap_key" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_dhchap_key" data-toggle="collapse" onclick="setAnchor('#Return_value_dhchap_key')" type="button"><span class="property-name">dhchap_key</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_dhchap_key" class="collapse property-definition-div" data-parent="#accordionReturn_value_dhchap_key" id="Return_value_dhchap_key">
+    <div class="card-body pl-5">
+    <h4>Dhchap Key</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>If set, the secret that the host must present when connecting.</p>
+    <p>A suitable secret can be generated using <code>nvme gen-dhchap-key</code>, or by using the <code>nvmet.host.generate_key</code> API.</p>
+    </span><div class="any-of-value" id="Return_value_dhchap_key_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_dhchap_key_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_dhchap_key_anyOf_i0" id="Return_value_dhchap_key_anyOf_i0" onclick="setAnchor('#Return_value_dhchap_key_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_dhchap_key_anyOf_i1" id="Return_value_dhchap_key_anyOf_i1" onclick="setAnchor('#Return_value_dhchap_key_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_dhchap_key_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_dhchap_key_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_dhchap_key_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_dhchap_ctrl_key">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_dhchap_ctrl_key">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_dhchap_ctrl_key" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_dhchap_ctrl_key" data-toggle="collapse" onclick="setAnchor('#Return_value_dhchap_ctrl_key')" type="button"><span class="property-name">dhchap_ctrl_key</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_dhchap_ctrl_key" class="collapse property-definition-div" data-parent="#accordionReturn_value_dhchap_ctrl_key" id="Return_value_dhchap_ctrl_key">
+    <div class="card-body pl-5">
+    <h4>Dhchap Ctrl Key</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>If set, the secret that this TrueNAS will present to the host when the host is connecting (Bi-Directional     Authentication).</p>
+    <p>A suitable secret can be generated using <code>nvme gen-dhchap-key</code>, or by using the <code>nvmet.host.generate_key</code> API.</p>
+    </span><div class="any-of-value" id="Return_value_dhchap_ctrl_key_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_dhchap_ctrl_key_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_dhchap_ctrl_key_anyOf_i0" id="Return_value_dhchap_ctrl_key_anyOf_i0" onclick="setAnchor('#Return_value_dhchap_ctrl_key_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_dhchap_ctrl_key_anyOf_i1" id="Return_value_dhchap_ctrl_key_anyOf_i1" onclick="setAnchor('#Return_value_dhchap_ctrl_key_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_dhchap_ctrl_key_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_dhchap_ctrl_key_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_dhchap_ctrl_key_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_dhchap_dhgroup">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_dhchap_dhgroup">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_dhchap_dhgroup" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_dhchap_dhgroup" data-toggle="collapse" onclick="setAnchor('#Return_value_dhchap_dhgroup')" type="button"><span class="property-name">dhchap_dhgroup</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_dhchap_dhgroup" class="collapse property-definition-div" data-parent="#accordionReturn_value_dhchap_dhgroup" id="Return_value_dhchap_dhgroup">
+    <div class="card-body pl-5">
+    <h4>Dhchap Dhgroup</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>If selected, the DH (Diffie-Hellman) key exchange built on top of CHAP to be used for authentication.</p>
+    </span><div class="any-of-value" id="Return_value_dhchap_dhgroup_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_dhchap_dhgroup_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_dhchap_dhgroup_anyOf_i0" id="Return_value_dhchap_dhgroup_anyOf_i0" onclick="setAnchor('#Return_value_dhchap_dhgroup_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_dhchap_dhgroup_anyOf_i1" id="Return_value_dhchap_dhgroup_anyOf_i1" onclick="setAnchor('#Return_value_dhchap_dhgroup_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_dhchap_dhgroup_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <div class="enum-value" id="Return_value_dhchap_dhgroup_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"2048-BIT"</li><li class="list-group-item enum-item">"3072-BIT"</li><li class="list-group-item enum-item">"4096-BIT"</li><li class="list-group-item enum-item">"6144-BIT"</li><li class="list-group-item enum-item">"8192-BIT"</li></ul>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_dhchap_dhgroup_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_dhchap_hash">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_dhchap_hash">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_dhchap_hash" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_dhchap_hash" data-toggle="collapse" onclick="setAnchor('#Return_value_dhchap_hash')" type="button"><span class="property-name">dhchap_hash</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_dhchap_hash" class="collapse property-definition-div" data-parent="#accordionReturn_value_dhchap_hash" id="Return_value_dhchap_hash">
+    <div class="card-body pl-5">
+    <h4>Dhchap Hash</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "SHA-256"</span><br/>
+    <span class="description"><p>HMAC (Hashed Message Authentication Code) to be used in conjunction if a <code>dhchap_dhgroup</code> is selected.</p>
+    </span><div class="enum-value" id="Return_value_dhchap_hash_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"SHA-256"</li><li class="list-group-item enum-item">"SHA-384"</li><li class="list-group-item enum-item">"SHA-512"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SHARING_NVME_TARGET_WRITE
+

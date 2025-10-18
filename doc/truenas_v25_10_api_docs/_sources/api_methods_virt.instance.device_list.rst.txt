@@ -1,0 +1,1640 @@
+virt.instance.device_list
+=========================
+
+List all devices associated to an instance.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: id</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>ID of the virtual instance to list devices for.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="description"><p>Array of devices attached to the virtual instance.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_items">
+    <br/>
+    <div class="one-of-value" id="Return_value_items_oneOf"><h2 class="handle">
+    <label>One of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_oneOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active oneOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i0" id="Return_value_items_oneOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i0')" role="tab">Disk</a>
+    </li><li class="nav-item">
+    <a class="nav-link oneOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i1" id="Return_value_items_oneOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i1')" role="tab">GPU</a>
+    </li><li class="nav-item">
+    <a class="nav-link oneOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i2" id="Return_value_items_oneOf_i2" onclick="setAnchor('#Return_value_items_oneOf_i2')" role="tab">Proxy</a>
+    </li><li class="nav-item">
+    <a class="nav-link oneOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i3" id="Return_value_items_oneOf_i3" onclick="setAnchor('#Return_value_items_oneOf_i3')" role="tab">TPM</a>
+    </li><li class="nav-item">
+    <a class="nav-link oneOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i4" id="Return_value_items_oneOf_i4" onclick="setAnchor('#Return_value_items_oneOf_i4')" role="tab">USB</a>
+    </li><li class="nav-item">
+    <a class="nav-link oneOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i5" id="Return_value_items_oneOf_i5" onclick="setAnchor('#Return_value_items_oneOf_i5')" role="tab">NIC</a>
+    </li><li class="nav-item">
+    <a class="nav-link oneOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i6" id="Return_value_items_oneOf_i6" onclick="setAnchor('#Return_value_items_oneOf_i6')" role="tab">PCI</a>
+    </li><li class="nav-item">
+    <a class="nav-link oneOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i7" id="Return_value_items_oneOf_i7" onclick="setAnchor('#Return_value_items_oneOf_i7')" role="tab">CDROM</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i0" role="tabpanel">
+    <h4>Disk</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i0_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i0_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i0_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i0_name" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i0_name')" type="button"><span class="property-name">name</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i0_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i0_name" id="Return_value_items_oneOf_i0_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Optional human-readable name for the virtualization device.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i0_name_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i0_name_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i0_name_anyOf_i0" id="Return_value_items_oneOf_i0_name_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i0_name_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i0_name_anyOf_i1" id="Return_value_items_oneOf_i0_name_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i0_name_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i0_name_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i0_name_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i0_name_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i0_description">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i0_description">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i0_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i0_description" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i0_description')" type="button"><span class="property-name">description</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i0_description" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i0_description" id="Return_value_items_oneOf_i0_description">
+    <div class="card-body pl-5">
+    <h4>Description</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Optional description explaining the purpose or configuration of this device.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i0_description_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i0_description_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i0_description_anyOf_i0" id="Return_value_items_oneOf_i0_description_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i0_description_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i0_description_anyOf_i1" id="Return_value_items_oneOf_i0_description_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i0_description_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i0_description_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i0_description_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i0_description_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i0_readonly">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i0_readonly">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i0_readonly" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i0_readonly" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i0_readonly')" type="button"><span class="property-name">readonly</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i0_readonly" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i0_readonly" id="Return_value_items_oneOf_i0_readonly">
+    <div class="card-body pl-5">
+    <h4>Readonly</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether the device should be mounted in read-only mode.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i0_dev_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i0_dev_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i0_dev_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i0_dev_type" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i0_dev_type')" type="button"><span class="property-name">dev_type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i0_dev_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i0_dev_type" id="Return_value_items_oneOf_i0_dev_type">
+    <div class="card-body pl-5">
+    <h4>Dev Type</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Device type identifier for virtual disk devices.</p>
+    </span><div class="enum-value" id="Return_value_items_oneOf_i0_dev_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"DISK"</li></ul>
+    </div><span class="const-value" id="Return_value_items_oneOf_i0_dev_type_const">Specific value: <code>"DISK"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i0_source">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i0_source">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i0_source" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i0_source" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i0_source')" type="button"><span class="property-name">source</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i0_source" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i0_source" id="Return_value_items_oneOf_i0_source">
+    <div class="card-body pl-5">
+    <h4>Source</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>For CONTAINER instances, this would be a valid pool path. For VM instances, it     can be a valid zvol path or an incus storage volume name.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i0_source_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i0_source_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i0_source_anyOf_i0" id="Return_value_items_oneOf_i0_source_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i0_source_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i0_source_anyOf_i1" id="Return_value_items_oneOf_i0_source_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i0_source_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i0_source_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i0_source_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i0_source_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i0_destination">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i0_destination">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i0_destination" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i0_destination" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i0_destination')" type="button"><span class="property-name">destination</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i0_destination" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i0_destination" id="Return_value_items_oneOf_i0_destination">
+    <div class="card-body pl-5">
+    <h4>Destination</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Target path where the disk appears inside the virtualized instance.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i0_destination_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i0_destination_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i0_destination_anyOf_i0" id="Return_value_items_oneOf_i0_destination_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i0_destination_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i0_destination_anyOf_i1" id="Return_value_items_oneOf_i0_destination_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i0_destination_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i0_destination_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i0_destination_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i0_boot_priority">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i0_boot_priority">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i0_boot_priority" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i0_boot_priority" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i0_boot_priority')" type="button"><span class="property-name">boot_priority</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i0_boot_priority" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i0_boot_priority" id="Return_value_items_oneOf_i0_boot_priority">
+    <div class="card-body pl-5">
+    <h4>Boot Priority</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Boot priority for this disk device. Lower numbers boot first. <code>null</code> means non-bootable.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i0_boot_priority_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i0_boot_priority_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i0_boot_priority_anyOf_i0" id="Return_value_items_oneOf_i0_boot_priority_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i0_boot_priority_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i0_boot_priority_anyOf_i1" id="Return_value_items_oneOf_i0_boot_priority_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i0_boot_priority_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i0_boot_priority_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_items_oneOf_i0_boot_priority_anyOf_i0_number">Value must be greater or equal to <code>0</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i0_boot_priority_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i0_io_bus">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i0_io_bus">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i0_io_bus" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i0_io_bus" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i0_io_bus')" type="button"><span class="property-name">io_bus</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i0_io_bus" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i0_io_bus" id="Return_value_items_oneOf_i0_io_bus">
+    <div class="card-body pl-5">
+    <h4>Io Bus</h4><span class="badge badge-dark value-type">Type: enum (of null or string)</span> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Storage bus type for optimal performance and compatibility.</p>
+    </span><div class="enum-value" id="Return_value_items_oneOf_i0_io_bus_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"NVME"</li><li class="list-group-item enum-item">"VIRTIO-BLK"</li><li class="list-group-item enum-item">"VIRTIO-SCSI"</li><li class="list-group-item enum-item">null</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i0_storage_pool">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i0_storage_pool">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i0_storage_pool" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i0_storage_pool" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i0_storage_pool')" type="button"><span class="property-name">storage_pool</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i0_storage_pool" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i0_storage_pool" id="Return_value_items_oneOf_i0_storage_pool">
+    <div class="card-body pl-5">
+    <h4>Storage Pool</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Storage pool in which the device is located. This must be one     of the storage pools listed in virt.global.config output.<br/>
+    If this is set to None during device creation, then the default storage     pool defined in virt.global.config will be used.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i0_storage_pool_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i0_storage_pool_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i0_storage_pool_anyOf_i0" id="Return_value_items_oneOf_i0_storage_pool_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i0_storage_pool_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i0_storage_pool_anyOf_i1" id="Return_value_items_oneOf_i0_storage_pool_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i0_storage_pool_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i0_storage_pool_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i0_storage_pool_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i0_storage_pool_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i1" role="tabpanel">
+    <h4>GPU</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i1_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i1_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i1_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i1_name" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i1_name')" type="button"><span class="property-name">name</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i1_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i1_name" id="Return_value_items_oneOf_i1_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Optional human-readable name for the virtualization device.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i1_name_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i1_name_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i1_name_anyOf_i0" id="Return_value_items_oneOf_i1_name_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i1_name_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i1_name_anyOf_i1" id="Return_value_items_oneOf_i1_name_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i1_name_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i1_name_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i1_name_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i1_name_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i1_description">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i1_description">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i1_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i1_description" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i1_description')" type="button"><span class="property-name">description</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i1_description" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i1_description" id="Return_value_items_oneOf_i1_description">
+    <div class="card-body pl-5">
+    <h4>Description</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Optional description explaining the purpose or configuration of this device.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i1_description_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i1_description_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i1_description_anyOf_i0" id="Return_value_items_oneOf_i1_description_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i1_description_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i1_description_anyOf_i1" id="Return_value_items_oneOf_i1_description_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i1_description_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i1_description_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i1_description_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i1_description_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i1_readonly">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i1_readonly">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i1_readonly" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i1_readonly" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i1_readonly')" type="button"><span class="property-name">readonly</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i1_readonly" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i1_readonly" id="Return_value_items_oneOf_i1_readonly">
+    <div class="card-body pl-5">
+    <h4>Readonly</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether the device should be mounted in read-only mode.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i1_dev_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i1_dev_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i1_dev_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i1_dev_type" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i1_dev_type')" type="button"><span class="property-name">dev_type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i1_dev_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i1_dev_type" id="Return_value_items_oneOf_i1_dev_type">
+    <div class="card-body pl-5">
+    <h4>Dev Type</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Device type identifier for graphics processing units.</p>
+    </span><div class="enum-value" id="Return_value_items_oneOf_i1_dev_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"GPU"</li></ul>
+    </div><span class="const-value" id="Return_value_items_oneOf_i1_dev_type_const">Specific value: <code>"GPU"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i1_gpu_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i1_gpu_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i1_gpu_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i1_gpu_type" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i1_gpu_type')" type="button"><span class="property-name">gpu_type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i1_gpu_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i1_gpu_type" id="Return_value_items_oneOf_i1_gpu_type">
+    <div class="card-body pl-5">
+    <h4>Gpu Type</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Type of GPU virtualization (physical passthrough, mediated device, etc.).</p>
+    </span><div class="enum-value" id="Return_value_items_oneOf_i1_gpu_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"PHYSICAL"</li><li class="list-group-item enum-item">"MDEV"</li><li class="list-group-item enum-item">"MIG"</li><li class="list-group-item enum-item">"SRIOV"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i1_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i1_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i1_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i1_id" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i1_id')" type="button"><span class="property-name">id</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i1_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i1_id" id="Return_value_items_oneOf_i1_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Unique identifier for the GPU device.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i1_id_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i1_id_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i1_id_anyOf_i0" id="Return_value_items_oneOf_i1_id_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i1_id_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i1_id_anyOf_i1" id="Return_value_items_oneOf_i1_id_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i1_id_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i1_id_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i1_id_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i1_gid">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i1_gid">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i1_gid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i1_gid" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i1_gid')" type="button"><span class="property-name">gid</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i1_gid" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i1_gid" id="Return_value_items_oneOf_i1_gid">
+    <div class="card-body pl-5">
+    <h4>Gid</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Group ID for device permissions inside the container.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i1_gid_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i1_gid_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i1_gid_anyOf_i0" id="Return_value_items_oneOf_i1_gid_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i1_gid_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i1_gid_anyOf_i1" id="Return_value_items_oneOf_i1_gid_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i1_gid_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i1_gid_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_items_oneOf_i1_gid_anyOf_i0_number">Value must be greater or equal to <code>0</code> and lesser or equal to <code>90000000</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i1_gid_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i1_uid">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i1_uid">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i1_uid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i1_uid" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i1_uid')" type="button"><span class="property-name">uid</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i1_uid" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i1_uid" id="Return_value_items_oneOf_i1_uid">
+    <div class="card-body pl-5">
+    <h4>Uid</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>User ID for device permissions inside the container.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i1_uid_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i1_uid_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i1_uid_anyOf_i0" id="Return_value_items_oneOf_i1_uid_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i1_uid_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i1_uid_anyOf_i1" id="Return_value_items_oneOf_i1_uid_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i1_uid_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i1_uid_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_items_oneOf_i1_uid_anyOf_i0_number">Value must be greater or equal to <code>0</code> and lesser or equal to <code>90000000</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i1_uid_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i1_mode">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i1_mode">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i1_mode" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i1_mode" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i1_mode')" type="button"><span class="property-name">mode</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i1_mode" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i1_mode" id="Return_value_items_oneOf_i1_mode">
+    <div class="card-body pl-5">
+    <h4>Mode</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Permission mode for device access (e.g., '660').</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i1_mode_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i1_mode_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i1_mode_anyOf_i0" id="Return_value_items_oneOf_i1_mode_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i1_mode_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i1_mode_anyOf_i1" id="Return_value_items_oneOf_i1_mode_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i1_mode_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i1_mode_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i1_mode_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i1_mdev">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i1_mdev">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i1_mdev" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i1_mdev" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i1_mdev')" type="button"><span class="property-name">mdev</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i1_mdev" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i1_mdev" id="Return_value_items_oneOf_i1_mdev">
+    <div class="card-body pl-5">
+    <h4>Mdev</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Mediated device identifier for GPU virtualization.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i1_mdev_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i1_mdev_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i1_mdev_anyOf_i0" id="Return_value_items_oneOf_i1_mdev_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i1_mdev_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i1_mdev_anyOf_i1" id="Return_value_items_oneOf_i1_mdev_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i1_mdev_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i1_mdev_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i1_mdev_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i1_mdev_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i1_mig_uuid">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i1_mig_uuid">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i1_mig_uuid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i1_mig_uuid" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i1_mig_uuid')" type="button"><span class="property-name">mig_uuid</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i1_mig_uuid" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i1_mig_uuid" id="Return_value_items_oneOf_i1_mig_uuid">
+    <div class="card-body pl-5">
+    <h4>Mig Uuid</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Multi-Instance GPU UUID for NVIDIA GPU partitioning.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i1_mig_uuid_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i1_mig_uuid_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i1_mig_uuid_anyOf_i0" id="Return_value_items_oneOf_i1_mig_uuid_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i1_mig_uuid_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i1_mig_uuid_anyOf_i1" id="Return_value_items_oneOf_i1_mig_uuid_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i1_mig_uuid_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i1_mig_uuid_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i1_mig_uuid_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i1_mig_uuid_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i1_pci">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i1_pci">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i1_pci" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i1_pci" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i1_pci')" type="button"><span class="property-name">pci</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i1_pci" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i1_pci" id="Return_value_items_oneOf_i1_pci">
+    <div class="card-body pl-5">
+    <h4>Pci</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>PCI address of the GPU device on the host system.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i1_pci_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i1_pci_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i1_pci_anyOf_i0" id="Return_value_items_oneOf_i1_pci_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i1_pci_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i1_pci_anyOf_i1" id="Return_value_items_oneOf_i1_pci_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i1_pci_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i1_pci_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i1_pci_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i1_pci_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i1_productid">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i1_productid">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i1_productid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i1_productid" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i1_productid')" type="button"><span class="property-name">productid</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i1_productid" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i1_productid" id="Return_value_items_oneOf_i1_productid">
+    <div class="card-body pl-5">
+    <h4>Productid</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Product identifier for GPU device matching.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i1_productid_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i1_productid_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i1_productid_anyOf_i0" id="Return_value_items_oneOf_i1_productid_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i1_productid_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i1_productid_anyOf_i1" id="Return_value_items_oneOf_i1_productid_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i1_productid_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i1_productid_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i1_productid_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i1_productid_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i1_vendorid">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i1_vendorid">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i1_vendorid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i1_vendorid" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i1_vendorid')" type="button"><span class="property-name">vendorid</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i1_vendorid" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i1_vendorid" id="Return_value_items_oneOf_i1_vendorid">
+    <div class="card-body pl-5">
+    <h4>Vendorid</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Vendor identifier for GPU device matching.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i1_vendorid_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i1_vendorid_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i1_vendorid_anyOf_i0" id="Return_value_items_oneOf_i1_vendorid_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i1_vendorid_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i1_vendorid_anyOf_i1" id="Return_value_items_oneOf_i1_vendorid_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i1_vendorid_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i1_vendorid_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i1_vendorid_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i1_vendorid_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i2" role="tabpanel">
+    <h4>Proxy</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i2_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i2_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i2_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i2_name" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i2_name')" type="button"><span class="property-name">name</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i2_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i2_name" id="Return_value_items_oneOf_i2_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Optional human-readable name for the virtualization device.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i2_name_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i2_name_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i2_name_anyOf_i0" id="Return_value_items_oneOf_i2_name_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i2_name_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i2_name_anyOf_i1" id="Return_value_items_oneOf_i2_name_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i2_name_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i2_name_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i2_name_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i2_name_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i2_description">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i2_description">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i2_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i2_description" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i2_description')" type="button"><span class="property-name">description</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i2_description" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i2_description" id="Return_value_items_oneOf_i2_description">
+    <div class="card-body pl-5">
+    <h4>Description</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Optional description explaining the purpose or configuration of this device.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i2_description_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i2_description_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i2_description_anyOf_i0" id="Return_value_items_oneOf_i2_description_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i2_description_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i2_description_anyOf_i1" id="Return_value_items_oneOf_i2_description_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i2_description_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i2_description_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i2_description_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i2_description_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i2_readonly">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i2_readonly">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i2_readonly" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i2_readonly" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i2_readonly')" type="button"><span class="property-name">readonly</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i2_readonly" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i2_readonly" id="Return_value_items_oneOf_i2_readonly">
+    <div class="card-body pl-5">
+    <h4>Readonly</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether the device should be mounted in read-only mode.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i2_dev_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i2_dev_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i2_dev_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i2_dev_type" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i2_dev_type')" type="button"><span class="property-name">dev_type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i2_dev_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i2_dev_type" id="Return_value_items_oneOf_i2_dev_type">
+    <div class="card-body pl-5">
+    <h4>Dev Type</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Device type identifier for network port forwarding.</p>
+    </span><div class="enum-value" id="Return_value_items_oneOf_i2_dev_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"PROXY"</li></ul>
+    </div><span class="const-value" id="Return_value_items_oneOf_i2_dev_type_const">Specific value: <code>"PROXY"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i2_source_proto">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i2_source_proto">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i2_source_proto" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i2_source_proto" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i2_source_proto')" type="button"><span class="property-name">source_proto</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i2_source_proto" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i2_source_proto" id="Return_value_items_oneOf_i2_source_proto">
+    <div class="card-body pl-5">
+    <h4>Source Proto</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Network protocol (TCP or UDP) for the source connection.</p>
+    </span><div class="enum-value" id="Return_value_items_oneOf_i2_source_proto_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"UDP"</li><li class="list-group-item enum-item">"TCP"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i2_source_port">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i2_source_port">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i2_source_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i2_source_port" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i2_source_port')" type="button"><span class="property-name">source_port</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i2_source_port" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i2_source_port" id="Return_value_items_oneOf_i2_source_port">
+    <div class="card-body pl-5">
+    <h4>Source Port</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Source port number on the host system to forward from.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_items_oneOf_i2_source_port_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>65535</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i2_dest_proto">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i2_dest_proto">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i2_dest_proto" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i2_dest_proto" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i2_dest_proto')" type="button"><span class="property-name">dest_proto</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i2_dest_proto" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i2_dest_proto" id="Return_value_items_oneOf_i2_dest_proto">
+    <div class="card-body pl-5">
+    <h4>Dest Proto</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Network protocol (TCP or UDP) for the destination connection.</p>
+    </span><div class="enum-value" id="Return_value_items_oneOf_i2_dest_proto_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"UDP"</li><li class="list-group-item enum-item">"TCP"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i2_dest_port">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i2_dest_port">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i2_dest_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i2_dest_port" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i2_dest_port')" type="button"><span class="property-name">dest_port</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i2_dest_port" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i2_dest_port" id="Return_value_items_oneOf_i2_dest_port">
+    <div class="card-body pl-5">
+    <h4>Dest Port</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Destination port number inside the virtualized instance.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_items_oneOf_i2_dest_port_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>65535</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i3" role="tabpanel">
+    <h4>TPM</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i3_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i3_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i3_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i3_name" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i3_name')" type="button"><span class="property-name">name</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i3_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i3_name" id="Return_value_items_oneOf_i3_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Optional human-readable name for the virtualization device.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i3_name_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i3_name_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i3_name_anyOf_i0" id="Return_value_items_oneOf_i3_name_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i3_name_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i3_name_anyOf_i1" id="Return_value_items_oneOf_i3_name_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i3_name_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i3_name_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i3_name_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i3_name_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i3_description">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i3_description">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i3_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i3_description" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i3_description')" type="button"><span class="property-name">description</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i3_description" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i3_description" id="Return_value_items_oneOf_i3_description">
+    <div class="card-body pl-5">
+    <h4>Description</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Optional description explaining the purpose or configuration of this device.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i3_description_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i3_description_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i3_description_anyOf_i0" id="Return_value_items_oneOf_i3_description_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i3_description_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i3_description_anyOf_i1" id="Return_value_items_oneOf_i3_description_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i3_description_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i3_description_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i3_description_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i3_description_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i3_readonly">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i3_readonly">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i3_readonly" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i3_readonly" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i3_readonly')" type="button"><span class="property-name">readonly</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i3_readonly" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i3_readonly" id="Return_value_items_oneOf_i3_readonly">
+    <div class="card-body pl-5">
+    <h4>Readonly</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether the device should be mounted in read-only mode.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i3_dev_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i3_dev_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i3_dev_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i3_dev_type" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i3_dev_type')" type="button"><span class="property-name">dev_type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i3_dev_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i3_dev_type" id="Return_value_items_oneOf_i3_dev_type">
+    <div class="card-body pl-5">
+    <h4>Dev Type</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Device type identifier for Trusted Platform Module devices.</p>
+    </span><div class="enum-value" id="Return_value_items_oneOf_i3_dev_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"TPM"</li></ul>
+    </div><span class="const-value" id="Return_value_items_oneOf_i3_dev_type_const">Specific value: <code>"TPM"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i3_path">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i3_path">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i3_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i3_path" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i3_path')" type="button"><span class="property-name">path</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i3_path" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i3_path" id="Return_value_items_oneOf_i3_path">
+    <div class="card-body pl-5">
+    <h4>Path</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Path to the TPM device on the host system.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i3_path_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i3_path_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i3_path_anyOf_i0" id="Return_value_items_oneOf_i3_path_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i3_path_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i3_path_anyOf_i1" id="Return_value_items_oneOf_i3_path_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i3_path_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i3_path_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i3_path_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i3_pathrm">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i3_pathrm">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i3_pathrm" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i3_pathrm" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i3_pathrm')" type="button"><span class="property-name">pathrm</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i3_pathrm" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i3_pathrm" id="Return_value_items_oneOf_i3_pathrm">
+    <div class="card-body pl-5">
+    <h4>Pathrm</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Resource manager path for TPM device access.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i3_pathrm_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i3_pathrm_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i3_pathrm_anyOf_i0" id="Return_value_items_oneOf_i3_pathrm_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i3_pathrm_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i3_pathrm_anyOf_i1" id="Return_value_items_oneOf_i3_pathrm_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i3_pathrm_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i3_pathrm_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i3_pathrm_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i4" role="tabpanel">
+    <h4>USB</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i4_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i4_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i4_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i4_name" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i4_name')" type="button"><span class="property-name">name</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i4_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i4_name" id="Return_value_items_oneOf_i4_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Optional human-readable name for the virtualization device.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i4_name_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i4_name_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i4_name_anyOf_i0" id="Return_value_items_oneOf_i4_name_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i4_name_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i4_name_anyOf_i1" id="Return_value_items_oneOf_i4_name_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i4_name_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i4_name_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i4_name_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i4_name_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i4_description">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i4_description">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i4_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i4_description" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i4_description')" type="button"><span class="property-name">description</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i4_description" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i4_description" id="Return_value_items_oneOf_i4_description">
+    <div class="card-body pl-5">
+    <h4>Description</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Optional description explaining the purpose or configuration of this device.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i4_description_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i4_description_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i4_description_anyOf_i0" id="Return_value_items_oneOf_i4_description_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i4_description_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i4_description_anyOf_i1" id="Return_value_items_oneOf_i4_description_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i4_description_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i4_description_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i4_description_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i4_description_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i4_readonly">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i4_readonly">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i4_readonly" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i4_readonly" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i4_readonly')" type="button"><span class="property-name">readonly</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i4_readonly" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i4_readonly" id="Return_value_items_oneOf_i4_readonly">
+    <div class="card-body pl-5">
+    <h4>Readonly</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether the device should be mounted in read-only mode.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i4_dev_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i4_dev_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i4_dev_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i4_dev_type" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i4_dev_type')" type="button"><span class="property-name">dev_type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i4_dev_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i4_dev_type" id="Return_value_items_oneOf_i4_dev_type">
+    <div class="card-body pl-5">
+    <h4>Dev Type</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Device type identifier for USB devices.</p>
+    </span><div class="enum-value" id="Return_value_items_oneOf_i4_dev_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"USB"</li></ul>
+    </div><span class="const-value" id="Return_value_items_oneOf_i4_dev_type_const">Specific value: <code>"USB"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i4_bus">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i4_bus">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i4_bus" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i4_bus" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i4_bus')" type="button"><span class="property-name">bus</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i4_bus" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i4_bus" id="Return_value_items_oneOf_i4_bus">
+    <div class="card-body pl-5">
+    <h4>Bus</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>USB bus number on the host system.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i4_bus_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i4_bus_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i4_bus_anyOf_i0" id="Return_value_items_oneOf_i4_bus_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i4_bus_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i4_bus_anyOf_i1" id="Return_value_items_oneOf_i4_bus_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i4_bus_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i4_bus_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i4_bus_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i4_dev">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i4_dev">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i4_dev" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i4_dev" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i4_dev')" type="button"><span class="property-name">dev</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i4_dev" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i4_dev" id="Return_value_items_oneOf_i4_dev">
+    <div class="card-body pl-5">
+    <h4>Dev</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>USB device number on the specified bus.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i4_dev_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i4_dev_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i4_dev_anyOf_i0" id="Return_value_items_oneOf_i4_dev_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i4_dev_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i4_dev_anyOf_i1" id="Return_value_items_oneOf_i4_dev_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i4_dev_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i4_dev_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i4_dev_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i4_product_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i4_product_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i4_product_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i4_product_id" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i4_product_id')" type="button"><span class="property-name">product_id</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i4_product_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i4_product_id" id="Return_value_items_oneOf_i4_product_id">
+    <div class="card-body pl-5">
+    <h4>Product Id</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>USB product identifier for device matching.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i4_product_id_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i4_product_id_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i4_product_id_anyOf_i0" id="Return_value_items_oneOf_i4_product_id_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i4_product_id_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i4_product_id_anyOf_i1" id="Return_value_items_oneOf_i4_product_id_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i4_product_id_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i4_product_id_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i4_product_id_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i4_vendor_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i4_vendor_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i4_vendor_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i4_vendor_id" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i4_vendor_id')" type="button"><span class="property-name">vendor_id</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i4_vendor_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i4_vendor_id" id="Return_value_items_oneOf_i4_vendor_id">
+    <div class="card-body pl-5">
+    <h4>Vendor Id</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>USB vendor identifier for device matching.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i4_vendor_id_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i4_vendor_id_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i4_vendor_id_anyOf_i0" id="Return_value_items_oneOf_i4_vendor_id_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i4_vendor_id_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i4_vendor_id_anyOf_i1" id="Return_value_items_oneOf_i4_vendor_id_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i4_vendor_id_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i4_vendor_id_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i4_vendor_id_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i5" role="tabpanel">
+    <h4>NIC</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i5_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i5_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i5_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i5_name" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i5_name')" type="button"><span class="property-name">name</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i5_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i5_name" id="Return_value_items_oneOf_i5_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Optional human-readable name for the virtualization device.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i5_name_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i5_name_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i5_name_anyOf_i0" id="Return_value_items_oneOf_i5_name_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i5_name_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i5_name_anyOf_i1" id="Return_value_items_oneOf_i5_name_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i5_name_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i5_name_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i5_name_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i5_name_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i5_description">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i5_description">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i5_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i5_description" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i5_description')" type="button"><span class="property-name">description</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i5_description" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i5_description" id="Return_value_items_oneOf_i5_description">
+    <div class="card-body pl-5">
+    <h4>Description</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Optional description explaining the purpose or configuration of this device.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i5_description_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i5_description_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i5_description_anyOf_i0" id="Return_value_items_oneOf_i5_description_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i5_description_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i5_description_anyOf_i1" id="Return_value_items_oneOf_i5_description_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i5_description_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i5_description_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i5_description_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i5_description_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i5_readonly">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i5_readonly">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i5_readonly" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i5_readonly" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i5_readonly')" type="button"><span class="property-name">readonly</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i5_readonly" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i5_readonly" id="Return_value_items_oneOf_i5_readonly">
+    <div class="card-body pl-5">
+    <h4>Readonly</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether the device should be mounted in read-only mode.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i5_dev_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i5_dev_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i5_dev_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i5_dev_type" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i5_dev_type')" type="button"><span class="property-name">dev_type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i5_dev_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i5_dev_type" id="Return_value_items_oneOf_i5_dev_type">
+    <div class="card-body pl-5">
+    <h4>Dev Type</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Device type identifier for network interface cards.</p>
+    </span><div class="enum-value" id="Return_value_items_oneOf_i5_dev_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"NIC"</li></ul>
+    </div><span class="const-value" id="Return_value_items_oneOf_i5_dev_type_const">Specific value: <code>"NIC"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i5_network">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i5_network">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i5_network" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i5_network" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i5_network')" type="button"><span class="property-name">network</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i5_network" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i5_network" id="Return_value_items_oneOf_i5_network">
+    <div class="card-body pl-5">
+    <h4>Network</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Name of the network to connect this NIC to.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i5_network_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i5_network_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i5_network_anyOf_i0" id="Return_value_items_oneOf_i5_network_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i5_network_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i5_network_anyOf_i1" id="Return_value_items_oneOf_i5_network_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i5_network_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i5_network_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i5_network_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i5_network_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i5_nic_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i5_nic_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i5_nic_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i5_nic_type" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i5_nic_type')" type="button"><span class="property-name">nic_type</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i5_nic_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i5_nic_type" id="Return_value_items_oneOf_i5_nic_type">
+    <div class="card-body pl-5">
+    <h4>Nic Type</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Type of network interface (bridged or macvlan).</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i5_nic_type_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i5_nic_type_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i5_nic_type_anyOf_i0" id="Return_value_items_oneOf_i5_nic_type_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i5_nic_type_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i5_nic_type_anyOf_i1" id="Return_value_items_oneOf_i5_nic_type_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i5_nic_type_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i5_nic_type_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <div class="enum-value" id="Return_value_items_oneOf_i5_nic_type_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"BRIDGED"</li><li class="list-group-item enum-item">"MACVLAN"</li></ul>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i5_nic_type_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i5_parent">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i5_parent">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i5_parent" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i5_parent" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i5_parent')" type="button"><span class="property-name">parent</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i5_parent" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i5_parent" id="Return_value_items_oneOf_i5_parent">
+    <div class="card-body pl-5">
+    <h4>Parent</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Parent network interface on the host system.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i5_parent_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i5_parent_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i5_parent_anyOf_i0" id="Return_value_items_oneOf_i5_parent_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i5_parent_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i5_parent_anyOf_i1" id="Return_value_items_oneOf_i5_parent_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i5_parent_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i5_parent_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i5_parent_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i5_parent_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i5_mac">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i5_mac">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i5_mac" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i5_mac" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i5_mac')" type="button"><span class="property-name">mac</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i5_mac" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i5_mac" id="Return_value_items_oneOf_i5_mac">
+    <div class="card-body pl-5">
+    <h4>Mac</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>MAC address for the virtual network interface. <code>null</code> for auto-generated.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i5_mac_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i5_mac_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i5_mac_anyOf_i0" id="Return_value_items_oneOf_i5_mac_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i5_mac_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i5_mac_anyOf_i1" id="Return_value_items_oneOf_i5_mac_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i5_mac_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i5_mac_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i5_mac_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i6" role="tabpanel">
+    <h4>PCI</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i6_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i6_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i6_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i6_name" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i6_name')" type="button"><span class="property-name">name</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i6_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i6_name" id="Return_value_items_oneOf_i6_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Optional human-readable name for the virtualization device.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i6_name_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i6_name_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i6_name_anyOf_i0" id="Return_value_items_oneOf_i6_name_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i6_name_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i6_name_anyOf_i1" id="Return_value_items_oneOf_i6_name_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i6_name_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i6_name_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i6_name_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i6_name_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i6_description">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i6_description">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i6_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i6_description" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i6_description')" type="button"><span class="property-name">description</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i6_description" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i6_description" id="Return_value_items_oneOf_i6_description">
+    <div class="card-body pl-5">
+    <h4>Description</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Optional description explaining the purpose or configuration of this device.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i6_description_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i6_description_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i6_description_anyOf_i0" id="Return_value_items_oneOf_i6_description_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i6_description_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i6_description_anyOf_i1" id="Return_value_items_oneOf_i6_description_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i6_description_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i6_description_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i6_description_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i6_description_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i6_readonly">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i6_readonly">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i6_readonly" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i6_readonly" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i6_readonly')" type="button"><span class="property-name">readonly</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i6_readonly" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i6_readonly" id="Return_value_items_oneOf_i6_readonly">
+    <div class="card-body pl-5">
+    <h4>Readonly</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether the device should be mounted in read-only mode.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i6_dev_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i6_dev_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i6_dev_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i6_dev_type" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i6_dev_type')" type="button"><span class="property-name">dev_type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i6_dev_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i6_dev_type" id="Return_value_items_oneOf_i6_dev_type">
+    <div class="card-body pl-5">
+    <h4>Dev Type</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Device type identifier for PCI device passthrough.</p>
+    </span><div class="enum-value" id="Return_value_items_oneOf_i6_dev_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"PCI"</li></ul>
+    </div><span class="const-value" id="Return_value_items_oneOf_i6_dev_type_const">Specific value: <code>"PCI"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i6_address">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i6_address">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i6_address" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i6_address" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i6_address')" type="button"><span class="property-name">address</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i6_address" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i6_address" id="Return_value_items_oneOf_i6_address">
+    <div class="card-body pl-5">
+    <h4>Address</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>PCI bus address of the device to pass through to the virtualized instance.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i6_address_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i7" role="tabpanel">
+    <h4>CDROM</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i7_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i7_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i7_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i7_name" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i7_name')" type="button"><span class="property-name">name</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i7_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i7_name" id="Return_value_items_oneOf_i7_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Optional human-readable name for the virtualization device.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i7_name_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i7_name_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i7_name_anyOf_i0" id="Return_value_items_oneOf_i7_name_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i7_name_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i7_name_anyOf_i1" id="Return_value_items_oneOf_i7_name_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i7_name_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i7_name_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i7_name_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i7_name_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i7_description">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i7_description">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i7_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i7_description" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i7_description')" type="button"><span class="property-name">description</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i7_description" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i7_description" id="Return_value_items_oneOf_i7_description">
+    <div class="card-body pl-5">
+    <h4>Description</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Optional description explaining the purpose or configuration of this device.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i7_description_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i7_description_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i7_description_anyOf_i0" id="Return_value_items_oneOf_i7_description_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i7_description_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i7_description_anyOf_i1" id="Return_value_items_oneOf_i7_description_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i7_description_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i7_description_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i7_description_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i7_description_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i7_readonly">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i7_readonly">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i7_readonly" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i7_readonly" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i7_readonly')" type="button"><span class="property-name">readonly</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i7_readonly" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i7_readonly" id="Return_value_items_oneOf_i7_readonly">
+    <div class="card-body pl-5">
+    <h4>Readonly</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether the device should be mounted in read-only mode.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i7_dev_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i7_dev_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i7_dev_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i7_dev_type" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i7_dev_type')" type="button"><span class="property-name">dev_type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i7_dev_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i7_dev_type" id="Return_value_items_oneOf_i7_dev_type">
+    <div class="card-body pl-5">
+    <h4>Dev Type</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Device type identifier for CD-ROM/DVD optical drives.</p>
+    </span><div class="enum-value" id="Return_value_items_oneOf_i7_dev_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"CDROM"</li></ul>
+    </div><span class="const-value" id="Return_value_items_oneOf_i7_dev_type_const">Specific value: <code>"CDROM"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i7_source">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i7_source">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i7_source" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i7_source" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i7_source')" type="button"><span class="property-name">source</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i7_source" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i7_source" id="Return_value_items_oneOf_i7_source">
+    <div class="card-body pl-5">
+    <h4>Source</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Path to the ISO image file or physical optical drive to mount.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_oneOf_i7_source_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_oneOf_i7_boot_priority">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_oneOf_i7_boot_priority">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_oneOf_i7_boot_priority" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_oneOf_i7_boot_priority" data-toggle="collapse" onclick="setAnchor('#Return_value_items_oneOf_i7_boot_priority')" type="button"><span class="property-name">boot_priority</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_oneOf_i7_boot_priority" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_oneOf_i7_boot_priority" id="Return_value_items_oneOf_i7_boot_priority">
+    <div class="card-body pl-5">
+    <h4>Boot Priority</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Boot priority for this optical device. Lower numbers boot first. <code>null</code> means non-bootable.</p>
+    </span><div class="any-of-value" id="Return_value_items_oneOf_i7_boot_priority_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_oneOf_i7_boot_priority_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i7_boot_priority_anyOf_i0" id="Return_value_items_oneOf_i7_boot_priority_anyOf_i0" onclick="setAnchor('#Return_value_items_oneOf_i7_boot_priority_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_oneOf_i7_boot_priority_anyOf_i1" id="Return_value_items_oneOf_i7_boot_priority_anyOf_i1" onclick="setAnchor('#Return_value_items_oneOf_i7_boot_priority_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_oneOf_i7_boot_priority_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_items_oneOf_i7_boot_priority_anyOf_i0_number">Value must be greater or equal to <code>0</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_oneOf_i7_boot_priority_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* VIRT_INSTANCE_READ
+

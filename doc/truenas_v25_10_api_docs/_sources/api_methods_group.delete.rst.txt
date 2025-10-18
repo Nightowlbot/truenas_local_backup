@@ -1,0 +1,78 @@
+group.delete
+============
+
+Delete group `id`.
+
+The `delete_users` option deletes all users that have this group as their primary group.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: id</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>API identifier of the group to delete.</p>
+    </span>
+    </div>
+    </div>
+    <h5>Parameter 2: options</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>options</h4><span class="badge badge-dark value-type">Type: object</span> <span class="badge badge-success default-value">Default: {"delete_users": false}</span><br/>
+    <span class="description"><p>Options controlling group deletion behavior.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_delete_users">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_delete_users">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_delete_users" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_delete_users" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_delete_users')" type="button"><span class="property-name">delete_users</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_delete_users" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_delete_users" id="Call_parameters_items_i1_delete_users">
+    <div class="card-body pl-5">
+    <h4>Delete Users</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Deletes all users that have this group as their primary group.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>The API identifier of the deleted group.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* ACCOUNT_WRITE
+

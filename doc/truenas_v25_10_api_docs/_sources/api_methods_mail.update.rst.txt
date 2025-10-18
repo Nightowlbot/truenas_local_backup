@@ -1,0 +1,566 @@
+mail.update
+===========
+
+Update Mail Service Configuration.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: data</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>data</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Mail configuration fields to update.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_fromemail">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_fromemail">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_fromemail" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_fromemail" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_fromemail')" type="button"><span class="property-name">fromemail</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_fromemail" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_fromemail" id="Call_parameters_items_i0_fromemail">
+    <div class="card-body pl-5">
+    <h4>Fromemail</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The sending address that the mail server will use for sending emails.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_fromname">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_fromname">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_fromname" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_fromname" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_fromname')" type="button"><span class="property-name">fromname</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_fromname" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_fromname" id="Call_parameters_items_i0_fromname">
+    <div class="card-body pl-5">
+    <h4>Fromname</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Display name that will appear as the sender name in outgoing emails.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_outgoingserver">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_outgoingserver">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_outgoingserver" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_outgoingserver" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_outgoingserver')" type="button"><span class="property-name">outgoingserver</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_outgoingserver" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_outgoingserver" id="Call_parameters_items_i0_outgoingserver">
+    <div class="card-body pl-5">
+    <h4>Outgoingserver</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Hostname or IP address of the SMTP server used for sending emails.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_port">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_port">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_port" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_port')" type="button"><span class="property-name">port</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_port" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_port" id="Call_parameters_items_i0_port">
+    <div class="card-body pl-5">
+    <h4>Port</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>TCP port number for the SMTP server connection.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_security">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_security">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_security" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_security" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_security')" type="button"><span class="property-name">security</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_security" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_security" id="Call_parameters_items_i0_security">
+    <div class="card-body pl-5">
+    <h4>Security</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Type of encryption.</p>
+    </span><div class="enum-value" id="Call_parameters_items_i0_security_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"PLAIN"</li><li class="list-group-item enum-item">"SSL"</li><li class="list-group-item enum-item">"TLS"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_smtp">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_smtp">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_smtp" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_smtp" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_smtp')" type="button"><span class="property-name">smtp</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_smtp" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_smtp" id="Call_parameters_items_i0_smtp">
+    <div class="card-body pl-5">
+    <h4>Smtp</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether SMTP authentication is enabled and <code>user</code>, <code>pass</code> are required.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_user">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_user">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_user" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_user" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_user')" type="button"><span class="property-name">user</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_user" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_user" id="Call_parameters_items_i0_user">
+    <div class="card-body pl-5">
+    <h4>User</h4><br/>
+    <span class="description"><p>SMTP username.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_user_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_user_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_user_anyOf_i0" id="Call_parameters_items_i0_user_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_user_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_user_anyOf_i1" id="Call_parameters_items_i0_user_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_user_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_user_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_user_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_pass">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_pass">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_pass" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_pass" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_pass')" type="button"><span class="property-name">pass</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_pass" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_pass" id="Call_parameters_items_i0_pass">
+    <div class="card-body pl-5">
+    <h4>Pass</h4><br/>
+    <span class="description"><p>SMTP password.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_pass_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_pass_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_pass_anyOf_i0" id="Call_parameters_items_i0_pass_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_pass_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_pass_anyOf_i1" id="Call_parameters_items_i0_pass_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_pass_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_pass_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_pass_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_oauth">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_oauth">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_oauth" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_oauth" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_oauth')" type="button"><span class="property-name">oauth</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_oauth" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_oauth" id="Call_parameters_items_i0_oauth">
+    <div class="card-body pl-5">
+    <h4>Oauth</h4><br/>
+    <span class="description"><p>OAuth configuration for email providers that support it or <code>null</code> for basic authentication.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_oauth_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_oauth_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_oauth_anyOf_i0" id="Call_parameters_items_i0_oauth_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_oauth_anyOf_i0')" role="tab">MailEntryOAuth</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_oauth_anyOf_i1" id="Call_parameters_items_i0_oauth_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_oauth_anyOf_i1')" role="tab">EmptyDict</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_oauth_anyOf_i2" id="Call_parameters_items_i0_oauth_anyOf_i2" onclick="setAnchor('#Call_parameters_items_i0_oauth_anyOf_i2')" role="tab">Option 3</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_oauth_anyOf_i0" role="tabpanel">
+    <h4>MailEntryOAuth</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_oauth_anyOf_i0_provider">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_oauth_anyOf_i0_provider">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_oauth_anyOf_i0_provider" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_oauth_anyOf_i0_provider" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_oauth_anyOf_i0_provider')" type="button"><span class="property-name">provider</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_oauth_anyOf_i0_provider" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_oauth_anyOf_i0_provider" id="Call_parameters_items_i0_oauth_anyOf_i0_provider">
+    <div class="card-body pl-5">
+    <h4>Provider</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>An email provider, e.g. "gmail", "outlook".</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_oauth_anyOf_i0_client_id">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_oauth_anyOf_i0_client_id">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_oauth_anyOf_i0_client_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_oauth_anyOf_i0_client_id" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_oauth_anyOf_i0_client_id')" type="button"><span class="property-name">client_id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_oauth_anyOf_i0_client_id" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_oauth_anyOf_i0_client_id" id="Call_parameters_items_i0_oauth_anyOf_i0_client_id">
+    <div class="card-body pl-5">
+    <h4>Client Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>OAuth client ID provided by the email provider.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_oauth_anyOf_i0_client_secret">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_oauth_anyOf_i0_client_secret">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_oauth_anyOf_i0_client_secret" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_oauth_anyOf_i0_client_secret" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_oauth_anyOf_i0_client_secret')" type="button"><span class="property-name">client_secret</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_oauth_anyOf_i0_client_secret" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_oauth_anyOf_i0_client_secret" id="Call_parameters_items_i0_oauth_anyOf_i0_client_secret">
+    <div class="card-body pl-5">
+    <h4>Client Secret</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>OAuth client secret provided by the email provider.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_oauth_anyOf_i0_refresh_token">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_oauth_anyOf_i0_refresh_token">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_oauth_anyOf_i0_refresh_token" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_oauth_anyOf_i0_refresh_token" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_oauth_anyOf_i0_refresh_token')" type="button"><span class="property-name">refresh_token</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_oauth_anyOf_i0_refresh_token" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_oauth_anyOf_i0_refresh_token" id="Call_parameters_items_i0_oauth_anyOf_i0_refresh_token">
+    <div class="card-body pl-5">
+    <h4>Refresh Token</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>OAuth refresh token used to obtain new access tokens for email authentication.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_oauth_anyOf_i1" role="tabpanel">
+    <h4>EmptyDict</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_oauth_anyOf_i2" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>MailEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The resulting mail configuration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_fromemail">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_fromemail">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_fromemail" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_fromemail" data-toggle="collapse" onclick="setAnchor('#Return_value_fromemail')" type="button"><span class="property-name">fromemail</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_fromemail" class="collapse property-definition-div" data-parent="#accordionReturn_value_fromemail" id="Return_value_fromemail">
+    <div class="card-body pl-5">
+    <h4>Fromemail</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The sending address that the mail server will use for sending emails.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_fromname">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_fromname">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_fromname" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_fromname" data-toggle="collapse" onclick="setAnchor('#Return_value_fromname')" type="button"><span class="property-name">fromname</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_fromname" class="collapse property-definition-div" data-parent="#accordionReturn_value_fromname" id="Return_value_fromname">
+    <div class="card-body pl-5">
+    <h4>Fromname</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Display name that will appear as the sender name in outgoing emails.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_outgoingserver">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_outgoingserver">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_outgoingserver" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_outgoingserver" data-toggle="collapse" onclick="setAnchor('#Return_value_outgoingserver')" type="button"><span class="property-name">outgoingserver</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_outgoingserver" class="collapse property-definition-div" data-parent="#accordionReturn_value_outgoingserver" id="Return_value_outgoingserver">
+    <div class="card-body pl-5">
+    <h4>Outgoingserver</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Hostname or IP address of the SMTP server used for sending emails.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_port">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_port">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_port" data-toggle="collapse" onclick="setAnchor('#Return_value_port')" type="button"><span class="property-name">port</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_port" class="collapse property-definition-div" data-parent="#accordionReturn_value_port" id="Return_value_port">
+    <div class="card-body pl-5">
+    <h4>Port</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>TCP port number for the SMTP server connection.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_security">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_security">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_security" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_security" data-toggle="collapse" onclick="setAnchor('#Return_value_security')" type="button"><span class="property-name">security</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_security" class="collapse property-definition-div" data-parent="#accordionReturn_value_security" id="Return_value_security">
+    <div class="card-body pl-5">
+    <h4>Security</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Type of encryption.</p>
+    </span><div class="enum-value" id="Return_value_security_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"PLAIN"</li><li class="list-group-item enum-item">"SSL"</li><li class="list-group-item enum-item">"TLS"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_smtp">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_smtp">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_smtp" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_smtp" data-toggle="collapse" onclick="setAnchor('#Return_value_smtp')" type="button"><span class="property-name">smtp</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_smtp" class="collapse property-definition-div" data-parent="#accordionReturn_value_smtp" id="Return_value_smtp">
+    <div class="card-body pl-5">
+    <h4>Smtp</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether SMTP authentication is enabled and <code>user</code>, <code>pass</code> are required.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_user">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_user">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_user" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_user" data-toggle="collapse" onclick="setAnchor('#Return_value_user')" type="button"><span class="property-name">user</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_user" class="collapse property-definition-div" data-parent="#accordionReturn_value_user" id="Return_value_user">
+    <div class="card-body pl-5">
+    <h4>User</h4><br/>
+    <span class="description"><p>SMTP username.</p>
+    </span><div class="any-of-value" id="Return_value_user_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_user_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_user_anyOf_i0" id="Return_value_user_anyOf_i0" onclick="setAnchor('#Return_value_user_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_user_anyOf_i1" id="Return_value_user_anyOf_i1" onclick="setAnchor('#Return_value_user_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_user_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_user_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_pass">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_pass">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_pass" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_pass" data-toggle="collapse" onclick="setAnchor('#Return_value_pass')" type="button"><span class="property-name">pass</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_pass" class="collapse property-definition-div" data-parent="#accordionReturn_value_pass" id="Return_value_pass">
+    <div class="card-body pl-5">
+    <h4>Pass</h4><br/>
+    <span class="description"><p>SMTP password.</p>
+    </span><div class="any-of-value" id="Return_value_pass_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_pass_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_pass_anyOf_i0" id="Return_value_pass_anyOf_i0" onclick="setAnchor('#Return_value_pass_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_pass_anyOf_i1" id="Return_value_pass_anyOf_i1" onclick="setAnchor('#Return_value_pass_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_pass_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_pass_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_oauth">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_oauth">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_oauth" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_oauth" data-toggle="collapse" onclick="setAnchor('#Return_value_oauth')" type="button"><span class="property-name">oauth</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_oauth" class="collapse property-definition-div" data-parent="#accordionReturn_value_oauth" id="Return_value_oauth">
+    <div class="card-body pl-5">
+    <h4>Oauth</h4><br/>
+    <span class="description"><p>OAuth configuration for email providers that support it or <code>null</code> for basic authentication.</p>
+    </span><div class="any-of-value" id="Return_value_oauth_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_oauth_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_oauth_anyOf_i0" id="Return_value_oauth_anyOf_i0" onclick="setAnchor('#Return_value_oauth_anyOf_i0')" role="tab">MailEntryOAuth</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_oauth_anyOf_i1" id="Return_value_oauth_anyOf_i1" onclick="setAnchor('#Return_value_oauth_anyOf_i1')" role="tab">EmptyDict</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_oauth_anyOf_i2" id="Return_value_oauth_anyOf_i2" onclick="setAnchor('#Return_value_oauth_anyOf_i2')" role="tab">Option 3</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_oauth_anyOf_i0" role="tabpanel">
+    <h4>MailEntryOAuth</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_oauth_anyOf_i0_provider">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_oauth_anyOf_i0_provider">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_oauth_anyOf_i0_provider" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_oauth_anyOf_i0_provider" data-toggle="collapse" onclick="setAnchor('#Return_value_oauth_anyOf_i0_provider')" type="button"><span class="property-name">provider</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_oauth_anyOf_i0_provider" class="collapse property-definition-div" data-parent="#accordionReturn_value_oauth_anyOf_i0_provider" id="Return_value_oauth_anyOf_i0_provider">
+    <div class="card-body pl-5">
+    <h4>Provider</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>An email provider, e.g. "gmail", "outlook".</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_oauth_anyOf_i0_client_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_oauth_anyOf_i0_client_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_oauth_anyOf_i0_client_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_oauth_anyOf_i0_client_id" data-toggle="collapse" onclick="setAnchor('#Return_value_oauth_anyOf_i0_client_id')" type="button"><span class="property-name">client_id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_oauth_anyOf_i0_client_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_oauth_anyOf_i0_client_id" id="Return_value_oauth_anyOf_i0_client_id">
+    <div class="card-body pl-5">
+    <h4>Client Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>OAuth client ID provided by the email provider.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_oauth_anyOf_i0_client_secret">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_oauth_anyOf_i0_client_secret">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_oauth_anyOf_i0_client_secret" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_oauth_anyOf_i0_client_secret" data-toggle="collapse" onclick="setAnchor('#Return_value_oauth_anyOf_i0_client_secret')" type="button"><span class="property-name">client_secret</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_oauth_anyOf_i0_client_secret" class="collapse property-definition-div" data-parent="#accordionReturn_value_oauth_anyOf_i0_client_secret" id="Return_value_oauth_anyOf_i0_client_secret">
+    <div class="card-body pl-5">
+    <h4>Client Secret</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>OAuth client secret provided by the email provider.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_oauth_anyOf_i0_refresh_token">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_oauth_anyOf_i0_refresh_token">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_oauth_anyOf_i0_refresh_token" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_oauth_anyOf_i0_refresh_token" data-toggle="collapse" onclick="setAnchor('#Return_value_oauth_anyOf_i0_refresh_token')" type="button"><span class="property-name">refresh_token</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_oauth_anyOf_i0_refresh_token" class="collapse property-definition-div" data-parent="#accordionReturn_value_oauth_anyOf_i0_refresh_token" id="Return_value_oauth_anyOf_i0_refresh_token">
+    <div class="card-body pl-5">
+    <h4>Refresh Token</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>OAuth refresh token used to obtain new access tokens for email authentication.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_oauth_anyOf_i1" role="tabpanel">
+    <h4>EmptyDict</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_oauth_anyOf_i2" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for this mail configuration.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* ALERT_WRITE
+

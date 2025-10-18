@@ -1,0 +1,19 @@
+auth
+----
+
+.. toctree::
+
+   api_methods_auth.generate_onetime_password
+   api_methods_auth.generate_token
+   api_methods_auth.login
+   api_methods_auth.login_ex
+   api_methods_auth.login_ex_continue
+   api_methods_auth.login_with_api_key
+   api_methods_auth.login_with_token
+   api_methods_auth.logout
+   api_methods_auth.me
+   api_methods_auth.mechanism_choices
+   api_methods_auth.sessions
+   api_methods_auth.set_attribute
+   api_methods_auth.terminate_other_sessions
+   api_methods_auth.terminate_session

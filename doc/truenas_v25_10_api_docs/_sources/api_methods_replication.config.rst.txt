@@ -1,0 +1,7 @@
+replication.config
+------------------
+
+.. toctree::
+
+   api_methods_replication.config.config
+   api_methods_replication.config.update

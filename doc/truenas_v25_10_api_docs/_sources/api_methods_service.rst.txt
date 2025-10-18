@@ -1,0 +1,11 @@
+service
+-------
+
+.. toctree::
+
+   api_methods_service.control
+   api_methods_service.get_instance
+   api_methods_service.query
+   api_methods_service.started
+   api_methods_service.started_or_enabled
+   api_methods_service.update

@@ -1,0 +1,181 @@
+app.image.dockerhub_rate_limit
+==============================
+
+Returns the current rate limit information for Docker Hub registry.
+
+Please refer to https://docs.docker.com/docker-hub/download-rate-limit/ for more information.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>ContainerImagesDockerhubRateLimitResult</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>ContainerImagesDockerhubRateLimitResult return fields.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_total_pull_limit">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_total_pull_limit">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_total_pull_limit" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_total_pull_limit" data-toggle="collapse" onclick="setAnchor('#Return_value_total_pull_limit')" type="button"><span class="property-name">total_pull_limit</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_total_pull_limit" class="collapse property-definition-div" data-parent="#accordionReturn_value_total_pull_limit" id="Return_value_total_pull_limit">
+    <div class="card-body pl-5">
+    <h4>Total Pull Limit</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Total pull limit for Docker Hub registry.</p>
+    </span><div class="any-of-value" id="Return_value_total_pull_limit_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_total_pull_limit_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_total_pull_limit_anyOf_i0" id="Return_value_total_pull_limit_anyOf_i0" onclick="setAnchor('#Return_value_total_pull_limit_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_total_pull_limit_anyOf_i1" id="Return_value_total_pull_limit_anyOf_i1" onclick="setAnchor('#Return_value_total_pull_limit_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_total_pull_limit_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_total_pull_limit_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_total_time_limit_in_secs">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_total_time_limit_in_secs">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_total_time_limit_in_secs" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_total_time_limit_in_secs" data-toggle="collapse" onclick="setAnchor('#Return_value_total_time_limit_in_secs')" type="button"><span class="property-name">total_time_limit_in_secs</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_total_time_limit_in_secs" class="collapse property-definition-div" data-parent="#accordionReturn_value_total_time_limit_in_secs" id="Return_value_total_time_limit_in_secs">
+    <div class="card-body pl-5">
+    <h4>Total Time Limit In Secs</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Total time limit in seconds for Docker Hub registry before the limit renews.</p>
+    </span><div class="any-of-value" id="Return_value_total_time_limit_in_secs_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_total_time_limit_in_secs_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_total_time_limit_in_secs_anyOf_i0" id="Return_value_total_time_limit_in_secs_anyOf_i0" onclick="setAnchor('#Return_value_total_time_limit_in_secs_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_total_time_limit_in_secs_anyOf_i1" id="Return_value_total_time_limit_in_secs_anyOf_i1" onclick="setAnchor('#Return_value_total_time_limit_in_secs_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_total_time_limit_in_secs_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_total_time_limit_in_secs_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_remaining_pull_limit">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_remaining_pull_limit">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_remaining_pull_limit" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_remaining_pull_limit" data-toggle="collapse" onclick="setAnchor('#Return_value_remaining_pull_limit')" type="button"><span class="property-name">remaining_pull_limit</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_remaining_pull_limit" class="collapse property-definition-div" data-parent="#accordionReturn_value_remaining_pull_limit" id="Return_value_remaining_pull_limit">
+    <div class="card-body pl-5">
+    <h4>Remaining Pull Limit</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Remaining pull limit for Docker Hub registry.</p>
+    </span><div class="any-of-value" id="Return_value_remaining_pull_limit_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_remaining_pull_limit_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_remaining_pull_limit_anyOf_i0" id="Return_value_remaining_pull_limit_anyOf_i0" onclick="setAnchor('#Return_value_remaining_pull_limit_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_remaining_pull_limit_anyOf_i1" id="Return_value_remaining_pull_limit_anyOf_i1" onclick="setAnchor('#Return_value_remaining_pull_limit_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_remaining_pull_limit_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_remaining_pull_limit_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_remaining_time_limit_in_secs">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_remaining_time_limit_in_secs">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_remaining_time_limit_in_secs" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_remaining_time_limit_in_secs" data-toggle="collapse" onclick="setAnchor('#Return_value_remaining_time_limit_in_secs')" type="button"><span class="property-name">remaining_time_limit_in_secs</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_remaining_time_limit_in_secs" class="collapse property-definition-div" data-parent="#accordionReturn_value_remaining_time_limit_in_secs" id="Return_value_remaining_time_limit_in_secs">
+    <div class="card-body pl-5">
+    <h4>Remaining Time Limit In Secs</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Remaining time limit in seconds for Docker Hub registry for the current pull limit to be renewed.</p>
+    </span><div class="any-of-value" id="Return_value_remaining_time_limit_in_secs_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_remaining_time_limit_in_secs_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_remaining_time_limit_in_secs_anyOf_i0" id="Return_value_remaining_time_limit_in_secs_anyOf_i0" onclick="setAnchor('#Return_value_remaining_time_limit_in_secs_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_remaining_time_limit_in_secs_anyOf_i1" id="Return_value_remaining_time_limit_in_secs_anyOf_i1" onclick="setAnchor('#Return_value_remaining_time_limit_in_secs_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_remaining_time_limit_in_secs_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_remaining_time_limit_in_secs_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_error">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_error">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_error" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_error" data-toggle="collapse" onclick="setAnchor('#Return_value_error')" type="button"><span class="property-name">error</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_error" class="collapse property-definition-div" data-parent="#accordionReturn_value_error" id="Return_value_error">
+    <div class="card-body pl-5">
+    <h4>Error</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Error message if rate limit information could not be retrieved or <code>null</code> on success.</p>
+    </span><div class="any-of-value" id="Return_value_error_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_error_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_error_anyOf_i0" id="Return_value_error_anyOf_i0" onclick="setAnchor('#Return_value_error_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_error_anyOf_i1" id="Return_value_error_anyOf_i1" onclick="setAnchor('#Return_value_error_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_error_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_error_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* APPS_READ
+

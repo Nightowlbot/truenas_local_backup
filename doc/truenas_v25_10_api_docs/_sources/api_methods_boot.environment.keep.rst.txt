@@ -1,0 +1,230 @@
+boot.environment.keep
+=====================
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: boot_environment_destroy</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>boot_environment_destroy</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>BootEnvironmentKeepArgs parameters.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_id">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_id">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_id" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_id" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_id" id="Call_parameters_items_i0_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name of the boot environment to modify.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_id_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_value">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_value">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_value" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_value')" type="button"><span class="property-name">value</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_value" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_value" id="Call_parameters_items_i0_value">
+    <div class="card-body pl-5">
+    <h4>Value</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to protect this boot environment from automatic deletion.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>BootEnvironmentEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The updated boot environment with modified keep setting.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The name of the boot environment referenced by the boot environment tool.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_id_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_dataset">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_dataset">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_dataset" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_dataset" data-toggle="collapse" onclick="setAnchor('#Return_value_dataset')" type="button"><span class="property-name">dataset</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_dataset" class="collapse property-definition-div" data-parent="#accordionReturn_value_dataset" id="Return_value_dataset">
+    <div class="card-body pl-5">
+    <h4>Dataset</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The name of the zfs dataset that represents the boot environment.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_dataset_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_active">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_active">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_active" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_active" data-toggle="collapse" onclick="setAnchor('#Return_value_active')" type="button"><span class="property-name">active</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_active" class="collapse property-definition-div" data-parent="#accordionReturn_value_active" id="Return_value_active">
+    <div class="card-body pl-5">
+    <h4>Active</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>This is the currently running boot environment.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_activated">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_activated">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_activated" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_activated" data-toggle="collapse" onclick="setAnchor('#Return_value_activated')" type="button"><span class="property-name">activated</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_activated" class="collapse property-definition-div" data-parent="#accordionReturn_value_activated" id="Return_value_activated">
+    <div class="card-body pl-5">
+    <h4>Activated</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Use this boot environment on next boot.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_created">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_created">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_created" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_created" data-toggle="collapse" onclick="setAnchor('#Return_value_created')" type="button"><span class="property-name">created</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_created" class="collapse property-definition-div" data-parent="#accordionReturn_value_created" id="Return_value_created">
+    <div class="card-body pl-5">
+    <h4>Created</h4><span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: date-time</span><br/>
+    <span class="description"><p>The date when the boot environment was created.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_used_bytes">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_used_bytes">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_used_bytes" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_used_bytes" data-toggle="collapse" onclick="setAnchor('#Return_value_used_bytes')" type="button"><span class="property-name">used_bytes</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_used_bytes" class="collapse property-definition-div" data-parent="#accordionReturn_value_used_bytes" id="Return_value_used_bytes">
+    <div class="card-body pl-5">
+    <h4>Used Bytes</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>The total amount of bytes used by the boot environment.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_used">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_used">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_used" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_used" data-toggle="collapse" onclick="setAnchor('#Return_value_used')" type="button"><span class="property-name">used</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_used" class="collapse property-definition-div" data-parent="#accordionReturn_value_used" id="Return_value_used">
+    <div class="card-body pl-5">
+    <h4>Used</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The boot environment's used space in human readable format.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_used_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_keep">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_keep">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_keep" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_keep" data-toggle="collapse" onclick="setAnchor('#Return_value_keep')" type="button"><span class="property-name">keep</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_keep" class="collapse property-definition-div" data-parent="#accordionReturn_value_keep" id="Return_value_keep">
+    <div class="card-body pl-5">
+    <h4>Keep</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>When set to false, this makes the boot environment subject to     automatic deletion if the TrueNAS updater needs space for an update.     Otherwise, the updater will not delete this boot environment if it is     set to true.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_can_activate">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_can_activate">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_can_activate" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_can_activate" data-toggle="collapse" onclick="setAnchor('#Return_value_can_activate')" type="button"><span class="property-name">can_activate</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_can_activate" class="collapse property-definition-div" data-parent="#accordionReturn_value_can_activate" id="Return_value_can_activate">
+    <div class="card-body pl-5">
+    <h4>Can Activate</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>The given boot environment may be activated.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* BOOT_ENV_WRITE
+

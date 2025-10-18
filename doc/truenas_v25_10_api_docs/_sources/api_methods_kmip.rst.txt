@@ -1,0 +1,10 @@
+kmip
+----
+
+.. toctree::
+
+   api_methods_kmip.clear_sync_pending_keys
+   api_methods_kmip.config
+   api_methods_kmip.kmip_sync_pending
+   api_methods_kmip.sync_keys
+   api_methods_kmip.update

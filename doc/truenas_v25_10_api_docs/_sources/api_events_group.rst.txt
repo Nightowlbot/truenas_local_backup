@@ -1,0 +1,6 @@
+group
+-----
+
+.. toctree::
+
+   api_events_group.query

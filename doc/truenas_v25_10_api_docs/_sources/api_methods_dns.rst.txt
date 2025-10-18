@@ -1,0 +1,6 @@
+dns
+---
+
+.. toctree::
+
+   api_methods_dns.query

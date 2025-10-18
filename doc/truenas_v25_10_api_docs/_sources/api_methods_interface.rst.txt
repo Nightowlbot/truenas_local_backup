@@ -1,0 +1,28 @@
+interface
+---------
+
+.. toctree::
+
+   api_methods_interface.bridge_members_choices
+   api_methods_interface.cancel_rollback
+   api_methods_interface.checkin
+   api_methods_interface.checkin_waiting
+   api_methods_interface.choices
+   api_methods_interface.commit
+   api_methods_interface.create
+   api_methods_interface.delete
+   api_methods_interface.get_instance
+   api_methods_interface.has_pending_changes
+   api_methods_interface.ip_in_use
+   api_methods_interface.lacpdu_rate_choices
+   api_methods_interface.lag_ports_choices
+   api_methods_interface.network_config_to_be_removed
+   api_methods_interface.query
+   api_methods_interface.rollback
+   api_methods_interface.save_network_config
+   api_methods_interface.services_restarted_on_sync
+   api_methods_interface.update
+   api_methods_interface.vlan_parent_interface_choices
+   api_methods_interface.websocket_interface
+   api_methods_interface.websocket_local_ip
+   api_methods_interface.xmit_hash_policy_choices

@@ -1,0 +1,13 @@
+disk
+----
+
+.. toctree::
+
+   api_methods_disk.details
+   api_methods_disk.get_used
+   api_methods_disk.query
+   api_methods_disk.temperature_agg
+   api_methods_disk.temperature_alerts
+   api_methods_disk.temperatures
+   api_methods_disk.update
+   api_methods_disk.wipe

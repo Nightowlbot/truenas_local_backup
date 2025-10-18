@@ -1,0 +1,928 @@
+filesystem.listdir
+==================
+
+Get the contents of a directory.
+
+The select option may be used to optimize listdir performance. Metadata-related fields that are not selected will not be retrieved from the filesystem.
+
+For example {"select": ["path", "type"]} will avoid querying an xattr list and ZFS attributes for files in a directory.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: path</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>path</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Directory path to list contents of.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    <h5>Parameter 2: query_filters</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>query_filters</h4><span class="badge badge-dark value-type">Type: array</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>List of filters for query results. See API documentation for "Query Methods" for more guidance.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1_items">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div>
+    </div><br/>
+    <div class="badge badge-secondary">Examples:</div>
+    <br/><div class="jumbotron examples" id="Call_parameters_items_i1_ex1"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="w">    </span><span class="p">[</span>
+    <span class="w">        </span><span class="s2">"name"</span><span class="p">,</span>
+    <span class="w">        </span><span class="s2">"="</span><span class="p">,</span>
+    <span class="w">        </span><span class="s2">"bob"</span>
+    <span class="w">    </span><span class="p">]</span>
+    <span class="p">]</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Call_parameters_items_i1_ex2"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="w">    </span><span class="p">[</span>
+    <span class="w">        </span><span class="s2">"OR"</span><span class="p">,</span>
+    <span class="w">        </span><span class="p">[</span>
+    <span class="w">            </span><span class="p">[</span>
+    <span class="w">                </span><span class="p">[</span>
+    <span class="w">                    </span><span class="s2">"name"</span><span class="p">,</span>
+    <span class="w">                    </span><span class="s2">"="</span><span class="p">,</span>
+    <span class="w">                    </span><span class="s2">"bob"</span>
+    <span class="w">                </span><span class="p">]</span>
+    <span class="w">            </span><span class="p">],</span>
+    <span class="w">            </span><span class="p">[</span>
+    <span class="w">                </span><span class="p">[</span>
+    <span class="w">                    </span><span class="s2">"name"</span><span class="p">,</span>
+    <span class="w">                    </span><span class="s2">"="</span><span class="p">,</span>
+    <span class="w">                    </span><span class="s2">"larry"</span>
+    <span class="w">                </span><span class="p">]</span>
+    <span class="w">            </span><span class="p">]</span>
+    <span class="w">        </span><span class="p">]</span>
+    <span class="w">    </span><span class="p">]</span>
+    <span class="p">]</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    <h5>Parameter 3: query_options</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i2">
+    <h4>query_options</h4><span class="badge badge-dark value-type">Type: object</span> <div class="json-default-value">Default:<div class="value">{
+      "extra": {},
+      "order_by": [],
+      "select": [],
+      "count": false,
+      "get": false,
+      "offset": 0,
+      "limit": 0,
+      "force_sql_filters": false
+    }</div></div><br/>
+    <span class="description"><p>Query options for sorting and pagination.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i2_extra">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i2_extra">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i2_extra" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i2_extra" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i2_extra')" type="button"><span class="property-name">extra</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i2_extra" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i2_extra" id="Call_parameters_items_i2_extra">
+    <div class="card-body pl-5">
+    <h4>Extra</h4><span class="badge badge-dark value-type">Type: object</span> <span class="badge badge-success default-value">Default: {}</span><br/>
+    <span class="description"><p>Extra options are defined on a per-endpoint basis and are described in the documentation for the associated     query method. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i2_order_by">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i2_order_by">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i2_order_by" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i2_order_by" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i2_order_by')" type="button"><span class="property-name">order_by</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i2_order_by" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i2_order_by" id="Call_parameters_items_i2_order_by">
+    <div class="card-body pl-5">
+    <h4>Order By</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>An array of field names describing the manner in which query results should be ordered. The field names may     also have one of more of the following special prefixes: <code>-</code> (reverse sort direction), <code>nulls_first:</code> (place     any null values at the head of the results list), <code>nulls_last:</code> (place any null values at the tail of the     results list). </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i2_order_by_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div><br/>
+    <div class="badge badge-secondary">Example:</div>
+    <br/><div class="jumbotron examples" id="Call_parameters_items_i2_order_by_ex1"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="w">    </span><span class="s2">"size"</span><span class="p">,</span>
+    <span class="w">    </span><span class="s2">"-devname"</span><span class="p">,</span>
+    <span class="w">    </span><span class="s2">"nulls_first:-expiretime"</span>
+    <span class="p">]</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i2_select">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i2_select">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i2_select" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i2_select" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i2_select')" type="button"><span class="property-name">select</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i2_select" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i2_select" id="Call_parameters_items_i2_select">
+    <div class="card-body pl-5">
+    <h4>Select</h4><span class="badge badge-dark value-type">Type: array</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>An array of field names specifying the exact fields to include in the query return. The dot character <code>.</code>     may be used to explicitly select only subkeys of the query result. </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i2_select_items">
+    <br/>
+    <div class="any-of-value" id="Call_parameters_items_i2_select_items_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i2_select_items_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i2_select_items_anyOf_i0" id="Call_parameters_items_i2_select_items_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i2_select_items_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i2_select_items_anyOf_i1" id="Call_parameters_items_i2_select_items_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i2_select_items_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i2_select_items_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i2_select_items_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i2_select_items_anyOf_i1_items">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div>
+    </div>
+    </div></div></div>
+    </div>
+    </div><br/>
+    <div class="badge badge-secondary">Example:</div>
+    <br/><div class="jumbotron examples" id="Call_parameters_items_i2_select_ex1"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="w">    </span><span class="s2">"username"</span><span class="p">,</span>
+    <span class="w">    </span><span class="s2">"Authentication.status"</span>
+    <span class="p">]</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i2_count">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i2_count">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i2_count" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i2_count" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i2_count')" type="button"><span class="property-name">count</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i2_count" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i2_count" id="Call_parameters_items_i2_count">
+    <div class="card-body pl-5">
+    <h4>Count</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Return a numeric value representing the number of items that match the specified <code>query-filters</code>. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i2_get">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i2_get">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i2_get" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i2_get" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i2_get')" type="button"><span class="property-name">get</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i2_get" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i2_get" id="Call_parameters_items_i2_get">
+    <div class="card-body pl-5">
+    <h4>Get</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Return the JSON object of the first result matching the specified <code>query-filters</code>. The query fails     if there specified <code>query-filters</code> return no results. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i2_offset">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i2_offset">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i2_offset" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i2_offset" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i2_offset')" type="button"><span class="property-name">offset</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i2_offset" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i2_offset" id="Call_parameters_items_i2_offset">
+    <div class="card-body pl-5">
+    <h4>Offset</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+    <span class="description"><p>This specifies the beginning offset of the results array. When combined with the <code>limit</code> query-option     it may be used to implement pagination of large results arrays. WARNING: some query methods provide     volatile results and the onus is on the developer to understand whether pagination is appropriate     for a particular query API method. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i2_limit">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i2_limit">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i2_limit" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i2_limit" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i2_limit')" type="button"><span class="property-name">limit</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i2_limit" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i2_limit" id="Call_parameters_items_i2_limit">
+    <div class="card-body pl-5">
+    <h4>Limit</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+    <span class="description"><p>This specifies the maximum number of results matching the specified <code>query-filters</code> to return. When     combined wtih the <code>offset</code> query-option it may be used to implement pagination of large results arrays.</p>
+    <p>WARNING: Some query methods provide volatile results and the onus is on the developer to understand whether     pagination is appropriate for a particular query API method. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i2_force_sql_filters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i2_force_sql_filters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i2_force_sql_filters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i2_force_sql_filters" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i2_force_sql_filters')" type="button"><span class="property-name">force_sql_filters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i2_force_sql_filters" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i2_force_sql_filters" id="Call_parameters_items_i2_force_sql_filters">
+    <div class="card-body pl-5">
+    <h4>Force Sql Filters</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Force use of SQL for result filtering to reduce response time. May not work for all methods.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><br/>
+    <div class="any-of-value" id="Return_value_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0" id="Return_value_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1" id="Return_value_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1')" role="tab">FilesystemDirQueryResultItem</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i2" id="Return_value_anyOf_i2" onclick="setAnchor('#Return_value_anyOf_i2')" role="tab">Option 3</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_anyOf_i0_items">
+    <h4>FilesystemDirQueryResultItem</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_name" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_name')" type="button"><span class="property-name">name</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_name" id="Return_value_anyOf_i0_items_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Entry's base name. </p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_anyOf_i0_items_name_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_path">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_path">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_path" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_path')" type="button"><span class="property-name">path</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_path" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_path" id="Return_value_anyOf_i0_items_path">
+    <div class="card-body pl-5">
+    <h4>Path</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Entry's full path. </p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_anyOf_i0_items_path_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_realpath">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_realpath">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_realpath" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_realpath" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_realpath')" type="button"><span class="property-name">realpath</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_realpath" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_realpath" id="Return_value_anyOf_i0_items_realpath">
+    <div class="card-body pl-5">
+    <h4>Realpath</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Canonical path of the entry, eliminating any symbolic links. </p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_anyOf_i0_items_realpath_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_type" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_type')" type="button"><span class="property-name">type</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_type" id="Return_value_anyOf_i0_items_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Type of filesystem entry.</p>
+    <ul>
+    <li><code>DIRECTORY</code>: Directory/folder</li>
+    <li><code>FILE</code>: Regular file</li>
+    <li><code>SYMLINK</code>: Symbolic link</li>
+    <li><code>OTHER</code>: Other file types (device, pipe, socket, etc.)</li>
+    </ul>
+    </span><div class="enum-value" id="Return_value_anyOf_i0_items_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"DIRECTORY"</li><li class="list-group-item enum-item">"FILE"</li><li class="list-group-item enum-item">"SYMLINK"</li><li class="list-group-item enum-item">"OTHER"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_size">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_size">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_size" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_size" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_size')" type="button"><span class="property-name">size</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_size" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_size" id="Return_value_anyOf_i0_items_size">
+    <div class="card-body pl-5">
+    <h4>Size</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Size of the file in bytes. For directories, this may not represent total content size. Corresonds with     stx_size.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_allocation_size">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_allocation_size">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_allocation_size" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_allocation_size" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_allocation_size')" type="button"><span class="property-name">allocation_size</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_allocation_size" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_allocation_size" id="Return_value_anyOf_i0_items_allocation_size">
+    <div class="card-body pl-5">
+    <h4>Allocation Size</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Allocated size of file. Calculated by multiplying stx_blocks by 512. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_mode">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_mode">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_mode" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_mode" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_mode')" type="button"><span class="property-name">mode</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_mode" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_mode" id="Return_value_anyOf_i0_items_mode">
+    <div class="card-body pl-5">
+    <h4>Mode</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Entry's mode including file type information and file permission bits. This corresponds with stx_mode. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_mount_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_mount_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_mount_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_mount_id" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_mount_id')" type="button"><span class="property-name">mount_id</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_mount_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_mount_id" id="Return_value_anyOf_i0_items_mount_id">
+    <div class="card-body pl-5">
+    <h4>Mount Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>The mount ID of the mount containing the entry. This corresponds to the number in first     field of /proc/self/mountinfo and stx<em>mnt</em>id. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_acl">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_acl">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_acl" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_acl" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_acl')" type="button"><span class="property-name">acl</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_acl" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_acl" id="Return_value_anyOf_i0_items_acl">
+    <div class="card-body pl-5">
+    <h4>Acl</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Specifies whether ACL is present on the entry. If this is the case then file permission     bits as reported in <code>mode</code> may not be representative of the actual permissions. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_uid">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_uid">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_uid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_uid" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_uid')" type="button"><span class="property-name">uid</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_uid" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_uid" id="Return_value_anyOf_i0_items_uid">
+    <div class="card-body pl-5">
+    <h4>Uid</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>User ID of the entry's owner. This corresponds with stx_uid. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_gid">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_gid">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_gid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_gid" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_gid')" type="button"><span class="property-name">gid</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_gid" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_gid" id="Return_value_anyOf_i0_items_gid">
+    <div class="card-body pl-5">
+    <h4>Gid</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Group ID of the entry's owner. This corresponds with stx_gid. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_is_mountpoint">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_is_mountpoint">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_is_mountpoint" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_is_mountpoint" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_is_mountpoint')" type="button"><span class="property-name">is_mountpoint</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_is_mountpoint" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_is_mountpoint" id="Return_value_anyOf_i0_items_is_mountpoint">
+    <div class="card-body pl-5">
+    <h4>Is Mountpoint</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Specifies whether the entry is also the mountpoint of a filesystem. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_is_ctldir">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_is_ctldir">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_is_ctldir" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_is_ctldir" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_is_ctldir')" type="button"><span class="property-name">is_ctldir</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_is_ctldir" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_is_ctldir" id="Return_value_anyOf_i0_items_is_ctldir">
+    <div class="card-body pl-5">
+    <h4>Is Ctldir</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Specifies whether the entry is located within the ZFS ctldir (for example a snapshot). </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_attributes">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_attributes">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_attributes" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_attributes" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_attributes')" type="button"><span class="property-name">attributes</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_attributes" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_attributes" id="Return_value_anyOf_i0_items_attributes">
+    <div class="card-body pl-5">
+    <h4>Attributes</h4><span class="badge badge-dark value-type">Type: array of enum (of string)</span><br/>
+    <span class="description"><p>Extra file attribute indicators for entry as returned by statx. Expanded from stx_attributes. </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_anyOf_i0_items_attributes_items">
+    <span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <div class="enum-value" id="Return_value_anyOf_i0_items_attributes_items_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"COMPRESSED"</li><li class="list-group-item enum-item">"APPEND"</li><li class="list-group-item enum-item">"NODUMP"</li><li class="list-group-item enum-item">"IMMUTABLE"</li><li class="list-group-item enum-item">"AUTOMOUNT"</li><li class="list-group-item enum-item">"MOUNT_ROOT"</li><li class="list-group-item enum-item">"VERIFY"</li><li class="list-group-item enum-item">"DAX"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_xattrs">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_xattrs">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_xattrs" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_xattrs" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_xattrs')" type="button"><span class="property-name">xattrs</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_xattrs" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_xattrs" id="Return_value_anyOf_i0_items_xattrs">
+    <div class="card-body pl-5">
+    <h4>Xattrs</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>List of xattr names of extended attributes on file. </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_anyOf_i0_items_xattrs_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_anyOf_i0_items_xattrs_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_zfs_attrs">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_zfs_attrs">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_zfs_attrs" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_zfs_attrs" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_zfs_attrs')" type="button"><span class="property-name">zfs_attrs</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_zfs_attrs" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_zfs_attrs" id="Return_value_anyOf_i0_items_zfs_attrs">
+    <div class="card-body pl-5">
+    <h4>Zfs Attrs</h4><br/>
+    <span class="description"><p>List of extra ZFS-related file attribute indicators on file. Will be None type if filesystem is not ZFS. </p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_zfs_attrs_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_zfs_attrs_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_zfs_attrs_anyOf_i0" id="Return_value_anyOf_i0_items_zfs_attrs_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_zfs_attrs_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_zfs_attrs_anyOf_i1" id="Return_value_anyOf_i0_items_zfs_attrs_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_zfs_attrs_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_zfs_attrs_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array of enum (of string)</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_anyOf_i0_items_zfs_attrs_anyOf_i0_items">
+    <span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <div class="enum-value" id="Return_value_anyOf_i0_items_zfs_attrs_anyOf_i0_items_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"READONLY"</li><li class="list-group-item enum-item">"HIDDEN"</li><li class="list-group-item enum-item">"SYSTEM"</li><li class="list-group-item enum-item">"ARCHIVE"</li><li class="list-group-item enum-item">"IMMUTABLE"</li><li class="list-group-item enum-item">"NOUNLINK"</li><li class="list-group-item enum-item">"APPENDONLY"</li><li class="list-group-item enum-item">"NODUMP"</li><li class="list-group-item enum-item">"OPAQUE"</li><li class="list-group-item enum-item">"AV_QUARANTINED"</li><li class="list-group-item enum-item">"AV_MODIFIED"</li><li class="list-group-item enum-item">"REPARSE"</li><li class="list-group-item enum-item">"OFFLINE"</li><li class="list-group-item enum-item">"SPARSE"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_zfs_attrs_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1" role="tabpanel">
+    <h4>FilesystemDirQueryResultItem</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_name" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_name')" type="button"><span class="property-name">name</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_name" id="Return_value_anyOf_i1_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Entry's base name. </p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_anyOf_i1_name_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_path">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_path">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_path" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_path')" type="button"><span class="property-name">path</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_path" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_path" id="Return_value_anyOf_i1_path">
+    <div class="card-body pl-5">
+    <h4>Path</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Entry's full path. </p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_anyOf_i1_path_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_realpath">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_realpath">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_realpath" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_realpath" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_realpath')" type="button"><span class="property-name">realpath</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_realpath" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_realpath" id="Return_value_anyOf_i1_realpath">
+    <div class="card-body pl-5">
+    <h4>Realpath</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Canonical path of the entry, eliminating any symbolic links. </p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_anyOf_i1_realpath_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_type" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_type')" type="button"><span class="property-name">type</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_type" id="Return_value_anyOf_i1_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Type of filesystem entry.</p>
+    <ul>
+    <li><code>DIRECTORY</code>: Directory/folder</li>
+    <li><code>FILE</code>: Regular file</li>
+    <li><code>SYMLINK</code>: Symbolic link</li>
+    <li><code>OTHER</code>: Other file types (device, pipe, socket, etc.)</li>
+    </ul>
+    </span><div class="enum-value" id="Return_value_anyOf_i1_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"DIRECTORY"</li><li class="list-group-item enum-item">"FILE"</li><li class="list-group-item enum-item">"SYMLINK"</li><li class="list-group-item enum-item">"OTHER"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_size">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_size">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_size" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_size" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_size')" type="button"><span class="property-name">size</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_size" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_size" id="Return_value_anyOf_i1_size">
+    <div class="card-body pl-5">
+    <h4>Size</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Size of the file in bytes. For directories, this may not represent total content size. Corresonds with     stx_size.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_allocation_size">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_allocation_size">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_allocation_size" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_allocation_size" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_allocation_size')" type="button"><span class="property-name">allocation_size</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_allocation_size" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_allocation_size" id="Return_value_anyOf_i1_allocation_size">
+    <div class="card-body pl-5">
+    <h4>Allocation Size</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Allocated size of file. Calculated by multiplying stx_blocks by 512. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_mode">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_mode">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_mode" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_mode" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_mode')" type="button"><span class="property-name">mode</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_mode" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_mode" id="Return_value_anyOf_i1_mode">
+    <div class="card-body pl-5">
+    <h4>Mode</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Entry's mode including file type information and file permission bits. This corresponds with stx_mode. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_mount_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_mount_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_mount_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_mount_id" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_mount_id')" type="button"><span class="property-name">mount_id</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_mount_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_mount_id" id="Return_value_anyOf_i1_mount_id">
+    <div class="card-body pl-5">
+    <h4>Mount Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>The mount ID of the mount containing the entry. This corresponds to the number in first     field of /proc/self/mountinfo and stx<em>mnt</em>id. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_acl">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_acl">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_acl" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_acl" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_acl')" type="button"><span class="property-name">acl</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_acl" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_acl" id="Return_value_anyOf_i1_acl">
+    <div class="card-body pl-5">
+    <h4>Acl</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Specifies whether ACL is present on the entry. If this is the case then file permission     bits as reported in <code>mode</code> may not be representative of the actual permissions. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_uid">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_uid">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_uid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_uid" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_uid')" type="button"><span class="property-name">uid</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_uid" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_uid" id="Return_value_anyOf_i1_uid">
+    <div class="card-body pl-5">
+    <h4>Uid</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>User ID of the entry's owner. This corresponds with stx_uid. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_gid">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_gid">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_gid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_gid" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_gid')" type="button"><span class="property-name">gid</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_gid" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_gid" id="Return_value_anyOf_i1_gid">
+    <div class="card-body pl-5">
+    <h4>Gid</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Group ID of the entry's owner. This corresponds with stx_gid. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_is_mountpoint">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_is_mountpoint">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_is_mountpoint" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_is_mountpoint" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_is_mountpoint')" type="button"><span class="property-name">is_mountpoint</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_is_mountpoint" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_is_mountpoint" id="Return_value_anyOf_i1_is_mountpoint">
+    <div class="card-body pl-5">
+    <h4>Is Mountpoint</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Specifies whether the entry is also the mountpoint of a filesystem. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_is_ctldir">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_is_ctldir">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_is_ctldir" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_is_ctldir" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_is_ctldir')" type="button"><span class="property-name">is_ctldir</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_is_ctldir" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_is_ctldir" id="Return_value_anyOf_i1_is_ctldir">
+    <div class="card-body pl-5">
+    <h4>Is Ctldir</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Specifies whether the entry is located within the ZFS ctldir (for example a snapshot). </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_attributes">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_attributes">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_attributes" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_attributes" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_attributes')" type="button"><span class="property-name">attributes</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_attributes" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_attributes" id="Return_value_anyOf_i1_attributes">
+    <div class="card-body pl-5">
+    <h4>Attributes</h4><span class="badge badge-dark value-type">Type: array of enum (of string)</span><br/>
+    <span class="description"><p>Extra file attribute indicators for entry as returned by statx. Expanded from stx_attributes. </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_anyOf_i1_attributes_items">
+    <span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <div class="enum-value" id="Return_value_anyOf_i1_attributes_items_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"COMPRESSED"</li><li class="list-group-item enum-item">"APPEND"</li><li class="list-group-item enum-item">"NODUMP"</li><li class="list-group-item enum-item">"IMMUTABLE"</li><li class="list-group-item enum-item">"AUTOMOUNT"</li><li class="list-group-item enum-item">"MOUNT_ROOT"</li><li class="list-group-item enum-item">"VERIFY"</li><li class="list-group-item enum-item">"DAX"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_xattrs">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_xattrs">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_xattrs" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_xattrs" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_xattrs')" type="button"><span class="property-name">xattrs</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_xattrs" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_xattrs" id="Return_value_anyOf_i1_xattrs">
+    <div class="card-body pl-5">
+    <h4>Xattrs</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>List of xattr names of extended attributes on file. </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_anyOf_i1_xattrs_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_anyOf_i1_xattrs_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_zfs_attrs">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_zfs_attrs">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_zfs_attrs" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_zfs_attrs" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_zfs_attrs')" type="button"><span class="property-name">zfs_attrs</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_zfs_attrs" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_zfs_attrs" id="Return_value_anyOf_i1_zfs_attrs">
+    <div class="card-body pl-5">
+    <h4>Zfs Attrs</h4><br/>
+    <span class="description"><p>List of extra ZFS-related file attribute indicators on file. Will be None type if filesystem is not ZFS. </p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_zfs_attrs_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_zfs_attrs_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_zfs_attrs_anyOf_i0" id="Return_value_anyOf_i1_zfs_attrs_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_zfs_attrs_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_zfs_attrs_anyOf_i1" id="Return_value_anyOf_i1_zfs_attrs_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_zfs_attrs_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_zfs_attrs_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array of enum (of string)</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_anyOf_i1_zfs_attrs_anyOf_i0_items">
+    <span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <div class="enum-value" id="Return_value_anyOf_i1_zfs_attrs_anyOf_i0_items_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"READONLY"</li><li class="list-group-item enum-item">"HIDDEN"</li><li class="list-group-item enum-item">"SYSTEM"</li><li class="list-group-item enum-item">"ARCHIVE"</li><li class="list-group-item enum-item">"IMMUTABLE"</li><li class="list-group-item enum-item">"NOUNLINK"</li><li class="list-group-item enum-item">"APPENDONLY"</li><li class="list-group-item enum-item">"NODUMP"</li><li class="list-group-item enum-item">"OPAQUE"</li><li class="list-group-item enum-item">"AV_QUARANTINED"</li><li class="list-group-item enum-item">"AV_MODIFIED"</li><li class="list-group-item enum-item">"REPARSE"</li><li class="list-group-item enum-item">"OFFLINE"</li><li class="list-group-item enum-item">"SPARSE"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_zfs_attrs_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i2" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* FILESYSTEM_ATTRS_READ
+

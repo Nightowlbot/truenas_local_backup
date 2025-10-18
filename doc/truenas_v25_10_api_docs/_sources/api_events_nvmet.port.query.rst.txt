@@ -1,0 +1,562 @@
+nvmet.port.query
+================
+
+Sent on nvmet.port changes.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionADDED">
+    <div class="card">
+    <div class="card-header" id="headingADDED">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED" data-toggle="collapse" onclick="setAnchor('#ADDED')" type="button"><span class="property-name">ADDED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED" class="collapse property-definition-div" data-parent="#accordionADDED" id="ADDED">
+    <div class="card-body pl-5">
+    <h4>NVMetPortAddedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_id" data-toggle="collapse" onclick="setAnchor('#ADDED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_id" class="collapse property-definition-div" data-parent="#accordionADDED_id" id="ADDED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields" data-toggle="collapse" onclick="setAnchor('#ADDED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields" class="collapse property-definition-div" data-parent="#accordionADDED_fields" id="ADDED_fields">
+    <div class="card-body pl-5">
+    <h4>NVMetPortEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_id" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_id" class="collapse property-definition-div" data-parent="#accordionADDED_fields_id" id="ADDED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the NVMe-oF port.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_index">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_index">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_index" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_index" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_index')" type="button"><span class="property-name">index</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_index" class="collapse property-definition-div" data-parent="#accordionADDED_fields_index" id="ADDED_fields_index">
+    <div class="card-body pl-5">
+    <h4>Index</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Index of the port, for internal use. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_addr_trtype">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_addr_trtype">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_addr_trtype" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_addr_trtype" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_addr_trtype')" type="button"><span class="property-name">addr_trtype</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_addr_trtype" class="collapse property-definition-div" data-parent="#accordionADDED_fields_addr_trtype" id="ADDED_fields_addr_trtype">
+    <div class="card-body pl-5">
+    <h4>Addr Trtype</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Fabric transport technology name. </p>
+    </span><div class="enum-value" id="ADDED_fields_addr_trtype_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"TCP"</li><li class="list-group-item enum-item">"RDMA"</li><li class="list-group-item enum-item">"FC"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_addr_trsvcid">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_addr_trsvcid">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_addr_trsvcid" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_addr_trsvcid" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_addr_trsvcid')" type="button"><span class="property-name">addr_trsvcid</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_addr_trsvcid" class="collapse property-definition-div" data-parent="#accordionADDED_fields_addr_trsvcid" id="ADDED_fields_addr_trsvcid">
+    <div class="card-body pl-5">
+    <h4>Addr Trsvcid</h4><br/>
+    <span class="description"><p>Transport-specific TRSVCID field.  When configured for TCP/IP or RDMA this will be the port number. </p>
+    </span><div class="any-of-value" id="ADDED_fields_addr_trsvcid_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_addr_trsvcid_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_addr_trsvcid_anyOf_i0" id="ADDED_fields_addr_trsvcid_anyOf_i0" onclick="setAnchor('#ADDED_fields_addr_trsvcid_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_addr_trsvcid_anyOf_i1" id="ADDED_fields_addr_trsvcid_anyOf_i1" onclick="setAnchor('#ADDED_fields_addr_trsvcid_anyOf_i1')" role="tab">Option 2</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_addr_trsvcid_anyOf_i2" id="ADDED_fields_addr_trsvcid_anyOf_i2" onclick="setAnchor('#ADDED_fields_addr_trsvcid_anyOf_i2')" role="tab">Option 3</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_addr_trsvcid_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_addr_trsvcid_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_addr_trsvcid_anyOf_i1_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_addr_trsvcid_anyOf_i2" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_addr_traddr">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_addr_traddr">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_addr_traddr" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_addr_traddr" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_addr_traddr')" type="button"><span class="property-name">addr_traddr</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_addr_traddr" class="collapse property-definition-div" data-parent="#accordionADDED_fields_addr_traddr" id="ADDED_fields_addr_traddr">
+    <div class="card-body pl-5">
+    <h4>Addr Traddr</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>A transport-specific field identifying the NVMe host port to use for the connection to the controller.</p>
+    <p>For TCP or RDMA transports, this will be an IPv4 or IPv6 address.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_addr_adrfam">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_addr_adrfam">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_addr_adrfam" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_addr_adrfam" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_addr_adrfam')" type="button"><span class="property-name">addr_adrfam</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_addr_adrfam" class="collapse property-definition-div" data-parent="#accordionADDED_fields_addr_adrfam" id="ADDED_fields_addr_adrfam">
+    <div class="card-body pl-5">
+    <h4>Addr Adrfam</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Address family.</p>
+    </span><div class="enum-value" id="ADDED_fields_addr_adrfam_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"IPV4"</li><li class="list-group-item enum-item">"IPV6"</li><li class="list-group-item enum-item">"FC"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_inline_data_size">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_inline_data_size">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_inline_data_size" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_inline_data_size" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_inline_data_size')" type="button"><span class="property-name">inline_data_size</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_inline_data_size" class="collapse property-definition-div" data-parent="#accordionADDED_fields_inline_data_size" id="ADDED_fields_inline_data_size">
+    <div class="card-body pl-5">
+    <h4>Inline Data Size</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Maximum size for inline data transfers or <code>null</code> for default.</p>
+    </span><div class="any-of-value" id="ADDED_fields_inline_data_size_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_inline_data_size_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_inline_data_size_anyOf_i0" id="ADDED_fields_inline_data_size_anyOf_i0" onclick="setAnchor('#ADDED_fields_inline_data_size_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_inline_data_size_anyOf_i1" id="ADDED_fields_inline_data_size_anyOf_i1" onclick="setAnchor('#ADDED_fields_inline_data_size_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_inline_data_size_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_inline_data_size_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_max_queue_size">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_max_queue_size">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_max_queue_size" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_max_queue_size" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_max_queue_size')" type="button"><span class="property-name">max_queue_size</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_max_queue_size" class="collapse property-definition-div" data-parent="#accordionADDED_fields_max_queue_size" id="ADDED_fields_max_queue_size">
+    <div class="card-body pl-5">
+    <h4>Max Queue Size</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Maximum number of queue entries or <code>null</code> for default.</p>
+    </span><div class="any-of-value" id="ADDED_fields_max_queue_size_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_max_queue_size_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_max_queue_size_anyOf_i0" id="ADDED_fields_max_queue_size_anyOf_i0" onclick="setAnchor('#ADDED_fields_max_queue_size_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_max_queue_size_anyOf_i1" id="ADDED_fields_max_queue_size_anyOf_i1" onclick="setAnchor('#ADDED_fields_max_queue_size_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_max_queue_size_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_max_queue_size_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_pi_enable">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_pi_enable">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_pi_enable" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_pi_enable" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_pi_enable')" type="button"><span class="property-name">pi_enable</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_pi_enable" class="collapse property-definition-div" data-parent="#accordionADDED_fields_pi_enable" id="ADDED_fields_pi_enable">
+    <div class="card-body pl-5">
+    <h4>Pi Enable</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Whether Protection Information (PI) is enabled or <code>null</code> for default.</p>
+    </span><div class="any-of-value" id="ADDED_fields_pi_enable_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_pi_enable_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_pi_enable_anyOf_i0" id="ADDED_fields_pi_enable_anyOf_i0" onclick="setAnchor('#ADDED_fields_pi_enable_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_pi_enable_anyOf_i1" id="ADDED_fields_pi_enable_anyOf_i1" onclick="setAnchor('#ADDED_fields_pi_enable_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_pi_enable_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_pi_enable_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_enabled">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_enabled">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_enabled" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_enabled" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_enabled')" type="button"><span class="property-name">enabled</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_enabled" class="collapse property-definition-div" data-parent="#accordionADDED_fields_enabled" id="ADDED_fields_enabled">
+    <div class="card-body pl-5">
+    <h4>Enabled</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Port enabled.  When NVMe target is running, cannot make changes to an enabled port. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED" data-toggle="collapse" onclick="setAnchor('#CHANGED')" type="button"><span class="property-name">CHANGED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED" class="collapse property-definition-div" data-parent="#accordionCHANGED" id="CHANGED">
+    <div class="card-body pl-5">
+    <h4>NVMetPortChangedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_id" id="CHANGED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields" id="CHANGED_fields">
+    <div class="card-body pl-5">
+    <h4>NVMetPortEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_id" id="CHANGED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the NVMe-oF port.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_index">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_index">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_index" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_index" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_index')" type="button"><span class="property-name">index</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_index" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_index" id="CHANGED_fields_index">
+    <div class="card-body pl-5">
+    <h4>Index</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Index of the port, for internal use. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_addr_trtype">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_addr_trtype">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_addr_trtype" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_addr_trtype" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_addr_trtype')" type="button"><span class="property-name">addr_trtype</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_addr_trtype" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_addr_trtype" id="CHANGED_fields_addr_trtype">
+    <div class="card-body pl-5">
+    <h4>Addr Trtype</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Fabric transport technology name. </p>
+    </span><div class="enum-value" id="CHANGED_fields_addr_trtype_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"TCP"</li><li class="list-group-item enum-item">"RDMA"</li><li class="list-group-item enum-item">"FC"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_addr_trsvcid">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_addr_trsvcid">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_addr_trsvcid" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_addr_trsvcid" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_addr_trsvcid')" type="button"><span class="property-name">addr_trsvcid</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_addr_trsvcid" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_addr_trsvcid" id="CHANGED_fields_addr_trsvcid">
+    <div class="card-body pl-5">
+    <h4>Addr Trsvcid</h4><br/>
+    <span class="description"><p>Transport-specific TRSVCID field.  When configured for TCP/IP or RDMA this will be the port number. </p>
+    </span><div class="any-of-value" id="CHANGED_fields_addr_trsvcid_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_addr_trsvcid_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_addr_trsvcid_anyOf_i0" id="CHANGED_fields_addr_trsvcid_anyOf_i0" onclick="setAnchor('#CHANGED_fields_addr_trsvcid_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_addr_trsvcid_anyOf_i1" id="CHANGED_fields_addr_trsvcid_anyOf_i1" onclick="setAnchor('#CHANGED_fields_addr_trsvcid_anyOf_i1')" role="tab">Option 2</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_addr_trsvcid_anyOf_i2" id="CHANGED_fields_addr_trsvcid_anyOf_i2" onclick="setAnchor('#CHANGED_fields_addr_trsvcid_anyOf_i2')" role="tab">Option 3</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_addr_trsvcid_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_addr_trsvcid_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_addr_trsvcid_anyOf_i1_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_addr_trsvcid_anyOf_i2" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_addr_traddr">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_addr_traddr">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_addr_traddr" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_addr_traddr" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_addr_traddr')" type="button"><span class="property-name">addr_traddr</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_addr_traddr" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_addr_traddr" id="CHANGED_fields_addr_traddr">
+    <div class="card-body pl-5">
+    <h4>Addr Traddr</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>A transport-specific field identifying the NVMe host port to use for the connection to the controller.</p>
+    <p>For TCP or RDMA transports, this will be an IPv4 or IPv6 address.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_addr_adrfam">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_addr_adrfam">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_addr_adrfam" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_addr_adrfam" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_addr_adrfam')" type="button"><span class="property-name">addr_adrfam</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_addr_adrfam" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_addr_adrfam" id="CHANGED_fields_addr_adrfam">
+    <div class="card-body pl-5">
+    <h4>Addr Adrfam</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Address family.</p>
+    </span><div class="enum-value" id="CHANGED_fields_addr_adrfam_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"IPV4"</li><li class="list-group-item enum-item">"IPV6"</li><li class="list-group-item enum-item">"FC"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_inline_data_size">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_inline_data_size">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_inline_data_size" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_inline_data_size" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_inline_data_size')" type="button"><span class="property-name">inline_data_size</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_inline_data_size" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_inline_data_size" id="CHANGED_fields_inline_data_size">
+    <div class="card-body pl-5">
+    <h4>Inline Data Size</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Maximum size for inline data transfers or <code>null</code> for default.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_inline_data_size_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_inline_data_size_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_inline_data_size_anyOf_i0" id="CHANGED_fields_inline_data_size_anyOf_i0" onclick="setAnchor('#CHANGED_fields_inline_data_size_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_inline_data_size_anyOf_i1" id="CHANGED_fields_inline_data_size_anyOf_i1" onclick="setAnchor('#CHANGED_fields_inline_data_size_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_inline_data_size_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_inline_data_size_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_max_queue_size">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_max_queue_size">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_max_queue_size" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_max_queue_size" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_max_queue_size')" type="button"><span class="property-name">max_queue_size</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_max_queue_size" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_max_queue_size" id="CHANGED_fields_max_queue_size">
+    <div class="card-body pl-5">
+    <h4>Max Queue Size</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Maximum number of queue entries or <code>null</code> for default.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_max_queue_size_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_max_queue_size_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_max_queue_size_anyOf_i0" id="CHANGED_fields_max_queue_size_anyOf_i0" onclick="setAnchor('#CHANGED_fields_max_queue_size_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_max_queue_size_anyOf_i1" id="CHANGED_fields_max_queue_size_anyOf_i1" onclick="setAnchor('#CHANGED_fields_max_queue_size_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_max_queue_size_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_max_queue_size_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_pi_enable">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_pi_enable">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_pi_enable" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_pi_enable" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_pi_enable')" type="button"><span class="property-name">pi_enable</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_pi_enable" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_pi_enable" id="CHANGED_fields_pi_enable">
+    <div class="card-body pl-5">
+    <h4>Pi Enable</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Whether Protection Information (PI) is enabled or <code>null</code> for default.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_pi_enable_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_pi_enable_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_pi_enable_anyOf_i0" id="CHANGED_fields_pi_enable_anyOf_i0" onclick="setAnchor('#CHANGED_fields_pi_enable_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_pi_enable_anyOf_i1" id="CHANGED_fields_pi_enable_anyOf_i1" onclick="setAnchor('#CHANGED_fields_pi_enable_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_pi_enable_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_pi_enable_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_enabled">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_enabled">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_enabled" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_enabled" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_enabled')" type="button"><span class="property-name">enabled</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_enabled" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_enabled" id="CHANGED_fields_enabled">
+    <div class="card-body pl-5">
+    <h4>Enabled</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Port enabled.  When NVMe target is running, cannot make changes to an enabled port. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionREMOVED">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED" data-toggle="collapse" onclick="setAnchor('#REMOVED')" type="button"><span class="property-name">REMOVED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED" class="collapse property-definition-div" data-parent="#accordionREMOVED" id="REMOVED">
+    <div class="card-body pl-5">
+    <h4>NVMetPortRemovedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionREMOVED_id">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED_id">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED_id" data-toggle="collapse" onclick="setAnchor('#REMOVED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED_id" class="collapse property-definition-div" data-parent="#accordionREMOVED_id" id="REMOVED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SHARING_NVME_TARGET_READ
+

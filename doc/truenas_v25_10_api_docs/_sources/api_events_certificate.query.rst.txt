@@ -1,0 +1,2172 @@
+certificate.query
+=================
+
+Sent on certificate changes.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionADDED">
+    <div class="card">
+    <div class="card-header" id="headingADDED">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED" data-toggle="collapse" onclick="setAnchor('#ADDED')" type="button"><span class="property-name">ADDED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED" class="collapse property-definition-div" data-parent="#accordionADDED" id="ADDED">
+    <div class="card-body pl-5">
+    <h4>CertificateAddedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_id" data-toggle="collapse" onclick="setAnchor('#ADDED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_id" class="collapse property-definition-div" data-parent="#accordionADDED_id" id="ADDED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields" data-toggle="collapse" onclick="setAnchor('#ADDED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields" class="collapse property-definition-div" data-parent="#accordionADDED_fields" id="ADDED_fields">
+    <div class="card-body pl-5">
+    <h4>CertificateEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_id" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_id" class="collapse property-definition-div" data-parent="#accordionADDED_fields_id" id="ADDED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for this certificate entry.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_type">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_type">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_type" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_type')" type="button"><span class="property-name">type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_type" class="collapse property-definition-div" data-parent="#accordionADDED_fields_type" id="ADDED_fields_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Internal certificate type identifier used to determine certificate capabilities.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_name">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_name">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_name" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_name" class="collapse property-definition-div" data-parent="#accordionADDED_fields_name" id="ADDED_fields_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable name for this certificate. Must be unique and contain only alphanumeric characters,     dashes, and underscores.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_name_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_certificate">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_certificate">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_certificate" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_certificate" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_certificate')" type="button"><span class="property-name">certificate</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_certificate" class="collapse property-definition-div" data-parent="#accordionADDED_fields_certificate" id="ADDED_fields_certificate">
+    <div class="card-body pl-5">
+    <h4>Certificate</h4><br/>
+    <span class="description"><p>PEM-encoded X.509 certificate data. <code>null</code> for certificate signing requests (CSR) that have not yet     been signed.</p>
+    </span><div class="any-of-value" id="ADDED_fields_certificate_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_certificate_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_certificate_anyOf_i0" id="ADDED_fields_certificate_anyOf_i0" onclick="setAnchor('#ADDED_fields_certificate_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_certificate_anyOf_i1" id="ADDED_fields_certificate_anyOf_i1" onclick="setAnchor('#ADDED_fields_certificate_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_certificate_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_certificate_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_privatekey">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_privatekey">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_privatekey" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_privatekey" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_privatekey')" type="button"><span class="property-name">privatekey</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_privatekey" class="collapse property-definition-div" data-parent="#accordionADDED_fields_privatekey" id="ADDED_fields_privatekey">
+    <div class="card-body pl-5">
+    <h4>Privatekey</h4><br/>
+    <span class="description"><p>PEM-encoded private key corresponding to the certificate. <code>null</code> if no private key is available or for     imported certificates without keys.</p>
+    </span><div class="any-of-value" id="ADDED_fields_privatekey_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_privatekey_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_privatekey_anyOf_i0" id="ADDED_fields_privatekey_anyOf_i0" onclick="setAnchor('#ADDED_fields_privatekey_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_privatekey_anyOf_i1" id="ADDED_fields_privatekey_anyOf_i1" onclick="setAnchor('#ADDED_fields_privatekey_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_privatekey_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_privatekey_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_CSR">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_CSR">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_CSR" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_CSR" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_CSR')" type="button"><span class="property-name">CSR</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_CSR" class="collapse property-definition-div" data-parent="#accordionADDED_fields_CSR" id="ADDED_fields_CSR">
+    <div class="card-body pl-5">
+    <h4>Csr</h4><br/>
+    <span class="description"><p>PEM-encoded Certificate Signing Request (CSR) data. <code>null</code> for imported certificates or completed     ACME certificates.</p>
+    </span><div class="any-of-value" id="ADDED_fields_CSR_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_CSR_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_CSR_anyOf_i0" id="ADDED_fields_CSR_anyOf_i0" onclick="setAnchor('#ADDED_fields_CSR_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_CSR_anyOf_i1" id="ADDED_fields_CSR_anyOf_i1" onclick="setAnchor('#ADDED_fields_CSR_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_CSR_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_CSR_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acme_uri">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acme_uri">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acme_uri" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acme_uri" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acme_uri')" type="button"><span class="property-name">acme_uri</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acme_uri" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acme_uri" id="ADDED_fields_acme_uri">
+    <div class="card-body pl-5">
+    <h4>Acme Uri</h4><br/>
+    <span class="description"><p>ACME directory server URI used for automated certificate management. <code>null</code> for non-ACME certificates.</p>
+    </span><div class="any-of-value" id="ADDED_fields_acme_uri_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_acme_uri_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_acme_uri_anyOf_i0" id="ADDED_fields_acme_uri_anyOf_i0" onclick="setAnchor('#ADDED_fields_acme_uri_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_acme_uri_anyOf_i1" id="ADDED_fields_acme_uri_anyOf_i1" onclick="setAnchor('#ADDED_fields_acme_uri_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_acme_uri_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_acme_uri_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_domains_authenticators">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_domains_authenticators">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_domains_authenticators" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_domains_authenticators" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_domains_authenticators')" type="button"><span class="property-name">domains_authenticators</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_domains_authenticators" class="collapse property-definition-div" data-parent="#accordionADDED_fields_domains_authenticators" id="ADDED_fields_domains_authenticators">
+    <div class="card-body pl-5">
+    <h4>Domains Authenticators</h4><br/>
+    <span class="description"><p>Mapping of domain names to ACME DNS authenticator IDs for domain validation. <code>null</code> for non-ACME     certificates.</p>
+    </span><div class="any-of-value" id="ADDED_fields_domains_authenticators_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_domains_authenticators_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_domains_authenticators_anyOf_i0" id="ADDED_fields_domains_authenticators_anyOf_i0" onclick="setAnchor('#ADDED_fields_domains_authenticators_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_domains_authenticators_anyOf_i1" id="ADDED_fields_domains_authenticators_anyOf_i1" onclick="setAnchor('#ADDED_fields_domains_authenticators_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_domains_authenticators_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_domains_authenticators_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_renew_days">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_renew_days">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_renew_days" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_renew_days" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_renew_days')" type="button"><span class="property-name">renew_days</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_renew_days" class="collapse property-definition-div" data-parent="#accordionADDED_fields_renew_days" id="ADDED_fields_renew_days">
+    <div class="card-body pl-5">
+    <h4>Renew Days</h4><br/>
+    <span class="description"><p>Number of days before expiration to attempt automatic renewal. Only applicable for ACME certificates.     <code>null</code> for non-renewable certificates.</p>
+    </span><div class="any-of-value" id="ADDED_fields_renew_days_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_renew_days_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_renew_days_anyOf_i0" id="ADDED_fields_renew_days_anyOf_i0" onclick="setAnchor('#ADDED_fields_renew_days_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_renew_days_anyOf_i1" id="ADDED_fields_renew_days_anyOf_i1" onclick="setAnchor('#ADDED_fields_renew_days_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_renew_days_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_renew_days_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acme">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acme">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acme" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acme" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acme')" type="button"><span class="property-name">acme</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acme" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acme" id="ADDED_fields_acme">
+    <div class="card-body pl-5">
+    <h4>Acme</h4><br/>
+    <span class="description"><p>ACME registration and account information used for certificate lifecycle management. <code>null</code> for     non-ACME certificates.</p>
+    </span><div class="any-of-value" id="ADDED_fields_acme_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_acme_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_acme_anyOf_i0" id="ADDED_fields_acme_anyOf_i0" onclick="setAnchor('#ADDED_fields_acme_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_acme_anyOf_i1" id="ADDED_fields_acme_anyOf_i1" onclick="setAnchor('#ADDED_fields_acme_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_acme_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_acme_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_add_to_trusted_store">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_add_to_trusted_store">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_add_to_trusted_store" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_add_to_trusted_store" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_add_to_trusted_store')" type="button"><span class="property-name">add_to_trusted_store</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_add_to_trusted_store" class="collapse property-definition-div" data-parent="#accordionADDED_fields_add_to_trusted_store" id="ADDED_fields_add_to_trusted_store">
+    <div class="card-body pl-5">
+    <h4>Add To Trusted Store</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this certificate should be added to the system's trusted certificate store.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_root_path">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_root_path">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_root_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_root_path" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_root_path')" type="button"><span class="property-name">root_path</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_root_path" class="collapse property-definition-div" data-parent="#accordionADDED_fields_root_path" id="ADDED_fields_root_path">
+    <div class="card-body pl-5">
+    <h4>Root Path</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Filesystem path where certificate-related files are stored.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_root_path_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_certificate_path">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_certificate_path">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_certificate_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_certificate_path" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_certificate_path')" type="button"><span class="property-name">certificate_path</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_certificate_path" class="collapse property-definition-div" data-parent="#accordionADDED_fields_certificate_path" id="ADDED_fields_certificate_path">
+    <div class="card-body pl-5">
+    <h4>Certificate Path</h4><br/>
+    <span class="description"><p>Filesystem path to the certificate file (.crt). <code>null</code> if no certificate is available.</p>
+    </span><div class="any-of-value" id="ADDED_fields_certificate_path_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_certificate_path_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_certificate_path_anyOf_i0" id="ADDED_fields_certificate_path_anyOf_i0" onclick="setAnchor('#ADDED_fields_certificate_path_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_certificate_path_anyOf_i1" id="ADDED_fields_certificate_path_anyOf_i1" onclick="setAnchor('#ADDED_fields_certificate_path_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_certificate_path_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_certificate_path_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_certificate_path_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_privatekey_path">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_privatekey_path">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_privatekey_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_privatekey_path" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_privatekey_path')" type="button"><span class="property-name">privatekey_path</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_privatekey_path" class="collapse property-definition-div" data-parent="#accordionADDED_fields_privatekey_path" id="ADDED_fields_privatekey_path">
+    <div class="card-body pl-5">
+    <h4>Privatekey Path</h4><br/>
+    <span class="description"><p>Filesystem path to the private key file (.key). <code>null</code> if no private key is available.</p>
+    </span><div class="any-of-value" id="ADDED_fields_privatekey_path_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_privatekey_path_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_privatekey_path_anyOf_i0" id="ADDED_fields_privatekey_path_anyOf_i0" onclick="setAnchor('#ADDED_fields_privatekey_path_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_privatekey_path_anyOf_i1" id="ADDED_fields_privatekey_path_anyOf_i1" onclick="setAnchor('#ADDED_fields_privatekey_path_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_privatekey_path_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_privatekey_path_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_privatekey_path_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_csr_path">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_csr_path">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_csr_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_csr_path" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_csr_path')" type="button"><span class="property-name">csr_path</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_csr_path" class="collapse property-definition-div" data-parent="#accordionADDED_fields_csr_path" id="ADDED_fields_csr_path">
+    <div class="card-body pl-5">
+    <h4>Csr Path</h4><br/>
+    <span class="description"><p>Filesystem path to the certificate signing request file (.csr). <code>null</code> if no CSR is available.</p>
+    </span><div class="any-of-value" id="ADDED_fields_csr_path_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_csr_path_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_csr_path_anyOf_i0" id="ADDED_fields_csr_path_anyOf_i0" onclick="setAnchor('#ADDED_fields_csr_path_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_csr_path_anyOf_i1" id="ADDED_fields_csr_path_anyOf_i1" onclick="setAnchor('#ADDED_fields_csr_path_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_csr_path_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_csr_path_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_csr_path_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_cert_type">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_cert_type">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_cert_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_cert_type" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_cert_type')" type="button"><span class="property-name">cert_type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_cert_type" class="collapse property-definition-div" data-parent="#accordionADDED_fields_cert_type" id="ADDED_fields_cert_type">
+    <div class="card-body pl-5">
+    <h4>Cert Type</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable certificate type, typically 'CERTIFICATE' for standard certificates.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_cert_type_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_cert_type_existing">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_cert_type_existing">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_cert_type_existing" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_cert_type_existing" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_cert_type_existing')" type="button"><span class="property-name">cert_type_existing</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_cert_type_existing" class="collapse property-definition-div" data-parent="#accordionADDED_fields_cert_type_existing" id="ADDED_fields_cert_type_existing">
+    <div class="card-body pl-5">
+    <h4>Cert Type Existing</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this is an existing certificate (imported or generated).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_cert_type_CSR">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_cert_type_CSR">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_cert_type_CSR" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_cert_type_CSR" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_cert_type_CSR')" type="button"><span class="property-name">cert_type_CSR</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_cert_type_CSR" class="collapse property-definition-div" data-parent="#accordionADDED_fields_cert_type_CSR" id="ADDED_fields_cert_type_CSR">
+    <div class="card-body pl-5">
+    <h4>Cert Type Csr</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this entry represents a Certificate Signing Request (CSR) rather than a signed certificate.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_cert_type_CA">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_cert_type_CA">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_cert_type_CA" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_cert_type_CA" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_cert_type_CA')" type="button"><span class="property-name">cert_type_CA</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_cert_type_CA" class="collapse property-definition-div" data-parent="#accordionADDED_fields_cert_type_CA" id="ADDED_fields_cert_type_CA">
+    <div class="card-body pl-5">
+    <h4>Cert Type Ca</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this certificate is a Certificate Authority (CA) certificate.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_chain_list">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_chain_list">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_chain_list" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_chain_list" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_chain_list')" type="button"><span class="property-name">chain_list</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_chain_list" class="collapse property-definition-div" data-parent="#accordionADDED_fields_chain_list" id="ADDED_fields_chain_list">
+    <div class="card-body pl-5">
+    <h4>Chain List</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of PEM-encoded certificates in the certificate chain, starting with the leaf certificate.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="ADDED_fields_chain_list_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_key_length">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_key_length">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_key_length" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_key_length" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_key_length')" type="button"><span class="property-name">key_length</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_key_length" class="collapse property-definition-div" data-parent="#accordionADDED_fields_key_length" id="ADDED_fields_key_length">
+    <div class="card-body pl-5">
+    <h4>Key Length</h4><br/>
+    <span class="description"><p>Size of the cryptographic key in bits. <code>null</code> if key information is unavailable.</p>
+    </span><div class="any-of-value" id="ADDED_fields_key_length_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_key_length_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_key_length_anyOf_i0" id="ADDED_fields_key_length_anyOf_i0" onclick="setAnchor('#ADDED_fields_key_length_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_key_length_anyOf_i1" id="ADDED_fields_key_length_anyOf_i1" onclick="setAnchor('#ADDED_fields_key_length_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_key_length_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_key_length_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_key_type">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_key_type">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_key_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_key_type" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_key_type')" type="button"><span class="property-name">key_type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_key_type" class="collapse property-definition-div" data-parent="#accordionADDED_fields_key_type" id="ADDED_fields_key_type">
+    <div class="card-body pl-5">
+    <h4>Key Type</h4><br/>
+    <span class="description"><p>Type of cryptographic key algorithm (e.g., 'RSA', 'EC', 'DSA'). <code>null</code> if key information is unavailable.</p>
+    </span><div class="any-of-value" id="ADDED_fields_key_type_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_key_type_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_key_type_anyOf_i0" id="ADDED_fields_key_type_anyOf_i0" onclick="setAnchor('#ADDED_fields_key_type_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_key_type_anyOf_i1" id="ADDED_fields_key_type_anyOf_i1" onclick="setAnchor('#ADDED_fields_key_type_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_key_type_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_key_type_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_key_type_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_country">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_country">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_country" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_country" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_country')" type="button"><span class="property-name">country</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_country" class="collapse property-definition-div" data-parent="#accordionADDED_fields_country" id="ADDED_fields_country">
+    <div class="card-body pl-5">
+    <h4>Country</h4><br/>
+    <span class="description"><p>ISO 3166-1 alpha-2 country code from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="ADDED_fields_country_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_country_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_country_anyOf_i0" id="ADDED_fields_country_anyOf_i0" onclick="setAnchor('#ADDED_fields_country_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_country_anyOf_i1" id="ADDED_fields_country_anyOf_i1" onclick="setAnchor('#ADDED_fields_country_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_country_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_country_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_state">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_state">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_state" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_state" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_state')" type="button"><span class="property-name">state</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_state" class="collapse property-definition-div" data-parent="#accordionADDED_fields_state" id="ADDED_fields_state">
+    <div class="card-body pl-5">
+    <h4>State</h4><br/>
+    <span class="description"><p>State or province name from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="ADDED_fields_state_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_state_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_state_anyOf_i0" id="ADDED_fields_state_anyOf_i0" onclick="setAnchor('#ADDED_fields_state_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_state_anyOf_i1" id="ADDED_fields_state_anyOf_i1" onclick="setAnchor('#ADDED_fields_state_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_state_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_state_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_city">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_city">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_city" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_city" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_city')" type="button"><span class="property-name">city</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_city" class="collapse property-definition-div" data-parent="#accordionADDED_fields_city" id="ADDED_fields_city">
+    <div class="card-body pl-5">
+    <h4>City</h4><br/>
+    <span class="description"><p>City or locality name from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="ADDED_fields_city_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_city_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_city_anyOf_i0" id="ADDED_fields_city_anyOf_i0" onclick="setAnchor('#ADDED_fields_city_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_city_anyOf_i1" id="ADDED_fields_city_anyOf_i1" onclick="setAnchor('#ADDED_fields_city_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_city_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_city_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_organization">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_organization">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_organization" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_organization" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_organization')" type="button"><span class="property-name">organization</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_organization" class="collapse property-definition-div" data-parent="#accordionADDED_fields_organization" id="ADDED_fields_organization">
+    <div class="card-body pl-5">
+    <h4>Organization</h4><br/>
+    <span class="description"><p>Organization name from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="ADDED_fields_organization_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_organization_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_organization_anyOf_i0" id="ADDED_fields_organization_anyOf_i0" onclick="setAnchor('#ADDED_fields_organization_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_organization_anyOf_i1" id="ADDED_fields_organization_anyOf_i1" onclick="setAnchor('#ADDED_fields_organization_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_organization_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_organization_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_organizational_unit">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_organizational_unit">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_organizational_unit" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_organizational_unit" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_organizational_unit')" type="button"><span class="property-name">organizational_unit</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_organizational_unit" class="collapse property-definition-div" data-parent="#accordionADDED_fields_organizational_unit" id="ADDED_fields_organizational_unit">
+    <div class="card-body pl-5">
+    <h4>Organizational Unit</h4><br/>
+    <span class="description"><p>Organizational unit from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="ADDED_fields_organizational_unit_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_organizational_unit_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_organizational_unit_anyOf_i0" id="ADDED_fields_organizational_unit_anyOf_i0" onclick="setAnchor('#ADDED_fields_organizational_unit_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_organizational_unit_anyOf_i1" id="ADDED_fields_organizational_unit_anyOf_i1" onclick="setAnchor('#ADDED_fields_organizational_unit_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_organizational_unit_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_organizational_unit_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_common">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_common">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_common" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_common" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_common')" type="button"><span class="property-name">common</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_common" class="collapse property-definition-div" data-parent="#accordionADDED_fields_common" id="ADDED_fields_common">
+    <div class="card-body pl-5">
+    <h4>Common</h4><br/>
+    <span class="description"><p>Common name (CN) from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="ADDED_fields_common_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_common_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_common_anyOf_i0" id="ADDED_fields_common_anyOf_i0" onclick="setAnchor('#ADDED_fields_common_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_common_anyOf_i1" id="ADDED_fields_common_anyOf_i1" onclick="setAnchor('#ADDED_fields_common_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_common_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_common_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_san">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_san">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_san" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_san" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_san')" type="button"><span class="property-name">san</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_san" class="collapse property-definition-div" data-parent="#accordionADDED_fields_san" id="ADDED_fields_san">
+    <div class="card-body pl-5">
+    <h4>San</h4><br/>
+    <span class="description"><p>Subject Alternative Names (SAN) from the certificate extension. <code>null</code> if no SAN extension is present.</p>
+    </span><div class="any-of-value" id="ADDED_fields_san_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_san_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_san_anyOf_i0" id="ADDED_fields_san_anyOf_i0" onclick="setAnchor('#ADDED_fields_san_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_san_anyOf_i1" id="ADDED_fields_san_anyOf_i1" onclick="setAnchor('#ADDED_fields_san_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_san_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="ADDED_fields_san_anyOf_i0_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_san_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_email">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_email">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_email" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_email" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_email')" type="button"><span class="property-name">email</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_email" class="collapse property-definition-div" data-parent="#accordionADDED_fields_email" id="ADDED_fields_email">
+    <div class="card-body pl-5">
+    <h4>Email</h4><br/>
+    <span class="description"><p>Email address from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="ADDED_fields_email_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_email_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_email_anyOf_i0" id="ADDED_fields_email_anyOf_i0" onclick="setAnchor('#ADDED_fields_email_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_email_anyOf_i1" id="ADDED_fields_email_anyOf_i1" onclick="setAnchor('#ADDED_fields_email_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_email_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_email_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_DN">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_DN">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_DN" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_DN" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_DN')" type="button"><span class="property-name">DN</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_DN" class="collapse property-definition-div" data-parent="#accordionADDED_fields_DN" id="ADDED_fields_DN">
+    <div class="card-body pl-5">
+    <h4>Dn</h4><br/>
+    <span class="description"><p>Distinguished Name (DN) of the certificate subject in RFC 2253 format. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="ADDED_fields_DN_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_DN_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_DN_anyOf_i0" id="ADDED_fields_DN_anyOf_i0" onclick="setAnchor('#ADDED_fields_DN_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_DN_anyOf_i1" id="ADDED_fields_DN_anyOf_i1" onclick="setAnchor('#ADDED_fields_DN_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_DN_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_DN_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_subject_name_hash">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_subject_name_hash">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_subject_name_hash" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_subject_name_hash" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_subject_name_hash')" type="button"><span class="property-name">subject_name_hash</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_subject_name_hash" class="collapse property-definition-div" data-parent="#accordionADDED_fields_subject_name_hash" id="ADDED_fields_subject_name_hash">
+    <div class="card-body pl-5">
+    <h4>Subject Name Hash</h4><br/>
+    <span class="description"><p>Hash of the certificate subject name. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="ADDED_fields_subject_name_hash_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_subject_name_hash_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_subject_name_hash_anyOf_i0" id="ADDED_fields_subject_name_hash_anyOf_i0" onclick="setAnchor('#ADDED_fields_subject_name_hash_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_subject_name_hash_anyOf_i1" id="ADDED_fields_subject_name_hash_anyOf_i1" onclick="setAnchor('#ADDED_fields_subject_name_hash_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_subject_name_hash_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_subject_name_hash_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_extensions">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_extensions">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_extensions" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_extensions" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_extensions')" type="button"><span class="property-name">extensions</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_extensions" class="collapse property-definition-div" data-parent="#accordionADDED_fields_extensions" id="ADDED_fields_extensions">
+    <div class="card-body pl-5">
+    <h4>Extensions</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>X.509 certificate extensions parsed into a dictionary structure.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_digest_algorithm">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_digest_algorithm">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_digest_algorithm" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_digest_algorithm" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_digest_algorithm')" type="button"><span class="property-name">digest_algorithm</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_digest_algorithm" class="collapse property-definition-div" data-parent="#accordionADDED_fields_digest_algorithm" id="ADDED_fields_digest_algorithm">
+    <div class="card-body pl-5">
+    <h4>Digest Algorithm</h4><br/>
+    <span class="description"><p>Cryptographic hash algorithm used for certificate signing (e.g., 'SHA256'). <code>null</code> if unavailable.</p>
+    </span><div class="any-of-value" id="ADDED_fields_digest_algorithm_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_digest_algorithm_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_digest_algorithm_anyOf_i0" id="ADDED_fields_digest_algorithm_anyOf_i0" onclick="setAnchor('#ADDED_fields_digest_algorithm_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_digest_algorithm_anyOf_i1" id="ADDED_fields_digest_algorithm_anyOf_i1" onclick="setAnchor('#ADDED_fields_digest_algorithm_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_digest_algorithm_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_digest_algorithm_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_lifetime">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_lifetime">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_lifetime" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_lifetime" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_lifetime')" type="button"><span class="property-name">lifetime</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_lifetime" class="collapse property-definition-div" data-parent="#accordionADDED_fields_lifetime" id="ADDED_fields_lifetime">
+    <div class="card-body pl-5">
+    <h4>Lifetime</h4><br/>
+    <span class="description"><p>Certificate validity period in seconds. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="ADDED_fields_lifetime_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_lifetime_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_lifetime_anyOf_i0" id="ADDED_fields_lifetime_anyOf_i0" onclick="setAnchor('#ADDED_fields_lifetime_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_lifetime_anyOf_i1" id="ADDED_fields_lifetime_anyOf_i1" onclick="setAnchor('#ADDED_fields_lifetime_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_lifetime_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_lifetime_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_from">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_from">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_from" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_from" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_from')" type="button"><span class="property-name">from</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_from" class="collapse property-definition-div" data-parent="#accordionADDED_fields_from" id="ADDED_fields_from">
+    <div class="card-body pl-5">
+    <h4>From</h4><br/>
+    <span class="description"><p>Certificate validity start date in ISO 8601 format. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="ADDED_fields_from_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_from_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_from_anyOf_i0" id="ADDED_fields_from_anyOf_i0" onclick="setAnchor('#ADDED_fields_from_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_from_anyOf_i1" id="ADDED_fields_from_anyOf_i1" onclick="setAnchor('#ADDED_fields_from_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_from_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_from_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_until">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_until">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_until" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_until" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_until')" type="button"><span class="property-name">until</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_until" class="collapse property-definition-div" data-parent="#accordionADDED_fields_until" id="ADDED_fields_until">
+    <div class="card-body pl-5">
+    <h4>Until</h4><br/>
+    <span class="description"><p>Certificate validity end date in ISO 8601 format. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="ADDED_fields_until_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_until_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_until_anyOf_i0" id="ADDED_fields_until_anyOf_i0" onclick="setAnchor('#ADDED_fields_until_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_until_anyOf_i1" id="ADDED_fields_until_anyOf_i1" onclick="setAnchor('#ADDED_fields_until_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_until_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_until_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_serial">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_serial">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_serial" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_serial" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_serial')" type="button"><span class="property-name">serial</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_serial" class="collapse property-definition-div" data-parent="#accordionADDED_fields_serial" id="ADDED_fields_serial">
+    <div class="card-body pl-5">
+    <h4>Serial</h4><br/>
+    <span class="description"><p>Certificate serial number. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="ADDED_fields_serial_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_serial_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_serial_anyOf_i0" id="ADDED_fields_serial_anyOf_i0" onclick="setAnchor('#ADDED_fields_serial_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_serial_anyOf_i1" id="ADDED_fields_serial_anyOf_i1" onclick="setAnchor('#ADDED_fields_serial_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_serial_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_serial_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_chain">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_chain">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_chain" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_chain" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_chain')" type="button"><span class="property-name">chain</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_chain" class="collapse property-definition-div" data-parent="#accordionADDED_fields_chain" id="ADDED_fields_chain">
+    <div class="card-body pl-5">
+    <h4>Chain</h4><br/>
+    <span class="description"><p>Whether this certificate has an associated certificate chain. <code>null</code> if unavailable.</p>
+    </span><div class="any-of-value" id="ADDED_fields_chain_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_chain_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_chain_anyOf_i0" id="ADDED_fields_chain_anyOf_i0" onclick="setAnchor('#ADDED_fields_chain_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_chain_anyOf_i1" id="ADDED_fields_chain_anyOf_i1" onclick="setAnchor('#ADDED_fields_chain_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_chain_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_chain_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_fingerprint">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_fingerprint">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_fingerprint" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_fingerprint" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_fingerprint')" type="button"><span class="property-name">fingerprint</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_fingerprint" class="collapse property-definition-div" data-parent="#accordionADDED_fields_fingerprint" id="ADDED_fields_fingerprint">
+    <div class="card-body pl-5">
+    <h4>Fingerprint</h4><br/>
+    <span class="description"><p>SHA-256 fingerprint of the certificate in hexadecimal format. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="ADDED_fields_fingerprint_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_fingerprint_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_fingerprint_anyOf_i0" id="ADDED_fields_fingerprint_anyOf_i0" onclick="setAnchor('#ADDED_fields_fingerprint_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_fingerprint_anyOf_i1" id="ADDED_fields_fingerprint_anyOf_i1" onclick="setAnchor('#ADDED_fields_fingerprint_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_fingerprint_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_fingerprint_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_expired">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_expired">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_expired" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_expired" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_expired')" type="button"><span class="property-name">expired</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_expired" class="collapse property-definition-div" data-parent="#accordionADDED_fields_expired" id="ADDED_fields_expired">
+    <div class="card-body pl-5">
+    <h4>Expired</h4><br/>
+    <span class="description"><p>Whether the certificate has expired. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="ADDED_fields_expired_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_expired_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_expired_anyOf_i0" id="ADDED_fields_expired_anyOf_i0" onclick="setAnchor('#ADDED_fields_expired_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_expired_anyOf_i1" id="ADDED_fields_expired_anyOf_i1" onclick="setAnchor('#ADDED_fields_expired_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_expired_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_expired_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_parsed">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_parsed">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_parsed" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_parsed" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_parsed')" type="button"><span class="property-name">parsed</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_parsed" class="collapse property-definition-div" data-parent="#accordionADDED_fields_parsed" id="ADDED_fields_parsed">
+    <div class="card-body pl-5">
+    <h4>Parsed</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether the certificate data was successfully parsed and validated.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED" data-toggle="collapse" onclick="setAnchor('#CHANGED')" type="button"><span class="property-name">CHANGED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED" class="collapse property-definition-div" data-parent="#accordionCHANGED" id="CHANGED">
+    <div class="card-body pl-5">
+    <h4>CertificateChangedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_id" id="CHANGED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields" id="CHANGED_fields">
+    <div class="card-body pl-5">
+    <h4>CertificateEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_id" id="CHANGED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for this certificate entry.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_type">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_type">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_type" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_type')" type="button"><span class="property-name">type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_type" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_type" id="CHANGED_fields_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Internal certificate type identifier used to determine certificate capabilities.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_name">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_name">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_name" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_name" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_name" id="CHANGED_fields_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable name for this certificate. Must be unique and contain only alphanumeric characters,     dashes, and underscores.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_name_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_certificate">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_certificate">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_certificate" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_certificate" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_certificate')" type="button"><span class="property-name">certificate</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_certificate" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_certificate" id="CHANGED_fields_certificate">
+    <div class="card-body pl-5">
+    <h4>Certificate</h4><br/>
+    <span class="description"><p>PEM-encoded X.509 certificate data. <code>null</code> for certificate signing requests (CSR) that have not yet     been signed.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_certificate_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_certificate_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_certificate_anyOf_i0" id="CHANGED_fields_certificate_anyOf_i0" onclick="setAnchor('#CHANGED_fields_certificate_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_certificate_anyOf_i1" id="CHANGED_fields_certificate_anyOf_i1" onclick="setAnchor('#CHANGED_fields_certificate_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_certificate_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_certificate_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_privatekey">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_privatekey">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_privatekey" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_privatekey" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_privatekey')" type="button"><span class="property-name">privatekey</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_privatekey" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_privatekey" id="CHANGED_fields_privatekey">
+    <div class="card-body pl-5">
+    <h4>Privatekey</h4><br/>
+    <span class="description"><p>PEM-encoded private key corresponding to the certificate. <code>null</code> if no private key is available or for     imported certificates without keys.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_privatekey_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_privatekey_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_privatekey_anyOf_i0" id="CHANGED_fields_privatekey_anyOf_i0" onclick="setAnchor('#CHANGED_fields_privatekey_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_privatekey_anyOf_i1" id="CHANGED_fields_privatekey_anyOf_i1" onclick="setAnchor('#CHANGED_fields_privatekey_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_privatekey_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_privatekey_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_CSR">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_CSR">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_CSR" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_CSR" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_CSR')" type="button"><span class="property-name">CSR</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_CSR" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_CSR" id="CHANGED_fields_CSR">
+    <div class="card-body pl-5">
+    <h4>Csr</h4><br/>
+    <span class="description"><p>PEM-encoded Certificate Signing Request (CSR) data. <code>null</code> for imported certificates or completed     ACME certificates.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_CSR_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_CSR_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_CSR_anyOf_i0" id="CHANGED_fields_CSR_anyOf_i0" onclick="setAnchor('#CHANGED_fields_CSR_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_CSR_anyOf_i1" id="CHANGED_fields_CSR_anyOf_i1" onclick="setAnchor('#CHANGED_fields_CSR_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_CSR_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_CSR_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acme_uri">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acme_uri">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acme_uri" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acme_uri" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acme_uri')" type="button"><span class="property-name">acme_uri</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acme_uri" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acme_uri" id="CHANGED_fields_acme_uri">
+    <div class="card-body pl-5">
+    <h4>Acme Uri</h4><br/>
+    <span class="description"><p>ACME directory server URI used for automated certificate management. <code>null</code> for non-ACME certificates.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_acme_uri_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_acme_uri_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_acme_uri_anyOf_i0" id="CHANGED_fields_acme_uri_anyOf_i0" onclick="setAnchor('#CHANGED_fields_acme_uri_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_acme_uri_anyOf_i1" id="CHANGED_fields_acme_uri_anyOf_i1" onclick="setAnchor('#CHANGED_fields_acme_uri_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_acme_uri_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_acme_uri_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_domains_authenticators">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_domains_authenticators">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_domains_authenticators" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_domains_authenticators" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_domains_authenticators')" type="button"><span class="property-name">domains_authenticators</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_domains_authenticators" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_domains_authenticators" id="CHANGED_fields_domains_authenticators">
+    <div class="card-body pl-5">
+    <h4>Domains Authenticators</h4><br/>
+    <span class="description"><p>Mapping of domain names to ACME DNS authenticator IDs for domain validation. <code>null</code> for non-ACME     certificates.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_domains_authenticators_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_domains_authenticators_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_domains_authenticators_anyOf_i0" id="CHANGED_fields_domains_authenticators_anyOf_i0" onclick="setAnchor('#CHANGED_fields_domains_authenticators_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_domains_authenticators_anyOf_i1" id="CHANGED_fields_domains_authenticators_anyOf_i1" onclick="setAnchor('#CHANGED_fields_domains_authenticators_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_domains_authenticators_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_domains_authenticators_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_renew_days">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_renew_days">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_renew_days" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_renew_days" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_renew_days')" type="button"><span class="property-name">renew_days</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_renew_days" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_renew_days" id="CHANGED_fields_renew_days">
+    <div class="card-body pl-5">
+    <h4>Renew Days</h4><br/>
+    <span class="description"><p>Number of days before expiration to attempt automatic renewal. Only applicable for ACME certificates.     <code>null</code> for non-renewable certificates.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_renew_days_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_renew_days_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_renew_days_anyOf_i0" id="CHANGED_fields_renew_days_anyOf_i0" onclick="setAnchor('#CHANGED_fields_renew_days_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_renew_days_anyOf_i1" id="CHANGED_fields_renew_days_anyOf_i1" onclick="setAnchor('#CHANGED_fields_renew_days_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_renew_days_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_renew_days_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acme">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acme">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acme" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acme" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acme')" type="button"><span class="property-name">acme</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acme" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acme" id="CHANGED_fields_acme">
+    <div class="card-body pl-5">
+    <h4>Acme</h4><br/>
+    <span class="description"><p>ACME registration and account information used for certificate lifecycle management. <code>null</code> for     non-ACME certificates.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_acme_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_acme_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_acme_anyOf_i0" id="CHANGED_fields_acme_anyOf_i0" onclick="setAnchor('#CHANGED_fields_acme_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_acme_anyOf_i1" id="CHANGED_fields_acme_anyOf_i1" onclick="setAnchor('#CHANGED_fields_acme_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_acme_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_acme_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_add_to_trusted_store">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_add_to_trusted_store">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_add_to_trusted_store" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_add_to_trusted_store" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_add_to_trusted_store')" type="button"><span class="property-name">add_to_trusted_store</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_add_to_trusted_store" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_add_to_trusted_store" id="CHANGED_fields_add_to_trusted_store">
+    <div class="card-body pl-5">
+    <h4>Add To Trusted Store</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this certificate should be added to the system's trusted certificate store.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_root_path">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_root_path">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_root_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_root_path" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_root_path')" type="button"><span class="property-name">root_path</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_root_path" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_root_path" id="CHANGED_fields_root_path">
+    <div class="card-body pl-5">
+    <h4>Root Path</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Filesystem path where certificate-related files are stored.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_root_path_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_certificate_path">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_certificate_path">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_certificate_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_certificate_path" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_certificate_path')" type="button"><span class="property-name">certificate_path</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_certificate_path" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_certificate_path" id="CHANGED_fields_certificate_path">
+    <div class="card-body pl-5">
+    <h4>Certificate Path</h4><br/>
+    <span class="description"><p>Filesystem path to the certificate file (.crt). <code>null</code> if no certificate is available.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_certificate_path_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_certificate_path_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_certificate_path_anyOf_i0" id="CHANGED_fields_certificate_path_anyOf_i0" onclick="setAnchor('#CHANGED_fields_certificate_path_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_certificate_path_anyOf_i1" id="CHANGED_fields_certificate_path_anyOf_i1" onclick="setAnchor('#CHANGED_fields_certificate_path_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_certificate_path_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_certificate_path_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_certificate_path_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_privatekey_path">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_privatekey_path">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_privatekey_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_privatekey_path" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_privatekey_path')" type="button"><span class="property-name">privatekey_path</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_privatekey_path" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_privatekey_path" id="CHANGED_fields_privatekey_path">
+    <div class="card-body pl-5">
+    <h4>Privatekey Path</h4><br/>
+    <span class="description"><p>Filesystem path to the private key file (.key). <code>null</code> if no private key is available.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_privatekey_path_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_privatekey_path_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_privatekey_path_anyOf_i0" id="CHANGED_fields_privatekey_path_anyOf_i0" onclick="setAnchor('#CHANGED_fields_privatekey_path_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_privatekey_path_anyOf_i1" id="CHANGED_fields_privatekey_path_anyOf_i1" onclick="setAnchor('#CHANGED_fields_privatekey_path_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_privatekey_path_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_privatekey_path_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_privatekey_path_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_csr_path">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_csr_path">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_csr_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_csr_path" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_csr_path')" type="button"><span class="property-name">csr_path</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_csr_path" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_csr_path" id="CHANGED_fields_csr_path">
+    <div class="card-body pl-5">
+    <h4>Csr Path</h4><br/>
+    <span class="description"><p>Filesystem path to the certificate signing request file (.csr). <code>null</code> if no CSR is available.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_csr_path_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_csr_path_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_csr_path_anyOf_i0" id="CHANGED_fields_csr_path_anyOf_i0" onclick="setAnchor('#CHANGED_fields_csr_path_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_csr_path_anyOf_i1" id="CHANGED_fields_csr_path_anyOf_i1" onclick="setAnchor('#CHANGED_fields_csr_path_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_csr_path_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_csr_path_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_csr_path_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_cert_type">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_cert_type">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_cert_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_cert_type" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_cert_type')" type="button"><span class="property-name">cert_type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_cert_type" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_cert_type" id="CHANGED_fields_cert_type">
+    <div class="card-body pl-5">
+    <h4>Cert Type</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable certificate type, typically 'CERTIFICATE' for standard certificates.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_cert_type_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_cert_type_existing">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_cert_type_existing">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_cert_type_existing" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_cert_type_existing" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_cert_type_existing')" type="button"><span class="property-name">cert_type_existing</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_cert_type_existing" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_cert_type_existing" id="CHANGED_fields_cert_type_existing">
+    <div class="card-body pl-5">
+    <h4>Cert Type Existing</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this is an existing certificate (imported or generated).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_cert_type_CSR">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_cert_type_CSR">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_cert_type_CSR" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_cert_type_CSR" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_cert_type_CSR')" type="button"><span class="property-name">cert_type_CSR</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_cert_type_CSR" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_cert_type_CSR" id="CHANGED_fields_cert_type_CSR">
+    <div class="card-body pl-5">
+    <h4>Cert Type Csr</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this entry represents a Certificate Signing Request (CSR) rather than a signed certificate.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_cert_type_CA">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_cert_type_CA">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_cert_type_CA" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_cert_type_CA" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_cert_type_CA')" type="button"><span class="property-name">cert_type_CA</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_cert_type_CA" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_cert_type_CA" id="CHANGED_fields_cert_type_CA">
+    <div class="card-body pl-5">
+    <h4>Cert Type Ca</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this certificate is a Certificate Authority (CA) certificate.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_chain_list">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_chain_list">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_chain_list" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_chain_list" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_chain_list')" type="button"><span class="property-name">chain_list</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_chain_list" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_chain_list" id="CHANGED_fields_chain_list">
+    <div class="card-body pl-5">
+    <h4>Chain List</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of PEM-encoded certificates in the certificate chain, starting with the leaf certificate.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="CHANGED_fields_chain_list_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_key_length">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_key_length">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_key_length" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_key_length" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_key_length')" type="button"><span class="property-name">key_length</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_key_length" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_key_length" id="CHANGED_fields_key_length">
+    <div class="card-body pl-5">
+    <h4>Key Length</h4><br/>
+    <span class="description"><p>Size of the cryptographic key in bits. <code>null</code> if key information is unavailable.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_key_length_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_key_length_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_key_length_anyOf_i0" id="CHANGED_fields_key_length_anyOf_i0" onclick="setAnchor('#CHANGED_fields_key_length_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_key_length_anyOf_i1" id="CHANGED_fields_key_length_anyOf_i1" onclick="setAnchor('#CHANGED_fields_key_length_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_key_length_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_key_length_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_key_type">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_key_type">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_key_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_key_type" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_key_type')" type="button"><span class="property-name">key_type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_key_type" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_key_type" id="CHANGED_fields_key_type">
+    <div class="card-body pl-5">
+    <h4>Key Type</h4><br/>
+    <span class="description"><p>Type of cryptographic key algorithm (e.g., 'RSA', 'EC', 'DSA'). <code>null</code> if key information is unavailable.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_key_type_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_key_type_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_key_type_anyOf_i0" id="CHANGED_fields_key_type_anyOf_i0" onclick="setAnchor('#CHANGED_fields_key_type_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_key_type_anyOf_i1" id="CHANGED_fields_key_type_anyOf_i1" onclick="setAnchor('#CHANGED_fields_key_type_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_key_type_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_key_type_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_key_type_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_country">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_country">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_country" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_country" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_country')" type="button"><span class="property-name">country</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_country" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_country" id="CHANGED_fields_country">
+    <div class="card-body pl-5">
+    <h4>Country</h4><br/>
+    <span class="description"><p>ISO 3166-1 alpha-2 country code from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_country_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_country_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_country_anyOf_i0" id="CHANGED_fields_country_anyOf_i0" onclick="setAnchor('#CHANGED_fields_country_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_country_anyOf_i1" id="CHANGED_fields_country_anyOf_i1" onclick="setAnchor('#CHANGED_fields_country_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_country_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_country_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_state">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_state">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_state" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_state" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_state')" type="button"><span class="property-name">state</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_state" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_state" id="CHANGED_fields_state">
+    <div class="card-body pl-5">
+    <h4>State</h4><br/>
+    <span class="description"><p>State or province name from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_state_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_state_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_state_anyOf_i0" id="CHANGED_fields_state_anyOf_i0" onclick="setAnchor('#CHANGED_fields_state_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_state_anyOf_i1" id="CHANGED_fields_state_anyOf_i1" onclick="setAnchor('#CHANGED_fields_state_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_state_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_state_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_city">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_city">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_city" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_city" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_city')" type="button"><span class="property-name">city</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_city" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_city" id="CHANGED_fields_city">
+    <div class="card-body pl-5">
+    <h4>City</h4><br/>
+    <span class="description"><p>City or locality name from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_city_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_city_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_city_anyOf_i0" id="CHANGED_fields_city_anyOf_i0" onclick="setAnchor('#CHANGED_fields_city_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_city_anyOf_i1" id="CHANGED_fields_city_anyOf_i1" onclick="setAnchor('#CHANGED_fields_city_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_city_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_city_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_organization">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_organization">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_organization" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_organization" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_organization')" type="button"><span class="property-name">organization</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_organization" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_organization" id="CHANGED_fields_organization">
+    <div class="card-body pl-5">
+    <h4>Organization</h4><br/>
+    <span class="description"><p>Organization name from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_organization_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_organization_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_organization_anyOf_i0" id="CHANGED_fields_organization_anyOf_i0" onclick="setAnchor('#CHANGED_fields_organization_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_organization_anyOf_i1" id="CHANGED_fields_organization_anyOf_i1" onclick="setAnchor('#CHANGED_fields_organization_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_organization_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_organization_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_organizational_unit">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_organizational_unit">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_organizational_unit" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_organizational_unit" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_organizational_unit')" type="button"><span class="property-name">organizational_unit</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_organizational_unit" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_organizational_unit" id="CHANGED_fields_organizational_unit">
+    <div class="card-body pl-5">
+    <h4>Organizational Unit</h4><br/>
+    <span class="description"><p>Organizational unit from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_organizational_unit_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_organizational_unit_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_organizational_unit_anyOf_i0" id="CHANGED_fields_organizational_unit_anyOf_i0" onclick="setAnchor('#CHANGED_fields_organizational_unit_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_organizational_unit_anyOf_i1" id="CHANGED_fields_organizational_unit_anyOf_i1" onclick="setAnchor('#CHANGED_fields_organizational_unit_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_organizational_unit_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_organizational_unit_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_common">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_common">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_common" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_common" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_common')" type="button"><span class="property-name">common</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_common" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_common" id="CHANGED_fields_common">
+    <div class="card-body pl-5">
+    <h4>Common</h4><br/>
+    <span class="description"><p>Common name (CN) from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_common_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_common_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_common_anyOf_i0" id="CHANGED_fields_common_anyOf_i0" onclick="setAnchor('#CHANGED_fields_common_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_common_anyOf_i1" id="CHANGED_fields_common_anyOf_i1" onclick="setAnchor('#CHANGED_fields_common_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_common_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_common_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_san">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_san">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_san" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_san" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_san')" type="button"><span class="property-name">san</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_san" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_san" id="CHANGED_fields_san">
+    <div class="card-body pl-5">
+    <h4>San</h4><br/>
+    <span class="description"><p>Subject Alternative Names (SAN) from the certificate extension. <code>null</code> if no SAN extension is present.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_san_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_san_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_san_anyOf_i0" id="CHANGED_fields_san_anyOf_i0" onclick="setAnchor('#CHANGED_fields_san_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_san_anyOf_i1" id="CHANGED_fields_san_anyOf_i1" onclick="setAnchor('#CHANGED_fields_san_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_san_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="CHANGED_fields_san_anyOf_i0_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_san_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_email">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_email">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_email" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_email" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_email')" type="button"><span class="property-name">email</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_email" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_email" id="CHANGED_fields_email">
+    <div class="card-body pl-5">
+    <h4>Email</h4><br/>
+    <span class="description"><p>Email address from the certificate subject. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_email_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_email_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_email_anyOf_i0" id="CHANGED_fields_email_anyOf_i0" onclick="setAnchor('#CHANGED_fields_email_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_email_anyOf_i1" id="CHANGED_fields_email_anyOf_i1" onclick="setAnchor('#CHANGED_fields_email_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_email_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_email_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_DN">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_DN">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_DN" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_DN" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_DN')" type="button"><span class="property-name">DN</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_DN" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_DN" id="CHANGED_fields_DN">
+    <div class="card-body pl-5">
+    <h4>Dn</h4><br/>
+    <span class="description"><p>Distinguished Name (DN) of the certificate subject in RFC 2253 format. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_DN_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_DN_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_DN_anyOf_i0" id="CHANGED_fields_DN_anyOf_i0" onclick="setAnchor('#CHANGED_fields_DN_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_DN_anyOf_i1" id="CHANGED_fields_DN_anyOf_i1" onclick="setAnchor('#CHANGED_fields_DN_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_DN_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_DN_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_subject_name_hash">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_subject_name_hash">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_subject_name_hash" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_subject_name_hash" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_subject_name_hash')" type="button"><span class="property-name">subject_name_hash</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_subject_name_hash" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_subject_name_hash" id="CHANGED_fields_subject_name_hash">
+    <div class="card-body pl-5">
+    <h4>Subject Name Hash</h4><br/>
+    <span class="description"><p>Hash of the certificate subject name. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_subject_name_hash_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_subject_name_hash_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_subject_name_hash_anyOf_i0" id="CHANGED_fields_subject_name_hash_anyOf_i0" onclick="setAnchor('#CHANGED_fields_subject_name_hash_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_subject_name_hash_anyOf_i1" id="CHANGED_fields_subject_name_hash_anyOf_i1" onclick="setAnchor('#CHANGED_fields_subject_name_hash_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_subject_name_hash_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_subject_name_hash_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_extensions">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_extensions">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_extensions" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_extensions" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_extensions')" type="button"><span class="property-name">extensions</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_extensions" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_extensions" id="CHANGED_fields_extensions">
+    <div class="card-body pl-5">
+    <h4>Extensions</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>X.509 certificate extensions parsed into a dictionary structure.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_digest_algorithm">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_digest_algorithm">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_digest_algorithm" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_digest_algorithm" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_digest_algorithm')" type="button"><span class="property-name">digest_algorithm</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_digest_algorithm" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_digest_algorithm" id="CHANGED_fields_digest_algorithm">
+    <div class="card-body pl-5">
+    <h4>Digest Algorithm</h4><br/>
+    <span class="description"><p>Cryptographic hash algorithm used for certificate signing (e.g., 'SHA256'). <code>null</code> if unavailable.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_digest_algorithm_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_digest_algorithm_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_digest_algorithm_anyOf_i0" id="CHANGED_fields_digest_algorithm_anyOf_i0" onclick="setAnchor('#CHANGED_fields_digest_algorithm_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_digest_algorithm_anyOf_i1" id="CHANGED_fields_digest_algorithm_anyOf_i1" onclick="setAnchor('#CHANGED_fields_digest_algorithm_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_digest_algorithm_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_digest_algorithm_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_lifetime">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_lifetime">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_lifetime" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_lifetime" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_lifetime')" type="button"><span class="property-name">lifetime</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_lifetime" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_lifetime" id="CHANGED_fields_lifetime">
+    <div class="card-body pl-5">
+    <h4>Lifetime</h4><br/>
+    <span class="description"><p>Certificate validity period in seconds. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_lifetime_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_lifetime_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_lifetime_anyOf_i0" id="CHANGED_fields_lifetime_anyOf_i0" onclick="setAnchor('#CHANGED_fields_lifetime_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_lifetime_anyOf_i1" id="CHANGED_fields_lifetime_anyOf_i1" onclick="setAnchor('#CHANGED_fields_lifetime_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_lifetime_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_lifetime_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_from">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_from">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_from" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_from" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_from')" type="button"><span class="property-name">from</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_from" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_from" id="CHANGED_fields_from">
+    <div class="card-body pl-5">
+    <h4>From</h4><br/>
+    <span class="description"><p>Certificate validity start date in ISO 8601 format. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_from_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_from_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_from_anyOf_i0" id="CHANGED_fields_from_anyOf_i0" onclick="setAnchor('#CHANGED_fields_from_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_from_anyOf_i1" id="CHANGED_fields_from_anyOf_i1" onclick="setAnchor('#CHANGED_fields_from_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_from_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_from_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_until">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_until">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_until" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_until" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_until')" type="button"><span class="property-name">until</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_until" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_until" id="CHANGED_fields_until">
+    <div class="card-body pl-5">
+    <h4>Until</h4><br/>
+    <span class="description"><p>Certificate validity end date in ISO 8601 format. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_until_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_until_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_until_anyOf_i0" id="CHANGED_fields_until_anyOf_i0" onclick="setAnchor('#CHANGED_fields_until_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_until_anyOf_i1" id="CHANGED_fields_until_anyOf_i1" onclick="setAnchor('#CHANGED_fields_until_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_until_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_until_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_serial">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_serial">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_serial" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_serial" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_serial')" type="button"><span class="property-name">serial</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_serial" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_serial" id="CHANGED_fields_serial">
+    <div class="card-body pl-5">
+    <h4>Serial</h4><br/>
+    <span class="description"><p>Certificate serial number. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_serial_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_serial_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_serial_anyOf_i0" id="CHANGED_fields_serial_anyOf_i0" onclick="setAnchor('#CHANGED_fields_serial_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_serial_anyOf_i1" id="CHANGED_fields_serial_anyOf_i1" onclick="setAnchor('#CHANGED_fields_serial_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_serial_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_serial_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_chain">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_chain">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_chain" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_chain" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_chain')" type="button"><span class="property-name">chain</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_chain" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_chain" id="CHANGED_fields_chain">
+    <div class="card-body pl-5">
+    <h4>Chain</h4><br/>
+    <span class="description"><p>Whether this certificate has an associated certificate chain. <code>null</code> if unavailable.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_chain_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_chain_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_chain_anyOf_i0" id="CHANGED_fields_chain_anyOf_i0" onclick="setAnchor('#CHANGED_fields_chain_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_chain_anyOf_i1" id="CHANGED_fields_chain_anyOf_i1" onclick="setAnchor('#CHANGED_fields_chain_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_chain_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_chain_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_fingerprint">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_fingerprint">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_fingerprint" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_fingerprint" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_fingerprint')" type="button"><span class="property-name">fingerprint</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_fingerprint" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_fingerprint" id="CHANGED_fields_fingerprint">
+    <div class="card-body pl-5">
+    <h4>Fingerprint</h4><br/>
+    <span class="description"><p>SHA-256 fingerprint of the certificate in hexadecimal format. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_fingerprint_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_fingerprint_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_fingerprint_anyOf_i0" id="CHANGED_fields_fingerprint_anyOf_i0" onclick="setAnchor('#CHANGED_fields_fingerprint_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_fingerprint_anyOf_i1" id="CHANGED_fields_fingerprint_anyOf_i1" onclick="setAnchor('#CHANGED_fields_fingerprint_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_fingerprint_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_fingerprint_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_expired">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_expired">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_expired" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_expired" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_expired')" type="button"><span class="property-name">expired</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_expired" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_expired" id="CHANGED_fields_expired">
+    <div class="card-body pl-5">
+    <h4>Expired</h4><br/>
+    <span class="description"><p>Whether the certificate has expired. <code>null</code> if certificate parsing failed.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_expired_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_expired_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_expired_anyOf_i0" id="CHANGED_fields_expired_anyOf_i0" onclick="setAnchor('#CHANGED_fields_expired_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_expired_anyOf_i1" id="CHANGED_fields_expired_anyOf_i1" onclick="setAnchor('#CHANGED_fields_expired_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_expired_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_expired_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_parsed">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_parsed">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_parsed" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_parsed" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_parsed')" type="button"><span class="property-name">parsed</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_parsed" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_parsed" id="CHANGED_fields_parsed">
+    <div class="card-body pl-5">
+    <h4>Parsed</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether the certificate data was successfully parsed and validated.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionREMOVED">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED" data-toggle="collapse" onclick="setAnchor('#REMOVED')" type="button"><span class="property-name">REMOVED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED" class="collapse property-definition-div" data-parent="#accordionREMOVED" id="REMOVED">
+    <div class="card-body pl-5">
+    <h4>CertificateRemovedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionREMOVED_id">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED_id">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED_id" data-toggle="collapse" onclick="setAnchor('#REMOVED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED_id" class="collapse property-definition-div" data-parent="#accordionREMOVED_id" id="REMOVED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* CERTIFICATE_READ
+

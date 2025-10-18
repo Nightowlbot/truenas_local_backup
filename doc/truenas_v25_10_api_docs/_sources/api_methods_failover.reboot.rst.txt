@@ -1,0 +1,7 @@
+failover.reboot
+---------------
+
+.. toctree::
+
+   api_methods_failover.reboot.info
+   api_methods_failover.reboot.other_node

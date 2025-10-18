@@ -1,0 +1,6 @@
+vm.device
+---------
+
+.. toctree::
+
+   api_events_vm.device.query

@@ -1,0 +1,7 @@
+pool.resilver
+-------------
+
+.. toctree::
+
+   api_methods_pool.resilver.config
+   api_methods_pool.resilver.update

@@ -1,0 +1,6 @@
+user
+----
+
+.. toctree::
+
+   api_events_user.query

@@ -1,0 +1,6 @@
+staticroute
+-----------
+
+.. toctree::
+
+   api_events_staticroute.query

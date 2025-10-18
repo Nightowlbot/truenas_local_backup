@@ -1,0 +1,6 @@
+ipmi
+----
+
+.. toctree::
+
+   api_methods_ipmi.is_loaded

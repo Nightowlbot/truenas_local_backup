@@ -1,0 +1,13 @@
+truenas
+-------
+
+.. toctree::
+
+   api_methods_truenas.accept_eula
+   api_methods_truenas.get_chassis_hardware
+   api_methods_truenas.get_eula
+   api_methods_truenas.is_eula_accepted
+   api_methods_truenas.is_ix_hardware
+   api_methods_truenas.is_production
+   api_methods_truenas.managed_by_truecommand
+   api_methods_truenas.set_production

@@ -1,0 +1,15 @@
+system.advanced
+---------------
+
+.. toctree::
+
+   api_methods_system.advanced.config
+   api_methods_system.advanced.get_gpu_pci_choices
+   api_methods_system.advanced.login_banner
+   api_methods_system.advanced.sed_global_password
+   api_methods_system.advanced.sed_global_password_is_set
+   api_methods_system.advanced.serial_port_choices
+   api_methods_system.advanced.syslog_certificate_authority_choices
+   api_methods_system.advanced.syslog_certificate_choices
+   api_methods_system.advanced.update
+   api_methods_system.advanced.update_gpu_pci_ids

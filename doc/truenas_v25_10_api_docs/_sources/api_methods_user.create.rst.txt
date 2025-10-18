@@ -1,0 +1,1162 @@
+user.create
+===========
+
+Create a new user.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: user_create</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>user_create</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Configuration for creating a new user account.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_uid">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_uid">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_uid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_uid" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_uid')" type="button"><span class="property-name">uid</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_uid" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_uid" id="Call_parameters_items_i0_uid">
+    <div class="card-body pl-5">
+    <h4>Uid</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>UNIX UID. If not provided, it is automatically filled with the next one available.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_uid_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_uid_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_uid_anyOf_i0" id="Call_parameters_items_i0_uid_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_uid_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_uid_anyOf_i1" id="Call_parameters_items_i0_uid_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_uid_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_uid_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_uid_anyOf_i0_number">Value must be greater or equal to <code>0</code> and lesser or equal to <code>90000000</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_uid_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_username">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_username">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_username" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_username" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_username')" type="button"><span class="property-name">username</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_username" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_username" id="Call_parameters_items_i0_username">
+    <div class="card-body pl-5">
+    <h4>Username</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>String used to uniquely identify the user on the server. In order to be portable across     systems, local user names must be composed of characters from the POSIX portable filename     character set (IEEE Std 1003.1-2024 section 3.265). This means alphanumeric characters,     hyphens, underscores, and periods. Usernames also may not begin with a hyphen or a period.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_home">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_home">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_home" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_home" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_home')" type="button"><span class="property-name">home</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_home" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_home" id="Call_parameters_items_i0_home">
+    <div class="card-body pl-5">
+    <h4>Home</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "/var/empty"</span><br/>
+    <span class="description"><p>The local file system path for the user account's home directory.<br/>
+    Typically, this is required only if the account has shell access (local or SSH) to TrueNAS.<br/>
+    This is not required for accounts used only for SMB share access. </p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_home_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_shell">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_shell">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_shell" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_shell" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_shell')" type="button"><span class="property-name">shell</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_shell" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_shell" id="Call_parameters_items_i0_shell">
+    <div class="card-body pl-5">
+    <h4>Shell</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "/usr/bin/zsh"</span><br/>
+    <span class="description"><p>Available choices can be retrieved with <code>user.shell_choices</code>.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_shell_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_full_name">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_full_name">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_full_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_full_name" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_full_name')" type="button"><span class="property-name">full_name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_full_name" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_full_name" id="Call_parameters_items_i0_full_name">
+    <div class="card-body pl-5">
+    <h4>Full Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Comment field to provide additional information about the user account. Typically, this is     the full name of the user or a short description of a service account. There are no character set restrictions     for this field. This field is for information only. </p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_full_name_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_smb">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_smb">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_smb" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_smb" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_smb')" type="button"><span class="property-name">smb</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_smb" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_smb" id="Call_parameters_items_i0_smb">
+    <div class="card-body pl-5">
+    <h4>Smb</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>The user account may be used to access SMB shares. If set to <code>true</code> then TrueNAS stores an NT hash of the     user account's password for local accounts. This feature is unavailable for local accounts when General Purpose OS     STIG compatibility mode is enabled. If set to <code>true</code> the user is automatically added to the <code>builtin_users</code>     group.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_userns_idmap">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_userns_idmap">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_userns_idmap" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_userns_idmap" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_userns_idmap')" type="button"><span class="property-name">userns_idmap</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_userns_idmap" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_userns_idmap" id="Call_parameters_items_i0_userns_idmap">
+    <div class="card-body pl-5">
+    <h4>Userns Idmap</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Specifies the subuid mapping for this user. If DIRECT then the UID will be     directly mapped to all containers. Alternatively, the target UID may be     explicitly specified. If <code>null</code>, then the UID will not be mapped.</p>
+    <p>NOTE: This field will be ignored for users that have been assigned TrueNAS roles.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_userns_idmap_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_userns_idmap_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_userns_idmap_anyOf_i0" id="Call_parameters_items_i0_userns_idmap_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_userns_idmap_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_userns_idmap_anyOf_i1" id="Call_parameters_items_i0_userns_idmap_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_userns_idmap_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_userns_idmap_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: enum (of null or string)</span><br/>
+    <div class="enum-value" id="Call_parameters_items_i0_userns_idmap_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"DIRECT"</li><li class="list-group-item enum-item">null</li></ul>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_userns_idmap_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_userns_idmap_anyOf_i1_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>4294967294</code></span></p>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_group">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_group">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_group" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_group" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_group')" type="button"><span class="property-name">group</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_group" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_group" id="Call_parameters_items_i0_group">
+    <div class="card-body pl-5">
+    <h4>Group</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>The group entry <code>id</code> for the user's primary group. This is not the same as the Unix group <code>gid</code> value.     This is required if <code>group_create</code> is <code>false</code>. </p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_group_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_group_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_group_anyOf_i0" id="Call_parameters_items_i0_group_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_group_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_group_anyOf_i1" id="Call_parameters_items_i0_group_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_group_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_group_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_group_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_groups">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_groups">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_groups" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_groups" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_groups')" type="button"><span class="property-name">groups</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_groups" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_groups" id="Call_parameters_items_i0_groups">
+    <div class="card-body pl-5">
+    <h4>Groups</h4><span class="badge badge-dark value-type">Type: array of integer</span><br/>
+    <span class="description"><p>Array of additional groups to which the user belongs. NOTE: Groups are identified by their group entry <code>id</code>,     not their Unix group ID (<code>gid</code>). </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_groups_items">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_password_disabled">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_password_disabled">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_password_disabled" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_password_disabled" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_password_disabled')" type="button"><span class="property-name">password_disabled</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_password_disabled" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_password_disabled" id="Call_parameters_items_i0_password_disabled">
+    <div class="card-body pl-5">
+    <h4>Password Disabled</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>If set to <code>true</code> password authentication for the user account is disabled.</p>
+    <p>NOTE: Users with password authentication disabled may still authenticate to the TrueNAS server by other methods,     such as SSH key-based authentication.</p>
+    <p>NOTE: Password authentication is required for <code>smb</code> users.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_ssh_password_enabled">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_ssh_password_enabled">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_ssh_password_enabled" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_ssh_password_enabled" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_ssh_password_enabled')" type="button"><span class="property-name">ssh_password_enabled</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_ssh_password_enabled" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_ssh_password_enabled" id="Call_parameters_items_i0_ssh_password_enabled">
+    <div class="card-body pl-5">
+    <h4>Ssh Password Enabled</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Allow the user to authenticate to the TrueNAS SSH server using a password.</p>
+    <p>WARNING: The established best practice is to use only key-based authentication for SSH servers. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_sshpubkey">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_sshpubkey">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_sshpubkey" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_sshpubkey" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_sshpubkey')" type="button"><span class="property-name">sshpubkey</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_sshpubkey" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_sshpubkey" id="Call_parameters_items_i0_sshpubkey">
+    <div class="card-body pl-5">
+    <h4>Sshpubkey</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>SSH public keys corresponding to private keys that authenticate this user to the TrueNAS SSH server. </p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_sshpubkey_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_sshpubkey_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_sshpubkey_anyOf_i0" id="Call_parameters_items_i0_sshpubkey_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_sshpubkey_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_sshpubkey_anyOf_i1" id="Call_parameters_items_i0_sshpubkey_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_sshpubkey_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_sshpubkey_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_sshpubkey_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_locked">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_locked">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_locked" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_locked" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_locked')" type="button"><span class="property-name">locked</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_locked" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_locked" id="Call_parameters_items_i0_locked">
+    <div class="card-body pl-5">
+    <h4>Locked</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>If set to <code>true</code> the account is locked. The account cannot be used to authenticate to the TrueNAS server. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_sudo_commands">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_sudo_commands">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_sudo_commands" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_sudo_commands" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_sudo_commands')" type="button"><span class="property-name">sudo_commands</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_sudo_commands" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_sudo_commands" id="Call_parameters_items_i0_sudo_commands">
+    <div class="card-body pl-5">
+    <h4>Sudo Commands</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>An array of commands the user may execute with elevated privileges. User is prompted for password     when executing any command from the array. </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_sudo_commands_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_sudo_commands_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_sudo_commands_nopasswd">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_sudo_commands_nopasswd">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_sudo_commands_nopasswd" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_sudo_commands_nopasswd" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_sudo_commands_nopasswd')" type="button"><span class="property-name">sudo_commands_nopasswd</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_sudo_commands_nopasswd" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_sudo_commands_nopasswd" id="Call_parameters_items_i0_sudo_commands_nopasswd">
+    <div class="card-body pl-5">
+    <h4>Sudo Commands Nopasswd</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>An array of commands the user may execute with elevated privileges. User is <em>not</em> prompted for password     when executing any command from the array. </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_sudo_commands_nopasswd_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_sudo_commands_nopasswd_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_email">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_email">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_email" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_email" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_email')" type="button"><span class="property-name">email</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_email" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_email" id="Call_parameters_items_i0_email">
+    <div class="card-body pl-5">
+    <h4>Email</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Email address of the user. If the user has the <code>FULL_ADMIN</code> role, they will receive email alerts and     notifications. </p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_email_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_email_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_email_anyOf_i0" id="Call_parameters_items_i0_email_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_email_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_email_anyOf_i1" id="Call_parameters_items_i0_email_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_email_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_email_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: email</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_email_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_group_create">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_group_create">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_group_create" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_group_create" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_group_create')" type="button"><span class="property-name">group_create</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_group_create" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_group_create" id="Call_parameters_items_i0_group_create">
+    <div class="card-body pl-5">
+    <h4>Group Create</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>If set to <code>true</code>, the TrueNAS server automatically creates a new local group as the user's primary group. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_home_create">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_home_create">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_home_create" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_home_create" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_home_create')" type="button"><span class="property-name">home_create</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_home_create" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_home_create" id="Call_parameters_items_i0_home_create">
+    <div class="card-body pl-5">
+    <h4>Home Create</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Create a new home directory for the user in the specified <code>home</code> path. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_home_mode">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_home_mode">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_home_mode" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_home_mode" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_home_mode')" type="button"><span class="property-name">home_mode</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_home_mode" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_home_mode" id="Call_parameters_items_i0_home_mode">
+    <div class="card-body pl-5">
+    <h4>Home Mode</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "700"</span><br/>
+    <span class="description"><p>Filesystem permission to set on the user's home directory. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_password">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_password">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_password" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_password" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_password')" type="button"><span class="property-name">password</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_password" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_password" id="Call_parameters_items_i0_password">
+    <div class="card-body pl-5">
+    <h4>Password</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>The password for the user account. This is required if <code>random_password</code> is not set. </p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_password_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_password_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_password_anyOf_i0" id="Call_parameters_items_i0_password_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_password_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_password_anyOf_i1" id="Call_parameters_items_i0_password_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_password_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_password_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_password_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_password_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_random_password">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_random_password">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_random_password" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_random_password" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_random_password')" type="button"><span class="property-name">random_password</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_random_password" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_random_password" id="Call_parameters_items_i0_random_password">
+    <div class="card-body pl-5">
+    <h4>Random Password</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Generate a random 20 character password for the user.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>UserCreateUpdateResult</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The newly created user account with password information.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>This is the API identifier for the user. Use this ID for <code>user.update</code> and <code>user.delete</code> API calls. This ID     also appears in the <code>users</code> array for each group entry in <code>group.query</code> results.</p>
+    <p>NOTE: For users from a directory service, the <code>id</code> is calculated by adding 100000000 to the <code>uid</code>. This ensures     consistent API results. You cannot change directory service accounts through TrueNAS. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_uid">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_uid">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_uid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_uid" data-toggle="collapse" onclick="setAnchor('#Return_value_uid')" type="button"><span class="property-name">uid</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_uid" class="collapse property-definition-div" data-parent="#accordionReturn_value_uid" id="Return_value_uid">
+    <div class="card-body pl-5">
+    <h4>Uid</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>A non-negative integer used to identify a system user. TrueNAS uses this value for permission     checks and many other system purposes. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_username">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_username">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_username" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_username" data-toggle="collapse" onclick="setAnchor('#Return_value_username')" type="button"><span class="property-name">username</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_username" class="collapse property-definition-div" data-parent="#accordionReturn_value_username" id="Return_value_username">
+    <div class="card-body pl-5">
+    <h4>Username</h4><br/>
+    <span class="description"><p>A string used to identify a user. Local accounts must use characters from the POSIX portable filename     character set. </p>
+    </span><div class="any-of-value" id="Return_value_username_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_username_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_username_anyOf_i0" id="Return_value_username_anyOf_i0" onclick="setAnchor('#Return_value_username_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_username_anyOf_i1" id="Return_value_username_anyOf_i1" onclick="setAnchor('#Return_value_username_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_username_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_username_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_username_anyOf_i1_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_unixhash">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_unixhash">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_unixhash" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_unixhash" data-toggle="collapse" onclick="setAnchor('#Return_value_unixhash')" type="button"><span class="property-name">unixhash</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_unixhash" class="collapse property-definition-div" data-parent="#accordionReturn_value_unixhash" id="Return_value_unixhash">
+    <div class="card-body pl-5">
+    <h4>Unixhash</h4><br/>
+    <span class="description"><p>Hashed password for local accounts. This value is <code>null</code> for accounts provided by directory services. </p>
+    </span><div class="any-of-value" id="Return_value_unixhash_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_unixhash_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_unixhash_anyOf_i0" id="Return_value_unixhash_anyOf_i0" onclick="setAnchor('#Return_value_unixhash_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_unixhash_anyOf_i1" id="Return_value_unixhash_anyOf_i1" onclick="setAnchor('#Return_value_unixhash_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_unixhash_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_unixhash_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_smbhash">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_smbhash">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_smbhash" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_smbhash" data-toggle="collapse" onclick="setAnchor('#Return_value_smbhash')" type="button"><span class="property-name">smbhash</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_smbhash" class="collapse property-definition-div" data-parent="#accordionReturn_value_smbhash" id="Return_value_smbhash">
+    <div class="card-body pl-5">
+    <h4>Smbhash</h4><br/>
+    <span class="description"><p>NT hash of the local account password for <code>smb</code> users. This value is <code>null</code> for accounts provided by directory     services or non-SMB accounts. </p>
+    </span><div class="any-of-value" id="Return_value_smbhash_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_smbhash_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_smbhash_anyOf_i0" id="Return_value_smbhash_anyOf_i0" onclick="setAnchor('#Return_value_smbhash_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_smbhash_anyOf_i1" id="Return_value_smbhash_anyOf_i1" onclick="setAnchor('#Return_value_smbhash_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_smbhash_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_smbhash_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_home">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_home">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_home" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_home" data-toggle="collapse" onclick="setAnchor('#Return_value_home')" type="button"><span class="property-name">home</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_home" class="collapse property-definition-div" data-parent="#accordionReturn_value_home" id="Return_value_home">
+    <div class="card-body pl-5">
+    <h4>Home</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "/var/empty"</span><br/>
+    <span class="description"><p>The local file system path for the user account's home directory.<br/>
+    Typically, this is required only if the account has shell access (local or SSH) to TrueNAS.<br/>
+    This is not required for accounts used only for SMB share access. </p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_home_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_shell">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_shell">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_shell" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_shell" data-toggle="collapse" onclick="setAnchor('#Return_value_shell')" type="button"><span class="property-name">shell</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_shell" class="collapse property-definition-div" data-parent="#accordionReturn_value_shell" id="Return_value_shell">
+    <div class="card-body pl-5">
+    <h4>Shell</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "/usr/bin/zsh"</span><br/>
+    <span class="description"><p>Available choices can be retrieved with <code>user.shell_choices</code>.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_shell_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_full_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_full_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_full_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_full_name" data-toggle="collapse" onclick="setAnchor('#Return_value_full_name')" type="button"><span class="property-name">full_name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_full_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_full_name" id="Return_value_full_name">
+    <div class="card-body pl-5">
+    <h4>Full Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Comment field to provide additional information about the user account. Typically, this is     the full name of the user or a short description of a service account. There are no character set restrictions     for this field. This field is for information only. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_builtin">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_builtin">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_builtin" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_builtin" data-toggle="collapse" onclick="setAnchor('#Return_value_builtin')" type="button"><span class="property-name">builtin</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_builtin" class="collapse property-definition-div" data-parent="#accordionReturn_value_builtin" id="Return_value_builtin">
+    <div class="card-body pl-5">
+    <h4>Builtin</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>If <code>true</code>, the user account is an internal system account for the TrueNAS server. Typically, one should     create dedicated user accounts for access to the TrueNAS server webui and shares. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_smb">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_smb">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_smb" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_smb" data-toggle="collapse" onclick="setAnchor('#Return_value_smb')" type="button"><span class="property-name">smb</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_smb" class="collapse property-definition-div" data-parent="#accordionReturn_value_smb" id="Return_value_smb">
+    <div class="card-body pl-5">
+    <h4>Smb</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>The user account may be used to access SMB shares. If set to <code>true</code> then TrueNAS stores an NT hash of the     user account's password for local accounts. This feature is unavailable for local accounts when General Purpose OS     STIG compatibility mode is enabled. If set to <code>true</code> the user is automatically added to the <code>builtin_users</code>     group.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_userns_idmap">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_userns_idmap">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_userns_idmap" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_userns_idmap" data-toggle="collapse" onclick="setAnchor('#Return_value_userns_idmap')" type="button"><span class="property-name">userns_idmap</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_userns_idmap" class="collapse property-definition-div" data-parent="#accordionReturn_value_userns_idmap" id="Return_value_userns_idmap">
+    <div class="card-body pl-5">
+    <h4>Userns Idmap</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Specifies the subuid mapping for this user. If DIRECT then the UID will be     directly mapped to all containers. Alternatively, the target UID may be     explicitly specified. If <code>null</code>, then the UID will not be mapped.</p>
+    <p>NOTE: This field will be ignored for users that have been assigned TrueNAS roles.</p>
+    </span><div class="any-of-value" id="Return_value_userns_idmap_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_userns_idmap_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_userns_idmap_anyOf_i0" id="Return_value_userns_idmap_anyOf_i0" onclick="setAnchor('#Return_value_userns_idmap_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_userns_idmap_anyOf_i1" id="Return_value_userns_idmap_anyOf_i1" onclick="setAnchor('#Return_value_userns_idmap_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_userns_idmap_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: enum (of null or string)</span><br/>
+    <div class="enum-value" id="Return_value_userns_idmap_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"DIRECT"</li><li class="list-group-item enum-item">null</li></ul>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_userns_idmap_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_userns_idmap_anyOf_i1_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>4294967294</code></span></p>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_group">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_group">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_group" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_group" data-toggle="collapse" onclick="setAnchor('#Return_value_group')" type="button"><span class="property-name">group</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_group" class="collapse property-definition-div" data-parent="#accordionReturn_value_group" id="Return_value_group">
+    <div class="card-body pl-5">
+    <h4>Group</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The primary group of the user account. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_groups">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_groups">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_groups" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_groups" data-toggle="collapse" onclick="setAnchor('#Return_value_groups')" type="button"><span class="property-name">groups</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_groups" class="collapse property-definition-div" data-parent="#accordionReturn_value_groups" id="Return_value_groups">
+    <div class="card-body pl-5">
+    <h4>Groups</h4><span class="badge badge-dark value-type">Type: array of integer</span><br/>
+    <span class="description"><p>Array of additional groups to which the user belongs. NOTE: Groups are identified by their group entry <code>id</code>,     not their Unix group ID (<code>gid</code>). </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_groups_items">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_password_disabled">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_password_disabled">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_password_disabled" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_password_disabled" data-toggle="collapse" onclick="setAnchor('#Return_value_password_disabled')" type="button"><span class="property-name">password_disabled</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_password_disabled" class="collapse property-definition-div" data-parent="#accordionReturn_value_password_disabled" id="Return_value_password_disabled">
+    <div class="card-body pl-5">
+    <h4>Password Disabled</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>If set to <code>true</code> password authentication for the user account is disabled.</p>
+    <p>NOTE: Users with password authentication disabled may still authenticate to the TrueNAS server by other methods,     such as SSH key-based authentication.</p>
+    <p>NOTE: Password authentication is required for <code>smb</code> users.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_ssh_password_enabled">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_ssh_password_enabled">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_ssh_password_enabled" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_ssh_password_enabled" data-toggle="collapse" onclick="setAnchor('#Return_value_ssh_password_enabled')" type="button"><span class="property-name">ssh_password_enabled</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_ssh_password_enabled" class="collapse property-definition-div" data-parent="#accordionReturn_value_ssh_password_enabled" id="Return_value_ssh_password_enabled">
+    <div class="card-body pl-5">
+    <h4>Ssh Password Enabled</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Allow the user to authenticate to the TrueNAS SSH server using a password.</p>
+    <p>WARNING: The established best practice is to use only key-based authentication for SSH servers. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_sshpubkey">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_sshpubkey">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_sshpubkey" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_sshpubkey" data-toggle="collapse" onclick="setAnchor('#Return_value_sshpubkey')" type="button"><span class="property-name">sshpubkey</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_sshpubkey" class="collapse property-definition-div" data-parent="#accordionReturn_value_sshpubkey" id="Return_value_sshpubkey">
+    <div class="card-body pl-5">
+    <h4>Sshpubkey</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>SSH public keys corresponding to private keys that authenticate this user to the TrueNAS SSH server. </p>
+    </span><div class="any-of-value" id="Return_value_sshpubkey_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_sshpubkey_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_sshpubkey_anyOf_i0" id="Return_value_sshpubkey_anyOf_i0" onclick="setAnchor('#Return_value_sshpubkey_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_sshpubkey_anyOf_i1" id="Return_value_sshpubkey_anyOf_i1" onclick="setAnchor('#Return_value_sshpubkey_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_sshpubkey_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_sshpubkey_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_locked">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_locked">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_locked" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_locked" data-toggle="collapse" onclick="setAnchor('#Return_value_locked')" type="button"><span class="property-name">locked</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_locked" class="collapse property-definition-div" data-parent="#accordionReturn_value_locked" id="Return_value_locked">
+    <div class="card-body pl-5">
+    <h4>Locked</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>If set to <code>true</code> the account is locked. The account cannot be used to authenticate to the TrueNAS server. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_sudo_commands">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_sudo_commands">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_sudo_commands" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_sudo_commands" data-toggle="collapse" onclick="setAnchor('#Return_value_sudo_commands')" type="button"><span class="property-name">sudo_commands</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_sudo_commands" class="collapse property-definition-div" data-parent="#accordionReturn_value_sudo_commands" id="Return_value_sudo_commands">
+    <div class="card-body pl-5">
+    <h4>Sudo Commands</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>An array of commands the user may execute with elevated privileges. User is prompted for password     when executing any command from the array. </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_sudo_commands_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_sudo_commands_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_sudo_commands_nopasswd">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_sudo_commands_nopasswd">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_sudo_commands_nopasswd" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_sudo_commands_nopasswd" data-toggle="collapse" onclick="setAnchor('#Return_value_sudo_commands_nopasswd')" type="button"><span class="property-name">sudo_commands_nopasswd</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_sudo_commands_nopasswd" class="collapse property-definition-div" data-parent="#accordionReturn_value_sudo_commands_nopasswd" id="Return_value_sudo_commands_nopasswd">
+    <div class="card-body pl-5">
+    <h4>Sudo Commands Nopasswd</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>An array of commands the user may execute with elevated privileges. User is <em>not</em> prompted for password     when executing any command from the array. </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_sudo_commands_nopasswd_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_sudo_commands_nopasswd_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_email">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_email">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_email" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_email" data-toggle="collapse" onclick="setAnchor('#Return_value_email')" type="button"><span class="property-name">email</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_email" class="collapse property-definition-div" data-parent="#accordionReturn_value_email" id="Return_value_email">
+    <div class="card-body pl-5">
+    <h4>Email</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Email address of the user. If the user has the <code>FULL_ADMIN</code> role, they will receive email alerts and     notifications. </p>
+    </span><div class="any-of-value" id="Return_value_email_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_email_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_email_anyOf_i0" id="Return_value_email_anyOf_i0" onclick="setAnchor('#Return_value_email_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_email_anyOf_i1" id="Return_value_email_anyOf_i1" onclick="setAnchor('#Return_value_email_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_email_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_email_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_email_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_local">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_local">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_local" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_local" data-toggle="collapse" onclick="setAnchor('#Return_value_local')" type="button"><span class="property-name">local</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_local" class="collapse property-definition-div" data-parent="#accordionReturn_value_local" id="Return_value_local">
+    <div class="card-body pl-5">
+    <h4>Local</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>If <code>true</code>, the account is local to the TrueNAS server. If <code>false</code>, the account is provided by a directory     service. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_immutable">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_immutable">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_immutable" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_immutable" data-toggle="collapse" onclick="setAnchor('#Return_value_immutable')" type="button"><span class="property-name">immutable</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_immutable" class="collapse property-definition-div" data-parent="#accordionReturn_value_immutable" id="Return_value_immutable">
+    <div class="card-body pl-5">
+    <h4>Immutable</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>If <code>true</code>, the account is system-provided and most fields related to it may not be changed. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_twofactor_auth_configured">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_twofactor_auth_configured">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_twofactor_auth_configured" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_twofactor_auth_configured" data-toggle="collapse" onclick="setAnchor('#Return_value_twofactor_auth_configured')" type="button"><span class="property-name">twofactor_auth_configured</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_twofactor_auth_configured" class="collapse property-definition-div" data-parent="#accordionReturn_value_twofactor_auth_configured" id="Return_value_twofactor_auth_configured">
+    <div class="card-body pl-5">
+    <h4>Twofactor Auth Configured</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>If <code>true</code>, the account has been configured for two-factor authentication. Users are prompted for a     second factor when authenticating to the TrueNAS web UI and API. They may also be prompted when signing     in to the TrueNAS SSH server using a password (depending on global two-factor authentication settings). </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_sid">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_sid">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_sid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_sid" data-toggle="collapse" onclick="setAnchor('#Return_value_sid')" type="button"><span class="property-name">sid</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_sid" class="collapse property-definition-div" data-parent="#accordionReturn_value_sid" id="Return_value_sid">
+    <div class="card-body pl-5">
+    <h4>Sid</h4><br/>
+    <span class="description"><p>The Security Identifier (SID) of the user if the account an <code>smb</code> account. The SMB server uses     this value to check share access and for other purposes. </p>
+    </span><div class="any-of-value" id="Return_value_sid_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_sid_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_sid_anyOf_i0" id="Return_value_sid_anyOf_i0" onclick="setAnchor('#Return_value_sid_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_sid_anyOf_i1" id="Return_value_sid_anyOf_i1" onclick="setAnchor('#Return_value_sid_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_sid_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_sid_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_last_password_change">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_last_password_change">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_last_password_change" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_last_password_change" data-toggle="collapse" onclick="setAnchor('#Return_value_last_password_change')" type="button"><span class="property-name">last_password_change</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_last_password_change" class="collapse property-definition-div" data-parent="#accordionReturn_value_last_password_change" id="Return_value_last_password_change">
+    <div class="card-body pl-5">
+    <h4>Last Password Change</h4><br/>
+    <span class="description"><p>The date of the last password change for local user accounts.</p>
+    </span><div class="any-of-value" id="Return_value_last_password_change_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_last_password_change_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_last_password_change_anyOf_i0" id="Return_value_last_password_change_anyOf_i0" onclick="setAnchor('#Return_value_last_password_change_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_last_password_change_anyOf_i1" id="Return_value_last_password_change_anyOf_i1" onclick="setAnchor('#Return_value_last_password_change_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_last_password_change_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: date-time</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_last_password_change_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_password_age">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_password_age">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_password_age" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_password_age" data-toggle="collapse" onclick="setAnchor('#Return_value_password_age')" type="button"><span class="property-name">password_age</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_password_age" class="collapse property-definition-div" data-parent="#accordionReturn_value_password_age" id="Return_value_password_age">
+    <div class="card-body pl-5">
+    <h4>Password Age</h4><br/>
+    <span class="description"><p>The age in days of the password for local user accounts.</p>
+    </span><div class="any-of-value" id="Return_value_password_age_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_password_age_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_password_age_anyOf_i0" id="Return_value_password_age_anyOf_i0" onclick="setAnchor('#Return_value_password_age_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_password_age_anyOf_i1" id="Return_value_password_age_anyOf_i1" onclick="setAnchor('#Return_value_password_age_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_password_age_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_password_age_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_password_history">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_password_history">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_password_history" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_password_history" data-toggle="collapse" onclick="setAnchor('#Return_value_password_history')" type="button"><span class="property-name">password_history</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_password_history" class="collapse property-definition-div" data-parent="#accordionReturn_value_password_history" id="Return_value_password_history">
+    <div class="card-body pl-5">
+    <h4>Password History</h4><br/>
+    <span class="description"><p>This contains hashes of the ten most recent passwords used by local user accounts, and is     for enforcing password history requirements as defined in system.security.</p>
+    </span><div class="any-of-value" id="Return_value_password_history_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_password_history_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_password_history_anyOf_i0" id="Return_value_password_history_anyOf_i0" onclick="setAnchor('#Return_value_password_history_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_password_history_anyOf_i1" id="Return_value_password_history_anyOf_i1" onclick="setAnchor('#Return_value_password_history_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_password_history_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_password_history_anyOf_i0_items">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_password_history_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_password_change_required">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_password_change_required">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_password_change_required" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_password_change_required" data-toggle="collapse" onclick="setAnchor('#Return_value_password_change_required')" type="button"><span class="property-name">password_change_required</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_password_change_required" class="collapse property-definition-div" data-parent="#accordionReturn_value_password_change_required" id="Return_value_password_change_required">
+    <div class="card-body pl-5">
+    <h4>Password Change Required</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Password change for local user account is required on next login.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_roles">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_roles">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_roles" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_roles" data-toggle="collapse" onclick="setAnchor('#Return_value_roles')" type="button"><span class="property-name">roles</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_roles" class="collapse property-definition-div" data-parent="#accordionReturn_value_roles" id="Return_value_roles">
+    <div class="card-body pl-5">
+    <h4>Roles</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of roles assigned to this user's groups. Roles control administrative access to TrueNAS through     the web UI and API.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_roles_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_api_keys">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_api_keys">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_api_keys" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_api_keys" data-toggle="collapse" onclick="setAnchor('#Return_value_api_keys')" type="button"><span class="property-name">api_keys</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_api_keys" class="collapse property-definition-div" data-parent="#accordionReturn_value_api_keys" id="Return_value_api_keys">
+    <div class="card-body pl-5">
+    <h4>Api Keys</h4><span class="badge badge-dark value-type">Type: array of integer</span><br/>
+    <span class="description"><p>Array of API key IDs associated with this user account for programmatic access.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_api_keys_items">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_password">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_password">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_password" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_password" data-toggle="collapse" onclick="setAnchor('#Return_value_password')" type="button"><span class="property-name">password</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_password" class="collapse property-definition-div" data-parent="#accordionReturn_value_password" id="Return_value_password">
+    <div class="card-body pl-5">
+    <h4>Password</h4><br/>
+    <span class="description"><p>Password if it was specified in create or update payload. If random_password     was specified then this will be a 20 character random string.</p>
+    </span><div class="any-of-value" id="Return_value_password_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_password_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_password_anyOf_i0" id="Return_value_password_anyOf_i0" onclick="setAnchor('#Return_value_password_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_password_anyOf_i1" id="Return_value_password_anyOf_i1" onclick="setAnchor('#Return_value_password_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_password_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_password_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_password_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* ACCOUNT_WRITE
+

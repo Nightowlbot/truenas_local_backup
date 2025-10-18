@@ -1,0 +1,6 @@
+service
+-------
+
+.. toctree::
+
+   api_events_service.query

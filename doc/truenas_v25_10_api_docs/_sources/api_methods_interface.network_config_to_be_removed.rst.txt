@@ -1,0 +1,58 @@
+interface.network_config_to_be_removed
+======================================
+
+Determines which network configuration items will be removed during interface setup.
+
+On a fresh install of SCALE, DHCP is started for every interface so IP addresses/routes could be installed via that program. However, when the end-user goes to configure the first interface we tear down all other interfaces configs AND delete the default route. We also remove the default route if the configured gateway doesn't match the one currently installed in kernel.
+
+Additionally, this checks for nameserver configurations that exist in the current network state but are not configured in the database, indicating they will be removed during reconfiguration.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: array of enum (of string)</span><br/>
+    <span class="description"><p>The network configuration fields that will be wiped on the next <code>interface.checkin</code> call. The current values of     these fields can be retrieved by calling <code>network.configuration.config</code>.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_items">
+    <span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <div class="enum-value" id="Return_value_items_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"ipv4gateway"</li><li class="list-group-item enum-item">"nameserver1"</li><li class="list-group-item enum-item">"nameserver2"</li><li class="list-group-item enum-item">"nameserver3"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* NETWORK_INTERFACE_READ
+

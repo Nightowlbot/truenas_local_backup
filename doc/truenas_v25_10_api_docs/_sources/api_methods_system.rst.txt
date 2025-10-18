@@ -1,0 +1,19 @@
+system
+------
+
+.. toctree::
+
+   api_methods_system.boot_id
+   api_methods_system.debug
+   api_methods_system.feature_enabled
+   api_methods_system.host_id
+   api_methods_system.info
+   api_methods_system.license_update
+   api_methods_system.product_type
+   api_methods_system.ready
+   api_methods_system.reboot
+   api_methods_system.release_notes_url
+   api_methods_system.shutdown
+   api_methods_system.state
+   api_methods_system.version
+   api_methods_system.version_short

@@ -1,0 +1,7 @@
+system.security.info
+--------------------
+
+.. toctree::
+
+   api_methods_system.security.info.fips_available
+   api_methods_system.security.info.fips_enabled

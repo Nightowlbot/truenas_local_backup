@@ -1,0 +1,434 @@
+audit.update
+============
+
+Update default audit settings.
+
+The following fields contain read-only data and are returned in calls to `audit.config` and `audit.update`: - `space` - `remote_logging_enabled` - `enabled_services`
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: data</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>data</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Updated audit configuration settings.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_retention">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_retention">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_retention" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_retention" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_retention')" type="button"><span class="property-name">retention</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_retention" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_retention" id="Call_parameters_items_i0_retention">
+    <div class="card-body pl-5">
+    <h4>Retention</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Number of days to retain local audit messages.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_retention_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>30</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_reservation">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_reservation">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_reservation" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_reservation" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_reservation')" type="button"><span class="property-name">reservation</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_reservation" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_reservation" id="Call_parameters_items_i0_reservation">
+    <div class="card-body pl-5">
+    <h4>Reservation</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Size in GiB of refreservation to set on ZFS dataset where the audit databases are stored. The refreservation     specifies the minimum amount of space guaranteed to the dataset, and counts against the space available for other     datasets in the zpool where the audit dataset is located.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_reservation_number">Value must be greater or equal to <code>0</code> and lesser or equal to <code>100</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_quota">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_quota">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_quota" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_quota" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_quota')" type="button"><span class="property-name">quota</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_quota" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_quota" id="Call_parameters_items_i0_quota">
+    <div class="card-body pl-5">
+    <h4>Quota</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Size in GiB of the maximum amount of space that may be consumed by the dataset where the audit dabases are     stored.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_quota_number">Value must be greater or equal to <code>0</code> and lesser or equal to <code>100</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_quota_fill_warning">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_quota_fill_warning">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_quota_fill_warning" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_quota_fill_warning" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_quota_fill_warning')" type="button"><span class="property-name">quota_fill_warning</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_quota_fill_warning" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_quota_fill_warning" id="Call_parameters_items_i0_quota_fill_warning">
+    <div class="card-body pl-5">
+    <h4>Quota Fill Warning</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Percentage used of dataset quota at which to generate a warning alert.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_quota_fill_warning_number">Value must be greater or equal to <code>5</code> and lesser or equal to <code>80</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_quota_fill_critical">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_quota_fill_critical">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_quota_fill_critical" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_quota_fill_critical" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_quota_fill_critical')" type="button"><span class="property-name">quota_fill_critical</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_quota_fill_critical" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_quota_fill_critical" id="Call_parameters_items_i0_quota_fill_critical">
+    <div class="card-body pl-5">
+    <h4>Quota Fill Critical</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Percentage used of dataset quota at which to generate a critical alert.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_quota_fill_critical_number">Value must be greater or equal to <code>50</code> and lesser or equal to <code>95</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>AuditEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The updated audit configuration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the audit configuration.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_retention">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_retention">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_retention" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_retention" data-toggle="collapse" onclick="setAnchor('#Return_value_retention')" type="button"><span class="property-name">retention</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_retention" class="collapse property-definition-div" data-parent="#accordionReturn_value_retention" id="Return_value_retention">
+    <div class="card-body pl-5">
+    <h4>Retention</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Number of days to retain local audit messages.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_retention_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>30</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_reservation">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_reservation">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_reservation" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_reservation" data-toggle="collapse" onclick="setAnchor('#Return_value_reservation')" type="button"><span class="property-name">reservation</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_reservation" class="collapse property-definition-div" data-parent="#accordionReturn_value_reservation" id="Return_value_reservation">
+    <div class="card-body pl-5">
+    <h4>Reservation</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Size in GiB of refreservation to set on ZFS dataset where the audit databases are stored. The refreservation     specifies the minimum amount of space guaranteed to the dataset, and counts against the space available for other     datasets in the zpool where the audit dataset is located.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_reservation_number">Value must be greater or equal to <code>0</code> and lesser or equal to <code>100</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_quota">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_quota">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_quota" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_quota" data-toggle="collapse" onclick="setAnchor('#Return_value_quota')" type="button"><span class="property-name">quota</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_quota" class="collapse property-definition-div" data-parent="#accordionReturn_value_quota" id="Return_value_quota">
+    <div class="card-body pl-5">
+    <h4>Quota</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Size in GiB of the maximum amount of space that may be consumed by the dataset where the audit dabases are     stored.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_quota_number">Value must be greater or equal to <code>0</code> and lesser or equal to <code>100</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_quota_fill_warning">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_quota_fill_warning">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_quota_fill_warning" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_quota_fill_warning" data-toggle="collapse" onclick="setAnchor('#Return_value_quota_fill_warning')" type="button"><span class="property-name">quota_fill_warning</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_quota_fill_warning" class="collapse property-definition-div" data-parent="#accordionReturn_value_quota_fill_warning" id="Return_value_quota_fill_warning">
+    <div class="card-body pl-5">
+    <h4>Quota Fill Warning</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Percentage used of dataset quota at which to generate a warning alert.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_quota_fill_warning_number">Value must be greater or equal to <code>5</code> and lesser or equal to <code>80</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_quota_fill_critical">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_quota_fill_critical">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_quota_fill_critical" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_quota_fill_critical" data-toggle="collapse" onclick="setAnchor('#Return_value_quota_fill_critical')" type="button"><span class="property-name">quota_fill_critical</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_quota_fill_critical" class="collapse property-definition-div" data-parent="#accordionReturn_value_quota_fill_critical" id="Return_value_quota_fill_critical">
+    <div class="card-body pl-5">
+    <h4>Quota Fill Critical</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Percentage used of dataset quota at which to generate a critical alert.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_quota_fill_critical_number">Value must be greater or equal to <code>50</code> and lesser or equal to <code>95</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_remote_logging_enabled">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_remote_logging_enabled">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_remote_logging_enabled" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_remote_logging_enabled" data-toggle="collapse" onclick="setAnchor('#Return_value_remote_logging_enabled')" type="button"><span class="property-name">remote_logging_enabled</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_remote_logging_enabled" class="collapse property-definition-div" data-parent="#accordionReturn_value_remote_logging_enabled" id="Return_value_remote_logging_enabled">
+    <div class="card-body pl-5">
+    <h4>Remote Logging Enabled</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Logging to a remote syslog server is enabled on TrueNAS, and audit logs are     included in what is sent remotely.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_space">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_space">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_space" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_space" data-toggle="collapse" onclick="setAnchor('#Return_value_space')" type="button"><span class="property-name">space</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_space" class="collapse property-definition-div" data-parent="#accordionReturn_value_space" id="Return_value_space">
+    <div class="card-body pl-5">
+    <h4>AuditEntrySpace</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>ZFS dataset properties relating space used and available for the dataset where the audit databases are     written.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_space_used">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_space_used">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_space_used" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_space_used" data-toggle="collapse" onclick="setAnchor('#Return_value_space_used')" type="button"><span class="property-name">used</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_space_used" class="collapse property-definition-div" data-parent="#accordionReturn_value_space_used" id="Return_value_space_used">
+    <div class="card-body pl-5">
+    <h4>Used</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Total space used by the audit dataset in bytes.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_space_used_by_dataset">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_space_used_by_dataset">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_space_used_by_dataset" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_space_used_by_dataset" data-toggle="collapse" onclick="setAnchor('#Return_value_space_used_by_dataset')" type="button"><span class="property-name">used_by_dataset</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_space_used_by_dataset" class="collapse property-definition-div" data-parent="#accordionReturn_value_space_used_by_dataset" id="Return_value_space_used_by_dataset">
+    <div class="card-body pl-5">
+    <h4>Used By Dataset</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Space used by the dataset itself (not including snapshots or reservations) in bytes.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_space_used_by_reservation">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_space_used_by_reservation">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_space_used_by_reservation" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_space_used_by_reservation" data-toggle="collapse" onclick="setAnchor('#Return_value_space_used_by_reservation')" type="button"><span class="property-name">used_by_reservation</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_space_used_by_reservation" class="collapse property-definition-div" data-parent="#accordionReturn_value_space_used_by_reservation" id="Return_value_space_used_by_reservation">
+    <div class="card-body pl-5">
+    <h4>Used By Reservation</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Space reserved for the dataset in bytes.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_space_used_by_snapshots">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_space_used_by_snapshots">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_space_used_by_snapshots" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_space_used_by_snapshots" data-toggle="collapse" onclick="setAnchor('#Return_value_space_used_by_snapshots')" type="button"><span class="property-name">used_by_snapshots</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_space_used_by_snapshots" class="collapse property-definition-div" data-parent="#accordionReturn_value_space_used_by_snapshots" id="Return_value_space_used_by_snapshots">
+    <div class="card-body pl-5">
+    <h4>Used By Snapshots</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Space used by snapshots of the audit dataset in bytes.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_space_available">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_space_available">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_space_available" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_space_available" data-toggle="collapse" onclick="setAnchor('#Return_value_space_available')" type="button"><span class="property-name">available</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_space_available" class="collapse property-definition-div" data-parent="#accordionReturn_value_space_available" id="Return_value_space_available">
+    <div class="card-body pl-5">
+    <h4>Available</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Available space remaining for the audit dataset in bytes.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_enabled_services">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_enabled_services">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_enabled_services" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_enabled_services" data-toggle="collapse" onclick="setAnchor('#Return_value_enabled_services')" type="button"><span class="property-name">enabled_services</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_enabled_services" class="collapse property-definition-div" data-parent="#accordionReturn_value_enabled_services" id="Return_value_enabled_services">
+    <div class="card-body pl-5">
+    <h4>AuditEntryEnabledServices</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>JSON object with key denoting service, and value containing a JSON array of what aspects of this service are     being audited. In the case of the SMB audit, the list contains share names of shares for which auditing is     enabled.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_enabled_services_MIDDLEWARE">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_enabled_services_MIDDLEWARE">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_enabled_services_MIDDLEWARE" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_enabled_services_MIDDLEWARE" data-toggle="collapse" onclick="setAnchor('#Return_value_enabled_services_MIDDLEWARE')" type="button"><span class="property-name">MIDDLEWARE</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_enabled_services_MIDDLEWARE" class="collapse property-definition-div" data-parent="#accordionReturn_value_enabled_services_MIDDLEWARE" id="Return_value_enabled_services_MIDDLEWARE">
+    <div class="card-body pl-5">
+    <h4>Middleware</h4><span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="description"><p>Array of middleware audit event types that are enabled.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_enabled_services_MIDDLEWARE_items">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_enabled_services_SMB">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_enabled_services_SMB">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_enabled_services_SMB" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_enabled_services_SMB" data-toggle="collapse" onclick="setAnchor('#Return_value_enabled_services_SMB')" type="button"><span class="property-name">SMB</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_enabled_services_SMB" class="collapse property-definition-div" data-parent="#accordionReturn_value_enabled_services_SMB" id="Return_value_enabled_services_SMB">
+    <div class="card-body pl-5">
+    <h4>Smb</h4><span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="description"><p>Array of SMB share names or audit event types that are enabled.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_enabled_services_SMB_items">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_enabled_services_SUDO">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_enabled_services_SUDO">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_enabled_services_SUDO" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_enabled_services_SUDO" data-toggle="collapse" onclick="setAnchor('#Return_value_enabled_services_SUDO')" type="button"><span class="property-name">SUDO</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_enabled_services_SUDO" class="collapse property-definition-div" data-parent="#accordionReturn_value_enabled_services_SUDO" id="Return_value_enabled_services_SUDO">
+    <div class="card-body pl-5">
+    <h4>Sudo</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of sudo commands or users that are being audited.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_enabled_services_SUDO_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SYSTEM_AUDIT_WRITE
+

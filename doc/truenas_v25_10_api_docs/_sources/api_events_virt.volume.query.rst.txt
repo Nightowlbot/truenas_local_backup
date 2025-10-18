@@ -1,0 +1,410 @@
+virt.volume.query
+=================
+
+Sent on virt.volume changes.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionADDED">
+    <div class="card">
+    <div class="card-header" id="headingADDED">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED" data-toggle="collapse" onclick="setAnchor('#ADDED')" type="button"><span class="property-name">ADDED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED" class="collapse property-definition-div" data-parent="#accordionADDED" id="ADDED">
+    <div class="card-body pl-5">
+    <h4>VirtVolumeAddedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_id" data-toggle="collapse" onclick="setAnchor('#ADDED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_id" class="collapse property-definition-div" data-parent="#accordionADDED_id" id="ADDED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields" data-toggle="collapse" onclick="setAnchor('#ADDED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields" class="collapse property-definition-div" data-parent="#accordionADDED_fields" id="ADDED_fields">
+    <div class="card-body pl-5">
+    <h4>VirtVolumeEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_id" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_id" class="collapse property-definition-div" data-parent="#accordionADDED_fields_id" id="ADDED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Unique identifier for the virtualization volume.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_id_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_name">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_name">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_name" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_name" class="collapse property-definition-div" data-parent="#accordionADDED_fields_name" id="ADDED_fields_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable name of the virtualization volume.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_name_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_storage_pool">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_storage_pool">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_storage_pool" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_storage_pool" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_storage_pool')" type="button"><span class="property-name">storage_pool</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_storage_pool" class="collapse property-definition-div" data-parent="#accordionADDED_fields_storage_pool" id="ADDED_fields_storage_pool">
+    <div class="card-body pl-5">
+    <h4>Storage Pool</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name of the storage pool containing this volume.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_storage_pool_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_content_type">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_content_type">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_content_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_content_type" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_content_type')" type="button"><span class="property-name">content_type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_content_type" class="collapse property-definition-div" data-parent="#accordionADDED_fields_content_type" id="ADDED_fields_content_type">
+    <div class="card-body pl-5">
+    <h4>Content Type</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Type of content stored in this volume (e.g., 'BLOCK', 'ISO').</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_content_type_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_created_at">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_created_at">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_created_at" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_created_at" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_created_at')" type="button"><span class="property-name">created_at</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_created_at" class="collapse property-definition-div" data-parent="#accordionADDED_fields_created_at" id="ADDED_fields_created_at">
+    <div class="card-body pl-5">
+    <h4>Created At</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Timestamp when this volume was created.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_type">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_type">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_type" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_type')" type="button"><span class="property-name">type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_type" class="collapse property-definition-div" data-parent="#accordionADDED_fields_type" id="ADDED_fields_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Volume type indicating its storage backend and characteristics.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_type_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_config">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_config">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_config" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_config" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_config')" type="button"><span class="property-name">config</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_config" class="collapse property-definition-div" data-parent="#accordionADDED_fields_config" id="ADDED_fields_config">
+    <div class="card-body pl-5">
+    <h4>Config</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Object containing detailed configuration parameters for this volume.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_used_by">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_used_by">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_used_by" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_used_by" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_used_by')" type="button"><span class="property-name">used_by</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_used_by" class="collapse property-definition-div" data-parent="#accordionADDED_fields_used_by" id="ADDED_fields_used_by">
+    <div class="card-body pl-5">
+    <h4>Used By</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of virtual instance names currently using this volume.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="ADDED_fields_used_by_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_used_by_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED" data-toggle="collapse" onclick="setAnchor('#CHANGED')" type="button"><span class="property-name">CHANGED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED" class="collapse property-definition-div" data-parent="#accordionCHANGED" id="CHANGED">
+    <div class="card-body pl-5">
+    <h4>VirtVolumeChangedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_id" id="CHANGED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields" id="CHANGED_fields">
+    <div class="card-body pl-5">
+    <h4>VirtVolumeEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_id" id="CHANGED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Unique identifier for the virtualization volume.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_id_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_name">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_name">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_name" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_name" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_name" id="CHANGED_fields_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable name of the virtualization volume.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_name_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_storage_pool">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_storage_pool">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_storage_pool" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_storage_pool" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_storage_pool')" type="button"><span class="property-name">storage_pool</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_storage_pool" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_storage_pool" id="CHANGED_fields_storage_pool">
+    <div class="card-body pl-5">
+    <h4>Storage Pool</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name of the storage pool containing this volume.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_storage_pool_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_content_type">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_content_type">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_content_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_content_type" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_content_type')" type="button"><span class="property-name">content_type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_content_type" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_content_type" id="CHANGED_fields_content_type">
+    <div class="card-body pl-5">
+    <h4>Content Type</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Type of content stored in this volume (e.g., 'BLOCK', 'ISO').</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_content_type_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_created_at">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_created_at">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_created_at" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_created_at" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_created_at')" type="button"><span class="property-name">created_at</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_created_at" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_created_at" id="CHANGED_fields_created_at">
+    <div class="card-body pl-5">
+    <h4>Created At</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Timestamp when this volume was created.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_type">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_type">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_type" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_type')" type="button"><span class="property-name">type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_type" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_type" id="CHANGED_fields_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Volume type indicating its storage backend and characteristics.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_type_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_config">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_config">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_config" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_config" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_config')" type="button"><span class="property-name">config</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_config" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_config" id="CHANGED_fields_config">
+    <div class="card-body pl-5">
+    <h4>Config</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Object containing detailed configuration parameters for this volume.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_used_by">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_used_by">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_used_by" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_used_by" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_used_by')" type="button"><span class="property-name">used_by</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_used_by" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_used_by" id="CHANGED_fields_used_by">
+    <div class="card-body pl-5">
+    <h4>Used By</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of virtual instance names currently using this volume.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="CHANGED_fields_used_by_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_used_by_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionREMOVED">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED" data-toggle="collapse" onclick="setAnchor('#REMOVED')" type="button"><span class="property-name">REMOVED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED" class="collapse property-definition-div" data-parent="#accordionREMOVED" id="REMOVED">
+    <div class="card-body pl-5">
+    <h4>VirtVolumeRemovedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionREMOVED_id">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED_id">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED_id" data-toggle="collapse" onclick="setAnchor('#REMOVED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED_id" class="collapse property-definition-div" data-parent="#accordionREMOVED_id" id="REMOVED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* VIRT_IMAGE_READ
+

@@ -1,0 +1,11 @@
+privilege
+---------
+
+.. toctree::
+
+   api_methods_privilege.create
+   api_methods_privilege.delete
+   api_methods_privilege.get_instance
+   api_methods_privilege.query
+   api_methods_privilege.roles
+   api_methods_privilege.update

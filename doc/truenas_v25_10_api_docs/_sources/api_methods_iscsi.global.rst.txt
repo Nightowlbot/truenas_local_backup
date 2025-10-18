@@ -1,0 +1,11 @@
+iscsi.global
+------------
+
+.. toctree::
+
+   api_methods_iscsi.global.alua_enabled
+   api_methods_iscsi.global.client_count
+   api_methods_iscsi.global.config
+   api_methods_iscsi.global.iser_enabled
+   api_methods_iscsi.global.sessions
+   api_methods_iscsi.global.update

@@ -1,0 +1,1427 @@
+ftp.update
+==========
+
+Update ftp service configuration.
+
+`clients` is an integer value which sets the maximum number of simultaneous clients allowed. It defaults to 32.
+
+`ipconnections` is an integer value which shows the maximum number of connections per IP address. It defaults to 0 which equals to unlimited.
+
+`timeout` is the maximum number of seconds that proftpd will allow clients to stay connected without receiving any data on either the control or data connection.
+
+`timeout_notransfer` is the maximum number of seconds a client is allowed to spend connected, after authentication, without issuing a command which results in creating an active or passive data connection (i.e. sending/receiving a file, or receiving a directory listing).
+
+`onlyanonymous` allows anonymous FTP logins with access to the directory specified by `anonpath`.
+
+`banner` is a message displayed to local login users after they successfully authenticate. It is not displayed to anonymous login users.
+
+`filemask` sets the default permissions for newly created files which by default are 077.
+
+`dirmask` sets the default permissions for newly created directories which by default are 077.
+
+`resume` if set allows FTP clients to resume interrupted transfers.
+
+`fxp` if set to true indicates that File eXchange Protocol is enabled. Generally it is discouraged as it makes the server vulnerable to FTP bounce attacks.
+
+`defaultroot` when set ensures that for local users, home directory access is only granted if the user is a member of group wheel.
+
+`ident` is a boolean value which when set to true indicates that IDENT authentication is required. If identd is not running on the client, this can result in timeouts.
+
+`masqaddress` is the public IP address or hostname which is set if FTP clients cannot connect through a NAT device.
+
+`localuserbw` is a positive integer value which indicates maximum upload bandwidth in KB/s for local user. Default of zero indicates unlimited upload bandwidth ( from the FTP server configuration ).
+
+`localuserdlbw` is a positive integer value which indicates maximum download bandwidth in KB/s for local user. Default of zero indicates unlimited download bandwidth ( from the FTP server configuration ).
+
+`anonuserbw` is a positive integer value which indicates maximum upload bandwidth in KB/s for anonymous user. Default of zero indicates unlimited upload bandwidth ( from the FTP server configuration ).
+
+`anonuserdlbw` is a positive integer value which indicates maximum download bandwidth in KB/s for anonymous user. Default of zero indicates unlimited download bandwidth ( from the FTP server configuration ).
+
+`tls` is a boolean value which when set indicates that encrypted connections are enabled. This requires a certificate to be configured first with the certificate service and the id of certificate is passed on in `ssltls_certificate`.
+
+`tls_policy` defines whether the control channel, data channel, both channels, or neither channel of an FTP session must occur over SSL/TLS.
+
+`tls_opt_enable_diags` is a boolean value when set, logs verbosely. This is helpful when troubleshooting a connection.
+
+`options` is a string used to add proftpd(8) parameters not covered by ftp service.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: ftp_update</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>ftp_update</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>FTPUpdateArgs parameters.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_port">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_port">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_port" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_port')" type="button"><span class="property-name">port</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_port" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_port" id="Call_parameters_items_i0_port">
+    <div class="card-body pl-5">
+    <h4>Port</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>TCP port number on which the FTP service listens for incoming connections.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_port_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>65535</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_clients">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_clients">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_clients" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_clients" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_clients')" type="button"><span class="property-name">clients</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_clients" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_clients" id="Call_parameters_items_i0_clients">
+    <div class="card-body pl-5">
+    <h4>Clients</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Maximum number of simultaneous client connections allowed.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_clients_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>10000</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_ipconnections">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_ipconnections">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_ipconnections" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_ipconnections" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_ipconnections')" type="button"><span class="property-name">ipconnections</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_ipconnections" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_ipconnections" id="Call_parameters_items_i0_ipconnections">
+    <div class="card-body pl-5">
+    <h4>Ipconnections</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Maximum number of connections allowed from a single IP address. 0 means unlimited.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_ipconnections_number">Value must be greater or equal to <code>0</code> and lesser or equal to <code>1000</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_loginattempt">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_loginattempt">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_loginattempt" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_loginattempt" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_loginattempt')" type="button"><span class="property-name">loginattempt</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_loginattempt" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_loginattempt" id="Call_parameters_items_i0_loginattempt">
+    <div class="card-body pl-5">
+    <h4>Loginattempt</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Maximum number of failed login attempts before blocking an IP address. 0 disables this limit.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_loginattempt_number">Value must be greater or equal to <code>0</code> and lesser or equal to <code>1000</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_timeout">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_timeout">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_timeout" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_timeout" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_timeout')" type="button"><span class="property-name">timeout</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_timeout" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_timeout" id="Call_parameters_items_i0_timeout">
+    <div class="card-body pl-5">
+    <h4>Timeout</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Idle timeout in seconds before disconnecting inactive clients. 0 disables timeout.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_timeout_number">Value must be greater or equal to <code>0</code> and lesser or equal to <code>10000</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_timeout_notransfer">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_timeout_notransfer">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_timeout_notransfer" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_timeout_notransfer" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_timeout_notransfer')" type="button"><span class="property-name">timeout_notransfer</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_timeout_notransfer" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_timeout_notransfer" id="Call_parameters_items_i0_timeout_notransfer">
+    <div class="card-body pl-5">
+    <h4>Timeout Notransfer</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Timeout in seconds for clients that connect but do not transfer data. 0 disables timeout.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_timeout_notransfer_number">Value must be greater or equal to <code>0</code> and lesser or equal to <code>10000</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_onlyanonymous">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_onlyanonymous">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_onlyanonymous" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_onlyanonymous" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_onlyanonymous')" type="button"><span class="property-name">onlyanonymous</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_onlyanonymous" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_onlyanonymous" id="Call_parameters_items_i0_onlyanonymous">
+    <div class="card-body pl-5">
+    <h4>Onlyanonymous</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to allow only anonymous FTP access, disabling authenticated user login.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_anonpath">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_anonpath">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_anonpath" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_anonpath" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_anonpath')" type="button"><span class="property-name">anonpath</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_anonpath" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_anonpath" id="Call_parameters_items_i0_anonpath">
+    <div class="card-body pl-5">
+    <h4>Anonpath</h4><br/>
+    <span class="description"><p>Filesystem path for anonymous FTP users. <code>null</code> to use the default anonymous FTP directory.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_anonpath_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_anonpath_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_anonpath_anyOf_i0" id="Call_parameters_items_i0_anonpath_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_anonpath_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_anonpath_anyOf_i1" id="Call_parameters_items_i0_anonpath_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_anonpath_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_anonpath_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_anonpath_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_onlylocal">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_onlylocal">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_onlylocal" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_onlylocal" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_onlylocal')" type="button"><span class="property-name">onlylocal</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_onlylocal" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_onlylocal" id="Call_parameters_items_i0_onlylocal">
+    <div class="card-body pl-5">
+    <h4>Onlylocal</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to allow only local system users to login, disabling anonymous access.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_banner">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_banner">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_banner" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_banner" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_banner')" type="button"><span class="property-name">banner</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_banner" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_banner" id="Call_parameters_items_i0_banner">
+    <div class="card-body pl-5">
+    <h4>Banner</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Welcome message displayed to FTP clients upon connection.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_filemask">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_filemask">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_filemask" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_filemask" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_filemask')" type="button"><span class="property-name">filemask</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_filemask" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_filemask" id="Call_parameters_items_i0_filemask">
+    <div class="card-body pl-5">
+    <h4>Filemask</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Default Unix permissions (umask) for files created by FTP users.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_dirmask">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_dirmask">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_dirmask" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_dirmask" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_dirmask')" type="button"><span class="property-name">dirmask</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_dirmask" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_dirmask" id="Call_parameters_items_i0_dirmask">
+    <div class="card-body pl-5">
+    <h4>Dirmask</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Default Unix permissions (umask) for directories created by FTP users.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_fxp">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_fxp">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_fxp" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_fxp" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_fxp')" type="button"><span class="property-name">fxp</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_fxp" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_fxp" id="Call_parameters_items_i0_fxp">
+    <div class="card-body pl-5">
+    <h4>Fxp</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to enable File eXchange Protocol (FXP) for server-to-server transfers.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_resume">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_resume">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_resume" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_resume" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_resume')" type="button"><span class="property-name">resume</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_resume" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_resume" id="Call_parameters_items_i0_resume">
+    <div class="card-body pl-5">
+    <h4>Resume</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to allow clients to resume interrupted file transfers.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_defaultroot">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_defaultroot">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_defaultroot" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_defaultroot" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_defaultroot')" type="button"><span class="property-name">defaultroot</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_defaultroot" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_defaultroot" id="Call_parameters_items_i0_defaultroot">
+    <div class="card-body pl-5">
+    <h4>Defaultroot</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to restrict users to their home directories (chroot jail).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_ident">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_ident">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_ident" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_ident" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_ident')" type="button"><span class="property-name">ident</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_ident" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_ident" id="Call_parameters_items_i0_ident">
+    <div class="card-body pl-5">
+    <h4>Ident</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to perform RFC 1413 ident lookups on connecting clients.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_reversedns">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_reversedns">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_reversedns" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_reversedns" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_reversedns')" type="button"><span class="property-name">reversedns</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_reversedns" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_reversedns" id="Call_parameters_items_i0_reversedns">
+    <div class="card-body pl-5">
+    <h4>Reversedns</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to perform reverse DNS lookups on client IP addresses for logging.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_masqaddress">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_masqaddress">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_masqaddress" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_masqaddress" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_masqaddress')" type="button"><span class="property-name">masqaddress</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_masqaddress" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_masqaddress" id="Call_parameters_items_i0_masqaddress">
+    <div class="card-body pl-5">
+    <h4>Masqaddress</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Public IP address to advertise to clients for passive mode connections when behind NAT.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_passiveportsmin">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_passiveportsmin">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_passiveportsmin" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_passiveportsmin" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_passiveportsmin')" type="button"><span class="property-name">passiveportsmin</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_passiveportsmin" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_passiveportsmin" id="Call_parameters_items_i0_passiveportsmin">
+    <div class="card-body pl-5">
+    <h4>Passiveportsmin</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Minimum port number for passive mode data connections. Must be 0 or between 1024-65535.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_passiveportsmax">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_passiveportsmax">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_passiveportsmax" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_passiveportsmax" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_passiveportsmax')" type="button"><span class="property-name">passiveportsmax</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_passiveportsmax" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_passiveportsmax" id="Call_parameters_items_i0_passiveportsmax">
+    <div class="card-body pl-5">
+    <h4>Passiveportsmax</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Maximum port number for passive mode data connections. Must be 0 or between 1024-65535.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_localuserbw">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_localuserbw">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_localuserbw" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_localuserbw" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_localuserbw')" type="button"><span class="property-name">localuserbw</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_localuserbw" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_localuserbw" id="Call_parameters_items_i0_localuserbw">
+    <div class="card-body pl-5">
+    <h4>Localuserbw</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Maximum upload bandwidth in KiB/s for local users. 0 means unlimited.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_localuserbw_number">Value must be greater or equal to <code>0</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_localuserdlbw">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_localuserdlbw">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_localuserdlbw" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_localuserdlbw" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_localuserdlbw')" type="button"><span class="property-name">localuserdlbw</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_localuserdlbw" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_localuserdlbw" id="Call_parameters_items_i0_localuserdlbw">
+    <div class="card-body pl-5">
+    <h4>Localuserdlbw</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Maximum download bandwidth in KiB/s for local users. 0 means unlimited.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_localuserdlbw_number">Value must be greater or equal to <code>0</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_anonuserbw">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_anonuserbw">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_anonuserbw" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_anonuserbw" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_anonuserbw')" type="button"><span class="property-name">anonuserbw</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_anonuserbw" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_anonuserbw" id="Call_parameters_items_i0_anonuserbw">
+    <div class="card-body pl-5">
+    <h4>Anonuserbw</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Maximum upload bandwidth in KiB/s for anonymous users. 0 means unlimited.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_anonuserbw_number">Value must be greater or equal to <code>0</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_anonuserdlbw">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_anonuserdlbw">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_anonuserdlbw" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_anonuserdlbw" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_anonuserdlbw')" type="button"><span class="property-name">anonuserdlbw</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_anonuserdlbw" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_anonuserdlbw" id="Call_parameters_items_i0_anonuserdlbw">
+    <div class="card-body pl-5">
+    <h4>Anonuserdlbw</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Maximum download bandwidth in KiB/s for anonymous users. 0 means unlimited.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_anonuserdlbw_number">Value must be greater or equal to <code>0</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_tls">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_tls">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_tls" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_tls" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_tls')" type="button"><span class="property-name">tls</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_tls" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_tls" id="Call_parameters_items_i0_tls">
+    <div class="card-body pl-5">
+    <h4>Tls</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to enable TLS/SSL encryption for FTP connections.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_tls_policy">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_tls_policy">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_tls_policy" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_tls_policy" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_tls_policy')" type="button"><span class="property-name">tls_policy</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_tls_policy" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_tls_policy" id="Call_parameters_items_i0_tls_policy">
+    <div class="card-body pl-5">
+    <h4>Tls Policy</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>TLS policy for connections. Values include: <code>"on"</code> (required), <code>"off"</code> (disabled), <code>"data"</code> (data only),     <code>"auth"</code> (authentication only), <code>"ctrl"</code> (control only), or combinations with <code>+</code> and <code>!</code> modifiers.</p>
+    </span><div class="enum-value" id="Call_parameters_items_i0_tls_policy_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li><li class="list-group-item enum-item">"on"</li><li class="list-group-item enum-item">"off"</li><li class="list-group-item enum-item">"data"</li><li class="list-group-item enum-item">"!data"</li><li class="list-group-item enum-item">"auth"</li><li class="list-group-item enum-item">"ctrl"</li><li class="list-group-item enum-item">"ctrl+data"</li><li class="list-group-item enum-item">"ctrl+!data"</li><li class="list-group-item enum-item">"auth+data"</li><li class="list-group-item enum-item">"auth+!data"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_tls_opt_allow_client_renegotiations">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_tls_opt_allow_client_renegotiations">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_tls_opt_allow_client_renegotiations" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_tls_opt_allow_client_renegotiations" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_tls_opt_allow_client_renegotiations')" type="button"><span class="property-name">tls_opt_allow_client_renegotiations</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_tls_opt_allow_client_renegotiations" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_tls_opt_allow_client_renegotiations" id="Call_parameters_items_i0_tls_opt_allow_client_renegotiations">
+    <div class="card-body pl-5">
+    <h4>Tls Opt Allow Client Renegotiations</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to allow TLS clients to initiate renegotiation of the TLS connection.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_tls_opt_allow_dot_login">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_tls_opt_allow_dot_login">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_tls_opt_allow_dot_login" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_tls_opt_allow_dot_login" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_tls_opt_allow_dot_login')" type="button"><span class="property-name">tls_opt_allow_dot_login</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_tls_opt_allow_dot_login" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_tls_opt_allow_dot_login" id="Call_parameters_items_i0_tls_opt_allow_dot_login">
+    <div class="card-body pl-5">
+    <h4>Tls Opt Allow Dot Login</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to allow .ftpaccess files to override TLS requirements for specific users.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_tls_opt_allow_per_user">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_tls_opt_allow_per_user">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_tls_opt_allow_per_user" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_tls_opt_allow_per_user" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_tls_opt_allow_per_user')" type="button"><span class="property-name">tls_opt_allow_per_user</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_tls_opt_allow_per_user" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_tls_opt_allow_per_user" id="Call_parameters_items_i0_tls_opt_allow_per_user">
+    <div class="card-body pl-5">
+    <h4>Tls Opt Allow Per User</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to allow per-user TLS configuration overrides.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_tls_opt_common_name_required">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_tls_opt_common_name_required">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_tls_opt_common_name_required" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_tls_opt_common_name_required" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_tls_opt_common_name_required')" type="button"><span class="property-name">tls_opt_common_name_required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_tls_opt_common_name_required" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_tls_opt_common_name_required" id="Call_parameters_items_i0_tls_opt_common_name_required">
+    <div class="card-body pl-5">
+    <h4>Tls Opt Common Name Required</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to require client certificates to have a Common Name field.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_tls_opt_enable_diags">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_tls_opt_enable_diags">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_tls_opt_enable_diags" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_tls_opt_enable_diags" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_tls_opt_enable_diags')" type="button"><span class="property-name">tls_opt_enable_diags</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_tls_opt_enable_diags" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_tls_opt_enable_diags" id="Call_parameters_items_i0_tls_opt_enable_diags">
+    <div class="card-body pl-5">
+    <h4>Tls Opt Enable Diags</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to enable detailed TLS diagnostic logging.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_tls_opt_export_cert_data">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_tls_opt_export_cert_data">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_tls_opt_export_cert_data" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_tls_opt_export_cert_data" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_tls_opt_export_cert_data')" type="button"><span class="property-name">tls_opt_export_cert_data</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_tls_opt_export_cert_data" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_tls_opt_export_cert_data" id="Call_parameters_items_i0_tls_opt_export_cert_data">
+    <div class="card-body pl-5">
+    <h4>Tls Opt Export Cert Data</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to export client certificate data to environment variables.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_tls_opt_no_empty_fragments">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_tls_opt_no_empty_fragments">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_tls_opt_no_empty_fragments" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_tls_opt_no_empty_fragments" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_tls_opt_no_empty_fragments')" type="button"><span class="property-name">tls_opt_no_empty_fragments</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_tls_opt_no_empty_fragments" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_tls_opt_no_empty_fragments" id="Call_parameters_items_i0_tls_opt_no_empty_fragments">
+    <div class="card-body pl-5">
+    <h4>Tls Opt No Empty Fragments</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to disable empty TLS record fragments to improve compatibility with some clients.      Disabling increases vulnerability to some attack vectors.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_tls_opt_no_session_reuse_required">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_tls_opt_no_session_reuse_required">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_tls_opt_no_session_reuse_required" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_tls_opt_no_session_reuse_required" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_tls_opt_no_session_reuse_required')" type="button"><span class="property-name">tls_opt_no_session_reuse_required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_tls_opt_no_session_reuse_required" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_tls_opt_no_session_reuse_required" id="Call_parameters_items_i0_tls_opt_no_session_reuse_required">
+    <div class="card-body pl-5">
+    <h4>Tls Opt No Session Reuse Required</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to disable the requirement for TLS session reuse.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_tls_opt_stdenvvars">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_tls_opt_stdenvvars">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_tls_opt_stdenvvars" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_tls_opt_stdenvvars" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_tls_opt_stdenvvars')" type="button"><span class="property-name">tls_opt_stdenvvars</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_tls_opt_stdenvvars" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_tls_opt_stdenvvars" id="Call_parameters_items_i0_tls_opt_stdenvvars">
+    <div class="card-body pl-5">
+    <h4>Tls Opt Stdenvvars</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to export standard TLS environment variables for use by external programs.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_tls_opt_dns_name_required">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_tls_opt_dns_name_required">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_tls_opt_dns_name_required" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_tls_opt_dns_name_required" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_tls_opt_dns_name_required')" type="button"><span class="property-name">tls_opt_dns_name_required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_tls_opt_dns_name_required" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_tls_opt_dns_name_required" id="Call_parameters_items_i0_tls_opt_dns_name_required">
+    <div class="card-body pl-5">
+    <h4>Tls Opt Dns Name Required</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to require client certificates to contain a DNS name in the Subject Alternative Name extension.     The <code>reversedns</code> setting must also be enabled.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_tls_opt_ip_address_required">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_tls_opt_ip_address_required">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_tls_opt_ip_address_required" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_tls_opt_ip_address_required" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_tls_opt_ip_address_required')" type="button"><span class="property-name">tls_opt_ip_address_required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_tls_opt_ip_address_required" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_tls_opt_ip_address_required" id="Call_parameters_items_i0_tls_opt_ip_address_required">
+    <div class="card-body pl-5">
+    <h4>Tls Opt Ip Address Required</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to require client certificates to contain an IP address in the Subject Alternative Name extension.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_ssltls_certificate">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_ssltls_certificate">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_ssltls_certificate" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_ssltls_certificate" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_ssltls_certificate')" type="button"><span class="property-name">ssltls_certificate</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_ssltls_certificate" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_ssltls_certificate" id="Call_parameters_items_i0_ssltls_certificate">
+    <div class="card-body pl-5">
+    <h4>Ssltls Certificate</h4><br/>
+    <span class="description"><p>ID of the certificate to use for TLS/SSL connections. <code>null</code> to use the default system certificate.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_ssltls_certificate_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_ssltls_certificate_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_ssltls_certificate_anyOf_i0" id="Call_parameters_items_i0_ssltls_certificate_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_ssltls_certificate_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_ssltls_certificate_anyOf_i1" id="Call_parameters_items_i0_ssltls_certificate_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_ssltls_certificate_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_ssltls_certificate_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_ssltls_certificate_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_options">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_options">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_options" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_options" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_options')" type="button"><span class="property-name">options</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_options" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_options" id="Call_parameters_items_i0_options">
+    <div class="card-body pl-5">
+    <h4>Options</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Additional ProFTPD configuration directives to include in the server configuration.     Manual directives may render the FTP service non-functional and should be used with caution.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>FtpEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Placeholder identifier.  Not used as there is only one.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_port">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_port">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_port" data-toggle="collapse" onclick="setAnchor('#Return_value_port')" type="button"><span class="property-name">port</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_port" class="collapse property-definition-div" data-parent="#accordionReturn_value_port" id="Return_value_port">
+    <div class="card-body pl-5">
+    <h4>Port</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>TCP port number on which the FTP service listens for incoming connections.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_port_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>65535</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_clients">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_clients">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_clients" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_clients" data-toggle="collapse" onclick="setAnchor('#Return_value_clients')" type="button"><span class="property-name">clients</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_clients" class="collapse property-definition-div" data-parent="#accordionReturn_value_clients" id="Return_value_clients">
+    <div class="card-body pl-5">
+    <h4>Clients</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Maximum number of simultaneous client connections allowed.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_clients_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>10000</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_ipconnections">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_ipconnections">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_ipconnections" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_ipconnections" data-toggle="collapse" onclick="setAnchor('#Return_value_ipconnections')" type="button"><span class="property-name">ipconnections</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_ipconnections" class="collapse property-definition-div" data-parent="#accordionReturn_value_ipconnections" id="Return_value_ipconnections">
+    <div class="card-body pl-5">
+    <h4>Ipconnections</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Maximum number of connections allowed from a single IP address. 0 means unlimited.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_ipconnections_number">Value must be greater or equal to <code>0</code> and lesser or equal to <code>1000</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_loginattempt">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_loginattempt">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_loginattempt" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_loginattempt" data-toggle="collapse" onclick="setAnchor('#Return_value_loginattempt')" type="button"><span class="property-name">loginattempt</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_loginattempt" class="collapse property-definition-div" data-parent="#accordionReturn_value_loginattempt" id="Return_value_loginattempt">
+    <div class="card-body pl-5">
+    <h4>Loginattempt</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Maximum number of failed login attempts before blocking an IP address. 0 disables this limit.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_loginattempt_number">Value must be greater or equal to <code>0</code> and lesser or equal to <code>1000</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_timeout">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_timeout">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_timeout" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_timeout" data-toggle="collapse" onclick="setAnchor('#Return_value_timeout')" type="button"><span class="property-name">timeout</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_timeout" class="collapse property-definition-div" data-parent="#accordionReturn_value_timeout" id="Return_value_timeout">
+    <div class="card-body pl-5">
+    <h4>Timeout</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Idle timeout in seconds before disconnecting inactive clients. 0 disables timeout.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_timeout_number">Value must be greater or equal to <code>0</code> and lesser or equal to <code>10000</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_timeout_notransfer">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_timeout_notransfer">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_timeout_notransfer" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_timeout_notransfer" data-toggle="collapse" onclick="setAnchor('#Return_value_timeout_notransfer')" type="button"><span class="property-name">timeout_notransfer</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_timeout_notransfer" class="collapse property-definition-div" data-parent="#accordionReturn_value_timeout_notransfer" id="Return_value_timeout_notransfer">
+    <div class="card-body pl-5">
+    <h4>Timeout Notransfer</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Timeout in seconds for clients that connect but do not transfer data. 0 disables timeout.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_timeout_notransfer_number">Value must be greater or equal to <code>0</code> and lesser or equal to <code>10000</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_onlyanonymous">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_onlyanonymous">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_onlyanonymous" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_onlyanonymous" data-toggle="collapse" onclick="setAnchor('#Return_value_onlyanonymous')" type="button"><span class="property-name">onlyanonymous</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_onlyanonymous" class="collapse property-definition-div" data-parent="#accordionReturn_value_onlyanonymous" id="Return_value_onlyanonymous">
+    <div class="card-body pl-5">
+    <h4>Onlyanonymous</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to allow only anonymous FTP access, disabling authenticated user login.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anonpath">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anonpath">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anonpath" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anonpath" data-toggle="collapse" onclick="setAnchor('#Return_value_anonpath')" type="button"><span class="property-name">anonpath</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anonpath" class="collapse property-definition-div" data-parent="#accordionReturn_value_anonpath" id="Return_value_anonpath">
+    <div class="card-body pl-5">
+    <h4>Anonpath</h4><br/>
+    <span class="description"><p>Filesystem path for anonymous FTP users. <code>null</code> to use the default anonymous FTP directory.</p>
+    </span><div class="any-of-value" id="Return_value_anonpath_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anonpath_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anonpath_anyOf_i0" id="Return_value_anonpath_anyOf_i0" onclick="setAnchor('#Return_value_anonpath_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anonpath_anyOf_i1" id="Return_value_anonpath_anyOf_i1" onclick="setAnchor('#Return_value_anonpath_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anonpath_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anonpath_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_onlylocal">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_onlylocal">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_onlylocal" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_onlylocal" data-toggle="collapse" onclick="setAnchor('#Return_value_onlylocal')" type="button"><span class="property-name">onlylocal</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_onlylocal" class="collapse property-definition-div" data-parent="#accordionReturn_value_onlylocal" id="Return_value_onlylocal">
+    <div class="card-body pl-5">
+    <h4>Onlylocal</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to allow only local system users to login, disabling anonymous access.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_banner">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_banner">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_banner" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_banner" data-toggle="collapse" onclick="setAnchor('#Return_value_banner')" type="button"><span class="property-name">banner</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_banner" class="collapse property-definition-div" data-parent="#accordionReturn_value_banner" id="Return_value_banner">
+    <div class="card-body pl-5">
+    <h4>Banner</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Welcome message displayed to FTP clients upon connection.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_filemask">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_filemask">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_filemask" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_filemask" data-toggle="collapse" onclick="setAnchor('#Return_value_filemask')" type="button"><span class="property-name">filemask</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_filemask" class="collapse property-definition-div" data-parent="#accordionReturn_value_filemask" id="Return_value_filemask">
+    <div class="card-body pl-5">
+    <h4>Filemask</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Default Unix permissions (umask) for files created by FTP users.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_dirmask">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_dirmask">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_dirmask" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_dirmask" data-toggle="collapse" onclick="setAnchor('#Return_value_dirmask')" type="button"><span class="property-name">dirmask</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_dirmask" class="collapse property-definition-div" data-parent="#accordionReturn_value_dirmask" id="Return_value_dirmask">
+    <div class="card-body pl-5">
+    <h4>Dirmask</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Default Unix permissions (umask) for directories created by FTP users.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_fxp">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_fxp">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_fxp" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_fxp" data-toggle="collapse" onclick="setAnchor('#Return_value_fxp')" type="button"><span class="property-name">fxp</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_fxp" class="collapse property-definition-div" data-parent="#accordionReturn_value_fxp" id="Return_value_fxp">
+    <div class="card-body pl-5">
+    <h4>Fxp</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to enable File eXchange Protocol (FXP) for server-to-server transfers.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_resume">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_resume">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_resume" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_resume" data-toggle="collapse" onclick="setAnchor('#Return_value_resume')" type="button"><span class="property-name">resume</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_resume" class="collapse property-definition-div" data-parent="#accordionReturn_value_resume" id="Return_value_resume">
+    <div class="card-body pl-5">
+    <h4>Resume</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to allow clients to resume interrupted file transfers.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_defaultroot">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_defaultroot">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_defaultroot" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_defaultroot" data-toggle="collapse" onclick="setAnchor('#Return_value_defaultroot')" type="button"><span class="property-name">defaultroot</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_defaultroot" class="collapse property-definition-div" data-parent="#accordionReturn_value_defaultroot" id="Return_value_defaultroot">
+    <div class="card-body pl-5">
+    <h4>Defaultroot</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to restrict users to their home directories (chroot jail).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_ident">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_ident">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_ident" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_ident" data-toggle="collapse" onclick="setAnchor('#Return_value_ident')" type="button"><span class="property-name">ident</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_ident" class="collapse property-definition-div" data-parent="#accordionReturn_value_ident" id="Return_value_ident">
+    <div class="card-body pl-5">
+    <h4>Ident</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to perform RFC 1413 ident lookups on connecting clients.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_reversedns">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_reversedns">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_reversedns" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_reversedns" data-toggle="collapse" onclick="setAnchor('#Return_value_reversedns')" type="button"><span class="property-name">reversedns</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_reversedns" class="collapse property-definition-div" data-parent="#accordionReturn_value_reversedns" id="Return_value_reversedns">
+    <div class="card-body pl-5">
+    <h4>Reversedns</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to perform reverse DNS lookups on client IP addresses for logging.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_masqaddress">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_masqaddress">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_masqaddress" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_masqaddress" data-toggle="collapse" onclick="setAnchor('#Return_value_masqaddress')" type="button"><span class="property-name">masqaddress</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_masqaddress" class="collapse property-definition-div" data-parent="#accordionReturn_value_masqaddress" id="Return_value_masqaddress">
+    <div class="card-body pl-5">
+    <h4>Masqaddress</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Public IP address to advertise to clients for passive mode connections when behind NAT.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_passiveportsmin">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_passiveportsmin">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_passiveportsmin" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_passiveportsmin" data-toggle="collapse" onclick="setAnchor('#Return_value_passiveportsmin')" type="button"><span class="property-name">passiveportsmin</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_passiveportsmin" class="collapse property-definition-div" data-parent="#accordionReturn_value_passiveportsmin" id="Return_value_passiveportsmin">
+    <div class="card-body pl-5">
+    <h4>Passiveportsmin</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Minimum port number for passive mode data connections. Must be 0 or between 1024-65535.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_passiveportsmax">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_passiveportsmax">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_passiveportsmax" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_passiveportsmax" data-toggle="collapse" onclick="setAnchor('#Return_value_passiveportsmax')" type="button"><span class="property-name">passiveportsmax</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_passiveportsmax" class="collapse property-definition-div" data-parent="#accordionReturn_value_passiveportsmax" id="Return_value_passiveportsmax">
+    <div class="card-body pl-5">
+    <h4>Passiveportsmax</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Maximum port number for passive mode data connections. Must be 0 or between 1024-65535.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_localuserbw">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_localuserbw">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_localuserbw" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_localuserbw" data-toggle="collapse" onclick="setAnchor('#Return_value_localuserbw')" type="button"><span class="property-name">localuserbw</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_localuserbw" class="collapse property-definition-div" data-parent="#accordionReturn_value_localuserbw" id="Return_value_localuserbw">
+    <div class="card-body pl-5">
+    <h4>Localuserbw</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Maximum upload bandwidth in KiB/s for local users. 0 means unlimited.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_localuserbw_number">Value must be greater or equal to <code>0</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_localuserdlbw">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_localuserdlbw">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_localuserdlbw" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_localuserdlbw" data-toggle="collapse" onclick="setAnchor('#Return_value_localuserdlbw')" type="button"><span class="property-name">localuserdlbw</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_localuserdlbw" class="collapse property-definition-div" data-parent="#accordionReturn_value_localuserdlbw" id="Return_value_localuserdlbw">
+    <div class="card-body pl-5">
+    <h4>Localuserdlbw</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Maximum download bandwidth in KiB/s for local users. 0 means unlimited.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_localuserdlbw_number">Value must be greater or equal to <code>0</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anonuserbw">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anonuserbw">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anonuserbw" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anonuserbw" data-toggle="collapse" onclick="setAnchor('#Return_value_anonuserbw')" type="button"><span class="property-name">anonuserbw</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anonuserbw" class="collapse property-definition-div" data-parent="#accordionReturn_value_anonuserbw" id="Return_value_anonuserbw">
+    <div class="card-body pl-5">
+    <h4>Anonuserbw</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Maximum upload bandwidth in KiB/s for anonymous users. 0 means unlimited.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_anonuserbw_number">Value must be greater or equal to <code>0</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anonuserdlbw">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anonuserdlbw">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anonuserdlbw" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anonuserdlbw" data-toggle="collapse" onclick="setAnchor('#Return_value_anonuserdlbw')" type="button"><span class="property-name">anonuserdlbw</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anonuserdlbw" class="collapse property-definition-div" data-parent="#accordionReturn_value_anonuserdlbw" id="Return_value_anonuserdlbw">
+    <div class="card-body pl-5">
+    <h4>Anonuserdlbw</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Maximum download bandwidth in KiB/s for anonymous users. 0 means unlimited.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_anonuserdlbw_number">Value must be greater or equal to <code>0</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_tls">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_tls">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_tls" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_tls" data-toggle="collapse" onclick="setAnchor('#Return_value_tls')" type="button"><span class="property-name">tls</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_tls" class="collapse property-definition-div" data-parent="#accordionReturn_value_tls" id="Return_value_tls">
+    <div class="card-body pl-5">
+    <h4>Tls</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to enable TLS/SSL encryption for FTP connections.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_tls_policy">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_tls_policy">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_tls_policy" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_tls_policy" data-toggle="collapse" onclick="setAnchor('#Return_value_tls_policy')" type="button"><span class="property-name">tls_policy</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_tls_policy" class="collapse property-definition-div" data-parent="#accordionReturn_value_tls_policy" id="Return_value_tls_policy">
+    <div class="card-body pl-5">
+    <h4>Tls Policy</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>TLS policy for connections. Values include: <code>"on"</code> (required), <code>"off"</code> (disabled), <code>"data"</code> (data only),     <code>"auth"</code> (authentication only), <code>"ctrl"</code> (control only), or combinations with <code>+</code> and <code>!</code> modifiers.</p>
+    </span><div class="enum-value" id="Return_value_tls_policy_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li><li class="list-group-item enum-item">"on"</li><li class="list-group-item enum-item">"off"</li><li class="list-group-item enum-item">"data"</li><li class="list-group-item enum-item">"!data"</li><li class="list-group-item enum-item">"auth"</li><li class="list-group-item enum-item">"ctrl"</li><li class="list-group-item enum-item">"ctrl+data"</li><li class="list-group-item enum-item">"ctrl+!data"</li><li class="list-group-item enum-item">"auth+data"</li><li class="list-group-item enum-item">"auth+!data"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_tls_opt_allow_client_renegotiations">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_tls_opt_allow_client_renegotiations">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_tls_opt_allow_client_renegotiations" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_tls_opt_allow_client_renegotiations" data-toggle="collapse" onclick="setAnchor('#Return_value_tls_opt_allow_client_renegotiations')" type="button"><span class="property-name">tls_opt_allow_client_renegotiations</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_tls_opt_allow_client_renegotiations" class="collapse property-definition-div" data-parent="#accordionReturn_value_tls_opt_allow_client_renegotiations" id="Return_value_tls_opt_allow_client_renegotiations">
+    <div class="card-body pl-5">
+    <h4>Tls Opt Allow Client Renegotiations</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to allow TLS clients to initiate renegotiation of the TLS connection.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_tls_opt_allow_dot_login">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_tls_opt_allow_dot_login">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_tls_opt_allow_dot_login" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_tls_opt_allow_dot_login" data-toggle="collapse" onclick="setAnchor('#Return_value_tls_opt_allow_dot_login')" type="button"><span class="property-name">tls_opt_allow_dot_login</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_tls_opt_allow_dot_login" class="collapse property-definition-div" data-parent="#accordionReturn_value_tls_opt_allow_dot_login" id="Return_value_tls_opt_allow_dot_login">
+    <div class="card-body pl-5">
+    <h4>Tls Opt Allow Dot Login</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to allow .ftpaccess files to override TLS requirements for specific users.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_tls_opt_allow_per_user">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_tls_opt_allow_per_user">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_tls_opt_allow_per_user" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_tls_opt_allow_per_user" data-toggle="collapse" onclick="setAnchor('#Return_value_tls_opt_allow_per_user')" type="button"><span class="property-name">tls_opt_allow_per_user</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_tls_opt_allow_per_user" class="collapse property-definition-div" data-parent="#accordionReturn_value_tls_opt_allow_per_user" id="Return_value_tls_opt_allow_per_user">
+    <div class="card-body pl-5">
+    <h4>Tls Opt Allow Per User</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to allow per-user TLS configuration overrides.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_tls_opt_common_name_required">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_tls_opt_common_name_required">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_tls_opt_common_name_required" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_tls_opt_common_name_required" data-toggle="collapse" onclick="setAnchor('#Return_value_tls_opt_common_name_required')" type="button"><span class="property-name">tls_opt_common_name_required</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_tls_opt_common_name_required" class="collapse property-definition-div" data-parent="#accordionReturn_value_tls_opt_common_name_required" id="Return_value_tls_opt_common_name_required">
+    <div class="card-body pl-5">
+    <h4>Tls Opt Common Name Required</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to require client certificates to have a Common Name field.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_tls_opt_enable_diags">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_tls_opt_enable_diags">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_tls_opt_enable_diags" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_tls_opt_enable_diags" data-toggle="collapse" onclick="setAnchor('#Return_value_tls_opt_enable_diags')" type="button"><span class="property-name">tls_opt_enable_diags</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_tls_opt_enable_diags" class="collapse property-definition-div" data-parent="#accordionReturn_value_tls_opt_enable_diags" id="Return_value_tls_opt_enable_diags">
+    <div class="card-body pl-5">
+    <h4>Tls Opt Enable Diags</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to enable detailed TLS diagnostic logging.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_tls_opt_export_cert_data">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_tls_opt_export_cert_data">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_tls_opt_export_cert_data" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_tls_opt_export_cert_data" data-toggle="collapse" onclick="setAnchor('#Return_value_tls_opt_export_cert_data')" type="button"><span class="property-name">tls_opt_export_cert_data</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_tls_opt_export_cert_data" class="collapse property-definition-div" data-parent="#accordionReturn_value_tls_opt_export_cert_data" id="Return_value_tls_opt_export_cert_data">
+    <div class="card-body pl-5">
+    <h4>Tls Opt Export Cert Data</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to export client certificate data to environment variables.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_tls_opt_no_empty_fragments">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_tls_opt_no_empty_fragments">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_tls_opt_no_empty_fragments" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_tls_opt_no_empty_fragments" data-toggle="collapse" onclick="setAnchor('#Return_value_tls_opt_no_empty_fragments')" type="button"><span class="property-name">tls_opt_no_empty_fragments</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_tls_opt_no_empty_fragments" class="collapse property-definition-div" data-parent="#accordionReturn_value_tls_opt_no_empty_fragments" id="Return_value_tls_opt_no_empty_fragments">
+    <div class="card-body pl-5">
+    <h4>Tls Opt No Empty Fragments</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to disable empty TLS record fragments to improve compatibility with some clients.      Disabling increases vulnerability to some attack vectors.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_tls_opt_no_session_reuse_required">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_tls_opt_no_session_reuse_required">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_tls_opt_no_session_reuse_required" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_tls_opt_no_session_reuse_required" data-toggle="collapse" onclick="setAnchor('#Return_value_tls_opt_no_session_reuse_required')" type="button"><span class="property-name">tls_opt_no_session_reuse_required</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_tls_opt_no_session_reuse_required" class="collapse property-definition-div" data-parent="#accordionReturn_value_tls_opt_no_session_reuse_required" id="Return_value_tls_opt_no_session_reuse_required">
+    <div class="card-body pl-5">
+    <h4>Tls Opt No Session Reuse Required</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to disable the requirement for TLS session reuse.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_tls_opt_stdenvvars">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_tls_opt_stdenvvars">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_tls_opt_stdenvvars" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_tls_opt_stdenvvars" data-toggle="collapse" onclick="setAnchor('#Return_value_tls_opt_stdenvvars')" type="button"><span class="property-name">tls_opt_stdenvvars</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_tls_opt_stdenvvars" class="collapse property-definition-div" data-parent="#accordionReturn_value_tls_opt_stdenvvars" id="Return_value_tls_opt_stdenvvars">
+    <div class="card-body pl-5">
+    <h4>Tls Opt Stdenvvars</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to export standard TLS environment variables for use by external programs.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_tls_opt_dns_name_required">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_tls_opt_dns_name_required">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_tls_opt_dns_name_required" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_tls_opt_dns_name_required" data-toggle="collapse" onclick="setAnchor('#Return_value_tls_opt_dns_name_required')" type="button"><span class="property-name">tls_opt_dns_name_required</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_tls_opt_dns_name_required" class="collapse property-definition-div" data-parent="#accordionReturn_value_tls_opt_dns_name_required" id="Return_value_tls_opt_dns_name_required">
+    <div class="card-body pl-5">
+    <h4>Tls Opt Dns Name Required</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to require client certificates to contain a DNS name in the Subject Alternative Name extension.     The <code>reversedns</code> setting must also be enabled.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_tls_opt_ip_address_required">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_tls_opt_ip_address_required">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_tls_opt_ip_address_required" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_tls_opt_ip_address_required" data-toggle="collapse" onclick="setAnchor('#Return_value_tls_opt_ip_address_required')" type="button"><span class="property-name">tls_opt_ip_address_required</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_tls_opt_ip_address_required" class="collapse property-definition-div" data-parent="#accordionReturn_value_tls_opt_ip_address_required" id="Return_value_tls_opt_ip_address_required">
+    <div class="card-body pl-5">
+    <h4>Tls Opt Ip Address Required</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to require client certificates to contain an IP address in the Subject Alternative Name extension.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_ssltls_certificate">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_ssltls_certificate">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_ssltls_certificate" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_ssltls_certificate" data-toggle="collapse" onclick="setAnchor('#Return_value_ssltls_certificate')" type="button"><span class="property-name">ssltls_certificate</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_ssltls_certificate" class="collapse property-definition-div" data-parent="#accordionReturn_value_ssltls_certificate" id="Return_value_ssltls_certificate">
+    <div class="card-body pl-5">
+    <h4>Ssltls Certificate</h4><br/>
+    <span class="description"><p>ID of the certificate to use for TLS/SSL connections. <code>null</code> to use the default system certificate.</p>
+    </span><div class="any-of-value" id="Return_value_ssltls_certificate_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_ssltls_certificate_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_ssltls_certificate_anyOf_i0" id="Return_value_ssltls_certificate_anyOf_i0" onclick="setAnchor('#Return_value_ssltls_certificate_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_ssltls_certificate_anyOf_i1" id="Return_value_ssltls_certificate_anyOf_i1" onclick="setAnchor('#Return_value_ssltls_certificate_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_ssltls_certificate_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_ssltls_certificate_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_options">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_options">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_options" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_options" data-toggle="collapse" onclick="setAnchor('#Return_value_options')" type="button"><span class="property-name">options</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_options" class="collapse property-definition-div" data-parent="#accordionReturn_value_options" id="Return_value_options">
+    <div class="card-body pl-5">
+    <h4>Options</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Additional ProFTPD configuration directives to include in the server configuration.     Manual directives may render the FTP service non-functional and should be used with caution.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SHARING_FTP_WRITE
+

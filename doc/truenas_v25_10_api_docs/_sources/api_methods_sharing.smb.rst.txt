@@ -1,0 +1,14 @@
+sharing.smb
+-----------
+
+.. toctree::
+
+   api_methods_sharing.smb.create
+   api_methods_sharing.smb.delete
+   api_methods_sharing.smb.get_instance
+   api_methods_sharing.smb.getacl
+   api_methods_sharing.smb.presets
+   api_methods_sharing.smb.query
+   api_methods_sharing.smb.setacl
+   api_methods_sharing.smb.share_precheck
+   api_methods_sharing.smb.update

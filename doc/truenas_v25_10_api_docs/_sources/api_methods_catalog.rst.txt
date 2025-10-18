@@ -1,0 +1,11 @@
+catalog
+-------
+
+.. toctree::
+
+   api_methods_catalog.apps
+   api_methods_catalog.config
+   api_methods_catalog.get_app_details
+   api_methods_catalog.sync
+   api_methods_catalog.trains
+   api_methods_catalog.update

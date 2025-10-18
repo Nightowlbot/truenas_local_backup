@@ -1,0 +1,7 @@
+truecommand
+-----------
+
+.. toctree::
+
+   api_methods_truecommand.config
+   api_methods_truecommand.update

@@ -1,0 +1,77 @@
+sharing.smb.share_precheck
+==========================
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: smb_share_precheck</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>smb_share_precheck</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>SharingSMBSharePrecheckArgs parameters.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_name">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_name">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_name" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_name')" type="button"><span class="property-name">name</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_name" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_name" id="Call_parameters_items_i0_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Name of the SMB share to validate (optional).</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_name_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_name_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_name_anyOf_i0" id="Call_parameters_items_i0_name_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_name_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_name_anyOf_i1" id="Call_parameters_items_i0_name_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_name_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_name_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_name_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: null</span><br/>
+    <span class="description"><p>Returns <code>null</code> when the SMB share configuration passes validation checks.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* READONLY_ADMIN
+

@@ -1,0 +1,7 @@
+app.ix_volume
+-------------
+
+.. toctree::
+
+   api_methods_app.ix_volume.exists
+   api_methods_app.ix_volume.query

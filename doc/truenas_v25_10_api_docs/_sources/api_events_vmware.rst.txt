@@ -1,0 +1,6 @@
+vmware
+------
+
+.. toctree::
+
+   api_events_vmware.query

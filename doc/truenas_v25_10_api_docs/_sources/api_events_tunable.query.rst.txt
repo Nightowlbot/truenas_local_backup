@@ -1,0 +1,400 @@
+tunable.query
+=============
+
+Sent on tunable changes.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionADDED">
+    <div class="card">
+    <div class="card-header" id="headingADDED">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED" data-toggle="collapse" onclick="setAnchor('#ADDED')" type="button"><span class="property-name">ADDED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED" class="collapse property-definition-div" data-parent="#accordionADDED" id="ADDED">
+    <div class="card-body pl-5">
+    <h4>TunableAddedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_id" data-toggle="collapse" onclick="setAnchor('#ADDED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_id" class="collapse property-definition-div" data-parent="#accordionADDED_id" id="ADDED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields" data-toggle="collapse" onclick="setAnchor('#ADDED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields" class="collapse property-definition-div" data-parent="#accordionADDED_fields" id="ADDED_fields">
+    <div class="card-body pl-5">
+    <h4>TunableEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_type">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_type">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_type" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_type')" type="button"><span class="property-name">type</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_type" class="collapse property-definition-div" data-parent="#accordionADDED_fields_type" id="ADDED_fields_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "SYSCTL"</span><br/>
+    <span class="description"><ul>
+    <li><code>SYSCTL</code>: <code>var</code> is a sysctl name (e.g. <code>kernel.watchdog</code>) and <code>value</code> is its corresponding value (e.g. <code>0</code>).</li>
+    <li><code>UDEV</code>: <code>var</code> is a udev rules file name (e.g. <code>10-disable-usb</code>, <code>.rules</code> suffix will be appended automatically)     and <code>value</code> is its contents (e.g. <code>BUS=="usb", OPTIONS+="ignore_device"</code>).</li>
+    <li><code>ZFS</code>: <code>var</code> is a ZFS kernel module parameter name (e.g. <code>zfs_dirty_data_max_max</code>) and <code>value</code> is its value     (e.g. <code>783091712</code>).</li>
+    </ul>
+    </span><div class="enum-value" id="ADDED_fields_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"SYSCTL"</li><li class="list-group-item enum-item">"UDEV"</li><li class="list-group-item enum-item">"ZFS"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_var">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_var">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_var" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_var" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_var')" type="button"><span class="property-name">var</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_var" class="collapse property-definition-div" data-parent="#accordionADDED_fields_var" id="ADDED_fields_var">
+    <div class="card-body pl-5">
+    <h4>Var</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name or identifier of the system parameter to tune.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_value">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_value">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_value" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_value')" type="button"><span class="property-name">value</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_value" class="collapse property-definition-div" data-parent="#accordionADDED_fields_value" id="ADDED_fields_value">
+    <div class="card-body pl-5">
+    <h4>Value</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Value to assign to the tunable parameter.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_comment">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_comment">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_comment" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_comment" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_comment')" type="button"><span class="property-name">comment</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_comment" class="collapse property-definition-div" data-parent="#accordionADDED_fields_comment" id="ADDED_fields_comment">
+    <div class="card-body pl-5">
+    <h4>Comment</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+    <span class="description"><p>Optional descriptive comment explaining the purpose of this tunable.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_enabled">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_enabled">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_enabled" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_enabled" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_enabled')" type="button"><span class="property-name">enabled</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_enabled" class="collapse property-definition-div" data-parent="#accordionADDED_fields_enabled" id="ADDED_fields_enabled">
+    <div class="card-body pl-5">
+    <h4>Enabled</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Whether this tunable is active and should be applied.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_update_initramfs">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_update_initramfs">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_update_initramfs" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_update_initramfs" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_update_initramfs')" type="button"><span class="property-name">update_initramfs</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_update_initramfs" class="collapse property-definition-div" data-parent="#accordionADDED_fields_update_initramfs" id="ADDED_fields_update_initramfs">
+    <div class="card-body pl-5">
+    <h4>Update Initramfs</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>If <code>false</code>, then initramfs will not be updated after creating a ZFS tunable and you will need to run     <code>system boot update_initramfs</code> manually.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_id" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_id" class="collapse property-definition-div" data-parent="#accordionADDED_fields_id" id="ADDED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the tunable configuration.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_orig_value">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_orig_value">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_orig_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_orig_value" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_orig_value')" type="button"><span class="property-name">orig_value</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_orig_value" class="collapse property-definition-div" data-parent="#accordionADDED_fields_orig_value" id="ADDED_fields_orig_value">
+    <div class="card-body pl-5">
+    <h4>Orig Value</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Original system value of the parameter before this tunable was applied.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED" data-toggle="collapse" onclick="setAnchor('#CHANGED')" type="button"><span class="property-name">CHANGED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED" class="collapse property-definition-div" data-parent="#accordionCHANGED" id="CHANGED">
+    <div class="card-body pl-5">
+    <h4>TunableChangedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_id" id="CHANGED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields" id="CHANGED_fields">
+    <div class="card-body pl-5">
+    <h4>TunableEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_type">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_type">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_type" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_type')" type="button"><span class="property-name">type</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_type" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_type" id="CHANGED_fields_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "SYSCTL"</span><br/>
+    <span class="description"><ul>
+    <li><code>SYSCTL</code>: <code>var</code> is a sysctl name (e.g. <code>kernel.watchdog</code>) and <code>value</code> is its corresponding value (e.g. <code>0</code>).</li>
+    <li><code>UDEV</code>: <code>var</code> is a udev rules file name (e.g. <code>10-disable-usb</code>, <code>.rules</code> suffix will be appended automatically)     and <code>value</code> is its contents (e.g. <code>BUS=="usb", OPTIONS+="ignore_device"</code>).</li>
+    <li><code>ZFS</code>: <code>var</code> is a ZFS kernel module parameter name (e.g. <code>zfs_dirty_data_max_max</code>) and <code>value</code> is its value     (e.g. <code>783091712</code>).</li>
+    </ul>
+    </span><div class="enum-value" id="CHANGED_fields_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"SYSCTL"</li><li class="list-group-item enum-item">"UDEV"</li><li class="list-group-item enum-item">"ZFS"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_var">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_var">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_var" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_var" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_var')" type="button"><span class="property-name">var</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_var" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_var" id="CHANGED_fields_var">
+    <div class="card-body pl-5">
+    <h4>Var</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name or identifier of the system parameter to tune.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_value">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_value">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_value" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_value')" type="button"><span class="property-name">value</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_value" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_value" id="CHANGED_fields_value">
+    <div class="card-body pl-5">
+    <h4>Value</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Value to assign to the tunable parameter.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_comment">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_comment">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_comment" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_comment" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_comment')" type="button"><span class="property-name">comment</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_comment" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_comment" id="CHANGED_fields_comment">
+    <div class="card-body pl-5">
+    <h4>Comment</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+    <span class="description"><p>Optional descriptive comment explaining the purpose of this tunable.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_enabled">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_enabled">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_enabled" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_enabled" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_enabled')" type="button"><span class="property-name">enabled</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_enabled" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_enabled" id="CHANGED_fields_enabled">
+    <div class="card-body pl-5">
+    <h4>Enabled</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Whether this tunable is active and should be applied.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_update_initramfs">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_update_initramfs">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_update_initramfs" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_update_initramfs" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_update_initramfs')" type="button"><span class="property-name">update_initramfs</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_update_initramfs" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_update_initramfs" id="CHANGED_fields_update_initramfs">
+    <div class="card-body pl-5">
+    <h4>Update Initramfs</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>If <code>false</code>, then initramfs will not be updated after creating a ZFS tunable and you will need to run     <code>system boot update_initramfs</code> manually.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_id" id="CHANGED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the tunable configuration.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_orig_value">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_orig_value">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_orig_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_orig_value" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_orig_value')" type="button"><span class="property-name">orig_value</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_orig_value" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_orig_value" id="CHANGED_fields_orig_value">
+    <div class="card-body pl-5">
+    <h4>Orig Value</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Original system value of the parameter before this tunable was applied.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionREMOVED">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED" data-toggle="collapse" onclick="setAnchor('#REMOVED')" type="button"><span class="property-name">REMOVED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED" class="collapse property-definition-div" data-parent="#accordionREMOVED" id="REMOVED">
+    <div class="card-body pl-5">
+    <h4>TunableRemovedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionREMOVED_id">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED_id">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED_id" data-toggle="collapse" onclick="setAnchor('#REMOVED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED_id" class="collapse property-definition-div" data-parent="#accordionREMOVED_id" id="REMOVED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SYSTEM_TUNABLE_READ
+

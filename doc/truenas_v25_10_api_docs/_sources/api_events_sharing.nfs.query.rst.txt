@@ -1,0 +1,798 @@
+sharing.nfs.query
+=================
+
+Sent on sharing.nfs changes.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionADDED">
+    <div class="card">
+    <div class="card-header" id="headingADDED">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED" data-toggle="collapse" onclick="setAnchor('#ADDED')" type="button"><span class="property-name">ADDED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED" class="collapse property-definition-div" data-parent="#accordionADDED" id="ADDED">
+    <div class="card-body pl-5">
+    <h4>NfsShareAddedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_id" data-toggle="collapse" onclick="setAnchor('#ADDED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_id" class="collapse property-definition-div" data-parent="#accordionADDED_id" id="ADDED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields" data-toggle="collapse" onclick="setAnchor('#ADDED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields" class="collapse property-definition-div" data-parent="#accordionADDED_fields" id="ADDED_fields">
+    <div class="card-body pl-5">
+    <h4>NfsShareEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_id" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_id" class="collapse property-definition-div" data-parent="#accordionADDED_fields_id" id="ADDED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the NFS share.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_path">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_path">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_path" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_path')" type="button"><span class="property-name">path</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_path" class="collapse property-definition-div" data-parent="#accordionADDED_fields_path" id="ADDED_fields_path">
+    <div class="card-body pl-5">
+    <h4>Path</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Local path to be exported. </p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_path_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_aliases">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_aliases">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_aliases" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_aliases" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_aliases')" type="button"><span class="property-name">aliases</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_aliases" class="collapse property-definition-div" data-parent="#accordionADDED_fields_aliases" id="ADDED_fields_aliases">
+    <div class="card-body pl-5">
+    <h4>Aliases</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>IGNORED for now. </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="ADDED_fields_aliases_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_aliases_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_comment">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_comment">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_comment" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_comment" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_comment')" type="button"><span class="property-name">comment</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_comment" class="collapse property-definition-div" data-parent="#accordionADDED_fields_comment" id="ADDED_fields_comment">
+    <div class="card-body pl-5">
+    <h4>Comment</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+    <span class="description"><p>User comment associated with share. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_networks">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_networks">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_networks" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_networks" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_networks')" type="button"><span class="property-name">networks</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_networks" class="collapse property-definition-div" data-parent="#accordionADDED_fields_networks" id="ADDED_fields_networks">
+    <div class="card-body pl-5">
+    <h4>Networks</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>List of authorized networks that are allowed to access the share having format     "network/mask" CIDR notation. Each entry must be unique. If empty, all networks are allowed.<br/>
+    Maximum number of entries: 42. </p>
+    </span>
+    <p><span class="badge badge-light restriction max-items-restriction" id="ADDED_fields_networks_maxItems">Must contain a maximum of <code>42</code> items</span></p> <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="ADDED_fields_networks_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_networks_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_hosts">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_hosts">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_hosts" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_hosts" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_hosts')" type="button"><span class="property-name">hosts</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_hosts" class="collapse property-definition-div" data-parent="#accordionADDED_fields_hosts" id="ADDED_fields_hosts">
+    <div class="card-body pl-5">
+    <h4>Hosts</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>List of IP's/hostnames which are allowed to access the share.  No quotes or spaces are allowed.     Each entry must be unique. If empty, all IP's/hostnames are allowed.<br/>
+    Maximum number of entries: 42. </p>
+    </span>
+    <p><span class="badge badge-light restriction max-items-restriction" id="ADDED_fields_hosts_maxItems">Must contain a maximum of <code>42</code> items</span></p> <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="ADDED_fields_hosts_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_hosts_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_ro">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_ro">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_ro" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_ro" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_ro')" type="button"><span class="property-name">ro</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_ro" class="collapse property-definition-div" data-parent="#accordionADDED_fields_ro" id="ADDED_fields_ro">
+    <div class="card-body pl-5">
+    <h4>Ro</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Export the share as read only. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_maproot_user">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_maproot_user">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_maproot_user" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_maproot_user" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_maproot_user')" type="button"><span class="property-name">maproot_user</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_maproot_user" class="collapse property-definition-div" data-parent="#accordionADDED_fields_maproot_user" id="ADDED_fields_maproot_user">
+    <div class="card-body pl-5">
+    <h4>Maproot User</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Map root user client to a specified user. </p>
+    </span><div class="any-of-value" id="ADDED_fields_maproot_user_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_maproot_user_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_maproot_user_anyOf_i0" id="ADDED_fields_maproot_user_anyOf_i0" onclick="setAnchor('#ADDED_fields_maproot_user_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_maproot_user_anyOf_i1" id="ADDED_fields_maproot_user_anyOf_i1" onclick="setAnchor('#ADDED_fields_maproot_user_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_maproot_user_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_maproot_user_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_maproot_group">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_maproot_group">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_maproot_group" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_maproot_group" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_maproot_group')" type="button"><span class="property-name">maproot_group</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_maproot_group" class="collapse property-definition-div" data-parent="#accordionADDED_fields_maproot_group" id="ADDED_fields_maproot_group">
+    <div class="card-body pl-5">
+    <h4>Maproot Group</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Map root group client to a specified group. </p>
+    </span><div class="any-of-value" id="ADDED_fields_maproot_group_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_maproot_group_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_maproot_group_anyOf_i0" id="ADDED_fields_maproot_group_anyOf_i0" onclick="setAnchor('#ADDED_fields_maproot_group_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_maproot_group_anyOf_i1" id="ADDED_fields_maproot_group_anyOf_i1" onclick="setAnchor('#ADDED_fields_maproot_group_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_maproot_group_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_maproot_group_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_mapall_user">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_mapall_user">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_mapall_user" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_mapall_user" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_mapall_user')" type="button"><span class="property-name">mapall_user</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_mapall_user" class="collapse property-definition-div" data-parent="#accordionADDED_fields_mapall_user" id="ADDED_fields_mapall_user">
+    <div class="card-body pl-5">
+    <h4>Mapall User</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Map all client users to a specified user. </p>
+    </span><div class="any-of-value" id="ADDED_fields_mapall_user_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_mapall_user_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_mapall_user_anyOf_i0" id="ADDED_fields_mapall_user_anyOf_i0" onclick="setAnchor('#ADDED_fields_mapall_user_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_mapall_user_anyOf_i1" id="ADDED_fields_mapall_user_anyOf_i1" onclick="setAnchor('#ADDED_fields_mapall_user_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_mapall_user_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_mapall_user_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_mapall_group">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_mapall_group">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_mapall_group" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_mapall_group" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_mapall_group')" type="button"><span class="property-name">mapall_group</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_mapall_group" class="collapse property-definition-div" data-parent="#accordionADDED_fields_mapall_group" id="ADDED_fields_mapall_group">
+    <div class="card-body pl-5">
+    <h4>Mapall Group</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Map all client groups to a specified group. </p>
+    </span><div class="any-of-value" id="ADDED_fields_mapall_group_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_mapall_group_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_mapall_group_anyOf_i0" id="ADDED_fields_mapall_group_anyOf_i0" onclick="setAnchor('#ADDED_fields_mapall_group_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_mapall_group_anyOf_i1" id="ADDED_fields_mapall_group_anyOf_i1" onclick="setAnchor('#ADDED_fields_mapall_group_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_mapall_group_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_mapall_group_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_security">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_security">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_security" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_security" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_security')" type="button"><span class="property-name">security</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_security" class="collapse property-definition-div" data-parent="#accordionADDED_fields_security" id="ADDED_fields_security">
+    <div class="card-body pl-5">
+    <h4>Security</h4><span class="badge badge-dark value-type">Type: array of enum (of string)</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>Specify the security schema. </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="ADDED_fields_security_items">
+    <span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <div class="enum-value" id="ADDED_fields_security_items_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"SYS"</li><li class="list-group-item enum-item">"KRB5"</li><li class="list-group-item enum-item">"KRB5I"</li><li class="list-group-item enum-item">"KRB5P"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_enabled">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_enabled">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_enabled" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_enabled" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_enabled')" type="button"><span class="property-name">enabled</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_enabled" class="collapse property-definition-div" data-parent="#accordionADDED_fields_enabled" id="ADDED_fields_enabled">
+    <div class="card-body pl-5">
+    <h4>Enabled</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Enable or disable the share. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_locked">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_locked">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_locked" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_locked" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_locked')" type="button"><span class="property-name">locked</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_locked" class="collapse property-definition-div" data-parent="#accordionADDED_fields_locked" id="ADDED_fields_locked">
+    <div class="card-body pl-5">
+    <h4>Locked</h4><br/>
+    <span class="description"><p>Read-only value indicating whether the share is located on a locked dataset.</p>
+    <p>Returns:<br/>
+        - True: The share is in a locked dataset.<br/>
+        - False: The share is not in a locked dataset.<br/>
+        - None: Lock status is not available because path locking information was not requested.</p>
+    </span><div class="any-of-value" id="ADDED_fields_locked_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_locked_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_locked_anyOf_i0" id="ADDED_fields_locked_anyOf_i0" onclick="setAnchor('#ADDED_fields_locked_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_locked_anyOf_i1" id="ADDED_fields_locked_anyOf_i1" onclick="setAnchor('#ADDED_fields_locked_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_locked_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_locked_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_expose_snapshots">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_expose_snapshots">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_expose_snapshots" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_expose_snapshots" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_expose_snapshots')" type="button"><span class="property-name">expose_snapshots</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_expose_snapshots" class="collapse property-definition-div" data-parent="#accordionADDED_fields_expose_snapshots" id="ADDED_fields_expose_snapshots">
+    <div class="card-body pl-5">
+    <h4>Expose Snapshots</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Enterprise feature to enable access to the ZFS snapshot directory for the export.<br/>
+    Export path must be the root directory of a ZFS dataset.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED" data-toggle="collapse" onclick="setAnchor('#CHANGED')" type="button"><span class="property-name">CHANGED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED" class="collapse property-definition-div" data-parent="#accordionCHANGED" id="CHANGED">
+    <div class="card-body pl-5">
+    <h4>NfsShareChangedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_id" id="CHANGED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields" id="CHANGED_fields">
+    <div class="card-body pl-5">
+    <h4>NfsShareEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_id" id="CHANGED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the NFS share.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_path">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_path">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_path" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_path')" type="button"><span class="property-name">path</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_path" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_path" id="CHANGED_fields_path">
+    <div class="card-body pl-5">
+    <h4>Path</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Local path to be exported. </p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_path_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_aliases">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_aliases">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_aliases" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_aliases" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_aliases')" type="button"><span class="property-name">aliases</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_aliases" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_aliases" id="CHANGED_fields_aliases">
+    <div class="card-body pl-5">
+    <h4>Aliases</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>IGNORED for now. </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="CHANGED_fields_aliases_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_aliases_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_comment">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_comment">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_comment" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_comment" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_comment')" type="button"><span class="property-name">comment</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_comment" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_comment" id="CHANGED_fields_comment">
+    <div class="card-body pl-5">
+    <h4>Comment</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+    <span class="description"><p>User comment associated with share. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_networks">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_networks">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_networks" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_networks" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_networks')" type="button"><span class="property-name">networks</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_networks" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_networks" id="CHANGED_fields_networks">
+    <div class="card-body pl-5">
+    <h4>Networks</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>List of authorized networks that are allowed to access the share having format     "network/mask" CIDR notation. Each entry must be unique. If empty, all networks are allowed.<br/>
+    Maximum number of entries: 42. </p>
+    </span>
+    <p><span class="badge badge-light restriction max-items-restriction" id="CHANGED_fields_networks_maxItems">Must contain a maximum of <code>42</code> items</span></p> <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="CHANGED_fields_networks_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_networks_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_hosts">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_hosts">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_hosts" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_hosts" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_hosts')" type="button"><span class="property-name">hosts</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_hosts" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_hosts" id="CHANGED_fields_hosts">
+    <div class="card-body pl-5">
+    <h4>Hosts</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>List of IP's/hostnames which are allowed to access the share.  No quotes or spaces are allowed.     Each entry must be unique. If empty, all IP's/hostnames are allowed.<br/>
+    Maximum number of entries: 42. </p>
+    </span>
+    <p><span class="badge badge-light restriction max-items-restriction" id="CHANGED_fields_hosts_maxItems">Must contain a maximum of <code>42</code> items</span></p> <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="CHANGED_fields_hosts_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_hosts_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_ro">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_ro">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_ro" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_ro" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_ro')" type="button"><span class="property-name">ro</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_ro" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_ro" id="CHANGED_fields_ro">
+    <div class="card-body pl-5">
+    <h4>Ro</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Export the share as read only. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_maproot_user">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_maproot_user">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_maproot_user" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_maproot_user" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_maproot_user')" type="button"><span class="property-name">maproot_user</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_maproot_user" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_maproot_user" id="CHANGED_fields_maproot_user">
+    <div class="card-body pl-5">
+    <h4>Maproot User</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Map root user client to a specified user. </p>
+    </span><div class="any-of-value" id="CHANGED_fields_maproot_user_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_maproot_user_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_maproot_user_anyOf_i0" id="CHANGED_fields_maproot_user_anyOf_i0" onclick="setAnchor('#CHANGED_fields_maproot_user_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_maproot_user_anyOf_i1" id="CHANGED_fields_maproot_user_anyOf_i1" onclick="setAnchor('#CHANGED_fields_maproot_user_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_maproot_user_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_maproot_user_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_maproot_group">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_maproot_group">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_maproot_group" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_maproot_group" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_maproot_group')" type="button"><span class="property-name">maproot_group</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_maproot_group" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_maproot_group" id="CHANGED_fields_maproot_group">
+    <div class="card-body pl-5">
+    <h4>Maproot Group</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Map root group client to a specified group. </p>
+    </span><div class="any-of-value" id="CHANGED_fields_maproot_group_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_maproot_group_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_maproot_group_anyOf_i0" id="CHANGED_fields_maproot_group_anyOf_i0" onclick="setAnchor('#CHANGED_fields_maproot_group_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_maproot_group_anyOf_i1" id="CHANGED_fields_maproot_group_anyOf_i1" onclick="setAnchor('#CHANGED_fields_maproot_group_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_maproot_group_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_maproot_group_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_mapall_user">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_mapall_user">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_mapall_user" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_mapall_user" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_mapall_user')" type="button"><span class="property-name">mapall_user</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_mapall_user" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_mapall_user" id="CHANGED_fields_mapall_user">
+    <div class="card-body pl-5">
+    <h4>Mapall User</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Map all client users to a specified user. </p>
+    </span><div class="any-of-value" id="CHANGED_fields_mapall_user_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_mapall_user_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_mapall_user_anyOf_i0" id="CHANGED_fields_mapall_user_anyOf_i0" onclick="setAnchor('#CHANGED_fields_mapall_user_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_mapall_user_anyOf_i1" id="CHANGED_fields_mapall_user_anyOf_i1" onclick="setAnchor('#CHANGED_fields_mapall_user_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_mapall_user_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_mapall_user_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_mapall_group">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_mapall_group">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_mapall_group" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_mapall_group" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_mapall_group')" type="button"><span class="property-name">mapall_group</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_mapall_group" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_mapall_group" id="CHANGED_fields_mapall_group">
+    <div class="card-body pl-5">
+    <h4>Mapall Group</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Map all client groups to a specified group. </p>
+    </span><div class="any-of-value" id="CHANGED_fields_mapall_group_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_mapall_group_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_mapall_group_anyOf_i0" id="CHANGED_fields_mapall_group_anyOf_i0" onclick="setAnchor('#CHANGED_fields_mapall_group_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_mapall_group_anyOf_i1" id="CHANGED_fields_mapall_group_anyOf_i1" onclick="setAnchor('#CHANGED_fields_mapall_group_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_mapall_group_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_mapall_group_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_security">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_security">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_security" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_security" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_security')" type="button"><span class="property-name">security</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_security" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_security" id="CHANGED_fields_security">
+    <div class="card-body pl-5">
+    <h4>Security</h4><span class="badge badge-dark value-type">Type: array of enum (of string)</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>Specify the security schema. </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="CHANGED_fields_security_items">
+    <span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <div class="enum-value" id="CHANGED_fields_security_items_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"SYS"</li><li class="list-group-item enum-item">"KRB5"</li><li class="list-group-item enum-item">"KRB5I"</li><li class="list-group-item enum-item">"KRB5P"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_enabled">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_enabled">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_enabled" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_enabled" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_enabled')" type="button"><span class="property-name">enabled</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_enabled" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_enabled" id="CHANGED_fields_enabled">
+    <div class="card-body pl-5">
+    <h4>Enabled</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Enable or disable the share. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_locked">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_locked">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_locked" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_locked" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_locked')" type="button"><span class="property-name">locked</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_locked" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_locked" id="CHANGED_fields_locked">
+    <div class="card-body pl-5">
+    <h4>Locked</h4><br/>
+    <span class="description"><p>Read-only value indicating whether the share is located on a locked dataset.</p>
+    <p>Returns:<br/>
+        - True: The share is in a locked dataset.<br/>
+        - False: The share is not in a locked dataset.<br/>
+        - None: Lock status is not available because path locking information was not requested.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_locked_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_locked_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_locked_anyOf_i0" id="CHANGED_fields_locked_anyOf_i0" onclick="setAnchor('#CHANGED_fields_locked_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_locked_anyOf_i1" id="CHANGED_fields_locked_anyOf_i1" onclick="setAnchor('#CHANGED_fields_locked_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_locked_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_locked_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_expose_snapshots">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_expose_snapshots">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_expose_snapshots" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_expose_snapshots" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_expose_snapshots')" type="button"><span class="property-name">expose_snapshots</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_expose_snapshots" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_expose_snapshots" id="CHANGED_fields_expose_snapshots">
+    <div class="card-body pl-5">
+    <h4>Expose Snapshots</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Enterprise feature to enable access to the ZFS snapshot directory for the export.<br/>
+    Export path must be the root directory of a ZFS dataset.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionREMOVED">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED" data-toggle="collapse" onclick="setAnchor('#REMOVED')" type="button"><span class="property-name">REMOVED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED" class="collapse property-definition-div" data-parent="#accordionREMOVED" id="REMOVED">
+    <div class="card-body pl-5">
+    <h4>NfsShareRemovedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionREMOVED_id">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED_id">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED_id" data-toggle="collapse" onclick="setAnchor('#REMOVED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED_id" class="collapse property-definition-div" data-parent="#accordionREMOVED_id" id="REMOVED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SHARING_NFS_READ
+

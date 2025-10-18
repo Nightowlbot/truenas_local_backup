@@ -1,0 +1,10 @@
+virt.global
+-----------
+
+.. toctree::
+
+   api_methods_virt.global.bridge_choices
+   api_methods_virt.global.config
+   api_methods_virt.global.get_network
+   api_methods_virt.global.pool_choices
+   api_methods_virt.global.update

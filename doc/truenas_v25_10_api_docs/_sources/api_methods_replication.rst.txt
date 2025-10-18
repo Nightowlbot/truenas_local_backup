@@ -1,0 +1,18 @@
+replication
+-----------
+
+.. toctree::
+
+   api_methods_replication.count_eligible_manual_snapshots
+   api_methods_replication.create
+   api_methods_replication.create_dataset
+   api_methods_replication.delete
+   api_methods_replication.get_instance
+   api_methods_replication.list_datasets
+   api_methods_replication.list_naming_schemas
+   api_methods_replication.query
+   api_methods_replication.restore
+   api_methods_replication.run
+   api_methods_replication.run_onetime
+   api_methods_replication.target_unmatched_snapshots
+   api_methods_replication.update

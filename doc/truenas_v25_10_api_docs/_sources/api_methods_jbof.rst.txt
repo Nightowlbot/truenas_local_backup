@@ -1,0 +1,12 @@
+jbof
+----
+
+.. toctree::
+
+   api_methods_jbof.create
+   api_methods_jbof.delete
+   api_methods_jbof.get_instance
+   api_methods_jbof.licensed
+   api_methods_jbof.query
+   api_methods_jbof.reapply_config
+   api_methods_jbof.update

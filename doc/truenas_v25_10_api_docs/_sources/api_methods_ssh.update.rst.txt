@@ -1,0 +1,881 @@
+ssh.update
+==========
+
+Update settings of SSH daemon service.
+
+If `bindiface` is empty it will listen for all available addresses.
+
+.. examples(websocket)::
+
+  Make sshd listen only to igb0 interface.
+
+    :::javascript {
+        "id": "6841f242-840a-11e6-a437-00e04d680384", "msg": "method", "method": "ssh.update", "params": [{ "bindiface": ["igb0"] }] }
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: data</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>data</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Updated SSH service configuration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_bindiface">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_bindiface">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_bindiface" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_bindiface" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_bindiface')" type="button"><span class="property-name">bindiface</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_bindiface" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_bindiface" id="Call_parameters_items_i0_bindiface">
+    <div class="card-body pl-5">
+    <h4>Bindiface</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of network interface names to bind the SSH service to.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_bindiface_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_tcpport">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_tcpport">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_tcpport" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_tcpport" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_tcpport')" type="button"><span class="property-name">tcpport</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_tcpport" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_tcpport" id="Call_parameters_items_i0_tcpport">
+    <div class="card-body pl-5">
+    <h4>Tcpport</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>TCP port number for SSH connections.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_tcpport_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>65535</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_password_login_groups">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_password_login_groups">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_password_login_groups" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_password_login_groups" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_password_login_groups')" type="button"><span class="property-name">password_login_groups</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_password_login_groups" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_password_login_groups" id="Call_parameters_items_i0_password_login_groups">
+    <div class="card-body pl-5">
+    <h4>Password Login Groups</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of group names allowed to authenticate with passwords.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_password_login_groups_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_passwordauth">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_passwordauth">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_passwordauth" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_passwordauth" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_passwordauth')" type="button"><span class="property-name">passwordauth</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_passwordauth" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_passwordauth" id="Call_parameters_items_i0_passwordauth">
+    <div class="card-body pl-5">
+    <h4>Passwordauth</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether password authentication is enabled.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_kerberosauth">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_kerberosauth">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_kerberosauth" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_kerberosauth" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_kerberosauth')" type="button"><span class="property-name">kerberosauth</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_kerberosauth" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_kerberosauth" id="Call_parameters_items_i0_kerberosauth">
+    <div class="card-body pl-5">
+    <h4>Kerberosauth</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether Kerberos authentication is enabled.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_tcpfwd">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_tcpfwd">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_tcpfwd" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_tcpfwd" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_tcpfwd')" type="button"><span class="property-name">tcpfwd</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_tcpfwd" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_tcpfwd" id="Call_parameters_items_i0_tcpfwd">
+    <div class="card-body pl-5">
+    <h4>Tcpfwd</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether TCP forwarding is enabled.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_compression">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_compression">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_compression" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_compression" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_compression')" type="button"><span class="property-name">compression</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_compression" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_compression" id="Call_parameters_items_i0_compression">
+    <div class="card-body pl-5">
+    <h4>Compression</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether compression is enabled for SSH connections.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_sftp_log_level">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_sftp_log_level">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_sftp_log_level" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_sftp_log_level" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_sftp_log_level')" type="button"><span class="property-name">sftp_log_level</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_sftp_log_level" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_sftp_log_level" id="Call_parameters_items_i0_sftp_log_level">
+    <div class="card-body pl-5">
+    <h4>Sftp Log Level</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Logging level for SFTP subsystem (empty string means default).</p>
+    </span><div class="enum-value" id="Call_parameters_items_i0_sftp_log_level_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li><li class="list-group-item enum-item">"QUIET"</li><li class="list-group-item enum-item">"FATAL"</li><li class="list-group-item enum-item">"ERROR"</li><li class="list-group-item enum-item">"INFO"</li><li class="list-group-item enum-item">"VERBOSE"</li><li class="list-group-item enum-item">"DEBUG"</li><li class="list-group-item enum-item">"DEBUG2"</li><li class="list-group-item enum-item">"DEBUG3"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_sftp_log_facility">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_sftp_log_facility">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_sftp_log_facility" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_sftp_log_facility" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_sftp_log_facility')" type="button"><span class="property-name">sftp_log_facility</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_sftp_log_facility" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_sftp_log_facility" id="Call_parameters_items_i0_sftp_log_facility">
+    <div class="card-body pl-5">
+    <h4>Sftp Log Facility</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Syslog facility for SFTP logging (empty string means default).</p>
+    </span><div class="enum-value" id="Call_parameters_items_i0_sftp_log_facility_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li><li class="list-group-item enum-item">"DAEMON"</li><li class="list-group-item enum-item">"USER"</li><li class="list-group-item enum-item">"AUTH"</li><li class="list-group-item enum-item">"LOCAL0"</li><li class="list-group-item enum-item">"LOCAL1"</li><li class="list-group-item enum-item">"LOCAL2"</li><li class="list-group-item enum-item">"LOCAL3"</li><li class="list-group-item enum-item">"LOCAL4"</li><li class="list-group-item enum-item">"LOCAL5"</li><li class="list-group-item enum-item">"LOCAL6"</li><li class="list-group-item enum-item">"LOCAL7"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_weak_ciphers">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_weak_ciphers">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_weak_ciphers" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_weak_ciphers" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_weak_ciphers')" type="button"><span class="property-name">weak_ciphers</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_weak_ciphers" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_weak_ciphers" id="Call_parameters_items_i0_weak_ciphers">
+    <div class="card-body pl-5">
+    <h4>Weak Ciphers</h4><span class="badge badge-dark value-type">Type: array of enum (of string)</span><br/>
+    <span class="description"><p>Array of weak ciphers to enable for compatibility with legacy clients.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_weak_ciphers_items">
+    <span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <div class="enum-value" id="Call_parameters_items_i0_weak_ciphers_items_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"AES128-CBC"</li><li class="list-group-item enum-item">"NONE"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_options">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_options">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_options" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_options" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_options')" type="button"><span class="property-name">options</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_options" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_options" id="Call_parameters_items_i0_options">
+    <div class="card-body pl-5">
+    <h4>Options</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Additional SSH daemon configuration options.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>SSHEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The updated SSH service configuration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the SSH service configuration.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_bindiface">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_bindiface">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_bindiface" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_bindiface" data-toggle="collapse" onclick="setAnchor('#Return_value_bindiface')" type="button"><span class="property-name">bindiface</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_bindiface" class="collapse property-definition-div" data-parent="#accordionReturn_value_bindiface" id="Return_value_bindiface">
+    <div class="card-body pl-5">
+    <h4>Bindiface</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of network interface names to bind the SSH service to.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_bindiface_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_tcpport">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_tcpport">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_tcpport" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_tcpport" data-toggle="collapse" onclick="setAnchor('#Return_value_tcpport')" type="button"><span class="property-name">tcpport</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_tcpport" class="collapse property-definition-div" data-parent="#accordionReturn_value_tcpport" id="Return_value_tcpport">
+    <div class="card-body pl-5">
+    <h4>Tcpport</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>TCP port number for SSH connections.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_tcpport_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>65535</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_password_login_groups">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_password_login_groups">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_password_login_groups" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_password_login_groups" data-toggle="collapse" onclick="setAnchor('#Return_value_password_login_groups')" type="button"><span class="property-name">password_login_groups</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_password_login_groups" class="collapse property-definition-div" data-parent="#accordionReturn_value_password_login_groups" id="Return_value_password_login_groups">
+    <div class="card-body pl-5">
+    <h4>Password Login Groups</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of group names allowed to authenticate with passwords.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_password_login_groups_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_passwordauth">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_passwordauth">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_passwordauth" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_passwordauth" data-toggle="collapse" onclick="setAnchor('#Return_value_passwordauth')" type="button"><span class="property-name">passwordauth</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_passwordauth" class="collapse property-definition-div" data-parent="#accordionReturn_value_passwordauth" id="Return_value_passwordauth">
+    <div class="card-body pl-5">
+    <h4>Passwordauth</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether password authentication is enabled.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_kerberosauth">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_kerberosauth">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_kerberosauth" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_kerberosauth" data-toggle="collapse" onclick="setAnchor('#Return_value_kerberosauth')" type="button"><span class="property-name">kerberosauth</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_kerberosauth" class="collapse property-definition-div" data-parent="#accordionReturn_value_kerberosauth" id="Return_value_kerberosauth">
+    <div class="card-body pl-5">
+    <h4>Kerberosauth</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether Kerberos authentication is enabled.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_tcpfwd">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_tcpfwd">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_tcpfwd" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_tcpfwd" data-toggle="collapse" onclick="setAnchor('#Return_value_tcpfwd')" type="button"><span class="property-name">tcpfwd</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_tcpfwd" class="collapse property-definition-div" data-parent="#accordionReturn_value_tcpfwd" id="Return_value_tcpfwd">
+    <div class="card-body pl-5">
+    <h4>Tcpfwd</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether TCP forwarding is enabled.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_compression">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_compression">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_compression" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_compression" data-toggle="collapse" onclick="setAnchor('#Return_value_compression')" type="button"><span class="property-name">compression</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_compression" class="collapse property-definition-div" data-parent="#accordionReturn_value_compression" id="Return_value_compression">
+    <div class="card-body pl-5">
+    <h4>Compression</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether compression is enabled for SSH connections.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_sftp_log_level">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_sftp_log_level">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_sftp_log_level" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_sftp_log_level" data-toggle="collapse" onclick="setAnchor('#Return_value_sftp_log_level')" type="button"><span class="property-name">sftp_log_level</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_sftp_log_level" class="collapse property-definition-div" data-parent="#accordionReturn_value_sftp_log_level" id="Return_value_sftp_log_level">
+    <div class="card-body pl-5">
+    <h4>Sftp Log Level</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Logging level for SFTP subsystem (empty string means default).</p>
+    </span><div class="enum-value" id="Return_value_sftp_log_level_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li><li class="list-group-item enum-item">"QUIET"</li><li class="list-group-item enum-item">"FATAL"</li><li class="list-group-item enum-item">"ERROR"</li><li class="list-group-item enum-item">"INFO"</li><li class="list-group-item enum-item">"VERBOSE"</li><li class="list-group-item enum-item">"DEBUG"</li><li class="list-group-item enum-item">"DEBUG2"</li><li class="list-group-item enum-item">"DEBUG3"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_sftp_log_facility">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_sftp_log_facility">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_sftp_log_facility" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_sftp_log_facility" data-toggle="collapse" onclick="setAnchor('#Return_value_sftp_log_facility')" type="button"><span class="property-name">sftp_log_facility</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_sftp_log_facility" class="collapse property-definition-div" data-parent="#accordionReturn_value_sftp_log_facility" id="Return_value_sftp_log_facility">
+    <div class="card-body pl-5">
+    <h4>Sftp Log Facility</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Syslog facility for SFTP logging (empty string means default).</p>
+    </span><div class="enum-value" id="Return_value_sftp_log_facility_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li><li class="list-group-item enum-item">"DAEMON"</li><li class="list-group-item enum-item">"USER"</li><li class="list-group-item enum-item">"AUTH"</li><li class="list-group-item enum-item">"LOCAL0"</li><li class="list-group-item enum-item">"LOCAL1"</li><li class="list-group-item enum-item">"LOCAL2"</li><li class="list-group-item enum-item">"LOCAL3"</li><li class="list-group-item enum-item">"LOCAL4"</li><li class="list-group-item enum-item">"LOCAL5"</li><li class="list-group-item enum-item">"LOCAL6"</li><li class="list-group-item enum-item">"LOCAL7"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_weak_ciphers">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_weak_ciphers">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_weak_ciphers" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_weak_ciphers" data-toggle="collapse" onclick="setAnchor('#Return_value_weak_ciphers')" type="button"><span class="property-name">weak_ciphers</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_weak_ciphers" class="collapse property-definition-div" data-parent="#accordionReturn_value_weak_ciphers" id="Return_value_weak_ciphers">
+    <div class="card-body pl-5">
+    <h4>Weak Ciphers</h4><span class="badge badge-dark value-type">Type: array of enum (of string)</span><br/>
+    <span class="description"><p>Array of weak ciphers to enable for compatibility with legacy clients.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_weak_ciphers_items">
+    <span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <div class="enum-value" id="Return_value_weak_ciphers_items_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"AES128-CBC"</li><li class="list-group-item enum-item">"NONE"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_options">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_options">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_options" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_options" data-toggle="collapse" onclick="setAnchor('#Return_value_options')" type="button"><span class="property-name">options</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_options" class="collapse property-definition-div" data-parent="#accordionReturn_value_options" id="Return_value_options">
+    <div class="card-body pl-5">
+    <h4>Options</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Additional SSH daemon configuration options.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_privatekey">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_privatekey">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_privatekey" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_privatekey" data-toggle="collapse" onclick="setAnchor('#Return_value_privatekey')" type="button"><span class="property-name">privatekey</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_privatekey" class="collapse property-definition-div" data-parent="#accordionReturn_value_privatekey" id="Return_value_privatekey">
+    <div class="card-body pl-5">
+    <h4>Privatekey</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>SSH host private key data.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_host_dsa_key">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_host_dsa_key">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_host_dsa_key" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_host_dsa_key" data-toggle="collapse" onclick="setAnchor('#Return_value_host_dsa_key')" type="button"><span class="property-name">host_dsa_key</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_host_dsa_key" class="collapse property-definition-div" data-parent="#accordionReturn_value_host_dsa_key" id="Return_value_host_dsa_key">
+    <div class="card-body pl-5">
+    <h4>Host Dsa Key</h4><br/>
+    <span class="description"><p>DSA host private key. <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Return_value_host_dsa_key_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_host_dsa_key_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_dsa_key_anyOf_i0" id="Return_value_host_dsa_key_anyOf_i0" onclick="setAnchor('#Return_value_host_dsa_key_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_dsa_key_anyOf_i1" id="Return_value_host_dsa_key_anyOf_i1" onclick="setAnchor('#Return_value_host_dsa_key_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_host_dsa_key_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_host_dsa_key_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_host_dsa_key_pub">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_host_dsa_key_pub">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_host_dsa_key_pub" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_host_dsa_key_pub" data-toggle="collapse" onclick="setAnchor('#Return_value_host_dsa_key_pub')" type="button"><span class="property-name">host_dsa_key_pub</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_host_dsa_key_pub" class="collapse property-definition-div" data-parent="#accordionReturn_value_host_dsa_key_pub" id="Return_value_host_dsa_key_pub">
+    <div class="card-body pl-5">
+    <h4>Host Dsa Key Pub</h4><br/>
+    <span class="description"><p>DSA host public key. <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Return_value_host_dsa_key_pub_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_host_dsa_key_pub_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_dsa_key_pub_anyOf_i0" id="Return_value_host_dsa_key_pub_anyOf_i0" onclick="setAnchor('#Return_value_host_dsa_key_pub_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_dsa_key_pub_anyOf_i1" id="Return_value_host_dsa_key_pub_anyOf_i1" onclick="setAnchor('#Return_value_host_dsa_key_pub_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_host_dsa_key_pub_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_host_dsa_key_pub_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_host_dsa_key_cert_pub">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_host_dsa_key_cert_pub">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_host_dsa_key_cert_pub" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_host_dsa_key_cert_pub" data-toggle="collapse" onclick="setAnchor('#Return_value_host_dsa_key_cert_pub')" type="button"><span class="property-name">host_dsa_key_cert_pub</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_host_dsa_key_cert_pub" class="collapse property-definition-div" data-parent="#accordionReturn_value_host_dsa_key_cert_pub" id="Return_value_host_dsa_key_cert_pub">
+    <div class="card-body pl-5">
+    <h4>Host Dsa Key Cert Pub</h4><br/>
+    <span class="description"><p>DSA host certificate public key. <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Return_value_host_dsa_key_cert_pub_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_host_dsa_key_cert_pub_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_dsa_key_cert_pub_anyOf_i0" id="Return_value_host_dsa_key_cert_pub_anyOf_i0" onclick="setAnchor('#Return_value_host_dsa_key_cert_pub_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_dsa_key_cert_pub_anyOf_i1" id="Return_value_host_dsa_key_cert_pub_anyOf_i1" onclick="setAnchor('#Return_value_host_dsa_key_cert_pub_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_host_dsa_key_cert_pub_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_host_dsa_key_cert_pub_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_host_ecdsa_key">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_host_ecdsa_key">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_host_ecdsa_key" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_host_ecdsa_key" data-toggle="collapse" onclick="setAnchor('#Return_value_host_ecdsa_key')" type="button"><span class="property-name">host_ecdsa_key</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_host_ecdsa_key" class="collapse property-definition-div" data-parent="#accordionReturn_value_host_ecdsa_key" id="Return_value_host_ecdsa_key">
+    <div class="card-body pl-5">
+    <h4>Host Ecdsa Key</h4><br/>
+    <span class="description"><p>ECDSA host private key. <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Return_value_host_ecdsa_key_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_host_ecdsa_key_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_ecdsa_key_anyOf_i0" id="Return_value_host_ecdsa_key_anyOf_i0" onclick="setAnchor('#Return_value_host_ecdsa_key_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_ecdsa_key_anyOf_i1" id="Return_value_host_ecdsa_key_anyOf_i1" onclick="setAnchor('#Return_value_host_ecdsa_key_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_host_ecdsa_key_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_host_ecdsa_key_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_host_ecdsa_key_pub">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_host_ecdsa_key_pub">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_host_ecdsa_key_pub" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_host_ecdsa_key_pub" data-toggle="collapse" onclick="setAnchor('#Return_value_host_ecdsa_key_pub')" type="button"><span class="property-name">host_ecdsa_key_pub</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_host_ecdsa_key_pub" class="collapse property-definition-div" data-parent="#accordionReturn_value_host_ecdsa_key_pub" id="Return_value_host_ecdsa_key_pub">
+    <div class="card-body pl-5">
+    <h4>Host Ecdsa Key Pub</h4><br/>
+    <span class="description"><p>ECDSA host public key. <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Return_value_host_ecdsa_key_pub_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_host_ecdsa_key_pub_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_ecdsa_key_pub_anyOf_i0" id="Return_value_host_ecdsa_key_pub_anyOf_i0" onclick="setAnchor('#Return_value_host_ecdsa_key_pub_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_ecdsa_key_pub_anyOf_i1" id="Return_value_host_ecdsa_key_pub_anyOf_i1" onclick="setAnchor('#Return_value_host_ecdsa_key_pub_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_host_ecdsa_key_pub_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_host_ecdsa_key_pub_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_host_ecdsa_key_cert_pub">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_host_ecdsa_key_cert_pub">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_host_ecdsa_key_cert_pub" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_host_ecdsa_key_cert_pub" data-toggle="collapse" onclick="setAnchor('#Return_value_host_ecdsa_key_cert_pub')" type="button"><span class="property-name">host_ecdsa_key_cert_pub</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_host_ecdsa_key_cert_pub" class="collapse property-definition-div" data-parent="#accordionReturn_value_host_ecdsa_key_cert_pub" id="Return_value_host_ecdsa_key_cert_pub">
+    <div class="card-body pl-5">
+    <h4>Host Ecdsa Key Cert Pub</h4><br/>
+    <span class="description"><p>ECDSA host certificate public key. <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Return_value_host_ecdsa_key_cert_pub_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_host_ecdsa_key_cert_pub_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_ecdsa_key_cert_pub_anyOf_i0" id="Return_value_host_ecdsa_key_cert_pub_anyOf_i0" onclick="setAnchor('#Return_value_host_ecdsa_key_cert_pub_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_ecdsa_key_cert_pub_anyOf_i1" id="Return_value_host_ecdsa_key_cert_pub_anyOf_i1" onclick="setAnchor('#Return_value_host_ecdsa_key_cert_pub_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_host_ecdsa_key_cert_pub_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_host_ecdsa_key_cert_pub_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_host_ed25519_key">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_host_ed25519_key">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_host_ed25519_key" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_host_ed25519_key" data-toggle="collapse" onclick="setAnchor('#Return_value_host_ed25519_key')" type="button"><span class="property-name">host_ed25519_key</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_host_ed25519_key" class="collapse property-definition-div" data-parent="#accordionReturn_value_host_ed25519_key" id="Return_value_host_ed25519_key">
+    <div class="card-body pl-5">
+    <h4>Host Ed25519 Key</h4><br/>
+    <span class="description"><p>Ed25519 host private key. <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Return_value_host_ed25519_key_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_host_ed25519_key_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_ed25519_key_anyOf_i0" id="Return_value_host_ed25519_key_anyOf_i0" onclick="setAnchor('#Return_value_host_ed25519_key_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_ed25519_key_anyOf_i1" id="Return_value_host_ed25519_key_anyOf_i1" onclick="setAnchor('#Return_value_host_ed25519_key_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_host_ed25519_key_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_host_ed25519_key_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_host_ed25519_key_pub">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_host_ed25519_key_pub">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_host_ed25519_key_pub" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_host_ed25519_key_pub" data-toggle="collapse" onclick="setAnchor('#Return_value_host_ed25519_key_pub')" type="button"><span class="property-name">host_ed25519_key_pub</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_host_ed25519_key_pub" class="collapse property-definition-div" data-parent="#accordionReturn_value_host_ed25519_key_pub" id="Return_value_host_ed25519_key_pub">
+    <div class="card-body pl-5">
+    <h4>Host Ed25519 Key Pub</h4><br/>
+    <span class="description"><p>Ed25519 host public key. <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Return_value_host_ed25519_key_pub_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_host_ed25519_key_pub_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_ed25519_key_pub_anyOf_i0" id="Return_value_host_ed25519_key_pub_anyOf_i0" onclick="setAnchor('#Return_value_host_ed25519_key_pub_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_ed25519_key_pub_anyOf_i1" id="Return_value_host_ed25519_key_pub_anyOf_i1" onclick="setAnchor('#Return_value_host_ed25519_key_pub_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_host_ed25519_key_pub_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_host_ed25519_key_pub_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_host_ed25519_key_cert_pub">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_host_ed25519_key_cert_pub">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_host_ed25519_key_cert_pub" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_host_ed25519_key_cert_pub" data-toggle="collapse" onclick="setAnchor('#Return_value_host_ed25519_key_cert_pub')" type="button"><span class="property-name">host_ed25519_key_cert_pub</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_host_ed25519_key_cert_pub" class="collapse property-definition-div" data-parent="#accordionReturn_value_host_ed25519_key_cert_pub" id="Return_value_host_ed25519_key_cert_pub">
+    <div class="card-body pl-5">
+    <h4>Host Ed25519 Key Cert Pub</h4><br/>
+    <span class="description"><p>Ed25519 host certificate public key. <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Return_value_host_ed25519_key_cert_pub_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_host_ed25519_key_cert_pub_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_ed25519_key_cert_pub_anyOf_i0" id="Return_value_host_ed25519_key_cert_pub_anyOf_i0" onclick="setAnchor('#Return_value_host_ed25519_key_cert_pub_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_ed25519_key_cert_pub_anyOf_i1" id="Return_value_host_ed25519_key_cert_pub_anyOf_i1" onclick="setAnchor('#Return_value_host_ed25519_key_cert_pub_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_host_ed25519_key_cert_pub_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_host_ed25519_key_cert_pub_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_host_key">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_host_key">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_host_key" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_host_key" data-toggle="collapse" onclick="setAnchor('#Return_value_host_key')" type="button"><span class="property-name">host_key</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_host_key" class="collapse property-definition-div" data-parent="#accordionReturn_value_host_key" id="Return_value_host_key">
+    <div class="card-body pl-5">
+    <h4>Host Key</h4><br/>
+    <span class="description"><p>Legacy SSH host private key. <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Return_value_host_key_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_host_key_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_key_anyOf_i0" id="Return_value_host_key_anyOf_i0" onclick="setAnchor('#Return_value_host_key_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_key_anyOf_i1" id="Return_value_host_key_anyOf_i1" onclick="setAnchor('#Return_value_host_key_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_host_key_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_host_key_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_host_key_pub">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_host_key_pub">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_host_key_pub" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_host_key_pub" data-toggle="collapse" onclick="setAnchor('#Return_value_host_key_pub')" type="button"><span class="property-name">host_key_pub</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_host_key_pub" class="collapse property-definition-div" data-parent="#accordionReturn_value_host_key_pub" id="Return_value_host_key_pub">
+    <div class="card-body pl-5">
+    <h4>Host Key Pub</h4><br/>
+    <span class="description"><p>Legacy SSH host public key. <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Return_value_host_key_pub_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_host_key_pub_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_key_pub_anyOf_i0" id="Return_value_host_key_pub_anyOf_i0" onclick="setAnchor('#Return_value_host_key_pub_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_key_pub_anyOf_i1" id="Return_value_host_key_pub_anyOf_i1" onclick="setAnchor('#Return_value_host_key_pub_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_host_key_pub_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_host_key_pub_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_host_rsa_key">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_host_rsa_key">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_host_rsa_key" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_host_rsa_key" data-toggle="collapse" onclick="setAnchor('#Return_value_host_rsa_key')" type="button"><span class="property-name">host_rsa_key</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_host_rsa_key" class="collapse property-definition-div" data-parent="#accordionReturn_value_host_rsa_key" id="Return_value_host_rsa_key">
+    <div class="card-body pl-5">
+    <h4>Host Rsa Key</h4><br/>
+    <span class="description"><p>RSA host private key. <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Return_value_host_rsa_key_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_host_rsa_key_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_rsa_key_anyOf_i0" id="Return_value_host_rsa_key_anyOf_i0" onclick="setAnchor('#Return_value_host_rsa_key_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_rsa_key_anyOf_i1" id="Return_value_host_rsa_key_anyOf_i1" onclick="setAnchor('#Return_value_host_rsa_key_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_host_rsa_key_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_host_rsa_key_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_host_rsa_key_pub">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_host_rsa_key_pub">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_host_rsa_key_pub" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_host_rsa_key_pub" data-toggle="collapse" onclick="setAnchor('#Return_value_host_rsa_key_pub')" type="button"><span class="property-name">host_rsa_key_pub</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_host_rsa_key_pub" class="collapse property-definition-div" data-parent="#accordionReturn_value_host_rsa_key_pub" id="Return_value_host_rsa_key_pub">
+    <div class="card-body pl-5">
+    <h4>Host Rsa Key Pub</h4><br/>
+    <span class="description"><p>RSA host public key. <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Return_value_host_rsa_key_pub_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_host_rsa_key_pub_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_rsa_key_pub_anyOf_i0" id="Return_value_host_rsa_key_pub_anyOf_i0" onclick="setAnchor('#Return_value_host_rsa_key_pub_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_rsa_key_pub_anyOf_i1" id="Return_value_host_rsa_key_pub_anyOf_i1" onclick="setAnchor('#Return_value_host_rsa_key_pub_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_host_rsa_key_pub_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_host_rsa_key_pub_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_host_rsa_key_cert_pub">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_host_rsa_key_cert_pub">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_host_rsa_key_cert_pub" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_host_rsa_key_cert_pub" data-toggle="collapse" onclick="setAnchor('#Return_value_host_rsa_key_cert_pub')" type="button"><span class="property-name">host_rsa_key_cert_pub</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_host_rsa_key_cert_pub" class="collapse property-definition-div" data-parent="#accordionReturn_value_host_rsa_key_cert_pub" id="Return_value_host_rsa_key_cert_pub">
+    <div class="card-body pl-5">
+    <h4>Host Rsa Key Cert Pub</h4><br/>
+    <span class="description"><p>RSA host certificate public key. <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Return_value_host_rsa_key_cert_pub_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_host_rsa_key_cert_pub_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_rsa_key_cert_pub_anyOf_i0" id="Return_value_host_rsa_key_cert_pub_anyOf_i0" onclick="setAnchor('#Return_value_host_rsa_key_cert_pub_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_host_rsa_key_cert_pub_anyOf_i1" id="Return_value_host_rsa_key_cert_pub_anyOf_i1" onclick="setAnchor('#Return_value_host_rsa_key_cert_pub_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_host_rsa_key_cert_pub_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_host_rsa_key_cert_pub_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SSH_WRITE
+

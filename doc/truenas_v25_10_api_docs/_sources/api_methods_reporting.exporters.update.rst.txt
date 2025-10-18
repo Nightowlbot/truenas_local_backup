@@ -1,0 +1,478 @@
+reporting.exporters.update
+==========================
+
+Update Reporting Exporter of `id`.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: id</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>ID of the reporting exporter to update.</p>
+    </span>
+    </div>
+    </div>
+    <h5>Parameter 2: reporting_exporter_update</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>reporting_exporter_update</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Updated configuration for the reporting exporter.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_enabled">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_enabled">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_enabled" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_enabled" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_enabled')" type="button"><span class="property-name">enabled</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_enabled" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_enabled" id="Call_parameters_items_i1_enabled">
+    <div class="card-body pl-5">
+    <h4>Enabled</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this exporter is enabled and active.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_attributes">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_attributes">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_attributes" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_attributes" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_attributes')" type="button"><span class="property-name">attributes</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_attributes" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_attributes" id="Call_parameters_items_i1_attributes">
+    <div class="card-body pl-5">
+    <h4>Attributes</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Specific attributes for the exporter.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_attributes_exporter_type">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_attributes_exporter_type">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_attributes_exporter_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_attributes_exporter_type" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_attributes_exporter_type')" type="button"><span class="property-name">exporter_type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_attributes_exporter_type" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_attributes_exporter_type" id="Call_parameters_items_i1_attributes_exporter_type">
+    <div class="card-body pl-5">
+    <h4>Exporter Type</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Type of exporter - Graphite.</p>
+    </span><div class="enum-value" id="Call_parameters_items_i1_attributes_exporter_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"GRAPHITE"</li></ul>
+    </div><span class="const-value" id="Call_parameters_items_i1_attributes_exporter_type_const">Specific value: <code>"GRAPHITE"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_attributes_destination_ip">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_attributes_destination_ip">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_attributes_destination_ip" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_attributes_destination_ip" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_attributes_destination_ip')" type="button"><span class="property-name">destination_ip</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_attributes_destination_ip" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_attributes_destination_ip" id="Call_parameters_items_i1_attributes_destination_ip">
+    <div class="card-body pl-5">
+    <h4>Destination Ip</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>IP address of the Graphite server.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i1_attributes_destination_ip_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_attributes_destination_port">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_attributes_destination_port">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_attributes_destination_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_attributes_destination_port" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_attributes_destination_port')" type="button"><span class="property-name">destination_port</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_attributes_destination_port" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_attributes_destination_port" id="Call_parameters_items_i1_attributes_destination_port">
+    <div class="card-body pl-5">
+    <h4>Destination Port</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Port number of the Graphite server.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i1_attributes_destination_port_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>65535</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_attributes_prefix">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_attributes_prefix">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_attributes_prefix" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_attributes_prefix" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_attributes_prefix')" type="button"><span class="property-name">prefix</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_attributes_prefix" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_attributes_prefix" id="Call_parameters_items_i1_attributes_prefix">
+    <div class="card-body pl-5">
+    <h4>Prefix</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "scale"</span><br/>
+    <span class="description"><p>Prefix to prepend to all metric names.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_attributes_namespace">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_attributes_namespace">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_attributes_namespace" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_attributes_namespace" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_attributes_namespace')" type="button"><span class="property-name">namespace</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_attributes_namespace" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_attributes_namespace" id="Call_parameters_items_i1_attributes_namespace">
+    <div class="card-body pl-5">
+    <h4>Namespace</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Namespace to organize metrics under.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i1_attributes_namespace_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_attributes_update_every">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_attributes_update_every">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_attributes_update_every" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_attributes_update_every" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_attributes_update_every')" type="button"><span class="property-name">update_every</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_attributes_update_every" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_attributes_update_every" id="Call_parameters_items_i1_attributes_update_every">
+    <div class="card-body pl-5">
+    <h4>Update Every</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 1</span><br/>
+    <span class="description"><p>Interval in seconds between metric updates.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i1_attributes_update_every_number">Value must be greater or equal to <code>1</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_attributes_buffer_on_failures">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_attributes_buffer_on_failures">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_attributes_buffer_on_failures" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_attributes_buffer_on_failures" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_attributes_buffer_on_failures')" type="button"><span class="property-name">buffer_on_failures</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_attributes_buffer_on_failures" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_attributes_buffer_on_failures" id="Call_parameters_items_i1_attributes_buffer_on_failures">
+    <div class="card-body pl-5">
+    <h4>Buffer On Failures</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 10</span><br/>
+    <span class="description"><p>Number of updates to buffer when Graphite server is unavailable.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i1_attributes_buffer_on_failures_number">Value must be greater or equal to <code>1</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_attributes_send_names_instead_of_ids">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_attributes_send_names_instead_of_ids">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_attributes_send_names_instead_of_ids" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_attributes_send_names_instead_of_ids" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_attributes_send_names_instead_of_ids')" type="button"><span class="property-name">send_names_instead_of_ids</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_attributes_send_names_instead_of_ids" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_attributes_send_names_instead_of_ids" id="Call_parameters_items_i1_attributes_send_names_instead_of_ids">
+    <div class="card-body pl-5">
+    <h4>Send Names Instead Of Ids</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Whether to send human-readable names instead of internal IDs.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_attributes_matching_charts">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_attributes_matching_charts">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_attributes_matching_charts" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_attributes_matching_charts" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_attributes_matching_charts')" type="button"><span class="property-name">matching_charts</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_attributes_matching_charts" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_attributes_matching_charts" id="Call_parameters_items_i1_attributes_matching_charts">
+    <div class="card-body pl-5">
+    <h4>Matching Charts</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "*"</span><br/>
+    <span class="description"><p>Pattern to match charts for export (supports wildcards).</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i1_attributes_matching_charts_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_name">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_name">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_name" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_name')" type="button"><span class="property-name">name</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_name" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_name" id="Call_parameters_items_i1_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>User defined name of exporter configuration.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>ReportingExporterEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The updated reporting exporter configuration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the reporting exporter.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_enabled">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_enabled">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_enabled" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_enabled" data-toggle="collapse" onclick="setAnchor('#Return_value_enabled')" type="button"><span class="property-name">enabled</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_enabled" class="collapse property-definition-div" data-parent="#accordionReturn_value_enabled" id="Return_value_enabled">
+    <div class="card-body pl-5">
+    <h4>Enabled</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this exporter is enabled and active.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_attributes">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_attributes">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_attributes" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_attributes" data-toggle="collapse" onclick="setAnchor('#Return_value_attributes')" type="button"><span class="property-name">attributes</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_attributes" class="collapse property-definition-div" data-parent="#accordionReturn_value_attributes" id="Return_value_attributes">
+    <div class="card-body pl-5">
+    <h4>Attributes</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Specific attributes for the exporter.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_attributes_exporter_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_attributes_exporter_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_attributes_exporter_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_attributes_exporter_type" data-toggle="collapse" onclick="setAnchor('#Return_value_attributes_exporter_type')" type="button"><span class="property-name">exporter_type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_attributes_exporter_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_attributes_exporter_type" id="Return_value_attributes_exporter_type">
+    <div class="card-body pl-5">
+    <h4>Exporter Type</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Type of exporter - Graphite.</p>
+    </span><div class="enum-value" id="Return_value_attributes_exporter_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"GRAPHITE"</li></ul>
+    </div><span class="const-value" id="Return_value_attributes_exporter_type_const">Specific value: <code>"GRAPHITE"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_attributes_destination_ip">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_attributes_destination_ip">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_attributes_destination_ip" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_attributes_destination_ip" data-toggle="collapse" onclick="setAnchor('#Return_value_attributes_destination_ip')" type="button"><span class="property-name">destination_ip</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_attributes_destination_ip" class="collapse property-definition-div" data-parent="#accordionReturn_value_attributes_destination_ip" id="Return_value_attributes_destination_ip">
+    <div class="card-body pl-5">
+    <h4>Destination Ip</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>IP address of the Graphite server.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_attributes_destination_ip_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_attributes_destination_port">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_attributes_destination_port">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_attributes_destination_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_attributes_destination_port" data-toggle="collapse" onclick="setAnchor('#Return_value_attributes_destination_port')" type="button"><span class="property-name">destination_port</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_attributes_destination_port" class="collapse property-definition-div" data-parent="#accordionReturn_value_attributes_destination_port" id="Return_value_attributes_destination_port">
+    <div class="card-body pl-5">
+    <h4>Destination Port</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Port number of the Graphite server.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_attributes_destination_port_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>65535</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_attributes_prefix">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_attributes_prefix">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_attributes_prefix" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_attributes_prefix" data-toggle="collapse" onclick="setAnchor('#Return_value_attributes_prefix')" type="button"><span class="property-name">prefix</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_attributes_prefix" class="collapse property-definition-div" data-parent="#accordionReturn_value_attributes_prefix" id="Return_value_attributes_prefix">
+    <div class="card-body pl-5">
+    <h4>Prefix</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "scale"</span><br/>
+    <span class="description"><p>Prefix to prepend to all metric names.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_attributes_namespace">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_attributes_namespace">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_attributes_namespace" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_attributes_namespace" data-toggle="collapse" onclick="setAnchor('#Return_value_attributes_namespace')" type="button"><span class="property-name">namespace</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_attributes_namespace" class="collapse property-definition-div" data-parent="#accordionReturn_value_attributes_namespace" id="Return_value_attributes_namespace">
+    <div class="card-body pl-5">
+    <h4>Namespace</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Namespace to organize metrics under.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_attributes_namespace_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_attributes_update_every">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_attributes_update_every">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_attributes_update_every" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_attributes_update_every" data-toggle="collapse" onclick="setAnchor('#Return_value_attributes_update_every')" type="button"><span class="property-name">update_every</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_attributes_update_every" class="collapse property-definition-div" data-parent="#accordionReturn_value_attributes_update_every" id="Return_value_attributes_update_every">
+    <div class="card-body pl-5">
+    <h4>Update Every</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 1</span><br/>
+    <span class="description"><p>Interval in seconds between metric updates.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_attributes_update_every_number">Value must be greater or equal to <code>1</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_attributes_buffer_on_failures">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_attributes_buffer_on_failures">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_attributes_buffer_on_failures" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_attributes_buffer_on_failures" data-toggle="collapse" onclick="setAnchor('#Return_value_attributes_buffer_on_failures')" type="button"><span class="property-name">buffer_on_failures</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_attributes_buffer_on_failures" class="collapse property-definition-div" data-parent="#accordionReturn_value_attributes_buffer_on_failures" id="Return_value_attributes_buffer_on_failures">
+    <div class="card-body pl-5">
+    <h4>Buffer On Failures</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 10</span><br/>
+    <span class="description"><p>Number of updates to buffer when Graphite server is unavailable.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_attributes_buffer_on_failures_number">Value must be greater or equal to <code>1</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_attributes_send_names_instead_of_ids">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_attributes_send_names_instead_of_ids">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_attributes_send_names_instead_of_ids" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_attributes_send_names_instead_of_ids" data-toggle="collapse" onclick="setAnchor('#Return_value_attributes_send_names_instead_of_ids')" type="button"><span class="property-name">send_names_instead_of_ids</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_attributes_send_names_instead_of_ids" class="collapse property-definition-div" data-parent="#accordionReturn_value_attributes_send_names_instead_of_ids" id="Return_value_attributes_send_names_instead_of_ids">
+    <div class="card-body pl-5">
+    <h4>Send Names Instead Of Ids</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Whether to send human-readable names instead of internal IDs.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_attributes_matching_charts">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_attributes_matching_charts">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_attributes_matching_charts" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_attributes_matching_charts" data-toggle="collapse" onclick="setAnchor('#Return_value_attributes_matching_charts')" type="button"><span class="property-name">matching_charts</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_attributes_matching_charts" class="collapse property-definition-div" data-parent="#accordionReturn_value_attributes_matching_charts" id="Return_value_attributes_matching_charts">
+    <div class="card-body pl-5">
+    <h4>Matching Charts</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "*"</span><br/>
+    <span class="description"><p>Pattern to match charts for export (supports wildcards).</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_attributes_matching_charts_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_name" data-toggle="collapse" onclick="setAnchor('#Return_value_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_name" id="Return_value_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>User defined name of exporter configuration.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* REPORTING_WRITE
+

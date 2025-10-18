@@ -1,0 +1,6 @@
+reporting
+---------
+
+.. toctree::
+
+   api_events_reporting.realtime

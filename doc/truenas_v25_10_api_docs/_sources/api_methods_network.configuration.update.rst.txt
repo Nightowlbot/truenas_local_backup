@@ -1,0 +1,1121 @@
+network.configuration.update
+============================
+
+Update Network Configuration Service configuration.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: data</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>data</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Network configuration data to update.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_hostname">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_hostname">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_hostname" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_hostname" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_hostname')" type="button"><span class="property-name">hostname</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_hostname" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_hostname" id="Call_parameters_items_i0_hostname">
+    <div class="card-body pl-5">
+    <h4>Hostname</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>System hostname.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_domain">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_domain">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_domain" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_domain" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_domain')" type="button"><span class="property-name">domain</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_domain" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_domain" id="Call_parameters_items_i0_domain">
+    <div class="card-body pl-5">
+    <h4>Domain</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>System domain name.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_ipv4gateway">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_ipv4gateway">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_ipv4gateway" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_ipv4gateway" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_ipv4gateway')" type="button"><span class="property-name">ipv4gateway</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_ipv4gateway" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_ipv4gateway" id="Call_parameters_items_i0_ipv4gateway">
+    <div class="card-body pl-5">
+    <h4>Ipv4Gateway</h4><br/>
+    <span class="description"><p>Used instead of the default gateway provided by DHCP.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_ipv4gateway_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_ipv4gateway_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_ipv4gateway_anyOf_i0" id="Call_parameters_items_i0_ipv4gateway_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_ipv4gateway_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_ipv4gateway_anyOf_i1" id="Call_parameters_items_i0_ipv4gateway_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_ipv4gateway_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_ipv4gateway_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Call_parameters_items_i0_ipv4gateway_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li></ul>
+    </div><span class="const-value" id="Call_parameters_items_i0_ipv4gateway_anyOf_i0_const">Specific value: <code>""</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_ipv4gateway_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_ipv6gateway">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_ipv6gateway">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_ipv6gateway" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_ipv6gateway" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_ipv6gateway')" type="button"><span class="property-name">ipv6gateway</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_ipv6gateway" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_ipv6gateway" id="Call_parameters_items_i0_ipv6gateway">
+    <div class="card-body pl-5">
+    <h4>Ipv6Gateway</h4><br/>
+    <span class="description"><p>IPv6 default gateway address.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_ipv6gateway_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_ipv6gateway_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_ipv6gateway_anyOf_i0" id="Call_parameters_items_i0_ipv6gateway_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_ipv6gateway_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_ipv6gateway_anyOf_i1" id="Call_parameters_items_i0_ipv6gateway_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_ipv6gateway_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_ipv6gateway_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Call_parameters_items_i0_ipv6gateway_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li></ul>
+    </div><span class="const-value" id="Call_parameters_items_i0_ipv6gateway_anyOf_i0_const">Specific value: <code>""</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_ipv6gateway_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_nameserver1">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_nameserver1">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_nameserver1" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_nameserver1" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_nameserver1')" type="button"><span class="property-name">nameserver1</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_nameserver1" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_nameserver1" id="Call_parameters_items_i0_nameserver1">
+    <div class="card-body pl-5">
+    <h4>Nameserver1</h4><br/>
+    <span class="description"><p>Primary DNS server.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_nameserver1_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_nameserver1_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_nameserver1_anyOf_i0" id="Call_parameters_items_i0_nameserver1_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_nameserver1_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_nameserver1_anyOf_i1" id="Call_parameters_items_i0_nameserver1_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_nameserver1_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_nameserver1_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Call_parameters_items_i0_nameserver1_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li></ul>
+    </div><span class="const-value" id="Call_parameters_items_i0_nameserver1_anyOf_i0_const">Specific value: <code>""</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_nameserver1_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_nameserver2">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_nameserver2">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_nameserver2" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_nameserver2" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_nameserver2')" type="button"><span class="property-name">nameserver2</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_nameserver2" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_nameserver2" id="Call_parameters_items_i0_nameserver2">
+    <div class="card-body pl-5">
+    <h4>Nameserver2</h4><br/>
+    <span class="description"><p>Secondary DNS server.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_nameserver2_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_nameserver2_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_nameserver2_anyOf_i0" id="Call_parameters_items_i0_nameserver2_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_nameserver2_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_nameserver2_anyOf_i1" id="Call_parameters_items_i0_nameserver2_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_nameserver2_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_nameserver2_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Call_parameters_items_i0_nameserver2_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li></ul>
+    </div><span class="const-value" id="Call_parameters_items_i0_nameserver2_anyOf_i0_const">Specific value: <code>""</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_nameserver2_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_nameserver3">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_nameserver3">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_nameserver3" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_nameserver3" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_nameserver3')" type="button"><span class="property-name">nameserver3</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_nameserver3" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_nameserver3" id="Call_parameters_items_i0_nameserver3">
+    <div class="card-body pl-5">
+    <h4>Nameserver3</h4><br/>
+    <span class="description"><p>Tertiary DNS server.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_nameserver3_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_nameserver3_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_nameserver3_anyOf_i0" id="Call_parameters_items_i0_nameserver3_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_nameserver3_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_nameserver3_anyOf_i1" id="Call_parameters_items_i0_nameserver3_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_nameserver3_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_nameserver3_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Call_parameters_items_i0_nameserver3_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li></ul>
+    </div><span class="const-value" id="Call_parameters_items_i0_nameserver3_anyOf_i0_const">Specific value: <code>""</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_nameserver3_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_httpproxy">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_httpproxy">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_httpproxy" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_httpproxy" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_httpproxy')" type="button"><span class="property-name">httpproxy</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_httpproxy" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_httpproxy" id="Call_parameters_items_i0_httpproxy">
+    <div class="card-body pl-5">
+    <h4>Httpproxy</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Must be provided if a proxy is to be used for network operations.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_hosts">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_hosts">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_hosts" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_hosts" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_hosts')" type="button"><span class="property-name">hosts</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_hosts" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_hosts" id="Call_parameters_items_i0_hosts">
+    <div class="card-body pl-5">
+    <h4>Hosts</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Static host entries to add to the hosts file.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_hosts_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_domains">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_domains">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_domains" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_domains" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_domains')" type="button"><span class="property-name">domains</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_domains" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_domains" id="Call_parameters_items_i0_domains">
+    <div class="card-body pl-5">
+    <h4>Domains</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Additional domain names for DNS search.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_domains_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_service_announcement">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_service_announcement">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_service_announcement" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_service_announcement" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_service_announcement')" type="button"><span class="property-name">service_announcement</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_service_announcement" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_service_announcement" id="Call_parameters_items_i0_service_announcement">
+    <div class="card-body pl-5">
+    <h4>ServiceAnnouncement</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Determines the broadcast protocols that will be used to advertise the server.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_service_announcement_netbios">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_service_announcement_netbios">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_service_announcement_netbios" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_service_announcement_netbios" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_service_announcement_netbios')" type="button"><span class="property-name">netbios</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_service_announcement_netbios" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_service_announcement_netbios" id="Call_parameters_items_i0_service_announcement_netbios">
+    <div class="card-body pl-5">
+    <h4>Netbios</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Enable the NetBIOS name server (NBNS) which starts concurrently with the SMB service. SMB clients will only     perform NBNS lookups if SMB1 is enabled. NBNS may be required for legacy SMB clients.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_service_announcement_mdns">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_service_announcement_mdns">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_service_announcement_mdns" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_service_announcement_mdns" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_service_announcement_mdns')" type="button"><span class="property-name">mdns</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_service_announcement_mdns" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_service_announcement_mdns" id="Call_parameters_items_i0_service_announcement_mdns">
+    <div class="card-body pl-5">
+    <h4>Mdns</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Enable multicast DNS service announcements for enabled services.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_service_announcement_wsd">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_service_announcement_wsd">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_service_announcement_wsd" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_service_announcement_wsd" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_service_announcement_wsd')" type="button"><span class="property-name">wsd</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_service_announcement_wsd" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_service_announcement_wsd" id="Call_parameters_items_i0_service_announcement_wsd">
+    <div class="card-body pl-5">
+    <h4>Wsd</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Enable Web Service Discovery support.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_activity">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_activity">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_activity" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_activity" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_activity')" type="button"><span class="property-name">activity</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_activity" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_activity" id="Call_parameters_items_i0_activity">
+    <div class="card-body pl-5">
+    <h4>NetworkConfigurationActivity</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Network activity filtering configuration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_activity_type">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_activity_type">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_activity_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_activity_type" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_activity_type')" type="button"><span class="property-name">type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_activity_type" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_activity_type" id="Call_parameters_items_i0_activity_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Whether to allow or deny the specified network activities.</p>
+    </span><div class="enum-value" id="Call_parameters_items_i0_activity_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"ALLOW"</li><li class="list-group-item enum-item">"DENY"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_activity_activities">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_activity_activities">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_activity_activities" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_activity_activities" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_activity_activities')" type="button"><span class="property-name">activities</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_activity_activities" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_activity_activities" id="Call_parameters_items_i0_activity_activities">
+    <div class="card-body pl-5">
+    <h4>Activities</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>Array of network activity types to allow or deny.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_activity_activities_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_hostname_b">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_hostname_b">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_hostname_b" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_hostname_b" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_hostname_b')" type="button"><span class="property-name">hostname_b</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_hostname_b" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_hostname_b" id="Call_parameters_items_i0_hostname_b">
+    <div class="card-body pl-5">
+    <h4>Hostname B</h4><br/>
+    <span class="description"><p>Hostname for the second controller in HA configurations or <code>null</code>.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_hostname_b_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_hostname_b_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_hostname_b_anyOf_i0" id="Call_parameters_items_i0_hostname_b_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_hostname_b_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_hostname_b_anyOf_i1" id="Call_parameters_items_i0_hostname_b_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_hostname_b_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_hostname_b_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_hostname_b_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_hostname_virtual">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_hostname_virtual">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_hostname_virtual" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_hostname_virtual" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_hostname_virtual')" type="button"><span class="property-name">hostname_virtual</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_hostname_virtual" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_hostname_virtual" id="Call_parameters_items_i0_hostname_virtual">
+    <div class="card-body pl-5">
+    <h4>Hostname Virtual</h4><br/>
+    <span class="description"><p>Virtual hostname for HA configurations or <code>null</code>.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_hostname_virtual_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_hostname_virtual_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_hostname_virtual_anyOf_i0" id="Call_parameters_items_i0_hostname_virtual_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_hostname_virtual_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_hostname_virtual_anyOf_i1" id="Call_parameters_items_i0_hostname_virtual_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_hostname_virtual_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_hostname_virtual_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_hostname_virtual_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>NetworkConfigurationEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The updated network configuration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the network configuration.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_hostname">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_hostname">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_hostname" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_hostname" data-toggle="collapse" onclick="setAnchor('#Return_value_hostname')" type="button"><span class="property-name">hostname</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_hostname" class="collapse property-definition-div" data-parent="#accordionReturn_value_hostname" id="Return_value_hostname">
+    <div class="card-body pl-5">
+    <h4>Hostname</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>System hostname.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_domain">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_domain">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_domain" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_domain" data-toggle="collapse" onclick="setAnchor('#Return_value_domain')" type="button"><span class="property-name">domain</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_domain" class="collapse property-definition-div" data-parent="#accordionReturn_value_domain" id="Return_value_domain">
+    <div class="card-body pl-5">
+    <h4>Domain</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>System domain name.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_ipv4gateway">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_ipv4gateway">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_ipv4gateway" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_ipv4gateway" data-toggle="collapse" onclick="setAnchor('#Return_value_ipv4gateway')" type="button"><span class="property-name">ipv4gateway</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_ipv4gateway" class="collapse property-definition-div" data-parent="#accordionReturn_value_ipv4gateway" id="Return_value_ipv4gateway">
+    <div class="card-body pl-5">
+    <h4>Ipv4Gateway</h4><br/>
+    <span class="description"><p>Used instead of the default gateway provided by DHCP.</p>
+    </span><div class="any-of-value" id="Return_value_ipv4gateway_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_ipv4gateway_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_ipv4gateway_anyOf_i0" id="Return_value_ipv4gateway_anyOf_i0" onclick="setAnchor('#Return_value_ipv4gateway_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_ipv4gateway_anyOf_i1" id="Return_value_ipv4gateway_anyOf_i1" onclick="setAnchor('#Return_value_ipv4gateway_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_ipv4gateway_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_ipv4gateway_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li></ul>
+    </div><span class="const-value" id="Return_value_ipv4gateway_anyOf_i0_const">Specific value: <code>""</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_ipv4gateway_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_ipv6gateway">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_ipv6gateway">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_ipv6gateway" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_ipv6gateway" data-toggle="collapse" onclick="setAnchor('#Return_value_ipv6gateway')" type="button"><span class="property-name">ipv6gateway</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_ipv6gateway" class="collapse property-definition-div" data-parent="#accordionReturn_value_ipv6gateway" id="Return_value_ipv6gateway">
+    <div class="card-body pl-5">
+    <h4>Ipv6Gateway</h4><br/>
+    <span class="description"><p>IPv6 default gateway address.</p>
+    </span><div class="any-of-value" id="Return_value_ipv6gateway_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_ipv6gateway_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_ipv6gateway_anyOf_i0" id="Return_value_ipv6gateway_anyOf_i0" onclick="setAnchor('#Return_value_ipv6gateway_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_ipv6gateway_anyOf_i1" id="Return_value_ipv6gateway_anyOf_i1" onclick="setAnchor('#Return_value_ipv6gateway_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_ipv6gateway_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_ipv6gateway_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li></ul>
+    </div><span class="const-value" id="Return_value_ipv6gateway_anyOf_i0_const">Specific value: <code>""</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_ipv6gateway_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_nameserver1">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_nameserver1">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_nameserver1" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_nameserver1" data-toggle="collapse" onclick="setAnchor('#Return_value_nameserver1')" type="button"><span class="property-name">nameserver1</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_nameserver1" class="collapse property-definition-div" data-parent="#accordionReturn_value_nameserver1" id="Return_value_nameserver1">
+    <div class="card-body pl-5">
+    <h4>Nameserver1</h4><br/>
+    <span class="description"><p>Primary DNS server.</p>
+    </span><div class="any-of-value" id="Return_value_nameserver1_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_nameserver1_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_nameserver1_anyOf_i0" id="Return_value_nameserver1_anyOf_i0" onclick="setAnchor('#Return_value_nameserver1_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_nameserver1_anyOf_i1" id="Return_value_nameserver1_anyOf_i1" onclick="setAnchor('#Return_value_nameserver1_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_nameserver1_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_nameserver1_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li></ul>
+    </div><span class="const-value" id="Return_value_nameserver1_anyOf_i0_const">Specific value: <code>""</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_nameserver1_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_nameserver2">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_nameserver2">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_nameserver2" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_nameserver2" data-toggle="collapse" onclick="setAnchor('#Return_value_nameserver2')" type="button"><span class="property-name">nameserver2</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_nameserver2" class="collapse property-definition-div" data-parent="#accordionReturn_value_nameserver2" id="Return_value_nameserver2">
+    <div class="card-body pl-5">
+    <h4>Nameserver2</h4><br/>
+    <span class="description"><p>Secondary DNS server.</p>
+    </span><div class="any-of-value" id="Return_value_nameserver2_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_nameserver2_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_nameserver2_anyOf_i0" id="Return_value_nameserver2_anyOf_i0" onclick="setAnchor('#Return_value_nameserver2_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_nameserver2_anyOf_i1" id="Return_value_nameserver2_anyOf_i1" onclick="setAnchor('#Return_value_nameserver2_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_nameserver2_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_nameserver2_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li></ul>
+    </div><span class="const-value" id="Return_value_nameserver2_anyOf_i0_const">Specific value: <code>""</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_nameserver2_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_nameserver3">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_nameserver3">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_nameserver3" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_nameserver3" data-toggle="collapse" onclick="setAnchor('#Return_value_nameserver3')" type="button"><span class="property-name">nameserver3</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_nameserver3" class="collapse property-definition-div" data-parent="#accordionReturn_value_nameserver3" id="Return_value_nameserver3">
+    <div class="card-body pl-5">
+    <h4>Nameserver3</h4><br/>
+    <span class="description"><p>Tertiary DNS server.</p>
+    </span><div class="any-of-value" id="Return_value_nameserver3_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_nameserver3_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_nameserver3_anyOf_i0" id="Return_value_nameserver3_anyOf_i0" onclick="setAnchor('#Return_value_nameserver3_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_nameserver3_anyOf_i1" id="Return_value_nameserver3_anyOf_i1" onclick="setAnchor('#Return_value_nameserver3_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_nameserver3_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_nameserver3_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li></ul>
+    </div><span class="const-value" id="Return_value_nameserver3_anyOf_i0_const">Specific value: <code>""</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_nameserver3_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_httpproxy">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_httpproxy">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_httpproxy" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_httpproxy" data-toggle="collapse" onclick="setAnchor('#Return_value_httpproxy')" type="button"><span class="property-name">httpproxy</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_httpproxy" class="collapse property-definition-div" data-parent="#accordionReturn_value_httpproxy" id="Return_value_httpproxy">
+    <div class="card-body pl-5">
+    <h4>Httpproxy</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Must be provided if a proxy is to be used for network operations.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_hosts">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_hosts">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_hosts" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_hosts" data-toggle="collapse" onclick="setAnchor('#Return_value_hosts')" type="button"><span class="property-name">hosts</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_hosts" class="collapse property-definition-div" data-parent="#accordionReturn_value_hosts" id="Return_value_hosts">
+    <div class="card-body pl-5">
+    <h4>Hosts</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Static host entries to add to the hosts file.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_hosts_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_domains">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_domains">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_domains" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_domains" data-toggle="collapse" onclick="setAnchor('#Return_value_domains')" type="button"><span class="property-name">domains</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_domains" class="collapse property-definition-div" data-parent="#accordionReturn_value_domains" id="Return_value_domains">
+    <div class="card-body pl-5">
+    <h4>Domains</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Additional domain names for DNS search.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_domains_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_service_announcement">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_service_announcement">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_service_announcement" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_service_announcement" data-toggle="collapse" onclick="setAnchor('#Return_value_service_announcement')" type="button"><span class="property-name">service_announcement</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_service_announcement" class="collapse property-definition-div" data-parent="#accordionReturn_value_service_announcement" id="Return_value_service_announcement">
+    <div class="card-body pl-5">
+    <h4>ServiceAnnouncement</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Determines the broadcast protocols that will be used to advertise the server.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_service_announcement_netbios">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_service_announcement_netbios">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_service_announcement_netbios" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_service_announcement_netbios" data-toggle="collapse" onclick="setAnchor('#Return_value_service_announcement_netbios')" type="button"><span class="property-name">netbios</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_service_announcement_netbios" class="collapse property-definition-div" data-parent="#accordionReturn_value_service_announcement_netbios" id="Return_value_service_announcement_netbios">
+    <div class="card-body pl-5">
+    <h4>Netbios</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Enable the NetBIOS name server (NBNS) which starts concurrently with the SMB service. SMB clients will only     perform NBNS lookups if SMB1 is enabled. NBNS may be required for legacy SMB clients.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_service_announcement_mdns">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_service_announcement_mdns">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_service_announcement_mdns" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_service_announcement_mdns" data-toggle="collapse" onclick="setAnchor('#Return_value_service_announcement_mdns')" type="button"><span class="property-name">mdns</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_service_announcement_mdns" class="collapse property-definition-div" data-parent="#accordionReturn_value_service_announcement_mdns" id="Return_value_service_announcement_mdns">
+    <div class="card-body pl-5">
+    <h4>Mdns</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Enable multicast DNS service announcements for enabled services.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_service_announcement_wsd">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_service_announcement_wsd">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_service_announcement_wsd" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_service_announcement_wsd" data-toggle="collapse" onclick="setAnchor('#Return_value_service_announcement_wsd')" type="button"><span class="property-name">wsd</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_service_announcement_wsd" class="collapse property-definition-div" data-parent="#accordionReturn_value_service_announcement_wsd" id="Return_value_service_announcement_wsd">
+    <div class="card-body pl-5">
+    <h4>Wsd</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Enable Web Service Discovery support.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_activity">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_activity">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_activity" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_activity" data-toggle="collapse" onclick="setAnchor('#Return_value_activity')" type="button"><span class="property-name">activity</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_activity" class="collapse property-definition-div" data-parent="#accordionReturn_value_activity" id="Return_value_activity">
+    <div class="card-body pl-5">
+    <h4>NetworkConfigurationActivity</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Network activity filtering configuration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_activity_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_activity_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_activity_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_activity_type" data-toggle="collapse" onclick="setAnchor('#Return_value_activity_type')" type="button"><span class="property-name">type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_activity_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_activity_type" id="Return_value_activity_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Whether to allow or deny the specified network activities.</p>
+    </span><div class="enum-value" id="Return_value_activity_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"ALLOW"</li><li class="list-group-item enum-item">"DENY"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_activity_activities">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_activity_activities">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_activity_activities" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_activity_activities" data-toggle="collapse" onclick="setAnchor('#Return_value_activity_activities')" type="button"><span class="property-name">activities</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_activity_activities" class="collapse property-definition-div" data-parent="#accordionReturn_value_activity_activities" id="Return_value_activity_activities">
+    <div class="card-body pl-5">
+    <h4>Activities</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>Array of network activity types to allow or deny.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_activity_activities_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_hostname_local">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_hostname_local">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_hostname_local" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_hostname_local" data-toggle="collapse" onclick="setAnchor('#Return_value_hostname_local')" type="button"><span class="property-name">hostname_local</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_hostname_local" class="collapse property-definition-div" data-parent="#accordionReturn_value_hostname_local" id="Return_value_hostname_local">
+    <div class="card-body pl-5">
+    <h4>Hostname Local</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Local hostname for this system.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_hostname_b">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_hostname_b">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_hostname_b" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_hostname_b" data-toggle="collapse" onclick="setAnchor('#Return_value_hostname_b')" type="button"><span class="property-name">hostname_b</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_hostname_b" class="collapse property-definition-div" data-parent="#accordionReturn_value_hostname_b" id="Return_value_hostname_b">
+    <div class="card-body pl-5">
+    <h4>Hostname B</h4><br/>
+    <span class="description"><p>Hostname for the second controller in HA configurations or <code>null</code>.</p>
+    </span><div class="any-of-value" id="Return_value_hostname_b_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_hostname_b_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_hostname_b_anyOf_i0" id="Return_value_hostname_b_anyOf_i0" onclick="setAnchor('#Return_value_hostname_b_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_hostname_b_anyOf_i1" id="Return_value_hostname_b_anyOf_i1" onclick="setAnchor('#Return_value_hostname_b_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_hostname_b_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_hostname_b_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_hostname_virtual">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_hostname_virtual">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_hostname_virtual" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_hostname_virtual" data-toggle="collapse" onclick="setAnchor('#Return_value_hostname_virtual')" type="button"><span class="property-name">hostname_virtual</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_hostname_virtual" class="collapse property-definition-div" data-parent="#accordionReturn_value_hostname_virtual" id="Return_value_hostname_virtual">
+    <div class="card-body pl-5">
+    <h4>Hostname Virtual</h4><br/>
+    <span class="description"><p>Virtual hostname for HA configurations or <code>null</code>.</p>
+    </span><div class="any-of-value" id="Return_value_hostname_virtual_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_hostname_virtual_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_hostname_virtual_anyOf_i0" id="Return_value_hostname_virtual_anyOf_i0" onclick="setAnchor('#Return_value_hostname_virtual_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_hostname_virtual_anyOf_i1" id="Return_value_hostname_virtual_anyOf_i1" onclick="setAnchor('#Return_value_hostname_virtual_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_hostname_virtual_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_hostname_virtual_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_state">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_state">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_state" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_state" data-toggle="collapse" onclick="setAnchor('#Return_value_state')" type="button"><span class="property-name">state</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_state" class="collapse property-definition-div" data-parent="#accordionReturn_value_state" id="Return_value_state">
+    <div class="card-body pl-5">
+    <h4>NetWorkConfigurationState</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Current network configuration state.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_state_ipv4gateway">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_state_ipv4gateway">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_state_ipv4gateway" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_state_ipv4gateway" data-toggle="collapse" onclick="setAnchor('#Return_value_state_ipv4gateway')" type="button"><span class="property-name">ipv4gateway</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_state_ipv4gateway" class="collapse property-definition-div" data-parent="#accordionReturn_value_state_ipv4gateway" id="Return_value_state_ipv4gateway">
+    <div class="card-body pl-5">
+    <h4>Ipv4Gateway</h4><br/>
+    <span class="description"><p>Current IPv4 default gateway address.</p>
+    </span><div class="any-of-value" id="Return_value_state_ipv4gateway_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_state_ipv4gateway_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_state_ipv4gateway_anyOf_i0" id="Return_value_state_ipv4gateway_anyOf_i0" onclick="setAnchor('#Return_value_state_ipv4gateway_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_state_ipv4gateway_anyOf_i1" id="Return_value_state_ipv4gateway_anyOf_i1" onclick="setAnchor('#Return_value_state_ipv4gateway_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_state_ipv4gateway_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_state_ipv4gateway_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li></ul>
+    </div><span class="const-value" id="Return_value_state_ipv4gateway_anyOf_i0_const">Specific value: <code>""</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_state_ipv4gateway_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_state_ipv6gateway">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_state_ipv6gateway">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_state_ipv6gateway" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_state_ipv6gateway" data-toggle="collapse" onclick="setAnchor('#Return_value_state_ipv6gateway')" type="button"><span class="property-name">ipv6gateway</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_state_ipv6gateway" class="collapse property-definition-div" data-parent="#accordionReturn_value_state_ipv6gateway" id="Return_value_state_ipv6gateway">
+    <div class="card-body pl-5">
+    <h4>Ipv6Gateway</h4><br/>
+    <span class="description"><p>Current IPv6 default gateway address.</p>
+    </span><div class="any-of-value" id="Return_value_state_ipv6gateway_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_state_ipv6gateway_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_state_ipv6gateway_anyOf_i0" id="Return_value_state_ipv6gateway_anyOf_i0" onclick="setAnchor('#Return_value_state_ipv6gateway_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_state_ipv6gateway_anyOf_i1" id="Return_value_state_ipv6gateway_anyOf_i1" onclick="setAnchor('#Return_value_state_ipv6gateway_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_state_ipv6gateway_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_state_ipv6gateway_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li></ul>
+    </div><span class="const-value" id="Return_value_state_ipv6gateway_anyOf_i0_const">Specific value: <code>""</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_state_ipv6gateway_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_state_nameserver1">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_state_nameserver1">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_state_nameserver1" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_state_nameserver1" data-toggle="collapse" onclick="setAnchor('#Return_value_state_nameserver1')" type="button"><span class="property-name">nameserver1</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_state_nameserver1" class="collapse property-definition-div" data-parent="#accordionReturn_value_state_nameserver1" id="Return_value_state_nameserver1">
+    <div class="card-body pl-5">
+    <h4>Nameserver1</h4><br/>
+    <span class="description"><p>Current primary DNS server address.</p>
+    </span><div class="any-of-value" id="Return_value_state_nameserver1_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_state_nameserver1_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_state_nameserver1_anyOf_i0" id="Return_value_state_nameserver1_anyOf_i0" onclick="setAnchor('#Return_value_state_nameserver1_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_state_nameserver1_anyOf_i1" id="Return_value_state_nameserver1_anyOf_i1" onclick="setAnchor('#Return_value_state_nameserver1_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_state_nameserver1_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_state_nameserver1_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li></ul>
+    </div><span class="const-value" id="Return_value_state_nameserver1_anyOf_i0_const">Specific value: <code>""</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_state_nameserver1_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_state_nameserver2">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_state_nameserver2">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_state_nameserver2" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_state_nameserver2" data-toggle="collapse" onclick="setAnchor('#Return_value_state_nameserver2')" type="button"><span class="property-name">nameserver2</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_state_nameserver2" class="collapse property-definition-div" data-parent="#accordionReturn_value_state_nameserver2" id="Return_value_state_nameserver2">
+    <div class="card-body pl-5">
+    <h4>Nameserver2</h4><br/>
+    <span class="description"><p>Current secondary DNS server address.</p>
+    </span><div class="any-of-value" id="Return_value_state_nameserver2_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_state_nameserver2_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_state_nameserver2_anyOf_i0" id="Return_value_state_nameserver2_anyOf_i0" onclick="setAnchor('#Return_value_state_nameserver2_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_state_nameserver2_anyOf_i1" id="Return_value_state_nameserver2_anyOf_i1" onclick="setAnchor('#Return_value_state_nameserver2_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_state_nameserver2_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_state_nameserver2_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li></ul>
+    </div><span class="const-value" id="Return_value_state_nameserver2_anyOf_i0_const">Specific value: <code>""</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_state_nameserver2_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_state_nameserver3">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_state_nameserver3">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_state_nameserver3" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_state_nameserver3" data-toggle="collapse" onclick="setAnchor('#Return_value_state_nameserver3')" type="button"><span class="property-name">nameserver3</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_state_nameserver3" class="collapse property-definition-div" data-parent="#accordionReturn_value_state_nameserver3" id="Return_value_state_nameserver3">
+    <div class="card-body pl-5">
+    <h4>Nameserver3</h4><br/>
+    <span class="description"><p>Current tertiary DNS server address.</p>
+    </span><div class="any-of-value" id="Return_value_state_nameserver3_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_state_nameserver3_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_state_nameserver3_anyOf_i0" id="Return_value_state_nameserver3_anyOf_i0" onclick="setAnchor('#Return_value_state_nameserver3_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_state_nameserver3_anyOf_i1" id="Return_value_state_nameserver3_anyOf_i1" onclick="setAnchor('#Return_value_state_nameserver3_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_state_nameserver3_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_state_nameserver3_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li></ul>
+    </div><span class="const-value" id="Return_value_state_nameserver3_anyOf_i0_const">Specific value: <code>""</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_state_nameserver3_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_state_hosts">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_state_hosts">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_state_hosts" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_state_hosts" data-toggle="collapse" onclick="setAnchor('#Return_value_state_hosts')" type="button"><span class="property-name">hosts</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_state_hosts" class="collapse property-definition-div" data-parent="#accordionReturn_value_state_hosts" id="Return_value_state_hosts">
+    <div class="card-body pl-5">
+    <h4>Hosts</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Current hosts file entries.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_state_hosts_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* NETWORK_GENERAL_WRITE
+

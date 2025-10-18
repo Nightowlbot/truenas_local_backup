@@ -1,0 +1,220 @@
+iscsi.portal.update
+===================
+
+Update iSCSI Portal `id`.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: id</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>ID of the iSCSI portal to update.</p>
+    </span>
+    </div>
+    </div>
+    <h5>Parameter 2: iscsi_portal_update</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>iscsi_portal_update</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Updated iSCSI portal configuration data.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_listen">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_listen">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_listen" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_listen" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_listen')" type="button"><span class="property-name">listen</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_listen" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_listen" id="Call_parameters_items_i1_listen">
+    <div class="card-body pl-5">
+    <h4>Listen</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="description"><p>Array of IP addresses for the portal to listen on.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1_listen_items">
+    <h4>IscsiPortalIP</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_listen_items_ip">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_listen_items_ip">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_listen_items_ip" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_listen_items_ip" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_listen_items_ip')" type="button"><span class="property-name">ip</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_listen_items_ip" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_listen_items_ip" id="Call_parameters_items_i1_listen_items_ip">
+    <div class="card-body pl-5">
+    <h4>Ip</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>IP address for the iSCSI portal to listen on.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i1_listen_items_ip_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_comment">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_comment">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_comment" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_comment" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_comment')" type="button"><span class="property-name">comment</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_comment" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_comment" id="Call_parameters_items_i1_comment">
+    <div class="card-body pl-5">
+    <h4>Comment</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Optional comment describing the portal.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>IscsiPortalEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The updated iSCSI portal configuration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the iSCSI portal.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_listen">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_listen">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_listen" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_listen" data-toggle="collapse" onclick="setAnchor('#Return_value_listen')" type="button"><span class="property-name">listen</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_listen" class="collapse property-definition-div" data-parent="#accordionReturn_value_listen" id="Return_value_listen">
+    <div class="card-body pl-5">
+    <h4>Listen</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="description"><p>Array of IP address and port combinations for the portal to listen on.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_listen_items">
+    <h4>IscsiPortalIPInfo</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_listen_items_ip">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_listen_items_ip">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_listen_items_ip" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_listen_items_ip" data-toggle="collapse" onclick="setAnchor('#Return_value_listen_items_ip')" type="button"><span class="property-name">ip</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_listen_items_ip" class="collapse property-definition-div" data-parent="#accordionReturn_value_listen_items_ip" id="Return_value_listen_items_ip">
+    <div class="card-body pl-5">
+    <h4>Ip</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>IP address for the iSCSI portal to listen on.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_listen_items_ip_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_listen_items_port">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_listen_items_port">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_listen_items_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_listen_items_port" data-toggle="collapse" onclick="setAnchor('#Return_value_listen_items_port')" type="button"><span class="property-name">port</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_listen_items_port" class="collapse property-definition-div" data-parent="#accordionReturn_value_listen_items_port" id="Return_value_listen_items_port">
+    <div class="card-body pl-5">
+    <h4>Port</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>TCP port number for the iSCSI portal.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_tag">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_tag">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_tag" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_tag" data-toggle="collapse" onclick="setAnchor('#Return_value_tag')" type="button"><span class="property-name">tag</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_tag" class="collapse property-definition-div" data-parent="#accordionReturn_value_tag" id="Return_value_tag">
+    <div class="card-body pl-5">
+    <h4>Tag</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Numeric tag used to associate this portal with iSCSI targets.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_comment">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_comment">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_comment" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_comment" data-toggle="collapse" onclick="setAnchor('#Return_value_comment')" type="button"><span class="property-name">comment</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_comment" class="collapse property-definition-div" data-parent="#accordionReturn_value_comment" id="Return_value_comment">
+    <div class="card-body pl-5">
+    <h4>Comment</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+    <span class="description"><p>Optional comment describing the portal.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SHARING_ISCSI_PORTAL_WRITE
+

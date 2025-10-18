@@ -1,0 +1,12 @@
+virt.volume
+-----------
+
+.. toctree::
+
+   api_methods_virt.volume.create
+   api_methods_virt.volume.delete
+   api_methods_virt.volume.get_instance
+   api_methods_virt.volume.import_iso
+   api_methods_virt.volume.import_zvol
+   api_methods_virt.volume.query
+   api_methods_virt.volume.update

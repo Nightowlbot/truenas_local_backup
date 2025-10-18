@@ -1,0 +1,13 @@
+nvmet.host
+----------
+
+.. toctree::
+
+   api_methods_nvmet.host.create
+   api_methods_nvmet.host.delete
+   api_methods_nvmet.host.dhchap_dhgroup_choices
+   api_methods_nvmet.host.dhchap_hash_choices
+   api_methods_nvmet.host.generate_key
+   api_methods_nvmet.host.get_instance
+   api_methods_nvmet.host.query
+   api_methods_nvmet.host.update

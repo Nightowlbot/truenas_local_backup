@@ -1,0 +1,40 @@
+#!/bin/bash 
+
+SCRIPTDIR=`dirname $0`
+
+#cd $SCRIPTDIR || exit 1
+
+
+if [ "$USER" != "root" ]; then
+    echo "Need root to do proper zfs testing"
+    exit 1
+fi
+
+
+# test needs ssh access to localhost for testing
+if ! [ -e /root/.ssh/id_rsa ]; then
+    ssh-keygen -t rsa -f /root/.ssh/id_rsa -P '' || exit 1
+    cat /root/.ssh/id_rsa.pub  >> /root/.ssh/authorized_keys || exit 1
+    ssh -oStrictHostKeyChecking=no localhost true || exit 1
+fi
+
+cat >> ~/.ssh/config <<EOF
+Host *
+    addkeystoagent yes
+    controlpath ~/.ssh/control-master-%r@%h:%p
+    controlmaster auto
+    controlpersist 3600
+EOF
+
+
+modprobe brd rd_size=512000
+
+umount /tmp/ZfsCheck*
+
+coverage run --branch --source zfs_autobackup -m unittest discover -vvvvf $SCRIPTDIR $@ 2>&1
+EXIT=$?
+
+echo
+coverage report
+
+exit $EXIT

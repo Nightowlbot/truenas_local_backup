@@ -1,0 +1,6 @@
+rsynctask
+---------
+
+.. toctree::
+
+   api_events_rsynctask.query

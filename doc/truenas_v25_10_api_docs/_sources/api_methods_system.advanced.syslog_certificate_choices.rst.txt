@@ -1,0 +1,59 @@
+system.advanced.syslog_certificate_choices
+==========================================
+
+Return choices of certificates which can be used for `syslogservers.N.tls_certificate`.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>IDs of certificates mapped to their names.</p>
+    </span>
+    <div class="accordion" id="accordionReturn_value_additionalProperties">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_additionalProperties">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_additionalProperties" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_additionalProperties" data-toggle="collapse" onclick="setAnchor('#Return_value_additionalProperties')" type="button"><em><span class="property-name">Additional Properties</span></em></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_additionalProperties" class="collapse property-definition-div" data-parent="#accordionReturn_value_additionalProperties" id="Return_value_additionalProperties">
+    <div class="card-body pl-5"><p class="additional-properties">Each additional property must conform to the following schema</p>
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_additionalProperties_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* READONLY_ADMIN | SYSTEM_ADVANCED_READ
+

@@ -1,0 +1,437 @@
+filesystem.statfs
+=================
+
+Return stats from the filesystem of a given path.
+
+Raises: CallError(ENOENT) - Path not found
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: path</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>path</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Path on the filesystem to get statistics for.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>FilesystemStatfsData</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Filesystem statistics and mount information.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_flags">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_flags">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_flags" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_flags" data-toggle="collapse" onclick="setAnchor('#Return_value_flags')" type="button"><span class="property-name">flags</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_flags" class="collapse property-definition-div" data-parent="#accordionReturn_value_flags" id="Return_value_flags">
+    <div class="card-body pl-5">
+    <h4>Flags</h4><span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="description"><p>Combined per-mount options and per-superblock options for mounted filesystem. </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_flags_items">
+    <br/>
+    <div class="any-of-value" id="Return_value_flags_items_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_flags_items_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_flags_items_anyOf_i0" id="Return_value_flags_items_anyOf_i0" onclick="setAnchor('#Return_value_flags_items_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_flags_items_anyOf_i1" id="Return_value_flags_items_anyOf_i1" onclick="setAnchor('#Return_value_flags_items_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_flags_items_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <div class="enum-value" id="Return_value_flags_items_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"RW"</li><li class="list-group-item enum-item">"RO"</li><li class="list-group-item enum-item">"XATTR"</li><li class="list-group-item enum-item">"NOACL"</li><li class="list-group-item enum-item">"NFS4ACL"</li><li class="list-group-item enum-item">"POSIXACL"</li><li class="list-group-item enum-item">"CASESENSITIVE"</li><li class="list-group-item enum-item">"CASEINSENSITIVE"</li><li class="list-group-item enum-item">"NOATIME"</li><li class="list-group-item enum-item">"RELATIME"</li><li class="list-group-item enum-item">"NOSUID"</li><li class="list-group-item enum-item">"NODEV"</li><li class="list-group-item enum-item">"NOEXEC"</li></ul>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_flags_items_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_fsid">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_fsid">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_fsid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_fsid" data-toggle="collapse" onclick="setAnchor('#Return_value_fsid')" type="button"><span class="property-name">fsid</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_fsid" class="collapse property-definition-div" data-parent="#accordionReturn_value_fsid" id="Return_value_fsid">
+    <div class="card-body pl-5">
+    <h4>Fsid</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Unique filesystem ID as returned by statvfs. </p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_fsid_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_fstype">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_fstype">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_fstype" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_fstype" data-toggle="collapse" onclick="setAnchor('#Return_value_fstype')" type="button"><span class="property-name">fstype</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_fstype" class="collapse property-definition-div" data-parent="#accordionReturn_value_fstype" id="Return_value_fstype">
+    <div class="card-body pl-5">
+    <h4>Fstype</h4><br/>
+    <span class="description"><p>String representation of filesystem type from mountinfo. </p>
+    </span><div class="any-of-value" id="Return_value_fstype_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_fstype_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_fstype_anyOf_i0" id="Return_value_fstype_anyOf_i0" onclick="setAnchor('#Return_value_fstype_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_fstype_anyOf_i1" id="Return_value_fstype_anyOf_i1" onclick="setAnchor('#Return_value_fstype_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_fstype_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <div class="enum-value" id="Return_value_fstype_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"RW"</li><li class="list-group-item enum-item">"RO"</li><li class="list-group-item enum-item">"XATTR"</li><li class="list-group-item enum-item">"NOACL"</li><li class="list-group-item enum-item">"NFS4ACL"</li><li class="list-group-item enum-item">"POSIXACL"</li><li class="list-group-item enum-item">"CASESENSITIVE"</li><li class="list-group-item enum-item">"CASEINSENSITIVE"</li><li class="list-group-item enum-item">"NOATIME"</li><li class="list-group-item enum-item">"RELATIME"</li><li class="list-group-item enum-item">"NOSUID"</li><li class="list-group-item enum-item">"NODEV"</li><li class="list-group-item enum-item">"NOEXEC"</li></ul>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_fstype_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_source">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_source">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_source" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_source" data-toggle="collapse" onclick="setAnchor('#Return_value_source')" type="button"><span class="property-name">source</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_source" class="collapse property-definition-div" data-parent="#accordionReturn_value_source" id="Return_value_source">
+    <div class="card-body pl-5">
+    <h4>Source</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Source for the mounted filesystem. For ZFS this will be dataset name. </p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_source_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_dest">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_dest">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_dest" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_dest" data-toggle="collapse" onclick="setAnchor('#Return_value_dest')" type="button"><span class="property-name">dest</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_dest" class="collapse property-definition-div" data-parent="#accordionReturn_value_dest" id="Return_value_dest">
+    <div class="card-body pl-5">
+    <h4>Dest</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Local path on which filesystem is mounted. </p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_dest_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_blocksize">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_blocksize">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_blocksize" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_blocksize" data-toggle="collapse" onclick="setAnchor('#Return_value_blocksize')" type="button"><span class="property-name">blocksize</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_blocksize" class="collapse property-definition-div" data-parent="#accordionReturn_value_blocksize" id="Return_value_blocksize">
+    <div class="card-body pl-5">
+    <h4>Blocksize</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Filesystem block size as reported by statvfs. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_total_blocks">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_total_blocks">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_total_blocks" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_total_blocks" data-toggle="collapse" onclick="setAnchor('#Return_value_total_blocks')" type="button"><span class="property-name">total_blocks</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_total_blocks" class="collapse property-definition-div" data-parent="#accordionReturn_value_total_blocks" id="Return_value_total_blocks">
+    <div class="card-body pl-5">
+    <h4>Total Blocks</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Filesystem size as reported in blocksize blocks as reported by statvfs. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_free_blocks">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_free_blocks">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_free_blocks" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_free_blocks" data-toggle="collapse" onclick="setAnchor('#Return_value_free_blocks')" type="button"><span class="property-name">free_blocks</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_free_blocks" class="collapse property-definition-div" data-parent="#accordionReturn_value_free_blocks" id="Return_value_free_blocks">
+    <div class="card-body pl-5">
+    <h4>Free Blocks</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Number of free blocks as reported by statvfs. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_avail_blocks">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_avail_blocks">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_avail_blocks" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_avail_blocks" data-toggle="collapse" onclick="setAnchor('#Return_value_avail_blocks')" type="button"><span class="property-name">avail_blocks</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_avail_blocks" class="collapse property-definition-div" data-parent="#accordionReturn_value_avail_blocks" id="Return_value_avail_blocks">
+    <div class="card-body pl-5">
+    <h4>Avail Blocks</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Number of available blocks as reported by statvfs. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_total_blocks_str">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_total_blocks_str">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_total_blocks_str" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_total_blocks_str" data-toggle="collapse" onclick="setAnchor('#Return_value_total_blocks_str')" type="button"><span class="property-name">total_blocks_str</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_total_blocks_str" class="collapse property-definition-div" data-parent="#accordionReturn_value_total_blocks_str" id="Return_value_total_blocks_str">
+    <div class="card-body pl-5">
+    <h4>Total Blocks Str</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Total filesystem size in blocks as a human-readable string.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_total_blocks_str_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_free_blocks_str">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_free_blocks_str">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_free_blocks_str" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_free_blocks_str" data-toggle="collapse" onclick="setAnchor('#Return_value_free_blocks_str')" type="button"><span class="property-name">free_blocks_str</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_free_blocks_str" class="collapse property-definition-div" data-parent="#accordionReturn_value_free_blocks_str" id="Return_value_free_blocks_str">
+    <div class="card-body pl-5">
+    <h4>Free Blocks Str</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Free blocks available as a human-readable string.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_free_blocks_str_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_avail_blocks_str">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_avail_blocks_str">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_avail_blocks_str" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_avail_blocks_str" data-toggle="collapse" onclick="setAnchor('#Return_value_avail_blocks_str')" type="button"><span class="property-name">avail_blocks_str</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_avail_blocks_str" class="collapse property-definition-div" data-parent="#accordionReturn_value_avail_blocks_str" id="Return_value_avail_blocks_str">
+    <div class="card-body pl-5">
+    <h4>Avail Blocks Str</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Available blocks for unprivileged users as a human-readable string.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_avail_blocks_str_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_files">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_files">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_files" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_files" data-toggle="collapse" onclick="setAnchor('#Return_value_files')" type="button"><span class="property-name">files</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_files" class="collapse property-definition-div" data-parent="#accordionReturn_value_files" id="Return_value_files">
+    <div class="card-body pl-5">
+    <h4>Files</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Number of inodes in use as reported by statvfs. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_free_files">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_free_files">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_free_files" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_free_files" data-toggle="collapse" onclick="setAnchor('#Return_value_free_files')" type="button"><span class="property-name">free_files</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_free_files" class="collapse property-definition-div" data-parent="#accordionReturn_value_free_files" id="Return_value_free_files">
+    <div class="card-body pl-5">
+    <h4>Free Files</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Number of free inodes as reported by statvfs. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_name_max">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_name_max">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_name_max" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_name_max" data-toggle="collapse" onclick="setAnchor('#Return_value_name_max')" type="button"><span class="property-name">name_max</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_name_max" class="collapse property-definition-div" data-parent="#accordionReturn_value_name_max" id="Return_value_name_max">
+    <div class="card-body pl-5">
+    <h4>Name Max</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Maximum filename length as reported by statvfs. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_total_bytes">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_total_bytes">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_total_bytes" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_total_bytes" data-toggle="collapse" onclick="setAnchor('#Return_value_total_bytes')" type="button"><span class="property-name">total_bytes</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_total_bytes" class="collapse property-definition-div" data-parent="#accordionReturn_value_total_bytes" id="Return_value_total_bytes">
+    <div class="card-body pl-5">
+    <h4>Total Bytes</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Total filesystem size in bytes.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_free_bytes">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_free_bytes">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_free_bytes" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_free_bytes" data-toggle="collapse" onclick="setAnchor('#Return_value_free_bytes')" type="button"><span class="property-name">free_bytes</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_free_bytes" class="collapse property-definition-div" data-parent="#accordionReturn_value_free_bytes" id="Return_value_free_bytes">
+    <div class="card-body pl-5">
+    <h4>Free Bytes</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Free space available in bytes.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_avail_bytes">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_avail_bytes">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_avail_bytes" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_avail_bytes" data-toggle="collapse" onclick="setAnchor('#Return_value_avail_bytes')" type="button"><span class="property-name">avail_bytes</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_avail_bytes" class="collapse property-definition-div" data-parent="#accordionReturn_value_avail_bytes" id="Return_value_avail_bytes">
+    <div class="card-body pl-5">
+    <h4>Avail Bytes</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Available space for unprivileged users in bytes.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_total_bytes_str">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_total_bytes_str">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_total_bytes_str" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_total_bytes_str" data-toggle="collapse" onclick="setAnchor('#Return_value_total_bytes_str')" type="button"><span class="property-name">total_bytes_str</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_total_bytes_str" class="collapse property-definition-div" data-parent="#accordionReturn_value_total_bytes_str" id="Return_value_total_bytes_str">
+    <div class="card-body pl-5">
+    <h4>Total Bytes Str</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Total filesystem size in bytes as a human-readable string.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_total_bytes_str_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_free_bytes_str">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_free_bytes_str">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_free_bytes_str" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_free_bytes_str" data-toggle="collapse" onclick="setAnchor('#Return_value_free_bytes_str')" type="button"><span class="property-name">free_bytes_str</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_free_bytes_str" class="collapse property-definition-div" data-parent="#accordionReturn_value_free_bytes_str" id="Return_value_free_bytes_str">
+    <div class="card-body pl-5">
+    <h4>Free Bytes Str</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Free space available in bytes as a human-readable string.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_free_bytes_str_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_avail_bytes_str">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_avail_bytes_str">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_avail_bytes_str" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_avail_bytes_str" data-toggle="collapse" onclick="setAnchor('#Return_value_avail_bytes_str')" type="button"><span class="property-name">avail_bytes_str</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_avail_bytes_str" class="collapse property-definition-div" data-parent="#accordionReturn_value_avail_bytes_str" id="Return_value_avail_bytes_str">
+    <div class="card-body pl-5">
+    <h4>Avail Bytes Str</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Available space for unprivileged users in bytes as a human-readable string.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_avail_bytes_str_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* FILESYSTEM_ATTRS_READ
+

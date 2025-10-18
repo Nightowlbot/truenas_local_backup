@@ -1,0 +1,726 @@
+iscsi.target.query
+==================
+
+Sent on iscsi.target changes.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionADDED">
+    <div class="card">
+    <div class="card-header" id="headingADDED">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED" data-toggle="collapse" onclick="setAnchor('#ADDED')" type="button"><span class="property-name">ADDED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED" class="collapse property-definition-div" data-parent="#accordionADDED" id="ADDED">
+    <div class="card-body pl-5">
+    <h4>IscsiTargetAddedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_id" data-toggle="collapse" onclick="setAnchor('#ADDED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_id" class="collapse property-definition-div" data-parent="#accordionADDED_id" id="ADDED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields" data-toggle="collapse" onclick="setAnchor('#ADDED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields" class="collapse property-definition-div" data-parent="#accordionADDED_fields" id="ADDED_fields">
+    <div class="card-body pl-5">
+    <h4>IscsiTargetEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_id" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_id" class="collapse property-definition-div" data-parent="#accordionADDED_fields_id" id="ADDED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the iSCSI target.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_name">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_name">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_name" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_name" class="collapse property-definition-div" data-parent="#accordionADDED_fields_name" id="ADDED_fields_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name of the iSCSI target (maximum 120 characters).</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_name_minLength">Must be at least <code>1</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="ADDED_fields_name_maxLength">Must be at most <code>120</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_alias">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_alias">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_alias" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_alias" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_alias')" type="button"><span class="property-name">alias</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_alias" class="collapse property-definition-div" data-parent="#accordionADDED_fields_alias" id="ADDED_fields_alias">
+    <div class="card-body pl-5">
+    <h4>Alias</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Optional alias name for the iSCSI target.</p>
+    </span><div class="any-of-value" id="ADDED_fields_alias_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_alias_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_alias_anyOf_i0" id="ADDED_fields_alias_anyOf_i0" onclick="setAnchor('#ADDED_fields_alias_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_alias_anyOf_i1" id="ADDED_fields_alias_anyOf_i1" onclick="setAnchor('#ADDED_fields_alias_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_alias_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_alias_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_mode">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_mode">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_mode" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_mode" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_mode')" type="button"><span class="property-name">mode</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_mode" class="collapse property-definition-div" data-parent="#accordionADDED_fields_mode" id="ADDED_fields_mode">
+    <div class="card-body pl-5">
+    <h4>Mode</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "ISCSI"</span><br/>
+    <span class="description"><p>Protocol mode for the target.</p>
+    <ul>
+    <li><code>ISCSI</code>: iSCSI protocol only</li>
+    <li><code>FC</code>: Fibre Channel protocol only</li>
+    <li><code>BOTH</code>: Both iSCSI and Fibre Channel protocols</li>
+    </ul>
+    <p>Fibre Channel may only be selected on TrueNAS Enterprise-licensed systems with a suitable Fibre Channel HBA.</p>
+    </span><div class="enum-value" id="ADDED_fields_mode_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"ISCSI"</li><li class="list-group-item enum-item">"FC"</li><li class="list-group-item enum-item">"BOTH"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_groups">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_groups">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_groups" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_groups" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_groups')" type="button"><span class="property-name">groups</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_groups" class="collapse property-definition-div" data-parent="#accordionADDED_fields_groups" id="ADDED_fields_groups">
+    <div class="card-body pl-5">
+    <h4>Groups</h4><span class="badge badge-dark value-type">Type: array of object</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>Array of portal-initiator group associations for this target.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="ADDED_fields_groups_items">
+    <h4>IscsiGroup</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_groups_items_portal">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_groups_items_portal">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_groups_items_portal" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_groups_items_portal" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_groups_items_portal')" type="button"><span class="property-name">portal</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_groups_items_portal" class="collapse property-definition-div" data-parent="#accordionADDED_fields_groups_items_portal" id="ADDED_fields_groups_items_portal">
+    <div class="card-body pl-5">
+    <h4>Portal</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>ID of the iSCSI portal to use for this target group.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_groups_items_initiator">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_groups_items_initiator">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_groups_items_initiator" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_groups_items_initiator" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_groups_items_initiator')" type="button"><span class="property-name">initiator</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_groups_items_initiator" class="collapse property-definition-div" data-parent="#accordionADDED_fields_groups_items_initiator" id="ADDED_fields_groups_items_initiator">
+    <div class="card-body pl-5">
+    <h4>Initiator</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>ID of the authorized initiator group or <code>null</code> to allow any initiator.</p>
+    </span><div class="any-of-value" id="ADDED_fields_groups_items_initiator_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_groups_items_initiator_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_groups_items_initiator_anyOf_i0" id="ADDED_fields_groups_items_initiator_anyOf_i0" onclick="setAnchor('#ADDED_fields_groups_items_initiator_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_groups_items_initiator_anyOf_i1" id="ADDED_fields_groups_items_initiator_anyOf_i1" onclick="setAnchor('#ADDED_fields_groups_items_initiator_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_groups_items_initiator_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_groups_items_initiator_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_groups_items_authmethod">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_groups_items_authmethod">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_groups_items_authmethod" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_groups_items_authmethod" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_groups_items_authmethod')" type="button"><span class="property-name">authmethod</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_groups_items_authmethod" class="collapse property-definition-div" data-parent="#accordionADDED_fields_groups_items_authmethod" id="ADDED_fields_groups_items_authmethod">
+    <div class="card-body pl-5">
+    <h4>Authmethod</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "NONE"</span><br/>
+    <span class="description"><p>Authentication method for this target group.</p>
+    </span><div class="enum-value" id="ADDED_fields_groups_items_authmethod_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"NONE"</li><li class="list-group-item enum-item">"CHAP"</li><li class="list-group-item enum-item">"CHAP_MUTUAL"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_groups_items_auth">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_groups_items_auth">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_groups_items_auth" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_groups_items_auth" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_groups_items_auth')" type="button"><span class="property-name">auth</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_groups_items_auth" class="collapse property-definition-div" data-parent="#accordionADDED_fields_groups_items_auth" id="ADDED_fields_groups_items_auth">
+    <div class="card-body pl-5">
+    <h4>Auth</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>ID of the authentication credential or <code>null</code> if no authentication.</p>
+    </span><div class="any-of-value" id="ADDED_fields_groups_items_auth_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_groups_items_auth_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_groups_items_auth_anyOf_i0" id="ADDED_fields_groups_items_auth_anyOf_i0" onclick="setAnchor('#ADDED_fields_groups_items_auth_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_groups_items_auth_anyOf_i1" id="ADDED_fields_groups_items_auth_anyOf_i1" onclick="setAnchor('#ADDED_fields_groups_items_auth_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_groups_items_auth_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_groups_items_auth_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_auth_networks">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_auth_networks">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_auth_networks" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_auth_networks" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_auth_networks')" type="button"><span class="property-name">auth_networks</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_auth_networks" class="collapse property-definition-div" data-parent="#accordionADDED_fields_auth_networks" id="ADDED_fields_auth_networks">
+    <div class="card-body pl-5">
+    <h4>Auth Networks</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>Array of network addresses allowed to access this target.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="ADDED_fields_auth_networks_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_rel_tgt_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_rel_tgt_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_rel_tgt_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_rel_tgt_id" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_rel_tgt_id')" type="button"><span class="property-name">rel_tgt_id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_rel_tgt_id" class="collapse property-definition-div" data-parent="#accordionADDED_fields_rel_tgt_id" id="ADDED_fields_rel_tgt_id">
+    <div class="card-body pl-5">
+    <h4>Rel Tgt Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Relative target ID number assigned by the system.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_iscsi_parameters">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_iscsi_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_iscsi_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_iscsi_parameters" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_iscsi_parameters')" type="button"><span class="property-name">iscsi_parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_iscsi_parameters" class="collapse property-definition-div" data-parent="#accordionADDED_fields_iscsi_parameters" id="ADDED_fields_iscsi_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Optional iSCSI-specific parameters for this target.</p>
+    </span><div class="any-of-value" id="ADDED_fields_iscsi_parameters_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_iscsi_parameters_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_iscsi_parameters_anyOf_i0" id="ADDED_fields_iscsi_parameters_anyOf_i0" onclick="setAnchor('#ADDED_fields_iscsi_parameters_anyOf_i0')" role="tab">IscsiTargetParameters</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_iscsi_parameters_anyOf_i1" id="ADDED_fields_iscsi_parameters_anyOf_i1" onclick="setAnchor('#ADDED_fields_iscsi_parameters_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_iscsi_parameters_anyOf_i0" role="tabpanel">
+    <h4>IscsiTargetParameters</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_iscsi_parameters_anyOf_i0_QueuedCommands">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_iscsi_parameters_anyOf_i0_QueuedCommands">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_iscsi_parameters_anyOf_i0_QueuedCommands" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_iscsi_parameters_anyOf_i0_QueuedCommands" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_iscsi_parameters_anyOf_i0_QueuedCommands')" type="button"><span class="property-name">QueuedCommands</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_iscsi_parameters_anyOf_i0_QueuedCommands" class="collapse property-definition-div" data-parent="#accordionADDED_fields_iscsi_parameters_anyOf_i0_QueuedCommands" id="ADDED_fields_iscsi_parameters_anyOf_i0_QueuedCommands">
+    <div class="card-body pl-5">
+    <h4>Queuedcommands</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Maximum number of queued commands per iSCSI session.</p>
+    <ul>
+    <li><code>32</code>: Standard queue depth for most use cases</li>
+    <li><code>128</code>: Higher queue depth for performance-critical applications</li>
+    </ul>
+    </span><div class="any-of-value" id="ADDED_fields_iscsi_parameters_anyOf_i0_QueuedCommands_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_iscsi_parameters_anyOf_i0_QueuedCommands_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_iscsi_parameters_anyOf_i0_QueuedCommands_anyOf_i0" id="ADDED_fields_iscsi_parameters_anyOf_i0_QueuedCommands_anyOf_i0" onclick="setAnchor('#ADDED_fields_iscsi_parameters_anyOf_i0_QueuedCommands_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_iscsi_parameters_anyOf_i0_QueuedCommands_anyOf_i1" id="ADDED_fields_iscsi_parameters_anyOf_i0_QueuedCommands_anyOf_i1" onclick="setAnchor('#ADDED_fields_iscsi_parameters_anyOf_i0_QueuedCommands_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_iscsi_parameters_anyOf_i0_QueuedCommands_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: enum (of integer)</span><br/>
+    <div class="enum-value" id="ADDED_fields_iscsi_parameters_anyOf_i0_QueuedCommands_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">32</li><li class="list-group-item enum-item">128</li></ul>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_iscsi_parameters_anyOf_i0_QueuedCommands_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_iscsi_parameters_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED" data-toggle="collapse" onclick="setAnchor('#CHANGED')" type="button"><span class="property-name">CHANGED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED" class="collapse property-definition-div" data-parent="#accordionCHANGED" id="CHANGED">
+    <div class="card-body pl-5">
+    <h4>IscsiTargetChangedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_id" id="CHANGED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields" id="CHANGED_fields">
+    <div class="card-body pl-5">
+    <h4>IscsiTargetEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_id" id="CHANGED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the iSCSI target.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_name">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_name">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_name" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_name" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_name" id="CHANGED_fields_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name of the iSCSI target (maximum 120 characters).</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_name_minLength">Must be at least <code>1</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="CHANGED_fields_name_maxLength">Must be at most <code>120</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_alias">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_alias">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_alias" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_alias" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_alias')" type="button"><span class="property-name">alias</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_alias" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_alias" id="CHANGED_fields_alias">
+    <div class="card-body pl-5">
+    <h4>Alias</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Optional alias name for the iSCSI target.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_alias_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_alias_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_alias_anyOf_i0" id="CHANGED_fields_alias_anyOf_i0" onclick="setAnchor('#CHANGED_fields_alias_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_alias_anyOf_i1" id="CHANGED_fields_alias_anyOf_i1" onclick="setAnchor('#CHANGED_fields_alias_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_alias_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_alias_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_mode">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_mode">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_mode" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_mode" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_mode')" type="button"><span class="property-name">mode</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_mode" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_mode" id="CHANGED_fields_mode">
+    <div class="card-body pl-5">
+    <h4>Mode</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "ISCSI"</span><br/>
+    <span class="description"><p>Protocol mode for the target.</p>
+    <ul>
+    <li><code>ISCSI</code>: iSCSI protocol only</li>
+    <li><code>FC</code>: Fibre Channel protocol only</li>
+    <li><code>BOTH</code>: Both iSCSI and Fibre Channel protocols</li>
+    </ul>
+    <p>Fibre Channel may only be selected on TrueNAS Enterprise-licensed systems with a suitable Fibre Channel HBA.</p>
+    </span><div class="enum-value" id="CHANGED_fields_mode_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"ISCSI"</li><li class="list-group-item enum-item">"FC"</li><li class="list-group-item enum-item">"BOTH"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_groups">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_groups">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_groups" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_groups" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_groups')" type="button"><span class="property-name">groups</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_groups" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_groups" id="CHANGED_fields_groups">
+    <div class="card-body pl-5">
+    <h4>Groups</h4><span class="badge badge-dark value-type">Type: array of object</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>Array of portal-initiator group associations for this target.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="CHANGED_fields_groups_items">
+    <h4>IscsiGroup</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_groups_items_portal">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_groups_items_portal">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_groups_items_portal" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_groups_items_portal" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_groups_items_portal')" type="button"><span class="property-name">portal</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_groups_items_portal" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_groups_items_portal" id="CHANGED_fields_groups_items_portal">
+    <div class="card-body pl-5">
+    <h4>Portal</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>ID of the iSCSI portal to use for this target group.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_groups_items_initiator">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_groups_items_initiator">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_groups_items_initiator" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_groups_items_initiator" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_groups_items_initiator')" type="button"><span class="property-name">initiator</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_groups_items_initiator" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_groups_items_initiator" id="CHANGED_fields_groups_items_initiator">
+    <div class="card-body pl-5">
+    <h4>Initiator</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>ID of the authorized initiator group or <code>null</code> to allow any initiator.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_groups_items_initiator_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_groups_items_initiator_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_groups_items_initiator_anyOf_i0" id="CHANGED_fields_groups_items_initiator_anyOf_i0" onclick="setAnchor('#CHANGED_fields_groups_items_initiator_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_groups_items_initiator_anyOf_i1" id="CHANGED_fields_groups_items_initiator_anyOf_i1" onclick="setAnchor('#CHANGED_fields_groups_items_initiator_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_groups_items_initiator_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_groups_items_initiator_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_groups_items_authmethod">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_groups_items_authmethod">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_groups_items_authmethod" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_groups_items_authmethod" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_groups_items_authmethod')" type="button"><span class="property-name">authmethod</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_groups_items_authmethod" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_groups_items_authmethod" id="CHANGED_fields_groups_items_authmethod">
+    <div class="card-body pl-5">
+    <h4>Authmethod</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "NONE"</span><br/>
+    <span class="description"><p>Authentication method for this target group.</p>
+    </span><div class="enum-value" id="CHANGED_fields_groups_items_authmethod_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"NONE"</li><li class="list-group-item enum-item">"CHAP"</li><li class="list-group-item enum-item">"CHAP_MUTUAL"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_groups_items_auth">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_groups_items_auth">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_groups_items_auth" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_groups_items_auth" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_groups_items_auth')" type="button"><span class="property-name">auth</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_groups_items_auth" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_groups_items_auth" id="CHANGED_fields_groups_items_auth">
+    <div class="card-body pl-5">
+    <h4>Auth</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>ID of the authentication credential or <code>null</code> if no authentication.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_groups_items_auth_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_groups_items_auth_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_groups_items_auth_anyOf_i0" id="CHANGED_fields_groups_items_auth_anyOf_i0" onclick="setAnchor('#CHANGED_fields_groups_items_auth_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_groups_items_auth_anyOf_i1" id="CHANGED_fields_groups_items_auth_anyOf_i1" onclick="setAnchor('#CHANGED_fields_groups_items_auth_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_groups_items_auth_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_groups_items_auth_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_auth_networks">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_auth_networks">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_auth_networks" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_auth_networks" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_auth_networks')" type="button"><span class="property-name">auth_networks</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_auth_networks" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_auth_networks" id="CHANGED_fields_auth_networks">
+    <div class="card-body pl-5">
+    <h4>Auth Networks</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>Array of network addresses allowed to access this target.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="CHANGED_fields_auth_networks_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_rel_tgt_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_rel_tgt_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_rel_tgt_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_rel_tgt_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_rel_tgt_id')" type="button"><span class="property-name">rel_tgt_id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_rel_tgt_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_rel_tgt_id" id="CHANGED_fields_rel_tgt_id">
+    <div class="card-body pl-5">
+    <h4>Rel Tgt Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Relative target ID number assigned by the system.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_iscsi_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_iscsi_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_iscsi_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_iscsi_parameters" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_iscsi_parameters')" type="button"><span class="property-name">iscsi_parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_iscsi_parameters" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_iscsi_parameters" id="CHANGED_fields_iscsi_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Optional iSCSI-specific parameters for this target.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_iscsi_parameters_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_iscsi_parameters_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_iscsi_parameters_anyOf_i0" id="CHANGED_fields_iscsi_parameters_anyOf_i0" onclick="setAnchor('#CHANGED_fields_iscsi_parameters_anyOf_i0')" role="tab">IscsiTargetParameters</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_iscsi_parameters_anyOf_i1" id="CHANGED_fields_iscsi_parameters_anyOf_i1" onclick="setAnchor('#CHANGED_fields_iscsi_parameters_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_iscsi_parameters_anyOf_i0" role="tabpanel">
+    <h4>IscsiTargetParameters</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_iscsi_parameters_anyOf_i0_QueuedCommands">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_iscsi_parameters_anyOf_i0_QueuedCommands">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_iscsi_parameters_anyOf_i0_QueuedCommands" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_iscsi_parameters_anyOf_i0_QueuedCommands" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_iscsi_parameters_anyOf_i0_QueuedCommands')" type="button"><span class="property-name">QueuedCommands</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_iscsi_parameters_anyOf_i0_QueuedCommands" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_iscsi_parameters_anyOf_i0_QueuedCommands" id="CHANGED_fields_iscsi_parameters_anyOf_i0_QueuedCommands">
+    <div class="card-body pl-5">
+    <h4>Queuedcommands</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Maximum number of queued commands per iSCSI session.</p>
+    <ul>
+    <li><code>32</code>: Standard queue depth for most use cases</li>
+    <li><code>128</code>: Higher queue depth for performance-critical applications</li>
+    </ul>
+    </span><div class="any-of-value" id="CHANGED_fields_iscsi_parameters_anyOf_i0_QueuedCommands_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_iscsi_parameters_anyOf_i0_QueuedCommands_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_iscsi_parameters_anyOf_i0_QueuedCommands_anyOf_i0" id="CHANGED_fields_iscsi_parameters_anyOf_i0_QueuedCommands_anyOf_i0" onclick="setAnchor('#CHANGED_fields_iscsi_parameters_anyOf_i0_QueuedCommands_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_iscsi_parameters_anyOf_i0_QueuedCommands_anyOf_i1" id="CHANGED_fields_iscsi_parameters_anyOf_i0_QueuedCommands_anyOf_i1" onclick="setAnchor('#CHANGED_fields_iscsi_parameters_anyOf_i0_QueuedCommands_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_iscsi_parameters_anyOf_i0_QueuedCommands_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: enum (of integer)</span><br/>
+    <div class="enum-value" id="CHANGED_fields_iscsi_parameters_anyOf_i0_QueuedCommands_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">32</li><li class="list-group-item enum-item">128</li></ul>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_iscsi_parameters_anyOf_i0_QueuedCommands_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_iscsi_parameters_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionREMOVED">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED" data-toggle="collapse" onclick="setAnchor('#REMOVED')" type="button"><span class="property-name">REMOVED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED" class="collapse property-definition-div" data-parent="#accordionREMOVED" id="REMOVED">
+    <div class="card-body pl-5">
+    <h4>IscsiTargetRemovedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionREMOVED_id">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED_id">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED_id" data-toggle="collapse" onclick="setAnchor('#REMOVED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED_id" class="collapse property-definition-div" data-parent="#accordionREMOVED_id" id="REMOVED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SHARING_ISCSI_TARGET_READ
+

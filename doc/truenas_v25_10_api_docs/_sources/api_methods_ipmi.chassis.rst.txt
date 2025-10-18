@@ -1,0 +1,7 @@
+ipmi.chassis
+------------
+
+.. toctree::
+
+   api_methods_ipmi.chassis.identify
+   api_methods_ipmi.chassis.info

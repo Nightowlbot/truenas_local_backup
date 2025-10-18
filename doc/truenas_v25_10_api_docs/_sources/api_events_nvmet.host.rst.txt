@@ -1,0 +1,6 @@
+nvmet.host
+----------
+
+.. toctree::
+
+   api_events_nvmet.host.query

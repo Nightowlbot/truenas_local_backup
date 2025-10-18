@@ -1,0 +1,18 @@
+system.general
+--------------
+
+.. toctree::
+
+   api_methods_system.general.checkin
+   api_methods_system.general.checkin_waiting
+   api_methods_system.general.config
+   api_methods_system.general.country_choices
+   api_methods_system.general.kbdmap_choices
+   api_methods_system.general.local_url
+   api_methods_system.general.timezone_choices
+   api_methods_system.general.ui_address_choices
+   api_methods_system.general.ui_certificate_choices
+   api_methods_system.general.ui_httpsprotocols_choices
+   api_methods_system.general.ui_restart
+   api_methods_system.general.ui_v6address_choices
+   api_methods_system.general.update

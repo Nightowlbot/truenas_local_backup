@@ -1,0 +1,396 @@
+update.status
+=============
+
+Updated on update status changes.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCHANGED">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED" data-toggle="collapse" onclick="setAnchor('#CHANGED')" type="button"><span class="property-name">CHANGED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED" class="collapse property-definition-div" data-parent="#accordionCHANGED" id="CHANGED">
+    <div class="card-body pl-5">
+    <h4>UpdateStatusChangedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_status">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_status">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_status" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_status" data-toggle="collapse" onclick="setAnchor('#CHANGED_status')" type="button"><span class="property-name">status</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_status" class="collapse property-definition-div" data-parent="#accordionCHANGED_status" id="CHANGED_status">
+    <div class="card-body pl-5">
+    <h4>UpdateStatus</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Updated system update status information.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_status_code">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_status_code">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_status_code" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_status_code" data-toggle="collapse" onclick="setAnchor('#CHANGED_status_code')" type="button"><span class="property-name">code</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_status_code" class="collapse property-definition-div" data-parent="#accordionCHANGED_status_code" id="CHANGED_status_code">
+    <div class="card-body pl-5">
+    <h4>Code</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Status code:<br/>
+    * NORMAL - normal status, see <code>status</code> dictionary for details.<br/>
+    * ERROR - an error occurred, see <code>error</code> for details.</p>
+    </span><div class="enum-value" id="CHANGED_status_code_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"NORMAL"</li><li class="list-group-item enum-item">"ERROR"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_status_status">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_status_status">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_status_status" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_status_status" data-toggle="collapse" onclick="setAnchor('#CHANGED_status_status')" type="button"><span class="property-name">status</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_status_status" class="collapse property-definition-div" data-parent="#accordionCHANGED_status_status" id="CHANGED_status_status">
+    <div class="card-body pl-5">
+    <br/>
+    <span class="description"><p>Detailed update status information. <code>null</code> if code is ERROR.</p>
+    </span><div class="any-of-value" id="CHANGED_status_status_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_status_status_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_status_status_anyOf_i0" id="CHANGED_status_status_anyOf_i0" onclick="setAnchor('#CHANGED_status_status_anyOf_i0')" role="tab">UpdateStatusStatus</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_status_status_anyOf_i1" id="CHANGED_status_status_anyOf_i1" onclick="setAnchor('#CHANGED_status_status_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_status_status_anyOf_i0" role="tabpanel">
+    <h4>UpdateStatusStatus</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_status_status_anyOf_i0_current_version">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_status_status_anyOf_i0_current_version">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_status_status_anyOf_i0_current_version" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_status_status_anyOf_i0_current_version" data-toggle="collapse" onclick="setAnchor('#CHANGED_status_status_anyOf_i0_current_version')" type="button"><span class="property-name">current_version</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_status_status_anyOf_i0_current_version" class="collapse property-definition-div" data-parent="#accordionCHANGED_status_status_anyOf_i0_current_version" id="CHANGED_status_status_anyOf_i0_current_version">
+    <div class="card-body pl-5">
+    <h4>UpdateStatusCurrentVersion</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Currently running system version information.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_status_status_anyOf_i0_current_version_train">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_status_status_anyOf_i0_current_version_train">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_status_status_anyOf_i0_current_version_train" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_status_status_anyOf_i0_current_version_train" data-toggle="collapse" onclick="setAnchor('#CHANGED_status_status_anyOf_i0_current_version_train')" type="button"><span class="property-name">train</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_status_status_anyOf_i0_current_version_train" class="collapse property-definition-div" data-parent="#accordionCHANGED_status_status_anyOf_i0_current_version_train" id="CHANGED_status_status_anyOf_i0_current_version_train">
+    <div class="card-body pl-5">
+    <h4>Train</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Train name.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_status_status_anyOf_i0_current_version_profile">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_status_status_anyOf_i0_current_version_profile">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_status_status_anyOf_i0_current_version_profile" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_status_status_anyOf_i0_current_version_profile" data-toggle="collapse" onclick="setAnchor('#CHANGED_status_status_anyOf_i0_current_version_profile')" type="button"><span class="property-name">profile</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_status_status_anyOf_i0_current_version_profile" class="collapse property-definition-div" data-parent="#accordionCHANGED_status_status_anyOf_i0_current_version_profile" id="CHANGED_status_status_anyOf_i0_current_version_profile">
+    <div class="card-body pl-5">
+    <h4>Profile</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Update profile assigned for the version.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_status_status_anyOf_i0_current_version_matches_profile">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_status_status_anyOf_i0_current_version_matches_profile">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_status_status_anyOf_i0_current_version_matches_profile" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_status_status_anyOf_i0_current_version_matches_profile" data-toggle="collapse" onclick="setAnchor('#CHANGED_status_status_anyOf_i0_current_version_matches_profile')" type="button"><span class="property-name">matches_profile</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_status_status_anyOf_i0_current_version_matches_profile" class="collapse property-definition-div" data-parent="#accordionCHANGED_status_status_anyOf_i0_current_version_matches_profile" id="CHANGED_status_status_anyOf_i0_current_version_matches_profile">
+    <div class="card-body pl-5">
+    <h4>Matches Profile</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether the system version running matches the configured update profile.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_status_status_anyOf_i0_new_version">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_status_status_anyOf_i0_new_version">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_status_status_anyOf_i0_new_version" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_status_status_anyOf_i0_new_version" data-toggle="collapse" onclick="setAnchor('#CHANGED_status_status_anyOf_i0_new_version')" type="button"><span class="property-name">new_version</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_status_status_anyOf_i0_new_version" class="collapse property-definition-div" data-parent="#accordionCHANGED_status_status_anyOf_i0_new_version" id="CHANGED_status_status_anyOf_i0_new_version">
+    <div class="card-body pl-5">
+    <br/>
+    <span class="description"><p>New system version information (or <code>null</code> if no new system version is available).</p>
+    </span><div class="any-of-value" id="CHANGED_status_status_anyOf_i0_new_version_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_status_status_anyOf_i0_new_version_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_status_status_anyOf_i0_new_version_anyOf_i0" id="CHANGED_status_status_anyOf_i0_new_version_anyOf_i0" onclick="setAnchor('#CHANGED_status_status_anyOf_i0_new_version_anyOf_i0')" role="tab">UpdateStatusNewVersion</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_status_status_anyOf_i0_new_version_anyOf_i1" id="CHANGED_status_status_anyOf_i0_new_version_anyOf_i1" onclick="setAnchor('#CHANGED_status_status_anyOf_i0_new_version_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_status_status_anyOf_i0_new_version_anyOf_i0" role="tabpanel">
+    <h4>UpdateStatusNewVersion</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_status_status_anyOf_i0_new_version_anyOf_i0_version">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_status_status_anyOf_i0_new_version_anyOf_i0_version">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_status_status_anyOf_i0_new_version_anyOf_i0_version" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_status_status_anyOf_i0_new_version_anyOf_i0_version" data-toggle="collapse" onclick="setAnchor('#CHANGED_status_status_anyOf_i0_new_version_anyOf_i0_version')" type="button"><span class="property-name">version</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_status_status_anyOf_i0_new_version_anyOf_i0_version" class="collapse property-definition-div" data-parent="#accordionCHANGED_status_status_anyOf_i0_new_version_anyOf_i0_version" id="CHANGED_status_status_anyOf_i0_new_version_anyOf_i0_version">
+    <div class="card-body pl-5">
+    <h4>Version</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Newly available version number.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_status_status_anyOf_i0_new_version_anyOf_i0_manifest">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_status_status_anyOf_i0_new_version_anyOf_i0_manifest">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_status_status_anyOf_i0_new_version_anyOf_i0_manifest" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_status_status_anyOf_i0_new_version_anyOf_i0_manifest" data-toggle="collapse" onclick="setAnchor('#CHANGED_status_status_anyOf_i0_new_version_anyOf_i0_manifest')" type="button"><span class="property-name">manifest</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_status_status_anyOf_i0_new_version_anyOf_i0_manifest" class="collapse property-definition-div" data-parent="#accordionCHANGED_status_status_anyOf_i0_new_version_anyOf_i0_manifest" id="CHANGED_status_status_anyOf_i0_new_version_anyOf_i0_manifest">
+    <div class="card-body pl-5">
+    <h4>Manifest</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Object containing detailed version information and metadata.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes" data-toggle="collapse" onclick="setAnchor('#CHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes')" type="button"><span class="property-name">release_notes</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes" class="collapse property-definition-div" data-parent="#accordionCHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes" id="CHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes">
+    <div class="card-body pl-5">
+    <h4>Release Notes</h4><br/>
+    <span class="description"><p>Release notes.</p>
+    </span><div class="any-of-value" id="CHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes_anyOf_i0" id="CHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes_anyOf_i0" onclick="setAnchor('#CHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes_anyOf_i1" id="CHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes_anyOf_i1" onclick="setAnchor('#CHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes_url">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes_url">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes_url" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes_url" data-toggle="collapse" onclick="setAnchor('#CHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes_url')" type="button"><span class="property-name">release_notes_url</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes_url" class="collapse property-definition-div" data-parent="#accordionCHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes_url" id="CHANGED_status_status_anyOf_i0_new_version_anyOf_i0_release_notes_url">
+    <div class="card-body pl-5">
+    <h4>Release Notes Url</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Release notes URL.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_status_status_anyOf_i0_new_version_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_status_status_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_status_error">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_status_error">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_status_error" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_status_error" data-toggle="collapse" onclick="setAnchor('#CHANGED_status_error')" type="button"><span class="property-name">error</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_status_error" class="collapse property-definition-div" data-parent="#accordionCHANGED_status_error" id="CHANGED_status_error">
+    <div class="card-body pl-5">
+    <br/>
+    <span class="description"><p>Error message if code is ERROR. <code>null</code> otherwise.</p>
+    </span><div class="any-of-value" id="CHANGED_status_error_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_status_error_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_status_error_anyOf_i0" id="CHANGED_status_error_anyOf_i0" onclick="setAnchor('#CHANGED_status_error_anyOf_i0')" role="tab">UpdateStatusError</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_status_error_anyOf_i1" id="CHANGED_status_error_anyOf_i1" onclick="setAnchor('#CHANGED_status_error_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_status_error_anyOf_i0" role="tabpanel">
+    <h4>UpdateStatusError</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_status_error_anyOf_i0_errname">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_status_error_anyOf_i0_errname">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_status_error_anyOf_i0_errname" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_status_error_anyOf_i0_errname" data-toggle="collapse" onclick="setAnchor('#CHANGED_status_error_anyOf_i0_errname')" type="button"><span class="property-name">errname</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_status_error_anyOf_i0_errname" class="collapse property-definition-div" data-parent="#accordionCHANGED_status_error_anyOf_i0_errname" id="CHANGED_status_error_anyOf_i0_errname">
+    <div class="card-body pl-5">
+    <h4>Errname</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Error code (i.e. ENONET).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_status_error_anyOf_i0_reason">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_status_error_anyOf_i0_reason">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_status_error_anyOf_i0_reason" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_status_error_anyOf_i0_reason" data-toggle="collapse" onclick="setAnchor('#CHANGED_status_error_anyOf_i0_reason')" type="button"><span class="property-name">reason</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_status_error_anyOf_i0_reason" class="collapse property-definition-div" data-parent="#accordionCHANGED_status_error_anyOf_i0_reason" id="CHANGED_status_error_anyOf_i0_reason">
+    <div class="card-body pl-5">
+    <h4>Reason</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Error text.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_status_error_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_status_update_download_progress">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_status_update_download_progress">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_status_update_download_progress" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_status_update_download_progress" data-toggle="collapse" onclick="setAnchor('#CHANGED_status_update_download_progress')" type="button"><span class="property-name">update_download_progress</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_status_update_download_progress" class="collapse property-definition-div" data-parent="#accordionCHANGED_status_update_download_progress" id="CHANGED_status_update_download_progress">
+    <div class="card-body pl-5">
+    <br/>
+    <span class="description"><p>Current update download progress.</p>
+    </span><div class="any-of-value" id="CHANGED_status_update_download_progress_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_status_update_download_progress_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_status_update_download_progress_anyOf_i0" id="CHANGED_status_update_download_progress_anyOf_i0" onclick="setAnchor('#CHANGED_status_update_download_progress_anyOf_i0')" role="tab">UpdateDownloadProgress</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_status_update_download_progress_anyOf_i1" id="CHANGED_status_update_download_progress_anyOf_i1" onclick="setAnchor('#CHANGED_status_update_download_progress_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_status_update_download_progress_anyOf_i0" role="tabpanel">
+    <h4>UpdateDownloadProgress</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_status_update_download_progress_anyOf_i0_percent">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_status_update_download_progress_anyOf_i0_percent">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_status_update_download_progress_anyOf_i0_percent" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_status_update_download_progress_anyOf_i0_percent" data-toggle="collapse" onclick="setAnchor('#CHANGED_status_update_download_progress_anyOf_i0_percent')" type="button"><span class="property-name">percent</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_status_update_download_progress_anyOf_i0_percent" class="collapse property-definition-div" data-parent="#accordionCHANGED_status_update_download_progress_anyOf_i0_percent" id="CHANGED_status_update_download_progress_anyOf_i0_percent">
+    <div class="card-body pl-5">
+    <h4>Percent</h4><span class="badge badge-dark value-type">Type: number</span><br/>
+    <span class="description"><p>Download completion percentage (0.0 to 100.0).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_status_update_download_progress_anyOf_i0_description">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_status_update_download_progress_anyOf_i0_description">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_status_update_download_progress_anyOf_i0_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_status_update_download_progress_anyOf_i0_description" data-toggle="collapse" onclick="setAnchor('#CHANGED_status_update_download_progress_anyOf_i0_description')" type="button"><span class="property-name">description</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_status_update_download_progress_anyOf_i0_description" class="collapse property-definition-div" data-parent="#accordionCHANGED_status_update_download_progress_anyOf_i0_description" id="CHANGED_status_update_download_progress_anyOf_i0_description">
+    <div class="card-body pl-5">
+    <h4>Description</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable description of the current download activity.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_status_update_download_progress_anyOf_i0_version">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_status_update_download_progress_anyOf_i0_version">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_status_update_download_progress_anyOf_i0_version" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_status_update_download_progress_anyOf_i0_version" data-toggle="collapse" onclick="setAnchor('#CHANGED_status_update_download_progress_anyOf_i0_version')" type="button"><span class="property-name">version</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_status_update_download_progress_anyOf_i0_version" class="collapse property-definition-div" data-parent="#accordionCHANGED_status_update_download_progress_anyOf_i0_version" id="CHANGED_status_update_download_progress_anyOf_i0_version">
+    <div class="card-body pl-5">
+    <h4>Version</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Version number being downloaded.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_status_update_download_progress_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SYSTEM_UPDATE_READ
+

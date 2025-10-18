@@ -1,0 +1,11 @@
+directoryservices
+-----------------
+
+.. toctree::
+
+   api_methods_directoryservices.cache_refresh
+   api_methods_directoryservices.certificate_choices
+   api_methods_directoryservices.config
+   api_methods_directoryservices.leave
+   api_methods_directoryservices.status
+   api_methods_directoryservices.update

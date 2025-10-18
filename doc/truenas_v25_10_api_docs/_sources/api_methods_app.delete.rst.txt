@@ -1,0 +1,139 @@
+app.delete
+==========
+
+Delete `app_name` app.
+
+`force_remove_ix_volumes` should be set when the ix-volumes were created by the system for apps which were migrated from k8s to docker and the user wants to remove them. This is to prevent accidental deletion of the original ix-volumes which were created in dragonfish and before for kubernetes based apps. When this is set, it will result in the deletion of ix-volumes from both docker based apps and k8s based apps and should be carefully set.
+
+`force_remove_custom_app` should be set when the app being deleted is a custom app and the user wants to forcefully remove the app. A use-case for this attribute is that user had an invalid yaml in his custom app and there are no actual docker resources (network/containers/volumes) in place for the custom app, then docker compose down will fail as the yaml itself is invalid. In this case this flag can be set to proceed with the deletion of the custom app. However if this app had any docker resources in place, then this flag will have no effect.
+
+This method is a job.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: app_name</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>app_name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name of the application to delete.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    <h5>Parameter 2: options</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>options</h4><span class="badge badge-dark value-type">Type: object</span> <div class="json-default-value">Default:<div class="value">{
+      "remove_images": true,
+      "remove_ix_volumes": false,
+      "force_remove_ix_volumes": false,
+      "force_remove_custom_app": false
+    }</div></div><br/>
+    <span class="description"><p>Options controlling what gets removed along with the application.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_remove_images">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_remove_images">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_remove_images" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_remove_images" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_remove_images')" type="button"><span class="property-name">remove_images</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_remove_images" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_remove_images" id="Call_parameters_items_i1_remove_images">
+    <div class="card-body pl-5">
+    <h4>Remove Images</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Whether to remove Docker images associated with the application.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_remove_ix_volumes">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_remove_ix_volumes">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_remove_ix_volumes" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_remove_ix_volumes" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_remove_ix_volumes')" type="button"><span class="property-name">remove_ix_volumes</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_remove_ix_volumes" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_remove_ix_volumes" id="Call_parameters_items_i1_remove_ix_volumes">
+    <div class="card-body pl-5">
+    <h4>Remove Ix Volumes</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to remove TrueNAS-managed storage volumes.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_force_remove_ix_volumes">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_force_remove_ix_volumes">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_force_remove_ix_volumes" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_force_remove_ix_volumes" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_force_remove_ix_volumes')" type="button"><span class="property-name">force_remove_ix_volumes</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_force_remove_ix_volumes" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_force_remove_ix_volumes" id="Call_parameters_items_i1_force_remove_ix_volumes">
+    <div class="card-body pl-5">
+    <h4>Force Remove Ix Volumes</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Force removal of TrueNAS-managed volumes even if they contain data.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_force_remove_custom_app">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_force_remove_custom_app">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_force_remove_custom_app" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_force_remove_custom_app" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_force_remove_custom_app')" type="button"><span class="property-name">force_remove_custom_app</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_force_remove_custom_app" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_force_remove_custom_app" id="Call_parameters_items_i1_force_remove_custom_app">
+    <div class="card-body pl-5">
+    <h4>Force Remove Custom App</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Force removal of custom applications that might have important data or configurations.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Returns <code>true</code> when the application is successfully deleted.</p>
+    </span><div class="enum-value" id="Return_value_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">true</li></ul>
+    </div><span class="const-value" id="Return_value_const">Specific value: <code>true</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* APPS_WRITE
+

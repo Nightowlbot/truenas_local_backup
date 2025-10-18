@@ -1,0 +1,101 @@
+interface.xmit_hash_policy_choices
+==================================
+
+Available transmit hash policies for the LACP or LOADBALANCE lagg type interfaces.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>InterfaceXmitHashPolicyChoicesResult</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>InterfaceXmitHashPolicyChoicesResult return fields.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_LAYER2">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_LAYER2">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_LAYER2" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_LAYER2" data-toggle="collapse" onclick="setAnchor('#Return_value_LAYER2')" type="button"><span class="property-name">LAYER2</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_LAYER2" class="collapse property-definition-div" data-parent="#accordionReturn_value_LAYER2" id="Return_value_LAYER2">
+    <div class="card-body pl-5">
+    <h4>Layer2</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Use MAC addresses for traffic distribution across bond members.</p>
+    </span><div class="enum-value" id="Return_value_LAYER2_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"LAYER2"</li></ul>
+    </div><span class="const-value" id="Return_value_LAYER2_const">Specific value: <code>"LAYER2"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_LAYER2+3">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_LAYER2+3">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_LAYER2+3" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_LAYER2+3" data-toggle="collapse" onclick="setAnchor('#Return_value_LAYER2+3')" type="button"><span class="property-name">LAYER2+3</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_LAYER2+3" class="collapse property-definition-div" data-parent="#accordionReturn_value_LAYER2+3" id="Return_value_LAYER2+3">
+    <div class="card-body pl-5">
+    <h4>Layer2+3</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Use MAC and IP addresses for traffic distribution across bond members.</p>
+    </span><div class="enum-value" id="Return_value_LAYER2+3_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"LAYER2+3"</li></ul>
+    </div><span class="const-value" id="Return_value_LAYER2+3_const">Specific value: <code>"LAYER2+3"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_LAYER3+4">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_LAYER3+4">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_LAYER3+4" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_LAYER3+4" data-toggle="collapse" onclick="setAnchor('#Return_value_LAYER3+4')" type="button"><span class="property-name">LAYER3+4</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_LAYER3+4" class="collapse property-definition-div" data-parent="#accordionReturn_value_LAYER3+4" id="Return_value_LAYER3+4">
+    <div class="card-body pl-5">
+    <h4>Layer3+4</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Use MAC, IP, and TCP/UDP port information for traffic distribution across bond members.</p>
+    </span><div class="enum-value" id="Return_value_LAYER3+4_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"LAYER3+4"</li></ul>
+    </div><span class="const-value" id="Return_value_LAYER3+4_const">Specific value: <code>"LAYER3+4"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* NETWORK_INTERFACE_READ | READONLY_ADMIN
+

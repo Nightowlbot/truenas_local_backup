@@ -1,0 +1,14 @@
+support
+-------
+
+.. toctree::
+
+   api_methods_support.attach_ticket
+   api_methods_support.attach_ticket_max_size
+   api_methods_support.config
+   api_methods_support.fields
+   api_methods_support.is_available
+   api_methods_support.is_available_and_enabled
+   api_methods_support.new_ticket
+   api_methods_support.similar_issues
+   api_methods_support.update

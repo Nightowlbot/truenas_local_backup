@@ -1,0 +1,459 @@
+smb.config
+==========
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>SmbServiceEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>TrueNAS SMB server configuration. </p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the SMB service configuration.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_netbiosname">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_netbiosname">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_netbiosname" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_netbiosname" data-toggle="collapse" onclick="setAnchor('#Return_value_netbiosname')" type="button"><span class="property-name">netbiosname</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_netbiosname" class="collapse property-definition-div" data-parent="#accordionReturn_value_netbiosname" id="Return_value_netbiosname">
+    <div class="card-body pl-5">
+    <h4>Netbiosname</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The NetBIOS name of this server. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_netbiosalias">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_netbiosalias">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_netbiosalias" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_netbiosalias" data-toggle="collapse" onclick="setAnchor('#Return_value_netbiosalias')" type="button"><span class="property-name">netbiosalias</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_netbiosalias" class="collapse property-definition-div" data-parent="#accordionReturn_value_netbiosalias" id="Return_value_netbiosalias">
+    <div class="card-body pl-5">
+    <h4>Netbiosalias</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Alternative netbios names of the TrueNAS server. These names are announced through NetBIOS name server and     registered in Active Directory when TrueNAS joins the domain.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_netbiosalias_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_workgroup">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_workgroup">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_workgroup" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_workgroup" data-toggle="collapse" onclick="setAnchor('#Return_value_workgroup')" type="button"><span class="property-name">workgroup</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_workgroup" class="collapse property-definition-div" data-parent="#accordionReturn_value_workgroup" id="Return_value_workgroup">
+    <div class="card-body pl-5">
+    <h4>Workgroup</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Workgroup name. When TrueNAS joins active directory, it automatically changes this value to match the NetBIOS     domain of the Active Directory domain. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_description">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_description">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_description" data-toggle="collapse" onclick="setAnchor('#Return_value_description')" type="button"><span class="property-name">description</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_description" class="collapse property-definition-div" data-parent="#accordionReturn_value_description" id="Return_value_description">
+    <div class="card-body pl-5">
+    <h4>Description</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Description of the SMB server. SMB clients may see this description during some operations. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_enable_smb1">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_enable_smb1">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_enable_smb1" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_enable_smb1" data-toggle="collapse" onclick="setAnchor('#Return_value_enable_smb1')" type="button"><span class="property-name">enable_smb1</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_enable_smb1" class="collapse property-definition-div" data-parent="#accordionReturn_value_enable_smb1" id="Return_value_enable_smb1">
+    <div class="card-body pl-5">
+    <h4>Enable Smb1</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Enable SMB1 support on the server. WARNING: using the SMB1 protocol is not recommended. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_unixcharset">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_unixcharset">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_unixcharset" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_unixcharset" data-toggle="collapse" onclick="setAnchor('#Return_value_unixcharset')" type="button"><span class="property-name">unixcharset</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_unixcharset" class="collapse property-definition-div" data-parent="#accordionReturn_value_unixcharset" id="Return_value_unixcharset">
+    <div class="card-body pl-5">
+    <h4>Unixcharset</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Select character set for file names on local filesystem. Use this option only if you know the names are not     UTF-8. </p>
+    </span><div class="enum-value" id="Return_value_unixcharset_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"UTF-8"</li><li class="list-group-item enum-item">"GB2312"</li><li class="list-group-item enum-item">"HZ-GB-2312"</li><li class="list-group-item enum-item">"CP1361"</li><li class="list-group-item enum-item">"BIG5"</li><li class="list-group-item enum-item">"BIG5HKSCS"</li><li class="list-group-item enum-item">"CP037"</li><li class="list-group-item enum-item">"CP273"</li><li class="list-group-item enum-item">"CP424"</li><li class="list-group-item enum-item">"CP437"</li><li class="list-group-item enum-item">"CP500"</li><li class="list-group-item enum-item">"CP775"</li><li class="list-group-item enum-item">"CP850"</li><li class="list-group-item enum-item">"CP852"</li><li class="list-group-item enum-item">"CP855"</li><li class="list-group-item enum-item">"CP857"</li><li class="list-group-item enum-item">"CP858"</li><li class="list-group-item enum-item">"CP860"</li><li class="list-group-item enum-item">"CP861"</li><li class="list-group-item enum-item">"CP862"</li><li class="list-group-item enum-item">"CP863"</li><li class="list-group-item enum-item">"CP864"</li><li class="list-group-item enum-item">"CP865"</li><li class="list-group-item enum-item">"CP866"</li><li class="list-group-item enum-item">"CP869"</li><li class="list-group-item enum-item">"CP932"</li><li class="list-group-item enum-item">"CP949"</li><li class="list-group-item enum-item">"CP950"</li><li class="list-group-item enum-item">"CP1026"</li><li class="list-group-item enum-item">"CP1125"</li><li class="list-group-item enum-item">"CP1140"</li><li class="list-group-item enum-item">"CP1250"</li><li class="list-group-item enum-item">"CP1251"</li><li class="list-group-item enum-item">"CP1252"</li><li class="list-group-item enum-item">"CP1253"</li><li class="list-group-item enum-item">"CP1254"</li><li class="list-group-item enum-item">"CP1255"</li><li class="list-group-item enum-item">"CP1256"</li><li class="list-group-item enum-item">"CP1257"</li><li class="list-group-item enum-item">"CP1258"</li><li class="list-group-item enum-item">"EUC_JIS_2004"</li><li class="list-group-item enum-item">"EUC_JISX0213"</li><li class="list-group-item enum-item">"EUC_JP"</li><li class="list-group-item enum-item">"EUC_KR"</li><li class="list-group-item enum-item">"GB18030"</li><li class="list-group-item enum-item">"GBK"</li><li class="list-group-item enum-item">"HZ"</li><li class="list-group-item enum-item">"ISO2022_JP"</li><li class="list-group-item enum-item">"ISO2022_JP_1"</li><li class="list-group-item enum-item">"ISO2022_JP_2"</li><li class="list-group-item enum-item">"ISO2022_JP_2004"</li><li class="list-group-item enum-item">"ISO2022_JP_3"</li><li class="list-group-item enum-item">"ISO2022_JP_EXT"</li><li class="list-group-item enum-item">"ISO2022_KR"</li><li class="list-group-item enum-item">"ISO8859_1"</li><li class="list-group-item enum-item">"ISO8859_2"</li><li class="list-group-item enum-item">"ISO8859_3"</li><li class="list-group-item enum-item">"ISO8859_4"</li><li class="list-group-item enum-item">"ISO8859_5"</li><li class="list-group-item enum-item">"ISO8859_6"</li><li class="list-group-item enum-item">"ISO8859_7"</li><li class="list-group-item enum-item">"ISO8859_8"</li><li class="list-group-item enum-item">"ISO8859_9"</li><li class="list-group-item enum-item">"ISO8859_10"</li><li class="list-group-item enum-item">"ISO8859_11"</li><li class="list-group-item enum-item">"ISO8859_13"</li><li class="list-group-item enum-item">"ISO8859_14"</li><li class="list-group-item enum-item">"ISO8859_15"</li><li class="list-group-item enum-item">"ISO8859_16"</li><li class="list-group-item enum-item">"JOHAB"</li><li class="list-group-item enum-item">"KOI8_R"</li><li class="list-group-item enum-item">"KZ1048"</li><li class="list-group-item enum-item">"LATIN_1"</li><li class="list-group-item enum-item">"MAC_CYRILLIC"</li><li class="list-group-item enum-item">"MAC_GREEK"</li><li class="list-group-item enum-item">"MAC_ICELAND"</li><li class="list-group-item enum-item">"MAC_LATIN2"</li><li class="list-group-item enum-item">"MAC_ROMAN"</li><li class="list-group-item enum-item">"MAC_TURKISH"</li><li class="list-group-item enum-item">"PTCP154"</li><li class="list-group-item enum-item">"SHIFT_JIS"</li><li class="list-group-item enum-item">"SHIFT_JIS_2004"</li><li class="list-group-item enum-item">"SHIFT_JISX0213"</li><li class="list-group-item enum-item">"TIS_620"</li><li class="list-group-item enum-item">"UTF_16"</li><li class="list-group-item enum-item">"UTF_16_BE"</li><li class="list-group-item enum-item">"UTF_16_LE"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_localmaster">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_localmaster">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_localmaster" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_localmaster" data-toggle="collapse" onclick="setAnchor('#Return_value_localmaster')" type="button"><span class="property-name">localmaster</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_localmaster" class="collapse property-definition-div" data-parent="#accordionReturn_value_localmaster" id="Return_value_localmaster">
+    <div class="card-body pl-5">
+    <h4>Localmaster</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>When set to <code>true</code> the NetBIOS name server in TrueNAS participates in elections for the local master browser.<br/>
+    When set to <code>false</code> the NetBIOS name server does not attempt to become a local master browser on a subnet and     loses all browsing elections.</p>
+    <p>NOTE: This parameter has no effect if the NetBIOS name server is disabled. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_syslog">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_syslog">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_syslog" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_syslog" data-toggle="collapse" onclick="setAnchor('#Return_value_syslog')" type="button"><span class="property-name">syslog</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_syslog" class="collapse property-definition-div" data-parent="#accordionReturn_value_syslog" id="Return_value_syslog">
+    <div class="card-body pl-5">
+    <h4>Syslog</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Send log messages to syslog. Enable this option if you want SMB server error logs to be included in     information sent to a remote syslog server. NOTE: This requires that remote syslog is globally configured on     TrueNAS. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_aapl_extensions">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_aapl_extensions">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_aapl_extensions" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_aapl_extensions" data-toggle="collapse" onclick="setAnchor('#Return_value_aapl_extensions')" type="button"><span class="property-name">aapl_extensions</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_aapl_extensions" class="collapse property-definition-div" data-parent="#accordionReturn_value_aapl_extensions" id="Return_value_aapl_extensions">
+    <div class="card-body pl-5">
+    <h4>Aapl Extensions</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Enable support for SMB2/3 AAPL protocol extensions. This setting makes the TrueNAS server advertise support     for Apple protocol extensions as a MacOS server. Enabling this is required for Time Machine support. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_admin_group">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_admin_group">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_admin_group" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_admin_group" data-toggle="collapse" onclick="setAnchor('#Return_value_admin_group')" type="button"><span class="property-name">admin_group</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_admin_group" class="collapse property-definition-div" data-parent="#accordionReturn_value_admin_group" id="Return_value_admin_group">
+    <div class="card-body pl-5">
+    <h4>Admin Group</h4><br/>
+    <span class="description"><p>The selected group has full administrator privileges on TrueNAS via the SMB protocol. </p>
+    </span><div class="any-of-value" id="Return_value_admin_group_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_admin_group_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_admin_group_anyOf_i0" id="Return_value_admin_group_anyOf_i0" onclick="setAnchor('#Return_value_admin_group_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_admin_group_anyOf_i1" id="Return_value_admin_group_anyOf_i1" onclick="setAnchor('#Return_value_admin_group_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_admin_group_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_admin_group_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_guest">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_guest">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_guest" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_guest" data-toggle="collapse" onclick="setAnchor('#Return_value_guest')" type="button"><span class="property-name">guest</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_guest" class="collapse property-definition-div" data-parent="#accordionReturn_value_guest" id="Return_value_guest">
+    <div class="card-body pl-5">
+    <h4>Guest</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>SMB guest account username. This username provides access to legacy SMB shares with guest access enabled.     It must be a valid, existing local user account. </p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_guest_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_filemask">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_filemask">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_filemask" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_filemask" data-toggle="collapse" onclick="setAnchor('#Return_value_filemask')" type="button"><span class="property-name">filemask</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_filemask" class="collapse property-definition-div" data-parent="#accordionReturn_value_filemask" id="Return_value_filemask">
+    <div class="card-body pl-5">
+    <h4>Filemask</h4><br/>
+    <span class="description"><p><code>smb.conf</code> create mask. DEFAULT applies current server default which is 664. </p>
+    </span><div class="any-of-value" id="Return_value_filemask_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_filemask_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_filemask_anyOf_i0" id="Return_value_filemask_anyOf_i0" onclick="setAnchor('#Return_value_filemask_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_filemask_anyOf_i1" id="Return_value_filemask_anyOf_i1" onclick="setAnchor('#Return_value_filemask_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_filemask_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_filemask_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_filemask_anyOf_i1_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"DEFAULT"</li></ul>
+    </div><span class="const-value" id="Return_value_filemask_anyOf_i1_const">Specific value: <code>"DEFAULT"</code></span>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_dirmask">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_dirmask">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_dirmask" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_dirmask" data-toggle="collapse" onclick="setAnchor('#Return_value_dirmask')" type="button"><span class="property-name">dirmask</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_dirmask" class="collapse property-definition-div" data-parent="#accordionReturn_value_dirmask" id="Return_value_dirmask">
+    <div class="card-body pl-5">
+    <h4>Dirmask</h4><br/>
+    <span class="description"><p><code>smb.conf</code> directory mask. DEFAULT applies current server default which is 775. </p>
+    </span><div class="any-of-value" id="Return_value_dirmask_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_dirmask_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_dirmask_anyOf_i0" id="Return_value_dirmask_anyOf_i0" onclick="setAnchor('#Return_value_dirmask_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_dirmask_anyOf_i1" id="Return_value_dirmask_anyOf_i1" onclick="setAnchor('#Return_value_dirmask_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_dirmask_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_dirmask_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_dirmask_anyOf_i1_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"DEFAULT"</li></ul>
+    </div><span class="const-value" id="Return_value_dirmask_anyOf_i1_const">Specific value: <code>"DEFAULT"</code></span>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_ntlmv1_auth">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_ntlmv1_auth">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_ntlmv1_auth" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_ntlmv1_auth" data-toggle="collapse" onclick="setAnchor('#Return_value_ntlmv1_auth')" type="button"><span class="property-name">ntlmv1_auth</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_ntlmv1_auth" class="collapse property-definition-div" data-parent="#accordionReturn_value_ntlmv1_auth" id="Return_value_ntlmv1_auth">
+    <div class="card-body pl-5">
+    <h4>Ntlmv1 Auth</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Enable legacy and very insecure NTLMv1 authentication. This should never be done except     in extreme edge cases and may be against regulations in non-home environments. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_multichannel">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_multichannel">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_multichannel" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_multichannel" data-toggle="collapse" onclick="setAnchor('#Return_value_multichannel')" type="button"><span class="property-name">multichannel</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_multichannel" class="collapse property-definition-div" data-parent="#accordionReturn_value_multichannel" id="Return_value_multichannel">
+    <div class="card-body pl-5">
+    <h4>Multichannel</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Enable SMB3 multi-channel support. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_encryption">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_encryption">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_encryption" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_encryption" data-toggle="collapse" onclick="setAnchor('#Return_value_encryption')" type="button"><span class="property-name">encryption</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_encryption" class="collapse property-definition-div" data-parent="#accordionReturn_value_encryption" id="Return_value_encryption">
+    <div class="card-body pl-5">
+    <h4>Encryption</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>SMB2/3 transport encryption setting for the TrueNAS SMB server.</p>
+    <ul>
+    <li><code>NEGOTIATE</code>: Enable negotiation of data encryption. Encrypt data only if the client explicitly requests it.</li>
+    <li><code>DESIRED</code>: Enable negotiation of data encryption. Encrypt data on sessions and share connections for clients       that support it.</li>
+    <li><code>REQUIRED</code>: Require data encryption for sessions and share connections.<br/>
+    NOTE: Clients that do not support encryption cannot access SMB shares.</li>
+    <li><code>DEFAULT</code>: Use the TrueNAS SMB server default encryption settings. Currently, this is the same as <code>NEGOTIATE</code>.</li>
+    </ul>
+    </span><div class="enum-value" id="Return_value_encryption_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"DEFAULT"</li><li class="list-group-item enum-item">"NEGOTIATE"</li><li class="list-group-item enum-item">"DESIRED"</li><li class="list-group-item enum-item">"REQUIRED"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_bindip">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_bindip">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_bindip" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_bindip" data-toggle="collapse" onclick="setAnchor('#Return_value_bindip')" type="button"><span class="property-name">bindip</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_bindip" class="collapse property-definition-div" data-parent="#accordionReturn_value_bindip" id="Return_value_bindip">
+    <div class="card-body pl-5">
+    <h4>Bindip</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>List of IP addresses used by the TrueNAS SMB server. </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_bindip_items">
+    <span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: ipvanyinterface</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_server_sid">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_server_sid">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_server_sid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_server_sid" data-toggle="collapse" onclick="setAnchor('#Return_value_server_sid')" type="button"><span class="property-name">server_sid</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_server_sid" class="collapse property-definition-div" data-parent="#accordionReturn_value_server_sid" id="Return_value_server_sid">
+    <div class="card-body pl-5">
+    <h4>Server Sid</h4><br/>
+    <span class="description"><p>The unique identifier for the TrueNAS SMB server. It also serves as the domain SID for all local SMB user and     group accounts. </p>
+    </span><div class="any-of-value" id="Return_value_server_sid_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_server_sid_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_server_sid_anyOf_i0" id="Return_value_server_sid_anyOf_i0" onclick="setAnchor('#Return_value_server_sid_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_server_sid_anyOf_i1" id="Return_value_server_sid_anyOf_i1" onclick="setAnchor('#Return_value_server_sid_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_server_sid_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_server_sid_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_smb_options">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_smb_options">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_smb_options" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_smb_options" data-toggle="collapse" onclick="setAnchor('#Return_value_smb_options')" type="button"><span class="property-name">smb_options</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_smb_options" class="collapse property-definition-div" data-parent="#accordionReturn_value_smb_options" id="Return_value_smb_options">
+    <div class="card-body pl-5">
+    <h4>Smb Options</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Additional unvalidated and unsupported configuration options for the SMB server.<br/>
+    WARNING: Using <code>smb_options</code> may produce unexpected server behavior. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_debug">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_debug">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_debug" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_debug" data-toggle="collapse" onclick="setAnchor('#Return_value_debug')" type="button"><span class="property-name">debug</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_debug" class="collapse property-definition-div" data-parent="#accordionReturn_value_debug" id="Return_value_debug">
+    <div class="card-body pl-5">
+    <h4>Debug</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Set SMB log levels to debug. Use this setting only when troubleshooting a specific SMB issue. Do not use it     in production environments. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SHARING_SMB_READ
+

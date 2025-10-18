@@ -1,0 +1,174 @@
+staticroute.update
+==================
+
+Update Static Route of `id`.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: id</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>ID of the static route to update.</p>
+    </span>
+    </div>
+    </div>
+    <h5>Parameter 2: data</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>data</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Updated configuration for the static route.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_destination">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_destination">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_destination" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_destination" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_destination')" type="button"><span class="property-name">destination</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_destination" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_destination" id="Call_parameters_items_i1_destination">
+    <div class="card-body pl-5">
+    <h4>Destination</h4><span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: ipvanynetwork</span><br/>
+    <span class="description"><p>Destination network (CIDR notation) for this static route.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_gateway">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_gateway">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_gateway" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_gateway" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_gateway')" type="button"><span class="property-name">gateway</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_gateway" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_gateway" id="Call_parameters_items_i1_gateway">
+    <div class="card-body pl-5">
+    <h4>Gateway</h4><span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: ipvanyaddress</span><br/>
+    <span class="description"><p>Gateway IP address for this static route.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_description">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_description">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_description" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_description')" type="button"><span class="property-name">description</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_description" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_description" id="Call_parameters_items_i1_description">
+    <div class="card-body pl-5">
+    <h4>Description</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Optional description for this static route.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>StaticRouteEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The updated static route configuration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_destination">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_destination">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_destination" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_destination" data-toggle="collapse" onclick="setAnchor('#Return_value_destination')" type="button"><span class="property-name">destination</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_destination" class="collapse property-definition-div" data-parent="#accordionReturn_value_destination" id="Return_value_destination">
+    <div class="card-body pl-5">
+    <h4>Destination</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Destination network or host for this static route.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_destination_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_gateway">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_gateway">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_gateway" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_gateway" data-toggle="collapse" onclick="setAnchor('#Return_value_gateway')" type="button"><span class="property-name">gateway</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_gateway" class="collapse property-definition-div" data-parent="#accordionReturn_value_gateway" id="Return_value_gateway">
+    <div class="card-body pl-5">
+    <h4>Gateway</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Gateway IP address for this static route.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_gateway_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_description">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_description">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_description" data-toggle="collapse" onclick="setAnchor('#Return_value_description')" type="button"><span class="property-name">description</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_description" class="collapse property-definition-div" data-parent="#accordionReturn_value_description" id="Return_value_description">
+    <div class="card-body pl-5">
+    <h4>Description</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+    <span class="description"><p>Optional description for this static route.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for this static route.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* NETWORK_INTERFACE_WRITE
+

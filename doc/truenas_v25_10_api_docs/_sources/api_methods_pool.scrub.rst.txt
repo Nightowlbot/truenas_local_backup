@@ -1,0 +1,12 @@
+pool.scrub
+----------
+
+.. toctree::
+
+   api_methods_pool.scrub.create
+   api_methods_pool.scrub.delete
+   api_methods_pool.scrub.get_instance
+   api_methods_pool.scrub.query
+   api_methods_pool.scrub.run
+   api_methods_pool.scrub.scrub
+   api_methods_pool.scrub.update

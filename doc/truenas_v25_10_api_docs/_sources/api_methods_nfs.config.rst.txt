@@ -1,0 +1,379 @@
+nfs.config
+==========
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>NfsEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Placeholder identifier.  Not used as there is only one.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_servers">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_servers">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_servers" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_servers" data-toggle="collapse" onclick="setAnchor('#Return_value_servers')" type="button"><span class="property-name">servers</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_servers" class="collapse property-definition-div" data-parent="#accordionReturn_value_servers" id="Return_value_servers">
+    <div class="card-body pl-5">
+    <h4>Servers</h4><br/>
+    <span class="description"><p>Specify the number of nfsd. Default: Number of nfsd is equal number of CPU. </p>
+    </span><div class="any-of-value" id="Return_value_servers_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_servers_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_servers_anyOf_i0" id="Return_value_servers_anyOf_i0" onclick="setAnchor('#Return_value_servers_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_servers_anyOf_i1" id="Return_value_servers_anyOf_i1" onclick="setAnchor('#Return_value_servers_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_servers_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_servers_anyOf_i0_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>256</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_servers_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_allow_nonroot">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_allow_nonroot">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_allow_nonroot" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_allow_nonroot" data-toggle="collapse" onclick="setAnchor('#Return_value_allow_nonroot')" type="button"><span class="property-name">allow_nonroot</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_allow_nonroot" class="collapse property-definition-div" data-parent="#accordionReturn_value_allow_nonroot" id="Return_value_allow_nonroot">
+    <div class="card-body pl-5">
+    <h4>Allow Nonroot</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Allow non-root mount requests.  This equates to 'insecure' share option. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_protocols">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_protocols">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_protocols" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_protocols" data-toggle="collapse" onclick="setAnchor('#Return_value_protocols')" type="button"><span class="property-name">protocols</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_protocols" class="collapse property-definition-div" data-parent="#accordionReturn_value_protocols" id="Return_value_protocols">
+    <div class="card-body pl-5">
+    <h4>Protocols</h4><span class="badge badge-dark value-type">Type: array of enum (of string)</span><br/>
+    <span class="description"><p>Specify supported NFS protocols:  NFSv3, NFSv4 or both can be listed. </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_protocols_items">
+    <span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <div class="enum-value" id="Return_value_protocols_items_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"NFSV3"</li><li class="list-group-item enum-item">"NFSV4"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_v4_krb">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_v4_krb">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_v4_krb" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_v4_krb" data-toggle="collapse" onclick="setAnchor('#Return_value_v4_krb')" type="button"><span class="property-name">v4_krb</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_v4_krb" class="collapse property-definition-div" data-parent="#accordionReturn_value_v4_krb" id="Return_value_v4_krb">
+    <div class="card-body pl-5">
+    <h4>V4 Krb</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Force Kerberos authentication on NFS shares. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_v4_domain">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_v4_domain">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_v4_domain" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_v4_domain" data-toggle="collapse" onclick="setAnchor('#Return_value_v4_domain')" type="button"><span class="property-name">v4_domain</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_v4_domain" class="collapse property-definition-div" data-parent="#accordionReturn_value_v4_domain" id="Return_value_v4_domain">
+    <div class="card-body pl-5">
+    <h4>V4 Domain</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Specify a DNS domain (NFSv4 only). </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_bindip">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_bindip">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_bindip" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_bindip" data-toggle="collapse" onclick="setAnchor('#Return_value_bindip')" type="button"><span class="property-name">bindip</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_bindip" class="collapse property-definition-div" data-parent="#accordionReturn_value_bindip" id="Return_value_bindip">
+    <div class="card-body pl-5">
+    <h4>Bindip</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>Limit the server IP addresses available for NFS. </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_bindip_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_bindip_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_mountd_port">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_mountd_port">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_mountd_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_mountd_port" data-toggle="collapse" onclick="setAnchor('#Return_value_mountd_port')" type="button"><span class="property-name">mountd_port</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_mountd_port" class="collapse property-definition-div" data-parent="#accordionReturn_value_mountd_port" id="Return_value_mountd_port">
+    <div class="card-body pl-5">
+    <h4>Mountd Port</h4><br/>
+    <span class="description"><p>Specify the mountd port binding. </p>
+    </span><div class="any-of-value" id="Return_value_mountd_port_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_mountd_port_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_mountd_port_anyOf_i0" id="Return_value_mountd_port_anyOf_i0" onclick="setAnchor('#Return_value_mountd_port_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_mountd_port_anyOf_i1" id="Return_value_mountd_port_anyOf_i1" onclick="setAnchor('#Return_value_mountd_port_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_mountd_port_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_mountd_port_anyOf_i0_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>65535</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_mountd_port_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_rpcstatd_port">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_rpcstatd_port">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_rpcstatd_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_rpcstatd_port" data-toggle="collapse" onclick="setAnchor('#Return_value_rpcstatd_port')" type="button"><span class="property-name">rpcstatd_port</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_rpcstatd_port" class="collapse property-definition-div" data-parent="#accordionReturn_value_rpcstatd_port" id="Return_value_rpcstatd_port">
+    <div class="card-body pl-5">
+    <h4>Rpcstatd Port</h4><br/>
+    <span class="description"><p>Specify the rpc.statd port binding. </p>
+    </span><div class="any-of-value" id="Return_value_rpcstatd_port_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_rpcstatd_port_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_rpcstatd_port_anyOf_i0" id="Return_value_rpcstatd_port_anyOf_i0" onclick="setAnchor('#Return_value_rpcstatd_port_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_rpcstatd_port_anyOf_i1" id="Return_value_rpcstatd_port_anyOf_i1" onclick="setAnchor('#Return_value_rpcstatd_port_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_rpcstatd_port_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_rpcstatd_port_anyOf_i0_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>65535</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_rpcstatd_port_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_rpclockd_port">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_rpclockd_port">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_rpclockd_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_rpclockd_port" data-toggle="collapse" onclick="setAnchor('#Return_value_rpclockd_port')" type="button"><span class="property-name">rpclockd_port</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_rpclockd_port" class="collapse property-definition-div" data-parent="#accordionReturn_value_rpclockd_port" id="Return_value_rpclockd_port">
+    <div class="card-body pl-5">
+    <h4>Rpclockd Port</h4><br/>
+    <span class="description"><p>Specify the rpc.lockd port binding. </p>
+    </span><div class="any-of-value" id="Return_value_rpclockd_port_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_rpclockd_port_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_rpclockd_port_anyOf_i0" id="Return_value_rpclockd_port_anyOf_i0" onclick="setAnchor('#Return_value_rpclockd_port_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_rpclockd_port_anyOf_i1" id="Return_value_rpclockd_port_anyOf_i1" onclick="setAnchor('#Return_value_rpclockd_port_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_rpclockd_port_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_rpclockd_port_anyOf_i0_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>65535</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_rpclockd_port_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_mountd_log">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_mountd_log">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_mountd_log" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_mountd_log" data-toggle="collapse" onclick="setAnchor('#Return_value_mountd_log')" type="button"><span class="property-name">mountd_log</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_mountd_log" class="collapse property-definition-div" data-parent="#accordionReturn_value_mountd_log" id="Return_value_mountd_log">
+    <div class="card-body pl-5">
+    <h4>Mountd Log</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Enable or disable mountd logging. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_statd_lockd_log">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_statd_lockd_log">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_statd_lockd_log" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_statd_lockd_log" data-toggle="collapse" onclick="setAnchor('#Return_value_statd_lockd_log')" type="button"><span class="property-name">statd_lockd_log</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_statd_lockd_log" class="collapse property-definition-div" data-parent="#accordionReturn_value_statd_lockd_log" id="Return_value_statd_lockd_log">
+    <div class="card-body pl-5">
+    <h4>Statd Lockd Log</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Enable or disable statd and lockd logging. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_v4_krb_enabled">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_v4_krb_enabled">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_v4_krb_enabled" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_v4_krb_enabled" data-toggle="collapse" onclick="setAnchor('#Return_value_v4_krb_enabled')" type="button"><span class="property-name">v4_krb_enabled</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_v4_krb_enabled" class="collapse property-definition-div" data-parent="#accordionReturn_value_v4_krb_enabled" id="Return_value_v4_krb_enabled">
+    <div class="card-body pl-5">
+    <h4>V4 Krb Enabled</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Status of NFSv4 authentication requirement (status only). </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_userd_manage_gids">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_userd_manage_gids">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_userd_manage_gids" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_userd_manage_gids" data-toggle="collapse" onclick="setAnchor('#Return_value_userd_manage_gids')" type="button"><span class="property-name">userd_manage_gids</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_userd_manage_gids" class="collapse property-definition-div" data-parent="#accordionReturn_value_userd_manage_gids" id="Return_value_userd_manage_gids">
+    <div class="card-body pl-5">
+    <h4>Userd Manage Gids</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Enable to allow server to manage gids. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_keytab_has_nfs_spn">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_keytab_has_nfs_spn">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_keytab_has_nfs_spn" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_keytab_has_nfs_spn" data-toggle="collapse" onclick="setAnchor('#Return_value_keytab_has_nfs_spn')" type="button"><span class="property-name">keytab_has_nfs_spn</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_keytab_has_nfs_spn" class="collapse property-definition-div" data-parent="#accordionReturn_value_keytab_has_nfs_spn" id="Return_value_keytab_has_nfs_spn">
+    <div class="card-body pl-5">
+    <h4>Keytab Has Nfs Spn</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Report status of NFS Principal Name in keytab (status only). </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_managed_nfsd">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_managed_nfsd">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_managed_nfsd" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_managed_nfsd" data-toggle="collapse" onclick="setAnchor('#Return_value_managed_nfsd')" type="button"><span class="property-name">managed_nfsd</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_managed_nfsd" class="collapse property-definition-div" data-parent="#accordionReturn_value_managed_nfsd" id="Return_value_managed_nfsd">
+    <div class="card-body pl-5">
+    <h4>Managed Nfsd</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Report status of 'servers' field.<br/>
+    If true, the number of nfsd is managed by the server (status only). </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_rdma">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_rdma">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_rdma" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_rdma" data-toggle="collapse" onclick="setAnchor('#Return_value_rdma')" type="button"><span class="property-name">rdma</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_rdma" class="collapse property-definition-div" data-parent="#accordionReturn_value_rdma" id="Return_value_rdma">
+    <div class="card-body pl-5">
+    <h4>Rdma</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Enable or disable NFS over RDMA.  Requires RDMA capable NIC. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SHARING_NFS_READ
+

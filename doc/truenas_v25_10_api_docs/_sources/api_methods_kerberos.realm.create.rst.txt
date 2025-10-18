@@ -1,0 +1,298 @@
+kerberos.realm.create
+=====================
+
+Create a new kerberos realm. This will be automatically populated during the domain join process in an Active Directory environment. Kerberos realm names are case-sensitive, but convention is to only use upper-case.
+
+Entries for kdc, admin_server, and kpasswd_server are not required. If they are unpopulated, then kerberos will use DNS srv records to discover the correct servers. The option to hard-code them is provided due to AD site discovery. Kerberos has no concept of Active Directory sites. This means that middleware performs the site discovery and sets the kerberos configuration based on the AD site.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: data</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>data</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Kerberos realm configuration data for creation.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_realm">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_realm">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_realm" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_realm" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_realm')" type="button"><span class="property-name">realm</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_realm" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_realm" id="Call_parameters_items_i0_realm">
+    <div class="card-body pl-5">
+    <h4>Realm</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Kerberos realm name. This is external to TrueNAS and is case-sensitive.     The general convention for kerberos realms is that they are upper-case.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_realm_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_primary_kdc">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_primary_kdc">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_primary_kdc" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_primary_kdc" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_primary_kdc')" type="button"><span class="property-name">primary_kdc</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_primary_kdc" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_primary_kdc" id="Call_parameters_items_i0_primary_kdc">
+    <div class="card-body pl-5">
+    <h4>Primary Kdc</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>The master Kerberos domain controller for this realm. TrueNAS uses this as a fallback if it cannot get     credentials because of an invalid password. This can help in environments where the domain uses a hub-and-spoke     topology. Use this setting to reduce credential errors after TrueNAS automatically changes its machine password. </p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_primary_kdc_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_primary_kdc_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_primary_kdc_anyOf_i0" id="Call_parameters_items_i0_primary_kdc_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_primary_kdc_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_primary_kdc_anyOf_i1" id="Call_parameters_items_i0_primary_kdc_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_primary_kdc_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_primary_kdc_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_primary_kdc_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_primary_kdc_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_kdc">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_kdc">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_kdc" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_kdc" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_kdc')" type="button"><span class="property-name">kdc</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_kdc" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_kdc" id="Call_parameters_items_i0_kdc">
+    <div class="card-body pl-5">
+    <h4>Kdc</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>List of kerberos domain controllers. If the list is empty then the kerberos     libraries will use DNS to look up KDCs. In some situations this is undesirable     as kerberos libraries are, for intance, not active directory site aware and so     may be suboptimal.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_kdc_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_kdc_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_admin_server">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_admin_server">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_admin_server" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_admin_server" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_admin_server')" type="button"><span class="property-name">admin_server</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_admin_server" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_admin_server" id="Call_parameters_items_i0_admin_server">
+    <div class="card-body pl-5">
+    <h4>Admin Server</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>List of kerberos admin servers. If the list is empty then the kerberos     libraries will use DNS to look them up.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_admin_server_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_admin_server_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_kpasswd_server">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_kpasswd_server">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_kpasswd_server" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_kpasswd_server" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_kpasswd_server')" type="button"><span class="property-name">kpasswd_server</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_kpasswd_server" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_kpasswd_server" id="Call_parameters_items_i0_kpasswd_server">
+    <div class="card-body pl-5">
+    <h4>Kpasswd Server</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>List of kerberos kpasswd servers. If the list is empty then DNS will be used     to look them up if needed.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_kpasswd_server_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_kpasswd_server_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>KerberosRealmEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The created Kerberos realm configuration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the Kerberos realm configuration.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_realm">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_realm">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_realm" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_realm" data-toggle="collapse" onclick="setAnchor('#Return_value_realm')" type="button"><span class="property-name">realm</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_realm" class="collapse property-definition-div" data-parent="#accordionReturn_value_realm" id="Return_value_realm">
+    <div class="card-body pl-5">
+    <h4>Realm</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Kerberos realm name. This is external to TrueNAS and is case-sensitive.     The general convention for kerberos realms is that they are upper-case.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_realm_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_primary_kdc">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_primary_kdc">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_primary_kdc" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_primary_kdc" data-toggle="collapse" onclick="setAnchor('#Return_value_primary_kdc')" type="button"><span class="property-name">primary_kdc</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_primary_kdc" class="collapse property-definition-div" data-parent="#accordionReturn_value_primary_kdc" id="Return_value_primary_kdc">
+    <div class="card-body pl-5">
+    <h4>Primary Kdc</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>The master Kerberos domain controller for this realm. TrueNAS uses this as a fallback if it cannot get     credentials because of an invalid password. This can help in environments where the domain uses a hub-and-spoke     topology. Use this setting to reduce credential errors after TrueNAS automatically changes its machine password. </p>
+    </span><div class="any-of-value" id="Return_value_primary_kdc_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_primary_kdc_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_primary_kdc_anyOf_i0" id="Return_value_primary_kdc_anyOf_i0" onclick="setAnchor('#Return_value_primary_kdc_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_primary_kdc_anyOf_i1" id="Return_value_primary_kdc_anyOf_i1" onclick="setAnchor('#Return_value_primary_kdc_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_primary_kdc_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_primary_kdc_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_primary_kdc_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_kdc">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_kdc">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_kdc" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_kdc" data-toggle="collapse" onclick="setAnchor('#Return_value_kdc')" type="button"><span class="property-name">kdc</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_kdc" class="collapse property-definition-div" data-parent="#accordionReturn_value_kdc" id="Return_value_kdc">
+    <div class="card-body pl-5">
+    <h4>Kdc</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>List of kerberos domain controllers. If the list is empty then the kerberos     libraries will use DNS to look up KDCs. In some situations this is undesirable     as kerberos libraries are, for intance, not active directory site aware and so     may be suboptimal.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_kdc_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_kdc_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_admin_server">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_admin_server">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_admin_server" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_admin_server" data-toggle="collapse" onclick="setAnchor('#Return_value_admin_server')" type="button"><span class="property-name">admin_server</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_admin_server" class="collapse property-definition-div" data-parent="#accordionReturn_value_admin_server" id="Return_value_admin_server">
+    <div class="card-body pl-5">
+    <h4>Admin Server</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>List of kerberos admin servers. If the list is empty then the kerberos     libraries will use DNS to look them up.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_admin_server_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_admin_server_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_kpasswd_server">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_kpasswd_server">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_kpasswd_server" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_kpasswd_server" data-toggle="collapse" onclick="setAnchor('#Return_value_kpasswd_server')" type="button"><span class="property-name">kpasswd_server</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_kpasswd_server" class="collapse property-definition-div" data-parent="#accordionReturn_value_kpasswd_server" id="Return_value_kpasswd_server">
+    <div class="card-body pl-5">
+    <h4>Kpasswd Server</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>List of kerberos kpasswd servers. If the list is empty then DNS will be used     to look them up if needed.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_kpasswd_server_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_kpasswd_server_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* DIRECTORY_SERVICE_WRITE
+

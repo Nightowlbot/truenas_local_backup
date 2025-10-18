@@ -1,0 +1,122 @@
+pool.snapshot.rollback
+======================
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: id</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>ID of the snapshot to rollback to.</p>
+    </span>
+    </div>
+    </div>
+    <h5>Parameter 2: options</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>options</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Options for controlling snapshot rollback behavior.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_recursive">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_recursive">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_recursive" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_recursive" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_recursive')" type="button"><span class="property-name">recursive</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_recursive" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_recursive" id="Call_parameters_items_i1_recursive">
+    <div class="card-body pl-5">
+    <h4>Recursive</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Destroy any snapshots and bookmarks more recent than the one specified.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_recursive_clones">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_recursive_clones">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_recursive_clones" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_recursive_clones" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_recursive_clones')" type="button"><span class="property-name">recursive_clones</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_recursive_clones" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_recursive_clones" id="Call_parameters_items_i1_recursive_clones">
+    <div class="card-body pl-5">
+    <h4>Recursive Clones</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Just like <code>recursive</code>, but also destroy any clones.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_force">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_force">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_force" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_force" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_force')" type="button"><span class="property-name">force</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_force" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_force" id="Call_parameters_items_i1_force">
+    <div class="card-body pl-5">
+    <h4>Force</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Force unmount of any clones.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_recursive_rollback">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_recursive_rollback">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_recursive_rollback" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_recursive_rollback" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_recursive_rollback')" type="button"><span class="property-name">recursive_rollback</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_recursive_rollback" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_recursive_rollback" id="Call_parameters_items_i1_recursive_rollback">
+    <div class="card-body pl-5">
+    <h4>Recursive Rollback</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Do a complete recursive rollback of each child snapshot for <code>id</code>. If any child does not have specified     snapshot, this operation will fail.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: null</span><br/>
+    <span class="description"><p>Returns <code>null</code> on successful snapshot rollback.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* POOL_WRITE | SNAPSHOT_WRITE
+

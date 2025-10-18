@@ -1,0 +1,198 @@
+group.update
+============
+
+Update attributes of an existing group.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: id</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>The API identifier of the group to update.</p>
+    </span>
+    </div>
+    </div>
+    <h5>Parameter 2: group_update</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>group_update</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Updated group configuration data.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_name">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_name">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_name" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_name')" type="button"><span class="property-name">name</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_name" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_name" id="Call_parameters_items_i1_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>A string used to identify a group.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_sudo_commands">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_sudo_commands">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_sudo_commands" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_sudo_commands" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_sudo_commands')" type="button"><span class="property-name">sudo_commands</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_sudo_commands" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_sudo_commands" id="Call_parameters_items_i1_sudo_commands">
+    <div class="card-body pl-5">
+    <h4>Sudo Commands</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>A list of commands that group members may execute with elevated privileges. User is prompted for password     when executing any command from the list. </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1_sudo_commands_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i1_sudo_commands_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_sudo_commands_nopasswd">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_sudo_commands_nopasswd">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_sudo_commands_nopasswd" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_sudo_commands_nopasswd" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_sudo_commands_nopasswd')" type="button"><span class="property-name">sudo_commands_nopasswd</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_sudo_commands_nopasswd" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_sudo_commands_nopasswd" id="Call_parameters_items_i1_sudo_commands_nopasswd">
+    <div class="card-body pl-5">
+    <h4>Sudo Commands Nopasswd</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>A list of commands that group members may execute with elevated privileges. User is not prompted for password     when executing any command from the list. </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1_sudo_commands_nopasswd_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i1_sudo_commands_nopasswd_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_smb">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_smb">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_smb" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_smb" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_smb')" type="button"><span class="property-name">smb</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_smb" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_smb" id="Call_parameters_items_i1_smb">
+    <div class="card-body pl-5">
+    <h4>Smb</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>If set to <code>True</code>, the group can be used for SMB share ACL entries. The group is mapped to an NT group account     on the TrueNAS SMB server and has a <code>sid</code> value. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_userns_idmap">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_userns_idmap">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_userns_idmap" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_userns_idmap" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_userns_idmap')" type="button"><span class="property-name">userns_idmap</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_userns_idmap" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_userns_idmap" id="Call_parameters_items_i1_userns_idmap">
+    <div class="card-body pl-5">
+    <h4>Userns Idmap</h4><br/>
+    <span class="description"><p>Specifies the subgid mapping for this group. If DIRECT then the GID will be     directly mapped to all containers. Alternatively, the target GID may be     explicitly specified. If null, then the GID will not be mapped.</p>
+    <p><strong>NOTE: This field will be ignored for groups that have been assigned TrueNAS roles.</strong></p>
+    </span><div class="any-of-value" id="Call_parameters_items_i1_userns_idmap_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i1_userns_idmap_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_userns_idmap_anyOf_i0" id="Call_parameters_items_i1_userns_idmap_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i1_userns_idmap_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_userns_idmap_anyOf_i1" id="Call_parameters_items_i1_userns_idmap_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i1_userns_idmap_anyOf_i1')" role="tab">Option 2</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_userns_idmap_anyOf_i2" id="Call_parameters_items_i1_userns_idmap_anyOf_i2" onclick="setAnchor('#Call_parameters_items_i1_userns_idmap_anyOf_i2')" role="tab">Option 3</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i1_userns_idmap_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Call_parameters_items_i1_userns_idmap_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"DIRECT"</li></ul>
+    </div><span class="const-value" id="Call_parameters_items_i1_userns_idmap_anyOf_i0_const">Specific value: <code>"DIRECT"</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i1_userns_idmap_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i1_userns_idmap_anyOf_i1_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>4294967294</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i1_userns_idmap_anyOf_i2" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_users">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_users">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_users" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_users" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_users')" type="button"><span class="property-name">users</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_users" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_users" id="Call_parameters_items_i1_users">
+    <div class="card-body pl-5">
+    <h4>Users</h4><span class="badge badge-dark value-type">Type: array of integer</span><br/>
+    <span class="description"><p>A list a API user identifiers for local users who are members of this group. These IDs match the <code>id</code> field     from <code>user.query</code>.</p>
+    <p>NOTE: This field is empty for groups that come from directory services (<code>local</code> is <code>False</code>). </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1_users_items">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>The API identifier of the updated group.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* ACCOUNT_WRITE
+

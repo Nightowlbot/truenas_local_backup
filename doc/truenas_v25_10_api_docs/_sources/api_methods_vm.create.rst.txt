@@ -1,0 +1,2393 @@
+vm.create
+=========
+
+Create a Virtual Machine (VM).
+
+Maximum of 16 guest virtual CPUs are allowed. By default, every virtual CPU is configured as a separate package. Multiple cores can be configured per CPU by specifying `cores` attributes. `vcpus` specifies total number of CPU sockets. `cores` specifies number of cores per socket. `threads` specifies number of threads per core.
+
+`ensure_display_device` when set ( the default ) will ensure that the guest always has access to a video device. For headless installations like ubuntu server this is required for the guest to operate properly. However for cases where consumer would like to use GPU passthrough and does not want a display device added should set this to `false`.
+
+`arch_type` refers to architecture type and can be specified for the guest. By default the value is `null` and system in this case will choose a reasonable default based on host.
+
+`machine_type` refers to machine type of the guest based on the architecture type selected with `arch_type`. By default the value is `null` and system in this case will choose a reasonable default based on `arch_type` configuration.
+
+`shutdown_timeout` indicates the time in seconds the system waits for the VM to cleanly shutdown. During system shutdown, if the VM hasn't exited after a hardware shutdown signal has been sent by the system within `shutdown_timeout` seconds, system initiates poweroff for the VM to stop it.
+
+`hide_from_msr` is a boolean which when set will hide the KVM hypervisor from standard MSR based discovery and is useful to enable when doing GPU passthrough.
+
+`hyperv_enlightenments` can be used to enable subset of predefined Hyper-V enlightenments for Windows guests. These enlightenments improve performance and enable otherwise missing features.
+
+`suspend_on_snapshot` is a boolean attribute which when enabled will automatically pause/suspend VMs when a snapshot is being taken for periodic snapshot tasks. For manual snapshots, if user has specified vms to be paused, they will be in that case.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: vm_create</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>vm_create</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>VMCreateArgs parameters.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_command_line_args">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_command_line_args">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_command_line_args" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_command_line_args" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_command_line_args')" type="button"><span class="property-name">command_line_args</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_command_line_args" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_command_line_args" id="Call_parameters_items_i0_command_line_args">
+    <div class="card-body pl-5">
+    <h4>Command Line Args</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+    <span class="description"><p>Additional command line arguments passed to the VM hypervisor.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_cpu_mode">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_cpu_mode">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_cpu_mode" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_cpu_mode" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_cpu_mode')" type="button"><span class="property-name">cpu_mode</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_cpu_mode" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_cpu_mode" id="Call_parameters_items_i0_cpu_mode">
+    <div class="card-body pl-5">
+    <h4>Cpu Mode</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "CUSTOM"</span><br/>
+    <span class="description"><p>CPU virtualization mode.</p>
+    <ul>
+    <li><code>CUSTOM</code>: Use specified model.</li>
+    <li><code>HOST-MODEL</code>: Mirror host CPU.</li>
+    <li><code>HOST-PASSTHROUGH</code>: Provide direct access to host CPU features.</li>
+    </ul>
+    </span><div class="enum-value" id="Call_parameters_items_i0_cpu_mode_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"CUSTOM"</li><li class="list-group-item enum-item">"HOST-MODEL"</li><li class="list-group-item enum-item">"HOST-PASSTHROUGH"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_cpu_model">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_cpu_model">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_cpu_model" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_cpu_model" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_cpu_model')" type="button"><span class="property-name">cpu_model</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_cpu_model" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_cpu_model" id="Call_parameters_items_i0_cpu_model">
+    <div class="card-body pl-5">
+    <h4>Cpu Model</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Specific CPU model to emulate. <code>null</code> to use hypervisor default.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_cpu_model_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_cpu_model_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_cpu_model_anyOf_i0" id="Call_parameters_items_i0_cpu_model_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_cpu_model_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_cpu_model_anyOf_i1" id="Call_parameters_items_i0_cpu_model_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_cpu_model_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_cpu_model_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_cpu_model_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_name">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_name">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_name" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_name" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_name" id="Call_parameters_items_i0_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Display name of the virtual machine.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_name_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_description">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_description">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_description" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_description')" type="button"><span class="property-name">description</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_description" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_description" id="Call_parameters_items_i0_description">
+    <div class="card-body pl-5">
+    <h4>Description</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+    <span class="description"><p>Optional description or notes about the virtual machine.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_vcpus">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_vcpus">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_vcpus" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_vcpus" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_vcpus')" type="button"><span class="property-name">vcpus</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_vcpus" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_vcpus" id="Call_parameters_items_i0_vcpus">
+    <div class="card-body pl-5">
+    <h4>Vcpus</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 1</span><br/>
+    <span class="description"><p>Number of virtual CPUs allocated to the VM.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_vcpus_number">Value must be greater or equal to <code>1</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_cores">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_cores">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_cores" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_cores" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_cores')" type="button"><span class="property-name">cores</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_cores" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_cores" id="Call_parameters_items_i0_cores">
+    <div class="card-body pl-5">
+    <h4>Cores</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 1</span><br/>
+    <span class="description"><p>Number of CPU cores per socket.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_cores_number">Value must be greater or equal to <code>1</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_threads">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_threads">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_threads" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_threads" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_threads')" type="button"><span class="property-name">threads</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_threads" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_threads" id="Call_parameters_items_i0_threads">
+    <div class="card-body pl-5">
+    <h4>Threads</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 1</span><br/>
+    <span class="description"><p>Number of threads per CPU core.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_threads_number">Value must be greater or equal to <code>1</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_cpuset">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_cpuset">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_cpuset" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_cpuset" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_cpuset')" type="button"><span class="property-name">cpuset</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_cpuset" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_cpuset" id="Call_parameters_items_i0_cpuset">
+    <div class="card-body pl-5">
+    <h4>Cpuset</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Set of host CPU cores to pin VM CPUs to. <code>null</code> for no pinning.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_cpuset_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_cpuset_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_cpuset_anyOf_i0" id="Call_parameters_items_i0_cpuset_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_cpuset_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_cpuset_anyOf_i1" id="Call_parameters_items_i0_cpuset_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_cpuset_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_cpuset_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_cpuset_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_nodeset">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_nodeset">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_nodeset" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_nodeset" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_nodeset')" type="button"><span class="property-name">nodeset</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_nodeset" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_nodeset" id="Call_parameters_items_i0_nodeset">
+    <div class="card-body pl-5">
+    <h4>Nodeset</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Set of NUMA nodes to constrain VM memory allocation. <code>null</code> for no constraints.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_nodeset_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_nodeset_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_nodeset_anyOf_i0" id="Call_parameters_items_i0_nodeset_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_nodeset_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_nodeset_anyOf_i1" id="Call_parameters_items_i0_nodeset_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_nodeset_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_nodeset_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_nodeset_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_enable_cpu_topology_extension">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_enable_cpu_topology_extension">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_enable_cpu_topology_extension" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_enable_cpu_topology_extension" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_enable_cpu_topology_extension')" type="button"><span class="property-name">enable_cpu_topology_extension</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_enable_cpu_topology_extension" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_enable_cpu_topology_extension" id="Call_parameters_items_i0_enable_cpu_topology_extension">
+    <div class="card-body pl-5">
+    <h4>Enable Cpu Topology Extension</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to expose detailed CPU topology information to the guest OS.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_pin_vcpus">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_pin_vcpus">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_pin_vcpus" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_pin_vcpus" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_pin_vcpus')" type="button"><span class="property-name">pin_vcpus</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_pin_vcpus" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_pin_vcpus" id="Call_parameters_items_i0_pin_vcpus">
+    <div class="card-body pl-5">
+    <h4>Pin Vcpus</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to pin virtual CPUs to specific host CPU cores. Improves performance but reduces host flexibility.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_suspend_on_snapshot">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_suspend_on_snapshot">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_suspend_on_snapshot" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_suspend_on_snapshot" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_suspend_on_snapshot')" type="button"><span class="property-name">suspend_on_snapshot</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_suspend_on_snapshot" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_suspend_on_snapshot" id="Call_parameters_items_i0_suspend_on_snapshot">
+    <div class="card-body pl-5">
+    <h4>Suspend On Snapshot</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to suspend the VM when taking snapshots.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_trusted_platform_module">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_trusted_platform_module">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_trusted_platform_module" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_trusted_platform_module" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_trusted_platform_module')" type="button"><span class="property-name">trusted_platform_module</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_trusted_platform_module" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_trusted_platform_module" id="Call_parameters_items_i0_trusted_platform_module">
+    <div class="card-body pl-5">
+    <h4>Trusted Platform Module</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to enable virtual Trusted Platform Module (TPM) for the VM.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_memory">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_memory">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_memory" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_memory" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_memory')" type="button"><span class="property-name">memory</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_memory" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_memory" id="Call_parameters_items_i0_memory">
+    <div class="card-body pl-5">
+    <h4>Memory</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Amount of memory allocated to the VM in megabytes.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_memory_number">Value must be greater or equal to <code>20</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_min_memory">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_min_memory">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_min_memory" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_min_memory" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_min_memory')" type="button"><span class="property-name">min_memory</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_min_memory" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_min_memory" id="Call_parameters_items_i0_min_memory">
+    <div class="card-body pl-5">
+    <h4>Min Memory</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Minimum memory allocation for dynamic memory ballooning in megabytes. Allows VM memory to shrink     during low usage but guarantees this minimum. <code>null</code> to disable ballooning.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_min_memory_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_min_memory_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_min_memory_anyOf_i0" id="Call_parameters_items_i0_min_memory_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_min_memory_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_min_memory_anyOf_i1" id="Call_parameters_items_i0_min_memory_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_min_memory_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_min_memory_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_min_memory_anyOf_i0_number">Value must be greater or equal to <code>20</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_min_memory_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_hyperv_enlightenments">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_hyperv_enlightenments">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_hyperv_enlightenments" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_hyperv_enlightenments" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_hyperv_enlightenments')" type="button"><span class="property-name">hyperv_enlightenments</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_hyperv_enlightenments" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_hyperv_enlightenments" id="Call_parameters_items_i0_hyperv_enlightenments">
+    <div class="card-body pl-5">
+    <h4>Hyperv Enlightenments</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to enable Hyper-V enlightenments for improved Windows guest performance.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_bootloader">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_bootloader">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_bootloader" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_bootloader" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_bootloader')" type="button"><span class="property-name">bootloader</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_bootloader" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_bootloader" id="Call_parameters_items_i0_bootloader">
+    <div class="card-body pl-5">
+    <h4>Bootloader</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "UEFI"</span><br/>
+    <span class="description"><p>Boot firmware type. <code>UEFI</code> for modern UEFI, <code>UEFI_CSM</code> for legacy BIOS compatibility.</p>
+    </span><div class="enum-value" id="Call_parameters_items_i0_bootloader_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"UEFI_CSM"</li><li class="list-group-item enum-item">"UEFI"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_bootloader_ovmf">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_bootloader_ovmf">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_bootloader_ovmf" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_bootloader_ovmf" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_bootloader_ovmf')" type="button"><span class="property-name">bootloader_ovmf</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_bootloader_ovmf" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_bootloader_ovmf" id="Call_parameters_items_i0_bootloader_ovmf">
+    <div class="card-body pl-5">
+    <h4>Bootloader Ovmf</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>OVMF firmware file to use for UEFI boot.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_bootloader_ovmf_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_bootloader_ovmf_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_bootloader_ovmf_anyOf_i0" id="Call_parameters_items_i0_bootloader_ovmf_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_bootloader_ovmf_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_bootloader_ovmf_anyOf_i1" id="Call_parameters_items_i0_bootloader_ovmf_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_bootloader_ovmf_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_bootloader_ovmf_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_bootloader_ovmf_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    <br/>
+    <div class="badge badge-secondary">Examples:</div>
+    <br/><div class="jumbotron examples" id="Call_parameters_items_i0_bootloader_ovmf_ex1"><div class="highlight"><pre><span></span><span class="s2">"OVMF_CODE.fd"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Call_parameters_items_i0_bootloader_ovmf_ex2"><div class="highlight"><pre><span></span><span class="s2">"OVMF_CODE.secboot.fd"</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_autostart">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_autostart">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_autostart" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_autostart" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_autostart')" type="button"><span class="property-name">autostart</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_autostart" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_autostart" id="Call_parameters_items_i0_autostart">
+    <div class="card-body pl-5">
+    <h4>Autostart</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Whether to automatically start the VM when the host system boots.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_hide_from_msr">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_hide_from_msr">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_hide_from_msr" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_hide_from_msr" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_hide_from_msr')" type="button"><span class="property-name">hide_from_msr</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_hide_from_msr" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_hide_from_msr" id="Call_parameters_items_i0_hide_from_msr">
+    <div class="card-body pl-5">
+    <h4>Hide From Msr</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to hide hypervisor signatures from guest OS MSR access.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_ensure_display_device">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_ensure_display_device">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_ensure_display_device" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_ensure_display_device" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_ensure_display_device')" type="button"><span class="property-name">ensure_display_device</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_ensure_display_device" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_ensure_display_device" id="Call_parameters_items_i0_ensure_display_device">
+    <div class="card-body pl-5">
+    <h4>Ensure Display Device</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Whether to ensure at least one display device is configured for the VM.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_time">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_time">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_time" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_time" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_time')" type="button"><span class="property-name">time</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_time" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_time" id="Call_parameters_items_i0_time">
+    <div class="card-body pl-5">
+    <h4>Time</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "LOCAL"</span><br/>
+    <span class="description"><p>Guest OS time zone reference. <code>LOCAL</code> uses host timezone, <code>UTC</code> uses coordinated universal time.</p>
+    </span><div class="enum-value" id="Call_parameters_items_i0_time_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"LOCAL"</li><li class="list-group-item enum-item">"UTC"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_shutdown_timeout">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_shutdown_timeout">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_shutdown_timeout" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_shutdown_timeout" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_shutdown_timeout')" type="button"><span class="property-name">shutdown_timeout</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_shutdown_timeout" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_shutdown_timeout" id="Call_parameters_items_i0_shutdown_timeout">
+    <div class="card-body pl-5">
+    <h4>Shutdown Timeout</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 90</span><br/>
+    <span class="description"><p>Maximum time in seconds to wait for graceful shutdown before forcing power off. Default 90s balances     allowing sufficient time for clean shutdown while avoiding indefinite hangs.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_shutdown_timeout_number">Value must be greater or equal to <code>5</code> and lesser or equal to <code>300</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_arch_type">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_arch_type">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_arch_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_arch_type" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_arch_type')" type="button"><span class="property-name">arch_type</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_arch_type" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_arch_type" id="Call_parameters_items_i0_arch_type">
+    <div class="card-body pl-5">
+    <h4>Arch Type</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Guest architecture type. <code>null</code> to use hypervisor default.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_arch_type_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_arch_type_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_arch_type_anyOf_i0" id="Call_parameters_items_i0_arch_type_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_arch_type_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_arch_type_anyOf_i1" id="Call_parameters_items_i0_arch_type_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_arch_type_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_arch_type_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_arch_type_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_machine_type">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_machine_type">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_machine_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_machine_type" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_machine_type')" type="button"><span class="property-name">machine_type</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_machine_type" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_machine_type" id="Call_parameters_items_i0_machine_type">
+    <div class="card-body pl-5">
+    <h4>Machine Type</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Virtual machine type/chipset. <code>null</code> to use hypervisor default.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_machine_type_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_machine_type_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_machine_type_anyOf_i0" id="Call_parameters_items_i0_machine_type_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_machine_type_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_machine_type_anyOf_i1" id="Call_parameters_items_i0_machine_type_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_machine_type_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_machine_type_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_machine_type_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_uuid">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_uuid">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_uuid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_uuid" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_uuid')" type="button"><span class="property-name">uuid</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_uuid" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_uuid" id="Call_parameters_items_i0_uuid">
+    <div class="card-body pl-5">
+    <h4>Uuid</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Unique UUID for the VM. <code>null</code> to auto-generate.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_uuid_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_uuid_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_uuid_anyOf_i0" id="Call_parameters_items_i0_uuid_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_uuid_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_uuid_anyOf_i1" id="Call_parameters_items_i0_uuid_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_uuid_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_uuid_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_uuid_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_enable_secure_boot">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_enable_secure_boot">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_enable_secure_boot" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_enable_secure_boot" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_enable_secure_boot')" type="button"><span class="property-name">enable_secure_boot</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_enable_secure_boot" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_enable_secure_boot" id="Call_parameters_items_i0_enable_secure_boot">
+    <div class="card-body pl-5">
+    <h4>Enable Secure Boot</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to enable UEFI Secure Boot for enhanced security.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>VMEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The newly created virtual machine configuration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_command_line_args">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_command_line_args">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_command_line_args" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_command_line_args" data-toggle="collapse" onclick="setAnchor('#Return_value_command_line_args')" type="button"><span class="property-name">command_line_args</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_command_line_args" class="collapse property-definition-div" data-parent="#accordionReturn_value_command_line_args" id="Return_value_command_line_args">
+    <div class="card-body pl-5">
+    <h4>Command Line Args</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+    <span class="description"><p>Additional command line arguments passed to the VM hypervisor.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_cpu_mode">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_cpu_mode">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_cpu_mode" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_cpu_mode" data-toggle="collapse" onclick="setAnchor('#Return_value_cpu_mode')" type="button"><span class="property-name">cpu_mode</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_cpu_mode" class="collapse property-definition-div" data-parent="#accordionReturn_value_cpu_mode" id="Return_value_cpu_mode">
+    <div class="card-body pl-5">
+    <h4>Cpu Mode</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "CUSTOM"</span><br/>
+    <span class="description"><p>CPU virtualization mode.</p>
+    <ul>
+    <li><code>CUSTOM</code>: Use specified model.</li>
+    <li><code>HOST-MODEL</code>: Mirror host CPU.</li>
+    <li><code>HOST-PASSTHROUGH</code>: Provide direct access to host CPU features.</li>
+    </ul>
+    </span><div class="enum-value" id="Return_value_cpu_mode_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"CUSTOM"</li><li class="list-group-item enum-item">"HOST-MODEL"</li><li class="list-group-item enum-item">"HOST-PASSTHROUGH"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_cpu_model">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_cpu_model">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_cpu_model" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_cpu_model" data-toggle="collapse" onclick="setAnchor('#Return_value_cpu_model')" type="button"><span class="property-name">cpu_model</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_cpu_model" class="collapse property-definition-div" data-parent="#accordionReturn_value_cpu_model" id="Return_value_cpu_model">
+    <div class="card-body pl-5">
+    <h4>Cpu Model</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Specific CPU model to emulate. <code>null</code> to use hypervisor default.</p>
+    </span><div class="any-of-value" id="Return_value_cpu_model_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_cpu_model_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_cpu_model_anyOf_i0" id="Return_value_cpu_model_anyOf_i0" onclick="setAnchor('#Return_value_cpu_model_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_cpu_model_anyOf_i1" id="Return_value_cpu_model_anyOf_i1" onclick="setAnchor('#Return_value_cpu_model_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_cpu_model_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_cpu_model_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_name" data-toggle="collapse" onclick="setAnchor('#Return_value_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_name" id="Return_value_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Display name of the virtual machine.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_name_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_description">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_description">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_description" data-toggle="collapse" onclick="setAnchor('#Return_value_description')" type="button"><span class="property-name">description</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_description" class="collapse property-definition-div" data-parent="#accordionReturn_value_description" id="Return_value_description">
+    <div class="card-body pl-5">
+    <h4>Description</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+    <span class="description"><p>Optional description or notes about the virtual machine.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_vcpus">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_vcpus">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_vcpus" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_vcpus" data-toggle="collapse" onclick="setAnchor('#Return_value_vcpus')" type="button"><span class="property-name">vcpus</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_vcpus" class="collapse property-definition-div" data-parent="#accordionReturn_value_vcpus" id="Return_value_vcpus">
+    <div class="card-body pl-5">
+    <h4>Vcpus</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 1</span><br/>
+    <span class="description"><p>Number of virtual CPUs allocated to the VM.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_vcpus_number">Value must be greater or equal to <code>1</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_cores">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_cores">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_cores" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_cores" data-toggle="collapse" onclick="setAnchor('#Return_value_cores')" type="button"><span class="property-name">cores</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_cores" class="collapse property-definition-div" data-parent="#accordionReturn_value_cores" id="Return_value_cores">
+    <div class="card-body pl-5">
+    <h4>Cores</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 1</span><br/>
+    <span class="description"><p>Number of CPU cores per socket.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_cores_number">Value must be greater or equal to <code>1</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_threads">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_threads">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_threads" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_threads" data-toggle="collapse" onclick="setAnchor('#Return_value_threads')" type="button"><span class="property-name">threads</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_threads" class="collapse property-definition-div" data-parent="#accordionReturn_value_threads" id="Return_value_threads">
+    <div class="card-body pl-5">
+    <h4>Threads</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 1</span><br/>
+    <span class="description"><p>Number of threads per CPU core.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_threads_number">Value must be greater or equal to <code>1</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_cpuset">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_cpuset">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_cpuset" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_cpuset" data-toggle="collapse" onclick="setAnchor('#Return_value_cpuset')" type="button"><span class="property-name">cpuset</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_cpuset" class="collapse property-definition-div" data-parent="#accordionReturn_value_cpuset" id="Return_value_cpuset">
+    <div class="card-body pl-5">
+    <h4>Cpuset</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Set of host CPU cores to pin VM CPUs to. <code>null</code> for no pinning.</p>
+    </span><div class="any-of-value" id="Return_value_cpuset_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_cpuset_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_cpuset_anyOf_i0" id="Return_value_cpuset_anyOf_i0" onclick="setAnchor('#Return_value_cpuset_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_cpuset_anyOf_i1" id="Return_value_cpuset_anyOf_i1" onclick="setAnchor('#Return_value_cpuset_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_cpuset_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_cpuset_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_nodeset">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_nodeset">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_nodeset" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_nodeset" data-toggle="collapse" onclick="setAnchor('#Return_value_nodeset')" type="button"><span class="property-name">nodeset</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_nodeset" class="collapse property-definition-div" data-parent="#accordionReturn_value_nodeset" id="Return_value_nodeset">
+    <div class="card-body pl-5">
+    <h4>Nodeset</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Set of NUMA nodes to constrain VM memory allocation. <code>null</code> for no constraints.</p>
+    </span><div class="any-of-value" id="Return_value_nodeset_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_nodeset_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_nodeset_anyOf_i0" id="Return_value_nodeset_anyOf_i0" onclick="setAnchor('#Return_value_nodeset_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_nodeset_anyOf_i1" id="Return_value_nodeset_anyOf_i1" onclick="setAnchor('#Return_value_nodeset_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_nodeset_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_nodeset_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_enable_cpu_topology_extension">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_enable_cpu_topology_extension">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_enable_cpu_topology_extension" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_enable_cpu_topology_extension" data-toggle="collapse" onclick="setAnchor('#Return_value_enable_cpu_topology_extension')" type="button"><span class="property-name">enable_cpu_topology_extension</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_enable_cpu_topology_extension" class="collapse property-definition-div" data-parent="#accordionReturn_value_enable_cpu_topology_extension" id="Return_value_enable_cpu_topology_extension">
+    <div class="card-body pl-5">
+    <h4>Enable Cpu Topology Extension</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to expose detailed CPU topology information to the guest OS.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_pin_vcpus">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_pin_vcpus">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_pin_vcpus" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_pin_vcpus" data-toggle="collapse" onclick="setAnchor('#Return_value_pin_vcpus')" type="button"><span class="property-name">pin_vcpus</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_pin_vcpus" class="collapse property-definition-div" data-parent="#accordionReturn_value_pin_vcpus" id="Return_value_pin_vcpus">
+    <div class="card-body pl-5">
+    <h4>Pin Vcpus</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to pin virtual CPUs to specific host CPU cores. Improves performance but reduces host flexibility.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_suspend_on_snapshot">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_suspend_on_snapshot">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_suspend_on_snapshot" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_suspend_on_snapshot" data-toggle="collapse" onclick="setAnchor('#Return_value_suspend_on_snapshot')" type="button"><span class="property-name">suspend_on_snapshot</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_suspend_on_snapshot" class="collapse property-definition-div" data-parent="#accordionReturn_value_suspend_on_snapshot" id="Return_value_suspend_on_snapshot">
+    <div class="card-body pl-5">
+    <h4>Suspend On Snapshot</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to suspend the VM when taking snapshots.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_trusted_platform_module">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_trusted_platform_module">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_trusted_platform_module" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_trusted_platform_module" data-toggle="collapse" onclick="setAnchor('#Return_value_trusted_platform_module')" type="button"><span class="property-name">trusted_platform_module</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_trusted_platform_module" class="collapse property-definition-div" data-parent="#accordionReturn_value_trusted_platform_module" id="Return_value_trusted_platform_module">
+    <div class="card-body pl-5">
+    <h4>Trusted Platform Module</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to enable virtual Trusted Platform Module (TPM) for the VM.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_memory">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_memory">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_memory" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_memory" data-toggle="collapse" onclick="setAnchor('#Return_value_memory')" type="button"><span class="property-name">memory</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_memory" class="collapse property-definition-div" data-parent="#accordionReturn_value_memory" id="Return_value_memory">
+    <div class="card-body pl-5">
+    <h4>Memory</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Amount of memory allocated to the VM in megabytes.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_memory_number">Value must be greater or equal to <code>20</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_min_memory">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_min_memory">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_min_memory" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_min_memory" data-toggle="collapse" onclick="setAnchor('#Return_value_min_memory')" type="button"><span class="property-name">min_memory</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_min_memory" class="collapse property-definition-div" data-parent="#accordionReturn_value_min_memory" id="Return_value_min_memory">
+    <div class="card-body pl-5">
+    <h4>Min Memory</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Minimum memory allocation for dynamic memory ballooning in megabytes. Allows VM memory to shrink     during low usage but guarantees this minimum. <code>null</code> to disable ballooning.</p>
+    </span><div class="any-of-value" id="Return_value_min_memory_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_min_memory_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_min_memory_anyOf_i0" id="Return_value_min_memory_anyOf_i0" onclick="setAnchor('#Return_value_min_memory_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_min_memory_anyOf_i1" id="Return_value_min_memory_anyOf_i1" onclick="setAnchor('#Return_value_min_memory_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_min_memory_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_min_memory_anyOf_i0_number">Value must be greater or equal to <code>20</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_min_memory_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_hyperv_enlightenments">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_hyperv_enlightenments">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_hyperv_enlightenments" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_hyperv_enlightenments" data-toggle="collapse" onclick="setAnchor('#Return_value_hyperv_enlightenments')" type="button"><span class="property-name">hyperv_enlightenments</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_hyperv_enlightenments" class="collapse property-definition-div" data-parent="#accordionReturn_value_hyperv_enlightenments" id="Return_value_hyperv_enlightenments">
+    <div class="card-body pl-5">
+    <h4>Hyperv Enlightenments</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to enable Hyper-V enlightenments for improved Windows guest performance.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_bootloader">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_bootloader">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_bootloader" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_bootloader" data-toggle="collapse" onclick="setAnchor('#Return_value_bootloader')" type="button"><span class="property-name">bootloader</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_bootloader" class="collapse property-definition-div" data-parent="#accordionReturn_value_bootloader" id="Return_value_bootloader">
+    <div class="card-body pl-5">
+    <h4>Bootloader</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "UEFI"</span><br/>
+    <span class="description"><p>Boot firmware type. <code>UEFI</code> for modern UEFI, <code>UEFI_CSM</code> for legacy BIOS compatibility.</p>
+    </span><div class="enum-value" id="Return_value_bootloader_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"UEFI_CSM"</li><li class="list-group-item enum-item">"UEFI"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_bootloader_ovmf">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_bootloader_ovmf">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_bootloader_ovmf" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_bootloader_ovmf" data-toggle="collapse" onclick="setAnchor('#Return_value_bootloader_ovmf')" type="button"><span class="property-name">bootloader_ovmf</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_bootloader_ovmf" class="collapse property-definition-div" data-parent="#accordionReturn_value_bootloader_ovmf" id="Return_value_bootloader_ovmf">
+    <div class="card-body pl-5">
+    <h4>Bootloader Ovmf</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "OVMF_CODE.fd"</span><br/>
+    <span class="description"><p>OVMF firmware file to use for UEFI boot.</p>
+    </span>
+    <br/>
+    <div class="badge badge-secondary">Examples:</div>
+    <br/><div class="jumbotron examples" id="Return_value_bootloader_ovmf_ex1"><div class="highlight"><pre><span></span><span class="s2">"OVMF_CODE.fd"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_bootloader_ovmf_ex2"><div class="highlight"><pre><span></span><span class="s2">"OVMF_CODE.secboot.fd"</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_autostart">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_autostart">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_autostart" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_autostart" data-toggle="collapse" onclick="setAnchor('#Return_value_autostart')" type="button"><span class="property-name">autostart</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_autostart" class="collapse property-definition-div" data-parent="#accordionReturn_value_autostart" id="Return_value_autostart">
+    <div class="card-body pl-5">
+    <h4>Autostart</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Whether to automatically start the VM when the host system boots.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_hide_from_msr">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_hide_from_msr">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_hide_from_msr" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_hide_from_msr" data-toggle="collapse" onclick="setAnchor('#Return_value_hide_from_msr')" type="button"><span class="property-name">hide_from_msr</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_hide_from_msr" class="collapse property-definition-div" data-parent="#accordionReturn_value_hide_from_msr" id="Return_value_hide_from_msr">
+    <div class="card-body pl-5">
+    <h4>Hide From Msr</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to hide hypervisor signatures from guest OS MSR access.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_ensure_display_device">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_ensure_display_device">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_ensure_display_device" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_ensure_display_device" data-toggle="collapse" onclick="setAnchor('#Return_value_ensure_display_device')" type="button"><span class="property-name">ensure_display_device</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_ensure_display_device" class="collapse property-definition-div" data-parent="#accordionReturn_value_ensure_display_device" id="Return_value_ensure_display_device">
+    <div class="card-body pl-5">
+    <h4>Ensure Display Device</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Whether to ensure at least one display device is configured for the VM.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_time">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_time">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_time" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_time" data-toggle="collapse" onclick="setAnchor('#Return_value_time')" type="button"><span class="property-name">time</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_time" class="collapse property-definition-div" data-parent="#accordionReturn_value_time" id="Return_value_time">
+    <div class="card-body pl-5">
+    <h4>Time</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "LOCAL"</span><br/>
+    <span class="description"><p>Guest OS time zone reference. <code>LOCAL</code> uses host timezone, <code>UTC</code> uses coordinated universal time.</p>
+    </span><div class="enum-value" id="Return_value_time_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"LOCAL"</li><li class="list-group-item enum-item">"UTC"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_shutdown_timeout">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_shutdown_timeout">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_shutdown_timeout" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_shutdown_timeout" data-toggle="collapse" onclick="setAnchor('#Return_value_shutdown_timeout')" type="button"><span class="property-name">shutdown_timeout</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_shutdown_timeout" class="collapse property-definition-div" data-parent="#accordionReturn_value_shutdown_timeout" id="Return_value_shutdown_timeout">
+    <div class="card-body pl-5">
+    <h4>Shutdown Timeout</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 90</span><br/>
+    <span class="description"><p>Maximum time in seconds to wait for graceful shutdown before forcing power off. Default 90s balances     allowing sufficient time for clean shutdown while avoiding indefinite hangs.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_shutdown_timeout_number">Value must be greater or equal to <code>5</code> and lesser or equal to <code>300</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_arch_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_arch_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_arch_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_arch_type" data-toggle="collapse" onclick="setAnchor('#Return_value_arch_type')" type="button"><span class="property-name">arch_type</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_arch_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_arch_type" id="Return_value_arch_type">
+    <div class="card-body pl-5">
+    <h4>Arch Type</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Guest architecture type. <code>null</code> to use hypervisor default.</p>
+    </span><div class="any-of-value" id="Return_value_arch_type_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_arch_type_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_arch_type_anyOf_i0" id="Return_value_arch_type_anyOf_i0" onclick="setAnchor('#Return_value_arch_type_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_arch_type_anyOf_i1" id="Return_value_arch_type_anyOf_i1" onclick="setAnchor('#Return_value_arch_type_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_arch_type_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_arch_type_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_machine_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_machine_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_machine_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_machine_type" data-toggle="collapse" onclick="setAnchor('#Return_value_machine_type')" type="button"><span class="property-name">machine_type</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_machine_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_machine_type" id="Return_value_machine_type">
+    <div class="card-body pl-5">
+    <h4>Machine Type</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Virtual machine type/chipset. <code>null</code> to use hypervisor default.</p>
+    </span><div class="any-of-value" id="Return_value_machine_type_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_machine_type_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_machine_type_anyOf_i0" id="Return_value_machine_type_anyOf_i0" onclick="setAnchor('#Return_value_machine_type_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_machine_type_anyOf_i1" id="Return_value_machine_type_anyOf_i1" onclick="setAnchor('#Return_value_machine_type_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_machine_type_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_machine_type_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_uuid">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_uuid">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_uuid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_uuid" data-toggle="collapse" onclick="setAnchor('#Return_value_uuid')" type="button"><span class="property-name">uuid</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_uuid" class="collapse property-definition-div" data-parent="#accordionReturn_value_uuid" id="Return_value_uuid">
+    <div class="card-body pl-5">
+    <h4>Uuid</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Unique UUID for the VM. <code>null</code> to auto-generate.</p>
+    </span><div class="any-of-value" id="Return_value_uuid_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_uuid_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_uuid_anyOf_i0" id="Return_value_uuid_anyOf_i0" onclick="setAnchor('#Return_value_uuid_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_uuid_anyOf_i1" id="Return_value_uuid_anyOf_i1" onclick="setAnchor('#Return_value_uuid_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_uuid_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_uuid_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices" data-toggle="collapse" onclick="setAnchor('#Return_value_devices')" type="button"><span class="property-name">devices</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices" id="Return_value_devices">
+    <div class="card-body pl-5">
+    <h4>Devices</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="description"><p>Array of virtual devices attached to this VM.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_devices_items">
+    <h4>VMDeviceEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_devices_items_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_id" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_id" id="Return_value_devices_items_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the VM device.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes')" type="button"><span class="property-name">attributes</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes" id="Return_value_devices_items_attributes">
+    <div class="card-body pl-5">
+    <h4>Attributes</h4><br/>
+    <span class="description"><p>Device-specific configuration attributes.</p>
+    </span><div class="one-of-value" id="Return_value_devices_items_attributes_oneOf"><h2 class="handle">
+    <label>One of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_devices_items_attributes_oneOf_oneOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active oneOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i0" id="Return_value_devices_items_attributes_oneOf_i0" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i0')" role="tab">VMCDROMDevice</a>
+    </li><li class="nav-item">
+    <a class="nav-link oneOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i1" id="Return_value_devices_items_attributes_oneOf_i1" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i1')" role="tab">VMDisplayDevice</a>
+    </li><li class="nav-item">
+    <a class="nav-link oneOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i2" id="Return_value_devices_items_attributes_oneOf_i2" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i2')" role="tab">VMNICDevice</a>
+    </li><li class="nav-item">
+    <a class="nav-link oneOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i3" id="Return_value_devices_items_attributes_oneOf_i3" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i3')" role="tab">VMPCIDevice</a>
+    </li><li class="nav-item">
+    <a class="nav-link oneOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i4" id="Return_value_devices_items_attributes_oneOf_i4" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i4')" role="tab">VMRAWDevice</a>
+    </li><li class="nav-item">
+    <a class="nav-link oneOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i5" id="Return_value_devices_items_attributes_oneOf_i5" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i5')" role="tab">VMDiskDevice</a>
+    </li><li class="nav-item">
+    <a class="nav-link oneOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i6" id="Return_value_devices_items_attributes_oneOf_i6" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i6')" role="tab">VMUSBDevice</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_devices_items_attributes_oneOf_i0" role="tabpanel">
+    <h4>VMCDROMDevice</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i0_dtype">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i0_dtype">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i0_dtype" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i0_dtype" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i0_dtype')" type="button"><span class="property-name">dtype</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i0_dtype" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i0_dtype" id="Return_value_devices_items_attributes_oneOf_i0_dtype">
+    <div class="card-body pl-5">
+    <h4>Dtype</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Device type identifier for CD-ROM/DVD devices.</p>
+    </span><div class="enum-value" id="Return_value_devices_items_attributes_oneOf_i0_dtype_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"CDROM"</li></ul>
+    </div><span class="const-value" id="Return_value_devices_items_attributes_oneOf_i0_dtype_const">Specific value: <code>"CDROM"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i0_path">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i0_path">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i0_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i0_path" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i0_path')" type="button"><span class="property-name">path</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i0_path" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i0_path" id="Return_value_devices_items_attributes_oneOf_i0_path">
+    <div class="card-body pl-5">
+    <h4>Path</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "*"</span><br/>
+    <span class="description"><p>Path must not contain "{", "}" characters, and it should start with "/mnt/".</p>
+    </span><span class="pattern-value" id="Return_value_devices_items_attributes_oneOf_i0_path_pattern">Must match regular expression: <code>^[^{}]*$</code></span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_devices_items_attributes_oneOf_i0_path_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_devices_items_attributes_oneOf_i1" role="tabpanel">
+    <h4>VMDisplayDevice</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i1_dtype">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i1_dtype">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i1_dtype" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i1_dtype" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i1_dtype')" type="button"><span class="property-name">dtype</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i1_dtype" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i1_dtype" id="Return_value_devices_items_attributes_oneOf_i1_dtype">
+    <div class="card-body pl-5">
+    <h4>Dtype</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Device type identifier for display/graphics devices.</p>
+    </span><div class="enum-value" id="Return_value_devices_items_attributes_oneOf_i1_dtype_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"DISPLAY"</li></ul>
+    </div><span class="const-value" id="Return_value_devices_items_attributes_oneOf_i1_dtype_const">Specific value: <code>"DISPLAY"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i1_resolution">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i1_resolution">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i1_resolution" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i1_resolution" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i1_resolution')" type="button"><span class="property-name">resolution</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i1_resolution" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i1_resolution" id="Return_value_devices_items_attributes_oneOf_i1_resolution">
+    <div class="card-body pl-5">
+    <h4>Resolution</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "1024x768"</span><br/>
+    <span class="description"><p>Screen resolution for the virtual display.</p>
+    </span><div class="enum-value" id="Return_value_devices_items_attributes_oneOf_i1_resolution_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"1920x1200"</li><li class="list-group-item enum-item">"1920x1080"</li><li class="list-group-item enum-item">"1600x1200"</li><li class="list-group-item enum-item">"1600x900"</li><li class="list-group-item enum-item">"1400x1050"</li><li class="list-group-item enum-item">"1280x1024"</li><li class="list-group-item enum-item">"1280x720"</li><li class="list-group-item enum-item">"1024x768"</li><li class="list-group-item enum-item">"800x600"</li><li class="list-group-item enum-item">"640x480"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i1_port">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i1_port">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i1_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i1_port" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i1_port')" type="button"><span class="property-name">port</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i1_port" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i1_port" id="Return_value_devices_items_attributes_oneOf_i1_port">
+    <div class="card-body pl-5">
+    <h4>Port</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>VNC/SPICE port number for remote display access. <code>null</code> for auto-assignment.</p>
+    </span><div class="any-of-value" id="Return_value_devices_items_attributes_oneOf_i1_port_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_devices_items_attributes_oneOf_i1_port_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i1_port_anyOf_i0" id="Return_value_devices_items_attributes_oneOf_i1_port_anyOf_i0" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i1_port_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i1_port_anyOf_i1" id="Return_value_devices_items_attributes_oneOf_i1_port_anyOf_i1" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i1_port_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_devices_items_attributes_oneOf_i1_port_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_devices_items_attributes_oneOf_i1_port_anyOf_i0_number">Value must be greater or equal to <code>5900</code> and lesser or equal to <code>65535</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_devices_items_attributes_oneOf_i1_port_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i1_web_port">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i1_web_port">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i1_web_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i1_web_port" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i1_web_port')" type="button"><span class="property-name">web_port</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i1_web_port" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i1_web_port" id="Return_value_devices_items_attributes_oneOf_i1_web_port">
+    <div class="card-body pl-5">
+    <h4>Web Port</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Web-based display access port number. <code>null</code> for auto-assignment.</p>
+    </span><div class="any-of-value" id="Return_value_devices_items_attributes_oneOf_i1_web_port_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_devices_items_attributes_oneOf_i1_web_port_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i1_web_port_anyOf_i0" id="Return_value_devices_items_attributes_oneOf_i1_web_port_anyOf_i0" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i1_web_port_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i1_web_port_anyOf_i1" id="Return_value_devices_items_attributes_oneOf_i1_web_port_anyOf_i1" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i1_web_port_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_devices_items_attributes_oneOf_i1_web_port_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_devices_items_attributes_oneOf_i1_web_port_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i1_bind">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i1_bind">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i1_bind" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i1_bind" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i1_bind')" type="button"><span class="property-name">bind</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i1_bind" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i1_bind" id="Return_value_devices_items_attributes_oneOf_i1_bind">
+    <div class="card-body pl-5">
+    <h4>Bind</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "127.0.0.1"</span><br/>
+    <span class="description"><p>IP address to bind the display server to.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_devices_items_attributes_oneOf_i1_bind_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i1_wait">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i1_wait">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i1_wait" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i1_wait" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i1_wait')" type="button"><span class="property-name">wait</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i1_wait" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i1_wait" id="Return_value_devices_items_attributes_oneOf_i1_wait">
+    <div class="card-body pl-5">
+    <h4>Wait</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to wait for a client connection before starting the VM.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i1_password">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i1_password">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i1_password" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i1_password" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i1_password')" type="button"><span class="property-name">password</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i1_password" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i1_password" id="Return_value_devices_items_attributes_oneOf_i1_password">
+    <div class="card-body pl-5">
+    <h4>Password</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Password for display server authentication.</p>
+    </span><div class="any-of-value" id="Return_value_devices_items_attributes_oneOf_i1_password_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_devices_items_attributes_oneOf_i1_password_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i1_password_anyOf_i0" id="Return_value_devices_items_attributes_oneOf_i1_password_anyOf_i0" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i1_password_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i1_password_anyOf_i1" id="Return_value_devices_items_attributes_oneOf_i1_password_anyOf_i1" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i1_password_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_devices_items_attributes_oneOf_i1_password_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_devices_items_attributes_oneOf_i1_password_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i1_web">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i1_web">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i1_web" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i1_web" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i1_web')" type="button"><span class="property-name">web</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i1_web" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i1_web" id="Return_value_devices_items_attributes_oneOf_i1_web">
+    <div class="card-body pl-5">
+    <h4>Web</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Whether to enable web-based display access.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i1_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i1_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i1_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i1_type" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i1_type')" type="button"><span class="property-name">type</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i1_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i1_type" id="Return_value_devices_items_attributes_oneOf_i1_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "SPICE"</span><br/>
+    <span class="description"><p>Display protocol type.</p>
+    </span><div class="enum-value" id="Return_value_devices_items_attributes_oneOf_i1_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"SPICE"</li><li class="list-group-item enum-item">"VNC"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_devices_items_attributes_oneOf_i2" role="tabpanel">
+    <h4>VMNICDevice</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i2_dtype">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i2_dtype">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i2_dtype" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i2_dtype" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i2_dtype')" type="button"><span class="property-name">dtype</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i2_dtype" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i2_dtype" id="Return_value_devices_items_attributes_oneOf_i2_dtype">
+    <div class="card-body pl-5">
+    <h4>Dtype</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Device type identifier for network interface cards.</p>
+    </span><div class="enum-value" id="Return_value_devices_items_attributes_oneOf_i2_dtype_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"NIC"</li></ul>
+    </div><span class="const-value" id="Return_value_devices_items_attributes_oneOf_i2_dtype_const">Specific value: <code>"NIC"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i2_trust_guest_rx_filters">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i2_trust_guest_rx_filters">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i2_trust_guest_rx_filters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i2_trust_guest_rx_filters" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i2_trust_guest_rx_filters')" type="button"><span class="property-name">trust_guest_rx_filters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i2_trust_guest_rx_filters" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i2_trust_guest_rx_filters" id="Return_value_devices_items_attributes_oneOf_i2_trust_guest_rx_filters">
+    <div class="card-body pl-5">
+    <h4>Trust Guest Rx Filters</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to trust guest OS receive filter settings for better performance.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i2_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i2_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i2_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i2_type" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i2_type')" type="button"><span class="property-name">type</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i2_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i2_type" id="Return_value_devices_items_attributes_oneOf_i2_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "E1000"</span><br/>
+    <span class="description"><p>Network interface controller type. <code>E1000</code> for Intel compatibility, <code>VIRTIO</code> for performance.</p>
+    </span><div class="enum-value" id="Return_value_devices_items_attributes_oneOf_i2_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"E1000"</li><li class="list-group-item enum-item">"VIRTIO"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i2_nic_attach">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i2_nic_attach">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i2_nic_attach" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i2_nic_attach" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i2_nic_attach')" type="button"><span class="property-name">nic_attach</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i2_nic_attach" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i2_nic_attach" id="Return_value_devices_items_attributes_oneOf_i2_nic_attach">
+    <div class="card-body pl-5">
+    <h4>Nic Attach</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Host network interface or bridge to attach to. <code>null</code> for no attachment.</p>
+    </span><div class="any-of-value" id="Return_value_devices_items_attributes_oneOf_i2_nic_attach_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_devices_items_attributes_oneOf_i2_nic_attach_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i2_nic_attach_anyOf_i0" id="Return_value_devices_items_attributes_oneOf_i2_nic_attach_anyOf_i0" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i2_nic_attach_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i2_nic_attach_anyOf_i1" id="Return_value_devices_items_attributes_oneOf_i2_nic_attach_anyOf_i1" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i2_nic_attach_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_devices_items_attributes_oneOf_i2_nic_attach_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_devices_items_attributes_oneOf_i2_nic_attach_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i2_mac">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i2_mac">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i2_mac" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i2_mac" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i2_mac')" type="button"><span class="property-name">mac</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i2_mac" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i2_mac" id="Return_value_devices_items_attributes_oneOf_i2_mac">
+    <div class="card-body pl-5">
+    <h4>Mac</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>MAC address for the virtual network interface. <code>null</code> for auto-generation.</p>
+    </span><div class="any-of-value" id="Return_value_devices_items_attributes_oneOf_i2_mac_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_devices_items_attributes_oneOf_i2_mac_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i2_mac_anyOf_i0" id="Return_value_devices_items_attributes_oneOf_i2_mac_anyOf_i0" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i2_mac_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i2_mac_anyOf_i1" id="Return_value_devices_items_attributes_oneOf_i2_mac_anyOf_i1" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i2_mac_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_devices_items_attributes_oneOf_i2_mac_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="pattern-value" id="Return_value_devices_items_attributes_oneOf_i2_mac_anyOf_i0_pattern">Must match regular expression: <code>^([0-9A-Fa-f]{2}[:-]?){5}([0-9A-Fa-f]{2})$</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_devices_items_attributes_oneOf_i2_mac_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_devices_items_attributes_oneOf_i3" role="tabpanel">
+    <h4>VMPCIDevice</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i3_dtype">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i3_dtype">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i3_dtype" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i3_dtype" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i3_dtype')" type="button"><span class="property-name">dtype</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i3_dtype" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i3_dtype" id="Return_value_devices_items_attributes_oneOf_i3_dtype">
+    <div class="card-body pl-5">
+    <h4>Dtype</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Device type identifier for PCI passthrough devices.</p>
+    </span><div class="enum-value" id="Return_value_devices_items_attributes_oneOf_i3_dtype_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"PCI"</li></ul>
+    </div><span class="const-value" id="Return_value_devices_items_attributes_oneOf_i3_dtype_const">Specific value: <code>"PCI"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i3_pptdev">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i3_pptdev">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i3_pptdev" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i3_pptdev" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i3_pptdev')" type="button"><span class="property-name">pptdev</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i3_pptdev" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i3_pptdev" id="Return_value_devices_items_attributes_oneOf_i3_pptdev">
+    <div class="card-body pl-5">
+    <h4>Pptdev</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Host PCI device identifier to pass through to the VM.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_devices_items_attributes_oneOf_i3_pptdev_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_devices_items_attributes_oneOf_i4" role="tabpanel">
+    <h4>VMRAWDevice</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i4_dtype">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i4_dtype">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i4_dtype" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i4_dtype" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i4_dtype')" type="button"><span class="property-name">dtype</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i4_dtype" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i4_dtype" id="Return_value_devices_items_attributes_oneOf_i4_dtype">
+    <div class="card-body pl-5">
+    <h4>Dtype</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Device type identifier for raw disk devices.</p>
+    </span><div class="enum-value" id="Return_value_devices_items_attributes_oneOf_i4_dtype_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"RAW"</li></ul>
+    </div><span class="const-value" id="Return_value_devices_items_attributes_oneOf_i4_dtype_const">Specific value: <code>"RAW"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i4_path">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i4_path">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i4_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i4_path" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i4_path')" type="button"><span class="property-name">path</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i4_path" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i4_path" id="Return_value_devices_items_attributes_oneOf_i4_path">
+    <div class="card-body pl-5">
+    <h4>Path</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "127.0.0.1"</span><br/>
+    <span class="description"><p>Path must not contain "{", "}" characters.</p>
+    </span><span class="pattern-value" id="Return_value_devices_items_attributes_oneOf_i4_path_pattern">Must match regular expression: <code>^[^{}]*$</code></span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_devices_items_attributes_oneOf_i4_path_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i4_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i4_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i4_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i4_type" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i4_type')" type="button"><span class="property-name">type</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i4_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i4_type" id="Return_value_devices_items_attributes_oneOf_i4_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "AHCI"</span><br/>
+    <span class="description"><p>Disk controller interface type. AHCI for compatibility, VIRTIO for performance.</p>
+    </span><div class="enum-value" id="Return_value_devices_items_attributes_oneOf_i4_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"AHCI"</li><li class="list-group-item enum-item">"VIRTIO"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i4_exists">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i4_exists">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i4_exists" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i4_exists" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i4_exists')" type="button"><span class="property-name">exists</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i4_exists" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i4_exists" id="Return_value_devices_items_attributes_oneOf_i4_exists">
+    <div class="card-body pl-5">
+    <h4>Exists</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether the disk file already exists or should be created.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i4_boot">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i4_boot">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i4_boot" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i4_boot" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i4_boot')" type="button"><span class="property-name">boot</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i4_boot" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i4_boot" id="Return_value_devices_items_attributes_oneOf_i4_boot">
+    <div class="card-body pl-5">
+    <h4>Boot</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether this disk should be marked as bootable.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i4_size">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i4_size">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i4_size" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i4_size" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i4_size')" type="button"><span class="property-name">size</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i4_size" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i4_size" id="Return_value_devices_items_attributes_oneOf_i4_size">
+    <div class="card-body pl-5">
+    <h4>Size</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Size of the disk in bytes. Required if creating a new disk file.</p>
+    </span><div class="any-of-value" id="Return_value_devices_items_attributes_oneOf_i4_size_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_devices_items_attributes_oneOf_i4_size_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i4_size_anyOf_i0" id="Return_value_devices_items_attributes_oneOf_i4_size_anyOf_i0" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i4_size_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i4_size_anyOf_i1" id="Return_value_devices_items_attributes_oneOf_i4_size_anyOf_i1" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i4_size_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_devices_items_attributes_oneOf_i4_size_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_devices_items_attributes_oneOf_i4_size_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i4_logical_sectorsize">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i4_logical_sectorsize">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i4_logical_sectorsize" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i4_logical_sectorsize" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i4_logical_sectorsize')" type="button"><span class="property-name">logical_sectorsize</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i4_logical_sectorsize" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i4_logical_sectorsize" id="Return_value_devices_items_attributes_oneOf_i4_logical_sectorsize">
+    <div class="card-body pl-5">
+    <h4>Logical Sectorsize</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Logical sector size for the disk. <code>null</code> for default.</p>
+    </span><div class="any-of-value" id="Return_value_devices_items_attributes_oneOf_i4_logical_sectorsize_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_devices_items_attributes_oneOf_i4_logical_sectorsize_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i4_logical_sectorsize_anyOf_i0" id="Return_value_devices_items_attributes_oneOf_i4_logical_sectorsize_anyOf_i0" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i4_logical_sectorsize_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i4_logical_sectorsize_anyOf_i1" id="Return_value_devices_items_attributes_oneOf_i4_logical_sectorsize_anyOf_i1" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i4_logical_sectorsize_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_devices_items_attributes_oneOf_i4_logical_sectorsize_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: enum (of integer or null)</span><br/>
+    <div class="enum-value" id="Return_value_devices_items_attributes_oneOf_i4_logical_sectorsize_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">null</li><li class="list-group-item enum-item">512</li><li class="list-group-item enum-item">4096</li></ul>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_devices_items_attributes_oneOf_i4_logical_sectorsize_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i4_physical_sectorsize">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i4_physical_sectorsize">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i4_physical_sectorsize" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i4_physical_sectorsize" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i4_physical_sectorsize')" type="button"><span class="property-name">physical_sectorsize</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i4_physical_sectorsize" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i4_physical_sectorsize" id="Return_value_devices_items_attributes_oneOf_i4_physical_sectorsize">
+    <div class="card-body pl-5">
+    <h4>Physical Sectorsize</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Physical sector size for the disk. <code>null</code> for default.</p>
+    </span><div class="any-of-value" id="Return_value_devices_items_attributes_oneOf_i4_physical_sectorsize_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_devices_items_attributes_oneOf_i4_physical_sectorsize_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i4_physical_sectorsize_anyOf_i0" id="Return_value_devices_items_attributes_oneOf_i4_physical_sectorsize_anyOf_i0" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i4_physical_sectorsize_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i4_physical_sectorsize_anyOf_i1" id="Return_value_devices_items_attributes_oneOf_i4_physical_sectorsize_anyOf_i1" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i4_physical_sectorsize_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_devices_items_attributes_oneOf_i4_physical_sectorsize_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: enum (of integer or null)</span><br/>
+    <div class="enum-value" id="Return_value_devices_items_attributes_oneOf_i4_physical_sectorsize_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">null</li><li class="list-group-item enum-item">512</li><li class="list-group-item enum-item">4096</li></ul>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_devices_items_attributes_oneOf_i4_physical_sectorsize_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i4_iotype">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i4_iotype">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i4_iotype" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i4_iotype" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i4_iotype')" type="button"><span class="property-name">iotype</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i4_iotype" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i4_iotype" id="Return_value_devices_items_attributes_oneOf_i4_iotype">
+    <div class="card-body pl-5">
+    <h4>Iotype</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "THREADS"</span><br/>
+    <span class="description"><p>I/O backend type for disk operations.</p>
+    </span><div class="enum-value" id="Return_value_devices_items_attributes_oneOf_i4_iotype_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"NATIVE"</li><li class="list-group-item enum-item">"THREADS"</li><li class="list-group-item enum-item">"IO_URING"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i4_serial">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i4_serial">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i4_serial" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i4_serial" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i4_serial')" type="button"><span class="property-name">serial</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i4_serial" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i4_serial" id="Return_value_devices_items_attributes_oneOf_i4_serial">
+    <div class="card-body pl-5">
+    <h4>Serial</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Serial number to assign to the virtual disk. <code>null</code> for auto-generated.</p>
+    </span><div class="any-of-value" id="Return_value_devices_items_attributes_oneOf_i4_serial_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_devices_items_attributes_oneOf_i4_serial_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i4_serial_anyOf_i0" id="Return_value_devices_items_attributes_oneOf_i4_serial_anyOf_i0" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i4_serial_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i4_serial_anyOf_i1" id="Return_value_devices_items_attributes_oneOf_i4_serial_anyOf_i1" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i4_serial_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_devices_items_attributes_oneOf_i4_serial_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_devices_items_attributes_oneOf_i4_serial_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_devices_items_attributes_oneOf_i4_serial_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_devices_items_attributes_oneOf_i5" role="tabpanel">
+    <h4>VMDiskDevice</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i5_dtype">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i5_dtype">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i5_dtype" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i5_dtype" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i5_dtype')" type="button"><span class="property-name">dtype</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i5_dtype" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i5_dtype" id="Return_value_devices_items_attributes_oneOf_i5_dtype">
+    <div class="card-body pl-5">
+    <h4>Dtype</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Device type identifier for virtual disk devices.</p>
+    </span><div class="enum-value" id="Return_value_devices_items_attributes_oneOf_i5_dtype_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"DISK"</li></ul>
+    </div><span class="const-value" id="Return_value_devices_items_attributes_oneOf_i5_dtype_const">Specific value: <code>"DISK"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i5_path">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i5_path">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i5_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i5_path" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i5_path')" type="button"><span class="property-name">path</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i5_path" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i5_path" id="Return_value_devices_items_attributes_oneOf_i5_path">
+    <div class="card-body pl-5">
+    <h4>Path</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Path to existing disk file or ZFS volume. <code>null</code> if creating a new ZFS volume.</p>
+    </span><div class="any-of-value" id="Return_value_devices_items_attributes_oneOf_i5_path_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_devices_items_attributes_oneOf_i5_path_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i5_path_anyOf_i0" id="Return_value_devices_items_attributes_oneOf_i5_path_anyOf_i0" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i5_path_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i5_path_anyOf_i1" id="Return_value_devices_items_attributes_oneOf_i5_path_anyOf_i1" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i5_path_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_devices_items_attributes_oneOf_i5_path_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_devices_items_attributes_oneOf_i5_path_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_devices_items_attributes_oneOf_i5_path_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i5_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i5_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i5_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i5_type" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i5_type')" type="button"><span class="property-name">type</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i5_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i5_type" id="Return_value_devices_items_attributes_oneOf_i5_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "AHCI"</span><br/>
+    <span class="description"><p>Disk controller interface type. AHCI for compatibility, VIRTIO for performance.</p>
+    </span><div class="enum-value" id="Return_value_devices_items_attributes_oneOf_i5_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"AHCI"</li><li class="list-group-item enum-item">"VIRTIO"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i5_create_zvol">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i5_create_zvol">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i5_create_zvol" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i5_create_zvol" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i5_create_zvol')" type="button"><span class="property-name">create_zvol</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i5_create_zvol" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i5_create_zvol" id="Return_value_devices_items_attributes_oneOf_i5_create_zvol">
+    <div class="card-body pl-5">
+    <h4>Create Zvol</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to create a new ZFS volume for this disk.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i5_zvol_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i5_zvol_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i5_zvol_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i5_zvol_name" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i5_zvol_name')" type="button"><span class="property-name">zvol_name</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i5_zvol_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i5_zvol_name" id="Return_value_devices_items_attributes_oneOf_i5_zvol_name">
+    <div class="card-body pl-5">
+    <h4>Zvol Name</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Name for the new ZFS volume. Required if <code>create_zvol</code> is true.</p>
+    </span><div class="any-of-value" id="Return_value_devices_items_attributes_oneOf_i5_zvol_name_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_devices_items_attributes_oneOf_i5_zvol_name_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i5_zvol_name_anyOf_i0" id="Return_value_devices_items_attributes_oneOf_i5_zvol_name_anyOf_i0" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i5_zvol_name_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i5_zvol_name_anyOf_i1" id="Return_value_devices_items_attributes_oneOf_i5_zvol_name_anyOf_i1" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i5_zvol_name_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_devices_items_attributes_oneOf_i5_zvol_name_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_devices_items_attributes_oneOf_i5_zvol_name_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i5_zvol_volsize">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i5_zvol_volsize">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i5_zvol_volsize" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i5_zvol_volsize" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i5_zvol_volsize')" type="button"><span class="property-name">zvol_volsize</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i5_zvol_volsize" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i5_zvol_volsize" id="Return_value_devices_items_attributes_oneOf_i5_zvol_volsize">
+    <div class="card-body pl-5">
+    <h4>Zvol Volsize</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Size of the new ZFS volume in bytes. Required if <code>create_zvol</code> is true.</p>
+    </span><div class="any-of-value" id="Return_value_devices_items_attributes_oneOf_i5_zvol_volsize_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_devices_items_attributes_oneOf_i5_zvol_volsize_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i5_zvol_volsize_anyOf_i0" id="Return_value_devices_items_attributes_oneOf_i5_zvol_volsize_anyOf_i0" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i5_zvol_volsize_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i5_zvol_volsize_anyOf_i1" id="Return_value_devices_items_attributes_oneOf_i5_zvol_volsize_anyOf_i1" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i5_zvol_volsize_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_devices_items_attributes_oneOf_i5_zvol_volsize_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_devices_items_attributes_oneOf_i5_zvol_volsize_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i5_logical_sectorsize">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i5_logical_sectorsize">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i5_logical_sectorsize" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i5_logical_sectorsize" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i5_logical_sectorsize')" type="button"><span class="property-name">logical_sectorsize</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i5_logical_sectorsize" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i5_logical_sectorsize" id="Return_value_devices_items_attributes_oneOf_i5_logical_sectorsize">
+    <div class="card-body pl-5">
+    <h4>Logical Sectorsize</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Logical sector size for the disk. <code>null</code> for default.</p>
+    </span><div class="any-of-value" id="Return_value_devices_items_attributes_oneOf_i5_logical_sectorsize_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_devices_items_attributes_oneOf_i5_logical_sectorsize_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i5_logical_sectorsize_anyOf_i0" id="Return_value_devices_items_attributes_oneOf_i5_logical_sectorsize_anyOf_i0" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i5_logical_sectorsize_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i5_logical_sectorsize_anyOf_i1" id="Return_value_devices_items_attributes_oneOf_i5_logical_sectorsize_anyOf_i1" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i5_logical_sectorsize_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_devices_items_attributes_oneOf_i5_logical_sectorsize_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: enum (of integer or null)</span><br/>
+    <div class="enum-value" id="Return_value_devices_items_attributes_oneOf_i5_logical_sectorsize_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">null</li><li class="list-group-item enum-item">512</li><li class="list-group-item enum-item">4096</li></ul>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_devices_items_attributes_oneOf_i5_logical_sectorsize_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i5_physical_sectorsize">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i5_physical_sectorsize">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i5_physical_sectorsize" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i5_physical_sectorsize" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i5_physical_sectorsize')" type="button"><span class="property-name">physical_sectorsize</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i5_physical_sectorsize" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i5_physical_sectorsize" id="Return_value_devices_items_attributes_oneOf_i5_physical_sectorsize">
+    <div class="card-body pl-5">
+    <h4>Physical Sectorsize</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Physical sector size for the disk. <code>null</code> for default.</p>
+    </span><div class="any-of-value" id="Return_value_devices_items_attributes_oneOf_i5_physical_sectorsize_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_devices_items_attributes_oneOf_i5_physical_sectorsize_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i5_physical_sectorsize_anyOf_i0" id="Return_value_devices_items_attributes_oneOf_i5_physical_sectorsize_anyOf_i0" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i5_physical_sectorsize_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i5_physical_sectorsize_anyOf_i1" id="Return_value_devices_items_attributes_oneOf_i5_physical_sectorsize_anyOf_i1" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i5_physical_sectorsize_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_devices_items_attributes_oneOf_i5_physical_sectorsize_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: enum (of integer or null)</span><br/>
+    <div class="enum-value" id="Return_value_devices_items_attributes_oneOf_i5_physical_sectorsize_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">null</li><li class="list-group-item enum-item">512</li><li class="list-group-item enum-item">4096</li></ul>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_devices_items_attributes_oneOf_i5_physical_sectorsize_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i5_iotype">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i5_iotype">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i5_iotype" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i5_iotype" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i5_iotype')" type="button"><span class="property-name">iotype</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i5_iotype" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i5_iotype" id="Return_value_devices_items_attributes_oneOf_i5_iotype">
+    <div class="card-body pl-5">
+    <h4>Iotype</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "THREADS"</span><br/>
+    <span class="description"><p>I/O backend type for disk operations.</p>
+    </span><div class="enum-value" id="Return_value_devices_items_attributes_oneOf_i5_iotype_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"NATIVE"</li><li class="list-group-item enum-item">"THREADS"</li><li class="list-group-item enum-item">"IO_URING"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i5_serial">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i5_serial">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i5_serial" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i5_serial" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i5_serial')" type="button"><span class="property-name">serial</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i5_serial" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i5_serial" id="Return_value_devices_items_attributes_oneOf_i5_serial">
+    <div class="card-body pl-5">
+    <h4>Serial</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Serial number to assign to the virtual disk. <code>null</code> for auto-generated.</p>
+    </span><div class="any-of-value" id="Return_value_devices_items_attributes_oneOf_i5_serial_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_devices_items_attributes_oneOf_i5_serial_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i5_serial_anyOf_i0" id="Return_value_devices_items_attributes_oneOf_i5_serial_anyOf_i0" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i5_serial_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i5_serial_anyOf_i1" id="Return_value_devices_items_attributes_oneOf_i5_serial_anyOf_i1" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i5_serial_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_devices_items_attributes_oneOf_i5_serial_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_devices_items_attributes_oneOf_i5_serial_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_devices_items_attributes_oneOf_i5_serial_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_devices_items_attributes_oneOf_i6" role="tabpanel">
+    <h4>VMUSBDevice</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i6_dtype">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i6_dtype">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i6_dtype" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i6_dtype" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i6_dtype')" type="button"><span class="property-name">dtype</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i6_dtype" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i6_dtype" id="Return_value_devices_items_attributes_oneOf_i6_dtype">
+    <div class="card-body pl-5">
+    <h4>Dtype</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Device type identifier for USB devices.</p>
+    </span><div class="enum-value" id="Return_value_devices_items_attributes_oneOf_i6_dtype_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"USB"</li></ul>
+    </div><span class="const-value" id="Return_value_devices_items_attributes_oneOf_i6_dtype_const">Specific value: <code>"USB"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i6_usb">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i6_usb">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i6_usb" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i6_usb" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i6_usb')" type="button"><span class="property-name">usb</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i6_usb" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i6_usb" id="Return_value_devices_items_attributes_oneOf_i6_usb">
+    <div class="card-body pl-5">
+    <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>USB device attributes for identification. <code>null</code> for USB host controller only.</p>
+    </span><div class="any-of-value" id="Return_value_devices_items_attributes_oneOf_i6_usb_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_devices_items_attributes_oneOf_i6_usb_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i6_usb_anyOf_i0" id="Return_value_devices_items_attributes_oneOf_i6_usb_anyOf_i0" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i6_usb_anyOf_i0')" role="tab">USBAttributes</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i6_usb_anyOf_i1" id="Return_value_devices_items_attributes_oneOf_i6_usb_anyOf_i1" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i6_usb_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_devices_items_attributes_oneOf_i6_usb_anyOf_i0" role="tabpanel">
+    <h4>USBAttributes</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i6_usb_anyOf_i0_vendor_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i6_usb_anyOf_i0_vendor_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i6_usb_anyOf_i0_vendor_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i6_usb_anyOf_i0_vendor_id" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i6_usb_anyOf_i0_vendor_id')" type="button"><span class="property-name">vendor_id</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i6_usb_anyOf_i0_vendor_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i6_usb_anyOf_i0_vendor_id" id="Return_value_devices_items_attributes_oneOf_i6_usb_anyOf_i0_vendor_id">
+    <div class="card-body pl-5">
+    <h4>Vendor Id</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "127.0.0.1"</span><br/>
+    <span class="description"><p>USB vendor identifier in hexadecimal format (e.g., '0x1d6b' for Linux Foundation).</p>
+    </span><span class="pattern-value" id="Return_value_devices_items_attributes_oneOf_i6_usb_anyOf_i0_vendor_id_pattern">Must match regular expression: <code>^0x.*</code></span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_devices_items_attributes_oneOf_i6_usb_anyOf_i0_vendor_id_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i6_usb_anyOf_i0_product_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i6_usb_anyOf_i0_product_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i6_usb_anyOf_i0_product_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i6_usb_anyOf_i0_product_id" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i6_usb_anyOf_i0_product_id')" type="button"><span class="property-name">product_id</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i6_usb_anyOf_i0_product_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i6_usb_anyOf_i0_product_id" id="Return_value_devices_items_attributes_oneOf_i6_usb_anyOf_i0_product_id">
+    <div class="card-body pl-5">
+    <h4>Product Id</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "127.0.0.1"</span><br/>
+    <span class="description"><p>USB product identifier in hexadecimal format (e.g., '0x0002' for 2.0 root hub).</p>
+    </span><span class="pattern-value" id="Return_value_devices_items_attributes_oneOf_i6_usb_anyOf_i0_product_id_pattern">Must match regular expression: <code>^0x.*</code></span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_devices_items_attributes_oneOf_i6_usb_anyOf_i0_product_id_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_devices_items_attributes_oneOf_i6_usb_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i6_controller_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i6_controller_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i6_controller_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i6_controller_type" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i6_controller_type')" type="button"><span class="property-name">controller_type</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i6_controller_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i6_controller_type" id="Return_value_devices_items_attributes_oneOf_i6_controller_type">
+    <div class="card-body pl-5">
+    <h4>Controller Type</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "nec-xhci"</span><br/>
+    <span class="description"><p>USB controller type for the virtual machine.</p>
+    </span><div class="enum-value" id="Return_value_devices_items_attributes_oneOf_i6_controller_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"piix3-uhci"</li><li class="list-group-item enum-item">"piix4-uhci"</li><li class="list-group-item enum-item">"ehci"</li><li class="list-group-item enum-item">"ich9-ehci1"</li><li class="list-group-item enum-item">"vt82c686b-uhci"</li><li class="list-group-item enum-item">"pci-ohci"</li><li class="list-group-item enum-item">"nec-xhci"</li><li class="list-group-item enum-item">"qemu-xhci"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_attributes_oneOf_i6_device">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_attributes_oneOf_i6_device">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_attributes_oneOf_i6_device" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_attributes_oneOf_i6_device" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i6_device')" type="button"><span class="property-name">device</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_attributes_oneOf_i6_device" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_attributes_oneOf_i6_device" id="Return_value_devices_items_attributes_oneOf_i6_device">
+    <div class="card-body pl-5">
+    <h4>Device</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Host USB device path to pass through. <code>null</code> for controller only.</p>
+    </span><div class="any-of-value" id="Return_value_devices_items_attributes_oneOf_i6_device_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_devices_items_attributes_oneOf_i6_device_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i6_device_anyOf_i0" id="Return_value_devices_items_attributes_oneOf_i6_device_anyOf_i0" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i6_device_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_devices_items_attributes_oneOf_i6_device_anyOf_i1" id="Return_value_devices_items_attributes_oneOf_i6_device_anyOf_i1" onclick="setAnchor('#Return_value_devices_items_attributes_oneOf_i6_device_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_devices_items_attributes_oneOf_i6_device_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_devices_items_attributes_oneOf_i6_device_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_devices_items_attributes_oneOf_i6_device_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_vm">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_vm">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_vm" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_vm" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_vm')" type="button"><span class="property-name">vm</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_vm" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_vm" id="Return_value_devices_items_vm">
+    <div class="card-body pl-5">
+    <h4>Vm</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>ID of the virtual machine this device belongs to.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_devices_items_order">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_devices_items_order">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_devices_items_order" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_devices_items_order" data-toggle="collapse" onclick="setAnchor('#Return_value_devices_items_order')" type="button"><span class="property-name">order</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_devices_items_order" class="collapse property-definition-div" data-parent="#accordionReturn_value_devices_items_order" id="Return_value_devices_items_order">
+    <div class="card-body pl-5">
+    <h4>Order</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Boot order priority for this device (lower numbers boot first).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_display_available">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_display_available">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_display_available" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_display_available" data-toggle="collapse" onclick="setAnchor('#Return_value_display_available')" type="button"><span class="property-name">display_available</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_display_available" class="collapse property-definition-div" data-parent="#accordionReturn_value_display_available" id="Return_value_display_available">
+    <div class="card-body pl-5">
+    <h4>Display Available</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether at least one display device is available for this VM.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the virtual machine.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_status">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_status">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_status" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_status" data-toggle="collapse" onclick="setAnchor('#Return_value_status')" type="button"><span class="property-name">status</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_status" class="collapse property-definition-div" data-parent="#accordionReturn_value_status" id="Return_value_status">
+    <div class="card-body pl-5">
+    <h4>VMStatus</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Current runtime status information for the VM.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_status_state">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_status_state">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_status_state" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_status_state" data-toggle="collapse" onclick="setAnchor('#Return_value_status_state')" type="button"><span class="property-name">state</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_status_state" class="collapse property-definition-div" data-parent="#accordionReturn_value_status_state" id="Return_value_status_state">
+    <div class="card-body pl-5">
+    <h4>State</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "127.0.0.1"</span><br/>
+    <span class="description"><p>Current state of the virtual machine.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_status_state_minLength">Must be at least <code>1</code> characters long</span></p>
+    <br/>
+    <div class="badge badge-secondary">Examples:</div>
+    <br/><div class="jumbotron examples" id="Return_value_status_state_ex1"><div class="highlight"><pre><span></span><span class="s2">"RUNNING"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_status_state_ex2"><div class="highlight"><pre><span></span><span class="s2">"STOPPED"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_status_state_ex3"><div class="highlight"><pre><span></span><span class="s2">"SUSPENDED"</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_status_pid">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_status_pid">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_status_pid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_status_pid" data-toggle="collapse" onclick="setAnchor('#Return_value_status_pid')" type="button"><span class="property-name">pid</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_status_pid" class="collapse property-definition-div" data-parent="#accordionReturn_value_status_pid" id="Return_value_status_pid">
+    <div class="card-body pl-5">
+    <h4>Pid</h4><br/>
+    <span class="description"><p>Process ID of the running VM. <code>null</code> if not running.</p>
+    </span><div class="any-of-value" id="Return_value_status_pid_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_status_pid_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_status_pid_anyOf_i0" id="Return_value_status_pid_anyOf_i0" onclick="setAnchor('#Return_value_status_pid_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_status_pid_anyOf_i1" id="Return_value_status_pid_anyOf_i1" onclick="setAnchor('#Return_value_status_pid_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_status_pid_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_status_pid_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_status_domain_state">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_status_domain_state">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_status_domain_state" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_status_domain_state" data-toggle="collapse" onclick="setAnchor('#Return_value_status_domain_state')" type="button"><span class="property-name">domain_state</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_status_domain_state" class="collapse property-definition-div" data-parent="#accordionReturn_value_status_domain_state" id="Return_value_status_domain_state">
+    <div class="card-body pl-5">
+    <h4>Domain State</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Hypervisor-specific domain state.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_status_domain_state_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_enable_secure_boot">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_enable_secure_boot">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_enable_secure_boot" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_enable_secure_boot" data-toggle="collapse" onclick="setAnchor('#Return_value_enable_secure_boot')" type="button"><span class="property-name">enable_secure_boot</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_enable_secure_boot" class="collapse property-definition-div" data-parent="#accordionReturn_value_enable_secure_boot" id="Return_value_enable_secure_boot">
+    <div class="card-body pl-5">
+    <h4>Enable Secure Boot</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to enable UEFI Secure Boot for enhanced security.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* VM_WRITE
+

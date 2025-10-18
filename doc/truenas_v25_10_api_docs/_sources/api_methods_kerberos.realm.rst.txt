@@ -1,0 +1,10 @@
+kerberos.realm
+--------------
+
+.. toctree::
+
+   api_methods_kerberos.realm.create
+   api_methods_kerberos.realm.delete
+   api_methods_kerberos.realm.get_instance
+   api_methods_kerberos.realm.query
+   api_methods_kerberos.realm.update

@@ -1,0 +1,29 @@
+pool
+----
+
+.. toctree::
+
+   api_methods_pool.attach
+   api_methods_pool.attachments
+   api_methods_pool.create
+   api_methods_pool.ddt_prefetch
+   api_methods_pool.ddt_prune
+   api_methods_pool.detach
+   api_methods_pool.expand
+   api_methods_pool.export
+   api_methods_pool.filesystem_choices
+   api_methods_pool.get_disks
+   api_methods_pool.get_instance
+   api_methods_pool.import_find
+   api_methods_pool.import_pool
+   api_methods_pool.is_upgraded
+   api_methods_pool.offline
+   api_methods_pool.online
+   api_methods_pool.processes
+   api_methods_pool.query
+   api_methods_pool.remove
+   api_methods_pool.replace
+   api_methods_pool.scrub
+   api_methods_pool.update
+   api_methods_pool.upgrade
+   api_methods_pool.validate_name

@@ -1,0 +1,7 @@
+virt.instance
+-------------
+
+.. toctree::
+
+   api_events_virt.instance.metrics
+   api_events_virt.instance.query

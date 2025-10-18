@@ -1,0 +1,556 @@
+vm.device.passthrough_device
+============================
+
+Retrieve details about `device` PCI device
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: device</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>device</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>PCI device identifier to get passthrough information for.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>VMDevicePassthroughDevice</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Detailed information about the specified PCI passthrough device.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_capability">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_capability">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_capability" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_capability" data-toggle="collapse" onclick="setAnchor('#Return_value_capability')" type="button"><span class="property-name">capability</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_capability" class="collapse property-definition-div" data-parent="#accordionReturn_value_capability" id="Return_value_capability">
+    <div class="card-body pl-5">
+    <h4>VMDeviceCapability</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>PCI device capability information.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_capability_class">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_capability_class">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_capability_class" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_capability_class" data-toggle="collapse" onclick="setAnchor('#Return_value_capability_class')" type="button"><span class="property-name">class</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_capability_class" class="collapse property-definition-div" data-parent="#accordionReturn_value_capability_class" id="Return_value_capability_class">
+    <div class="card-body pl-5">
+    <h4>Class</h4><br/>
+    <span class="description"><p>PCI device class identifier. <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="Return_value_capability_class_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_capability_class_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_class_anyOf_i0" id="Return_value_capability_class_anyOf_i0" onclick="setAnchor('#Return_value_capability_class_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_class_anyOf_i1" id="Return_value_capability_class_anyOf_i1" onclick="setAnchor('#Return_value_capability_class_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_capability_class_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_capability_class_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_capability_domain">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_capability_domain">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_capability_domain" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_capability_domain" data-toggle="collapse" onclick="setAnchor('#Return_value_capability_domain')" type="button"><span class="property-name">domain</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_capability_domain" class="collapse property-definition-div" data-parent="#accordionReturn_value_capability_domain" id="Return_value_capability_domain">
+    <div class="card-body pl-5">
+    <h4>Domain</h4><br/>
+    <span class="description"><p>PCI domain number. <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="Return_value_capability_domain_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_capability_domain_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_domain_anyOf_i0" id="Return_value_capability_domain_anyOf_i0" onclick="setAnchor('#Return_value_capability_domain_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_domain_anyOf_i1" id="Return_value_capability_domain_anyOf_i1" onclick="setAnchor('#Return_value_capability_domain_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_capability_domain_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_capability_domain_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_capability_bus">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_capability_bus">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_capability_bus" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_capability_bus" data-toggle="collapse" onclick="setAnchor('#Return_value_capability_bus')" type="button"><span class="property-name">bus</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_capability_bus" class="collapse property-definition-div" data-parent="#accordionReturn_value_capability_bus" id="Return_value_capability_bus">
+    <div class="card-body pl-5">
+    <h4>Bus</h4><br/>
+    <span class="description"><p>PCI bus number. <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="Return_value_capability_bus_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_capability_bus_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_bus_anyOf_i0" id="Return_value_capability_bus_anyOf_i0" onclick="setAnchor('#Return_value_capability_bus_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_bus_anyOf_i1" id="Return_value_capability_bus_anyOf_i1" onclick="setAnchor('#Return_value_capability_bus_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_capability_bus_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_capability_bus_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_capability_slot">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_capability_slot">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_capability_slot" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_capability_slot" data-toggle="collapse" onclick="setAnchor('#Return_value_capability_slot')" type="button"><span class="property-name">slot</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_capability_slot" class="collapse property-definition-div" data-parent="#accordionReturn_value_capability_slot" id="Return_value_capability_slot">
+    <div class="card-body pl-5">
+    <h4>Slot</h4><br/>
+    <span class="description"><p>PCI slot number. <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="Return_value_capability_slot_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_capability_slot_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_slot_anyOf_i0" id="Return_value_capability_slot_anyOf_i0" onclick="setAnchor('#Return_value_capability_slot_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_slot_anyOf_i1" id="Return_value_capability_slot_anyOf_i1" onclick="setAnchor('#Return_value_capability_slot_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_capability_slot_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_capability_slot_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_capability_function">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_capability_function">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_capability_function" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_capability_function" data-toggle="collapse" onclick="setAnchor('#Return_value_capability_function')" type="button"><span class="property-name">function</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_capability_function" class="collapse property-definition-div" data-parent="#accordionReturn_value_capability_function" id="Return_value_capability_function">
+    <div class="card-body pl-5">
+    <h4>Function</h4><br/>
+    <span class="description"><p>PCI function number. <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="Return_value_capability_function_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_capability_function_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_function_anyOf_i0" id="Return_value_capability_function_anyOf_i0" onclick="setAnchor('#Return_value_capability_function_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_function_anyOf_i1" id="Return_value_capability_function_anyOf_i1" onclick="setAnchor('#Return_value_capability_function_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_capability_function_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_capability_function_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_capability_product">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_capability_product">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_capability_product" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_capability_product" data-toggle="collapse" onclick="setAnchor('#Return_value_capability_product')" type="button"><span class="property-name">product</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_capability_product" class="collapse property-definition-div" data-parent="#accordionReturn_value_capability_product" id="Return_value_capability_product">
+    <div class="card-body pl-5">
+    <h4>Product</h4><br/>
+    <span class="description"><p>Product name of the PCI device. <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="Return_value_capability_product_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_capability_product_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_product_anyOf_i0" id="Return_value_capability_product_anyOf_i0" onclick="setAnchor('#Return_value_capability_product_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_product_anyOf_i1" id="Return_value_capability_product_anyOf_i1" onclick="setAnchor('#Return_value_capability_product_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_capability_product_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_capability_product_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_capability_vendor">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_capability_vendor">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_capability_vendor" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_capability_vendor" data-toggle="collapse" onclick="setAnchor('#Return_value_capability_vendor')" type="button"><span class="property-name">vendor</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_capability_vendor" class="collapse property-definition-div" data-parent="#accordionReturn_value_capability_vendor" id="Return_value_capability_vendor">
+    <div class="card-body pl-5">
+    <h4>Vendor</h4><br/>
+    <span class="description"><p>Vendor name of the PCI device. <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="Return_value_capability_vendor_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_capability_vendor_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_vendor_anyOf_i0" id="Return_value_capability_vendor_anyOf_i0" onclick="setAnchor('#Return_value_capability_vendor_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_vendor_anyOf_i1" id="Return_value_capability_vendor_anyOf_i1" onclick="setAnchor('#Return_value_capability_vendor_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_capability_vendor_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_capability_vendor_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_controller_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_controller_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_controller_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_controller_type" data-toggle="collapse" onclick="setAnchor('#Return_value_controller_type')" type="button"><span class="property-name">controller_type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_controller_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_controller_type" id="Return_value_controller_type">
+    <div class="card-body pl-5">
+    <h4>Controller Type</h4><br/>
+    <span class="description"><p>Type of controller this device provides. <code>null</code> if not a controller.</p>
+    </span><div class="any-of-value" id="Return_value_controller_type_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_controller_type_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_controller_type_anyOf_i0" id="Return_value_controller_type_anyOf_i0" onclick="setAnchor('#Return_value_controller_type_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_controller_type_anyOf_i1" id="Return_value_controller_type_anyOf_i1" onclick="setAnchor('#Return_value_controller_type_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_controller_type_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_controller_type_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_iommu_group">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_iommu_group">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_iommu_group" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_iommu_group" data-toggle="collapse" onclick="setAnchor('#Return_value_iommu_group')" type="button"><span class="property-name">iommu_group</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_iommu_group" class="collapse property-definition-div" data-parent="#accordionReturn_value_iommu_group" id="Return_value_iommu_group">
+    <div class="card-body pl-5">
+    <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>IOMMU group information for device isolation. <code>null</code> if IOMMU not available.</p>
+    </span><div class="any-of-value" id="Return_value_iommu_group_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_iommu_group_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_iommu_group_anyOf_i0" id="Return_value_iommu_group_anyOf_i0" onclick="setAnchor('#Return_value_iommu_group_anyOf_i0')" role="tab">VMDeviceIOMMUGroup</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_iommu_group_anyOf_i1" id="Return_value_iommu_group_anyOf_i1" onclick="setAnchor('#Return_value_iommu_group_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_iommu_group_anyOf_i0" role="tabpanel">
+    <h4>VMDeviceIOMMUGroup</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_iommu_group_anyOf_i0_number">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_iommu_group_anyOf_i0_number">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_iommu_group_anyOf_i0_number" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_iommu_group_anyOf_i0_number" data-toggle="collapse" onclick="setAnchor('#Return_value_iommu_group_anyOf_i0_number')" type="button"><span class="property-name">number</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_iommu_group_anyOf_i0_number" class="collapse property-definition-div" data-parent="#accordionReturn_value_iommu_group_anyOf_i0_number" id="Return_value_iommu_group_anyOf_i0_number">
+    <div class="card-body pl-5">
+    <h4>Number</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>IOMMU group number for device isolation.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_iommu_group_anyOf_i0_addresses">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_iommu_group_anyOf_i0_addresses">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_iommu_group_anyOf_i0_addresses" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_iommu_group_anyOf_i0_addresses" data-toggle="collapse" onclick="setAnchor('#Return_value_iommu_group_anyOf_i0_addresses')" type="button"><span class="property-name">addresses</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_iommu_group_anyOf_i0_addresses" class="collapse property-definition-div" data-parent="#accordionReturn_value_iommu_group_anyOf_i0_addresses" id="Return_value_iommu_group_anyOf_i0_addresses">
+    <div class="card-body pl-5">
+    <h4>Addresses</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="description"><p>Array of PCI addresses in this IOMMU group.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_iommu_group_anyOf_i0_addresses_items">
+    <h4>VMDeviceIOMMUGroupAddress</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_iommu_group_anyOf_i0_addresses_items_domain">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_iommu_group_anyOf_i0_addresses_items_domain">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_iommu_group_anyOf_i0_addresses_items_domain" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_iommu_group_anyOf_i0_addresses_items_domain" data-toggle="collapse" onclick="setAnchor('#Return_value_iommu_group_anyOf_i0_addresses_items_domain')" type="button"><span class="property-name">domain</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_iommu_group_anyOf_i0_addresses_items_domain" class="collapse property-definition-div" data-parent="#accordionReturn_value_iommu_group_anyOf_i0_addresses_items_domain" id="Return_value_iommu_group_anyOf_i0_addresses_items_domain">
+    <div class="card-body pl-5">
+    <h4>Domain</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>PCI domain number for this IOMMU group address.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_iommu_group_anyOf_i0_addresses_items_bus">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_iommu_group_anyOf_i0_addresses_items_bus">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_iommu_group_anyOf_i0_addresses_items_bus" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_iommu_group_anyOf_i0_addresses_items_bus" data-toggle="collapse" onclick="setAnchor('#Return_value_iommu_group_anyOf_i0_addresses_items_bus')" type="button"><span class="property-name">bus</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_iommu_group_anyOf_i0_addresses_items_bus" class="collapse property-definition-div" data-parent="#accordionReturn_value_iommu_group_anyOf_i0_addresses_items_bus" id="Return_value_iommu_group_anyOf_i0_addresses_items_bus">
+    <div class="card-body pl-5">
+    <h4>Bus</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>PCI bus number for this IOMMU group address.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_iommu_group_anyOf_i0_addresses_items_slot">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_iommu_group_anyOf_i0_addresses_items_slot">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_iommu_group_anyOf_i0_addresses_items_slot" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_iommu_group_anyOf_i0_addresses_items_slot" data-toggle="collapse" onclick="setAnchor('#Return_value_iommu_group_anyOf_i0_addresses_items_slot')" type="button"><span class="property-name">slot</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_iommu_group_anyOf_i0_addresses_items_slot" class="collapse property-definition-div" data-parent="#accordionReturn_value_iommu_group_anyOf_i0_addresses_items_slot" id="Return_value_iommu_group_anyOf_i0_addresses_items_slot">
+    <div class="card-body pl-5">
+    <h4>Slot</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>PCI slot number for this IOMMU group address.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_iommu_group_anyOf_i0_addresses_items_function">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_iommu_group_anyOf_i0_addresses_items_function">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_iommu_group_anyOf_i0_addresses_items_function" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_iommu_group_anyOf_i0_addresses_items_function" data-toggle="collapse" onclick="setAnchor('#Return_value_iommu_group_anyOf_i0_addresses_items_function')" type="button"><span class="property-name">function</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_iommu_group_anyOf_i0_addresses_items_function" class="collapse property-definition-div" data-parent="#accordionReturn_value_iommu_group_anyOf_i0_addresses_items_function" id="Return_value_iommu_group_anyOf_i0_addresses_items_function">
+    <div class="card-body pl-5">
+    <h4>Function</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>PCI function number for this IOMMU group address.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_iommu_group_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_available">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_available">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_available" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_available" data-toggle="collapse" onclick="setAnchor('#Return_value_available')" type="button"><span class="property-name">available</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_available" class="collapse property-definition-div" data-parent="#accordionReturn_value_available" id="Return_value_available">
+    <div class="card-body pl-5">
+    <h4>Available</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether the device is available for passthrough to virtual machines.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_drivers">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_drivers">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_drivers" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_drivers" data-toggle="collapse" onclick="setAnchor('#Return_value_drivers')" type="button"><span class="property-name">drivers</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_drivers" class="collapse property-definition-div" data-parent="#accordionReturn_value_drivers" id="Return_value_drivers">
+    <div class="card-body pl-5">
+    <h4>Drivers</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of kernel drivers currently bound to this device.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_drivers_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_error">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_error">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_error" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_error" data-toggle="collapse" onclick="setAnchor('#Return_value_error')" type="button"><span class="property-name">error</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_error" class="collapse property-definition-div" data-parent="#accordionReturn_value_error" id="Return_value_error">
+    <div class="card-body pl-5">
+    <h4>Error</h4><br/>
+    <span class="description"><p>Error message if the device cannot be used for passthrough. <code>null</code> if no error.</p>
+    </span><div class="any-of-value" id="Return_value_error_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_error_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_error_anyOf_i0" id="Return_value_error_anyOf_i0" onclick="setAnchor('#Return_value_error_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_error_anyOf_i1" id="Return_value_error_anyOf_i1" onclick="setAnchor('#Return_value_error_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_error_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_error_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_reset_mechanism_defined">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_reset_mechanism_defined">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_reset_mechanism_defined" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_reset_mechanism_defined" data-toggle="collapse" onclick="setAnchor('#Return_value_reset_mechanism_defined')" type="button"><span class="property-name">reset_mechanism_defined</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_reset_mechanism_defined" class="collapse property-definition-div" data-parent="#accordionReturn_value_reset_mechanism_defined" id="Return_value_reset_mechanism_defined">
+    <div class="card-body pl-5">
+    <h4>Reset Mechanism Defined</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether the device supports proper reset mechanisms for passthrough.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_description">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_description">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_description" data-toggle="collapse" onclick="setAnchor('#Return_value_description')" type="button"><span class="property-name">description</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_description" class="collapse property-definition-div" data-parent="#accordionReturn_value_description" id="Return_value_description">
+    <div class="card-body pl-5">
+    <h4>Description</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable description of the PCI device.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_critical">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_critical">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_critical" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_critical" data-toggle="collapse" onclick="setAnchor('#Return_value_critical')" type="button"><span class="property-name">critical</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_critical" class="collapse property-definition-div" data-parent="#accordionReturn_value_critical" id="Return_value_critical">
+    <div class="card-body pl-5">
+    <h4>Critical</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this device is critical to host system operation.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_device_path">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_device_path">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_device_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_device_path" data-toggle="collapse" onclick="setAnchor('#Return_value_device_path')" type="button"><span class="property-name">device_path</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_device_path" class="collapse property-definition-div" data-parent="#accordionReturn_value_device_path" id="Return_value_device_path">
+    <div class="card-body pl-5">
+    <h4>Device Path</h4><br/>
+    <span class="description"><p>Device filesystem path. <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="Return_value_device_path_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_device_path_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_device_path_anyOf_i0" id="Return_value_device_path_anyOf_i0" onclick="setAnchor('#Return_value_device_path_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_device_path_anyOf_i1" id="Return_value_device_path_anyOf_i1" onclick="setAnchor('#Return_value_device_path_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_device_path_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_device_path_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* VM_DEVICE_READ
+

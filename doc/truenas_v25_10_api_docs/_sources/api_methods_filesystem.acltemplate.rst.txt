@@ -1,0 +1,11 @@
+filesystem.acltemplate
+----------------------
+
+.. toctree::
+
+   api_methods_filesystem.acltemplate.by_path
+   api_methods_filesystem.acltemplate.create
+   api_methods_filesystem.acltemplate.delete
+   api_methods_filesystem.acltemplate.get_instance
+   api_methods_filesystem.acltemplate.query
+   api_methods_filesystem.acltemplate.update

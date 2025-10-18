@@ -1,0 +1,17 @@
+cloud_backup
+------------
+
+.. toctree::
+
+   api_methods_cloud_backup.abort
+   api_methods_cloud_backup.create
+   api_methods_cloud_backup.delete
+   api_methods_cloud_backup.delete_snapshot
+   api_methods_cloud_backup.get_instance
+   api_methods_cloud_backup.list_snapshot_directory
+   api_methods_cloud_backup.list_snapshots
+   api_methods_cloud_backup.query
+   api_methods_cloud_backup.restore
+   api_methods_cloud_backup.sync
+   api_methods_cloud_backup.transfer_setting_choices
+   api_methods_cloud_backup.update

@@ -1,0 +1,14 @@
+update
+------
+
+.. toctree::
+
+   api_methods_update.available_versions
+   api_methods_update.config
+   api_methods_update.download
+   api_methods_update.file
+   api_methods_update.manual
+   api_methods_update.profile_choices
+   api_methods_update.run
+   api_methods_update.status
+   api_methods_update.update

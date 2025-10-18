@@ -1,0 +1,6 @@
+alertservice
+------------
+
+.. toctree::
+
+   api_events_alertservice.query

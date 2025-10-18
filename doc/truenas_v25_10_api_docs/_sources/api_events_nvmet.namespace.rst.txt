@@ -1,0 +1,6 @@
+nvmet.namespace
+---------------
+
+.. toctree::
+
+   api_events_nvmet.namespace.query

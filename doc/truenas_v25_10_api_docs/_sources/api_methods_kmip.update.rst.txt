@@ -1,0 +1,464 @@
+kmip.update
+===========
+
+Update KMIP Server Configuration.
+
+System currently authenticates connection with remote KMIP Server with a TLS handshake. `certificate` and `certificate_authority` determine the certs which will be used to initiate the TLS handshake with `server`.
+
+`validate` is enabled by default. When enabled, system will test connection to `server` making sure it's reachable.
+
+`manage_zfs_keys`/`manage_sed_disks` when enabled will sync keys from local database to remote KMIP server. When disabled, if there are any keys left to be retrieved from the KMIP server, it will sync them back to local database.
+
+`enabled` if true, cannot be set to disabled if there are existing keys pending to be synced. However users can still perform this action by enabling `force_clear`.
+
+`ssl_version` can be specified to match the ssl configuration being used by KMIP server.
+
+`change_server` is a boolean field which allows users to migrate data between two KMIP servers. System will first migrate keys from old KMIP server to local database and then migrate the keys from local database to new KMIP server. If it is unable to retrieve all the keys from old server, this will fail. Users can bypass this by enabling `force_clear`.
+
+`force_clear` is a boolean option which when enabled will in this case remove all pending keys to be synced from database. It should be used with extreme caution as users may end up with not having ZFS dataset or SED disks keys leaving them locked forever. It is disabled by default.
+
+This method is a job.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: kmip_update</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>kmip_update</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>KMIPUpdateArgs parameters.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_enabled">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_enabled">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_enabled" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_enabled" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_enabled')" type="button"><span class="property-name">enabled</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_enabled" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_enabled" id="Call_parameters_items_i0_enabled">
+    <div class="card-body pl-5">
+    <h4>Enabled</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to enable KMIP functionality.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_manage_sed_disks">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_manage_sed_disks">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_manage_sed_disks" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_manage_sed_disks" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_manage_sed_disks')" type="button"><span class="property-name">manage_sed_disks</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_manage_sed_disks" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_manage_sed_disks" id="Call_parameters_items_i0_manage_sed_disks">
+    <div class="card-body pl-5">
+    <h4>Manage Sed Disks</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to use KMIP for managing SED (Self-Encrypting Drive) keys.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_manage_zfs_keys">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_manage_zfs_keys">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_manage_zfs_keys" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_manage_zfs_keys" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_manage_zfs_keys')" type="button"><span class="property-name">manage_zfs_keys</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_manage_zfs_keys" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_manage_zfs_keys" id="Call_parameters_items_i0_manage_zfs_keys">
+    <div class="card-body pl-5">
+    <h4>Manage Zfs Keys</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to use KMIP for managing ZFS encryption keys.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_certificate">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_certificate">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_certificate" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_certificate" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_certificate')" type="button"><span class="property-name">certificate</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_certificate" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_certificate" id="Call_parameters_items_i0_certificate">
+    <div class="card-body pl-5">
+    <h4>Certificate</h4><br/>
+    <span class="description"><p>ID of the client certificate for KMIP authentication or <code>null</code>.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_certificate_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_certificate_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_certificate_anyOf_i0" id="Call_parameters_items_i0_certificate_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_certificate_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_certificate_anyOf_i1" id="Call_parameters_items_i0_certificate_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_certificate_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_certificate_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_certificate_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_certificate_authority">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_certificate_authority">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_certificate_authority" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_certificate_authority" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_certificate_authority')" type="button"><span class="property-name">certificate_authority</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_certificate_authority" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_certificate_authority" id="Call_parameters_items_i0_certificate_authority">
+    <div class="card-body pl-5">
+    <h4>Certificate Authority</h4><br/>
+    <span class="description"><p>ID of the certificate authority for server verification or <code>null</code>.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_certificate_authority_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_certificate_authority_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_certificate_authority_anyOf_i0" id="Call_parameters_items_i0_certificate_authority_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_certificate_authority_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_certificate_authority_anyOf_i1" id="Call_parameters_items_i0_certificate_authority_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_certificate_authority_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_certificate_authority_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_certificate_authority_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_port">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_port">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_port" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_port')" type="button"><span class="property-name">port</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_port" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_port" id="Call_parameters_items_i0_port">
+    <div class="card-body pl-5">
+    <h4>Port</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>TCP port number for the KMIP server connection.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_port_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>65535</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_server">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_server">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_server" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_server" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_server')" type="button"><span class="property-name">server</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_server" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_server" id="Call_parameters_items_i0_server">
+    <div class="card-body pl-5">
+    <h4>Server</h4><br/>
+    <span class="description"><p>Hostname or IP address of the KMIP server or <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_server_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_server_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_server_anyOf_i0" id="Call_parameters_items_i0_server_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_server_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_server_anyOf_i1" id="Call_parameters_items_i0_server_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_server_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_server_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_server_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_server_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_ssl_version">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_ssl_version">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_ssl_version" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_ssl_version" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_ssl_version')" type="button"><span class="property-name">ssl_version</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_ssl_version" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_ssl_version" id="Call_parameters_items_i0_ssl_version">
+    <div class="card-body pl-5">
+    <h4>Ssl Version</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>SSL/TLS protocol version to use for KMIP connections.</p>
+    </span><div class="enum-value" id="Call_parameters_items_i0_ssl_version_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"PROTOCOL_TLSv1"</li><li class="list-group-item enum-item">"PROTOCOL_TLSv1_1"</li><li class="list-group-item enum-item">"PROTOCOL_TLSv1_2"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_force_clear">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_force_clear">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_force_clear" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_force_clear" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_force_clear')" type="button"><span class="property-name">force_clear</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_force_clear" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_force_clear" id="Call_parameters_items_i0_force_clear">
+    <div class="card-body pl-5">
+    <h4>Force Clear</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to force clear existing keys when disabling KMIP.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_change_server">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_change_server">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_change_server" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_change_server" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_change_server')" type="button"><span class="property-name">change_server</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_change_server" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_change_server" id="Call_parameters_items_i0_change_server">
+    <div class="card-body pl-5">
+    <h4>Change Server</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether the KMIP server configuration is being changed.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_validate">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_validate">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_validate" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_validate" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_validate')" type="button"><span class="property-name">validate</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_validate" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_validate" id="Call_parameters_items_i0_validate">
+    <div class="card-body pl-5">
+    <h4>Validate</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to validate the KMIP server connection before saving.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>KmipEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The updated KMIP configuration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the KMIP configuration.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_enabled">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_enabled">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_enabled" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_enabled" data-toggle="collapse" onclick="setAnchor('#Return_value_enabled')" type="button"><span class="property-name">enabled</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_enabled" class="collapse property-definition-div" data-parent="#accordionReturn_value_enabled" id="Return_value_enabled">
+    <div class="card-body pl-5">
+    <h4>Enabled</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether KMIP (Key Management Interoperability Protocol) is enabled.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_manage_sed_disks">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_manage_sed_disks">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_manage_sed_disks" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_manage_sed_disks" data-toggle="collapse" onclick="setAnchor('#Return_value_manage_sed_disks')" type="button"><span class="property-name">manage_sed_disks</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_manage_sed_disks" class="collapse property-definition-div" data-parent="#accordionReturn_value_manage_sed_disks" id="Return_value_manage_sed_disks">
+    <div class="card-body pl-5">
+    <h4>Manage Sed Disks</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to use KMIP for managing SED (Self-Encrypting Drive) keys.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_manage_zfs_keys">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_manage_zfs_keys">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_manage_zfs_keys" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_manage_zfs_keys" data-toggle="collapse" onclick="setAnchor('#Return_value_manage_zfs_keys')" type="button"><span class="property-name">manage_zfs_keys</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_manage_zfs_keys" class="collapse property-definition-div" data-parent="#accordionReturn_value_manage_zfs_keys" id="Return_value_manage_zfs_keys">
+    <div class="card-body pl-5">
+    <h4>Manage Zfs Keys</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to use KMIP for managing ZFS encryption keys.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_certificate">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_certificate">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_certificate" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_certificate" data-toggle="collapse" onclick="setAnchor('#Return_value_certificate')" type="button"><span class="property-name">certificate</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_certificate" class="collapse property-definition-div" data-parent="#accordionReturn_value_certificate" id="Return_value_certificate">
+    <div class="card-body pl-5">
+    <h4>Certificate</h4><br/>
+    <span class="description"><p>ID of the client certificate for KMIP authentication or <code>null</code>.</p>
+    </span><div class="any-of-value" id="Return_value_certificate_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_certificate_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_certificate_anyOf_i0" id="Return_value_certificate_anyOf_i0" onclick="setAnchor('#Return_value_certificate_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_certificate_anyOf_i1" id="Return_value_certificate_anyOf_i1" onclick="setAnchor('#Return_value_certificate_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_certificate_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_certificate_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_certificate_authority">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_certificate_authority">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_certificate_authority" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_certificate_authority" data-toggle="collapse" onclick="setAnchor('#Return_value_certificate_authority')" type="button"><span class="property-name">certificate_authority</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_certificate_authority" class="collapse property-definition-div" data-parent="#accordionReturn_value_certificate_authority" id="Return_value_certificate_authority">
+    <div class="card-body pl-5">
+    <h4>Certificate Authority</h4><br/>
+    <span class="description"><p>ID of the certificate authority for server verification or <code>null</code>.</p>
+    </span><div class="any-of-value" id="Return_value_certificate_authority_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_certificate_authority_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_certificate_authority_anyOf_i0" id="Return_value_certificate_authority_anyOf_i0" onclick="setAnchor('#Return_value_certificate_authority_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_certificate_authority_anyOf_i1" id="Return_value_certificate_authority_anyOf_i1" onclick="setAnchor('#Return_value_certificate_authority_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_certificate_authority_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_certificate_authority_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_port">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_port">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_port" data-toggle="collapse" onclick="setAnchor('#Return_value_port')" type="button"><span class="property-name">port</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_port" class="collapse property-definition-div" data-parent="#accordionReturn_value_port" id="Return_value_port">
+    <div class="card-body pl-5">
+    <h4>Port</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>TCP port number for the KMIP server connection.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_port_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>65535</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_server">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_server">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_server" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_server" data-toggle="collapse" onclick="setAnchor('#Return_value_server')" type="button"><span class="property-name">server</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_server" class="collapse property-definition-div" data-parent="#accordionReturn_value_server" id="Return_value_server">
+    <div class="card-body pl-5">
+    <h4>Server</h4><br/>
+    <span class="description"><p>Hostname or IP address of the KMIP server or <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Return_value_server_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_server_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_server_anyOf_i0" id="Return_value_server_anyOf_i0" onclick="setAnchor('#Return_value_server_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_server_anyOf_i1" id="Return_value_server_anyOf_i1" onclick="setAnchor('#Return_value_server_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_server_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_server_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_server_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_ssl_version">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_ssl_version">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_ssl_version" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_ssl_version" data-toggle="collapse" onclick="setAnchor('#Return_value_ssl_version')" type="button"><span class="property-name">ssl_version</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_ssl_version" class="collapse property-definition-div" data-parent="#accordionReturn_value_ssl_version" id="Return_value_ssl_version">
+    <div class="card-body pl-5">
+    <h4>Ssl Version</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>SSL/TLS protocol version to use for KMIP connections.</p>
+    </span><div class="enum-value" id="Return_value_ssl_version_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"PROTOCOL_TLSv1"</li><li class="list-group-item enum-item">"PROTOCOL_TLSv1_1"</li><li class="list-group-item enum-item">"PROTOCOL_TLSv1_2"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* KMIP_WRITE
+

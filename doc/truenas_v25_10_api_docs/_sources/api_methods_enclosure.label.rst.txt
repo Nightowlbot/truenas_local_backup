@@ -1,0 +1,6 @@
+enclosure.label
+---------------
+
+.. toctree::
+
+   api_methods_enclosure.label.set

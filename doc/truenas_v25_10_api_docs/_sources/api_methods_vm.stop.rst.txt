@@ -1,0 +1,101 @@
+vm.stop
+=======
+
+Stops a VM.
+
+For unresponsive guests who have exceeded the `shutdown_timeout` defined by the user and have become unresponsive, they required to be powered down using `vm.poweroff`. `vm.stop` is only going to send a shutdown signal to the guest and wait the desired `shutdown_timeout` value before tearing down guest vmemory.
+
+`force_after_timeout` when supplied, it will initiate poweroff for the VM forcing it to exit if it has not already stopped within the specified `shutdown_timeout`.
+
+This method is a job.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: id</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>ID of the virtual machine to stop.</p>
+    </span>
+    </div>
+    </div>
+    <h5>Parameter 2: options</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>options</h4><span class="badge badge-dark value-type">Type: object</span> <div class="json-default-value">Default:<div class="value">{
+      "force": false,
+      "force_after_timeout": false
+    }</div></div><br/>
+    <span class="description"><p>Options controlling the VM stop process.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_force">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_force">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_force" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_force" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_force')" type="button"><span class="property-name">force</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_force" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_force" id="Call_parameters_items_i1_force">
+    <div class="card-body pl-5">
+    <h4>Force</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to force immediate shutdown without graceful shutdown attempt.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_force_after_timeout">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_force_after_timeout">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_force_after_timeout" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_force_after_timeout" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_force_after_timeout')" type="button"><span class="property-name">force_after_timeout</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_force_after_timeout" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_force_after_timeout" id="Call_parameters_items_i1_force_after_timeout">
+    <div class="card-body pl-5">
+    <h4>Force After Timeout</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to force shutdown if graceful shutdown times out.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: null</span><br/>
+    <span class="description"><p>Returns <code>null</code> on successful VM stop initiation.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* VM_WRITE
+

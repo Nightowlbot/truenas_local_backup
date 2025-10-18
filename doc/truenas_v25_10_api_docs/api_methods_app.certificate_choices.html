@@ -1,0 +1,1670 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <title>app.certificate_choices &#8212; TrueNAS API v25.10.0  documentation</title>
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=649a27d8" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=5c69cfe2" />
+    <link rel="stylesheet" type="text/css" href="_static/style.css?v=1fc06b6a" />
+    <link rel="stylesheet" href="_static/bootstrap-4.3.1-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinxbootstrap4.css" type="text/css" />
+    <script src="_static/jquery.js?v=5d32c60e"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/language_data.js?v=8b189327"></script>
+    <script src="_static/script.js?v=2c76d6a4"></script>
+    <script src="_static/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="_static/sphinxbootstrap4.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="app.config" href="api_methods_app.config.html" />
+    <link rel="prev" title="app.categories" href="api_methods_app.categories.html" /> 
+  </head><body>
+  <nav class="navbar navbar-expand-md  full navbar-dark bg-dark flex-wrap">
+    <button class="navbar-toggler ml-auto py-2" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+      &#9776;
+    </button>
+      <div class="navbar-collapse collapse" id="exCollapsingNavbar2">
+           <a class="navbar-brand py-1" href="index.html">
+                  TrueNAS API v25.10.0
+          </a>
+          <form class="form-inline"><select class="form-control" onchange="navigateToVersion(this.value);"><option value="v26.04.0" >v26.04.0 (current)</option><option value="v25.10.0" selected>v25.10.0</option><option value="v25.04.2" >v25.04.2</option><option value="v25.04.1" >v25.04.1</option><option value="v25.04.0" >v25.04.0</option><option value="v24.10" >v24.10</option></select></form><ul class="navbar-nav mr-auto">
+          
+          </ul>
+          <div class="dropdown-divider d-block d-sm-none mb-4"></div>
+             
+<form class="form-inline" action="search.html" method="get">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <!--<div class="row hidden-sm-up">
+          <div class="collapse navbar-toggleable-xs container" id="exCollapsingNavbar2">
+              <div class="container">
+             　　 <a class="navbar-brand" href="index.html">
+                      TrueNAS API v25.10.0
+                  </a>
+              </div>
+              <ul class="nav navbar-nav">
+              </ul>
+              <div class="dropdown-divider"></div>
+              <div class="navbar-text">search<div>
+              
+<form class="form-inline" action="search.html" method="get">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          </div>
+      </div>-->
+    </nav>
+  </div>
+
+    <div class="related d-flex justify-content-between bg-light flex-wrap" role="navigation" aria-label="related navigation">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">TrueNAS API v25.10.0  documentation</a></li>
+                <li class="breadcrumb-item"><a href="api_methods.html"
+                       >API Methods</a></li>
+                <li class="breadcrumb-item"><a href="api_methods_app.html"
+                       
+                         accesskey="U"
+                         class="active"
+                       >app</a></li>
+            <li class="breadcrumb-item active">app.certificate_choices</li>
+        </ol>
+       <div>
+          <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+               <a href="api_methods_app.categories.html" title="Previous Chapter: app.categories" class="btn btn-primary" role="botton" accesskey="P">
+                   &laquo; app.categories
+               </a>
+               <a href="api_methods_app.config.html" title="Next Chapter: app.config" class="btn btn-primary" role="botton" accesskey="N">
+                   app.config &raquo;
+               </a>
+           </div>
+       </div>
+    </div>
+
+  <div class="main container-fluid">
+    <div class="row"> 
+      <div class="sphinxsidebar d-none d-md-block">
+        <div class="sphinxsidebarwrapper">          
+            <h4>Table Of Contents</h4>
+            
+            
+              <div class="sidebartoctree">
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="jsonrpc.html">JSON-RPC 2.0 over WebSocket API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="jsonrpc.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jsonrpc.html#json-rpc-2-0-protocol">JSON-RPC 2.0 Protocol</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="jsonrpc.html#communication-mechanism">Communication Mechanism</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="jsonrpc.html#request-and-response-format">Request and Response Format</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="jsonrpc.html#json-rpc-request-structure">JSON-RPC Request Structure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="jsonrpc.html#example-request">Example Request:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="jsonrpc.html#json-rpc-response-structure">JSON-RPC Response Structure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="jsonrpc.html#example-response">Example Response:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="jsonrpc.html#error-response">Error Response</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="jsonrpc.html#custom-error-codes">Custom Error Codes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="jsonrpc.html#event-notifications">Event Notifications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="jsonrpc.html#json-rpc-notification-structure">JSON-RPC Notification Structure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="jsonrpc.html#example-notification">Example Notification:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="jsonrpc.html#important-notes-on-notifications">Important Notes on Notifications</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="jsonrpc.html#limitations">Limitations</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="api_methods.html">API Methods</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="api_methods_acme.dns.authenticator.html">acme.dns.authenticator</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_acme.dns.authenticator.authenticator_schemas.html">acme.dns.authenticator.authenticator_schemas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_acme.dns.authenticator.create.html">acme.dns.authenticator.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_acme.dns.authenticator.delete.html">acme.dns.authenticator.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_acme.dns.authenticator.get_instance.html">acme.dns.authenticator.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_acme.dns.authenticator.query.html">acme.dns.authenticator.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_acme.dns.authenticator.update.html">acme.dns.authenticator.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_alert.html">alert</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_alert.dismiss.html">alert.dismiss</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_alert.list.html">alert.list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_alert.list_categories.html">alert.list_categories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_alert.list_policies.html">alert.list_policies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_alert.restore.html">alert.restore</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_alertclasses.html">alertclasses</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_alertclasses.config.html">alertclasses.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_alertclasses.update.html">alertclasses.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_alertservice.html">alertservice</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_alertservice.create.html">alertservice.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_alertservice.delete.html">alertservice.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_alertservice.get_instance.html">alertservice.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_alertservice.query.html">alertservice.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_alertservice.test.html">alertservice.test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_alertservice.update.html">alertservice.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_api_key.html">api_key</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_api_key.create.html">api_key.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_api_key.delete.html">api_key.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_api_key.get_instance.html">api_key.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_api_key.my_keys.html">api_key.my_keys</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_api_key.query.html">api_key.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_api_key.update.html">api_key.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="api_methods_app.html">app</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.available.html">app.available</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.available_space.html">app.available_space</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.categories.html">app.categories</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">app.certificate_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.config.html">app.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.container_console_choices.html">app.container_console_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.container_ids.html">app.container_ids</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.convert_to_custom.html">app.convert_to_custom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.create.html">app.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.delete.html">app.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.get_instance.html">app.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.gpu_choices.html">app.gpu_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.ip_choices.html">app.ip_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.latest.html">app.latest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.outdated_docker_images.html">app.outdated_docker_images</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.pull_images.html">app.pull_images</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.query.html">app.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.redeploy.html">app.redeploy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.rollback.html">app.rollback</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.rollback_versions.html">app.rollback_versions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.similar.html">app.similar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.start.html">app.start</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.stop.html">app.stop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.update.html">app.update</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.upgrade.html">app.upgrade</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.upgrade_summary.html">app.upgrade_summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.used_host_ips.html">app.used_host_ips</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.used_ports.html">app.used_ports</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_app.image.html">app.image</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.image.delete.html">app.image.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.image.dockerhub_rate_limit.html">app.image.dockerhub_rate_limit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.image.get_instance.html">app.image.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.image.pull.html">app.image.pull</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.image.query.html">app.image.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_app.ix_volume.html">app.ix_volume</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.ix_volume.exists.html">app.ix_volume.exists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.ix_volume.query.html">app.ix_volume.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_app.registry.html">app.registry</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.registry.create.html">app.registry.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.registry.delete.html">app.registry.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.registry.get_instance.html">app.registry.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.registry.query.html">app.registry.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_app.registry.update.html">app.registry.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_audit.html">audit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_audit.config.html">audit.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_audit.download_report.html">audit.download_report</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_audit.export.html">audit.export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_audit.query.html">audit.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_audit.update.html">audit.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_auth.html">auth</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_auth.generate_onetime_password.html">auth.generate_onetime_password</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_auth.generate_token.html">auth.generate_token</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_auth.login.html">auth.login</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_auth.login_ex.html">auth.login_ex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_auth.login_ex_continue.html">auth.login_ex_continue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_auth.login_with_api_key.html">auth.login_with_api_key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_auth.login_with_token.html">auth.login_with_token</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_auth.logout.html">auth.logout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_auth.me.html">auth.me</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_auth.mechanism_choices.html">auth.mechanism_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_auth.sessions.html">auth.sessions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_auth.set_attribute.html">auth.set_attribute</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_auth.terminate_other_sessions.html">auth.terminate_other_sessions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_auth.terminate_session.html">auth.terminate_session</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_auth.twofactor.html">auth.twofactor</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_auth.twofactor.config.html">auth.twofactor.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_auth.twofactor.update.html">auth.twofactor.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_boot.html">boot</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_boot.attach.html">boot.attach</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_boot.detach.html">boot.detach</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_boot.get_disks.html">boot.get_disks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_boot.get_state.html">boot.get_state</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_boot.replace.html">boot.replace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_boot.scrub.html">boot.scrub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_boot.set_scrub_interval.html">boot.set_scrub_interval</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_boot.environment.html">boot.environment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_boot.environment.activate.html">boot.environment.activate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_boot.environment.clone.html">boot.environment.clone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_boot.environment.destroy.html">boot.environment.destroy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_boot.environment.keep.html">boot.environment.keep</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_boot.environment.query.html">boot.environment.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_catalog.html">catalog</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_catalog.apps.html">catalog.apps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_catalog.config.html">catalog.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_catalog.get_app_details.html">catalog.get_app_details</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_catalog.sync.html">catalog.sync</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_catalog.trains.html">catalog.trains</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_catalog.update.html">catalog.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_certificate.html">certificate</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_certificate.acme_server_choices.html">certificate.acme_server_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_certificate.country_choices.html">certificate.country_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_certificate.create.html">certificate.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_certificate.delete.html">certificate.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_certificate.ec_curve_choices.html">certificate.ec_curve_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_certificate.extended_key_usage_choices.html">certificate.extended_key_usage_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_certificate.get_instance.html">certificate.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_certificate.query.html">certificate.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_certificate.update.html">certificate.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_cloud_backup.html">cloud_backup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloud_backup.abort.html">cloud_backup.abort</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloud_backup.create.html">cloud_backup.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloud_backup.delete.html">cloud_backup.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloud_backup.delete_snapshot.html">cloud_backup.delete_snapshot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloud_backup.get_instance.html">cloud_backup.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloud_backup.list_snapshot_directory.html">cloud_backup.list_snapshot_directory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloud_backup.list_snapshots.html">cloud_backup.list_snapshots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloud_backup.query.html">cloud_backup.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloud_backup.restore.html">cloud_backup.restore</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloud_backup.sync.html">cloud_backup.sync</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloud_backup.transfer_setting_choices.html">cloud_backup.transfer_setting_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloud_backup.update.html">cloud_backup.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_cloudsync.html">cloudsync</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloudsync.abort.html">cloudsync.abort</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloudsync.create.html">cloudsync.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloudsync.create_bucket.html">cloudsync.create_bucket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloudsync.delete.html">cloudsync.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloudsync.get_instance.html">cloudsync.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloudsync.list_buckets.html">cloudsync.list_buckets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloudsync.list_directory.html">cloudsync.list_directory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloudsync.onedrive_list_drives.html">cloudsync.onedrive_list_drives</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloudsync.providers.html">cloudsync.providers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloudsync.query.html">cloudsync.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloudsync.restore.html">cloudsync.restore</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloudsync.sync.html">cloudsync.sync</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloudsync.sync_onetime.html">cloudsync.sync_onetime</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloudsync.update.html">cloudsync.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_cloudsync.credentials.html">cloudsync.credentials</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloudsync.credentials.create.html">cloudsync.credentials.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloudsync.credentials.delete.html">cloudsync.credentials.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloudsync.credentials.get_instance.html">cloudsync.credentials.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloudsync.credentials.query.html">cloudsync.credentials.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloudsync.credentials.update.html">cloudsync.credentials.update</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cloudsync.credentials.verify.html">cloudsync.credentials.verify</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_config.html">config</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_config.reset.html">config.reset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_config.save.html">config.save</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_config.upload.html">config.upload</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_core.html">core</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_core.arp.html">core.arp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_core.bulk.html">core.bulk</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_core.debug.html">core.debug</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_core.download.html">core.download</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_core.get_jobs.html">core.get_jobs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_core.get_methods.html">core.get_methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_core.get_services.html">core.get_services</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_core.job_abort.html">core.job_abort</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_core.job_download_logs.html">core.job_download_logs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_core.job_wait.html">core.job_wait</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_core.ping.html">core.ping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_core.ping_remote.html">core.ping_remote</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_core.resize_shell.html">core.resize_shell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_core.set_options.html">core.set_options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_core.subscribe.html">core.subscribe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_core.unsubscribe.html">core.unsubscribe</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_cronjob.html">cronjob</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cronjob.create.html">cronjob.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cronjob.delete.html">cronjob.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cronjob.get_instance.html">cronjob.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cronjob.query.html">cronjob.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cronjob.run.html">cronjob.run</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_cronjob.update.html">cronjob.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_device.html">device</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_device.get_info.html">device.get_info</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_directoryservices.html">directoryservices</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_directoryservices.cache_refresh.html">directoryservices.cache_refresh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_directoryservices.certificate_choices.html">directoryservices.certificate_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_directoryservices.config.html">directoryservices.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_directoryservices.leave.html">directoryservices.leave</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_directoryservices.status.html">directoryservices.status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_directoryservices.update.html">directoryservices.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_disk.html">disk</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_disk.details.html">disk.details</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_disk.get_used.html">disk.get_used</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_disk.query.html">disk.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_disk.temperature_agg.html">disk.temperature_agg</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_disk.temperature_alerts.html">disk.temperature_alerts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_disk.temperatures.html">disk.temperatures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_disk.update.html">disk.update</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_disk.wipe.html">disk.wipe</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_dns.html">dns</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_dns.query.html">dns.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_docker.html">docker</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_docker.backup.html">docker.backup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_docker.backup_to_pool.html">docker.backup_to_pool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_docker.config.html">docker.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_docker.delete_backup.html">docker.delete_backup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_docker.list_backups.html">docker.list_backups</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_docker.nvidia_present.html">docker.nvidia_present</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_docker.restore_backup.html">docker.restore_backup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_docker.status.html">docker.status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_docker.update.html">docker.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_docker.network.html">docker.network</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_docker.network.get_instance.html">docker.network.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_docker.network.query.html">docker.network.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_enclosure.label.html">enclosure.label</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_enclosure.label.set.html">enclosure.label.set</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_failover.disabled.html">failover.disabled</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_failover.disabled.reasons.html">failover.disabled.reasons</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_failover.reboot.html">failover.reboot</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_failover.reboot.info.html">failover.reboot.info</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_failover.reboot.other_node.html">failover.reboot.other_node</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_fc.fc_host.html">fc.fc_host</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_fc.fc_host.create.html">fc.fc_host.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_fc.fc_host.delete.html">fc.fc_host.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_fc.fc_host.get_instance.html">fc.fc_host.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_fc.fc_host.query.html">fc.fc_host.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_fc.fc_host.update.html">fc.fc_host.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_fcport.html">fcport</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_fcport.create.html">fcport.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_fcport.delete.html">fcport.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_fcport.get_instance.html">fcport.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_fcport.port_choices.html">fcport.port_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_fcport.query.html">fcport.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_fcport.status.html">fcport.status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_fcport.update.html">fcport.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_filesystem.html">filesystem</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_filesystem.chown.html">filesystem.chown</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_filesystem.get.html">filesystem.get</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_filesystem.get_zfs_attributes.html">filesystem.get_zfs_attributes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_filesystem.getacl.html">filesystem.getacl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_filesystem.listdir.html">filesystem.listdir</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_filesystem.mkdir.html">filesystem.mkdir</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_filesystem.put.html">filesystem.put</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_filesystem.set_zfs_attributes.html">filesystem.set_zfs_attributes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_filesystem.setacl.html">filesystem.setacl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_filesystem.setperm.html">filesystem.setperm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_filesystem.stat.html">filesystem.stat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_filesystem.statfs.html">filesystem.statfs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_filesystem.acltemplate.html">filesystem.acltemplate</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_filesystem.acltemplate.by_path.html">filesystem.acltemplate.by_path</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_filesystem.acltemplate.create.html">filesystem.acltemplate.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_filesystem.acltemplate.delete.html">filesystem.acltemplate.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_filesystem.acltemplate.get_instance.html">filesystem.acltemplate.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_filesystem.acltemplate.query.html">filesystem.acltemplate.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_filesystem.acltemplate.update.html">filesystem.acltemplate.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_ftp.html">ftp</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_ftp.config.html">ftp.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_ftp.update.html">ftp.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_group.html">group</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_group.create.html">group.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_group.delete.html">group.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_group.get_group_obj.html">group.get_group_obj</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_group.get_instance.html">group.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_group.get_next_gid.html">group.get_next_gid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_group.has_password_enabled_user.html">group.has_password_enabled_user</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_group.query.html">group.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_group.update.html">group.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_hardware.virtualization.html">hardware.virtualization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_hardware.virtualization.variant.html">hardware.virtualization.variant</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_idmap.html">idmap</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_idmap.clear_idmap_cache.html">idmap.clear_idmap_cache</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_initshutdownscript.html">initshutdownscript</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_initshutdownscript.create.html">initshutdownscript.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_initshutdownscript.delete.html">initshutdownscript.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_initshutdownscript.get_instance.html">initshutdownscript.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_initshutdownscript.query.html">initshutdownscript.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_initshutdownscript.update.html">initshutdownscript.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_interface.html">interface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_interface.bridge_members_choices.html">interface.bridge_members_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_interface.cancel_rollback.html">interface.cancel_rollback</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_interface.checkin.html">interface.checkin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_interface.checkin_waiting.html">interface.checkin_waiting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_interface.choices.html">interface.choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_interface.commit.html">interface.commit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_interface.create.html">interface.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_interface.delete.html">interface.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_interface.get_instance.html">interface.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_interface.has_pending_changes.html">interface.has_pending_changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_interface.ip_in_use.html">interface.ip_in_use</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_interface.lacpdu_rate_choices.html">interface.lacpdu_rate_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_interface.lag_ports_choices.html">interface.lag_ports_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_interface.network_config_to_be_removed.html">interface.network_config_to_be_removed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_interface.query.html">interface.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_interface.rollback.html">interface.rollback</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_interface.save_network_config.html">interface.save_network_config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_interface.services_restarted_on_sync.html">interface.services_restarted_on_sync</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_interface.update.html">interface.update</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_interface.vlan_parent_interface_choices.html">interface.vlan_parent_interface_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_interface.websocket_interface.html">interface.websocket_interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_interface.websocket_local_ip.html">interface.websocket_local_ip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_interface.xmit_hash_policy_choices.html">interface.xmit_hash_policy_choices</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_ipmi.html">ipmi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_ipmi.is_loaded.html">ipmi.is_loaded</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_ipmi.chassis.html">ipmi.chassis</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_ipmi.chassis.identify.html">ipmi.chassis.identify</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_ipmi.chassis.info.html">ipmi.chassis.info</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_ipmi.lan.html">ipmi.lan</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_ipmi.lan.channels.html">ipmi.lan.channels</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_ipmi.lan.query.html">ipmi.lan.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_ipmi.lan.update.html">ipmi.lan.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_ipmi.sel.html">ipmi.sel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_ipmi.sel.clear.html">ipmi.sel.clear</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_ipmi.sel.elist.html">ipmi.sel.elist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_ipmi.sel.info.html">ipmi.sel.info</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_iscsi.auth.html">iscsi.auth</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.auth.create.html">iscsi.auth.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.auth.delete.html">iscsi.auth.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.auth.get_instance.html">iscsi.auth.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.auth.query.html">iscsi.auth.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.auth.update.html">iscsi.auth.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_iscsi.extent.html">iscsi.extent</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.extent.create.html">iscsi.extent.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.extent.delete.html">iscsi.extent.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.extent.disk_choices.html">iscsi.extent.disk_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.extent.get_instance.html">iscsi.extent.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.extent.query.html">iscsi.extent.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.extent.update.html">iscsi.extent.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_iscsi.global.html">iscsi.global</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.global.alua_enabled.html">iscsi.global.alua_enabled</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.global.client_count.html">iscsi.global.client_count</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.global.config.html">iscsi.global.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.global.iser_enabled.html">iscsi.global.iser_enabled</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.global.sessions.html">iscsi.global.sessions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.global.update.html">iscsi.global.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_iscsi.initiator.html">iscsi.initiator</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.initiator.create.html">iscsi.initiator.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.initiator.delete.html">iscsi.initiator.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.initiator.get_instance.html">iscsi.initiator.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.initiator.query.html">iscsi.initiator.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.initiator.update.html">iscsi.initiator.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_iscsi.portal.html">iscsi.portal</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.portal.create.html">iscsi.portal.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.portal.delete.html">iscsi.portal.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.portal.get_instance.html">iscsi.portal.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.portal.listen_ip_choices.html">iscsi.portal.listen_ip_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.portal.query.html">iscsi.portal.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.portal.update.html">iscsi.portal.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_iscsi.target.html">iscsi.target</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.target.create.html">iscsi.target.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.target.delete.html">iscsi.target.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.target.get_instance.html">iscsi.target.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.target.query.html">iscsi.target.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.target.update.html">iscsi.target.update</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.target.validate_name.html">iscsi.target.validate_name</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_iscsi.targetextent.html">iscsi.targetextent</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.targetextent.create.html">iscsi.targetextent.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.targetextent.delete.html">iscsi.targetextent.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.targetextent.get_instance.html">iscsi.targetextent.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.targetextent.query.html">iscsi.targetextent.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_iscsi.targetextent.update.html">iscsi.targetextent.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_jbof.html">jbof</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_jbof.create.html">jbof.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_jbof.delete.html">jbof.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_jbof.get_instance.html">jbof.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_jbof.licensed.html">jbof.licensed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_jbof.query.html">jbof.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_jbof.reapply_config.html">jbof.reapply_config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_jbof.update.html">jbof.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_kerberos.html">kerberos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_kerberos.config.html">kerberos.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_kerberos.update.html">kerberos.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_kerberos.keytab.html">kerberos.keytab</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_kerberos.keytab.create.html">kerberos.keytab.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_kerberos.keytab.delete.html">kerberos.keytab.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_kerberos.keytab.get_instance.html">kerberos.keytab.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_kerberos.keytab.query.html">kerberos.keytab.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_kerberos.keytab.update.html">kerberos.keytab.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_kerberos.realm.html">kerberos.realm</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_kerberos.realm.create.html">kerberos.realm.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_kerberos.realm.delete.html">kerberos.realm.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_kerberos.realm.get_instance.html">kerberos.realm.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_kerberos.realm.query.html">kerberos.realm.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_kerberos.realm.update.html">kerberos.realm.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_keychaincredential.html">keychaincredential</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_keychaincredential.create.html">keychaincredential.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_keychaincredential.delete.html">keychaincredential.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_keychaincredential.generate_ssh_key_pair.html">keychaincredential.generate_ssh_key_pair</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_keychaincredential.get_instance.html">keychaincredential.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_keychaincredential.query.html">keychaincredential.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_keychaincredential.remote_ssh_host_key_scan.html">keychaincredential.remote_ssh_host_key_scan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_keychaincredential.remote_ssh_semiautomatic_setup.html">keychaincredential.remote_ssh_semiautomatic_setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_keychaincredential.setup_ssh_connection.html">keychaincredential.setup_ssh_connection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_keychaincredential.update.html">keychaincredential.update</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_keychaincredential.used_by.html">keychaincredential.used_by</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_kmip.html">kmip</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_kmip.clear_sync_pending_keys.html">kmip.clear_sync_pending_keys</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_kmip.config.html">kmip.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_kmip.kmip_sync_pending.html">kmip.kmip_sync_pending</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_kmip.sync_keys.html">kmip.sync_keys</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_kmip.update.html">kmip.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_mail.html">mail</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_mail.config.html">mail.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_mail.local_administrator_email.html">mail.local_administrator_email</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_mail.send.html">mail.send</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_mail.update.html">mail.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_network.configuration.html">network.configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_network.configuration.activity_choices.html">network.configuration.activity_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_network.configuration.config.html">network.configuration.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_network.configuration.update.html">network.configuration.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_network.general.html">network.general</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_network.general.summary.html">network.general.summary</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_nfs.html">nfs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nfs.bindip_choices.html">nfs.bindip_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nfs.client_count.html">nfs.client_count</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nfs.config.html">nfs.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nfs.get_nfs3_clients.html">nfs.get_nfs3_clients</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nfs.get_nfs4_clients.html">nfs.get_nfs4_clients</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nfs.update.html">nfs.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_nvmet.global.html">nvmet.global</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.global.config.html">nvmet.global.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.global.update.html">nvmet.global.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_nvmet.host.html">nvmet.host</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.host.create.html">nvmet.host.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.host.delete.html">nvmet.host.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.host.dhchap_dhgroup_choices.html">nvmet.host.dhchap_dhgroup_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.host.dhchap_hash_choices.html">nvmet.host.dhchap_hash_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.host.generate_key.html">nvmet.host.generate_key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.host.get_instance.html">nvmet.host.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.host.query.html">nvmet.host.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.host.update.html">nvmet.host.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_nvmet.host_subsys.html">nvmet.host_subsys</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.host_subsys.create.html">nvmet.host_subsys.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.host_subsys.delete.html">nvmet.host_subsys.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.host_subsys.get_instance.html">nvmet.host_subsys.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.host_subsys.query.html">nvmet.host_subsys.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.host_subsys.update.html">nvmet.host_subsys.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_nvmet.namespace.html">nvmet.namespace</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.namespace.create.html">nvmet.namespace.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.namespace.delete.html">nvmet.namespace.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.namespace.get_instance.html">nvmet.namespace.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.namespace.query.html">nvmet.namespace.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.namespace.update.html">nvmet.namespace.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_nvmet.port.html">nvmet.port</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.port.create.html">nvmet.port.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.port.delete.html">nvmet.port.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.port.get_instance.html">nvmet.port.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.port.query.html">nvmet.port.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.port.transport_address_choices.html">nvmet.port.transport_address_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.port.update.html">nvmet.port.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_nvmet.port_subsys.html">nvmet.port_subsys</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.port_subsys.create.html">nvmet.port_subsys.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.port_subsys.delete.html">nvmet.port_subsys.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.port_subsys.get_instance.html">nvmet.port_subsys.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.port_subsys.query.html">nvmet.port_subsys.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.port_subsys.update.html">nvmet.port_subsys.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_nvmet.subsys.html">nvmet.subsys</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.subsys.create.html">nvmet.subsys.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.subsys.delete.html">nvmet.subsys.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.subsys.get_instance.html">nvmet.subsys.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.subsys.query.html">nvmet.subsys.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_nvmet.subsys.update.html">nvmet.subsys.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_pool.html">pool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.attach.html">pool.attach</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.attachments.html">pool.attachments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.create.html">pool.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.ddt_prefetch.html">pool.ddt_prefetch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.ddt_prune.html">pool.ddt_prune</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.detach.html">pool.detach</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.expand.html">pool.expand</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.export.html">pool.export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.filesystem_choices.html">pool.filesystem_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.get_disks.html">pool.get_disks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.get_instance.html">pool.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.import_find.html">pool.import_find</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.import_pool.html">pool.import_pool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.is_upgraded.html">pool.is_upgraded</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.offline.html">pool.offline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.online.html">pool.online</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.processes.html">pool.processes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.query.html">pool.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.remove.html">pool.remove</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.replace.html">pool.replace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.scrub.html">pool.scrub</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api_methods_pool.scrub.create.html">pool.scrub.create</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_methods_pool.scrub.delete.html">pool.scrub.delete</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_methods_pool.scrub.get_instance.html">pool.scrub.get_instance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_methods_pool.scrub.query.html">pool.scrub.query</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_methods_pool.scrub.run.html">pool.scrub.run</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_methods_pool.scrub.scrub.html">pool.scrub.scrub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_methods_pool.scrub.update.html">pool.scrub.update</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.update.html">pool.update</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.upgrade.html">pool.upgrade</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.validate_name.html">pool.validate_name</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_pool.dataset.html">pool.dataset</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.attachments.html">pool.dataset.attachments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.change_key.html">pool.dataset.change_key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.checksum_choices.html">pool.dataset.checksum_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.compression_choices.html">pool.dataset.compression_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.create.html">pool.dataset.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.delete.html">pool.dataset.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.destroy_snapshots.html">pool.dataset.destroy_snapshots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.details.html">pool.dataset.details</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.encryption_algorithm_choices.html">pool.dataset.encryption_algorithm_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.encryption_summary.html">pool.dataset.encryption_summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.export_key.html">pool.dataset.export_key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.export_keys.html">pool.dataset.export_keys</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.export_keys_for_replication.html">pool.dataset.export_keys_for_replication</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.get_instance.html">pool.dataset.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.get_quota.html">pool.dataset.get_quota</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.inherit_parent_encryption_properties.html">pool.dataset.inherit_parent_encryption_properties</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.lock.html">pool.dataset.lock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.processes.html">pool.dataset.processes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.promote.html">pool.dataset.promote</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.query.html">pool.dataset.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.recommended_zvol_blocksize.html">pool.dataset.recommended_zvol_blocksize</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.recordsize_choices.html">pool.dataset.recordsize_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.rename.html">pool.dataset.rename</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.set_quota.html">pool.dataset.set_quota</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.snapshot_count.html">pool.dataset.snapshot_count</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.unlock.html">pool.dataset.unlock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.dataset.update.html">pool.dataset.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_pool.resilver.html">pool.resilver</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.resilver.config.html">pool.resilver.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.resilver.update.html">pool.resilver.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_pool.scrub.html">pool.scrub</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.scrub.create.html">pool.scrub.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.scrub.delete.html">pool.scrub.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.scrub.get_instance.html">pool.scrub.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.scrub.query.html">pool.scrub.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.scrub.run.html">pool.scrub.run</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.scrub.scrub.html">pool.scrub.scrub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.scrub.update.html">pool.scrub.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_pool.snapshot.html">pool.snapshot</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.snapshot.clone.html">pool.snapshot.clone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.snapshot.create.html">pool.snapshot.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.snapshot.delete.html">pool.snapshot.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.snapshot.get_instance.html">pool.snapshot.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.snapshot.hold.html">pool.snapshot.hold</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.snapshot.query.html">pool.snapshot.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.snapshot.release.html">pool.snapshot.release</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.snapshot.rename.html">pool.snapshot.rename</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.snapshot.rollback.html">pool.snapshot.rollback</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.snapshot.update.html">pool.snapshot.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_pool.snapshottask.html">pool.snapshottask</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.snapshottask.create.html">pool.snapshottask.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.snapshottask.delete.html">pool.snapshottask.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.snapshottask.delete_will_change_retention_for.html">pool.snapshottask.delete_will_change_retention_for</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.snapshottask.get_instance.html">pool.snapshottask.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.snapshottask.max_count.html">pool.snapshottask.max_count</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.snapshottask.max_total_count.html">pool.snapshottask.max_total_count</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.snapshottask.query.html">pool.snapshottask.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.snapshottask.run.html">pool.snapshottask.run</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.snapshottask.update.html">pool.snapshottask.update</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_pool.snapshottask.update_will_change_retention_for.html">pool.snapshottask.update_will_change_retention_for</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_privilege.html">privilege</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_privilege.create.html">privilege.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_privilege.delete.html">privilege.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_privilege.get_instance.html">privilege.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_privilege.query.html">privilege.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_privilege.roles.html">privilege.roles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_privilege.update.html">privilege.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_replication.html">replication</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_replication.count_eligible_manual_snapshots.html">replication.count_eligible_manual_snapshots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_replication.create.html">replication.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_replication.create_dataset.html">replication.create_dataset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_replication.delete.html">replication.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_replication.get_instance.html">replication.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_replication.list_datasets.html">replication.list_datasets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_replication.list_naming_schemas.html">replication.list_naming_schemas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_replication.query.html">replication.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_replication.restore.html">replication.restore</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_replication.run.html">replication.run</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_replication.run_onetime.html">replication.run_onetime</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_replication.target_unmatched_snapshots.html">replication.target_unmatched_snapshots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_replication.update.html">replication.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_replication.config.html">replication.config</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_replication.config.config.html">replication.config.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_replication.config.update.html">replication.config.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_reporting.html">reporting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_reporting.config.html">reporting.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_reporting.get_data.html">reporting.get_data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_reporting.graph.html">reporting.graph</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_reporting.netdata_get_data.html">reporting.netdata_get_data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_reporting.netdata_graph.html">reporting.netdata_graph</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_reporting.netdata_graphs.html">reporting.netdata_graphs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_reporting.update.html">reporting.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_reporting.exporters.html">reporting.exporters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_reporting.exporters.create.html">reporting.exporters.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_reporting.exporters.delete.html">reporting.exporters.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_reporting.exporters.exporter_schemas.html">reporting.exporters.exporter_schemas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_reporting.exporters.get_instance.html">reporting.exporters.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_reporting.exporters.query.html">reporting.exporters.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_reporting.exporters.update.html">reporting.exporters.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_route.html">route</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_route.ipv4gw_reachable.html">route.ipv4gw_reachable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_route.system_routes.html">route.system_routes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_rsynctask.html">rsynctask</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_rsynctask.create.html">rsynctask.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_rsynctask.delete.html">rsynctask.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_rsynctask.get_instance.html">rsynctask.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_rsynctask.query.html">rsynctask.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_rsynctask.run.html">rsynctask.run</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_rsynctask.update.html">rsynctask.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_service.html">service</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_service.control.html">service.control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_service.get_instance.html">service.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_service.query.html">service.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_service.started.html">service.started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_service.started_or_enabled.html">service.started_or_enabled</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_service.update.html">service.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_sharing.nfs.html">sharing.nfs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_sharing.nfs.create.html">sharing.nfs.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_sharing.nfs.delete.html">sharing.nfs.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_sharing.nfs.get_instance.html">sharing.nfs.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_sharing.nfs.query.html">sharing.nfs.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_sharing.nfs.update.html">sharing.nfs.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_sharing.smb.html">sharing.smb</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_sharing.smb.create.html">sharing.smb.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_sharing.smb.delete.html">sharing.smb.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_sharing.smb.get_instance.html">sharing.smb.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_sharing.smb.getacl.html">sharing.smb.getacl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_sharing.smb.presets.html">sharing.smb.presets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_sharing.smb.query.html">sharing.smb.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_sharing.smb.setacl.html">sharing.smb.setacl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_sharing.smb.share_precheck.html">sharing.smb.share_precheck</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_sharing.smb.update.html">sharing.smb.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_smb.html">smb</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_smb.bindip_choices.html">smb.bindip_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_smb.config.html">smb.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_smb.unixcharset_choices.html">smb.unixcharset_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_smb.update.html">smb.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_snmp.html">snmp</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_snmp.config.html">snmp.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_snmp.update.html">snmp.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_ssh.html">ssh</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_ssh.bindiface_choices.html">ssh.bindiface_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_ssh.config.html">ssh.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_ssh.update.html">ssh.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_staticroute.html">staticroute</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_staticroute.create.html">staticroute.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_staticroute.delete.html">staticroute.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_staticroute.get_instance.html">staticroute.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_staticroute.query.html">staticroute.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_staticroute.update.html">staticroute.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_support.html">support</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_support.attach_ticket.html">support.attach_ticket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_support.attach_ticket_max_size.html">support.attach_ticket_max_size</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_support.config.html">support.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_support.fields.html">support.fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_support.is_available.html">support.is_available</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_support.is_available_and_enabled.html">support.is_available_and_enabled</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_support.new_ticket.html">support.new_ticket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_support.similar_issues.html">support.similar_issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_support.update.html">support.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_system.html">system</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.boot_id.html">system.boot_id</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.debug.html">system.debug</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.feature_enabled.html">system.feature_enabled</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.host_id.html">system.host_id</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.info.html">system.info</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.license_update.html">system.license_update</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.product_type.html">system.product_type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.ready.html">system.ready</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.reboot.html">system.reboot</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api_methods_system.reboot.info.html">system.reboot.info</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.release_notes_url.html">system.release_notes_url</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.shutdown.html">system.shutdown</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.state.html">system.state</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.version.html">system.version</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.version_short.html">system.version_short</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_system.advanced.html">system.advanced</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.advanced.config.html">system.advanced.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.advanced.get_gpu_pci_choices.html">system.advanced.get_gpu_pci_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.advanced.login_banner.html">system.advanced.login_banner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.advanced.sed_global_password.html">system.advanced.sed_global_password</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.advanced.sed_global_password_is_set.html">system.advanced.sed_global_password_is_set</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.advanced.serial_port_choices.html">system.advanced.serial_port_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.advanced.syslog_certificate_authority_choices.html">system.advanced.syslog_certificate_authority_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.advanced.syslog_certificate_choices.html">system.advanced.syslog_certificate_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.advanced.update.html">system.advanced.update</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.advanced.update_gpu_pci_ids.html">system.advanced.update_gpu_pci_ids</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_system.general.html">system.general</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.general.checkin.html">system.general.checkin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.general.checkin_waiting.html">system.general.checkin_waiting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.general.config.html">system.general.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.general.country_choices.html">system.general.country_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.general.kbdmap_choices.html">system.general.kbdmap_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.general.local_url.html">system.general.local_url</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.general.timezone_choices.html">system.general.timezone_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.general.ui_address_choices.html">system.general.ui_address_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.general.ui_certificate_choices.html">system.general.ui_certificate_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.general.ui_httpsprotocols_choices.html">system.general.ui_httpsprotocols_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.general.ui_restart.html">system.general.ui_restart</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.general.ui_v6address_choices.html">system.general.ui_v6address_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.general.update.html">system.general.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_system.global.html">system.global</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.global.id.html">system.global.id</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_system.ntpserver.html">system.ntpserver</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.ntpserver.create.html">system.ntpserver.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.ntpserver.delete.html">system.ntpserver.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.ntpserver.get_instance.html">system.ntpserver.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.ntpserver.query.html">system.ntpserver.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.ntpserver.update.html">system.ntpserver.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_system.reboot.html">system.reboot</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.reboot.info.html">system.reboot.info</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_system.security.html">system.security</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.security.config.html">system.security.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.security.update.html">system.security.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_system.security.info.html">system.security.info</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.security.info.fips_available.html">system.security.info.fips_available</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_system.security.info.fips_enabled.html">system.security.info.fips_enabled</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_systemdataset.html">systemdataset</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_systemdataset.config.html">systemdataset.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_systemdataset.pool_choices.html">systemdataset.pool_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_systemdataset.update.html">systemdataset.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_tn_connect.html">tn_connect</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_tn_connect.config.html">tn_connect.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_tn_connect.generate_claim_token.html">tn_connect.generate_claim_token</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_tn_connect.get_registration_uri.html">tn_connect.get_registration_uri</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_tn_connect.ip_choices.html">tn_connect.ip_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_tn_connect.update.html">tn_connect.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_truecommand.html">truecommand</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_truecommand.config.html">truecommand.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_truecommand.update.html">truecommand.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_truenas.html">truenas</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_truenas.accept_eula.html">truenas.accept_eula</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_truenas.get_chassis_hardware.html">truenas.get_chassis_hardware</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_truenas.get_eula.html">truenas.get_eula</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_truenas.is_eula_accepted.html">truenas.is_eula_accepted</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_truenas.is_ix_hardware.html">truenas.is_ix_hardware</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_truenas.is_production.html">truenas.is_production</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_truenas.managed_by_truecommand.html">truenas.managed_by_truecommand</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_truenas.set_production.html">truenas.set_production</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_tunable.html">tunable</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_tunable.create.html">tunable.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_tunable.delete.html">tunable.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_tunable.get_instance.html">tunable.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_tunable.query.html">tunable.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_tunable.tunable_type_choices.html">tunable.tunable_type_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_tunable.update.html">tunable.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_update.html">update</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_update.available_versions.html">update.available_versions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_update.config.html">update.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_update.download.html">update.download</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_update.file.html">update.file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_update.manual.html">update.manual</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_update.profile_choices.html">update.profile_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_update.run.html">update.run</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_update.status.html">update.status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_update.update.html">update.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_ups.html">ups</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_ups.config.html">ups.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_ups.driver_choices.html">ups.driver_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_ups.port_choices.html">ups.port_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_ups.update.html">ups.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_user.html">user</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_user.create.html">user.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_user.delete.html">user.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_user.get_instance.html">user.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_user.get_next_uid.html">user.get_next_uid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_user.get_user_obj.html">user.get_user_obj</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_user.has_local_administrator_set_up.html">user.has_local_administrator_set_up</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_user.query.html">user.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_user.renew_2fa_secret.html">user.renew_2fa_secret</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_user.set_password.html">user.set_password</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_user.setup_local_administrator.html">user.setup_local_administrator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_user.shell_choices.html">user.shell_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_user.unset_2fa_secret.html">user.unset_2fa_secret</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_user.update.html">user.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_virt.device.html">virt.device</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.device.disk_choices.html">virt.device.disk_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.device.gpu_choices.html">virt.device.gpu_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.device.nic_choices.html">virt.device.nic_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.device.pci_choices.html">virt.device.pci_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.device.usb_choices.html">virt.device.usb_choices</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_virt.global.html">virt.global</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.global.bridge_choices.html">virt.global.bridge_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.global.config.html">virt.global.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.global.get_network.html">virt.global.get_network</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.global.pool_choices.html">virt.global.pool_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.global.update.html">virt.global.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_virt.instance.html">virt.instance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.instance.create.html">virt.instance.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.instance.delete.html">virt.instance.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.instance.device_add.html">virt.instance.device_add</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.instance.device_delete.html">virt.instance.device_delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.instance.device_list.html">virt.instance.device_list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.instance.device_update.html">virt.instance.device_update</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.instance.get_instance.html">virt.instance.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.instance.image_choices.html">virt.instance.image_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.instance.query.html">virt.instance.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.instance.restart.html">virt.instance.restart</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.instance.set_bootable_disk.html">virt.instance.set_bootable_disk</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.instance.start.html">virt.instance.start</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.instance.stop.html">virt.instance.stop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.instance.update.html">virt.instance.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_virt.volume.html">virt.volume</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.volume.create.html">virt.volume.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.volume.delete.html">virt.volume.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.volume.get_instance.html">virt.volume.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.volume.import_iso.html">virt.volume.import_iso</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.volume.import_zvol.html">virt.volume.import_zvol</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.volume.query.html">virt.volume.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_virt.volume.update.html">virt.volume.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_vm.html">vm</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.bootloader_options.html">vm.bootloader_options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.bootloader_ovmf_choices.html">vm.bootloader_ovmf_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.clone.html">vm.clone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.cpu_model_choices.html">vm.cpu_model_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.create.html">vm.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.delete.html">vm.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.flags.html">vm.flags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.get_available_memory.html">vm.get_available_memory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.get_console.html">vm.get_console</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.get_display_devices.html">vm.get_display_devices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.get_display_web_uri.html">vm.get_display_web_uri</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.get_instance.html">vm.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.get_memory_usage.html">vm.get_memory_usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.get_vm_memory_info.html">vm.get_vm_memory_info</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.get_vmemory_in_use.html">vm.get_vmemory_in_use</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.guest_architecture_and_machine_choices.html">vm.guest_architecture_and_machine_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.log_file_download.html">vm.log_file_download</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.log_file_path.html">vm.log_file_path</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.maximum_supported_vcpus.html">vm.maximum_supported_vcpus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.port_wizard.html">vm.port_wizard</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.poweroff.html">vm.poweroff</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.query.html">vm.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.random_mac.html">vm.random_mac</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.resolution_choices.html">vm.resolution_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.restart.html">vm.restart</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.resume.html">vm.resume</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.start.html">vm.start</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.status.html">vm.status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.stop.html">vm.stop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.supports_virtualization.html">vm.supports_virtualization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.suspend.html">vm.suspend</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.update.html">vm.update</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.virtualization_details.html">vm.virtualization_details</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_vm.device.html">vm.device</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.device.bind_choices.html">vm.device.bind_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.device.convert.html">vm.device.convert</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.device.create.html">vm.device.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.device.delete.html">vm.device.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.device.disk_choices.html">vm.device.disk_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.device.get_instance.html">vm.device.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.device.iommu_enabled.html">vm.device.iommu_enabled</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.device.iotype_choices.html">vm.device.iotype_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.device.nic_attach_choices.html">vm.device.nic_attach_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.device.passthrough_device.html">vm.device.passthrough_device</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.device.passthrough_device_choices.html">vm.device.passthrough_device_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.device.pptdev_choices.html">vm.device.pptdev_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.device.query.html">vm.device.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.device.update.html">vm.device.update</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.device.usb_controller_choices.html">vm.device.usb_controller_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.device.usb_passthrough_choices.html">vm.device.usb_passthrough_choices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vm.device.usb_passthrough_device.html">vm.device.usb_passthrough_device</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_vmware.html">vmware</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vmware.create.html">vmware.create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vmware.dataset_has_vms.html">vmware.dataset_has_vms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vmware.delete.html">vmware.delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vmware.get_datastores.html">vmware.get_datastores</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vmware.get_instance.html">vmware.get_instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vmware.match_datastores_with_datasets.html">vmware.match_datastores_with_datasets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vmware.query.html">vmware.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_vmware.update.html">vmware.update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_methods_zfs.resource.html">zfs.resource</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_methods_zfs.resource.query.html">zfs.resource.query</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api_events.html">API Events</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api_events_acme.dns.authenticator.html">acme.dns.authenticator</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_acme.dns.authenticator.query.html">acme.dns.authenticator.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_alert.html">alert</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_alert.list.html">alert.list</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_alertservice.html">alertservice</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_alertservice.query.html">alertservice.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_api_key.html">api_key</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_api_key.query.html">api_key.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_app.html">app</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_app.container_log_follow.html">app.container_log_follow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_events_app.query.html">app.query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_events_app.stats.html">app.stats</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_app.image.html">app.image</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_app.image.query.html">app.image.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_app.registry.html">app.registry</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_app.registry.query.html">app.registry.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_certificate.html">certificate</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_certificate.query.html">certificate.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_cloud_backup.html">cloud_backup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_cloud_backup.query.html">cloud_backup.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_cloudsync.html">cloudsync</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_cloudsync.query.html">cloudsync.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_cloudsync.credentials.html">cloudsync.credentials</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_cloudsync.credentials.query.html">cloudsync.credentials.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_container.html">container</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_container.query.html">container.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_core.html">core</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_core.get_jobs.html">core.get_jobs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_cronjob.html">cronjob</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_cronjob.query.html">cronjob.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_docker.network.html">docker.network</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_docker.network.query.html">docker.network.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_fc.fc_host.html">fc.fc_host</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_fc.fc_host.query.html">fc.fc_host.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_fcport.html">fcport</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_fcport.query.html">fcport.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_filesystem.html">filesystem</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_filesystem.file_tail_follow.html">filesystem.file_tail_follow</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_filesystem.acltemplate.html">filesystem.acltemplate</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_filesystem.acltemplate.query.html">filesystem.acltemplate.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_group.html">group</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_group.query.html">group.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_initshutdownscript.html">initshutdownscript</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_initshutdownscript.query.html">initshutdownscript.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_interface.html">interface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_interface.query.html">interface.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_iscsi.auth.html">iscsi.auth</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_iscsi.auth.query.html">iscsi.auth.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_iscsi.extent.html">iscsi.extent</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_iscsi.extent.query.html">iscsi.extent.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_iscsi.initiator.html">iscsi.initiator</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_iscsi.initiator.query.html">iscsi.initiator.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_iscsi.portal.html">iscsi.portal</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_iscsi.portal.query.html">iscsi.portal.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_iscsi.target.html">iscsi.target</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_iscsi.target.query.html">iscsi.target.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_iscsi.targetextent.html">iscsi.targetextent</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_iscsi.targetextent.query.html">iscsi.targetextent.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_jbof.html">jbof</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_jbof.query.html">jbof.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_kerberos.keytab.html">kerberos.keytab</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_kerberos.keytab.query.html">kerberos.keytab.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_kerberos.realm.html">kerberos.realm</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_kerberos.realm.query.html">kerberos.realm.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_keychaincredential.html">keychaincredential</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_keychaincredential.query.html">keychaincredential.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_nvmet.host.html">nvmet.host</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_nvmet.host.query.html">nvmet.host.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_nvmet.host_subsys.html">nvmet.host_subsys</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_nvmet.host_subsys.query.html">nvmet.host_subsys.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_nvmet.namespace.html">nvmet.namespace</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_nvmet.namespace.query.html">nvmet.namespace.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_nvmet.port.html">nvmet.port</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_nvmet.port.query.html">nvmet.port.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_nvmet.port_subsys.html">nvmet.port_subsys</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_nvmet.port_subsys.query.html">nvmet.port_subsys.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_nvmet.subsys.html">nvmet.subsys</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_nvmet.subsys.query.html">nvmet.subsys.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_pool.html">pool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_pool.query.html">pool.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_pool.dataset.html">pool.dataset</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_pool.dataset.query.html">pool.dataset.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_pool.scrub.html">pool.scrub</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_pool.scrub.query.html">pool.scrub.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_pool.snapshot.html">pool.snapshot</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_pool.snapshot.query.html">pool.snapshot.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_pool.snapshottask.html">pool.snapshottask</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_pool.snapshottask.query.html">pool.snapshottask.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_privilege.html">privilege</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_privilege.query.html">privilege.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_replication.html">replication</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_replication.query.html">replication.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_reporting.html">reporting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_reporting.realtime.html">reporting.realtime</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_reporting.exporters.html">reporting.exporters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_reporting.exporters.query.html">reporting.exporters.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_rsynctask.html">rsynctask</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_rsynctask.query.html">rsynctask.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_service.html">service</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_service.query.html">service.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_sharing.nfs.html">sharing.nfs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_sharing.nfs.query.html">sharing.nfs.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_sharing.smb.html">sharing.smb</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_sharing.smb.query.html">sharing.smb.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_staticroute.html">staticroute</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_staticroute.query.html">staticroute.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_system.ntpserver.html">system.ntpserver</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_system.ntpserver.query.html">system.ntpserver.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_tunable.html">tunable</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_tunable.query.html">tunable.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_update.html">update</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_update.status.html">update.status</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_user.html">user</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_user.query.html">user.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_virt.instance.html">virt.instance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_virt.instance.metrics.html">virt.instance.metrics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_events_virt.instance.query.html">virt.instance.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_virt.volume.html">virt.volume</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_virt.volume.query.html">virt.volume.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_vm.html">vm</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_vm.query.html">vm.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_vm.device.html">vm.device</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_vm.device.query.html">vm.device.query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_events_vmware.html">vmware</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_events_vmware.query.html">vmware.query</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="jobs.html">Jobs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="jobs.html#example-of-calling-a-job-method">Example of Calling a Job Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jobs.html#query-job-status">Query Job Status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jobs.html#uploading-downloading-files">Uploading / Downloading Files</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="jobs.html#downloading-a-file">Downloading a File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="jobs.html#uploading-a-file">Uploading a File</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="query_methods.html">Query Methods</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="query_methods.html#query-filters">Query Filters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="query_methods.html#basic-usage">Basic Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="query_methods.html#multiple-filters">Multiple Filters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="query_methods.html#connectives">Connectives</a></li>
+<li class="toctree-l3"><a class="reference internal" href="query_methods.html#datetime-information">Datetime information</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="query_methods.html#query-options">Query Options</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="query_methods.html#count">Count</a></li>
+<li class="toctree-l3"><a class="reference internal" href="query_methods.html#limit">Limit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="query_methods.html#offset">Offset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="query_methods.html#select">Select</a></li>
+<li class="toctree-l3"><a class="reference internal" href="query_methods.html#order-by">Order By</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="query_methods.html#sql-statements-translated-into-filters-and-options">SQL Statements Translated Into Filters and Options</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="query_methods.html#example-1">Example 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="query_methods.html#example-2">Example 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="query_methods.html#example-3">Example 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="query_methods.html#example-4">Example 4</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            
+          
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="api_methods_app.categories.html"
+                          title="previous chapter">app.categories</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="api_methods_app.config.html"
+                          title="next chapter">app.config</a></p>
+  </div>
+<div id="searchbox" style="display: none">
+    <form class="form search" action="search.html" method="get">
+      <input type="text" name="q" class="form-control" placeholder="Search..." />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+
+<script type="text/javascript">$('#searchbox').show(0);</script>
+  <ul class="this-page-menu list-unstyled text-right">
+    <li><a href="_sources/api_methods_app.certificate_choices.rst.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+        </div>
+      </div> 
+
+      <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper" role="main">
+          <div class="body">
+            
+  <section id="app-certificate-choices">
+<h1>app.certificate_choices<a class="headerlink" href="#app-certificate-choices" title="Link to this heading">¶</a></h1>
+<p>Returns certificates which can be used by applications.</p>
+<div id="json-schema">
+<span class="badge badge-dark value-type">Type: object</span><br/>
+<div class="accordion" id="accordionCall_parameters">
+<div class="card">
+<div class="card-header" id="headingCall_parameters">
+<h2 class="mb-0">
+<button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+</h2>
+</div>
+<div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+<div class="card-body pl-5">
+<span class="badge badge-dark value-type">Type: array</span><br/>
+<span class="badge badge-info no-additional">No Additional Items</span>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="accordionReturn_value">
+<div class="card">
+<div class="card-header" id="headingReturn_value">
+<h2 class="mb-0">
+<button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+</h2>
+</div>
+<div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+<div class="card-body pl-5">
+<h4>Result</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+<span class="description"><p>Array of available certificates that can be used by applications.</p>
+</span>
+<span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+<div class="card">
+<div class="card-body items-definition" id="Return_value_items">
+<h4>AppCertificate</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+<span class="badge badge-info no-additional">No Additional Properties</span>
+<div class="accordion" id="accordionReturn_value_items_id">
+<div class="card">
+<div class="card-header" id="headingReturn_value_items_id">
+<h2 class="mb-0">
+<button aria-controls="Return_value_items_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_id" data-toggle="collapse" onclick="setAnchor('#Return_value_items_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+</h2>
+</div>
+<div aria-labelledby="headingReturn_value_items_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_id" id="Return_value_items_id">
+<div class="card-body pl-5">
+<h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+<span class="description"><p>Unique identifier for the certificate.</p>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="accordionReturn_value_items_name">
+<div class="card">
+<div class="card-header" id="headingReturn_value_items_name">
+<h2 class="mb-0">
+<button aria-controls="Return_value_items_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_name" data-toggle="collapse" onclick="setAnchor('#Return_value_items_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+</h2>
+</div>
+<div aria-labelledby="headingReturn_value_items_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_name" id="Return_value_items_name">
+<div class="card-body pl-5">
+<h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+<span class="description"><p>Display name of the certificate.</p>
+</span>
+<p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_name_minLength">Must be at least <code>1</code> characters long</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><br><br><p><em>Required roles:</em> APPS_READ | READONLY_ADMIN</p>
+</section>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="clearer"></div>
+      </div>
+    </div>
+<footer class="footer d-flex justify-content-between flex-wrap">
+    <div class="copyright">
+        <div>&copy; Copyright  2025, iXsystems, Inc. dba TrueNAS.</div>
+    </div>
+    <div>
+        <a href="#" class="btn btn-primary btn-sm" role="botton">Back to top</a>
+    </div>
+</footer>
+  </body>
+</html>

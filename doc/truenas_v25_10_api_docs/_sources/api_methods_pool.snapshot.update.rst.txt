@@ -1,0 +1,358 @@
+pool.snapshot.update
+====================
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: id</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>ID of the snapshot to update.</p>
+    </span>
+    </div>
+    </div>
+    <h5>Parameter 2: data</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>data</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The property updates to apply to the snapshot.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_user_properties_update">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_user_properties_update">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_user_properties_update" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_user_properties_update" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_user_properties_update')" type="button"><span class="property-name">user_properties_update</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_user_properties_update" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_user_properties_update" id="Call_parameters_items_i1_user_properties_update">
+    <div class="card-body pl-5">
+    <h4>User Properties Update</h4><span class="badge badge-dark value-type">Type: array of object</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>Properties to update.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1_user_properties_update_items">
+    <h4>PoolSnapshotUserPropertyUpdate</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_user_properties_update_items_key">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_user_properties_update_items_key">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_user_properties_update_items_key" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_user_properties_update_items_key" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_user_properties_update_items_key')" type="button"><span class="property-name">key</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_user_properties_update_items_key" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_user_properties_update_items_key" id="Call_parameters_items_i1_user_properties_update_items_key">
+    <div class="card-body pl-5">
+    <h4>Key</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>ZFS user property key in namespace:property format (e.g., 'custom:backup<em>policy', 'org:created</em>by').</p>
+    </span><span class="pattern-value" id="Call_parameters_items_i1_user_properties_update_items_key_pattern">Must match regular expression: <code>.*:.*</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_user_properties_update_items_value">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_user_properties_update_items_value">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_user_properties_update_items_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_user_properties_update_items_value" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_user_properties_update_items_value')" type="button"><span class="property-name">value</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_user_properties_update_items_value" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_user_properties_update_items_value" id="Call_parameters_items_i1_user_properties_update_items_value">
+    <div class="card-body pl-5">
+    <h4>Value</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>The new value to assign to the user property.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_user_properties_remove">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_user_properties_remove">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_user_properties_remove" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_user_properties_remove" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_user_properties_remove')" type="button"><span class="property-name">user_properties_remove</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_user_properties_remove" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_user_properties_remove" id="Call_parameters_items_i1_user_properties_remove">
+    <div class="card-body pl-5">
+    <h4>User Properties Remove</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>Properties to remove.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1_user_properties_remove_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>ZFS user property key in namespace:property format (e.g., 'custom:backup<em>policy', 'org:created</em>by').</p>
+    </span><span class="pattern-value" id="Call_parameters_items_i1_user_properties_remove_items_pattern">Must match regular expression: <code>.*:.*</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>PoolSnapshotCreateUpdateEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Information about the updated snapshot.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Full snapshot identifier including dataset and snapshot name.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_properties">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_properties">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_properties" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_properties" data-toggle="collapse" onclick="setAnchor('#Return_value_properties')" type="button"><span class="property-name">properties</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_properties" class="collapse property-definition-div" data-parent="#accordionReturn_value_properties" id="Return_value_properties">
+    <div class="card-body pl-5">
+    <h4>Properties</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Object mapping ZFS property names to their values and metadata.</p>
+    </span>
+    <div class="accordion" id="accordionReturn_value_properties_additionalProperties">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_properties_additionalProperties">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_properties_additionalProperties" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_properties_additionalProperties" data-toggle="collapse" onclick="setAnchor('#Return_value_properties_additionalProperties')" type="button"><em><span class="property-name">Additional Properties</span></em></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_properties_additionalProperties" class="collapse property-definition-div" data-parent="#accordionReturn_value_properties_additionalProperties" id="Return_value_properties_additionalProperties">
+    <div class="card-body pl-5"><p class="additional-properties">Each additional property must conform to the following schema</p>
+    <h4>PoolSnapshotEntryPropertyFields</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_properties_additionalProperties_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_properties_additionalProperties_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_properties_additionalProperties_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_properties_additionalProperties_value" data-toggle="collapse" onclick="setAnchor('#Return_value_properties_additionalProperties_value')" type="button"><span class="property-name">value</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_properties_additionalProperties_value" class="collapse property-definition-div" data-parent="#accordionReturn_value_properties_additionalProperties_value" id="Return_value_properties_additionalProperties_value">
+    <div class="card-body pl-5">
+    <h4>Value</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Current effective value of the ZFS property as a string.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_properties_additionalProperties_rawvalue">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_properties_additionalProperties_rawvalue">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_properties_additionalProperties_rawvalue" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_properties_additionalProperties_rawvalue" data-toggle="collapse" onclick="setAnchor('#Return_value_properties_additionalProperties_rawvalue')" type="button"><span class="property-name">rawvalue</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_properties_additionalProperties_rawvalue" class="collapse property-definition-div" data-parent="#accordionReturn_value_properties_additionalProperties_rawvalue" id="Return_value_properties_additionalProperties_rawvalue">
+    <div class="card-body pl-5">
+    <h4>Rawvalue</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Raw string value of the ZFS property as stored.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_properties_additionalProperties_source">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_properties_additionalProperties_source">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_properties_additionalProperties_source" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_properties_additionalProperties_source" data-toggle="collapse" onclick="setAnchor('#Return_value_properties_additionalProperties_source')" type="button"><span class="property-name">source</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_properties_additionalProperties_source" class="collapse property-definition-div" data-parent="#accordionReturn_value_properties_additionalProperties_source" id="Return_value_properties_additionalProperties_source">
+    <div class="card-body pl-5">
+    <h4>Source</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Source of the property value.</p>
+    <ul>
+    <li><code>NONE</code>: Property is not set</li>
+    <li><code>DEFAULT</code>: Using ZFS default value</li>
+    <li><code>LOCAL</code>: Set locally on this snapshot</li>
+    <li><code>TEMPORARY</code>: Temporary override value</li>
+    <li><code>INHERITED</code>: Inherited from parent dataset</li>
+    <li><code>RECEIVED</code>: Set by ZFS receive operation</li>
+    </ul>
+    </span><div class="enum-value" id="Return_value_properties_additionalProperties_source_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"NONE"</li><li class="list-group-item enum-item">"DEFAULT"</li><li class="list-group-item enum-item">"LOCAL"</li><li class="list-group-item enum-item">"TEMPORARY"</li><li class="list-group-item enum-item">"INHERITED"</li><li class="list-group-item enum-item">"RECEIVED"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_properties_additionalProperties_parsed">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_properties_additionalProperties_parsed">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_properties_additionalProperties_parsed" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_properties_additionalProperties_parsed" data-toggle="collapse" onclick="setAnchor('#Return_value_properties_additionalProperties_parsed')" type="button"><span class="property-name">parsed</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_properties_additionalProperties_parsed" class="collapse property-definition-div" data-parent="#accordionReturn_value_properties_additionalProperties_parsed" id="Return_value_properties_additionalProperties_parsed">
+    <div class="card-body pl-5">
+    <h4>Parsed</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Property value parsed into the appropriate type (string, boolean, integer, etc.).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_pool">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_pool">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_pool" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_pool" data-toggle="collapse" onclick="setAnchor('#Return_value_pool')" type="button"><span class="property-name">pool</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_pool" class="collapse property-definition-div" data-parent="#accordionReturn_value_pool" id="Return_value_pool">
+    <div class="card-body pl-5">
+    <h4>Pool</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name of the ZFS pool containing this snapshot.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_name" data-toggle="collapse" onclick="setAnchor('#Return_value_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_name" id="Return_value_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Full name of the snapshot including dataset path.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_type" data-toggle="collapse" onclick="setAnchor('#Return_value_type')" type="button"><span class="property-name">type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_type" id="Return_value_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Type identifier indicating this is a ZFS snapshot.</p>
+    </span><div class="enum-value" id="Return_value_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"SNAPSHOT"</li></ul>
+    </div><span class="const-value" id="Return_value_type_const">Specific value: <code>"SNAPSHOT"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_snapshot_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_snapshot_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_snapshot_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_snapshot_name" data-toggle="collapse" onclick="setAnchor('#Return_value_snapshot_name')" type="button"><span class="property-name">snapshot_name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_snapshot_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_snapshot_name" id="Return_value_snapshot_name">
+    <div class="card-body pl-5">
+    <h4>Snapshot Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Just the snapshot name portion without the dataset path.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_dataset">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_dataset">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_dataset" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_dataset" data-toggle="collapse" onclick="setAnchor('#Return_value_dataset')" type="button"><span class="property-name">dataset</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_dataset" class="collapse property-definition-div" data-parent="#accordionReturn_value_dataset" id="Return_value_dataset">
+    <div class="card-body pl-5">
+    <h4>Dataset</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name of the dataset this snapshot was taken from.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_createtxg">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_createtxg">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_createtxg" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_createtxg" data-toggle="collapse" onclick="setAnchor('#Return_value_createtxg')" type="button"><span class="property-name">createtxg</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_createtxg" class="collapse property-definition-div" data-parent="#accordionReturn_value_createtxg" id="Return_value_createtxg">
+    <div class="card-body pl-5">
+    <h4>Createtxg</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Transaction group ID when the snapshot was created.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SNAPSHOT_WRITE
+

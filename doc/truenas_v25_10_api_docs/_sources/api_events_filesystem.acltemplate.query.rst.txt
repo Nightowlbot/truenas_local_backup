@@ -1,0 +1,1750 @@
+filesystem.acltemplate.query
+============================
+
+Sent on filesystem.acltemplate changes.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionADDED">
+    <div class="card">
+    <div class="card-header" id="headingADDED">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED" data-toggle="collapse" onclick="setAnchor('#ADDED')" type="button"><span class="property-name">ADDED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED" class="collapse property-definition-div" data-parent="#accordionADDED" id="ADDED">
+    <div class="card-body pl-5">
+    <h4>AclTemplateAddedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_id" data-toggle="collapse" onclick="setAnchor('#ADDED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_id" class="collapse property-definition-div" data-parent="#accordionADDED_id" id="ADDED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields" data-toggle="collapse" onclick="setAnchor('#ADDED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields" class="collapse property-definition-div" data-parent="#accordionADDED_fields" id="ADDED_fields">
+    <div class="card-body pl-5">
+    <h4>AclTemplateEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_id" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_id" class="collapse property-definition-div" data-parent="#accordionADDED_fields_id" id="ADDED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the ACL template.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_builtin">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_builtin">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_builtin" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_builtin" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_builtin')" type="button"><span class="property-name">builtin</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_builtin" class="collapse property-definition-div" data-parent="#accordionADDED_fields_builtin" id="ADDED_fields_builtin">
+    <div class="card-body pl-5">
+    <h4>Builtin</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this is a built-in system template or user-created.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_name">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_name">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_name" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_name" class="collapse property-definition-div" data-parent="#accordionADDED_fields_name" id="ADDED_fields_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable name for the ACL template.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acltype">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acltype">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acltype" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acltype" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acltype')" type="button"><span class="property-name">acltype</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acltype" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acltype" id="ADDED_fields_acltype">
+    <div class="card-body pl-5">
+    <h4>Acltype</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>ACL type this template provides.</p>
+    </span><div class="enum-value" id="ADDED_fields_acltype_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"NFS4"</li><li class="list-group-item enum-item">"POSIX1E"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl')" type="button"><span class="property-name">acl</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl" id="ADDED_fields_acl">
+    <div class="card-body pl-5">
+    <h4>Acl</h4><br/>
+    <span class="description"><p>Array of Access Control Entries defined by this template.</p>
+    </span><div class="any-of-value" id="ADDED_fields_acl_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_acl_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_acl_anyOf_i0" id="ADDED_fields_acl_anyOf_i0" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_acl_anyOf_i1" id="ADDED_fields_acl_anyOf_i1" onclick="setAnchor('#ADDED_fields_acl_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_acl_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="ADDED_fields_acl_anyOf_i0_items">
+    <h4>NFS4ACE</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_tag">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_tag">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_tag" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_tag" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_tag')" type="button"><span class="property-name">tag</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_tag" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_tag" id="ADDED_fields_acl_anyOf_i0_items_tag">
+    <div class="card-body pl-5">
+    <h4>Tag</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Subject type for this ACE.</p>
+    <ul>
+    <li><code>owner@</code>: File/directory owner</li>
+    <li><code>group@</code>: File/directory primary group</li>
+    <li><code>everyone@</code>: All users</li>
+    <li><code>USER</code>: Specific user account</li>
+    <li><code>GROUP</code>: Specific group</li>
+    </ul>
+    </span><div class="enum-value" id="ADDED_fields_acl_anyOf_i0_items_tag_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"owner@"</li><li class="list-group-item enum-item">"group@"</li><li class="list-group-item enum-item">"everyone@"</li><li class="list-group-item enum-item">"USER"</li><li class="list-group-item enum-item">"GROUP"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_type">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_type">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_type" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_type')" type="button"><span class="property-name">type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_type" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_type" id="ADDED_fields_acl_anyOf_i0_items_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Access control type.</p>
+    <ul>
+    <li><code>ALLOW</code>: Grant the specified permissions</li>
+    <li><code>DENY</code>: Explicitly deny the specified permissions</li>
+    </ul>
+    </span><div class="enum-value" id="ADDED_fields_acl_anyOf_i0_items_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"ALLOW"</li><li class="list-group-item enum-item">"DENY"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_perms">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_perms">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_perms" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_perms" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_perms')" type="button"><span class="property-name">perms</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_perms" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_perms" id="ADDED_fields_acl_anyOf_i0_items_perms">
+    <div class="card-body pl-5">
+    <h4>Perms</h4><br/>
+    <span class="description"><p>Permissions granted or denied by this ACE.</p>
+    </span><div class="any-of-value" id="ADDED_fields_acl_anyOf_i0_items_perms_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_acl_anyOf_i0_items_perms_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0" id="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0')" role="tab">NFS4ACE_AdvancedPerms</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i1" id="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i1" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i1')" role="tab">NFS4ACE_BasicPerms</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0" role="tabpanel">
+    <h4>NFS4ACE_AdvancedPerms</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_DATA">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_DATA">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_DATA" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_DATA" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_DATA')" type="button"><span class="property-name">READ_DATA</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_DATA" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_DATA" id="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_DATA">
+    <div class="card-body pl-5">
+    <h4>Read Data</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to read file data or list directory contents.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_DATA">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_DATA">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_DATA" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_DATA" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_DATA')" type="button"><span class="property-name">WRITE_DATA</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_DATA" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_DATA" id="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_DATA">
+    <div class="card-body pl-5">
+    <h4>Write Data</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to write file data or create files in directory.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_APPEND_DATA">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_APPEND_DATA">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_APPEND_DATA" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_APPEND_DATA" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_APPEND_DATA')" type="button"><span class="property-name">APPEND_DATA</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_APPEND_DATA" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_APPEND_DATA" id="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_APPEND_DATA">
+    <div class="card-body pl-5">
+    <h4>Append Data</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to append data to files or create subdirectories.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_NAMED_ATTRS">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_NAMED_ATTRS">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_NAMED_ATTRS" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_NAMED_ATTRS" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_NAMED_ATTRS')" type="button"><span class="property-name">READ_NAMED_ATTRS</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_NAMED_ATTRS" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_NAMED_ATTRS" id="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_NAMED_ATTRS">
+    <div class="card-body pl-5">
+    <h4>Read Named Attrs</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to read named attributes (extended attributes).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_NAMED_ATTRS">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_NAMED_ATTRS">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_NAMED_ATTRS" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_NAMED_ATTRS" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_NAMED_ATTRS')" type="button"><span class="property-name">WRITE_NAMED_ATTRS</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_NAMED_ATTRS" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_NAMED_ATTRS" id="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_NAMED_ATTRS">
+    <div class="card-body pl-5">
+    <h4>Write Named Attrs</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to write named attributes (extended attributes).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_EXECUTE">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_EXECUTE">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_EXECUTE" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_EXECUTE" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_EXECUTE')" type="button"><span class="property-name">EXECUTE</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_EXECUTE" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_EXECUTE" id="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_EXECUTE">
+    <div class="card-body pl-5">
+    <h4>Execute</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to execute files or traverse directories.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE')" type="button"><span class="property-name">DELETE</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE" id="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE">
+    <div class="card-body pl-5">
+    <h4>Delete</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to delete the file or directory.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE_CHILD">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE_CHILD">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE_CHILD" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE_CHILD" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE_CHILD')" type="button"><span class="property-name">DELETE_CHILD</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE_CHILD" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE_CHILD" id="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE_CHILD">
+    <div class="card-body pl-5">
+    <h4>Delete Child</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to delete child files within a directory.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ATTRIBUTES">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ATTRIBUTES">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ATTRIBUTES" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ATTRIBUTES" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ATTRIBUTES')" type="button"><span class="property-name">READ_ATTRIBUTES</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ATTRIBUTES" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ATTRIBUTES" id="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ATTRIBUTES">
+    <div class="card-body pl-5">
+    <h4>Read Attributes</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to read basic file attributes (size, timestamps, etc.).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ATTRIBUTES">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ATTRIBUTES">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ATTRIBUTES" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ATTRIBUTES" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ATTRIBUTES')" type="button"><span class="property-name">WRITE_ATTRIBUTES</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ATTRIBUTES" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ATTRIBUTES" id="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ATTRIBUTES">
+    <div class="card-body pl-5">
+    <h4>Write Attributes</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to write basic file attributes.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ACL">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ACL">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ACL" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ACL" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ACL')" type="button"><span class="property-name">READ_ACL</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ACL" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ACL" id="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ACL">
+    <div class="card-body pl-5">
+    <h4>Read Acl</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to read the Access Control List.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ACL">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ACL">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ACL" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ACL" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ACL')" type="button"><span class="property-name">WRITE_ACL</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ACL" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ACL" id="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ACL">
+    <div class="card-body pl-5">
+    <h4>Write Acl</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to modify the Access Control List.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_OWNER">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_OWNER">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_OWNER" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_OWNER" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_OWNER')" type="button"><span class="property-name">WRITE_OWNER</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_OWNER" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_OWNER" id="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_OWNER">
+    <div class="card-body pl-5">
+    <h4>Write Owner</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to change the file owner.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_SYNCHRONIZE">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_SYNCHRONIZE">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_SYNCHRONIZE" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_SYNCHRONIZE" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_SYNCHRONIZE')" type="button"><span class="property-name">SYNCHRONIZE</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_SYNCHRONIZE" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_SYNCHRONIZE" id="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i0_SYNCHRONIZE">
+    <div class="card-body pl-5">
+    <h4>Synchronize</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to use the file/directory as a synchronization primitive.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i1" role="tabpanel">
+    <h4>NFS4ACE_BasicPerms</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i1_BASIC">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i1_BASIC">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i1_BASIC" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i1_BASIC" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i1_BASIC')" type="button"><span class="property-name">BASIC</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_perms_anyOf_i1_BASIC" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_perms_anyOf_i1_BASIC" id="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i1_BASIC">
+    <div class="card-body pl-5">
+    <h4>Basic</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Basic permission level for NFS4 ACE.</p>
+    <ul>
+    <li><code>FULL_CONTROL</code>: Full read, write, execute, and administrative permissions</li>
+    <li><code>MODIFY</code>: Read, write, and execute permissions</li>
+    <li><code>READ</code>: Read-only permissions</li>
+    <li><code>TRAVERSE</code>: Execute/traverse permissions only</li>
+    </ul>
+    </span><div class="enum-value" id="ADDED_fields_acl_anyOf_i0_items_perms_anyOf_i1_BASIC_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"FULL_CONTROL"</li><li class="list-group-item enum-item">"MODIFY"</li><li class="list-group-item enum-item">"READ"</li><li class="list-group-item enum-item">"TRAVERSE"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_flags">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_flags">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_flags" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_flags" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_flags')" type="button"><span class="property-name">flags</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_flags" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_flags" id="ADDED_fields_acl_anyOf_i0_items_flags">
+    <div class="card-body pl-5">
+    <h4>Flags</h4><br/>
+    <span class="description"><p>Inheritance and other behavioral flags for this ACE.</p>
+    </span><div class="any-of-value" id="ADDED_fields_acl_anyOf_i0_items_flags_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_acl_anyOf_i0_items_flags_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0" id="ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0')" role="tab">NFS4ACE_AdvancedFlags</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i1" id="ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i1" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i1')" role="tab">NFS4ACE_BasicFlags</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0" role="tabpanel">
+    <h4>NFS4ACE_AdvancedFlags</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_FILE_INHERIT">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_FILE_INHERIT">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_FILE_INHERIT" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_FILE_INHERIT" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_FILE_INHERIT')" type="button"><span class="property-name">FILE_INHERIT</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_FILE_INHERIT" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_FILE_INHERIT" id="ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_FILE_INHERIT">
+    <div class="card-body pl-5">
+    <h4>File Inherit</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Apply this ACE to files within directories.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_DIRECTORY_INHERIT">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_DIRECTORY_INHERIT">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_DIRECTORY_INHERIT" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_DIRECTORY_INHERIT" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_DIRECTORY_INHERIT')" type="button"><span class="property-name">DIRECTORY_INHERIT</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_DIRECTORY_INHERIT" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_DIRECTORY_INHERIT" id="ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_DIRECTORY_INHERIT">
+    <div class="card-body pl-5">
+    <h4>Directory Inherit</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Apply this ACE to subdirectories within directories.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_NO_PROPAGATE_INHERIT">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_NO_PROPAGATE_INHERIT">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_NO_PROPAGATE_INHERIT" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_NO_PROPAGATE_INHERIT" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_NO_PROPAGATE_INHERIT')" type="button"><span class="property-name">NO_PROPAGATE_INHERIT</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_NO_PROPAGATE_INHERIT" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_NO_PROPAGATE_INHERIT" id="ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_NO_PROPAGATE_INHERIT">
+    <div class="card-body pl-5">
+    <h4>No Propagate Inherit</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Do not propagate inheritance beyond immediate children.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERIT_ONLY">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERIT_ONLY">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERIT_ONLY" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERIT_ONLY" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERIT_ONLY')" type="button"><span class="property-name">INHERIT_ONLY</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERIT_ONLY" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERIT_ONLY" id="ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERIT_ONLY">
+    <div class="card-body pl-5">
+    <h4>Inherit Only</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>This ACE only affects inheritance, not the object itself.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERITED">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERITED">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERITED" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERITED" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERITED')" type="button"><span class="property-name">INHERITED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERITED" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERITED" id="ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERITED">
+    <div class="card-body pl-5">
+    <h4>Inherited</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>This ACE was inherited from a parent directory.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i1" role="tabpanel">
+    <h4>NFS4ACE_BasicFlags</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_flags_anyOf_i1_BASIC">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_flags_anyOf_i1_BASIC">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i1_BASIC" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i1_BASIC" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i1_BASIC')" type="button"><span class="property-name">BASIC</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_flags_anyOf_i1_BASIC" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_flags_anyOf_i1_BASIC" id="ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i1_BASIC">
+    <div class="card-body pl-5">
+    <h4>Basic</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Basic inheritance behavior for NFS4 ACE.</p>
+    <ul>
+    <li><code>INHERIT</code>: Apply to child files and directories</li>
+    <li><code>NOINHERIT</code>: Do not apply to child objects</li>
+    </ul>
+    </span><div class="enum-value" id="ADDED_fields_acl_anyOf_i0_items_flags_anyOf_i1_BASIC_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"INHERIT"</li><li class="list-group-item enum-item">"NOINHERIT"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_id" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_id')" type="button"><span class="property-name">id</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_id" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_id" id="ADDED_fields_acl_anyOf_i0_items_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>UID or GID when <code>tag</code> is "USER" or "GROUP". <code>null</code> for special entries.</p>
+    </span><div class="any-of-value" id="ADDED_fields_acl_anyOf_i0_items_id_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_acl_anyOf_i0_items_id_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_acl_anyOf_i0_items_id_anyOf_i0" id="ADDED_fields_acl_anyOf_i0_items_id_anyOf_i0" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_id_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_acl_anyOf_i0_items_id_anyOf_i1" id="ADDED_fields_acl_anyOf_i0_items_id_anyOf_i1" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_id_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_acl_anyOf_i0_items_id_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="ADDED_fields_acl_anyOf_i0_items_id_anyOf_i0_number">Value must be greater or equal to <code>-1</code> and lesser or equal to <code>2147483647</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_acl_anyOf_i0_items_id_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i0_items_who">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i0_items_who">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i0_items_who" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i0_items_who" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_who')" type="button"><span class="property-name">who</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i0_items_who" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i0_items_who" id="ADDED_fields_acl_anyOf_i0_items_who">
+    <div class="card-body pl-5">
+    <h4>Who</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Username or group name when <code>tag</code> is "USER" or "GROUP". <code>null</code> for special entries.</p>
+    </span><div class="any-of-value" id="ADDED_fields_acl_anyOf_i0_items_who_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_acl_anyOf_i0_items_who_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_acl_anyOf_i0_items_who_anyOf_i0" id="ADDED_fields_acl_anyOf_i0_items_who_anyOf_i0" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_who_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_acl_anyOf_i0_items_who_anyOf_i1" id="ADDED_fields_acl_anyOf_i0_items_who_anyOf_i1" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_who_anyOf_i1')" role="tab">Option 2</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_acl_anyOf_i0_items_who_anyOf_i2" id="ADDED_fields_acl_anyOf_i0_items_who_anyOf_i2" onclick="setAnchor('#ADDED_fields_acl_anyOf_i0_items_who_anyOf_i2')" role="tab">Option 3</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_acl_anyOf_i0_items_who_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_acl_anyOf_i0_items_who_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_acl_anyOf_i0_items_who_anyOf_i1_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_acl_anyOf_i0_items_who_anyOf_i2" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_acl_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="ADDED_fields_acl_anyOf_i1_items">
+    <h4>POSIXACE</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i1_items_tag">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i1_items_tag">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i1_items_tag" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i1_items_tag" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i1_items_tag')" type="button"><span class="property-name">tag</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i1_items_tag" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i1_items_tag" id="ADDED_fields_acl_anyOf_i1_items_tag">
+    <div class="card-body pl-5">
+    <h4>Tag</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Subject type for this POSIX ACE.</p>
+    <ul>
+    <li><code>USER_OBJ</code>: File/directory owner</li>
+    <li><code>GROUP_OBJ</code>: File/directory primary group</li>
+    <li><code>OTHER</code>: All other users</li>
+    <li><code>MASK</code>: Maximum permissions for named users and groups</li>
+    <li><code>USER</code>: Specific user account</li>
+    <li><code>GROUP</code>: Specific group</li>
+    </ul>
+    </span><div class="enum-value" id="ADDED_fields_acl_anyOf_i1_items_tag_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"USER_OBJ"</li><li class="list-group-item enum-item">"GROUP_OBJ"</li><li class="list-group-item enum-item">"OTHER"</li><li class="list-group-item enum-item">"MASK"</li><li class="list-group-item enum-item">"USER"</li><li class="list-group-item enum-item">"GROUP"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i1_items_perms">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i1_items_perms">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i1_items_perms" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i1_items_perms" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i1_items_perms')" type="button"><span class="property-name">perms</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i1_items_perms" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i1_items_perms" id="ADDED_fields_acl_anyOf_i1_items_perms">
+    <div class="card-body pl-5">
+    <h4>POSIXACE_Perms</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Read, write, and execute permissions for this ACE.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i1_items_perms_READ">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i1_items_perms_READ">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i1_items_perms_READ" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i1_items_perms_READ" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i1_items_perms_READ')" type="button"><span class="property-name">READ</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i1_items_perms_READ" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i1_items_perms_READ" id="ADDED_fields_acl_anyOf_i1_items_perms_READ">
+    <div class="card-body pl-5">
+    <h4>Read</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Permission to read file contents or list directory contents.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i1_items_perms_WRITE">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i1_items_perms_WRITE">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i1_items_perms_WRITE" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i1_items_perms_WRITE" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i1_items_perms_WRITE')" type="button"><span class="property-name">WRITE</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i1_items_perms_WRITE" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i1_items_perms_WRITE" id="ADDED_fields_acl_anyOf_i1_items_perms_WRITE">
+    <div class="card-body pl-5">
+    <h4>Write</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Permission to write file contents or create/delete files in directory.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i1_items_perms_EXECUTE">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i1_items_perms_EXECUTE">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i1_items_perms_EXECUTE" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i1_items_perms_EXECUTE" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i1_items_perms_EXECUTE')" type="button"><span class="property-name">EXECUTE</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i1_items_perms_EXECUTE" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i1_items_perms_EXECUTE" id="ADDED_fields_acl_anyOf_i1_items_perms_EXECUTE">
+    <div class="card-body pl-5">
+    <h4>Execute</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Permission to execute files or traverse directories.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i1_items_default">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i1_items_default">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i1_items_default" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i1_items_default" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i1_items_default')" type="button"><span class="property-name">default</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i1_items_default" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i1_items_default" id="ADDED_fields_acl_anyOf_i1_items_default">
+    <div class="card-body pl-5">
+    <h4>Default</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this is a default ACE that applies to newly created child objects.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i1_items_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i1_items_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i1_items_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i1_items_id" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i1_items_id')" type="button"><span class="property-name">id</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i1_items_id" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i1_items_id" id="ADDED_fields_acl_anyOf_i1_items_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Numeric user or group ID when tag is <code>USER</code> or <code>GROUP</code>. <code>null</code> for object entries.</p>
+    </span><div class="any-of-value" id="ADDED_fields_acl_anyOf_i1_items_id_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_acl_anyOf_i1_items_id_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_acl_anyOf_i1_items_id_anyOf_i0" id="ADDED_fields_acl_anyOf_i1_items_id_anyOf_i0" onclick="setAnchor('#ADDED_fields_acl_anyOf_i1_items_id_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_acl_anyOf_i1_items_id_anyOf_i1" id="ADDED_fields_acl_anyOf_i1_items_id_anyOf_i1" onclick="setAnchor('#ADDED_fields_acl_anyOf_i1_items_id_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_acl_anyOf_i1_items_id_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="ADDED_fields_acl_anyOf_i1_items_id_anyOf_i0_number">Value must be greater or equal to <code>-1</code> and lesser or equal to <code>2147483647</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_acl_anyOf_i1_items_id_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_acl_anyOf_i1_items_who">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_acl_anyOf_i1_items_who">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_acl_anyOf_i1_items_who" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_acl_anyOf_i1_items_who" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_acl_anyOf_i1_items_who')" type="button"><span class="property-name">who</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_acl_anyOf_i1_items_who" class="collapse property-definition-div" data-parent="#accordionADDED_fields_acl_anyOf_i1_items_who" id="ADDED_fields_acl_anyOf_i1_items_who">
+    <div class="card-body pl-5">
+    <h4>Who</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Username or group name when tag is <code>USER</code> or <code>GROUP</code>. <code>null</code> for object entries.</p>
+    </span><div class="any-of-value" id="ADDED_fields_acl_anyOf_i1_items_who_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_acl_anyOf_i1_items_who_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_acl_anyOf_i1_items_who_anyOf_i0" id="ADDED_fields_acl_anyOf_i1_items_who_anyOf_i0" onclick="setAnchor('#ADDED_fields_acl_anyOf_i1_items_who_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_acl_anyOf_i1_items_who_anyOf_i1" id="ADDED_fields_acl_anyOf_i1_items_who_anyOf_i1" onclick="setAnchor('#ADDED_fields_acl_anyOf_i1_items_who_anyOf_i1')" role="tab">Option 2</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_acl_anyOf_i1_items_who_anyOf_i2" id="ADDED_fields_acl_anyOf_i1_items_who_anyOf_i2" onclick="setAnchor('#ADDED_fields_acl_anyOf_i1_items_who_anyOf_i2')" role="tab">Option 3</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_acl_anyOf_i1_items_who_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_acl_anyOf_i1_items_who_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_acl_anyOf_i1_items_who_anyOf_i1_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_acl_anyOf_i1_items_who_anyOf_i2" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_comment">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_comment">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_comment" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_comment" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_comment')" type="button"><span class="property-name">comment</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_comment" class="collapse property-definition-div" data-parent="#accordionADDED_fields_comment" id="ADDED_fields_comment">
+    <div class="card-body pl-5">
+    <h4>Comment</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+    <span class="description"><p>Optional descriptive comment about the template's purpose.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED" data-toggle="collapse" onclick="setAnchor('#CHANGED')" type="button"><span class="property-name">CHANGED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED" class="collapse property-definition-div" data-parent="#accordionCHANGED" id="CHANGED">
+    <div class="card-body pl-5">
+    <h4>AclTemplateChangedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_id" id="CHANGED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields" id="CHANGED_fields">
+    <div class="card-body pl-5">
+    <h4>AclTemplateEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_id" id="CHANGED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the ACL template.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_builtin">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_builtin">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_builtin" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_builtin" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_builtin')" type="button"><span class="property-name">builtin</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_builtin" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_builtin" id="CHANGED_fields_builtin">
+    <div class="card-body pl-5">
+    <h4>Builtin</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this is a built-in system template or user-created.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_name">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_name">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_name" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_name" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_name" id="CHANGED_fields_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable name for the ACL template.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acltype">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acltype">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acltype" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acltype" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acltype')" type="button"><span class="property-name">acltype</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acltype" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acltype" id="CHANGED_fields_acltype">
+    <div class="card-body pl-5">
+    <h4>Acltype</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>ACL type this template provides.</p>
+    </span><div class="enum-value" id="CHANGED_fields_acltype_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"NFS4"</li><li class="list-group-item enum-item">"POSIX1E"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl')" type="button"><span class="property-name">acl</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl" id="CHANGED_fields_acl">
+    <div class="card-body pl-5">
+    <h4>Acl</h4><br/>
+    <span class="description"><p>Array of Access Control Entries defined by this template.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_acl_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_acl_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_acl_anyOf_i0" id="CHANGED_fields_acl_anyOf_i0" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_acl_anyOf_i1" id="CHANGED_fields_acl_anyOf_i1" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_acl_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="CHANGED_fields_acl_anyOf_i0_items">
+    <h4>NFS4ACE</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_tag">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_tag">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_tag" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_tag" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_tag')" type="button"><span class="property-name">tag</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_tag" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_tag" id="CHANGED_fields_acl_anyOf_i0_items_tag">
+    <div class="card-body pl-5">
+    <h4>Tag</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Subject type for this ACE.</p>
+    <ul>
+    <li><code>owner@</code>: File/directory owner</li>
+    <li><code>group@</code>: File/directory primary group</li>
+    <li><code>everyone@</code>: All users</li>
+    <li><code>USER</code>: Specific user account</li>
+    <li><code>GROUP</code>: Specific group</li>
+    </ul>
+    </span><div class="enum-value" id="CHANGED_fields_acl_anyOf_i0_items_tag_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"owner@"</li><li class="list-group-item enum-item">"group@"</li><li class="list-group-item enum-item">"everyone@"</li><li class="list-group-item enum-item">"USER"</li><li class="list-group-item enum-item">"GROUP"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_type">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_type">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_type" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_type')" type="button"><span class="property-name">type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_type" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_type" id="CHANGED_fields_acl_anyOf_i0_items_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Access control type.</p>
+    <ul>
+    <li><code>ALLOW</code>: Grant the specified permissions</li>
+    <li><code>DENY</code>: Explicitly deny the specified permissions</li>
+    </ul>
+    </span><div class="enum-value" id="CHANGED_fields_acl_anyOf_i0_items_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"ALLOW"</li><li class="list-group-item enum-item">"DENY"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_perms">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_perms">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_perms" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_perms" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_perms')" type="button"><span class="property-name">perms</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_perms" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_perms" id="CHANGED_fields_acl_anyOf_i0_items_perms">
+    <div class="card-body pl-5">
+    <h4>Perms</h4><br/>
+    <span class="description"><p>Permissions granted or denied by this ACE.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0" id="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0')" role="tab">NFS4ACE_AdvancedPerms</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i1" id="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i1" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i1')" role="tab">NFS4ACE_BasicPerms</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0" role="tabpanel">
+    <h4>NFS4ACE_AdvancedPerms</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_DATA">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_DATA">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_DATA" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_DATA" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_DATA')" type="button"><span class="property-name">READ_DATA</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_DATA" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_DATA" id="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_DATA">
+    <div class="card-body pl-5">
+    <h4>Read Data</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to read file data or list directory contents.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_DATA">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_DATA">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_DATA" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_DATA" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_DATA')" type="button"><span class="property-name">WRITE_DATA</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_DATA" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_DATA" id="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_DATA">
+    <div class="card-body pl-5">
+    <h4>Write Data</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to write file data or create files in directory.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_APPEND_DATA">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_APPEND_DATA">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_APPEND_DATA" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_APPEND_DATA" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_APPEND_DATA')" type="button"><span class="property-name">APPEND_DATA</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_APPEND_DATA" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_APPEND_DATA" id="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_APPEND_DATA">
+    <div class="card-body pl-5">
+    <h4>Append Data</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to append data to files or create subdirectories.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_NAMED_ATTRS">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_NAMED_ATTRS">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_NAMED_ATTRS" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_NAMED_ATTRS" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_NAMED_ATTRS')" type="button"><span class="property-name">READ_NAMED_ATTRS</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_NAMED_ATTRS" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_NAMED_ATTRS" id="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_NAMED_ATTRS">
+    <div class="card-body pl-5">
+    <h4>Read Named Attrs</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to read named attributes (extended attributes).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_NAMED_ATTRS">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_NAMED_ATTRS">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_NAMED_ATTRS" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_NAMED_ATTRS" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_NAMED_ATTRS')" type="button"><span class="property-name">WRITE_NAMED_ATTRS</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_NAMED_ATTRS" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_NAMED_ATTRS" id="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_NAMED_ATTRS">
+    <div class="card-body pl-5">
+    <h4>Write Named Attrs</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to write named attributes (extended attributes).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_EXECUTE">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_EXECUTE">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_EXECUTE" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_EXECUTE" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_EXECUTE')" type="button"><span class="property-name">EXECUTE</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_EXECUTE" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_EXECUTE" id="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_EXECUTE">
+    <div class="card-body pl-5">
+    <h4>Execute</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to execute files or traverse directories.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE')" type="button"><span class="property-name">DELETE</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE" id="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE">
+    <div class="card-body pl-5">
+    <h4>Delete</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to delete the file or directory.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE_CHILD">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE_CHILD">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE_CHILD" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE_CHILD" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE_CHILD')" type="button"><span class="property-name">DELETE_CHILD</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE_CHILD" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE_CHILD" id="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_DELETE_CHILD">
+    <div class="card-body pl-5">
+    <h4>Delete Child</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to delete child files within a directory.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ATTRIBUTES">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ATTRIBUTES">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ATTRIBUTES" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ATTRIBUTES" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ATTRIBUTES')" type="button"><span class="property-name">READ_ATTRIBUTES</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ATTRIBUTES" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ATTRIBUTES" id="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ATTRIBUTES">
+    <div class="card-body pl-5">
+    <h4>Read Attributes</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to read basic file attributes (size, timestamps, etc.).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ATTRIBUTES">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ATTRIBUTES">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ATTRIBUTES" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ATTRIBUTES" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ATTRIBUTES')" type="button"><span class="property-name">WRITE_ATTRIBUTES</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ATTRIBUTES" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ATTRIBUTES" id="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ATTRIBUTES">
+    <div class="card-body pl-5">
+    <h4>Write Attributes</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to write basic file attributes.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ACL">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ACL">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ACL" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ACL" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ACL')" type="button"><span class="property-name">READ_ACL</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ACL" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ACL" id="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_READ_ACL">
+    <div class="card-body pl-5">
+    <h4>Read Acl</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to read the Access Control List.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ACL">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ACL">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ACL" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ACL" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ACL')" type="button"><span class="property-name">WRITE_ACL</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ACL" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ACL" id="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_ACL">
+    <div class="card-body pl-5">
+    <h4>Write Acl</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to modify the Access Control List.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_OWNER">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_OWNER">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_OWNER" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_OWNER" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_OWNER')" type="button"><span class="property-name">WRITE_OWNER</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_OWNER" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_OWNER" id="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_WRITE_OWNER">
+    <div class="card-body pl-5">
+    <h4>Write Owner</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to change the file owner.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_SYNCHRONIZE">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_SYNCHRONIZE">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_SYNCHRONIZE" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_SYNCHRONIZE" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_SYNCHRONIZE')" type="button"><span class="property-name">SYNCHRONIZE</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_SYNCHRONIZE" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_SYNCHRONIZE" id="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i0_SYNCHRONIZE">
+    <div class="card-body pl-5">
+    <h4>Synchronize</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Permission to use the file/directory as a synchronization primitive.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i1" role="tabpanel">
+    <h4>NFS4ACE_BasicPerms</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i1_BASIC">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i1_BASIC">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i1_BASIC" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i1_BASIC" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i1_BASIC')" type="button"><span class="property-name">BASIC</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i1_BASIC" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i1_BASIC" id="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i1_BASIC">
+    <div class="card-body pl-5">
+    <h4>Basic</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Basic permission level for NFS4 ACE.</p>
+    <ul>
+    <li><code>FULL_CONTROL</code>: Full read, write, execute, and administrative permissions</li>
+    <li><code>MODIFY</code>: Read, write, and execute permissions</li>
+    <li><code>READ</code>: Read-only permissions</li>
+    <li><code>TRAVERSE</code>: Execute/traverse permissions only</li>
+    </ul>
+    </span><div class="enum-value" id="CHANGED_fields_acl_anyOf_i0_items_perms_anyOf_i1_BASIC_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"FULL_CONTROL"</li><li class="list-group-item enum-item">"MODIFY"</li><li class="list-group-item enum-item">"READ"</li><li class="list-group-item enum-item">"TRAVERSE"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_flags">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_flags">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_flags" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_flags" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_flags')" type="button"><span class="property-name">flags</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_flags" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_flags" id="CHANGED_fields_acl_anyOf_i0_items_flags">
+    <div class="card-body pl-5">
+    <h4>Flags</h4><br/>
+    <span class="description"><p>Inheritance and other behavioral flags for this ACE.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_acl_anyOf_i0_items_flags_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_acl_anyOf_i0_items_flags_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0" id="CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0')" role="tab">NFS4ACE_AdvancedFlags</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i1" id="CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i1" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i1')" role="tab">NFS4ACE_BasicFlags</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0" role="tabpanel">
+    <h4>NFS4ACE_AdvancedFlags</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_FILE_INHERIT">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_FILE_INHERIT">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_FILE_INHERIT" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_FILE_INHERIT" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_FILE_INHERIT')" type="button"><span class="property-name">FILE_INHERIT</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_FILE_INHERIT" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_FILE_INHERIT" id="CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_FILE_INHERIT">
+    <div class="card-body pl-5">
+    <h4>File Inherit</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Apply this ACE to files within directories.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_DIRECTORY_INHERIT">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_DIRECTORY_INHERIT">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_DIRECTORY_INHERIT" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_DIRECTORY_INHERIT" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_DIRECTORY_INHERIT')" type="button"><span class="property-name">DIRECTORY_INHERIT</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_DIRECTORY_INHERIT" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_DIRECTORY_INHERIT" id="CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_DIRECTORY_INHERIT">
+    <div class="card-body pl-5">
+    <h4>Directory Inherit</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Apply this ACE to subdirectories within directories.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_NO_PROPAGATE_INHERIT">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_NO_PROPAGATE_INHERIT">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_NO_PROPAGATE_INHERIT" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_NO_PROPAGATE_INHERIT" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_NO_PROPAGATE_INHERIT')" type="button"><span class="property-name">NO_PROPAGATE_INHERIT</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_NO_PROPAGATE_INHERIT" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_NO_PROPAGATE_INHERIT" id="CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_NO_PROPAGATE_INHERIT">
+    <div class="card-body pl-5">
+    <h4>No Propagate Inherit</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Do not propagate inheritance beyond immediate children.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERIT_ONLY">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERIT_ONLY">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERIT_ONLY" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERIT_ONLY" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERIT_ONLY')" type="button"><span class="property-name">INHERIT_ONLY</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERIT_ONLY" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERIT_ONLY" id="CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERIT_ONLY">
+    <div class="card-body pl-5">
+    <h4>Inherit Only</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>This ACE only affects inheritance, not the object itself.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERITED">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERITED">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERITED" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERITED" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERITED')" type="button"><span class="property-name">INHERITED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERITED" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERITED" id="CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i0_INHERITED">
+    <div class="card-body pl-5">
+    <h4>Inherited</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>This ACE was inherited from a parent directory.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i1" role="tabpanel">
+    <h4>NFS4ACE_BasicFlags</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i1_BASIC">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i1_BASIC">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i1_BASIC" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i1_BASIC" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i1_BASIC')" type="button"><span class="property-name">BASIC</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i1_BASIC" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i1_BASIC" id="CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i1_BASIC">
+    <div class="card-body pl-5">
+    <h4>Basic</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Basic inheritance behavior for NFS4 ACE.</p>
+    <ul>
+    <li><code>INHERIT</code>: Apply to child files and directories</li>
+    <li><code>NOINHERIT</code>: Do not apply to child objects</li>
+    </ul>
+    </span><div class="enum-value" id="CHANGED_fields_acl_anyOf_i0_items_flags_anyOf_i1_BASIC_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"INHERIT"</li><li class="list-group-item enum-item">"NOINHERIT"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_id')" type="button"><span class="property-name">id</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_id" id="CHANGED_fields_acl_anyOf_i0_items_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>UID or GID when <code>tag</code> is "USER" or "GROUP". <code>null</code> for special entries.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_acl_anyOf_i0_items_id_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_acl_anyOf_i0_items_id_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_acl_anyOf_i0_items_id_anyOf_i0" id="CHANGED_fields_acl_anyOf_i0_items_id_anyOf_i0" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_id_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_acl_anyOf_i0_items_id_anyOf_i1" id="CHANGED_fields_acl_anyOf_i0_items_id_anyOf_i1" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_id_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_acl_anyOf_i0_items_id_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="CHANGED_fields_acl_anyOf_i0_items_id_anyOf_i0_number">Value must be greater or equal to <code>-1</code> and lesser or equal to <code>2147483647</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_acl_anyOf_i0_items_id_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i0_items_who">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i0_items_who">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i0_items_who" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i0_items_who" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_who')" type="button"><span class="property-name">who</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i0_items_who" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i0_items_who" id="CHANGED_fields_acl_anyOf_i0_items_who">
+    <div class="card-body pl-5">
+    <h4>Who</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Username or group name when <code>tag</code> is "USER" or "GROUP". <code>null</code> for special entries.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_acl_anyOf_i0_items_who_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_acl_anyOf_i0_items_who_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_acl_anyOf_i0_items_who_anyOf_i0" id="CHANGED_fields_acl_anyOf_i0_items_who_anyOf_i0" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_who_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_acl_anyOf_i0_items_who_anyOf_i1" id="CHANGED_fields_acl_anyOf_i0_items_who_anyOf_i1" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_who_anyOf_i1')" role="tab">Option 2</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_acl_anyOf_i0_items_who_anyOf_i2" id="CHANGED_fields_acl_anyOf_i0_items_who_anyOf_i2" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i0_items_who_anyOf_i2')" role="tab">Option 3</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_acl_anyOf_i0_items_who_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_acl_anyOf_i0_items_who_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_acl_anyOf_i0_items_who_anyOf_i1_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_acl_anyOf_i0_items_who_anyOf_i2" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_acl_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="CHANGED_fields_acl_anyOf_i1_items">
+    <h4>POSIXACE</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i1_items_tag">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i1_items_tag">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i1_items_tag" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i1_items_tag" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i1_items_tag')" type="button"><span class="property-name">tag</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i1_items_tag" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i1_items_tag" id="CHANGED_fields_acl_anyOf_i1_items_tag">
+    <div class="card-body pl-5">
+    <h4>Tag</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Subject type for this POSIX ACE.</p>
+    <ul>
+    <li><code>USER_OBJ</code>: File/directory owner</li>
+    <li><code>GROUP_OBJ</code>: File/directory primary group</li>
+    <li><code>OTHER</code>: All other users</li>
+    <li><code>MASK</code>: Maximum permissions for named users and groups</li>
+    <li><code>USER</code>: Specific user account</li>
+    <li><code>GROUP</code>: Specific group</li>
+    </ul>
+    </span><div class="enum-value" id="CHANGED_fields_acl_anyOf_i1_items_tag_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"USER_OBJ"</li><li class="list-group-item enum-item">"GROUP_OBJ"</li><li class="list-group-item enum-item">"OTHER"</li><li class="list-group-item enum-item">"MASK"</li><li class="list-group-item enum-item">"USER"</li><li class="list-group-item enum-item">"GROUP"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i1_items_perms">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i1_items_perms">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i1_items_perms" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i1_items_perms" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i1_items_perms')" type="button"><span class="property-name">perms</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i1_items_perms" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i1_items_perms" id="CHANGED_fields_acl_anyOf_i1_items_perms">
+    <div class="card-body pl-5">
+    <h4>POSIXACE_Perms</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Read, write, and execute permissions for this ACE.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i1_items_perms_READ">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i1_items_perms_READ">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i1_items_perms_READ" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i1_items_perms_READ" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i1_items_perms_READ')" type="button"><span class="property-name">READ</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i1_items_perms_READ" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i1_items_perms_READ" id="CHANGED_fields_acl_anyOf_i1_items_perms_READ">
+    <div class="card-body pl-5">
+    <h4>Read</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Permission to read file contents or list directory contents.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i1_items_perms_WRITE">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i1_items_perms_WRITE">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i1_items_perms_WRITE" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i1_items_perms_WRITE" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i1_items_perms_WRITE')" type="button"><span class="property-name">WRITE</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i1_items_perms_WRITE" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i1_items_perms_WRITE" id="CHANGED_fields_acl_anyOf_i1_items_perms_WRITE">
+    <div class="card-body pl-5">
+    <h4>Write</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Permission to write file contents or create/delete files in directory.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i1_items_perms_EXECUTE">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i1_items_perms_EXECUTE">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i1_items_perms_EXECUTE" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i1_items_perms_EXECUTE" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i1_items_perms_EXECUTE')" type="button"><span class="property-name">EXECUTE</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i1_items_perms_EXECUTE" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i1_items_perms_EXECUTE" id="CHANGED_fields_acl_anyOf_i1_items_perms_EXECUTE">
+    <div class="card-body pl-5">
+    <h4>Execute</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Permission to execute files or traverse directories.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i1_items_default">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i1_items_default">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i1_items_default" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i1_items_default" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i1_items_default')" type="button"><span class="property-name">default</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i1_items_default" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i1_items_default" id="CHANGED_fields_acl_anyOf_i1_items_default">
+    <div class="card-body pl-5">
+    <h4>Default</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this is a default ACE that applies to newly created child objects.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i1_items_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i1_items_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i1_items_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i1_items_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i1_items_id')" type="button"><span class="property-name">id</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i1_items_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i1_items_id" id="CHANGED_fields_acl_anyOf_i1_items_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Numeric user or group ID when tag is <code>USER</code> or <code>GROUP</code>. <code>null</code> for object entries.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_acl_anyOf_i1_items_id_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_acl_anyOf_i1_items_id_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_acl_anyOf_i1_items_id_anyOf_i0" id="CHANGED_fields_acl_anyOf_i1_items_id_anyOf_i0" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i1_items_id_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_acl_anyOf_i1_items_id_anyOf_i1" id="CHANGED_fields_acl_anyOf_i1_items_id_anyOf_i1" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i1_items_id_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_acl_anyOf_i1_items_id_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="CHANGED_fields_acl_anyOf_i1_items_id_anyOf_i0_number">Value must be greater or equal to <code>-1</code> and lesser or equal to <code>2147483647</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_acl_anyOf_i1_items_id_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_acl_anyOf_i1_items_who">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_acl_anyOf_i1_items_who">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_acl_anyOf_i1_items_who" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_acl_anyOf_i1_items_who" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i1_items_who')" type="button"><span class="property-name">who</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_acl_anyOf_i1_items_who" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_acl_anyOf_i1_items_who" id="CHANGED_fields_acl_anyOf_i1_items_who">
+    <div class="card-body pl-5">
+    <h4>Who</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Username or group name when tag is <code>USER</code> or <code>GROUP</code>. <code>null</code> for object entries.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_acl_anyOf_i1_items_who_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_acl_anyOf_i1_items_who_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_acl_anyOf_i1_items_who_anyOf_i0" id="CHANGED_fields_acl_anyOf_i1_items_who_anyOf_i0" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i1_items_who_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_acl_anyOf_i1_items_who_anyOf_i1" id="CHANGED_fields_acl_anyOf_i1_items_who_anyOf_i1" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i1_items_who_anyOf_i1')" role="tab">Option 2</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_acl_anyOf_i1_items_who_anyOf_i2" id="CHANGED_fields_acl_anyOf_i1_items_who_anyOf_i2" onclick="setAnchor('#CHANGED_fields_acl_anyOf_i1_items_who_anyOf_i2')" role="tab">Option 3</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_acl_anyOf_i1_items_who_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_acl_anyOf_i1_items_who_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_acl_anyOf_i1_items_who_anyOf_i1_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_acl_anyOf_i1_items_who_anyOf_i2" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_comment">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_comment">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_comment" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_comment" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_comment')" type="button"><span class="property-name">comment</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_comment" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_comment" id="CHANGED_fields_comment">
+    <div class="card-body pl-5">
+    <h4>Comment</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+    <span class="description"><p>Optional descriptive comment about the template's purpose.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionREMOVED">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED" data-toggle="collapse" onclick="setAnchor('#REMOVED')" type="button"><span class="property-name">REMOVED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED" class="collapse property-definition-div" data-parent="#accordionREMOVED" id="REMOVED">
+    <div class="card-body pl-5">
+    <h4>AclTemplateRemovedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionREMOVED_id">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED_id">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED_id" data-toggle="collapse" onclick="setAnchor('#REMOVED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED_id" class="collapse property-definition-div" data-parent="#accordionREMOVED_id" id="REMOVED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* FILESYSTEM_ATTRS_READ
+

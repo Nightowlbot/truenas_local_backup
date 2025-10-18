@@ -1,0 +1,102 @@
+support.similar_issues
+======================
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: query</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>query</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Search query to find similar issues or knowledge base articles.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="description"><p>Array of similar issues found based on the search query.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_items">
+    <h4>SupportSimilarIssue</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionReturn_value_items_url">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_url">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_url" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_url" data-toggle="collapse" onclick="setAnchor('#Return_value_items_url')" type="button"><span class="property-name">url</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_url" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_url" id="Return_value_items_url">
+    <div class="card-body pl-5">
+    <h4>Url</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>URL link to the similar issue or knowledge base article.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_summary">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_summary">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_summary" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_summary" data-toggle="collapse" onclick="setAnchor('#Return_value_items_summary')" type="button"><span class="property-name">summary</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_summary" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_summary" id="Return_value_items_summary">
+    <div class="card-body pl-5">
+    <h4>Summary</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Brief summary of the similar issue.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_additionalProperties">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_additionalProperties">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_additionalProperties" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_additionalProperties" data-toggle="collapse" onclick="setAnchor('#Return_value_items_additionalProperties')" type="button"><em><span class="property-name">Additional Properties</span></em></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_additionalProperties" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_additionalProperties" id="Return_value_items_additionalProperties">
+    <div class="card-body pl-5"><p class="additional-properties">Additional Properties of any type are allowed.</p>
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SUPPORT_READ
+

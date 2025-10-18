@@ -1,0 +1,6 @@
+update
+------
+
+.. toctree::
+
+   api_events_update.status

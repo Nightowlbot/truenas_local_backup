@@ -1,0 +1,412 @@
+nvmet.host.query
+================
+
+Sent on nvmet.host changes.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionADDED">
+    <div class="card">
+    <div class="card-header" id="headingADDED">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED" data-toggle="collapse" onclick="setAnchor('#ADDED')" type="button"><span class="property-name">ADDED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED" class="collapse property-definition-div" data-parent="#accordionADDED" id="ADDED">
+    <div class="card-body pl-5">
+    <h4>NVMetHostAddedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_id" data-toggle="collapse" onclick="setAnchor('#ADDED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_id" class="collapse property-definition-div" data-parent="#accordionADDED_id" id="ADDED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields" data-toggle="collapse" onclick="setAnchor('#ADDED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields" class="collapse property-definition-div" data-parent="#accordionADDED_fields" id="ADDED_fields">
+    <div class="card-body pl-5">
+    <h4>NVMetHostEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_id" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_id" class="collapse property-definition-div" data-parent="#accordionADDED_fields_id" id="ADDED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the NVMe-oF host.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_hostnqn">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_hostnqn">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_hostnqn" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_hostnqn" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_hostnqn')" type="button"><span class="property-name">hostnqn</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_hostnqn" class="collapse property-definition-div" data-parent="#accordionADDED_fields_hostnqn" id="ADDED_fields_hostnqn">
+    <div class="card-body pl-5">
+    <h4>Hostnqn</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>NQN of the host that will connect to this TrueNAS. </p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_hostnqn_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_dhchap_key">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_dhchap_key">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_dhchap_key" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_dhchap_key" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_dhchap_key')" type="button"><span class="property-name">dhchap_key</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_dhchap_key" class="collapse property-definition-div" data-parent="#accordionADDED_fields_dhchap_key" id="ADDED_fields_dhchap_key">
+    <div class="card-body pl-5">
+    <h4>Dhchap Key</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>If set, the secret that the host must present when connecting.</p>
+    <p>A suitable secret can be generated using <code>nvme gen-dhchap-key</code>, or by using the <code>nvmet.host.generate_key</code> API.</p>
+    </span><div class="any-of-value" id="ADDED_fields_dhchap_key_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_dhchap_key_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_dhchap_key_anyOf_i0" id="ADDED_fields_dhchap_key_anyOf_i0" onclick="setAnchor('#ADDED_fields_dhchap_key_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_dhchap_key_anyOf_i1" id="ADDED_fields_dhchap_key_anyOf_i1" onclick="setAnchor('#ADDED_fields_dhchap_key_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_dhchap_key_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_dhchap_key_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_dhchap_key_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_dhchap_ctrl_key">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_dhchap_ctrl_key">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_dhchap_ctrl_key" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_dhchap_ctrl_key" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_dhchap_ctrl_key')" type="button"><span class="property-name">dhchap_ctrl_key</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_dhchap_ctrl_key" class="collapse property-definition-div" data-parent="#accordionADDED_fields_dhchap_ctrl_key" id="ADDED_fields_dhchap_ctrl_key">
+    <div class="card-body pl-5">
+    <h4>Dhchap Ctrl Key</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>If set, the secret that this TrueNAS will present to the host when the host is connecting (Bi-Directional     Authentication).</p>
+    <p>A suitable secret can be generated using <code>nvme gen-dhchap-key</code>, or by using the <code>nvmet.host.generate_key</code> API.</p>
+    </span><div class="any-of-value" id="ADDED_fields_dhchap_ctrl_key_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_dhchap_ctrl_key_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_dhchap_ctrl_key_anyOf_i0" id="ADDED_fields_dhchap_ctrl_key_anyOf_i0" onclick="setAnchor('#ADDED_fields_dhchap_ctrl_key_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_dhchap_ctrl_key_anyOf_i1" id="ADDED_fields_dhchap_ctrl_key_anyOf_i1" onclick="setAnchor('#ADDED_fields_dhchap_ctrl_key_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_dhchap_ctrl_key_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_dhchap_ctrl_key_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_dhchap_ctrl_key_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_dhchap_dhgroup">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_dhchap_dhgroup">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_dhchap_dhgroup" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_dhchap_dhgroup" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_dhchap_dhgroup')" type="button"><span class="property-name">dhchap_dhgroup</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_dhchap_dhgroup" class="collapse property-definition-div" data-parent="#accordionADDED_fields_dhchap_dhgroup" id="ADDED_fields_dhchap_dhgroup">
+    <div class="card-body pl-5">
+    <h4>Dhchap Dhgroup</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>If selected, the DH (Diffie-Hellman) key exchange built on top of CHAP to be used for authentication.</p>
+    </span><div class="any-of-value" id="ADDED_fields_dhchap_dhgroup_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_dhchap_dhgroup_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_dhchap_dhgroup_anyOf_i0" id="ADDED_fields_dhchap_dhgroup_anyOf_i0" onclick="setAnchor('#ADDED_fields_dhchap_dhgroup_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_dhchap_dhgroup_anyOf_i1" id="ADDED_fields_dhchap_dhgroup_anyOf_i1" onclick="setAnchor('#ADDED_fields_dhchap_dhgroup_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_dhchap_dhgroup_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <div class="enum-value" id="ADDED_fields_dhchap_dhgroup_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"2048-BIT"</li><li class="list-group-item enum-item">"3072-BIT"</li><li class="list-group-item enum-item">"4096-BIT"</li><li class="list-group-item enum-item">"6144-BIT"</li><li class="list-group-item enum-item">"8192-BIT"</li></ul>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_dhchap_dhgroup_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_dhchap_hash">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_dhchap_hash">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_dhchap_hash" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_dhchap_hash" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_dhchap_hash')" type="button"><span class="property-name">dhchap_hash</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_dhchap_hash" class="collapse property-definition-div" data-parent="#accordionADDED_fields_dhchap_hash" id="ADDED_fields_dhchap_hash">
+    <div class="card-body pl-5">
+    <h4>Dhchap Hash</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "SHA-256"</span><br/>
+    <span class="description"><p>HMAC (Hashed Message Authentication Code) to be used in conjunction if a <code>dhchap_dhgroup</code> is selected.</p>
+    </span><div class="enum-value" id="ADDED_fields_dhchap_hash_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"SHA-256"</li><li class="list-group-item enum-item">"SHA-384"</li><li class="list-group-item enum-item">"SHA-512"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED" data-toggle="collapse" onclick="setAnchor('#CHANGED')" type="button"><span class="property-name">CHANGED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED" class="collapse property-definition-div" data-parent="#accordionCHANGED" id="CHANGED">
+    <div class="card-body pl-5">
+    <h4>NVMetHostChangedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_id" id="CHANGED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields" id="CHANGED_fields">
+    <div class="card-body pl-5">
+    <h4>NVMetHostEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_id" id="CHANGED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the NVMe-oF host.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_hostnqn">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_hostnqn">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_hostnqn" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_hostnqn" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_hostnqn')" type="button"><span class="property-name">hostnqn</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_hostnqn" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_hostnqn" id="CHANGED_fields_hostnqn">
+    <div class="card-body pl-5">
+    <h4>Hostnqn</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>NQN of the host that will connect to this TrueNAS. </p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_hostnqn_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_dhchap_key">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_dhchap_key">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_dhchap_key" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_dhchap_key" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_dhchap_key')" type="button"><span class="property-name">dhchap_key</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_dhchap_key" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_dhchap_key" id="CHANGED_fields_dhchap_key">
+    <div class="card-body pl-5">
+    <h4>Dhchap Key</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>If set, the secret that the host must present when connecting.</p>
+    <p>A suitable secret can be generated using <code>nvme gen-dhchap-key</code>, or by using the <code>nvmet.host.generate_key</code> API.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_dhchap_key_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_dhchap_key_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_dhchap_key_anyOf_i0" id="CHANGED_fields_dhchap_key_anyOf_i0" onclick="setAnchor('#CHANGED_fields_dhchap_key_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_dhchap_key_anyOf_i1" id="CHANGED_fields_dhchap_key_anyOf_i1" onclick="setAnchor('#CHANGED_fields_dhchap_key_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_dhchap_key_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_dhchap_key_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_dhchap_key_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_dhchap_ctrl_key">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_dhchap_ctrl_key">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_dhchap_ctrl_key" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_dhchap_ctrl_key" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_dhchap_ctrl_key')" type="button"><span class="property-name">dhchap_ctrl_key</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_dhchap_ctrl_key" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_dhchap_ctrl_key" id="CHANGED_fields_dhchap_ctrl_key">
+    <div class="card-body pl-5">
+    <h4>Dhchap Ctrl Key</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>If set, the secret that this TrueNAS will present to the host when the host is connecting (Bi-Directional     Authentication).</p>
+    <p>A suitable secret can be generated using <code>nvme gen-dhchap-key</code>, or by using the <code>nvmet.host.generate_key</code> API.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_dhchap_ctrl_key_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_dhchap_ctrl_key_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_dhchap_ctrl_key_anyOf_i0" id="CHANGED_fields_dhchap_ctrl_key_anyOf_i0" onclick="setAnchor('#CHANGED_fields_dhchap_ctrl_key_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_dhchap_ctrl_key_anyOf_i1" id="CHANGED_fields_dhchap_ctrl_key_anyOf_i1" onclick="setAnchor('#CHANGED_fields_dhchap_ctrl_key_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_dhchap_ctrl_key_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_dhchap_ctrl_key_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_dhchap_ctrl_key_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_dhchap_dhgroup">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_dhchap_dhgroup">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_dhchap_dhgroup" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_dhchap_dhgroup" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_dhchap_dhgroup')" type="button"><span class="property-name">dhchap_dhgroup</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_dhchap_dhgroup" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_dhchap_dhgroup" id="CHANGED_fields_dhchap_dhgroup">
+    <div class="card-body pl-5">
+    <h4>Dhchap Dhgroup</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>If selected, the DH (Diffie-Hellman) key exchange built on top of CHAP to be used for authentication.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_dhchap_dhgroup_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_dhchap_dhgroup_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_dhchap_dhgroup_anyOf_i0" id="CHANGED_fields_dhchap_dhgroup_anyOf_i0" onclick="setAnchor('#CHANGED_fields_dhchap_dhgroup_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_dhchap_dhgroup_anyOf_i1" id="CHANGED_fields_dhchap_dhgroup_anyOf_i1" onclick="setAnchor('#CHANGED_fields_dhchap_dhgroup_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_dhchap_dhgroup_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <div class="enum-value" id="CHANGED_fields_dhchap_dhgroup_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"2048-BIT"</li><li class="list-group-item enum-item">"3072-BIT"</li><li class="list-group-item enum-item">"4096-BIT"</li><li class="list-group-item enum-item">"6144-BIT"</li><li class="list-group-item enum-item">"8192-BIT"</li></ul>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_dhchap_dhgroup_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_dhchap_hash">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_dhchap_hash">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_dhchap_hash" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_dhchap_hash" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_dhchap_hash')" type="button"><span class="property-name">dhchap_hash</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_dhchap_hash" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_dhchap_hash" id="CHANGED_fields_dhchap_hash">
+    <div class="card-body pl-5">
+    <h4>Dhchap Hash</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "SHA-256"</span><br/>
+    <span class="description"><p>HMAC (Hashed Message Authentication Code) to be used in conjunction if a <code>dhchap_dhgroup</code> is selected.</p>
+    </span><div class="enum-value" id="CHANGED_fields_dhchap_hash_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"SHA-256"</li><li class="list-group-item enum-item">"SHA-384"</li><li class="list-group-item enum-item">"SHA-512"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionREMOVED">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED" data-toggle="collapse" onclick="setAnchor('#REMOVED')" type="button"><span class="property-name">REMOVED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED" class="collapse property-definition-div" data-parent="#accordionREMOVED" id="REMOVED">
+    <div class="card-body pl-5">
+    <h4>NVMetHostRemovedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionREMOVED_id">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED_id">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED_id" data-toggle="collapse" onclick="setAnchor('#REMOVED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED_id" class="collapse property-definition-div" data-parent="#accordionREMOVED_id" id="REMOVED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SHARING_NVME_TARGET_READ
+

@@ -1,0 +1,10 @@
+staticroute
+-----------
+
+.. toctree::
+
+   api_methods_staticroute.create
+   api_methods_staticroute.delete
+   api_methods_staticroute.get_instance
+   api_methods_staticroute.query
+   api_methods_staticroute.update

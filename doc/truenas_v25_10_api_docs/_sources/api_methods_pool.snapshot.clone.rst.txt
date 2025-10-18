@@ -1,0 +1,105 @@
+pool.snapshot.clone
+===================
+
+Clone a given snapshot to a new dataset.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: data</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>data</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>PoolSnapshotCloneArgs parameters.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_snapshot">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_snapshot">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_snapshot" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_snapshot" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_snapshot')" type="button"><span class="property-name">snapshot</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_snapshot" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_snapshot" id="Call_parameters_items_i0_snapshot">
+    <div class="card-body pl-5">
+    <h4>Snapshot</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Full name of the snapshot to clone from.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_snapshot_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_dataset_dst">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_dataset_dst">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_dataset_dst" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_dataset_dst" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_dataset_dst')" type="button"><span class="property-name">dataset_dst</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_dataset_dst" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_dataset_dst" id="Call_parameters_items_i0_dataset_dst">
+    <div class="card-body pl-5">
+    <h4>Dataset Dst</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name for the new dataset created from the snapshot.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_dataset_dst_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_dataset_properties">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_dataset_properties">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_dataset_properties" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_dataset_properties" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_dataset_properties')" type="button"><span class="property-name">dataset_properties</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_dataset_properties" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_dataset_properties" id="Call_parameters_items_i0_dataset_properties">
+    <div class="card-body pl-5">
+    <h4>Dataset Properties</h4><span class="badge badge-dark value-type">Type: object</span> <span class="badge badge-success default-value">Default: {}</span><br/>
+    <span class="description"><p>Object mapping ZFS property names to values to set on the cloned dataset.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Clone succeeded.</p>
+    </span><div class="enum-value" id="Return_value_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">true</li></ul>
+    </div><span class="const-value" id="Return_value_const">Specific value: <code>true</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* DATASET_WRITE | SNAPSHOT_WRITE
+

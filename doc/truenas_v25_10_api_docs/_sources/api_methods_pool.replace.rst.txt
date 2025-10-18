@@ -1,0 +1,154 @@
+pool.replace
+============
+
+Replace a disk on a pool.
+
+`label` is the ZFS guid or a device name `disk` is the identifier of a disk If `preserve_settings` is true, then settings (power management, S.M.A.R.T., etc.) of a disk being replaced will be applied to a new disk.
+
+.. examples(websocket)::
+
+  Replace missing ZFS device with disk {serial}FOO.
+
+    :::javascript {
+        "id": "6841f242-840a-11e6-a437-00e04d680384", "msg": "method", "method": "pool.replace", "params": [1, { "label": "80802394992848654", "disk": "{serial}FOO" }] }
+
+This method is a job.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: id</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>ID of the pool to replace a disk in.</p>
+    </span>
+    </div>
+    </div>
+    <h5>Parameter 2: options</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>options</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Configuration for the disk replacement operation.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_label">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_label">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_label" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_label" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_label')" type="button"><span class="property-name">label</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_label" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_label" id="Call_parameters_items_i1_label">
+    <div class="card-body pl-5">
+    <h4>Label</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>GUID or device name of the disk to replace.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_disk">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_disk">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_disk" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_disk" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_disk')" type="button"><span class="property-name">disk</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_disk" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_disk" id="Call_parameters_items_i1_disk">
+    <div class="card-body pl-5">
+    <h4>Disk</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name of the new disk to use as replacement.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_force">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_force">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_force" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_force" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_force')" type="button"><span class="property-name">force</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_force" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_force" id="Call_parameters_items_i1_force">
+    <div class="card-body pl-5">
+    <h4>Force</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Force the replacement even if the new disk appears to be in use.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_preserve_settings">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_preserve_settings">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_preserve_settings" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_preserve_settings" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_preserve_settings')" type="button"><span class="property-name">preserve_settings</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_preserve_settings" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_preserve_settings" id="Call_parameters_items_i1_preserve_settings">
+    <div class="card-body pl-5">
+    <h4>Preserve Settings</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Whether to preserve disk settings from the replaced disk.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_preserve_description">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_preserve_description">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_preserve_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_preserve_description" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_preserve_description')" type="button"><span class="property-name">preserve_description</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_preserve_description" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_preserve_description" id="Call_parameters_items_i1_preserve_description">
+    <div class="card-body pl-5">
+    <h4>Preserve Description</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Whether to preserve the description from the replaced disk.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Indicates successful disk replacement initiation.</p>
+    </span><div class="enum-value" id="Return_value_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">true</li></ul>
+    </div><span class="const-value" id="Return_value_const">Specific value: <code>true</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* POOL_WRITE
+

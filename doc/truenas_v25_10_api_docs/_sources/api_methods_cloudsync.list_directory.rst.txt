@@ -1,0 +1,332 @@
+cloudsync.list_directory
+========================
+
+List contents of a remote bucket / directory.
+
+If remote supports buckets, path is constructed by two keys "bucket"/"folder" in `attributes`. If remote does not support buckets, path is constructed using "folder" key only in `attributes`. "folder" is directory name and "bucket" is bucket name for remote.
+
+Path examples:
+
+S3 Service `bucketname/directory/name`
+
+Dropbox Service `directory/name`
+
+`credentials` is a valid id of a Cloud Sync Credential which will be used to connect to the provider.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: cloud_sync_ls</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>cloud_sync_ls</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>CloudSyncListDirectoryArgs parameters.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_credentials">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_credentials">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_credentials" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_credentials" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_credentials')" type="button"><span class="property-name">credentials</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_credentials" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_credentials" id="Call_parameters_items_i0_credentials">
+    <div class="card-body pl-5">
+    <h4>Credentials</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>ID of the cloud credential to use for directory listing.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_encryption">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_encryption">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_encryption" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_encryption" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_encryption')" type="button"><span class="property-name">encryption</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_encryption" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_encryption" id="Call_parameters_items_i0_encryption">
+    <div class="card-body pl-5">
+    <h4>Encryption</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether files are encrypted in cloud storage.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_filename_encryption">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_filename_encryption">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_filename_encryption" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_filename_encryption" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_filename_encryption')" type="button"><span class="property-name">filename_encryption</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_filename_encryption" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_filename_encryption" id="Call_parameters_items_i0_filename_encryption">
+    <div class="card-body pl-5">
+    <h4>Filename Encryption</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether filenames are encrypted in cloud storage.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_encryption_password">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_encryption_password">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_encryption_password" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_encryption_password" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_encryption_password')" type="button"><span class="property-name">encryption_password</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_encryption_password" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_encryption_password" id="Call_parameters_items_i0_encryption_password">
+    <div class="card-body pl-5">
+    <h4>Encryption Password</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+    <span class="description"><p>Password for decrypting files and filenames.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_encryption_salt">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_encryption_salt">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_encryption_salt" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_encryption_salt" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_encryption_salt')" type="button"><span class="property-name">encryption_salt</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_encryption_salt" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_encryption_salt" id="Call_parameters_items_i0_encryption_salt">
+    <div class="card-body pl-5">
+    <h4>Encryption Salt</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+    <span class="description"><p>Salt value for encryption key derivation.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_attributes">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_attributes">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_attributes" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_attributes" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_attributes')" type="button"><span class="property-name">attributes</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_attributes" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_attributes" id="Call_parameters_items_i0_attributes">
+    <div class="card-body pl-5">
+    <h4>CloudTaskAttributes</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Cloud provider-specific attributes for the listing operation.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_attributes_bucket">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_attributes_bucket">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_attributes_bucket" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_attributes_bucket" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_attributes_bucket')" type="button"><span class="property-name">bucket</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_attributes_bucket" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_attributes_bucket" id="Call_parameters_items_i0_attributes_bucket">
+    <div class="card-body pl-5">
+    <h4>Bucket</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name of the cloud storage bucket or container.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_attributes_bucket_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_attributes_folder">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_attributes_folder">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_attributes_folder" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_attributes_folder" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_attributes_folder')" type="button"><span class="property-name">folder</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_attributes_folder" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_attributes_folder" id="Call_parameters_items_i0_attributes_folder">
+    <div class="card-body pl-5">
+    <h4>Folder</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Path within the cloud storage bucket to use as the root directory for operations.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_attributes_fast_list">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_attributes_fast_list">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_attributes_fast_list" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_attributes_fast_list" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_attributes_fast_list')" type="button"><span class="property-name">fast_list</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_attributes_fast_list" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_attributes_fast_list" id="Call_parameters_items_i0_attributes_fast_list">
+    <div class="card-body pl-5">
+    <h4>Fast List</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Valid only for some providers. Use fewer transactions in exchange for more RAM. This may also speed up or slow     down your transfer. See https://rclone.org/docs/#fast-list for more details.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_attributes_bucket_policy_only">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_attributes_bucket_policy_only">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_attributes_bucket_policy_only" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_attributes_bucket_policy_only" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_attributes_bucket_policy_only')" type="button"><span class="property-name">bucket_policy_only</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_attributes_bucket_policy_only" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_attributes_bucket_policy_only" id="Call_parameters_items_i0_attributes_bucket_policy_only">
+    <div class="card-body pl-5">
+    <h4>Bucket Policy Only</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Valid only for GOOGLE<em>CLOUD</em>STORAGE provider. Access checks should use bucket-level IAM policies. If you want     to upload objects to a bucket with Bucket Policy Only set then you will need to set this.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_attributes_chunk_size">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_attributes_chunk_size">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_attributes_chunk_size" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_attributes_chunk_size" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_attributes_chunk_size')" type="button"><span class="property-name">chunk_size</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_attributes_chunk_size" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_attributes_chunk_size" id="Call_parameters_items_i0_attributes_chunk_size">
+    <div class="card-body pl-5">
+    <h4>Chunk Size</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Valid only for DROPBOX provider. Upload chunk size in MiB. Must fit in memory. Note that these chunks are     buffered in memory and there might be a maximum of <code>--transfers</code> chunks in progress at once. Dropbox Business     accounts can have monthly data transfer limits per team per month. By using larger chunk sizes you will decrease     the number of data transfer calls used and you'll be able to transfer more data to your Dropbox Business account.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_attributes_chunk_size_number">Value must be greater or equal to <code>5</code> and strictly lesser than <code>150</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_attributes_acknowledge_abuse">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_attributes_acknowledge_abuse">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_attributes_acknowledge_abuse" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_attributes_acknowledge_abuse" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_attributes_acknowledge_abuse')" type="button"><span class="property-name">acknowledge_abuse</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_attributes_acknowledge_abuse" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_attributes_acknowledge_abuse" id="Call_parameters_items_i0_attributes_acknowledge_abuse">
+    <div class="card-body pl-5">
+    <h4>Acknowledge Abuse</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Valid only for GOOGLE_DRIVER provider. Allow files which return cannotDownloadAbusiveFile to be downloaded. If     downloading a file returns the error "This file has been identified as malware or spam and cannot be downloaded"     with the error code "cannotDownloadAbusiveFile" then enable this flag to indicate you acknowledge the risks of     downloading the file and TrueNAS will download it anyway.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_attributes_region">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_attributes_region">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_attributes_region" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_attributes_region" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_attributes_region')" type="button"><span class="property-name">region</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_attributes_region" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_attributes_region" id="Call_parameters_items_i0_attributes_region">
+    <div class="card-body pl-5">
+    <h4>Region</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Valid only for S3 provider. S3 Region.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_attributes_encryption">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_attributes_encryption">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_attributes_encryption" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_attributes_encryption" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_attributes_encryption')" type="button"><span class="property-name">encryption</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_attributes_encryption" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_attributes_encryption" id="Call_parameters_items_i0_attributes_encryption">
+    <div class="card-body pl-5">
+    <h4>Encryption</h4><span class="badge badge-dark value-type">Type: enum (of null or string)</span><br/>
+    <span class="description"><p>Valid only for S3 provider. Server-Side Encryption.</p>
+    </span><div class="enum-value" id="Call_parameters_items_i0_attributes_encryption_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">null</li><li class="list-group-item enum-item">"AES256"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_attributes_storage_class">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_attributes_storage_class">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_attributes_storage_class" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_attributes_storage_class" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_attributes_storage_class')" type="button"><span class="property-name">storage_class</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_attributes_storage_class" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_attributes_storage_class" id="Call_parameters_items_i0_attributes_storage_class">
+    <div class="card-body pl-5">
+    <h4>Storage Class</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Valid only for S3 provider. The storage class to use.</p>
+    </span><div class="enum-value" id="Call_parameters_items_i0_attributes_storage_class_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li><li class="list-group-item enum-item">"STANDARD"</li><li class="list-group-item enum-item">"REDUCED_REDUNDANCY"</li><li class="list-group-item enum-item">"STANDARD_IA"</li><li class="list-group-item enum-item">"ONEZONE_IA"</li><li class="list-group-item enum-item">"INTELLIGENT_TIERING"</li><li class="list-group-item enum-item">"GLACIER"</li><li class="list-group-item enum-item">"GLACIER_IR"</li><li class="list-group-item enum-item">"DEEP_ARCHIVE"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_args">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_args">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_args" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_args" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_args')" type="button"><span class="property-name">args</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_args" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_args" id="Call_parameters_items_i0_args">
+    <div class="card-body pl-5">
+    <h4>Args</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+    <span class="description"><p>Additional arguments for the directory listing command.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="description"><p>Array of file and directory information objects.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_items">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* CLOUD_SYNC_WRITE
+

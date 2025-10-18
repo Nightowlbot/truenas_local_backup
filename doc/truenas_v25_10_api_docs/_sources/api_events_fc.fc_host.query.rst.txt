@@ -1,0 +1,340 @@
+fc.fc_host.query
+================
+
+Sent on fc.fc_host changes.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionADDED">
+    <div class="card">
+    <div class="card-header" id="headingADDED">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED" data-toggle="collapse" onclick="setAnchor('#ADDED')" type="button"><span class="property-name">ADDED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED" class="collapse property-definition-div" data-parent="#accordionADDED" id="ADDED">
+    <div class="card-body pl-5">
+    <h4>FCHostAddedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_id" data-toggle="collapse" onclick="setAnchor('#ADDED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_id" class="collapse property-definition-div" data-parent="#accordionADDED_id" id="ADDED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields" data-toggle="collapse" onclick="setAnchor('#ADDED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields" class="collapse property-definition-div" data-parent="#accordionADDED_fields" id="ADDED_fields">
+    <div class="card-body pl-5">
+    <h4>FCHostEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_id" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_id" class="collapse property-definition-div" data-parent="#accordionADDED_fields_id" id="ADDED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the Fibre Channel host configuration.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_alias">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_alias">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_alias" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_alias" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_alias')" type="button"><span class="property-name">alias</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_alias" class="collapse property-definition-div" data-parent="#accordionADDED_fields_alias" id="ADDED_fields_alias">
+    <div class="card-body pl-5">
+    <h4>Alias</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable alias for the Fibre Channel host.</p>
+    </span><span class="pattern-value" id="ADDED_fields_alias_pattern">Must match regular expression: <code>^[a-zA-Z0-9,\-_:]+$</code></span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="ADDED_fields_alias_minLength">Must be at least <code>1</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="ADDED_fields_alias_maxLength">Must be at most <code>32</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_wwpn">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_wwpn">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_wwpn" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_wwpn" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_wwpn')" type="button"><span class="property-name">wwpn</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_wwpn" class="collapse property-definition-div" data-parent="#accordionADDED_fields_wwpn" id="ADDED_fields_wwpn">
+    <div class="card-body pl-5">
+    <h4>Wwpn</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>World Wide Port Name for port A or <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="ADDED_fields_wwpn_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_wwpn_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_wwpn_anyOf_i0" id="ADDED_fields_wwpn_anyOf_i0" onclick="setAnchor('#ADDED_fields_wwpn_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_wwpn_anyOf_i1" id="ADDED_fields_wwpn_anyOf_i1" onclick="setAnchor('#ADDED_fields_wwpn_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_wwpn_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="pattern-value" id="ADDED_fields_wwpn_anyOf_i0_pattern">Must match regular expression: <code>^naa.[0-9a-fA-F]{16}$</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_wwpn_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_wwpn_b">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_wwpn_b">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_wwpn_b" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_wwpn_b" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_wwpn_b')" type="button"><span class="property-name">wwpn_b</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_wwpn_b" class="collapse property-definition-div" data-parent="#accordionADDED_fields_wwpn_b" id="ADDED_fields_wwpn_b">
+    <div class="card-body pl-5">
+    <h4>Wwpn B</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>World Wide Port Name for port B or <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="ADDED_fields_wwpn_b_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_wwpn_b_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_wwpn_b_anyOf_i0" id="ADDED_fields_wwpn_b_anyOf_i0" onclick="setAnchor('#ADDED_fields_wwpn_b_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_wwpn_b_anyOf_i1" id="ADDED_fields_wwpn_b_anyOf_i1" onclick="setAnchor('#ADDED_fields_wwpn_b_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_wwpn_b_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="pattern-value" id="ADDED_fields_wwpn_b_anyOf_i0_pattern">Must match regular expression: <code>^naa.[0-9a-fA-F]{16}$</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_wwpn_b_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_npiv">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_npiv">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_npiv" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_npiv" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_npiv')" type="button"><span class="property-name">npiv</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_npiv" class="collapse property-definition-div" data-parent="#accordionADDED_fields_npiv" id="ADDED_fields_npiv">
+    <div class="card-body pl-5">
+    <h4>Npiv</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+    <span class="description"><p>Number of N_Port ID Virtualization (NPIV) virtual ports to create.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED" data-toggle="collapse" onclick="setAnchor('#CHANGED')" type="button"><span class="property-name">CHANGED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED" class="collapse property-definition-div" data-parent="#accordionCHANGED" id="CHANGED">
+    <div class="card-body pl-5">
+    <h4>FCHostChangedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_id" id="CHANGED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields" id="CHANGED_fields">
+    <div class="card-body pl-5">
+    <h4>FCHostEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_id" id="CHANGED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the Fibre Channel host configuration.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_alias">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_alias">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_alias" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_alias" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_alias')" type="button"><span class="property-name">alias</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_alias" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_alias" id="CHANGED_fields_alias">
+    <div class="card-body pl-5">
+    <h4>Alias</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable alias for the Fibre Channel host.</p>
+    </span><span class="pattern-value" id="CHANGED_fields_alias_pattern">Must match regular expression: <code>^[a-zA-Z0-9,\-_:]+$</code></span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="CHANGED_fields_alias_minLength">Must be at least <code>1</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="CHANGED_fields_alias_maxLength">Must be at most <code>32</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_wwpn">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_wwpn">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_wwpn" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_wwpn" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_wwpn')" type="button"><span class="property-name">wwpn</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_wwpn" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_wwpn" id="CHANGED_fields_wwpn">
+    <div class="card-body pl-5">
+    <h4>Wwpn</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>World Wide Port Name for port A or <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_wwpn_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_wwpn_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_wwpn_anyOf_i0" id="CHANGED_fields_wwpn_anyOf_i0" onclick="setAnchor('#CHANGED_fields_wwpn_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_wwpn_anyOf_i1" id="CHANGED_fields_wwpn_anyOf_i1" onclick="setAnchor('#CHANGED_fields_wwpn_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_wwpn_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="pattern-value" id="CHANGED_fields_wwpn_anyOf_i0_pattern">Must match regular expression: <code>^naa.[0-9a-fA-F]{16}$</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_wwpn_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_wwpn_b">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_wwpn_b">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_wwpn_b" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_wwpn_b" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_wwpn_b')" type="button"><span class="property-name">wwpn_b</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_wwpn_b" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_wwpn_b" id="CHANGED_fields_wwpn_b">
+    <div class="card-body pl-5">
+    <h4>Wwpn B</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>World Wide Port Name for port B or <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_wwpn_b_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_wwpn_b_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_wwpn_b_anyOf_i0" id="CHANGED_fields_wwpn_b_anyOf_i0" onclick="setAnchor('#CHANGED_fields_wwpn_b_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_wwpn_b_anyOf_i1" id="CHANGED_fields_wwpn_b_anyOf_i1" onclick="setAnchor('#CHANGED_fields_wwpn_b_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_wwpn_b_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="pattern-value" id="CHANGED_fields_wwpn_b_anyOf_i0_pattern">Must match regular expression: <code>^naa.[0-9a-fA-F]{16}$</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_wwpn_b_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_npiv">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_npiv">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_npiv" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_npiv" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_npiv')" type="button"><span class="property-name">npiv</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_npiv" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_npiv" id="CHANGED_fields_npiv">
+    <div class="card-body pl-5">
+    <h4>Npiv</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+    <span class="description"><p>Number of N_Port ID Virtualization (NPIV) virtual ports to create.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionREMOVED">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED" data-toggle="collapse" onclick="setAnchor('#REMOVED')" type="button"><span class="property-name">REMOVED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED" class="collapse property-definition-div" data-parent="#accordionREMOVED" id="REMOVED">
+    <div class="card-body pl-5">
+    <h4>FCHostRemovedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionREMOVED_id">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED_id">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED_id" data-toggle="collapse" onclick="setAnchor('#REMOVED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED_id" class="collapse property-definition-div" data-parent="#accordionREMOVED_id" id="REMOVED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SHARING_ISCSI_TARGET_READ
+

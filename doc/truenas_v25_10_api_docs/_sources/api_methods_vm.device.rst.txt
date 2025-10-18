@@ -1,0 +1,22 @@
+vm.device
+---------
+
+.. toctree::
+
+   api_methods_vm.device.bind_choices
+   api_methods_vm.device.convert
+   api_methods_vm.device.create
+   api_methods_vm.device.delete
+   api_methods_vm.device.disk_choices
+   api_methods_vm.device.get_instance
+   api_methods_vm.device.iommu_enabled
+   api_methods_vm.device.iotype_choices
+   api_methods_vm.device.nic_attach_choices
+   api_methods_vm.device.passthrough_device
+   api_methods_vm.device.passthrough_device_choices
+   api_methods_vm.device.pptdev_choices
+   api_methods_vm.device.query
+   api_methods_vm.device.update
+   api_methods_vm.device.usb_controller_choices
+   api_methods_vm.device.usb_passthrough_choices
+   api_methods_vm.device.usb_passthrough_device

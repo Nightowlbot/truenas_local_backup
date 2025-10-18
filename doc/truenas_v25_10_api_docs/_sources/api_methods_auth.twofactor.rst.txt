@@ -1,0 +1,7 @@
+auth.twofactor
+--------------
+
+.. toctree::
+
+   api_methods_auth.twofactor.config
+   api_methods_auth.twofactor.update

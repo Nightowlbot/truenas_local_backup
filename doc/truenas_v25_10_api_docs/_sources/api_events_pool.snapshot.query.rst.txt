@@ -1,0 +1,890 @@
+pool.snapshot.query
+===================
+
+Sent on pool.snapshot changes.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionADDED">
+    <div class="card">
+    <div class="card-header" id="headingADDED">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED" data-toggle="collapse" onclick="setAnchor('#ADDED')" type="button"><span class="property-name">ADDED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED" class="collapse property-definition-div" data-parent="#accordionADDED" id="ADDED">
+    <div class="card-body pl-5">
+    <h4>PoolSnapshotAddedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_id" data-toggle="collapse" onclick="setAnchor('#ADDED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_id" class="collapse property-definition-div" data-parent="#accordionADDED_id" id="ADDED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields" data-toggle="collapse" onclick="setAnchor('#ADDED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields" class="collapse property-definition-div" data-parent="#accordionADDED_fields" id="ADDED_fields">
+    <div class="card-body pl-5">
+    <h4>PoolSnapshotEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_id" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_id" class="collapse property-definition-div" data-parent="#accordionADDED_fields_id" id="ADDED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Full snapshot identifier including dataset and snapshot name.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_properties">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_properties">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_properties" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_properties" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_properties')" type="button"><span class="property-name">properties</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_properties" class="collapse property-definition-div" data-parent="#accordionADDED_fields_properties" id="ADDED_fields_properties">
+    <div class="card-body pl-5">
+    <h4>Properties</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Object mapping ZFS property names to their values and metadata.</p>
+    </span>
+    <div class="accordion" id="accordionADDED_fields_properties_additionalProperties">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_properties_additionalProperties">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_properties_additionalProperties" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_properties_additionalProperties" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_properties_additionalProperties')" type="button"><em><span class="property-name">Additional Properties</span></em></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_properties_additionalProperties" class="collapse property-definition-div" data-parent="#accordionADDED_fields_properties_additionalProperties" id="ADDED_fields_properties_additionalProperties">
+    <div class="card-body pl-5"><p class="additional-properties">Each additional property must conform to the following schema</p>
+    <h4>PoolSnapshotEntryPropertyFields</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_properties_additionalProperties_value">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_properties_additionalProperties_value">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_properties_additionalProperties_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_properties_additionalProperties_value" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_properties_additionalProperties_value')" type="button"><span class="property-name">value</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_properties_additionalProperties_value" class="collapse property-definition-div" data-parent="#accordionADDED_fields_properties_additionalProperties_value" id="ADDED_fields_properties_additionalProperties_value">
+    <div class="card-body pl-5">
+    <h4>Value</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Current effective value of the ZFS property as a string.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_properties_additionalProperties_rawvalue">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_properties_additionalProperties_rawvalue">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_properties_additionalProperties_rawvalue" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_properties_additionalProperties_rawvalue" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_properties_additionalProperties_rawvalue')" type="button"><span class="property-name">rawvalue</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_properties_additionalProperties_rawvalue" class="collapse property-definition-div" data-parent="#accordionADDED_fields_properties_additionalProperties_rawvalue" id="ADDED_fields_properties_additionalProperties_rawvalue">
+    <div class="card-body pl-5">
+    <h4>Rawvalue</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Raw string value of the ZFS property as stored.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_properties_additionalProperties_source">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_properties_additionalProperties_source">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_properties_additionalProperties_source" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_properties_additionalProperties_source" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_properties_additionalProperties_source')" type="button"><span class="property-name">source</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_properties_additionalProperties_source" class="collapse property-definition-div" data-parent="#accordionADDED_fields_properties_additionalProperties_source" id="ADDED_fields_properties_additionalProperties_source">
+    <div class="card-body pl-5">
+    <h4>Source</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Source of the property value.</p>
+    <ul>
+    <li><code>NONE</code>: Property is not set</li>
+    <li><code>DEFAULT</code>: Using ZFS default value</li>
+    <li><code>LOCAL</code>: Set locally on this snapshot</li>
+    <li><code>TEMPORARY</code>: Temporary override value</li>
+    <li><code>INHERITED</code>: Inherited from parent dataset</li>
+    <li><code>RECEIVED</code>: Set by ZFS receive operation</li>
+    </ul>
+    </span><div class="enum-value" id="ADDED_fields_properties_additionalProperties_source_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"NONE"</li><li class="list-group-item enum-item">"DEFAULT"</li><li class="list-group-item enum-item">"LOCAL"</li><li class="list-group-item enum-item">"TEMPORARY"</li><li class="list-group-item enum-item">"INHERITED"</li><li class="list-group-item enum-item">"RECEIVED"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_properties_additionalProperties_parsed">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_properties_additionalProperties_parsed">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_properties_additionalProperties_parsed" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_properties_additionalProperties_parsed" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_properties_additionalProperties_parsed')" type="button"><span class="property-name">parsed</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_properties_additionalProperties_parsed" class="collapse property-definition-div" data-parent="#accordionADDED_fields_properties_additionalProperties_parsed" id="ADDED_fields_properties_additionalProperties_parsed">
+    <div class="card-body pl-5">
+    <h4>Parsed</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Property value parsed into the appropriate type (string, boolean, integer, etc.).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_pool">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_pool">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_pool" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_pool" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_pool')" type="button"><span class="property-name">pool</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_pool" class="collapse property-definition-div" data-parent="#accordionADDED_fields_pool" id="ADDED_fields_pool">
+    <div class="card-body pl-5">
+    <h4>Pool</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name of the ZFS pool containing this snapshot.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_name">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_name">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_name" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_name" class="collapse property-definition-div" data-parent="#accordionADDED_fields_name" id="ADDED_fields_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Full name of the snapshot including dataset path.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_type">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_type">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_type" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_type')" type="button"><span class="property-name">type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_type" class="collapse property-definition-div" data-parent="#accordionADDED_fields_type" id="ADDED_fields_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Type identifier indicating this is a ZFS snapshot.</p>
+    </span><div class="enum-value" id="ADDED_fields_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"SNAPSHOT"</li></ul>
+    </div><span class="const-value" id="ADDED_fields_type_const">Specific value: <code>"SNAPSHOT"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_snapshot_name">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_snapshot_name">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_snapshot_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_snapshot_name" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_snapshot_name')" type="button"><span class="property-name">snapshot_name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_snapshot_name" class="collapse property-definition-div" data-parent="#accordionADDED_fields_snapshot_name" id="ADDED_fields_snapshot_name">
+    <div class="card-body pl-5">
+    <h4>Snapshot Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Just the snapshot name portion without the dataset path.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_dataset">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_dataset">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_dataset" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_dataset" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_dataset')" type="button"><span class="property-name">dataset</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_dataset" class="collapse property-definition-div" data-parent="#accordionADDED_fields_dataset" id="ADDED_fields_dataset">
+    <div class="card-body pl-5">
+    <h4>Dataset</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name of the dataset this snapshot was taken from.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_createtxg">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_createtxg">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_createtxg" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_createtxg" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_createtxg')" type="button"><span class="property-name">createtxg</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_createtxg" class="collapse property-definition-div" data-parent="#accordionADDED_fields_createtxg" id="ADDED_fields_createtxg">
+    <div class="card-body pl-5">
+    <h4>Createtxg</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Transaction group ID when the snapshot was created.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_holds">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_holds">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_holds" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_holds" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_holds')" type="button"><span class="property-name">holds</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_holds" class="collapse property-definition-div" data-parent="#accordionADDED_fields_holds" id="ADDED_fields_holds">
+    <div class="card-body pl-5">
+    <h4>Holds</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Returned when options.extra.holds is set.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_holds_truenas">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_holds_truenas">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_holds_truenas" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_holds_truenas" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_holds_truenas')" type="button"><span class="property-name">truenas</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_holds_truenas" class="collapse property-definition-div" data-parent="#accordionADDED_fields_holds_truenas" id="ADDED_fields_holds_truenas">
+    <div class="card-body pl-5">
+    <h4>Truenas</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Present if a hold has been placed on the snapshot.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_retention">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_retention">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_retention" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_retention" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_retention')" type="button"><span class="property-name">retention</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_retention" class="collapse property-definition-div" data-parent="#accordionADDED_fields_retention" id="ADDED_fields_retention">
+    <div class="card-body pl-5">
+    <h4>Retention</h4><br/>
+    <span class="description"><p>Returned when options.extra.retention is set.</p>
+    </span><div class="any-of-value" id="ADDED_fields_retention_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_retention_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_retention_anyOf_i0" id="ADDED_fields_retention_anyOf_i0" onclick="setAnchor('#ADDED_fields_retention_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_retention_anyOf_i1" id="ADDED_fields_retention_anyOf_i1" onclick="setAnchor('#ADDED_fields_retention_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_retention_anyOf_i0" role="tabpanel">
+    <br/>
+    <div class="one-of-value" id="ADDED_fields_retention_anyOf_i0_oneOf"><h2 class="handle">
+    <label>One of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_retention_anyOf_i0_oneOf_oneOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active oneOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_retention_anyOf_i0_oneOf_i0" id="ADDED_fields_retention_anyOf_i0_oneOf_i0" onclick="setAnchor('#ADDED_fields_retention_anyOf_i0_oneOf_i0')" role="tab">PoolSnapshotRetentionPST</a>
+    </li><li class="nav-item">
+    <a class="nav-link oneOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_retention_anyOf_i0_oneOf_i1" id="ADDED_fields_retention_anyOf_i0_oneOf_i1" onclick="setAnchor('#ADDED_fields_retention_anyOf_i0_oneOf_i1')" role="tab">PoolSnapshotRetentionProperty</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_retention_anyOf_i0_oneOf_i0" role="tabpanel">
+    <h4>PoolSnapshotRetentionPST</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_retention_anyOf_i0_oneOf_i0_datetime">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_retention_anyOf_i0_oneOf_i0_datetime">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_retention_anyOf_i0_oneOf_i0_datetime" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_retention_anyOf_i0_oneOf_i0_datetime" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_retention_anyOf_i0_oneOf_i0_datetime')" type="button"><span class="property-name">datetime</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_retention_anyOf_i0_oneOf_i0_datetime" class="collapse property-definition-div" data-parent="#accordionADDED_fields_retention_anyOf_i0_oneOf_i0_datetime" id="ADDED_fields_retention_anyOf_i0_oneOf_i0_datetime">
+    <div class="card-body pl-5">
+    <h4>Datetime</h4><span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: date-time</span><br/>
+    <span class="description"><p>Timestamp when the snapshot will be eligible for removal.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_retention_anyOf_i0_oneOf_i0_source">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_retention_anyOf_i0_oneOf_i0_source">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_retention_anyOf_i0_oneOf_i0_source" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_retention_anyOf_i0_oneOf_i0_source" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_retention_anyOf_i0_oneOf_i0_source')" type="button"><span class="property-name">source</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_retention_anyOf_i0_oneOf_i0_source" class="collapse property-definition-div" data-parent="#accordionADDED_fields_retention_anyOf_i0_oneOf_i0_source" id="ADDED_fields_retention_anyOf_i0_oneOf_i0_source">
+    <div class="card-body pl-5">
+    <h4>Source</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Indicates retention is managed by a periodic snapshot task.</p>
+    </span><div class="enum-value" id="ADDED_fields_retention_anyOf_i0_oneOf_i0_source_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"periodic_snapshot_task"</li></ul>
+    </div><span class="const-value" id="ADDED_fields_retention_anyOf_i0_oneOf_i0_source_const">Specific value: <code>"periodic_snapshot_task"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_retention_anyOf_i0_oneOf_i0_periodic_snapshot_task_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_retention_anyOf_i0_oneOf_i0_periodic_snapshot_task_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_retention_anyOf_i0_oneOf_i0_periodic_snapshot_task_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_retention_anyOf_i0_oneOf_i0_periodic_snapshot_task_id" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_retention_anyOf_i0_oneOf_i0_periodic_snapshot_task_id')" type="button"><span class="property-name">periodic_snapshot_task_id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_retention_anyOf_i0_oneOf_i0_periodic_snapshot_task_id" class="collapse property-definition-div" data-parent="#accordionADDED_fields_retention_anyOf_i0_oneOf_i0_periodic_snapshot_task_id" id="ADDED_fields_retention_anyOf_i0_oneOf_i0_periodic_snapshot_task_id">
+    <div class="card-body pl-5">
+    <h4>Periodic Snapshot Task Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>ID of the periodic snapshot task managing this retention.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_retention_anyOf_i0_oneOf_i1" role="tabpanel">
+    <h4>PoolSnapshotRetentionProperty</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_retention_anyOf_i0_oneOf_i1_datetime">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_retention_anyOf_i0_oneOf_i1_datetime">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_retention_anyOf_i0_oneOf_i1_datetime" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_retention_anyOf_i0_oneOf_i1_datetime" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_retention_anyOf_i0_oneOf_i1_datetime')" type="button"><span class="property-name">datetime</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_retention_anyOf_i0_oneOf_i1_datetime" class="collapse property-definition-div" data-parent="#accordionADDED_fields_retention_anyOf_i0_oneOf_i1_datetime" id="ADDED_fields_retention_anyOf_i0_oneOf_i1_datetime">
+    <div class="card-body pl-5">
+    <h4>Datetime</h4><span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: date-time</span><br/>
+    <span class="description"><p>Timestamp when the snapshot will be eligible for removal.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_retention_anyOf_i0_oneOf_i1_source">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_retention_anyOf_i0_oneOf_i1_source">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_retention_anyOf_i0_oneOf_i1_source" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_retention_anyOf_i0_oneOf_i1_source" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_retention_anyOf_i0_oneOf_i1_source')" type="button"><span class="property-name">source</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_retention_anyOf_i0_oneOf_i1_source" class="collapse property-definition-div" data-parent="#accordionADDED_fields_retention_anyOf_i0_oneOf_i1_source" id="ADDED_fields_retention_anyOf_i0_oneOf_i1_source">
+    <div class="card-body pl-5">
+    <h4>Source</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Indicates retention is managed by ZFS properties.</p>
+    </span><div class="enum-value" id="ADDED_fields_retention_anyOf_i0_oneOf_i1_source_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"property"</li></ul>
+    </div><span class="const-value" id="ADDED_fields_retention_anyOf_i0_oneOf_i1_source_const">Specific value: <code>"property"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div></div></div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_retention_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED" data-toggle="collapse" onclick="setAnchor('#CHANGED')" type="button"><span class="property-name">CHANGED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED" class="collapse property-definition-div" data-parent="#accordionCHANGED" id="CHANGED">
+    <div class="card-body pl-5">
+    <h4>PoolSnapshotChangedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_id" id="CHANGED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields" id="CHANGED_fields">
+    <div class="card-body pl-5">
+    <h4>PoolSnapshotEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_id" id="CHANGED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Full snapshot identifier including dataset and snapshot name.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_properties">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_properties">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_properties" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_properties" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_properties')" type="button"><span class="property-name">properties</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_properties" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_properties" id="CHANGED_fields_properties">
+    <div class="card-body pl-5">
+    <h4>Properties</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Object mapping ZFS property names to their values and metadata.</p>
+    </span>
+    <div class="accordion" id="accordionCHANGED_fields_properties_additionalProperties">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_properties_additionalProperties">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_properties_additionalProperties" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_properties_additionalProperties" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_properties_additionalProperties')" type="button"><em><span class="property-name">Additional Properties</span></em></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_properties_additionalProperties" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_properties_additionalProperties" id="CHANGED_fields_properties_additionalProperties">
+    <div class="card-body pl-5"><p class="additional-properties">Each additional property must conform to the following schema</p>
+    <h4>PoolSnapshotEntryPropertyFields</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_properties_additionalProperties_value">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_properties_additionalProperties_value">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_properties_additionalProperties_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_properties_additionalProperties_value" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_properties_additionalProperties_value')" type="button"><span class="property-name">value</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_properties_additionalProperties_value" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_properties_additionalProperties_value" id="CHANGED_fields_properties_additionalProperties_value">
+    <div class="card-body pl-5">
+    <h4>Value</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Current effective value of the ZFS property as a string.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_properties_additionalProperties_rawvalue">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_properties_additionalProperties_rawvalue">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_properties_additionalProperties_rawvalue" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_properties_additionalProperties_rawvalue" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_properties_additionalProperties_rawvalue')" type="button"><span class="property-name">rawvalue</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_properties_additionalProperties_rawvalue" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_properties_additionalProperties_rawvalue" id="CHANGED_fields_properties_additionalProperties_rawvalue">
+    <div class="card-body pl-5">
+    <h4>Rawvalue</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Raw string value of the ZFS property as stored.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_properties_additionalProperties_source">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_properties_additionalProperties_source">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_properties_additionalProperties_source" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_properties_additionalProperties_source" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_properties_additionalProperties_source')" type="button"><span class="property-name">source</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_properties_additionalProperties_source" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_properties_additionalProperties_source" id="CHANGED_fields_properties_additionalProperties_source">
+    <div class="card-body pl-5">
+    <h4>Source</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Source of the property value.</p>
+    <ul>
+    <li><code>NONE</code>: Property is not set</li>
+    <li><code>DEFAULT</code>: Using ZFS default value</li>
+    <li><code>LOCAL</code>: Set locally on this snapshot</li>
+    <li><code>TEMPORARY</code>: Temporary override value</li>
+    <li><code>INHERITED</code>: Inherited from parent dataset</li>
+    <li><code>RECEIVED</code>: Set by ZFS receive operation</li>
+    </ul>
+    </span><div class="enum-value" id="CHANGED_fields_properties_additionalProperties_source_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"NONE"</li><li class="list-group-item enum-item">"DEFAULT"</li><li class="list-group-item enum-item">"LOCAL"</li><li class="list-group-item enum-item">"TEMPORARY"</li><li class="list-group-item enum-item">"INHERITED"</li><li class="list-group-item enum-item">"RECEIVED"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_properties_additionalProperties_parsed">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_properties_additionalProperties_parsed">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_properties_additionalProperties_parsed" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_properties_additionalProperties_parsed" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_properties_additionalProperties_parsed')" type="button"><span class="property-name">parsed</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_properties_additionalProperties_parsed" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_properties_additionalProperties_parsed" id="CHANGED_fields_properties_additionalProperties_parsed">
+    <div class="card-body pl-5">
+    <h4>Parsed</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Property value parsed into the appropriate type (string, boolean, integer, etc.).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_pool">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_pool">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_pool" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_pool" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_pool')" type="button"><span class="property-name">pool</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_pool" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_pool" id="CHANGED_fields_pool">
+    <div class="card-body pl-5">
+    <h4>Pool</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name of the ZFS pool containing this snapshot.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_name">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_name">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_name" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_name" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_name" id="CHANGED_fields_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Full name of the snapshot including dataset path.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_type">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_type">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_type" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_type')" type="button"><span class="property-name">type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_type" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_type" id="CHANGED_fields_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Type identifier indicating this is a ZFS snapshot.</p>
+    </span><div class="enum-value" id="CHANGED_fields_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"SNAPSHOT"</li></ul>
+    </div><span class="const-value" id="CHANGED_fields_type_const">Specific value: <code>"SNAPSHOT"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_snapshot_name">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_snapshot_name">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_snapshot_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_snapshot_name" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_snapshot_name')" type="button"><span class="property-name">snapshot_name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_snapshot_name" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_snapshot_name" id="CHANGED_fields_snapshot_name">
+    <div class="card-body pl-5">
+    <h4>Snapshot Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Just the snapshot name portion without the dataset path.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_dataset">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_dataset">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_dataset" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_dataset" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_dataset')" type="button"><span class="property-name">dataset</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_dataset" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_dataset" id="CHANGED_fields_dataset">
+    <div class="card-body pl-5">
+    <h4>Dataset</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name of the dataset this snapshot was taken from.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_createtxg">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_createtxg">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_createtxg" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_createtxg" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_createtxg')" type="button"><span class="property-name">createtxg</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_createtxg" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_createtxg" id="CHANGED_fields_createtxg">
+    <div class="card-body pl-5">
+    <h4>Createtxg</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Transaction group ID when the snapshot was created.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_holds">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_holds">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_holds" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_holds" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_holds')" type="button"><span class="property-name">holds</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_holds" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_holds" id="CHANGED_fields_holds">
+    <div class="card-body pl-5">
+    <h4>Holds</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Returned when options.extra.holds is set.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_holds_truenas">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_holds_truenas">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_holds_truenas" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_holds_truenas" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_holds_truenas')" type="button"><span class="property-name">truenas</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_holds_truenas" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_holds_truenas" id="CHANGED_fields_holds_truenas">
+    <div class="card-body pl-5">
+    <h4>Truenas</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Present if a hold has been placed on the snapshot.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_retention">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_retention">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_retention" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_retention" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_retention')" type="button"><span class="property-name">retention</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_retention" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_retention" id="CHANGED_fields_retention">
+    <div class="card-body pl-5">
+    <h4>Retention</h4><br/>
+    <span class="description"><p>Returned when options.extra.retention is set.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_retention_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_retention_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_retention_anyOf_i0" id="CHANGED_fields_retention_anyOf_i0" onclick="setAnchor('#CHANGED_fields_retention_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_retention_anyOf_i1" id="CHANGED_fields_retention_anyOf_i1" onclick="setAnchor('#CHANGED_fields_retention_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_retention_anyOf_i0" role="tabpanel">
+    <br/>
+    <div class="one-of-value" id="CHANGED_fields_retention_anyOf_i0_oneOf"><h2 class="handle">
+    <label>One of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_retention_anyOf_i0_oneOf_oneOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active oneOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_retention_anyOf_i0_oneOf_i0" id="CHANGED_fields_retention_anyOf_i0_oneOf_i0" onclick="setAnchor('#CHANGED_fields_retention_anyOf_i0_oneOf_i0')" role="tab">PoolSnapshotRetentionPST</a>
+    </li><li class="nav-item">
+    <a class="nav-link oneOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_retention_anyOf_i0_oneOf_i1" id="CHANGED_fields_retention_anyOf_i0_oneOf_i1" onclick="setAnchor('#CHANGED_fields_retention_anyOf_i0_oneOf_i1')" role="tab">PoolSnapshotRetentionProperty</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_retention_anyOf_i0_oneOf_i0" role="tabpanel">
+    <h4>PoolSnapshotRetentionPST</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_retention_anyOf_i0_oneOf_i0_datetime">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_retention_anyOf_i0_oneOf_i0_datetime">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_retention_anyOf_i0_oneOf_i0_datetime" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_retention_anyOf_i0_oneOf_i0_datetime" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_retention_anyOf_i0_oneOf_i0_datetime')" type="button"><span class="property-name">datetime</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_retention_anyOf_i0_oneOf_i0_datetime" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_retention_anyOf_i0_oneOf_i0_datetime" id="CHANGED_fields_retention_anyOf_i0_oneOf_i0_datetime">
+    <div class="card-body pl-5">
+    <h4>Datetime</h4><span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: date-time</span><br/>
+    <span class="description"><p>Timestamp when the snapshot will be eligible for removal.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_retention_anyOf_i0_oneOf_i0_source">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_retention_anyOf_i0_oneOf_i0_source">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_retention_anyOf_i0_oneOf_i0_source" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_retention_anyOf_i0_oneOf_i0_source" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_retention_anyOf_i0_oneOf_i0_source')" type="button"><span class="property-name">source</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_retention_anyOf_i0_oneOf_i0_source" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_retention_anyOf_i0_oneOf_i0_source" id="CHANGED_fields_retention_anyOf_i0_oneOf_i0_source">
+    <div class="card-body pl-5">
+    <h4>Source</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Indicates retention is managed by a periodic snapshot task.</p>
+    </span><div class="enum-value" id="CHANGED_fields_retention_anyOf_i0_oneOf_i0_source_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"periodic_snapshot_task"</li></ul>
+    </div><span class="const-value" id="CHANGED_fields_retention_anyOf_i0_oneOf_i0_source_const">Specific value: <code>"periodic_snapshot_task"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_retention_anyOf_i0_oneOf_i0_periodic_snapshot_task_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_retention_anyOf_i0_oneOf_i0_periodic_snapshot_task_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_retention_anyOf_i0_oneOf_i0_periodic_snapshot_task_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_retention_anyOf_i0_oneOf_i0_periodic_snapshot_task_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_retention_anyOf_i0_oneOf_i0_periodic_snapshot_task_id')" type="button"><span class="property-name">periodic_snapshot_task_id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_retention_anyOf_i0_oneOf_i0_periodic_snapshot_task_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_retention_anyOf_i0_oneOf_i0_periodic_snapshot_task_id" id="CHANGED_fields_retention_anyOf_i0_oneOf_i0_periodic_snapshot_task_id">
+    <div class="card-body pl-5">
+    <h4>Periodic Snapshot Task Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>ID of the periodic snapshot task managing this retention.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_retention_anyOf_i0_oneOf_i1" role="tabpanel">
+    <h4>PoolSnapshotRetentionProperty</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_retention_anyOf_i0_oneOf_i1_datetime">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_retention_anyOf_i0_oneOf_i1_datetime">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_retention_anyOf_i0_oneOf_i1_datetime" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_retention_anyOf_i0_oneOf_i1_datetime" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_retention_anyOf_i0_oneOf_i1_datetime')" type="button"><span class="property-name">datetime</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_retention_anyOf_i0_oneOf_i1_datetime" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_retention_anyOf_i0_oneOf_i1_datetime" id="CHANGED_fields_retention_anyOf_i0_oneOf_i1_datetime">
+    <div class="card-body pl-5">
+    <h4>Datetime</h4><span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: date-time</span><br/>
+    <span class="description"><p>Timestamp when the snapshot will be eligible for removal.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_retention_anyOf_i0_oneOf_i1_source">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_retention_anyOf_i0_oneOf_i1_source">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_retention_anyOf_i0_oneOf_i1_source" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_retention_anyOf_i0_oneOf_i1_source" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_retention_anyOf_i0_oneOf_i1_source')" type="button"><span class="property-name">source</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_retention_anyOf_i0_oneOf_i1_source" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_retention_anyOf_i0_oneOf_i1_source" id="CHANGED_fields_retention_anyOf_i0_oneOf_i1_source">
+    <div class="card-body pl-5">
+    <h4>Source</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Indicates retention is managed by ZFS properties.</p>
+    </span><div class="enum-value" id="CHANGED_fields_retention_anyOf_i0_oneOf_i1_source_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"property"</li></ul>
+    </div><span class="const-value" id="CHANGED_fields_retention_anyOf_i0_oneOf_i1_source_const">Specific value: <code>"property"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div></div></div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_retention_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionREMOVED">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED" data-toggle="collapse" onclick="setAnchor('#REMOVED')" type="button"><span class="property-name">REMOVED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED" class="collapse property-definition-div" data-parent="#accordionREMOVED" id="REMOVED">
+    <div class="card-body pl-5">
+    <h4>PoolSnapshotRemovedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionREMOVED_id">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED_id">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED_id" data-toggle="collapse" onclick="setAnchor('#REMOVED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED_id" class="collapse property-definition-div" data-parent="#accordionREMOVED_id" id="REMOVED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SNAPSHOT_READ
+

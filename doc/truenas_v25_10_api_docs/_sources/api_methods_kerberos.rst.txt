@@ -1,0 +1,7 @@
+kerberos
+--------
+
+.. toctree::
+
+   api_methods_kerberos.config
+   api_methods_kerberos.update

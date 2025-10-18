@@ -1,0 +1,7 @@
+nvmet.global
+------------
+
+.. toctree::
+
+   api_methods_nvmet.global.config
+   api_methods_nvmet.global.update

@@ -1,0 +1,82 @@
+vm.bootloader_options
+=====================
+
+Supported motherboard firmware options.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>VMBootloaderOptionsResult</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>VMBootloaderOptionsResult return fields.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_UEFI">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_UEFI">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_UEFI" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_UEFI" data-toggle="collapse" onclick="setAnchor('#Return_value_UEFI')" type="button"><span class="property-name">UEFI</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_UEFI" class="collapse property-definition-div" data-parent="#accordionReturn_value_UEFI" id="Return_value_UEFI">
+    <div class="card-body pl-5">
+    <h4>Uefi</h4><span class="badge badge-dark value-type">Type: const</span> <span class="badge badge-success default-value">Default: "UEFI"</span><br/>
+    <span class="description"><p>Modern UEFI firmware with secure boot support.</p>
+    </span><div class="enum-value" id="Return_value_UEFI_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"UEFI"</li></ul>
+    </div><span class="const-value" id="Return_value_UEFI_const">Specific value: <code>"UEFI"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_UEFI_CSM">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_UEFI_CSM">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_UEFI_CSM" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_UEFI_CSM" data-toggle="collapse" onclick="setAnchor('#Return_value_UEFI_CSM')" type="button"><span class="property-name">UEFI_CSM</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_UEFI_CSM" class="collapse property-definition-div" data-parent="#accordionReturn_value_UEFI_CSM" id="Return_value_UEFI_CSM">
+    <div class="card-body pl-5">
+    <h4>Uefi Csm</h4><span class="badge badge-dark value-type">Type: const</span> <span class="badge badge-success default-value">Default: "Legacy BIOS"</span><br/>
+    <span class="description"><p>UEFI with Compatibility Support Module for legacy BIOS compatibility.</p>
+    </span><div class="enum-value" id="Return_value_UEFI_CSM_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"Legacy BIOS"</li></ul>
+    </div><span class="const-value" id="Return_value_UEFI_CSM_const">Specific value: <code>"Legacy BIOS"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* VM_READ
+

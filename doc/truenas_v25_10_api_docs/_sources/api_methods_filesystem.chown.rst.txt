@@ -1,0 +1,239 @@
+filesystem.chown
+================
+
+Change owner or group of file at `path`.
+
+`uid` and `gid` specify new owner of the file. If either key is absent or None, then existing value on the file is not changed.
+
+`user` and `group` alternatively allow specifying a uid gid by user name or group name.
+
+`recursive` performs action recursively, but does not traverse filesystem mount points.
+
+If `traverse` and `recursive` are specified, then the chown operation will traverse filesystem mount points.
+
+This method is a job.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: filesystem_chown</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>filesystem_chown</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>FilesystemChownArgs parameters.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_path">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_path">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_path" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_path')" type="button"><span class="property-name">path</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_path" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_path" id="Call_parameters_items_i0_path">
+    <div class="card-body pl-5">
+    <h4>Path</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Filesystem path to modify.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_path_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_uid">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_uid">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_uid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_uid" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_uid')" type="button"><span class="property-name">uid</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_uid" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_uid" id="Call_parameters_items_i0_uid">
+    <div class="card-body pl-5">
+    <h4>Uid</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Numeric user ID to set as owner. <code>null</code> to leave unchanged.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_uid_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_uid_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_uid_anyOf_i0" id="Call_parameters_items_i0_uid_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_uid_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_uid_anyOf_i1" id="Call_parameters_items_i0_uid_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_uid_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_uid_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_uid_anyOf_i0_number">Value must be greater or equal to <code>-1</code> and lesser or equal to <code>2147483647</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_uid_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_user">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_user">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_user" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_user" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_user')" type="button"><span class="property-name">user</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_user" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_user" id="Call_parameters_items_i0_user">
+    <div class="card-body pl-5">
+    <h4>User</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Username to set as owner. <code>null</code> to leave unchanged.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_user_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_user_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_user_anyOf_i0" id="Call_parameters_items_i0_user_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_user_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_user_anyOf_i1" id="Call_parameters_items_i0_user_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_user_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_user_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_user_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_user_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_gid">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_gid">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_gid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_gid" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_gid')" type="button"><span class="property-name">gid</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_gid" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_gid" id="Call_parameters_items_i0_gid">
+    <div class="card-body pl-5">
+    <h4>Gid</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Numeric group ID to set as group owner. <code>null</code> to leave unchanged.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_gid_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_gid_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_gid_anyOf_i0" id="Call_parameters_items_i0_gid_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_gid_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_gid_anyOf_i1" id="Call_parameters_items_i0_gid_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_gid_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_gid_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_gid_anyOf_i0_number">Value must be greater or equal to <code>-1</code> and lesser or equal to <code>2147483647</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_gid_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_group">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_group">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_group" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_group" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_group')" type="button"><span class="property-name">group</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_group" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_group" id="Call_parameters_items_i0_group">
+    <div class="card-body pl-5">
+    <h4>Group</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Group name to set as group owner. <code>null</code> to leave unchanged.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_group_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_group_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_group_anyOf_i0" id="Call_parameters_items_i0_group_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_group_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_group_anyOf_i1" id="Call_parameters_items_i0_group_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_group_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_group_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_group_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_group_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_options">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_options">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_options" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_options" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_options')" type="button"><span class="property-name">options</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_options" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_options" id="Call_parameters_items_i0_options">
+    <div class="card-body pl-5">
+    <h4>FilesystemChownOptions</h4><span class="badge badge-dark value-type">Type: object</span> <span class="badge badge-success default-value">Default: {"recursive": false, "traverse": false}</span><br/>
+    <span class="description"><p>Additional options for the ownership change operation.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_options_recursive">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_options_recursive">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_options_recursive" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_options_recursive" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_options_recursive')" type="button"><span class="property-name">recursive</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_options_recursive" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_options_recursive" id="Call_parameters_items_i0_options_recursive">
+    <div class="card-body pl-5">
+    <h4>Recursive</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to apply the operation recursively to subdirectories.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_options_traverse">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_options_traverse">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_options_traverse" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_options_traverse" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_options_traverse')" type="button"><span class="property-name">traverse</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_options_traverse" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_options_traverse" id="Call_parameters_items_i0_options_traverse">
+    <div class="card-body pl-5">
+    <h4>Traverse</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>If set do not limit to single dataset / filesystem.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: null</span><br/>
+    <span class="description"><p>Returns <code>null</code> when the ownership change is successfully completed.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* FILESYSTEM_ATTRS_WRITE
+

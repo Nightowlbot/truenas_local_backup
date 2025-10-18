@@ -1,0 +1,6 @@
+system.ntpserver
+----------------
+
+.. toctree::
+
+   api_events_system.ntpserver.query

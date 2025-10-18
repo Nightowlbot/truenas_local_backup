@@ -1,0 +1,10 @@
+boot.environment
+----------------
+
+.. toctree::
+
+   api_methods_boot.environment.activate
+   api_methods_boot.environment.clone
+   api_methods_boot.environment.destroy
+   api_methods_boot.environment.keep
+   api_methods_boot.environment.query

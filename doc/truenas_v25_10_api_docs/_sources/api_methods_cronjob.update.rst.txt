@@ -1,0 +1,466 @@
+cronjob.update
+==============
+
+Update cronjob of `id`.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: id</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>ID of the cron job to update.</p>
+    </span>
+    </div>
+    </div>
+    <h5>Parameter 2: data</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>data</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Updated cron job configuration data.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_enabled">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_enabled">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_enabled" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_enabled" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_enabled')" type="button"><span class="property-name">enabled</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_enabled" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_enabled" id="Call_parameters_items_i1_enabled">
+    <div class="card-body pl-5">
+    <h4>Enabled</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether the cron job is active and will be executed.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_stderr">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_stderr">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_stderr" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_stderr" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_stderr')" type="button"><span class="property-name">stderr</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_stderr" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_stderr" id="Call_parameters_items_i1_stderr">
+    <div class="card-body pl-5">
+    <h4>Stderr</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to redirect standard error output to email.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_stdout">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_stdout">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_stdout" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_stdout" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_stdout')" type="button"><span class="property-name">stdout</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_stdout" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_stdout" id="Call_parameters_items_i1_stdout">
+    <div class="card-body pl-5">
+    <h4>Stdout</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to redirect standard output to email.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_schedule">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_schedule">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_schedule" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_schedule" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_schedule')" type="button"><span class="property-name">schedule</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_schedule" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_schedule" id="Call_parameters_items_i1_schedule">
+    <div class="card-body pl-5">
+    <h4>CronJobSchedule</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Cron schedule configuration for when the job runs.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_schedule_minute">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_schedule_minute">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_schedule_minute" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_schedule_minute" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_schedule_minute')" type="button"><span class="property-name">minute</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_schedule_minute" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_schedule_minute" id="Call_parameters_items_i1_schedule_minute">
+    <div class="card-body pl-5">
+    <h4>Minute</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "00"</span><br/>
+    <span class="description"><p>"00" - "59"</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_schedule_hour">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_schedule_hour">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_schedule_hour" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_schedule_hour" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_schedule_hour')" type="button"><span class="property-name">hour</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_schedule_hour" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_schedule_hour" id="Call_parameters_items_i1_schedule_hour">
+    <div class="card-body pl-5">
+    <h4>Hour</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "*"</span><br/>
+    <span class="description"><p>"00" - "23"</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_schedule_dom">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_schedule_dom">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_schedule_dom" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_schedule_dom" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_schedule_dom')" type="button"><span class="property-name">dom</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_schedule_dom" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_schedule_dom" id="Call_parameters_items_i1_schedule_dom">
+    <div class="card-body pl-5">
+    <h4>Dom</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "*"</span><br/>
+    <span class="description"><p>"1" - "31"</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_schedule_month">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_schedule_month">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_schedule_month" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_schedule_month" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_schedule_month')" type="button"><span class="property-name">month</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_schedule_month" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_schedule_month" id="Call_parameters_items_i1_schedule_month">
+    <div class="card-body pl-5">
+    <h4>Month</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "*"</span><br/>
+    <span class="description"><p>"1" (January) - "12" (December)</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_schedule_dow">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_schedule_dow">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_schedule_dow" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_schedule_dow" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_schedule_dow')" type="button"><span class="property-name">dow</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_schedule_dow" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_schedule_dow" id="Call_parameters_items_i1_schedule_dow">
+    <div class="card-body pl-5">
+    <h4>Dow</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "*"</span><br/>
+    <span class="description"><p>"1" (Monday) - "7" (Sunday)</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_command">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_command">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_command" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_command" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_command')" type="button"><span class="property-name">command</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_command" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_command" id="Call_parameters_items_i1_command">
+    <div class="card-body pl-5">
+    <h4>Command</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Shell command or script to execute.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_description">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_description">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_description" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_description')" type="button"><span class="property-name">description</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_description" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_description" id="Call_parameters_items_i1_description">
+    <div class="card-body pl-5">
+    <h4>Description</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable description of what this cron job does.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_user">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_user">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_user" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_user" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_user')" type="button"><span class="property-name">user</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_user" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_user" id="Call_parameters_items_i1_user">
+    <div class="card-body pl-5">
+    <h4>User</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>System user account to run the command as.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>CronJobEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The updated cron job configuration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_enabled">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_enabled">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_enabled" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_enabled" data-toggle="collapse" onclick="setAnchor('#Return_value_enabled')" type="button"><span class="property-name">enabled</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_enabled" class="collapse property-definition-div" data-parent="#accordionReturn_value_enabled" id="Return_value_enabled">
+    <div class="card-body pl-5">
+    <h4>Enabled</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Whether the cron job is active and will be executed.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_stderr">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_stderr">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_stderr" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_stderr" data-toggle="collapse" onclick="setAnchor('#Return_value_stderr')" type="button"><span class="property-name">stderr</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_stderr" class="collapse property-definition-div" data-parent="#accordionReturn_value_stderr" id="Return_value_stderr">
+    <div class="card-body pl-5">
+    <h4>Stderr</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to redirect standard error output to email.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_stdout">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_stdout">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_stdout" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_stdout" data-toggle="collapse" onclick="setAnchor('#Return_value_stdout')" type="button"><span class="property-name">stdout</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_stdout" class="collapse property-definition-div" data-parent="#accordionReturn_value_stdout" id="Return_value_stdout">
+    <div class="card-body pl-5">
+    <h4>Stdout</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Whether to redirect standard output to email.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_schedule">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_schedule">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_schedule" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_schedule" data-toggle="collapse" onclick="setAnchor('#Return_value_schedule')" type="button"><span class="property-name">schedule</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_schedule" class="collapse property-definition-div" data-parent="#accordionReturn_value_schedule" id="Return_value_schedule">
+    <div class="card-body pl-5">
+    <h4>CronJobSchedule</h4><span class="badge badge-dark value-type">Type: object</span> <div class="json-default-value">Default:<div class="value">{
+      "minute": "00",
+      "hour": "*",
+      "dom": "*",
+      "month": "*",
+      "dow": "*"
+    }</div></div><br/>
+    <span class="description"><p>Cron schedule configuration for when the job runs.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_schedule_minute">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_schedule_minute">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_schedule_minute" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_schedule_minute" data-toggle="collapse" onclick="setAnchor('#Return_value_schedule_minute')" type="button"><span class="property-name">minute</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_schedule_minute" class="collapse property-definition-div" data-parent="#accordionReturn_value_schedule_minute" id="Return_value_schedule_minute">
+    <div class="card-body pl-5">
+    <h4>Minute</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "00"</span><br/>
+    <span class="description"><p>"00" - "59"</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_schedule_hour">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_schedule_hour">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_schedule_hour" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_schedule_hour" data-toggle="collapse" onclick="setAnchor('#Return_value_schedule_hour')" type="button"><span class="property-name">hour</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_schedule_hour" class="collapse property-definition-div" data-parent="#accordionReturn_value_schedule_hour" id="Return_value_schedule_hour">
+    <div class="card-body pl-5">
+    <h4>Hour</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "*"</span><br/>
+    <span class="description"><p>"00" - "23"</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_schedule_dom">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_schedule_dom">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_schedule_dom" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_schedule_dom" data-toggle="collapse" onclick="setAnchor('#Return_value_schedule_dom')" type="button"><span class="property-name">dom</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_schedule_dom" class="collapse property-definition-div" data-parent="#accordionReturn_value_schedule_dom" id="Return_value_schedule_dom">
+    <div class="card-body pl-5">
+    <h4>Dom</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "*"</span><br/>
+    <span class="description"><p>"1" - "31"</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_schedule_month">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_schedule_month">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_schedule_month" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_schedule_month" data-toggle="collapse" onclick="setAnchor('#Return_value_schedule_month')" type="button"><span class="property-name">month</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_schedule_month" class="collapse property-definition-div" data-parent="#accordionReturn_value_schedule_month" id="Return_value_schedule_month">
+    <div class="card-body pl-5">
+    <h4>Month</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "*"</span><br/>
+    <span class="description"><p>"1" (January) - "12" (December)</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_schedule_dow">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_schedule_dow">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_schedule_dow" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_schedule_dow" data-toggle="collapse" onclick="setAnchor('#Return_value_schedule_dow')" type="button"><span class="property-name">dow</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_schedule_dow" class="collapse property-definition-div" data-parent="#accordionReturn_value_schedule_dow" id="Return_value_schedule_dow">
+    <div class="card-body pl-5">
+    <h4>Dow</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "*"</span><br/>
+    <span class="description"><p>"1" (Monday) - "7" (Sunday)</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_command">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_command">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_command" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_command" data-toggle="collapse" onclick="setAnchor('#Return_value_command')" type="button"><span class="property-name">command</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_command" class="collapse property-definition-div" data-parent="#accordionReturn_value_command" id="Return_value_command">
+    <div class="card-body pl-5">
+    <h4>Command</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Shell command or script to execute.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_description">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_description">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_description" data-toggle="collapse" onclick="setAnchor('#Return_value_description')" type="button"><span class="property-name">description</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_description" class="collapse property-definition-div" data-parent="#accordionReturn_value_description" id="Return_value_description">
+    <div class="card-body pl-5">
+    <h4>Description</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: ""</span><br/>
+    <span class="description"><p>Human-readable description of what this cron job does.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_user">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_user">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_user" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_user" data-toggle="collapse" onclick="setAnchor('#Return_value_user')" type="button"><span class="property-name">user</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_user" class="collapse property-definition-div" data-parent="#accordionReturn_value_user" id="Return_value_user">
+    <div class="card-body pl-5">
+    <h4>User</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>System user account to run the command as.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the cron job.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SYSTEM_CRON_WRITE
+

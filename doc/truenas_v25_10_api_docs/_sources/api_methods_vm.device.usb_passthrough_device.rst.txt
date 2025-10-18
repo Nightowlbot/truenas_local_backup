@@ -1,0 +1,274 @@
+vm.device.usb_passthrough_device
+================================
+
+Retrieve details about `device` USB device.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: device</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>device</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>USB device identifier to get passthrough information for.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>USBPassthroughDevice</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Detailed information about the specified USB passthrough device.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_capability">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_capability">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_capability" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_capability" data-toggle="collapse" onclick="setAnchor('#Return_value_capability')" type="button"><span class="property-name">capability</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_capability" class="collapse property-definition-div" data-parent="#accordionReturn_value_capability" id="Return_value_capability">
+    <div class="card-body pl-5">
+    <h4>USBCapability</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>USB device capability and identification information.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_capability_product">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_capability_product">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_capability_product" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_capability_product" data-toggle="collapse" onclick="setAnchor('#Return_value_capability_product')" type="button"><span class="property-name">product</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_capability_product" class="collapse property-definition-div" data-parent="#accordionReturn_value_capability_product" id="Return_value_capability_product">
+    <div class="card-body pl-5">
+    <h4>Product</h4><br/>
+    <span class="description"><p>USB product name. <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="Return_value_capability_product_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_capability_product_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_product_anyOf_i0" id="Return_value_capability_product_anyOf_i0" onclick="setAnchor('#Return_value_capability_product_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_product_anyOf_i1" id="Return_value_capability_product_anyOf_i1" onclick="setAnchor('#Return_value_capability_product_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_capability_product_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_capability_product_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_capability_product_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_capability_product_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_capability_product_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_capability_product_id" data-toggle="collapse" onclick="setAnchor('#Return_value_capability_product_id')" type="button"><span class="property-name">product_id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_capability_product_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_capability_product_id" id="Return_value_capability_product_id">
+    <div class="card-body pl-5">
+    <h4>Product Id</h4><br/>
+    <span class="description"><p>USB product identifier. <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="Return_value_capability_product_id_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_capability_product_id_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_product_id_anyOf_i0" id="Return_value_capability_product_id_anyOf_i0" onclick="setAnchor('#Return_value_capability_product_id_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_product_id_anyOf_i1" id="Return_value_capability_product_id_anyOf_i1" onclick="setAnchor('#Return_value_capability_product_id_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_capability_product_id_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_capability_product_id_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_capability_vendor">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_capability_vendor">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_capability_vendor" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_capability_vendor" data-toggle="collapse" onclick="setAnchor('#Return_value_capability_vendor')" type="button"><span class="property-name">vendor</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_capability_vendor" class="collapse property-definition-div" data-parent="#accordionReturn_value_capability_vendor" id="Return_value_capability_vendor">
+    <div class="card-body pl-5">
+    <h4>Vendor</h4><br/>
+    <span class="description"><p>USB vendor name. <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="Return_value_capability_vendor_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_capability_vendor_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_vendor_anyOf_i0" id="Return_value_capability_vendor_anyOf_i0" onclick="setAnchor('#Return_value_capability_vendor_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_vendor_anyOf_i1" id="Return_value_capability_vendor_anyOf_i1" onclick="setAnchor('#Return_value_capability_vendor_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_capability_vendor_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_capability_vendor_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_capability_vendor_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_capability_vendor_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_capability_vendor_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_capability_vendor_id" data-toggle="collapse" onclick="setAnchor('#Return_value_capability_vendor_id')" type="button"><span class="property-name">vendor_id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_capability_vendor_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_capability_vendor_id" id="Return_value_capability_vendor_id">
+    <div class="card-body pl-5">
+    <h4>Vendor Id</h4><br/>
+    <span class="description"><p>USB vendor identifier. <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="Return_value_capability_vendor_id_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_capability_vendor_id_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_vendor_id_anyOf_i0" id="Return_value_capability_vendor_id_anyOf_i0" onclick="setAnchor('#Return_value_capability_vendor_id_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_vendor_id_anyOf_i1" id="Return_value_capability_vendor_id_anyOf_i1" onclick="setAnchor('#Return_value_capability_vendor_id_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_capability_vendor_id_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_capability_vendor_id_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_capability_bus">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_capability_bus">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_capability_bus" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_capability_bus" data-toggle="collapse" onclick="setAnchor('#Return_value_capability_bus')" type="button"><span class="property-name">bus</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_capability_bus" class="collapse property-definition-div" data-parent="#accordionReturn_value_capability_bus" id="Return_value_capability_bus">
+    <div class="card-body pl-5">
+    <h4>Bus</h4><br/>
+    <span class="description"><p>USB bus number. <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="Return_value_capability_bus_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_capability_bus_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_bus_anyOf_i0" id="Return_value_capability_bus_anyOf_i0" onclick="setAnchor('#Return_value_capability_bus_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_bus_anyOf_i1" id="Return_value_capability_bus_anyOf_i1" onclick="setAnchor('#Return_value_capability_bus_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_capability_bus_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_capability_bus_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_capability_device">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_capability_device">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_capability_device" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_capability_device" data-toggle="collapse" onclick="setAnchor('#Return_value_capability_device')" type="button"><span class="property-name">device</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_capability_device" class="collapse property-definition-div" data-parent="#accordionReturn_value_capability_device" id="Return_value_capability_device">
+    <div class="card-body pl-5">
+    <h4>Device</h4><br/>
+    <span class="description"><p>USB device number on bus. <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="Return_value_capability_device_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_capability_device_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_device_anyOf_i0" id="Return_value_capability_device_anyOf_i0" onclick="setAnchor('#Return_value_capability_device_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_capability_device_anyOf_i1" id="Return_value_capability_device_anyOf_i1" onclick="setAnchor('#Return_value_capability_device_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_capability_device_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_capability_device_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_available">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_available">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_available" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_available" data-toggle="collapse" onclick="setAnchor('#Return_value_available')" type="button"><span class="property-name">available</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_available" class="collapse property-definition-div" data-parent="#accordionReturn_value_available" id="Return_value_available">
+    <div class="card-body pl-5">
+    <h4>Available</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether the USB device is available for passthrough to virtual machines.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_error">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_error">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_error" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_error" data-toggle="collapse" onclick="setAnchor('#Return_value_error')" type="button"><span class="property-name">error</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_error" class="collapse property-definition-div" data-parent="#accordionReturn_value_error" id="Return_value_error">
+    <div class="card-body pl-5">
+    <h4>Error</h4><br/>
+    <span class="description"><p>Error message if the device cannot be used for passthrough. <code>null</code> if no error.</p>
+    </span><div class="any-of-value" id="Return_value_error_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_error_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_error_anyOf_i0" id="Return_value_error_anyOf_i0" onclick="setAnchor('#Return_value_error_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_error_anyOf_i1" id="Return_value_error_anyOf_i1" onclick="setAnchor('#Return_value_error_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_error_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_error_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* VM_DEVICE_READ
+

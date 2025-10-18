@@ -1,0 +1,8 @@
+ipmi.lan
+--------
+
+.. toctree::
+
+   api_methods_ipmi.lan.channels
+   api_methods_ipmi.lan.query
+   api_methods_ipmi.lan.update

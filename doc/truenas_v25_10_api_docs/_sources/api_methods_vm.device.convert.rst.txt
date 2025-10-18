@@ -1,0 +1,88 @@
+vm.device.convert
+=================
+
+Convert between disk images and ZFS volumes. Supported disk image formats         are qcow2, qed, raw, vdi, vhdx, and vmdk. The conversion direction is determined         automatically based on file extension.
+
+This method is a job.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: vm_convert</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>vm_convert</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>VMDeviceConvertArgs parameters.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_source">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_source">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_source" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_source" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_source')" type="button"><span class="property-name">source</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_source" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_source" id="Call_parameters_items_i0_source">
+    <div class="card-body pl-5">
+    <h4>Source</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Source path for the conversion (disk image file or ZFS volume).</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_source_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_destination">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_destination">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_destination" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_destination" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_destination')" type="button"><span class="property-name">destination</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_destination" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_destination" id="Call_parameters_items_i0_destination">
+    <div class="card-body pl-5">
+    <h4>Destination</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Destination path for the conversion (disk image file or ZFS volume).</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_destination_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether the conversion operation was successful.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* VM_DEVICE_WRITE
+

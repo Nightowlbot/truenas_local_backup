@@ -1,0 +1,177 @@
+virt.device.usb_choices
+=======================
+
+Provide choices for USB devices.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Object of available USB devices with their hardware information.</p>
+    </span>
+    <div class="accordion" id="accordionReturn_value_additionalProperties">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_additionalProperties">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_additionalProperties" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_additionalProperties" data-toggle="collapse" onclick="setAnchor('#Return_value_additionalProperties')" type="button"><em><span class="property-name">Additional Properties</span></em></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_additionalProperties" class="collapse property-definition-div" data-parent="#accordionReturn_value_additionalProperties" id="Return_value_additionalProperties">
+    <div class="card-body pl-5"><p class="additional-properties">Each additional property must conform to the following schema</p>
+    <h4>USBChoice</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_additionalProperties_vendor_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_additionalProperties_vendor_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_additionalProperties_vendor_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_additionalProperties_vendor_id" data-toggle="collapse" onclick="setAnchor('#Return_value_additionalProperties_vendor_id')" type="button"><span class="property-name">vendor_id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_additionalProperties_vendor_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_additionalProperties_vendor_id" id="Return_value_additionalProperties_vendor_id">
+    <div class="card-body pl-5">
+    <h4>Vendor Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>USB vendor identifier for this device.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_additionalProperties_product_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_additionalProperties_product_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_additionalProperties_product_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_additionalProperties_product_id" data-toggle="collapse" onclick="setAnchor('#Return_value_additionalProperties_product_id')" type="button"><span class="property-name">product_id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_additionalProperties_product_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_additionalProperties_product_id" id="Return_value_additionalProperties_product_id">
+    <div class="card-body pl-5">
+    <h4>Product Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>USB product identifier for this device.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_additionalProperties_bus">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_additionalProperties_bus">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_additionalProperties_bus" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_additionalProperties_bus" data-toggle="collapse" onclick="setAnchor('#Return_value_additionalProperties_bus')" type="button"><span class="property-name">bus</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_additionalProperties_bus" class="collapse property-definition-div" data-parent="#accordionReturn_value_additionalProperties_bus" id="Return_value_additionalProperties_bus">
+    <div class="card-body pl-5">
+    <h4>Bus</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>USB bus number where this device is connected.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_additionalProperties_dev">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_additionalProperties_dev">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_additionalProperties_dev" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_additionalProperties_dev" data-toggle="collapse" onclick="setAnchor('#Return_value_additionalProperties_dev')" type="button"><span class="property-name">dev</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_additionalProperties_dev" class="collapse property-definition-div" data-parent="#accordionReturn_value_additionalProperties_dev" id="Return_value_additionalProperties_dev">
+    <div class="card-body pl-5">
+    <h4>Dev</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>USB device number on the bus.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_additionalProperties_product">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_additionalProperties_product">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_additionalProperties_product" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_additionalProperties_product" data-toggle="collapse" onclick="setAnchor('#Return_value_additionalProperties_product')" type="button"><span class="property-name">product</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_additionalProperties_product" class="collapse property-definition-div" data-parent="#accordionReturn_value_additionalProperties_product" id="Return_value_additionalProperties_product">
+    <div class="card-body pl-5">
+    <h4>Product</h4><br/>
+    <span class="description"><p>Product name of the USB device. <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="Return_value_additionalProperties_product_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_additionalProperties_product_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_additionalProperties_product_anyOf_i0" id="Return_value_additionalProperties_product_anyOf_i0" onclick="setAnchor('#Return_value_additionalProperties_product_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_additionalProperties_product_anyOf_i1" id="Return_value_additionalProperties_product_anyOf_i1" onclick="setAnchor('#Return_value_additionalProperties_product_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_additionalProperties_product_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_additionalProperties_product_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_additionalProperties_manufacturer">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_additionalProperties_manufacturer">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_additionalProperties_manufacturer" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_additionalProperties_manufacturer" data-toggle="collapse" onclick="setAnchor('#Return_value_additionalProperties_manufacturer')" type="button"><span class="property-name">manufacturer</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_additionalProperties_manufacturer" class="collapse property-definition-div" data-parent="#accordionReturn_value_additionalProperties_manufacturer" id="Return_value_additionalProperties_manufacturer">
+    <div class="card-body pl-5">
+    <h4>Manufacturer</h4><br/>
+    <span class="description"><p>Manufacturer name of the USB device. <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="Return_value_additionalProperties_manufacturer_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_additionalProperties_manufacturer_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_additionalProperties_manufacturer_anyOf_i0" id="Return_value_additionalProperties_manufacturer_anyOf_i0" onclick="setAnchor('#Return_value_additionalProperties_manufacturer_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_additionalProperties_manufacturer_anyOf_i1" id="Return_value_additionalProperties_manufacturer_anyOf_i1" onclick="setAnchor('#Return_value_additionalProperties_manufacturer_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_additionalProperties_manufacturer_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_additionalProperties_manufacturer_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* READONLY_ADMIN | VIRT_INSTANCE_READ
+

@@ -1,0 +1,301 @@
+tn_connect.config
+=================
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>TNCEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the TrueNAS Connect configuration.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_enabled">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_enabled">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_enabled" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_enabled" data-toggle="collapse" onclick="setAnchor('#Return_value_enabled')" type="button"><span class="property-name">enabled</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_enabled" class="collapse property-definition-div" data-parent="#accordionReturn_value_enabled" id="Return_value_enabled">
+    <div class="card-body pl-5">
+    <h4>Enabled</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether TrueNAS Connect service is enabled.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_registration_details">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_registration_details">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_registration_details" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_registration_details" data-toggle="collapse" onclick="setAnchor('#Return_value_registration_details')" type="button"><span class="property-name">registration_details</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_registration_details" class="collapse property-definition-div" data-parent="#accordionReturn_value_registration_details" id="Return_value_registration_details">
+    <div class="card-body pl-5">
+    <h4>Registration Details</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Object containing registration information and credentials for TrueNAS Connect.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_ips">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_ips">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_ips" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_ips" data-toggle="collapse" onclick="setAnchor('#Return_value_ips')" type="button"><span class="property-name">ips</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_ips" class="collapse property-definition-div" data-parent="#accordionReturn_value_ips" id="Return_value_ips">
+    <div class="card-body pl-5">
+    <h4>Ips</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of IP addresses that TrueNAS Connect will bind to and advertise.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_ips_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_ips_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_interfaces">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_interfaces">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_interfaces" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_interfaces" data-toggle="collapse" onclick="setAnchor('#Return_value_interfaces')" type="button"><span class="property-name">interfaces</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_interfaces" class="collapse property-definition-div" data-parent="#accordionReturn_value_interfaces" id="Return_value_interfaces">
+    <div class="card-body pl-5">
+    <h4>Interfaces</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of network interface names that TrueNAS Connect will use.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_interfaces_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_interfaces_ips">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_interfaces_ips">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_interfaces_ips" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_interfaces_ips" data-toggle="collapse" onclick="setAnchor('#Return_value_interfaces_ips')" type="button"><span class="property-name">interfaces_ips</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_interfaces_ips" class="collapse property-definition-div" data-parent="#accordionReturn_value_interfaces_ips" id="Return_value_interfaces_ips">
+    <div class="card-body pl-5">
+    <h4>Interfaces Ips</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of IP addresses associated with the selected interfaces.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_interfaces_ips_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_use_all_interfaces">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_use_all_interfaces">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_use_all_interfaces" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_use_all_interfaces" data-toggle="collapse" onclick="setAnchor('#Return_value_use_all_interfaces')" type="button"><span class="property-name">use_all_interfaces</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_use_all_interfaces" class="collapse property-definition-div" data-parent="#accordionReturn_value_use_all_interfaces" id="Return_value_use_all_interfaces">
+    <div class="card-body pl-5">
+    <h4>Use All Interfaces</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to automatically use all available network interfaces.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_status">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_status">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_status" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_status" data-toggle="collapse" onclick="setAnchor('#Return_value_status')" type="button"><span class="property-name">status</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_status" class="collapse property-definition-div" data-parent="#accordionReturn_value_status" id="Return_value_status">
+    <div class="card-body pl-5">
+    <h4>Status</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Current operational status of the TrueNAS Connect service.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_status_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_status_reason">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_status_reason">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_status_reason" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_status_reason" data-toggle="collapse" onclick="setAnchor('#Return_value_status_reason')" type="button"><span class="property-name">status_reason</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_status_reason" class="collapse property-definition-div" data-parent="#accordionReturn_value_status_reason" id="Return_value_status_reason">
+    <div class="card-body pl-5">
+    <h4>Status Reason</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Detailed explanation of the current status, including any error conditions.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_status_reason_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_certificate">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_certificate">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_certificate" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_certificate" data-toggle="collapse" onclick="setAnchor('#Return_value_certificate')" type="button"><span class="property-name">certificate</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_certificate" class="collapse property-definition-div" data-parent="#accordionReturn_value_certificate" id="Return_value_certificate">
+    <div class="card-body pl-5">
+    <h4>Certificate</h4><br/>
+    <span class="description"><p>ID of the SSL certificate used for TrueNAS Connect communications. <code>null</code> if using default.</p>
+    </span><div class="any-of-value" id="Return_value_certificate_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_certificate_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_certificate_anyOf_i0" id="Return_value_certificate_anyOf_i0" onclick="setAnchor('#Return_value_certificate_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_certificate_anyOf_i1" id="Return_value_certificate_anyOf_i1" onclick="setAnchor('#Return_value_certificate_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_certificate_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_certificate_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_account_service_base_url">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_account_service_base_url">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_account_service_base_url" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_account_service_base_url" data-toggle="collapse" onclick="setAnchor('#Return_value_account_service_base_url')" type="button"><span class="property-name">account_service_base_url</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_account_service_base_url" class="collapse property-definition-div" data-parent="#accordionReturn_value_account_service_base_url" id="Return_value_account_service_base_url">
+    <div class="card-body pl-5">
+    <h4>Account Service Base Url</h4><span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: uri</span><br/>
+    <span class="description"><p>Base URL for the TrueNAS Connect account service API.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_account_service_base_url_minLength">Must be at least <code>1</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="Return_value_account_service_base_url_maxLength">Must be at most <code>2083</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_leca_service_base_url">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_leca_service_base_url">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_leca_service_base_url" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_leca_service_base_url" data-toggle="collapse" onclick="setAnchor('#Return_value_leca_service_base_url')" type="button"><span class="property-name">leca_service_base_url</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_leca_service_base_url" class="collapse property-definition-div" data-parent="#accordionReturn_value_leca_service_base_url" id="Return_value_leca_service_base_url">
+    <div class="card-body pl-5">
+    <h4>Leca Service Base Url</h4><span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: uri</span><br/>
+    <span class="description"><p>Base URL for the Let's Encrypt Certificate Authority service used by TrueNAS Connect.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_leca_service_base_url_minLength">Must be at least <code>1</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="Return_value_leca_service_base_url_maxLength">Must be at most <code>2083</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_tnc_base_url">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_tnc_base_url">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_tnc_base_url" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_tnc_base_url" data-toggle="collapse" onclick="setAnchor('#Return_value_tnc_base_url')" type="button"><span class="property-name">tnc_base_url</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_tnc_base_url" class="collapse property-definition-div" data-parent="#accordionReturn_value_tnc_base_url" id="Return_value_tnc_base_url">
+    <div class="card-body pl-5">
+    <h4>Tnc Base Url</h4><span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: uri</span><br/>
+    <span class="description"><p>Base URL for the TrueNAS Connect service.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_tnc_base_url_minLength">Must be at least <code>1</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="Return_value_tnc_base_url_maxLength">Must be at most <code>2083</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_heartbeat_url">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_heartbeat_url">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_heartbeat_url" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_heartbeat_url" data-toggle="collapse" onclick="setAnchor('#Return_value_heartbeat_url')" type="button"><span class="property-name">heartbeat_url</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_heartbeat_url" class="collapse property-definition-div" data-parent="#accordionReturn_value_heartbeat_url" id="Return_value_heartbeat_url">
+    <div class="card-body pl-5">
+    <h4>Heartbeat Url</h4><span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: uri</span><br/>
+    <span class="description"><p>URL endpoint for sending heartbeat signals to maintain connection status.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_heartbeat_url_minLength">Must be at least <code>1</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="Return_value_heartbeat_url_maxLength">Must be at most <code>2083</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* TRUENAS_CONNECT_READ
+

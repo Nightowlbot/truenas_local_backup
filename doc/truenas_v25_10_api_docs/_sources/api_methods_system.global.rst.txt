@@ -1,0 +1,6 @@
+system.global
+-------------
+
+.. toctree::
+
+   api_methods_system.global.id

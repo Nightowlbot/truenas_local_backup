@@ -1,0 +1,10 @@
+app.registry
+------------
+
+.. toctree::
+
+   api_methods_app.registry.create
+   api_methods_app.registry.delete
+   api_methods_app.registry.get_instance
+   api_methods_app.registry.query
+   api_methods_app.registry.update

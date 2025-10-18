@@ -1,0 +1,6 @@
+certificate
+-----------
+
+.. toctree::
+
+   api_events_certificate.query

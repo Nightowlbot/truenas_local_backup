@@ -1,0 +1,152 @@
+pool.dataset.encryption_algorithm_choices
+=========================================
+
+Retrieve encryption algorithms supported for ZFS dataset encryption.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>PoolDatasetEncryptionAlgorithmChoicesResult</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>PoolDatasetEncryptionAlgorithmChoicesResult return fields.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_AES-128-CCM">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_AES-128-CCM">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_AES-128-CCM" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_AES-128-CCM" data-toggle="collapse" onclick="setAnchor('#Return_value_AES-128-CCM')" type="button"><span class="property-name">AES-128-CCM</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_AES-128-CCM" class="collapse property-definition-div" data-parent="#accordionReturn_value_AES-128-CCM" id="Return_value_AES-128-CCM">
+    <div class="card-body pl-5">
+    <h4>Aes-128-Ccm</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_AES-128-CCM_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"AES-128-CCM"</li></ul>
+    </div><span class="const-value" id="Return_value_AES-128-CCM_const">Specific value: <code>"AES-128-CCM"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_AES-192-CCM">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_AES-192-CCM">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_AES-192-CCM" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_AES-192-CCM" data-toggle="collapse" onclick="setAnchor('#Return_value_AES-192-CCM')" type="button"><span class="property-name">AES-192-CCM</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_AES-192-CCM" class="collapse property-definition-div" data-parent="#accordionReturn_value_AES-192-CCM" id="Return_value_AES-192-CCM">
+    <div class="card-body pl-5">
+    <h4>Aes-192-Ccm</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_AES-192-CCM_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"AES-192-CCM"</li></ul>
+    </div><span class="const-value" id="Return_value_AES-192-CCM_const">Specific value: <code>"AES-192-CCM"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_AES-256-CCM">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_AES-256-CCM">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_AES-256-CCM" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_AES-256-CCM" data-toggle="collapse" onclick="setAnchor('#Return_value_AES-256-CCM')" type="button"><span class="property-name">AES-256-CCM</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_AES-256-CCM" class="collapse property-definition-div" data-parent="#accordionReturn_value_AES-256-CCM" id="Return_value_AES-256-CCM">
+    <div class="card-body pl-5">
+    <h4>Aes-256-Ccm</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_AES-256-CCM_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"AES-256-CCM"</li></ul>
+    </div><span class="const-value" id="Return_value_AES-256-CCM_const">Specific value: <code>"AES-256-CCM"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_AES-128-GCM">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_AES-128-GCM">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_AES-128-GCM" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_AES-128-GCM" data-toggle="collapse" onclick="setAnchor('#Return_value_AES-128-GCM')" type="button"><span class="property-name">AES-128-GCM</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_AES-128-GCM" class="collapse property-definition-div" data-parent="#accordionReturn_value_AES-128-GCM" id="Return_value_AES-128-GCM">
+    <div class="card-body pl-5">
+    <h4>Aes-128-Gcm</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_AES-128-GCM_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"AES-128-GCM"</li></ul>
+    </div><span class="const-value" id="Return_value_AES-128-GCM_const">Specific value: <code>"AES-128-GCM"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_AES-192-GCM">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_AES-192-GCM">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_AES-192-GCM" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_AES-192-GCM" data-toggle="collapse" onclick="setAnchor('#Return_value_AES-192-GCM')" type="button"><span class="property-name">AES-192-GCM</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_AES-192-GCM" class="collapse property-definition-div" data-parent="#accordionReturn_value_AES-192-GCM" id="Return_value_AES-192-GCM">
+    <div class="card-body pl-5">
+    <h4>Aes-192-Gcm</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_AES-192-GCM_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"AES-192-GCM"</li></ul>
+    </div><span class="const-value" id="Return_value_AES-192-GCM_const">Specific value: <code>"AES-192-GCM"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_AES-256-GCM">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_AES-256-GCM">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_AES-256-GCM" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_AES-256-GCM" data-toggle="collapse" onclick="setAnchor('#Return_value_AES-256-GCM')" type="button"><span class="property-name">AES-256-GCM</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_AES-256-GCM" class="collapse property-definition-div" data-parent="#accordionReturn_value_AES-256-GCM" id="Return_value_AES-256-GCM">
+    <div class="card-body pl-5">
+    <h4>Aes-256-Gcm</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_AES-256-GCM_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"AES-256-GCM"</li></ul>
+    </div><span class="const-value" id="Return_value_AES-256-GCM_const">Specific value: <code>"AES-256-GCM"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* DATASET_READ | READONLY_ADMIN
+

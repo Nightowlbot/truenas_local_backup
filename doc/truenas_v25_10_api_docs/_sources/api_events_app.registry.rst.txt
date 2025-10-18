@@ -1,0 +1,6 @@
+app.registry
+------------
+
+.. toctree::
+
+   api_events_app.registry.query

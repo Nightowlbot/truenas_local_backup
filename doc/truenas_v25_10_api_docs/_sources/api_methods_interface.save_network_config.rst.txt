@@ -1,0 +1,171 @@
+interface.save_network_config
+=============================
+
+Saves network configuration settings to prevent network isolation during interface changes.
+
+This method provides a path for remediation when interface modifications would remove network connectivity. It accepts a configuration object containing network settings that will be validated and applied to the global network configuration.
+
+This makes 2 assumptions: 1. `interface.create`/`update`/`delete` must have been called before calling this method. 2. This method must be called before `interface.commit` is called.
+
+This method exists for the predominant scenario for new users: 1. Fresh install SCALE. 2. All interfaces start DHCPv4 (v6 is ignored for now). 3. One of the interfaces receives an IP address. 4. Along with the IP, the kernel receives a default route (by design, of course). 5. User goes to configure this interface as having a static IP address. 6. As we go through and "commit" the changes, we remove the default route because it exists in the kernel FIB but doesn't exist in the database. 7. IF the user is connecting via layer3, then they will lose all access to the TrueNAS and never be able to finalize the changes to the network because we ripped out the default route which is how they were communicating to begin with.
+
+In the above scenario, we're going to try and prevent this by doing the following: 1. Fresh install SCALE. 2. All interfaces start DHCPv4. 3. Default route is received. 4. User configures an interface. 5. When user pushes "Test Changes" (`interface.commit`), webUI will call `interface.network_config_to_be_removed` BEFORE `interface.commit`. 6. If `interface.network_config_to_be_removed` returns any fields, then webUI will open a new modal dialog that gives the end-user ample warning describing the situation. Furthermore, the modal will allow the user to input a default gateway and nameservers. 7. If user gives gateway, webUI will call this method providing the info and we'll validate accordingly. 8. OR if user doesn't give gateway, they will need to "confirm" this is desired. 9. The network configuration provided (gateway and nameservers) will be stored in the same in-memory cache that we use for storing the interface changes and will be rolled back accordingly in this plugin just like everything else.
+
+There are a few other scenarios where this is beneficial, but the one listed above is seen most often by end-users/support team.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: config</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>config</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>InterfaceSaveNetworkConfigArgs parameters.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_ipv4gateway">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_ipv4gateway">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_ipv4gateway" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_ipv4gateway" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_ipv4gateway')" type="button"><span class="property-name">ipv4gateway</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_ipv4gateway" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_ipv4gateway" id="Call_parameters_items_i0_ipv4gateway">
+    <div class="card-body pl-5">
+    <h4>Ipv4Gateway</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>IPv4 address of the default gateway to save.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_nameserver1">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_nameserver1">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_nameserver1" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_nameserver1" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_nameserver1')" type="button"><span class="property-name">nameserver1</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_nameserver1" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_nameserver1" id="Call_parameters_items_i0_nameserver1">
+    <div class="card-body pl-5">
+    <h4>Nameserver1</h4><br/>
+    <span class="description"><p>Primary DNS server.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_nameserver1_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_nameserver1_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_nameserver1_anyOf_i0" id="Call_parameters_items_i0_nameserver1_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_nameserver1_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_nameserver1_anyOf_i1" id="Call_parameters_items_i0_nameserver1_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_nameserver1_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_nameserver1_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Call_parameters_items_i0_nameserver1_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li></ul>
+    </div><span class="const-value" id="Call_parameters_items_i0_nameserver1_anyOf_i0_const">Specific value: <code>""</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_nameserver1_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_nameserver2">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_nameserver2">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_nameserver2" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_nameserver2" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_nameserver2')" type="button"><span class="property-name">nameserver2</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_nameserver2" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_nameserver2" id="Call_parameters_items_i0_nameserver2">
+    <div class="card-body pl-5">
+    <h4>Nameserver2</h4><br/>
+    <span class="description"><p>Secondary DNS server.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_nameserver2_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_nameserver2_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_nameserver2_anyOf_i0" id="Call_parameters_items_i0_nameserver2_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_nameserver2_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_nameserver2_anyOf_i1" id="Call_parameters_items_i0_nameserver2_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_nameserver2_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_nameserver2_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Call_parameters_items_i0_nameserver2_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li></ul>
+    </div><span class="const-value" id="Call_parameters_items_i0_nameserver2_anyOf_i0_const">Specific value: <code>""</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_nameserver2_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_nameserver3">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_nameserver3">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_nameserver3" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_nameserver3" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_nameserver3')" type="button"><span class="property-name">nameserver3</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_nameserver3" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_nameserver3" id="Call_parameters_items_i0_nameserver3">
+    <div class="card-body pl-5">
+    <h4>Nameserver3</h4><br/>
+    <span class="description"><p>Tertiary DNS server.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_nameserver3_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_nameserver3_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_nameserver3_anyOf_i0" id="Call_parameters_items_i0_nameserver3_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_nameserver3_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_nameserver3_anyOf_i1" id="Call_parameters_items_i0_nameserver3_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_nameserver3_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_nameserver3_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Call_parameters_items_i0_nameserver3_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li></ul>
+    </div><span class="const-value" id="Call_parameters_items_i0_nameserver3_anyOf_i0_const">Specific value: <code>""</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_nameserver3_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: null</span><br/>
+    <span class="description"><p>No return value for successful save default route operation.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* NETWORK_INTERFACE_WRITE
+

@@ -1,0 +1,265 @@
+pool.resilver.update
+====================
+
+Configure Pool Resilver Priority.
+
+If `begin` time is greater than `end` time it means it will rollover the day, e.g. begin = "19:00", end = "05:00" will increase pool resilver priority from 19:00 of one day until 05:00 of the next day.
+
+`weekday` follows crontab(5) values 0-7 (0 or 7 is Sun).
+
+.. examples(websocket)::
+
+  Enable pool resilver priority all business days from 7PM to 5AM.
+
+    :::javascript {
+        "id": "6841f242-840a-11e6-a437-00e04d680384", "msg": "method", "method": "pool.resilver.update", "params": [{ "enabled": true, "begin": "19:00", "end": "05:00", "weekday": [1, 2, 3, 4, 5] }] }
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: data</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>data</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The resilver schedule configuration to update.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_begin">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_begin">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_begin" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_begin" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_begin')" type="button"><span class="property-name">begin</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_begin" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_begin" id="Call_parameters_items_i0_begin">
+    <div class="card-body pl-5">
+    <h4>Begin</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Time when the resilver operations window begins (24-hour format).</p>
+    </span>
+    <br/>
+    <div class="badge badge-secondary">Examples:</div>
+    <br/><div class="jumbotron examples" id="Call_parameters_items_i0_begin_ex1"><div class="highlight"><pre><span></span><span class="s2">"00:00"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Call_parameters_items_i0_begin_ex2"><div class="highlight"><pre><span></span><span class="s2">"06:30"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Call_parameters_items_i0_begin_ex3"><div class="highlight"><pre><span></span><span class="s2">"18:00"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Call_parameters_items_i0_begin_ex4"><div class="highlight"><pre><span></span><span class="s2">"23:00"</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_end">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_end">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_end" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_end" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_end')" type="button"><span class="property-name">end</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_end" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_end" id="Call_parameters_items_i0_end">
+    <div class="card-body pl-5">
+    <h4>End</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Time when the resilver operations window ends (24-hour format).</p>
+    </span>
+    <br/>
+    <div class="badge badge-secondary">Examples:</div>
+    <br/><div class="jumbotron examples" id="Call_parameters_items_i0_end_ex1"><div class="highlight"><pre><span></span><span class="s2">"00:00"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Call_parameters_items_i0_end_ex2"><div class="highlight"><pre><span></span><span class="s2">"06:30"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Call_parameters_items_i0_end_ex3"><div class="highlight"><pre><span></span><span class="s2">"18:00"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Call_parameters_items_i0_end_ex4"><div class="highlight"><pre><span></span><span class="s2">"23:00"</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_enabled">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_enabled">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_enabled" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_enabled" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_enabled')" type="button"><span class="property-name">enabled</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_enabled" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_enabled" id="Call_parameters_items_i0_enabled">
+    <div class="card-body pl-5">
+    <h4>Enabled</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether the resilver schedule is enabled.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_weekday">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_weekday">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_weekday" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_weekday" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_weekday')" type="button"><span class="property-name">weekday</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_weekday" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_weekday" id="Call_parameters_items_i0_weekday">
+    <div class="card-body pl-5">
+    <h4>Weekday</h4><span class="badge badge-dark value-type">Type: array of integer</span><br/>
+    <span class="description"><p>Array of weekdays when resilver operations are allowed (1=Monday through 7=Sunday).</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_weekday_items">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_weekday_items_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>7</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>PoolResilverEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The updated resilver schedule configuration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the resilver schedule entry.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_begin">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_begin">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_begin" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_begin" data-toggle="collapse" onclick="setAnchor('#Return_value_begin')" type="button"><span class="property-name">begin</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_begin" class="collapse property-definition-div" data-parent="#accordionReturn_value_begin" id="Return_value_begin">
+    <div class="card-body pl-5">
+    <h4>Begin</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "18:00"</span><br/>
+    <span class="description"><p>Time when the resilver operations window begins (24-hour format).</p>
+    </span>
+    <br/>
+    <div class="badge badge-secondary">Examples:</div>
+    <br/><div class="jumbotron examples" id="Return_value_begin_ex1"><div class="highlight"><pre><span></span><span class="s2">"00:00"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_begin_ex2"><div class="highlight"><pre><span></span><span class="s2">"06:30"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_begin_ex3"><div class="highlight"><pre><span></span><span class="s2">"18:00"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_begin_ex4"><div class="highlight"><pre><span></span><span class="s2">"23:00"</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_end">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_end">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_end" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_end" data-toggle="collapse" onclick="setAnchor('#Return_value_end')" type="button"><span class="property-name">end</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_end" class="collapse property-definition-div" data-parent="#accordionReturn_value_end" id="Return_value_end">
+    <div class="card-body pl-5">
+    <h4>End</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "9:00"</span><br/>
+    <span class="description"><p>Time when the resilver operations window ends (24-hour format).</p>
+    </span>
+    <br/>
+    <div class="badge badge-secondary">Examples:</div>
+    <br/><div class="jumbotron examples" id="Return_value_end_ex1"><div class="highlight"><pre><span></span><span class="s2">"00:00"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_end_ex2"><div class="highlight"><pre><span></span><span class="s2">"06:30"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_end_ex3"><div class="highlight"><pre><span></span><span class="s2">"18:00"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_end_ex4"><div class="highlight"><pre><span></span><span class="s2">"23:00"</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_enabled">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_enabled">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_enabled" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_enabled" data-toggle="collapse" onclick="setAnchor('#Return_value_enabled')" type="button"><span class="property-name">enabled</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_enabled" class="collapse property-definition-div" data-parent="#accordionReturn_value_enabled" id="Return_value_enabled">
+    <div class="card-body pl-5">
+    <h4>Enabled</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Whether the resilver schedule is enabled.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_weekday">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_weekday">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_weekday" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_weekday" data-toggle="collapse" onclick="setAnchor('#Return_value_weekday')" type="button"><span class="property-name">weekday</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_weekday" class="collapse property-definition-div" data-parent="#accordionReturn_value_weekday" id="Return_value_weekday">
+    <div class="card-body pl-5">
+    <h4>Weekday</h4><span class="badge badge-dark value-type">Type: array of integer</span> <span class="badge badge-success default-value">Default: [1, 2, 3, 4, 5, 6, 7]</span><br/>
+    <span class="description"><p>Array of weekdays when resilver operations are allowed (1=Monday through 7=Sunday).</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_weekday_items">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_weekday_items_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>7</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* POOL_WRITE
+

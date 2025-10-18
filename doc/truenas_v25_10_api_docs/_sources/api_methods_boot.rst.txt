@@ -1,0 +1,12 @@
+boot
+----
+
+.. toctree::
+
+   api_methods_boot.attach
+   api_methods_boot.detach
+   api_methods_boot.get_disks
+   api_methods_boot.get_state
+   api_methods_boot.replace
+   api_methods_boot.scrub
+   api_methods_boot.set_scrub_interval

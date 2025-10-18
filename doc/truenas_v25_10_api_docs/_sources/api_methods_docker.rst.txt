@@ -1,0 +1,14 @@
+docker
+------
+
+.. toctree::
+
+   api_methods_docker.backup
+   api_methods_docker.backup_to_pool
+   api_methods_docker.config
+   api_methods_docker.delete_backup
+   api_methods_docker.list_backups
+   api_methods_docker.nvidia_present
+   api_methods_docker.restore_backup
+   api_methods_docker.status
+   api_methods_docker.update

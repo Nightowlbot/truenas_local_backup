@@ -1,0 +1,6 @@
+hardware.virtualization
+-----------------------
+
+.. toctree::
+
+   api_methods_hardware.virtualization.variant

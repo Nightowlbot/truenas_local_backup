@@ -1,0 +1,262 @@
+fc.fc_host.update
+=================
+
+Update FC host `id`.
+
+`alias` is a user-readable name for FC host port.
+
+`wwpn` is the WWPN in naa format (Controller A if HA)
+
+`wwpn_b` is the WWPN in naa format (Controller B, only applicable for HA)
+
+`npiv` is the number of NPIV hosts to allow for this FC host.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: id</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>ID of the Fibre Channel host to update.</p>
+    </span>
+    </div>
+    </div>
+    <h5>Parameter 2: fc_host_update</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>fc_host_update</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Updated Fibre Channel host configuration data.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_alias">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_alias">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_alias" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_alias" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_alias')" type="button"><span class="property-name">alias</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_alias" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_alias" id="Call_parameters_items_i1_alias">
+    <div class="card-body pl-5">
+    <h4>Alias</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable alias for the Fibre Channel host.</p>
+    </span><span class="pattern-value" id="Call_parameters_items_i1_alias_pattern">Must match regular expression: <code>^[a-zA-Z0-9,\-_:]+$</code></span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i1_alias_minLength">Must be at least <code>1</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="Call_parameters_items_i1_alias_maxLength">Must be at most <code>32</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_wwpn">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_wwpn">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_wwpn" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_wwpn" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_wwpn')" type="button"><span class="property-name">wwpn</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_wwpn" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_wwpn" id="Call_parameters_items_i1_wwpn">
+    <div class="card-body pl-5">
+    <h4>Wwpn</h4><br/>
+    <span class="description"><p>World Wide Port Name for port A or <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i1_wwpn_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i1_wwpn_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_wwpn_anyOf_i0" id="Call_parameters_items_i1_wwpn_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i1_wwpn_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_wwpn_anyOf_i1" id="Call_parameters_items_i1_wwpn_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i1_wwpn_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i1_wwpn_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="pattern-value" id="Call_parameters_items_i1_wwpn_anyOf_i0_pattern">Must match regular expression: <code>^naa.[0-9a-fA-F]{16}$</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i1_wwpn_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_wwpn_b">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_wwpn_b">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_wwpn_b" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_wwpn_b" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_wwpn_b')" type="button"><span class="property-name">wwpn_b</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_wwpn_b" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_wwpn_b" id="Call_parameters_items_i1_wwpn_b">
+    <div class="card-body pl-5">
+    <h4>Wwpn B</h4><br/>
+    <span class="description"><p>World Wide Port Name for port B or <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i1_wwpn_b_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i1_wwpn_b_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_wwpn_b_anyOf_i0" id="Call_parameters_items_i1_wwpn_b_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i1_wwpn_b_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_wwpn_b_anyOf_i1" id="Call_parameters_items_i1_wwpn_b_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i1_wwpn_b_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i1_wwpn_b_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="pattern-value" id="Call_parameters_items_i1_wwpn_b_anyOf_i0_pattern">Must match regular expression: <code>^naa.[0-9a-fA-F]{16}$</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i1_wwpn_b_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_npiv">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_npiv">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_npiv" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_npiv" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_npiv')" type="button"><span class="property-name">npiv</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_npiv" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_npiv" id="Call_parameters_items_i1_npiv">
+    <div class="card-body pl-5">
+    <h4>Npiv</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Number of N_Port ID Virtualization (NPIV) virtual ports to create.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>FCHostEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The updated Fibre Channel host configuration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the Fibre Channel host configuration.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_alias">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_alias">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_alias" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_alias" data-toggle="collapse" onclick="setAnchor('#Return_value_alias')" type="button"><span class="property-name">alias</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_alias" class="collapse property-definition-div" data-parent="#accordionReturn_value_alias" id="Return_value_alias">
+    <div class="card-body pl-5">
+    <h4>Alias</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable alias for the Fibre Channel host.</p>
+    </span><span class="pattern-value" id="Return_value_alias_pattern">Must match regular expression: <code>^[a-zA-Z0-9,\-_:]+$</code></span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_alias_minLength">Must be at least <code>1</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="Return_value_alias_maxLength">Must be at most <code>32</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_wwpn">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_wwpn">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_wwpn" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_wwpn" data-toggle="collapse" onclick="setAnchor('#Return_value_wwpn')" type="button"><span class="property-name">wwpn</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_wwpn" class="collapse property-definition-div" data-parent="#accordionReturn_value_wwpn" id="Return_value_wwpn">
+    <div class="card-body pl-5">
+    <h4>Wwpn</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>World Wide Port Name for port A or <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Return_value_wwpn_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_wwpn_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_wwpn_anyOf_i0" id="Return_value_wwpn_anyOf_i0" onclick="setAnchor('#Return_value_wwpn_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_wwpn_anyOf_i1" id="Return_value_wwpn_anyOf_i1" onclick="setAnchor('#Return_value_wwpn_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_wwpn_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="pattern-value" id="Return_value_wwpn_anyOf_i0_pattern">Must match regular expression: <code>^naa.[0-9a-fA-F]{16}$</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_wwpn_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_wwpn_b">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_wwpn_b">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_wwpn_b" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_wwpn_b" data-toggle="collapse" onclick="setAnchor('#Return_value_wwpn_b')" type="button"><span class="property-name">wwpn_b</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_wwpn_b" class="collapse property-definition-div" data-parent="#accordionReturn_value_wwpn_b" id="Return_value_wwpn_b">
+    <div class="card-body pl-5">
+    <h4>Wwpn B</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>World Wide Port Name for port B or <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Return_value_wwpn_b_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_wwpn_b_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_wwpn_b_anyOf_i0" id="Return_value_wwpn_b_anyOf_i0" onclick="setAnchor('#Return_value_wwpn_b_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_wwpn_b_anyOf_i1" id="Return_value_wwpn_b_anyOf_i1" onclick="setAnchor('#Return_value_wwpn_b_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_wwpn_b_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="pattern-value" id="Return_value_wwpn_b_anyOf_i0_pattern">Must match regular expression: <code>^naa.[0-9a-fA-F]{16}$</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_wwpn_b_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_npiv">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_npiv">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_npiv" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_npiv" data-toggle="collapse" onclick="setAnchor('#Return_value_npiv')" type="button"><span class="property-name">npiv</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_npiv" class="collapse property-definition-div" data-parent="#accordionReturn_value_npiv" id="Return_value_npiv">
+    <div class="card-body pl-5">
+    <h4>Npiv</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+    <span class="description"><p>Number of N_Port ID Virtualization (NPIV) virtual ports to create.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SHARING_ISCSI_TARGET_WRITE
+

@@ -1,0 +1,327 @@
+vm.get_display_devices
+======================
+
+Get the display devices from a given guest. If a display device has password configured, `attributes.password_configured` will be set to `true`.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: id</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>ID of the virtual machine to get display devices for.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="description"><p>Array of display devices configured for the virtual machine.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_items">
+    <h4>DisplayDevice</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_items_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_id" data-toggle="collapse" onclick="setAnchor('#Return_value_items_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_id" id="Return_value_items_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the VM device.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_attributes">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_attributes">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_attributes" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_attributes" data-toggle="collapse" onclick="setAnchor('#Return_value_items_attributes')" type="button"><span class="property-name">attributes</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_attributes" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_attributes" id="Return_value_items_attributes">
+    <div class="card-body pl-5">
+    <h4>GetDisplayDevice</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Display device attributes including password configuration status.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_items_attributes_dtype">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_attributes_dtype">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_attributes_dtype" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_attributes_dtype" data-toggle="collapse" onclick="setAnchor('#Return_value_items_attributes_dtype')" type="button"><span class="property-name">dtype</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_attributes_dtype" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_attributes_dtype" id="Return_value_items_attributes_dtype">
+    <div class="card-body pl-5">
+    <h4>Dtype</h4><span class="badge badge-dark value-type">Type: const</span><br/>
+    <span class="description"><p>Device type identifier for display/graphics devices.</p>
+    </span><div class="enum-value" id="Return_value_items_attributes_dtype_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"DISPLAY"</li></ul>
+    </div><span class="const-value" id="Return_value_items_attributes_dtype_const">Specific value: <code>"DISPLAY"</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_attributes_resolution">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_attributes_resolution">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_attributes_resolution" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_attributes_resolution" data-toggle="collapse" onclick="setAnchor('#Return_value_items_attributes_resolution')" type="button"><span class="property-name">resolution</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_attributes_resolution" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_attributes_resolution" id="Return_value_items_attributes_resolution">
+    <div class="card-body pl-5">
+    <h4>Resolution</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "1024x768"</span><br/>
+    <span class="description"><p>Screen resolution for the virtual display.</p>
+    </span><div class="enum-value" id="Return_value_items_attributes_resolution_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"1920x1200"</li><li class="list-group-item enum-item">"1920x1080"</li><li class="list-group-item enum-item">"1600x1200"</li><li class="list-group-item enum-item">"1600x900"</li><li class="list-group-item enum-item">"1400x1050"</li><li class="list-group-item enum-item">"1280x1024"</li><li class="list-group-item enum-item">"1280x720"</li><li class="list-group-item enum-item">"1024x768"</li><li class="list-group-item enum-item">"800x600"</li><li class="list-group-item enum-item">"640x480"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_attributes_port">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_attributes_port">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_attributes_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_attributes_port" data-toggle="collapse" onclick="setAnchor('#Return_value_items_attributes_port')" type="button"><span class="property-name">port</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_attributes_port" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_attributes_port" id="Return_value_items_attributes_port">
+    <div class="card-body pl-5">
+    <h4>Port</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>VNC/SPICE port number for remote display access. <code>null</code> for auto-assignment.</p>
+    </span><div class="any-of-value" id="Return_value_items_attributes_port_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_attributes_port_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_attributes_port_anyOf_i0" id="Return_value_items_attributes_port_anyOf_i0" onclick="setAnchor('#Return_value_items_attributes_port_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_attributes_port_anyOf_i1" id="Return_value_items_attributes_port_anyOf_i1" onclick="setAnchor('#Return_value_items_attributes_port_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_attributes_port_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_items_attributes_port_anyOf_i0_number">Value must be greater or equal to <code>5900</code> and lesser or equal to <code>65535</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_attributes_port_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_attributes_web_port">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_attributes_web_port">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_attributes_web_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_attributes_web_port" data-toggle="collapse" onclick="setAnchor('#Return_value_items_attributes_web_port')" type="button"><span class="property-name">web_port</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_attributes_web_port" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_attributes_web_port" id="Return_value_items_attributes_web_port">
+    <div class="card-body pl-5">
+    <h4>Web Port</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Web-based display access port number. <code>null</code> for auto-assignment.</p>
+    </span><div class="any-of-value" id="Return_value_items_attributes_web_port_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_attributes_web_port_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_attributes_web_port_anyOf_i0" id="Return_value_items_attributes_web_port_anyOf_i0" onclick="setAnchor('#Return_value_items_attributes_web_port_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_attributes_web_port_anyOf_i1" id="Return_value_items_attributes_web_port_anyOf_i1" onclick="setAnchor('#Return_value_items_attributes_web_port_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_attributes_web_port_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_attributes_web_port_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_attributes_bind">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_attributes_bind">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_attributes_bind" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_attributes_bind" data-toggle="collapse" onclick="setAnchor('#Return_value_items_attributes_bind')" type="button"><span class="property-name">bind</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_attributes_bind" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_attributes_bind" id="Return_value_items_attributes_bind">
+    <div class="card-body pl-5">
+    <h4>Bind</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "127.0.0.1"</span><br/>
+    <span class="description"><p>IP address to bind the display server to.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_attributes_bind_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_attributes_wait">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_attributes_wait">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_attributes_wait" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_attributes_wait" data-toggle="collapse" onclick="setAnchor('#Return_value_items_attributes_wait')" type="button"><span class="property-name">wait</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_attributes_wait" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_attributes_wait" id="Return_value_items_attributes_wait">
+    <div class="card-body pl-5">
+    <h4>Wait</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to wait for a client connection before starting the VM.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_attributes_password">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_attributes_password">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_attributes_password" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_attributes_password" data-toggle="collapse" onclick="setAnchor('#Return_value_items_attributes_password')" type="button"><span class="property-name">password</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_attributes_password" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_attributes_password" id="Return_value_items_attributes_password">
+    <div class="card-body pl-5">
+    <h4>Password</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Password for display server authentication.</p>
+    </span><div class="any-of-value" id="Return_value_items_attributes_password_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_attributes_password_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_attributes_password_anyOf_i0" id="Return_value_items_attributes_password_anyOf_i0" onclick="setAnchor('#Return_value_items_attributes_password_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_attributes_password_anyOf_i1" id="Return_value_items_attributes_password_anyOf_i1" onclick="setAnchor('#Return_value_items_attributes_password_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_attributes_password_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_attributes_password_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_attributes_web">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_attributes_web">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_attributes_web" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_attributes_web" data-toggle="collapse" onclick="setAnchor('#Return_value_items_attributes_web')" type="button"><span class="property-name">web</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_attributes_web" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_attributes_web" id="Return_value_items_attributes_web">
+    <div class="card-body pl-5">
+    <h4>Web</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Whether to enable web-based display access.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_attributes_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_attributes_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_attributes_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_attributes_type" data-toggle="collapse" onclick="setAnchor('#Return_value_items_attributes_type')" type="button"><span class="property-name">type</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_attributes_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_attributes_type" id="Return_value_items_attributes_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "SPICE"</span><br/>
+    <span class="description"><p>Display protocol type.</p>
+    </span><div class="enum-value" id="Return_value_items_attributes_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"SPICE"</li><li class="list-group-item enum-item">"VNC"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_attributes_password_configured">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_attributes_password_configured">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_attributes_password_configured" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_attributes_password_configured" data-toggle="collapse" onclick="setAnchor('#Return_value_items_attributes_password_configured')" type="button"><span class="property-name">password_configured</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_attributes_password_configured" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_attributes_password_configured" id="Return_value_items_attributes_password_configured">
+    <div class="card-body pl-5">
+    <h4>Password Configured</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether a password has been configured for display access.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_vm">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_vm">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_vm" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_vm" data-toggle="collapse" onclick="setAnchor('#Return_value_items_vm')" type="button"><span class="property-name">vm</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_vm" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_vm" id="Return_value_items_vm">
+    <div class="card-body pl-5">
+    <h4>Vm</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>ID of the virtual machine this device belongs to.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_order">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_order">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_order" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_order" data-toggle="collapse" onclick="setAnchor('#Return_value_items_order')" type="button"><span class="property-name">order</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_order" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_order" id="Return_value_items_order">
+    <div class="card-body pl-5">
+    <h4>Order</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Boot order priority for this device (lower numbers boot first).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* VM_READ
+

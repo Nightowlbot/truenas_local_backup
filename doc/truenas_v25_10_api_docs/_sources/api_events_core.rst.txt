@@ -1,0 +1,6 @@
+core
+----
+
+.. toctree::
+
+   api_events_core.get_jobs

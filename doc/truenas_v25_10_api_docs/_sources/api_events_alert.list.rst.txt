@@ -1,0 +1,640 @@
+alert.list
+==========
+
+Sent on alert changes.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionADDED">
+    <div class="card">
+    <div class="card-header" id="headingADDED">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED" data-toggle="collapse" onclick="setAnchor('#ADDED')" type="button"><span class="property-name">ADDED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED" class="collapse property-definition-div" data-parent="#accordionADDED" id="ADDED">
+    <div class="card-body pl-5">
+    <h4>AlertListAddedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_id" data-toggle="collapse" onclick="setAnchor('#ADDED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_id" class="collapse property-definition-div" data-parent="#accordionADDED_id" id="ADDED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Event identifier for the added alert.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields" data-toggle="collapse" onclick="setAnchor('#ADDED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields" class="collapse property-definition-div" data-parent="#accordionADDED_fields" id="ADDED_fields">
+    <div class="card-body pl-5">
+    <h4>Alert</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Complete alert data for the newly added alert.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionADDED_fields_uuid">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_uuid">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_uuid" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_uuid" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_uuid')" type="button"><span class="property-name">uuid</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_uuid" class="collapse property-definition-div" data-parent="#accordionADDED_fields_uuid" id="ADDED_fields_uuid">
+    <div class="card-body pl-5">
+    <h4>Uuid</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Unique identifier for the alert.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_source">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_source">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_source" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_source" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_source')" type="button"><span class="property-name">source</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_source" class="collapse property-definition-div" data-parent="#accordionADDED_fields_source" id="ADDED_fields_source">
+    <div class="card-body pl-5">
+    <h4>Source</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Source component that generated the alert.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_klass">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_klass">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_klass" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_klass" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_klass')" type="button"><span class="property-name">klass</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_klass" class="collapse property-definition-div" data-parent="#accordionADDED_fields_klass" id="ADDED_fields_klass">
+    <div class="card-body pl-5">
+    <h4>Klass</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Alert class identifier for categorization.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_args">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_args">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_args" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_args" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_args')" type="button"><span class="property-name">args</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_args" class="collapse property-definition-div" data-parent="#accordionADDED_fields_args" id="ADDED_fields_args">
+    <div class="card-body pl-5">
+    <h4>Args</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Arguments and parameters specific to the alert type.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_node">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_node">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_node" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_node" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_node')" type="button"><span class="property-name">node</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_node" class="collapse property-definition-div" data-parent="#accordionADDED_fields_node" id="ADDED_fields_node">
+    <div class="card-body pl-5">
+    <h4>Node</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Node identifier in HA systems or hostname for single-node systems.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_key">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_key">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_key" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_key" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_key')" type="button"><span class="property-name">key</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_key" class="collapse property-definition-div" data-parent="#accordionADDED_fields_key" id="ADDED_fields_key">
+    <div class="card-body pl-5">
+    <h4>Key</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Unique key used for alert deduplication and identification.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_datetime">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_datetime">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_datetime" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_datetime" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_datetime')" type="button"><span class="property-name">datetime</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_datetime" class="collapse property-definition-div" data-parent="#accordionADDED_fields_datetime" id="ADDED_fields_datetime">
+    <div class="card-body pl-5">
+    <h4>Datetime</h4><span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: date-time</span><br/>
+    <span class="description"><p>Timestamp when the alert was first created.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_last_occurrence">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_last_occurrence">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_last_occurrence" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_last_occurrence" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_last_occurrence')" type="button"><span class="property-name">last_occurrence</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_last_occurrence" class="collapse property-definition-div" data-parent="#accordionADDED_fields_last_occurrence" id="ADDED_fields_last_occurrence">
+    <div class="card-body pl-5">
+    <h4>Last Occurrence</h4><span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: date-time</span><br/>
+    <span class="description"><p>Timestamp of the most recent occurrence of this alert.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_dismissed">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_dismissed">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_dismissed" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_dismissed" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_dismissed')" type="button"><span class="property-name">dismissed</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_dismissed" class="collapse property-definition-div" data-parent="#accordionADDED_fields_dismissed" id="ADDED_fields_dismissed">
+    <div class="card-body pl-5">
+    <h4>Dismissed</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether the alert has been manually dismissed by a user.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_mail">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_mail">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_mail" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_mail" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_mail')" type="button"><span class="property-name">mail</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_mail" class="collapse property-definition-div" data-parent="#accordionADDED_fields_mail" id="ADDED_fields_mail">
+    <div class="card-body pl-5">
+    <h4>Mail</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Email notification configuration and status for this alert.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_text">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_text">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_text" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_text" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_text')" type="button"><span class="property-name">text</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_text" class="collapse property-definition-div" data-parent="#accordionADDED_fields_text" id="ADDED_fields_text">
+    <div class="card-body pl-5">
+    <h4>Text</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable description of the alert.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_id" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_id" class="collapse property-definition-div" data-parent="#accordionADDED_fields_id" id="ADDED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Alert identifier used for API operations.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_level">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_level">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_level" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_level" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_level')" type="button"><span class="property-name">level</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_level" class="collapse property-definition-div" data-parent="#accordionADDED_fields_level" id="ADDED_fields_level">
+    <div class="card-body pl-5">
+    <h4>Level</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Severity level of the alert (INFO, WARNING, ERROR, etc.).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_formatted">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_formatted">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_formatted" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_formatted" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_formatted')" type="button"><span class="property-name">formatted</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_formatted" class="collapse property-definition-div" data-parent="#accordionADDED_fields_formatted" id="ADDED_fields_formatted">
+    <div class="card-body pl-5">
+    <h4>Formatted</h4><br/>
+    <span class="description"><p>Formatted alert message with HTML.</p>
+    </span><div class="any-of-value" id="ADDED_fields_formatted_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsADDED_fields_formatted_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_formatted_anyOf_i0" id="ADDED_fields_formatted_anyOf_i0" onclick="setAnchor('#ADDED_fields_formatted_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_ADDED_fields_formatted_anyOf_i1" id="ADDED_fields_formatted_anyOf_i1" onclick="setAnchor('#ADDED_fields_formatted_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_ADDED_fields_formatted_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_ADDED_fields_formatted_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionADDED_fields_one_shot">
+    <div class="card">
+    <div class="card-header" id="headingADDED_fields_one_shot">
+    <h2 class="mb-0">
+    <button aria-controls="ADDED_fields_one_shot" aria-expanded="" class="btn btn-link property-name-button" data-target="#ADDED_fields_one_shot" data-toggle="collapse" onclick="setAnchor('#ADDED_fields_one_shot')" type="button"><span class="property-name">one_shot</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingADDED_fields_one_shot" class="collapse property-definition-div" data-parent="#accordionADDED_fields_one_shot" id="ADDED_fields_one_shot">
+    <div class="card-body pl-5">
+    <h4>One Shot</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this alert will not be dismissed automatically.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED" data-toggle="collapse" onclick="setAnchor('#CHANGED')" type="button"><span class="property-name">CHANGED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED" class="collapse property-definition-div" data-parent="#accordionCHANGED" id="CHANGED">
+    <div class="card-body pl-5">
+    <h4>AlertListChangedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_id" id="CHANGED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Event identifier for the changed alert.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields')" type="button"><span class="property-name">fields</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields" id="CHANGED_fields">
+    <div class="card-body pl-5">
+    <h4>Alert</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Updated alert data with changes.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCHANGED_fields_uuid">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_uuid">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_uuid" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_uuid" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_uuid')" type="button"><span class="property-name">uuid</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_uuid" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_uuid" id="CHANGED_fields_uuid">
+    <div class="card-body pl-5">
+    <h4>Uuid</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Unique identifier for the alert.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_source">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_source">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_source" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_source" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_source')" type="button"><span class="property-name">source</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_source" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_source" id="CHANGED_fields_source">
+    <div class="card-body pl-5">
+    <h4>Source</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Source component that generated the alert.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_klass">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_klass">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_klass" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_klass" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_klass')" type="button"><span class="property-name">klass</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_klass" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_klass" id="CHANGED_fields_klass">
+    <div class="card-body pl-5">
+    <h4>Klass</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Alert class identifier for categorization.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_args">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_args">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_args" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_args" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_args')" type="button"><span class="property-name">args</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_args" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_args" id="CHANGED_fields_args">
+    <div class="card-body pl-5">
+    <h4>Args</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Arguments and parameters specific to the alert type.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_node">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_node">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_node" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_node" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_node')" type="button"><span class="property-name">node</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_node" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_node" id="CHANGED_fields_node">
+    <div class="card-body pl-5">
+    <h4>Node</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Node identifier in HA systems or hostname for single-node systems.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_key">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_key">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_key" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_key" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_key')" type="button"><span class="property-name">key</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_key" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_key" id="CHANGED_fields_key">
+    <div class="card-body pl-5">
+    <h4>Key</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Unique key used for alert deduplication and identification.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_datetime">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_datetime">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_datetime" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_datetime" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_datetime')" type="button"><span class="property-name">datetime</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_datetime" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_datetime" id="CHANGED_fields_datetime">
+    <div class="card-body pl-5">
+    <h4>Datetime</h4><span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: date-time</span><br/>
+    <span class="description"><p>Timestamp when the alert was first created.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_last_occurrence">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_last_occurrence">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_last_occurrence" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_last_occurrence" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_last_occurrence')" type="button"><span class="property-name">last_occurrence</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_last_occurrence" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_last_occurrence" id="CHANGED_fields_last_occurrence">
+    <div class="card-body pl-5">
+    <h4>Last Occurrence</h4><span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: date-time</span><br/>
+    <span class="description"><p>Timestamp of the most recent occurrence of this alert.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_dismissed">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_dismissed">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_dismissed" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_dismissed" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_dismissed')" type="button"><span class="property-name">dismissed</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_dismissed" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_dismissed" id="CHANGED_fields_dismissed">
+    <div class="card-body pl-5">
+    <h4>Dismissed</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether the alert has been manually dismissed by a user.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_mail">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_mail">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_mail" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_mail" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_mail')" type="button"><span class="property-name">mail</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_mail" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_mail" id="CHANGED_fields_mail">
+    <div class="card-body pl-5">
+    <h4>Mail</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Email notification configuration and status for this alert.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_text">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_text">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_text" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_text" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_text')" type="button"><span class="property-name">text</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_text" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_text" id="CHANGED_fields_text">
+    <div class="card-body pl-5">
+    <h4>Text</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable description of the alert.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_id">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_id">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_id" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_id" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_id" id="CHANGED_fields_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Alert identifier used for API operations.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_level">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_level">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_level" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_level" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_level')" type="button"><span class="property-name">level</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_level" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_level" id="CHANGED_fields_level">
+    <div class="card-body pl-5">
+    <h4>Level</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Severity level of the alert (INFO, WARNING, ERROR, etc.).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_formatted">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_formatted">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_formatted" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_formatted" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_formatted')" type="button"><span class="property-name">formatted</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_formatted" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_formatted" id="CHANGED_fields_formatted">
+    <div class="card-body pl-5">
+    <h4>Formatted</h4><br/>
+    <span class="description"><p>Formatted alert message with HTML.</p>
+    </span><div class="any-of-value" id="CHANGED_fields_formatted_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCHANGED_fields_formatted_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_formatted_anyOf_i0" id="CHANGED_fields_formatted_anyOf_i0" onclick="setAnchor('#CHANGED_fields_formatted_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_CHANGED_fields_formatted_anyOf_i1" id="CHANGED_fields_formatted_anyOf_i1" onclick="setAnchor('#CHANGED_fields_formatted_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_CHANGED_fields_formatted_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_CHANGED_fields_formatted_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCHANGED_fields_one_shot">
+    <div class="card">
+    <div class="card-header" id="headingCHANGED_fields_one_shot">
+    <h2 class="mb-0">
+    <button aria-controls="CHANGED_fields_one_shot" aria-expanded="" class="btn btn-link property-name-button" data-target="#CHANGED_fields_one_shot" data-toggle="collapse" onclick="setAnchor('#CHANGED_fields_one_shot')" type="button"><span class="property-name">one_shot</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCHANGED_fields_one_shot" class="collapse property-definition-div" data-parent="#accordionCHANGED_fields_one_shot" id="CHANGED_fields_one_shot">
+    <div class="card-body pl-5">
+    <h4>One Shot</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this alert will not be dismissed automatically.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionREMOVED">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED" data-toggle="collapse" onclick="setAnchor('#REMOVED')" type="button"><span class="property-name">REMOVED</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED" class="collapse property-definition-div" data-parent="#accordionREMOVED" id="REMOVED">
+    <div class="card-body pl-5">
+    <h4>AlertListRemovedEvent</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionREMOVED_id">
+    <div class="card">
+    <div class="card-header" id="headingREMOVED_id">
+    <h2 class="mb-0">
+    <button aria-controls="REMOVED_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#REMOVED_id" data-toggle="collapse" onclick="setAnchor('#REMOVED_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingREMOVED_id" class="collapse property-definition-div" data-parent="#accordionREMOVED_id" id="REMOVED_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Event identifier for the removed alert.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* ALERT_LIST_READ
+

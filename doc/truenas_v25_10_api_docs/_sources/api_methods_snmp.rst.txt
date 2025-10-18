@@ -1,0 +1,7 @@
+snmp
+----
+
+.. toctree::
+
+   api_methods_snmp.config
+   api_methods_snmp.update

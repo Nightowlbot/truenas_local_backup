@@ -1,0 +1,21 @@
+core
+----
+
+.. toctree::
+
+   api_methods_core.arp
+   api_methods_core.bulk
+   api_methods_core.debug
+   api_methods_core.download
+   api_methods_core.get_jobs
+   api_methods_core.get_methods
+   api_methods_core.get_services
+   api_methods_core.job_abort
+   api_methods_core.job_download_logs
+   api_methods_core.job_wait
+   api_methods_core.ping
+   api_methods_core.ping_remote
+   api_methods_core.resize_shell
+   api_methods_core.set_options
+   api_methods_core.subscribe
+   api_methods_core.unsubscribe

@@ -1,0 +1,463 @@
+reporting.netdata_get_data
+==========================
+
+Get reporting data for given graphs.
+
+List of possible graphs can be retrieved using `reporting.netdata_graphs` call.
+
+For the time period of the graph either `unit` and `page` OR `start` and `end` should be used, not both.
+
+`aggregate` will return aggregate available data for each graph (e.g. min, max, mean).
+
+.. examples(websocket)::
+
+  Get graph data of "nfsstat" from the last hour.
+
+    :::javascript {
+        "id": "6841f242-840a-11e6-a437-00e04d680384", "msg": "method", "method": "reporting.netdata_get_data", "params": [ [{"name": "cpu"}], {"unit": "HOURLY"}, ]
+    }
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: graphs</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>graphs</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="description"><p>Array of graph identifiers specifying which metrics to retrieve.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-items-restriction" id="Call_parameters_items_i0_minItems">Must contain a minimum of <code>1</code> items</span></p> <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_items">
+    <h4>GraphIdentifier</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_items_name">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_items_name">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_items_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_items_name" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_items_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_items_name" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_items_name" id="Call_parameters_items_i0_items_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Type of performance metric to retrieve.</p>
+    <ul>
+    <li><code>cpu</code>: CPU usage statistics</li>
+    <li><code>cputemp</code>: CPU temperature readings</li>
+    <li><code>disk</code>: Disk I/O statistics</li>
+    <li><code>interface</code>: Network interface statistics</li>
+    <li><code>load</code>: System load averages</li>
+    <li><code>processes</code>: Process count and statistics</li>
+    <li><code>memory</code>: Memory usage statistics</li>
+    <li><code>uptime</code>: System uptime</li>
+    <li><code>arcactualrate</code>: ZFS ARC actual hit rate</li>
+    <li><code>arcrate</code>: ZFS ARC hit rate</li>
+    <li><code>arcsize</code>: ZFS ARC cache size</li>
+    <li><code>arcresult</code>: ZFS ARC operation results</li>
+    <li><code>disktemp</code>: Disk temperature readings</li>
+    <li><code>upscharge</code>: UPS battery charge level</li>
+    <li><code>upsruntime</code>: UPS estimated runtime</li>
+    <li><code>upsvoltage</code>: UPS voltage readings</li>
+    <li><code>upscurrent</code>: UPS current readings</li>
+    <li><code>upsfrequency</code>: UPS frequency readings</li>
+    <li><code>upsload</code>: UPS load percentage</li>
+    <li><code>upstemperature</code>: UPS temperature readings</li>
+    </ul>
+    </span><div class="enum-value" id="Call_parameters_items_i0_items_name_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"cpu"</li><li class="list-group-item enum-item">"cputemp"</li><li class="list-group-item enum-item">"disk"</li><li class="list-group-item enum-item">"interface"</li><li class="list-group-item enum-item">"load"</li><li class="list-group-item enum-item">"processes"</li><li class="list-group-item enum-item">"memory"</li><li class="list-group-item enum-item">"uptime"</li><li class="list-group-item enum-item">"arcactualrate"</li><li class="list-group-item enum-item">"arcrate"</li><li class="list-group-item enum-item">"arcsize"</li><li class="list-group-item enum-item">"arcresult"</li><li class="list-group-item enum-item">"disktemp"</li><li class="list-group-item enum-item">"upscharge"</li><li class="list-group-item enum-item">"upsruntime"</li><li class="list-group-item enum-item">"upsvoltage"</li><li class="list-group-item enum-item">"upscurrent"</li><li class="list-group-item enum-item">"upsfrequency"</li><li class="list-group-item enum-item">"upsload"</li><li class="list-group-item enum-item">"upstemperature"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_items_identifier">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_items_identifier">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_items_identifier" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_items_identifier" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_items_identifier')" type="button"><span class="property-name">identifier</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_items_identifier" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_items_identifier" id="Call_parameters_items_i0_items_identifier">
+    <div class="card-body pl-5">
+    <h4>Identifier</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Specific instance identifier for the metric (e.g., device name, interface name). <code>null</code> for system-wide     metrics.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_items_identifier_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_items_identifier_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_items_identifier_anyOf_i0" id="Call_parameters_items_i0_items_identifier_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_items_identifier_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_items_identifier_anyOf_i1" id="Call_parameters_items_i0_items_identifier_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_items_identifier_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_items_identifier_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_items_identifier_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_items_identifier_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <h5>Parameter 2: query</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>query</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Query parameters for filtering and formatting the returned data.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_unit">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_unit">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_unit" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_unit" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_unit')" type="button"><span class="property-name">unit</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_unit" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_unit" id="Call_parameters_items_i1_unit">
+    <div class="card-body pl-5">
+    <h4>Unit</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Time unit for data aggregation. <code>null</code> for default aggregation.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i1_unit_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i1_unit_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_unit_anyOf_i0" id="Call_parameters_items_i1_unit_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i1_unit_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_unit_anyOf_i1" id="Call_parameters_items_i1_unit_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i1_unit_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i1_unit_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <div class="enum-value" id="Call_parameters_items_i1_unit_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"HOUR"</li><li class="list-group-item enum-item">"DAY"</li><li class="list-group-item enum-item">"WEEK"</li><li class="list-group-item enum-item">"MONTH"</li><li class="list-group-item enum-item">"YEAR"</li></ul>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i1_unit_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_page">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_page">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_page" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_page" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_page')" type="button"><span class="property-name">page</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_page" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_page" id="Call_parameters_items_i1_page">
+    <div class="card-body pl-5">
+    <h4>Page</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 1</span><br/>
+    <span class="description"><p>Page number for paginated results.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i1_page_number">Value must be greater or equal to <code>1</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_aggregate">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_aggregate">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_aggregate" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_aggregate" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_aggregate')" type="button"><span class="property-name">aggregate</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_aggregate" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_aggregate" id="Call_parameters_items_i1_aggregate">
+    <div class="card-body pl-5">
+    <h4>Aggregate</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Whether to return aggregated data or raw data points.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_start">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_start">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_start" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_start" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_start')" type="button"><span class="property-name">start</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_start" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_start" id="Call_parameters_items_i1_start">
+    <div class="card-body pl-5">
+    <h4>Start</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Start timestamp for the data range. <code>null</code> for default start time.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i1_start_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i1_start_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_start_anyOf_i0" id="Call_parameters_items_i1_start_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i1_start_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_start_anyOf_i1" id="Call_parameters_items_i1_start_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i1_start_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i1_start_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i1_start_anyOf_i0_number">Value must be strictly greater than <code>0</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i1_start_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_end">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_end">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_end" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_end" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_end')" type="button"><span class="property-name">end</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_end" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_end" id="Call_parameters_items_i1_end">
+    <div class="card-body pl-5">
+    <h4>End</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>End timestamp for the data range. <code>null</code> for current time.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i1_end_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i1_end_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_end_anyOf_i0" id="Call_parameters_items_i1_end_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i1_end_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_end_anyOf_i1" id="Call_parameters_items_i1_end_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i1_end_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i1_end_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i1_end_anyOf_i0_number">Value must be strictly greater than <code>0</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i1_end_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="description"><p>Array of performance data responses for each requested graph.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_items">
+    <h4>ReportingGetDataResponse</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_items_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_name" data-toggle="collapse" onclick="setAnchor('#Return_value_items_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_name" id="Return_value_items_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name of the performance metric.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_items_name_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_identifier">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_identifier">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_identifier" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_identifier" data-toggle="collapse" onclick="setAnchor('#Return_value_items_identifier')" type="button"><span class="property-name">identifier</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_identifier" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_identifier" id="Return_value_items_identifier">
+    <div class="card-body pl-5">
+    <h4>Identifier</h4><br/>
+    <span class="description"><p>Specific instance identifier for the metric. <code>null</code> for system-wide metrics.</p>
+    </span><div class="any-of-value" id="Return_value_items_identifier_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_identifier_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_identifier_anyOf_i0" id="Return_value_items_identifier_anyOf_i0" onclick="setAnchor('#Return_value_items_identifier_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_identifier_anyOf_i1" id="Return_value_items_identifier_anyOf_i1" onclick="setAnchor('#Return_value_items_identifier_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_identifier_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_identifier_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_data">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_data">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_data" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_data" data-toggle="collapse" onclick="setAnchor('#Return_value_items_data')" type="button"><span class="property-name">data</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_data" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_data" id="Return_value_items_data">
+    <div class="card-body pl-5">
+    <h4>Data</h4><span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="description"><p>Array of time-series data points for the requested time period.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_items_data_items">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_aggregations">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_aggregations">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_aggregations" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_aggregations" data-toggle="collapse" onclick="setAnchor('#Return_value_items_aggregations')" type="button"><span class="property-name">aggregations</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_aggregations" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_aggregations" id="Return_value_items_aggregations">
+    <div class="card-body pl-5">
+    <h4>Aggregations</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Statistical aggregations of the data over the time period.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_items_aggregations_min">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_aggregations_min">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_aggregations_min" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_aggregations_min" data-toggle="collapse" onclick="setAnchor('#Return_value_items_aggregations_min')" type="button"><span class="property-name">min</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_aggregations_min" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_aggregations_min" id="Return_value_items_aggregations_min">
+    <div class="card-body pl-5">
+    <h4>Min</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Minimum values for each data series over the time period.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_aggregations_mean">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_aggregations_mean">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_aggregations_mean" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_aggregations_mean" data-toggle="collapse" onclick="setAnchor('#Return_value_items_aggregations_mean')" type="button"><span class="property-name">mean</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_aggregations_mean" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_aggregations_mean" id="Return_value_items_aggregations_mean">
+    <div class="card-body pl-5">
+    <h4>Mean</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Average values for each data series over the time period.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_aggregations_max">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_aggregations_max">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_aggregations_max" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_aggregations_max" data-toggle="collapse" onclick="setAnchor('#Return_value_items_aggregations_max')" type="button"><span class="property-name">max</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_aggregations_max" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_aggregations_max" id="Return_value_items_aggregations_max">
+    <div class="card-body pl-5">
+    <h4>Max</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Maximum values for each data series over the time period.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_start">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_start">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_start" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_start" data-toggle="collapse" onclick="setAnchor('#Return_value_items_start')" type="button"><span class="property-name">start</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_start" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_start" id="Return_value_items_start">
+    <div class="card-body pl-5">
+    <h4>Start</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Actual start timestamp of the returned data.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_items_start_number">Value must be strictly greater than <code>0</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_end">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_end">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_end" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_end" data-toggle="collapse" onclick="setAnchor('#Return_value_items_end')" type="button"><span class="property-name">end</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_end" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_end" id="Return_value_items_end">
+    <div class="card-body pl-5">
+    <h4>End</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Actual end timestamp of the returned data.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Return_value_items_end_number">Value must be strictly greater than <code>0</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_legend">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_legend">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_legend" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_legend" data-toggle="collapse" onclick="setAnchor('#Return_value_items_legend')" type="button"><span class="property-name">legend</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_legend" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_legend" id="Return_value_items_legend">
+    <div class="card-body pl-5">
+    <h4>Legend</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of labels describing each data series in the results.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_items_legend_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* REPORTING_READ
+

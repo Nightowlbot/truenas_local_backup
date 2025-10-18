@@ -1,0 +1,7 @@
+system.security
+---------------
+
+.. toctree::
+
+   api_methods_system.security.config
+   api_methods_system.security.update

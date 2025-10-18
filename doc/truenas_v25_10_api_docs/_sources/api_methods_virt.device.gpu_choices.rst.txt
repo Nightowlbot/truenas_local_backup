@@ -1,0 +1,161 @@
+virt.device.gpu_choices
+=======================
+
+Provide choices for GPU devices.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: gpu_type</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>gpu_type</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Type of GPU virtualization to filter available choices.</p>
+    </span><div class="enum-value" id="Call_parameters_items_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"PHYSICAL"</li><li class="list-group-item enum-item">"MDEV"</li><li class="list-group-item enum-item">"MIG"</li><li class="list-group-item enum-item">"SRIOV"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Object of available GPU devices with their hardware information.</p>
+    </span>
+    <div class="accordion" id="accordionReturn_value_additionalProperties">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_additionalProperties">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_additionalProperties" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_additionalProperties" data-toggle="collapse" onclick="setAnchor('#Return_value_additionalProperties')" type="button"><em><span class="property-name">Additional Properties</span></em></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_additionalProperties" class="collapse property-definition-div" data-parent="#accordionReturn_value_additionalProperties" id="Return_value_additionalProperties">
+    <div class="card-body pl-5"><p class="additional-properties">Each additional property must conform to the following schema</p>
+    <h4>GPUChoice</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_additionalProperties_bus">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_additionalProperties_bus">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_additionalProperties_bus" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_additionalProperties_bus" data-toggle="collapse" onclick="setAnchor('#Return_value_additionalProperties_bus')" type="button"><span class="property-name">bus</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_additionalProperties_bus" class="collapse property-definition-div" data-parent="#accordionReturn_value_additionalProperties_bus" id="Return_value_additionalProperties_bus">
+    <div class="card-body pl-5">
+    <h4>Bus</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>PCI bus identifier for the GPU device.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_additionalProperties_slot">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_additionalProperties_slot">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_additionalProperties_slot" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_additionalProperties_slot" data-toggle="collapse" onclick="setAnchor('#Return_value_additionalProperties_slot')" type="button"><span class="property-name">slot</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_additionalProperties_slot" class="collapse property-definition-div" data-parent="#accordionReturn_value_additionalProperties_slot" id="Return_value_additionalProperties_slot">
+    <div class="card-body pl-5">
+    <h4>Slot</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>PCI slot identifier for the GPU device.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_additionalProperties_description">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_additionalProperties_description">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_additionalProperties_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_additionalProperties_description" data-toggle="collapse" onclick="setAnchor('#Return_value_additionalProperties_description')" type="button"><span class="property-name">description</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_additionalProperties_description" class="collapse property-definition-div" data-parent="#accordionReturn_value_additionalProperties_description" id="Return_value_additionalProperties_description">
+    <div class="card-body pl-5">
+    <h4>Description</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable description of the GPU device.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_additionalProperties_vendor">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_additionalProperties_vendor">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_additionalProperties_vendor" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_additionalProperties_vendor" data-toggle="collapse" onclick="setAnchor('#Return_value_additionalProperties_vendor')" type="button"><span class="property-name">vendor</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_additionalProperties_vendor" class="collapse property-definition-div" data-parent="#accordionReturn_value_additionalProperties_vendor" id="Return_value_additionalProperties_vendor">
+    <div class="card-body pl-5">
+    <h4>Vendor</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>GPU vendor name. <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="Return_value_additionalProperties_vendor_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_additionalProperties_vendor_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_additionalProperties_vendor_anyOf_i0" id="Return_value_additionalProperties_vendor_anyOf_i0" onclick="setAnchor('#Return_value_additionalProperties_vendor_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_additionalProperties_vendor_anyOf_i1" id="Return_value_additionalProperties_vendor_anyOf_i1" onclick="setAnchor('#Return_value_additionalProperties_vendor_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_additionalProperties_vendor_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_additionalProperties_vendor_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_additionalProperties_pci">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_additionalProperties_pci">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_additionalProperties_pci" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_additionalProperties_pci" data-toggle="collapse" onclick="setAnchor('#Return_value_additionalProperties_pci')" type="button"><span class="property-name">pci</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_additionalProperties_pci" class="collapse property-definition-div" data-parent="#accordionReturn_value_additionalProperties_pci" id="Return_value_additionalProperties_pci">
+    <div class="card-body pl-5">
+    <h4>Pci</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Complete PCI address of the GPU device.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* READONLY_ADMIN | VIRT_INSTANCE_READ
+

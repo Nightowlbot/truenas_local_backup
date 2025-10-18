@@ -1,0 +1,182 @@
+cloud_backup.list_snapshot_directory
+====================================
+
+List files in the directory `path` of the `snapshot_id` created by the cloud backup job `id`.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: id</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>The cloud backup task ID.</p>
+    </span>
+    </div>
+    </div>
+    <h5>Parameter 2: snapshot_id</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>snapshot_id</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>ID of the snapshot whose contents to list.</p>
+    </span><span class="pattern-value" id="Call_parameters_items_i1_pattern">Must match regular expression: <code>^[^-]</code></span>
+    </div>
+    </div>
+    <h5>Parameter 3: path</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i2">
+    <h4>path</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Path within the snapshot to list the contents of.</p>
+    </span><span class="pattern-value" id="Call_parameters_items_i2_pattern">Must match regular expression: <code>^[^-]</code></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="description"><p>All files and directories at the given snapshot path.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_items">
+    <h4>CloudBackupSnapshotItem</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionReturn_value_items_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_name" data-toggle="collapse" onclick="setAnchor('#Return_value_items_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_name" id="Return_value_items_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name of the item.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_path">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_path">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_path" data-toggle="collapse" onclick="setAnchor('#Return_value_items_path')" type="button"><span class="property-name">path</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_path" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_path" id="Return_value_items_path">
+    <div class="card-body pl-5">
+    <h4>Path</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Item's path in the snapshot.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_type" data-toggle="collapse" onclick="setAnchor('#Return_value_items_type')" type="button"><span class="property-name">type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_type" id="Return_value_items_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Directory or file.</p>
+    </span><div class="enum-value" id="Return_value_items_type_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"dir"</li><li class="list-group-item enum-item">"file"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_size">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_size">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_size" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_size" data-toggle="collapse" onclick="setAnchor('#Return_value_items_size')" type="button"><span class="property-name">size</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_size" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_size" id="Return_value_items_size">
+    <div class="card-body pl-5">
+    <h4>Size</h4><br/>
+    <span class="description"><p>Size of the file in bytes.</p>
+    </span><div class="any-of-value" id="Return_value_items_size_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_items_size_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_size_anyOf_i0" id="Return_value_items_size_anyOf_i0" onclick="setAnchor('#Return_value_items_size_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_items_size_anyOf_i1" id="Return_value_items_size_anyOf_i1" onclick="setAnchor('#Return_value_items_size_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_items_size_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_items_size_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_mtime">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_mtime">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_mtime" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_mtime" data-toggle="collapse" onclick="setAnchor('#Return_value_items_mtime')" type="button"><span class="property-name">mtime</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_mtime" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_mtime" id="Return_value_items_mtime">
+    <div class="card-body pl-5">
+    <h4>Mtime</h4><span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: date-time</span><br/>
+    <span class="description"><p>Last modified time.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_items_additionalProperties">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_items_additionalProperties">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_items_additionalProperties" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_items_additionalProperties" data-toggle="collapse" onclick="setAnchor('#Return_value_items_additionalProperties')" type="button"><em><span class="property-name">Additional Properties</span></em></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_items_additionalProperties" class="collapse property-definition-div" data-parent="#accordionReturn_value_items_additionalProperties" id="Return_value_items_additionalProperties">
+    <div class="card-body pl-5"><p class="additional-properties">Additional Properties of any type are allowed.</p>
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* CLOUD_BACKUP_READ
+

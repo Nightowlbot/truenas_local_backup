@@ -1,0 +1,6 @@
+cloudsync
+---------
+
+.. toctree::
+
+   api_events_cloudsync.query

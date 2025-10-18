@@ -1,0 +1,224 @@
+app.upgrade_summary
+===================
+
+Retrieve upgrade summary for `app_name`.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: app_name</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>app_name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name of the application to get upgrade summary for.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    <h5>Parameter 2: options</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>options</h4><span class="badge badge-dark value-type">Type: object</span> <span class="badge badge-success default-value">Default: {"app_version": "latest"}</span><br/>
+    <span class="description"><p>Options specifying the target version for the summary.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_app_version">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_app_version">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_app_version" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_app_version" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_app_version')" type="button"><span class="property-name">app_version</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_app_version" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_app_version" id="Call_parameters_items_i1_app_version">
+    <div class="card-body pl-5">
+    <h4>App Version</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "latest"</span><br/>
+    <span class="description"><p>Target version to generate upgrade summary for. Use 'latest' for the newest available version.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i1_app_version_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>AppUpgradeSummaryResult</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>AppUpgradeSummaryResult return fields.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_latest_version">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_latest_version">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_latest_version" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_latest_version" data-toggle="collapse" onclick="setAnchor('#Return_value_latest_version')" type="button"><span class="property-name">latest_version</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_latest_version" class="collapse property-definition-div" data-parent="#accordionReturn_value_latest_version" id="Return_value_latest_version">
+    <div class="card-body pl-5">
+    <h4>Latest Version</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Latest version available for the app.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_latest_human_version">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_latest_human_version">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_latest_human_version" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_latest_human_version" data-toggle="collapse" onclick="setAnchor('#Return_value_latest_human_version')" type="button"><span class="property-name">latest_human_version</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_latest_human_version" class="collapse property-definition-div" data-parent="#accordionReturn_value_latest_human_version" id="Return_value_latest_human_version">
+    <div class="card-body pl-5">
+    <h4>Latest Human Version</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Latest human readable version available for the app.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_upgrade_version">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_upgrade_version">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_upgrade_version" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_upgrade_version" data-toggle="collapse" onclick="setAnchor('#Return_value_upgrade_version')" type="button"><span class="property-name">upgrade_version</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_upgrade_version" class="collapse property-definition-div" data-parent="#accordionReturn_value_upgrade_version" id="Return_value_upgrade_version">
+    <div class="card-body pl-5">
+    <h4>Upgrade Version</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Version user has requested to be upgraded at.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_upgrade_human_version">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_upgrade_human_version">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_upgrade_human_version" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_upgrade_human_version" data-toggle="collapse" onclick="setAnchor('#Return_value_upgrade_human_version')" type="button"><span class="property-name">upgrade_human_version</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_upgrade_human_version" class="collapse property-definition-div" data-parent="#accordionReturn_value_upgrade_human_version" id="Return_value_upgrade_human_version">
+    <div class="card-body pl-5">
+    <h4>Upgrade Human Version</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable version user has requested to be upgraded at.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_available_versions_for_upgrade">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_available_versions_for_upgrade">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_available_versions_for_upgrade" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_available_versions_for_upgrade" data-toggle="collapse" onclick="setAnchor('#Return_value_available_versions_for_upgrade')" type="button"><span class="property-name">available_versions_for_upgrade</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_available_versions_for_upgrade" class="collapse property-definition-div" data-parent="#accordionReturn_value_available_versions_for_upgrade" id="Return_value_available_versions_for_upgrade">
+    <div class="card-body pl-5">
+    <h4>Available Versions For Upgrade</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="description"><p>List of available versions for upgrade.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_available_versions_for_upgrade_items">
+    <h4>AppVersionInfo</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_available_versions_for_upgrade_items_version">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_available_versions_for_upgrade_items_version">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_available_versions_for_upgrade_items_version" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_available_versions_for_upgrade_items_version" data-toggle="collapse" onclick="setAnchor('#Return_value_available_versions_for_upgrade_items_version')" type="button"><span class="property-name">version</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_available_versions_for_upgrade_items_version" class="collapse property-definition-div" data-parent="#accordionReturn_value_available_versions_for_upgrade_items_version" id="Return_value_available_versions_for_upgrade_items_version">
+    <div class="card-body pl-5">
+    <h4>Version</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Version of the app.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_available_versions_for_upgrade_items_human_version">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_available_versions_for_upgrade_items_human_version">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_available_versions_for_upgrade_items_human_version" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_available_versions_for_upgrade_items_human_version" data-toggle="collapse" onclick="setAnchor('#Return_value_available_versions_for_upgrade_items_human_version')" type="button"><span class="property-name">human_version</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_available_versions_for_upgrade_items_human_version" class="collapse property-definition-div" data-parent="#accordionReturn_value_available_versions_for_upgrade_items_human_version" id="Return_value_available_versions_for_upgrade_items_human_version">
+    <div class="card-body pl-5">
+    <h4>Human Version</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human-readable version of the app.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_changelog">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_changelog">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_changelog" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_changelog" data-toggle="collapse" onclick="setAnchor('#Return_value_changelog')" type="button"><span class="property-name">changelog</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_changelog" class="collapse property-definition-div" data-parent="#accordionReturn_value_changelog" id="Return_value_changelog">
+    <div class="card-body pl-5">
+    <h4>Changelog</h4><br/>
+    <span class="description"><p>Changelog or release notes for the upgrade version. <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="Return_value_changelog_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_changelog_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_changelog_anyOf_i0" id="Return_value_changelog_anyOf_i0" onclick="setAnchor('#Return_value_changelog_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_changelog_anyOf_i1" id="Return_value_changelog_anyOf_i1" onclick="setAnchor('#Return_value_changelog_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_changelog_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_changelog_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* APPS_READ
+

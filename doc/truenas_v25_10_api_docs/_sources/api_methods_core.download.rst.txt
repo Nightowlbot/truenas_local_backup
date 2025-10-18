@@ -1,0 +1,95 @@
+core.download
+=============
+
+Core helper to call a job marked for download.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: method</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>method</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Method name to execute for generating download content.</p>
+    </span>
+    </div>
+    </div>
+    <h5>Parameter 2: args</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>args</h4><span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="description"><p>Array of arguments to pass to the method.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1_items">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    <h5>Parameter 3: filename</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i2">
+    <h4>filename</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Filename for the downloaded file.</p>
+    </span>
+    </div>
+    </div>
+    <h5>Parameter 4: buffered</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i3">
+    <h4>buffered</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Non-<code>buffered</code> downloads will allow job to write to pipe as soon as download URL is requested, job will stay     blocked meanwhile. <code>buffered</code> downloads must wait for job to complete before requesting download URL, job's     pipe output will be buffered to ramfs.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="description"><p>Job ID and the URL for download.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-items-restriction" id="Return_value_minItems">Must contain a minimum of <code>2</code> items</span></p><p><span class="badge badge-light restriction max-items-restriction" id="Return_value_maxItems">Must contain a maximum of <code>2</code> items</span></p> <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Item at 1 must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_items_i0">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    <h5>Item at 2 must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_items_i1">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* 
+

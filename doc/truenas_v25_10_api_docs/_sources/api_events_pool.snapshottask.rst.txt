@@ -1,0 +1,6 @@
+pool.snapshottask
+-----------------
+
+.. toctree::
+
+   api_events_pool.snapshottask.query

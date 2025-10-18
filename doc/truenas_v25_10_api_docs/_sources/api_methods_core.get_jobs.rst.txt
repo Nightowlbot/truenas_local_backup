@@ -1,0 +1,1364 @@
+core.get_jobs
+=============
+
+Get information about long-running jobs. If authenticated session does not have the FULL_ADMIN role, only jobs owned by the current authenticated session will be returned.
+
+`result` key will have sensitive values redacted by default for external clients.
+
+Redaction behavior may be explicitly specfied via the `extra` query-option `raw_result`. If `raw_result` is True then unredacted result is returned.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: filters</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>filters</h4><span class="badge badge-dark value-type">Type: array</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>List of filters for query results. See API documentation for "Query Methods" for more guidance.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_items">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div>
+    </div><br/>
+    <div class="badge badge-secondary">Examples:</div>
+    <br/><div class="jumbotron examples" id="Call_parameters_items_i0_ex1"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="w">    </span><span class="p">[</span>
+    <span class="w">        </span><span class="s2">"name"</span><span class="p">,</span>
+    <span class="w">        </span><span class="s2">"="</span><span class="p">,</span>
+    <span class="w">        </span><span class="s2">"bob"</span>
+    <span class="w">    </span><span class="p">]</span>
+    <span class="p">]</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Call_parameters_items_i0_ex2"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="w">    </span><span class="p">[</span>
+    <span class="w">        </span><span class="s2">"OR"</span><span class="p">,</span>
+    <span class="w">        </span><span class="p">[</span>
+    <span class="w">            </span><span class="p">[</span>
+    <span class="w">                </span><span class="p">[</span>
+    <span class="w">                    </span><span class="s2">"name"</span><span class="p">,</span>
+    <span class="w">                    </span><span class="s2">"="</span><span class="p">,</span>
+    <span class="w">                    </span><span class="s2">"bob"</span>
+    <span class="w">                </span><span class="p">]</span>
+    <span class="w">            </span><span class="p">],</span>
+    <span class="w">            </span><span class="p">[</span>
+    <span class="w">                </span><span class="p">[</span>
+    <span class="w">                    </span><span class="s2">"name"</span><span class="p">,</span>
+    <span class="w">                    </span><span class="s2">"="</span><span class="p">,</span>
+    <span class="w">                    </span><span class="s2">"larry"</span>
+    <span class="w">                </span><span class="p">]</span>
+    <span class="w">            </span><span class="p">]</span>
+    <span class="w">        </span><span class="p">]</span>
+    <span class="w">    </span><span class="p">]</span>
+    <span class="p">]</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    <h5>Parameter 2: options</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1">
+    <h4>options</h4><span class="badge badge-dark value-type">Type: object</span> <div class="json-default-value">Default:<div class="value">{
+      "extra": {},
+      "order_by": [],
+      "select": [],
+      "count": false,
+      "get": false,
+      "offset": 0,
+      "limit": 0,
+      "force_sql_filters": false
+    }</div></div><br/>
+    <span class="description"><p>Query options including pagination, ordering, and additional parameters.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i1_extra">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_extra">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_extra" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_extra" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_extra')" type="button"><span class="property-name">extra</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_extra" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_extra" id="Call_parameters_items_i1_extra">
+    <div class="card-body pl-5">
+    <h4>Extra</h4><span class="badge badge-dark value-type">Type: object</span> <span class="badge badge-success default-value">Default: {}</span><br/>
+    <span class="description"><p>Extra options are defined on a per-endpoint basis and are described in the documentation for the associated     query method. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_order_by">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_order_by">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_order_by" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_order_by" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_order_by')" type="button"><span class="property-name">order_by</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_order_by" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_order_by" id="Call_parameters_items_i1_order_by">
+    <div class="card-body pl-5">
+    <h4>Order By</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>An array of field names describing the manner in which query results should be ordered. The field names may     also have one of more of the following special prefixes: <code>-</code> (reverse sort direction), <code>nulls_first:</code> (place     any null values at the head of the results list), <code>nulls_last:</code> (place any null values at the tail of the     results list). </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1_order_by_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div><br/>
+    <div class="badge badge-secondary">Example:</div>
+    <br/><div class="jumbotron examples" id="Call_parameters_items_i1_order_by_ex1"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="w">    </span><span class="s2">"size"</span><span class="p">,</span>
+    <span class="w">    </span><span class="s2">"-devname"</span><span class="p">,</span>
+    <span class="w">    </span><span class="s2">"nulls_first:-expiretime"</span>
+    <span class="p">]</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_select">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_select">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_select" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_select" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_select')" type="button"><span class="property-name">select</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_select" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_select" id="Call_parameters_items_i1_select">
+    <div class="card-body pl-5">
+    <h4>Select</h4><span class="badge badge-dark value-type">Type: array</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>An array of field names specifying the exact fields to include in the query return. The dot character <code>.</code>     may be used to explicitly select only subkeys of the query result. </p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1_select_items">
+    <br/>
+    <div class="any-of-value" id="Call_parameters_items_i1_select_items_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i1_select_items_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_select_items_anyOf_i0" id="Call_parameters_items_i1_select_items_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i1_select_items_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i1_select_items_anyOf_i1" id="Call_parameters_items_i1_select_items_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i1_select_items_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i1_select_items_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i1_select_items_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i1_select_items_anyOf_i1_items">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div>
+    </div>
+    </div></div></div>
+    </div>
+    </div><br/>
+    <div class="badge badge-secondary">Example:</div>
+    <br/><div class="jumbotron examples" id="Call_parameters_items_i1_select_ex1"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="w">    </span><span class="s2">"username"</span><span class="p">,</span>
+    <span class="w">    </span><span class="s2">"Authentication.status"</span>
+    <span class="p">]</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_count">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_count">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_count" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_count" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_count')" type="button"><span class="property-name">count</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_count" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_count" id="Call_parameters_items_i1_count">
+    <div class="card-body pl-5">
+    <h4>Count</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Return a numeric value representing the number of items that match the specified <code>query-filters</code>. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_get">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_get">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_get" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_get" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_get')" type="button"><span class="property-name">get</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_get" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_get" id="Call_parameters_items_i1_get">
+    <div class="card-body pl-5">
+    <h4>Get</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Return the JSON object of the first result matching the specified <code>query-filters</code>. The query fails     if there specified <code>query-filters</code> return no results. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_offset">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_offset">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_offset" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_offset" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_offset')" type="button"><span class="property-name">offset</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_offset" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_offset" id="Call_parameters_items_i1_offset">
+    <div class="card-body pl-5">
+    <h4>Offset</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+    <span class="description"><p>This specifies the beginning offset of the results array. When combined with the <code>limit</code> query-option     it may be used to implement pagination of large results arrays. WARNING: some query methods provide     volatile results and the onus is on the developer to understand whether pagination is appropriate     for a particular query API method. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_limit">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_limit">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_limit" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_limit" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_limit')" type="button"><span class="property-name">limit</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_limit" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_limit" id="Call_parameters_items_i1_limit">
+    <div class="card-body pl-5">
+    <h4>Limit</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 0</span><br/>
+    <span class="description"><p>This specifies the maximum number of results matching the specified <code>query-filters</code> to return. When     combined wtih the <code>offset</code> query-option it may be used to implement pagination of large results arrays.</p>
+    <p>WARNING: Some query methods provide volatile results and the onus is on the developer to understand whether     pagination is appropriate for a particular query API method. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i1_force_sql_filters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i1_force_sql_filters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i1_force_sql_filters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i1_force_sql_filters" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i1_force_sql_filters')" type="button"><span class="property-name">force_sql_filters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i1_force_sql_filters" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i1_force_sql_filters" id="Call_parameters_items_i1_force_sql_filters">
+    <div class="card-body pl-5">
+    <h4>Force Sql Filters</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Force use of SQL for result filtering to reduce response time. May not work for all methods.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><br/>
+    <div class="any-of-value" id="Return_value_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0" id="Return_value_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1" id="Return_value_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1')" role="tab">CoreGetJobsItemQueryResultItem</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i2" id="Return_value_anyOf_i2" onclick="setAnchor('#Return_value_anyOf_i2')" role="tab">Option 3</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array of object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_anyOf_i0_items">
+    <h4>CoreGetJobsItemQueryResultItem</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_id" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_id')" type="button"><span class="property-name">id</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_id" id="Return_value_anyOf_i0_items_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for this job.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_message_ids">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_message_ids">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_message_ids" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_message_ids" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_message_ids')" type="button"><span class="property-name">message_ids</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_message_ids" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_message_ids" id="Return_value_anyOf_i0_items_message_ids">
+    <div class="card-body pl-5">
+    <h4>Message Ids</h4><span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="description"><p>Array of message IDs associated with this job.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_anyOf_i0_items_message_ids_items">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_method">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_method">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_method" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_method" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_method')" type="button"><span class="property-name">method</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_method" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_method" id="Return_value_anyOf_i0_items_method">
+    <div class="card-body pl-5">
+    <h4>Method</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name of the method/service being executed by this job.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_arguments">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_arguments">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_arguments" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_arguments" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_arguments')" type="button"><span class="property-name">arguments</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_arguments" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_arguments" id="Return_value_anyOf_i0_items_arguments">
+    <div class="card-body pl-5">
+    <h4>Arguments</h4><span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="description"><p>Array of arguments passed to the job method.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_anyOf_i0_items_arguments_items">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_transient">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_transient">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_transient" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_transient" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_transient')" type="button"><span class="property-name">transient</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_transient" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_transient" id="Return_value_anyOf_i0_items_transient">
+    <div class="card-body pl-5">
+    <h4>Transient</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this is a temporary job that will be automatically cleaned up.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_description">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_description">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_description" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_description')" type="button"><span class="property-name">description</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_description" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_description" id="Return_value_anyOf_i0_items_description">
+    <div class="card-body pl-5">
+    <h4>Description</h4><br/>
+    <span class="description"><p>Human-readable description of what this job does. <code>null</code> if not provided.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_description_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_description_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_description_anyOf_i0" id="Return_value_anyOf_i0_items_description_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_description_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_description_anyOf_i1" id="Return_value_anyOf_i0_items_description_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_description_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_description_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_description_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_abortable">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_abortable">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_abortable" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_abortable" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_abortable')" type="button"><span class="property-name">abortable</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_abortable" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_abortable" id="Return_value_anyOf_i0_items_abortable">
+    <div class="card-body pl-5">
+    <h4>Abortable</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this job can be cancelled/aborted.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_logs_path">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_logs_path">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_logs_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_logs_path" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_logs_path')" type="button"><span class="property-name">logs_path</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_logs_path" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_logs_path" id="Return_value_anyOf_i0_items_logs_path">
+    <div class="card-body pl-5">
+    <h4>Logs Path</h4><br/>
+    <span class="description"><p>File system path to detailed job logs. <code>null</code> if no logs available.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_logs_path_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_logs_path_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_logs_path_anyOf_i0" id="Return_value_anyOf_i0_items_logs_path_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_logs_path_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_logs_path_anyOf_i1" id="Return_value_anyOf_i0_items_logs_path_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_logs_path_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_logs_path_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_logs_path_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_logs_excerpt">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_logs_excerpt">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_logs_excerpt" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_logs_excerpt" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_logs_excerpt')" type="button"><span class="property-name">logs_excerpt</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_logs_excerpt" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_logs_excerpt" id="Return_value_anyOf_i0_items_logs_excerpt">
+    <div class="card-body pl-5">
+    <h4>Logs Excerpt</h4><br/>
+    <span class="description"><p>Brief excerpt from job logs for quick preview. <code>null</code> if no logs available.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_logs_excerpt_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_logs_excerpt_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_logs_excerpt_anyOf_i0" id="Return_value_anyOf_i0_items_logs_excerpt_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_logs_excerpt_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_logs_excerpt_anyOf_i1" id="Return_value_anyOf_i0_items_logs_excerpt_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_logs_excerpt_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_logs_excerpt_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_logs_excerpt_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_progress">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_progress">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_progress" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_progress" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_progress')" type="button"><span class="property-name">progress</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_progress" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_progress" id="Return_value_anyOf_i0_items_progress">
+    <div class="card-body pl-5">
+    <h4>CoreGetJobsItemProgress</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Current progress information for the job.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_progress_percent">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_progress_percent">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_progress_percent" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_progress_percent" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_progress_percent')" type="button"><span class="property-name">percent</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_progress_percent" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_progress_percent" id="Return_value_anyOf_i0_items_progress_percent">
+    <div class="card-body pl-5">
+    <h4>Percent</h4><br/>
+    <span class="description"><p>Completion percentage of the job. <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_progress_percent_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_progress_percent_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_progress_percent_anyOf_i0" id="Return_value_anyOf_i0_items_progress_percent_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_progress_percent_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_progress_percent_anyOf_i1" id="Return_value_anyOf_i0_items_progress_percent_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_progress_percent_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_progress_percent_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_progress_percent_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_progress_description">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_progress_description">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_progress_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_progress_description" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_progress_description')" type="button"><span class="property-name">description</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_progress_description" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_progress_description" id="Return_value_anyOf_i0_items_progress_description">
+    <div class="card-body pl-5">
+    <h4>Description</h4><br/>
+    <span class="description"><p>Human-readable description of the current progress. <code>null</code> if not available.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_progress_description_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_progress_description_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_progress_description_anyOf_i0" id="Return_value_anyOf_i0_items_progress_description_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_progress_description_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_progress_description_anyOf_i1" id="Return_value_anyOf_i0_items_progress_description_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_progress_description_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_progress_description_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_progress_description_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_progress_extra">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_progress_extra">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_progress_extra" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_progress_extra" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_progress_extra')" type="button"><span class="property-name">extra</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_progress_extra" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_progress_extra" id="Return_value_anyOf_i0_items_progress_extra">
+    <div class="card-body pl-5">
+    <h4>Extra</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Additional progress information specific to the job type.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_result">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_result">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_result" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_result" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_result')" type="button"><span class="property-name">result</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_result" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_result" id="Return_value_anyOf_i0_items_result">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The result data returned by the job upon successful completion.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_result_encoding_error">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_result_encoding_error">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_result_encoding_error" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_result_encoding_error" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_result_encoding_error')" type="button"><span class="property-name">result_encoding_error</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_result_encoding_error" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_result_encoding_error" id="Return_value_anyOf_i0_items_result_encoding_error">
+    <div class="card-body pl-5">
+    <h4>Result Encoding Error</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Encoding error information if result serialization failed.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_error">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_error">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_error" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_error" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_error')" type="button"><span class="property-name">error</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_error" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_error" id="Return_value_anyOf_i0_items_error">
+    <div class="card-body pl-5">
+    <h4>Error</h4><br/>
+    <span class="description"><p>Error message if the job failed. <code>null</code> if no error occurred.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_error_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_error_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_error_anyOf_i0" id="Return_value_anyOf_i0_items_error_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_error_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_error_anyOf_i1" id="Return_value_anyOf_i0_items_error_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_error_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_error_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_error_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_exception">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_exception">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_exception" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_exception" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_exception')" type="button"><span class="property-name">exception</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_exception" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_exception" id="Return_value_anyOf_i0_items_exception">
+    <div class="card-body pl-5">
+    <h4>Exception</h4><br/>
+    <span class="description"><p>Exception details if the job encountered an exception. <code>null</code> if no exception occurred.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_exception_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_exception_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_exception_anyOf_i0" id="Return_value_anyOf_i0_items_exception_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_exception_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_exception_anyOf_i1" id="Return_value_anyOf_i0_items_exception_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_exception_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_exception_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_exception_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_exc_info">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_exc_info">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_exc_info" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_exc_info" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_exc_info')" type="button"><span class="property-name">exc_info</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_exc_info" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_exc_info" id="Return_value_anyOf_i0_items_exc_info">
+    <div class="card-body pl-5">
+    <br/>
+    <span class="description"><p>Detailed exception information. <code>null</code> if no exception occurred.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_exc_info_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_exc_info_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_exc_info_anyOf_i0" id="Return_value_anyOf_i0_items_exc_info_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_exc_info_anyOf_i0')" role="tab">CoreGetJobsItemExcInfo</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_exc_info_anyOf_i1" id="Return_value_anyOf_i0_items_exc_info_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_exc_info_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_exc_info_anyOf_i0" role="tabpanel">
+    <h4>CoreGetJobsItemExcInfo</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_exc_info_anyOf_i0_repr">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_exc_info_anyOf_i0_repr">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_exc_info_anyOf_i0_repr" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_exc_info_anyOf_i0_repr" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_exc_info_anyOf_i0_repr')" type="button"><span class="property-name">repr</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_exc_info_anyOf_i0_repr" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_exc_info_anyOf_i0_repr" id="Return_value_anyOf_i0_items_exc_info_anyOf_i0_repr">
+    <div class="card-body pl-5">
+    <h4>Repr</h4><br/>
+    <span class="description"><p>String representation of the exception. <code>null</code> if no exception occurred.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_exc_info_anyOf_i0_repr_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_exc_info_anyOf_i0_repr_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_exc_info_anyOf_i0_repr_anyOf_i0" id="Return_value_anyOf_i0_items_exc_info_anyOf_i0_repr_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_exc_info_anyOf_i0_repr_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_exc_info_anyOf_i0_repr_anyOf_i1" id="Return_value_anyOf_i0_items_exc_info_anyOf_i0_repr_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_exc_info_anyOf_i0_repr_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_exc_info_anyOf_i0_repr_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_exc_info_anyOf_i0_repr_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_exc_info_anyOf_i0_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_exc_info_anyOf_i0_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_exc_info_anyOf_i0_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_exc_info_anyOf_i0_type" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_exc_info_anyOf_i0_type')" type="button"><span class="property-name">type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_exc_info_anyOf_i0_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_exc_info_anyOf_i0_type" id="Return_value_anyOf_i0_items_exc_info_anyOf_i0_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><br/>
+    <span class="description"><p>Exception type name. <code>null</code> if no exception occurred.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_exc_info_anyOf_i0_type_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_exc_info_anyOf_i0_type_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_exc_info_anyOf_i0_type_anyOf_i0" id="Return_value_anyOf_i0_items_exc_info_anyOf_i0_type_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_exc_info_anyOf_i0_type_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_exc_info_anyOf_i0_type_anyOf_i1" id="Return_value_anyOf_i0_items_exc_info_anyOf_i0_type_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_exc_info_anyOf_i0_type_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_exc_info_anyOf_i0_type_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_exc_info_anyOf_i0_type_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_exc_info_anyOf_i0_errno">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_exc_info_anyOf_i0_errno">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_exc_info_anyOf_i0_errno" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_exc_info_anyOf_i0_errno" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_exc_info_anyOf_i0_errno')" type="button"><span class="property-name">errno</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_exc_info_anyOf_i0_errno" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_exc_info_anyOf_i0_errno" id="Return_value_anyOf_i0_items_exc_info_anyOf_i0_errno">
+    <div class="card-body pl-5">
+    <h4>Errno</h4><br/>
+    <span class="description"><p>System error number if applicable. <code>null</code> otherwise.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_exc_info_anyOf_i0_errno_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_exc_info_anyOf_i0_errno_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_exc_info_anyOf_i0_errno_anyOf_i0" id="Return_value_anyOf_i0_items_exc_info_anyOf_i0_errno_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_exc_info_anyOf_i0_errno_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_exc_info_anyOf_i0_errno_anyOf_i1" id="Return_value_anyOf_i0_items_exc_info_anyOf_i0_errno_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_exc_info_anyOf_i0_errno_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_exc_info_anyOf_i0_errno_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_exc_info_anyOf_i0_errno_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_exc_info_anyOf_i0_extra">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_exc_info_anyOf_i0_extra">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_exc_info_anyOf_i0_extra" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_exc_info_anyOf_i0_extra" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_exc_info_anyOf_i0_extra')" type="button"><span class="property-name">extra</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_exc_info_anyOf_i0_extra" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_exc_info_anyOf_i0_extra" id="Return_value_anyOf_i0_items_exc_info_anyOf_i0_extra">
+    <div class="card-body pl-5">
+    <h4>Extra</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Additional exception information.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_exc_info_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_state">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_state">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_state" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_state" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_state')" type="button"><span class="property-name">state</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_state" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_state" id="Return_value_anyOf_i0_items_state">
+    <div class="card-body pl-5">
+    <h4>State</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Current execution state of the job.</p>
+    </span>
+    <br/>
+    <div class="badge badge-secondary">Examples:</div>
+    <br/><div class="jumbotron examples" id="Return_value_anyOf_i0_items_state_ex1"><div class="highlight"><pre><span></span><span class="s2">"WAITING"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_anyOf_i0_items_state_ex2"><div class="highlight"><pre><span></span><span class="s2">"RUNNING"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_anyOf_i0_items_state_ex3"><div class="highlight"><pre><span></span><span class="s2">"SUCCESS"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_anyOf_i0_items_state_ex4"><div class="highlight"><pre><span></span><span class="s2">"FAILED"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_anyOf_i0_items_state_ex5"><div class="highlight"><pre><span></span><span class="s2">"ABORTED"</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_time_started">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_time_started">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_time_started" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_time_started" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_time_started')" type="button"><span class="property-name">time_started</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_time_started" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_time_started" id="Return_value_anyOf_i0_items_time_started">
+    <div class="card-body pl-5">
+    <h4>Time Started</h4><br/>
+    <span class="description"><p>Timestamp when the job started execution. <code>null</code> if not yet started.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_time_started_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_time_started_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_time_started_anyOf_i0" id="Return_value_anyOf_i0_items_time_started_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_time_started_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_time_started_anyOf_i1" id="Return_value_anyOf_i0_items_time_started_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_time_started_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_time_started_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: date-time</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_time_started_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_time_finished">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_time_finished">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_time_finished" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_time_finished" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_time_finished')" type="button"><span class="property-name">time_finished</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_time_finished" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_time_finished" id="Return_value_anyOf_i0_items_time_finished">
+    <div class="card-body pl-5">
+    <h4>Time Finished</h4><br/>
+    <span class="description"><p>Timestamp when the job completed execution. <code>null</code> if still running or not started.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_time_finished_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_time_finished_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_time_finished_anyOf_i0" id="Return_value_anyOf_i0_items_time_finished_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_time_finished_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_time_finished_anyOf_i1" id="Return_value_anyOf_i0_items_time_finished_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_time_finished_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_time_finished_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: date-time</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_time_finished_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_credentials">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_credentials">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_credentials" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_credentials" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_credentials')" type="button"><span class="property-name">credentials</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_credentials" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_credentials" id="Return_value_anyOf_i0_items_credentials">
+    <div class="card-body pl-5">
+    <br/>
+    <span class="description"><p>Authentication credentials used for this job. <code>null</code> if no authentication required.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i0_items_credentials_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i0_items_credentials_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_credentials_anyOf_i0" id="Return_value_anyOf_i0_items_credentials_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i0_items_credentials_anyOf_i0')" role="tab">CoreGetJobsItemCredentials</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i0_items_credentials_anyOf_i1" id="Return_value_anyOf_i0_items_credentials_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i0_items_credentials_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i0_items_credentials_anyOf_i0" role="tabpanel">
+    <h4>CoreGetJobsItemCredentials</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_credentials_anyOf_i0_type">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_credentials_anyOf_i0_type">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_credentials_anyOf_i0_type" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_credentials_anyOf_i0_type" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_credentials_anyOf_i0_type')" type="button"><span class="property-name">type</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_credentials_anyOf_i0_type" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_credentials_anyOf_i0_type" id="Return_value_anyOf_i0_items_credentials_anyOf_i0_type">
+    <div class="card-body pl-5">
+    <h4>Type</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Authentication type used for the job.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i0_items_credentials_anyOf_i0_data">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i0_items_credentials_anyOf_i0_data">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i0_items_credentials_anyOf_i0_data" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i0_items_credentials_anyOf_i0_data" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i0_items_credentials_anyOf_i0_data')" type="button"><span class="property-name">data</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i0_items_credentials_anyOf_i0_data" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i0_items_credentials_anyOf_i0_data" id="Return_value_anyOf_i0_items_credentials_anyOf_i0_data">
+    <div class="card-body pl-5">
+    <h4>Data</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Authentication data and credentials for the job.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i0_items_credentials_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1" role="tabpanel">
+    <h4>CoreGetJobsItemQueryResultItem</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_id" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_id')" type="button"><span class="property-name">id</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_id" id="Return_value_anyOf_i1_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for this job.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_message_ids">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_message_ids">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_message_ids" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_message_ids" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_message_ids')" type="button"><span class="property-name">message_ids</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_message_ids" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_message_ids" id="Return_value_anyOf_i1_message_ids">
+    <div class="card-body pl-5">
+    <h4>Message Ids</h4><span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="description"><p>Array of message IDs associated with this job.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_anyOf_i1_message_ids_items">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_method">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_method">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_method" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_method" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_method')" type="button"><span class="property-name">method</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_method" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_method" id="Return_value_anyOf_i1_method">
+    <div class="card-body pl-5">
+    <h4>Method</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Name of the method/service being executed by this job.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_arguments">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_arguments">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_arguments" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_arguments" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_arguments')" type="button"><span class="property-name">arguments</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_arguments" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_arguments" id="Return_value_anyOf_i1_arguments">
+    <div class="card-body pl-5">
+    <h4>Arguments</h4><span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="description"><p>Array of arguments passed to the job method.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_anyOf_i1_arguments_items">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_transient">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_transient">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_transient" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_transient" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_transient')" type="button"><span class="property-name">transient</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_transient" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_transient" id="Return_value_anyOf_i1_transient">
+    <div class="card-body pl-5">
+    <h4>Transient</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this is a temporary job that will be automatically cleaned up.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_description">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_description">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_description" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_description" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_description')" type="button"><span class="property-name">description</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_description" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_description" id="Return_value_anyOf_i1_description">
+    <div class="card-body pl-5">
+    <h4>Description</h4><br/>
+    <span class="description"><p>Human-readable description of what this job does. <code>null</code> if not provided.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_description_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_description_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_description_anyOf_i0" id="Return_value_anyOf_i1_description_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_description_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_description_anyOf_i1" id="Return_value_anyOf_i1_description_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_description_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_description_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_description_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_abortable">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_abortable">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_abortable" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_abortable" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_abortable')" type="button"><span class="property-name">abortable</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_abortable" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_abortable" id="Return_value_anyOf_i1_abortable">
+    <div class="card-body pl-5">
+    <h4>Abortable</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether this job can be cancelled/aborted.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_logs_path">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_logs_path">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_logs_path" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_logs_path" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_logs_path')" type="button"><span class="property-name">logs_path</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_logs_path" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_logs_path" id="Return_value_anyOf_i1_logs_path">
+    <div class="card-body pl-5">
+    <h4>Logs Path</h4><br/>
+    <span class="description"><p>File system path to detailed job logs. <code>null</code> if no logs available.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_logs_path_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_logs_path_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_logs_path_anyOf_i0" id="Return_value_anyOf_i1_logs_path_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_logs_path_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_logs_path_anyOf_i1" id="Return_value_anyOf_i1_logs_path_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_logs_path_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_logs_path_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_logs_path_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_logs_excerpt">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_logs_excerpt">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_logs_excerpt" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_logs_excerpt" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_logs_excerpt')" type="button"><span class="property-name">logs_excerpt</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_logs_excerpt" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_logs_excerpt" id="Return_value_anyOf_i1_logs_excerpt">
+    <div class="card-body pl-5">
+    <h4>Logs Excerpt</h4><br/>
+    <span class="description"><p>Brief excerpt from job logs for quick preview. <code>null</code> if no logs available.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_logs_excerpt_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_logs_excerpt_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_logs_excerpt_anyOf_i0" id="Return_value_anyOf_i1_logs_excerpt_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_logs_excerpt_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_logs_excerpt_anyOf_i1" id="Return_value_anyOf_i1_logs_excerpt_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_logs_excerpt_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_logs_excerpt_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_logs_excerpt_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_progress">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_progress">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_progress" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_progress" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_progress')" type="button"><span class="property-name">progress</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_progress" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_progress" id="Return_value_anyOf_i1_progress">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Current progress information for the job.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_result">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_result">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_result" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_result" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_result')" type="button"><span class="property-name">result</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_result" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_result" id="Return_value_anyOf_i1_result">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The result data returned by the job upon successful completion.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_result_encoding_error">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_result_encoding_error">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_result_encoding_error" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_result_encoding_error" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_result_encoding_error')" type="button"><span class="property-name">result_encoding_error</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_result_encoding_error" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_result_encoding_error" id="Return_value_anyOf_i1_result_encoding_error">
+    <div class="card-body pl-5">
+    <h4>Result Encoding Error</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Encoding error information if result serialization failed.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_error">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_error">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_error" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_error" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_error')" type="button"><span class="property-name">error</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_error" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_error" id="Return_value_anyOf_i1_error">
+    <div class="card-body pl-5">
+    <h4>Error</h4><br/>
+    <span class="description"><p>Error message if the job failed. <code>null</code> if no error occurred.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_error_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_error_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_error_anyOf_i0" id="Return_value_anyOf_i1_error_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_error_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_error_anyOf_i1" id="Return_value_anyOf_i1_error_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_error_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_error_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_error_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_exception">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_exception">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_exception" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_exception" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_exception')" type="button"><span class="property-name">exception</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_exception" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_exception" id="Return_value_anyOf_i1_exception">
+    <div class="card-body pl-5">
+    <h4>Exception</h4><br/>
+    <span class="description"><p>Exception details if the job encountered an exception. <code>null</code> if no exception occurred.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_exception_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_exception_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_exception_anyOf_i0" id="Return_value_anyOf_i1_exception_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_exception_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_exception_anyOf_i1" id="Return_value_anyOf_i1_exception_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_exception_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_exception_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_exception_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_exc_info">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_exc_info">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_exc_info" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_exc_info" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_exc_info')" type="button"><span class="property-name">exc_info</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_exc_info" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_exc_info" id="Return_value_anyOf_i1_exc_info">
+    <div class="card-body pl-5">
+    <br/>
+    <span class="description"><p>Detailed exception information. <code>null</code> if no exception occurred.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_exc_info_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_exc_info_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_exc_info_anyOf_i0" id="Return_value_anyOf_i1_exc_info_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_exc_info_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_exc_info_anyOf_i1" id="Return_value_anyOf_i1_exc_info_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_exc_info_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_exc_info_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_exc_info_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_state">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_state">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_state" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_state" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_state')" type="button"><span class="property-name">state</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_state" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_state" id="Return_value_anyOf_i1_state">
+    <div class="card-body pl-5">
+    <h4>State</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Current execution state of the job.</p>
+    </span>
+    <br/>
+    <div class="badge badge-secondary">Examples:</div>
+    <br/><div class="jumbotron examples" id="Return_value_anyOf_i1_state_ex1"><div class="highlight"><pre><span></span><span class="s2">"WAITING"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_anyOf_i1_state_ex2"><div class="highlight"><pre><span></span><span class="s2">"RUNNING"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_anyOf_i1_state_ex3"><div class="highlight"><pre><span></span><span class="s2">"SUCCESS"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_anyOf_i1_state_ex4"><div class="highlight"><pre><span></span><span class="s2">"FAILED"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Return_value_anyOf_i1_state_ex5"><div class="highlight"><pre><span></span><span class="s2">"ABORTED"</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_time_started">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_time_started">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_time_started" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_time_started" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_time_started')" type="button"><span class="property-name">time_started</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_time_started" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_time_started" id="Return_value_anyOf_i1_time_started">
+    <div class="card-body pl-5">
+    <h4>Time Started</h4><br/>
+    <span class="description"><p>Timestamp when the job started execution. <code>null</code> if not yet started.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_time_started_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_time_started_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_time_started_anyOf_i0" id="Return_value_anyOf_i1_time_started_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_time_started_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_time_started_anyOf_i1" id="Return_value_anyOf_i1_time_started_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_time_started_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_time_started_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: date-time</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_time_started_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_time_finished">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_time_finished">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_time_finished" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_time_finished" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_time_finished')" type="button"><span class="property-name">time_finished</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_time_finished" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_time_finished" id="Return_value_anyOf_i1_time_finished">
+    <div class="card-body pl-5">
+    <h4>Time Finished</h4><br/>
+    <span class="description"><p>Timestamp when the job completed execution. <code>null</code> if still running or not started.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_time_finished_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_time_finished_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_time_finished_anyOf_i0" id="Return_value_anyOf_i1_time_finished_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_time_finished_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_time_finished_anyOf_i1" id="Return_value_anyOf_i1_time_finished_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_time_finished_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_time_finished_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: date-time</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_time_finished_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_anyOf_i1_credentials">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_anyOf_i1_credentials">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_anyOf_i1_credentials" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_anyOf_i1_credentials" data-toggle="collapse" onclick="setAnchor('#Return_value_anyOf_i1_credentials')" type="button"><span class="property-name">credentials</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_anyOf_i1_credentials" class="collapse property-definition-div" data-parent="#accordionReturn_value_anyOf_i1_credentials" id="Return_value_anyOf_i1_credentials">
+    <div class="card-body pl-5">
+    <br/>
+    <span class="description"><p>Authentication credentials used for this job. <code>null</code> if no authentication required.</p>
+    </span><div class="any-of-value" id="Return_value_anyOf_i1_credentials_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_anyOf_i1_credentials_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_credentials_anyOf_i0" id="Return_value_anyOf_i1_credentials_anyOf_i0" onclick="setAnchor('#Return_value_anyOf_i1_credentials_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_anyOf_i1_credentials_anyOf_i1" id="Return_value_anyOf_i1_credentials_anyOf_i1" onclick="setAnchor('#Return_value_anyOf_i1_credentials_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_anyOf_i1_credentials_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i1_credentials_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_anyOf_i2" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* 
+

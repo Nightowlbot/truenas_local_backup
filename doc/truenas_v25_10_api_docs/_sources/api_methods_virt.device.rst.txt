@@ -1,0 +1,10 @@
+virt.device
+-----------
+
+.. toctree::
+
+   api_methods_virt.device.disk_choices
+   api_methods_virt.device.gpu_choices
+   api_methods_virt.device.nic_choices
+   api_methods_virt.device.pci_choices
+   api_methods_virt.device.usb_choices

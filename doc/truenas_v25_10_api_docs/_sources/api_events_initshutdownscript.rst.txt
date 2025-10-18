@@ -1,0 +1,6 @@
+initshutdownscript
+------------------
+
+.. toctree::
+
+   api_events_initshutdownscript.query

@@ -1,0 +1,10 @@
+tn_connect
+----------
+
+.. toctree::
+
+   api_methods_tn_connect.config
+   api_methods_tn_connect.generate_claim_token
+   api_methods_tn_connect.get_registration_uri
+   api_methods_tn_connect.ip_choices
+   api_methods_tn_connect.update

@@ -1,0 +1,656 @@
+nvmet.port_subsys.create
+========================
+
+Create an association between a `port` and a subsystem (`subsys`).
+
+This will make the subsystem accessible on that port (subject to access control by either the  `allow_any_host` subsystem attribute, or `hosts` associated with the subsystem).
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: nvmet_port_subsys_create</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>nvmet_port_subsys_create</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Port-subsystem association configuration data for creation.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_port_id">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_port_id">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_port_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_port_id" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_port_id')" type="button"><span class="property-name">port_id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_port_id" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_port_id" id="Call_parameters_items_i0_port_id">
+    <div class="card-body pl-5">
+    <h4>Port Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>ID of the NVMe-oF port to associate.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_subsys_id">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_subsys_id">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_subsys_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_subsys_id" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_subsys_id')" type="button"><span class="property-name">subsys_id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_subsys_id" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_subsys_id" id="Call_parameters_items_i0_subsys_id">
+    <div class="card-body pl-5">
+    <h4>Subsys Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>ID of the NVMe-oF subsystem to make accessible.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>NVMetPortSubsysEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The created port-subsystem association.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the port-subsystem association.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_port">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_port">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_port" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_port" data-toggle="collapse" onclick="setAnchor('#Return_value_port')" type="button"><span class="property-name">port</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_port" class="collapse property-definition-div" data-parent="#accordionReturn_value_port" id="Return_value_port">
+    <div class="card-body pl-5">
+    <h4>NVMetPortEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>NVMe-oF port that provides access to the subsystem.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_port_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_port_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_port_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_port_id" data-toggle="collapse" onclick="setAnchor('#Return_value_port_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_port_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_port_id" id="Return_value_port_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the NVMe-oF port.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_port_index">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_port_index">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_port_index" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_port_index" data-toggle="collapse" onclick="setAnchor('#Return_value_port_index')" type="button"><span class="property-name">index</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_port_index" class="collapse property-definition-div" data-parent="#accordionReturn_value_port_index" id="Return_value_port_index">
+    <div class="card-body pl-5">
+    <h4>Index</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Index of the port, for internal use. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_port_addr_trtype">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_port_addr_trtype">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_port_addr_trtype" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_port_addr_trtype" data-toggle="collapse" onclick="setAnchor('#Return_value_port_addr_trtype')" type="button"><span class="property-name">addr_trtype</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_port_addr_trtype" class="collapse property-definition-div" data-parent="#accordionReturn_value_port_addr_trtype" id="Return_value_port_addr_trtype">
+    <div class="card-body pl-5">
+    <h4>Addr Trtype</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Fabric transport technology name. </p>
+    </span><div class="enum-value" id="Return_value_port_addr_trtype_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"TCP"</li><li class="list-group-item enum-item">"RDMA"</li><li class="list-group-item enum-item">"FC"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_port_addr_trsvcid">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_port_addr_trsvcid">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_port_addr_trsvcid" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_port_addr_trsvcid" data-toggle="collapse" onclick="setAnchor('#Return_value_port_addr_trsvcid')" type="button"><span class="property-name">addr_trsvcid</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_port_addr_trsvcid" class="collapse property-definition-div" data-parent="#accordionReturn_value_port_addr_trsvcid" id="Return_value_port_addr_trsvcid">
+    <div class="card-body pl-5">
+    <h4>Addr Trsvcid</h4><br/>
+    <span class="description"><p>Transport-specific TRSVCID field.  When configured for TCP/IP or RDMA this will be the port number. </p>
+    </span><div class="any-of-value" id="Return_value_port_addr_trsvcid_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_port_addr_trsvcid_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_port_addr_trsvcid_anyOf_i0" id="Return_value_port_addr_trsvcid_anyOf_i0" onclick="setAnchor('#Return_value_port_addr_trsvcid_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_port_addr_trsvcid_anyOf_i1" id="Return_value_port_addr_trsvcid_anyOf_i1" onclick="setAnchor('#Return_value_port_addr_trsvcid_anyOf_i1')" role="tab">Option 2</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_port_addr_trsvcid_anyOf_i2" id="Return_value_port_addr_trsvcid_anyOf_i2" onclick="setAnchor('#Return_value_port_addr_trsvcid_anyOf_i2')" role="tab">Option 3</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_port_addr_trsvcid_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_port_addr_trsvcid_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_port_addr_trsvcid_anyOf_i1_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_port_addr_trsvcid_anyOf_i2" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_port_addr_traddr">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_port_addr_traddr">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_port_addr_traddr" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_port_addr_traddr" data-toggle="collapse" onclick="setAnchor('#Return_value_port_addr_traddr')" type="button"><span class="property-name">addr_traddr</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_port_addr_traddr" class="collapse property-definition-div" data-parent="#accordionReturn_value_port_addr_traddr" id="Return_value_port_addr_traddr">
+    <div class="card-body pl-5">
+    <h4>Addr Traddr</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>A transport-specific field identifying the NVMe host port to use for the connection to the controller.</p>
+    <p>For TCP or RDMA transports, this will be an IPv4 or IPv6 address.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_port_addr_adrfam">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_port_addr_adrfam">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_port_addr_adrfam" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_port_addr_adrfam" data-toggle="collapse" onclick="setAnchor('#Return_value_port_addr_adrfam')" type="button"><span class="property-name">addr_adrfam</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_port_addr_adrfam" class="collapse property-definition-div" data-parent="#accordionReturn_value_port_addr_adrfam" id="Return_value_port_addr_adrfam">
+    <div class="card-body pl-5">
+    <h4>Addr Adrfam</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Address family.</p>
+    </span><div class="enum-value" id="Return_value_port_addr_adrfam_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"IPV4"</li><li class="list-group-item enum-item">"IPV6"</li><li class="list-group-item enum-item">"FC"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_port_inline_data_size">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_port_inline_data_size">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_port_inline_data_size" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_port_inline_data_size" data-toggle="collapse" onclick="setAnchor('#Return_value_port_inline_data_size')" type="button"><span class="property-name">inline_data_size</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_port_inline_data_size" class="collapse property-definition-div" data-parent="#accordionReturn_value_port_inline_data_size" id="Return_value_port_inline_data_size">
+    <div class="card-body pl-5">
+    <h4>Inline Data Size</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Maximum size for inline data transfers or <code>null</code> for default.</p>
+    </span><div class="any-of-value" id="Return_value_port_inline_data_size_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_port_inline_data_size_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_port_inline_data_size_anyOf_i0" id="Return_value_port_inline_data_size_anyOf_i0" onclick="setAnchor('#Return_value_port_inline_data_size_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_port_inline_data_size_anyOf_i1" id="Return_value_port_inline_data_size_anyOf_i1" onclick="setAnchor('#Return_value_port_inline_data_size_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_port_inline_data_size_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_port_inline_data_size_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_port_max_queue_size">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_port_max_queue_size">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_port_max_queue_size" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_port_max_queue_size" data-toggle="collapse" onclick="setAnchor('#Return_value_port_max_queue_size')" type="button"><span class="property-name">max_queue_size</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_port_max_queue_size" class="collapse property-definition-div" data-parent="#accordionReturn_value_port_max_queue_size" id="Return_value_port_max_queue_size">
+    <div class="card-body pl-5">
+    <h4>Max Queue Size</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Maximum number of queue entries or <code>null</code> for default.</p>
+    </span><div class="any-of-value" id="Return_value_port_max_queue_size_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_port_max_queue_size_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_port_max_queue_size_anyOf_i0" id="Return_value_port_max_queue_size_anyOf_i0" onclick="setAnchor('#Return_value_port_max_queue_size_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_port_max_queue_size_anyOf_i1" id="Return_value_port_max_queue_size_anyOf_i1" onclick="setAnchor('#Return_value_port_max_queue_size_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_port_max_queue_size_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_port_max_queue_size_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_port_pi_enable">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_port_pi_enable">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_port_pi_enable" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_port_pi_enable" data-toggle="collapse" onclick="setAnchor('#Return_value_port_pi_enable')" type="button"><span class="property-name">pi_enable</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_port_pi_enable" class="collapse property-definition-div" data-parent="#accordionReturn_value_port_pi_enable" id="Return_value_port_pi_enable">
+    <div class="card-body pl-5">
+    <h4>Pi Enable</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Whether Protection Information (PI) is enabled or <code>null</code> for default.</p>
+    </span><div class="any-of-value" id="Return_value_port_pi_enable_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_port_pi_enable_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_port_pi_enable_anyOf_i0" id="Return_value_port_pi_enable_anyOf_i0" onclick="setAnchor('#Return_value_port_pi_enable_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_port_pi_enable_anyOf_i1" id="Return_value_port_pi_enable_anyOf_i1" onclick="setAnchor('#Return_value_port_pi_enable_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_port_pi_enable_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_port_pi_enable_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_port_enabled">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_port_enabled">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_port_enabled" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_port_enabled" data-toggle="collapse" onclick="setAnchor('#Return_value_port_enabled')" type="button"><span class="property-name">enabled</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_port_enabled" class="collapse property-definition-div" data-parent="#accordionReturn_value_port_enabled" id="Return_value_port_enabled">
+    <div class="card-body pl-5">
+    <h4>Enabled</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Port enabled.  When NVMe target is running, cannot make changes to an enabled port. </p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_subsys">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_subsys">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_subsys" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_subsys" data-toggle="collapse" onclick="setAnchor('#Return_value_subsys')" type="button"><span class="property-name">subsys</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_subsys" class="collapse property-definition-div" data-parent="#accordionReturn_value_subsys" id="Return_value_subsys">
+    <div class="card-body pl-5">
+    <h4>NVMetSubsysEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>NVMe-oF subsystem that is accessible through the port.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_subsys_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_subsys_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_subsys_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_subsys_id" data-toggle="collapse" onclick="setAnchor('#Return_value_subsys_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_subsys_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_subsys_id" id="Return_value_subsys_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the NVMe-oF subsystem.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_subsys_name">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_subsys_name">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_subsys_name" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_subsys_name" data-toggle="collapse" onclick="setAnchor('#Return_value_subsys_name')" type="button"><span class="property-name">name</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_subsys_name" class="collapse property-definition-div" data-parent="#accordionReturn_value_subsys_name" id="Return_value_subsys_name">
+    <div class="card-body pl-5">
+    <h4>Name</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Human readable name for the subsystem.</p>
+    <p>If <code>subnqn</code> is not provided on creation, then this name will be appended to the <code>basenqn</code> from     <code>nvmet.global.config</code> to generate a subnqn.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_subsys_name_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_subsys_subnqn">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_subsys_subnqn">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_subsys_subnqn" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_subsys_subnqn" data-toggle="collapse" onclick="setAnchor('#Return_value_subsys_subnqn')" type="button"><span class="property-name">subnqn</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_subsys_subnqn" class="collapse property-definition-div" data-parent="#accordionReturn_value_subsys_subnqn" id="Return_value_subsys_subnqn">
+    <div class="card-body pl-5">
+    <h4>Subnqn</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>NVMe Qualified Name (NQN) for the subsystem.</p>
+    <p>If not provided during creation, will be auto-generated by appending the <code>name</code> to the <code>basenqn</code>     from <code>nvmet.global.config</code>.</p>
+    </span><div class="any-of-value" id="Return_value_subsys_subnqn_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_subsys_subnqn_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_subsys_subnqn_anyOf_i0" id="Return_value_subsys_subnqn_anyOf_i0" onclick="setAnchor('#Return_value_subsys_subnqn_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_subsys_subnqn_anyOf_i1" id="Return_value_subsys_subnqn_anyOf_i1" onclick="setAnchor('#Return_value_subsys_subnqn_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_subsys_subnqn_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Return_value_subsys_subnqn_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_subsys_subnqn_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_subsys_serial">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_subsys_serial">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_subsys_serial" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_subsys_serial" data-toggle="collapse" onclick="setAnchor('#Return_value_subsys_serial')" type="button"><span class="property-name">serial</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_subsys_serial" class="collapse property-definition-div" data-parent="#accordionReturn_value_subsys_serial" id="Return_value_subsys_serial">
+    <div class="card-body pl-5">
+    <h4>Serial</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Serial number assigned to the subsystem.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_subsys_allow_any_host">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_subsys_allow_any_host">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_subsys_allow_any_host" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_subsys_allow_any_host" data-toggle="collapse" onclick="setAnchor('#Return_value_subsys_allow_any_host')" type="button"><span class="property-name">allow_any_host</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_subsys_allow_any_host" class="collapse property-definition-div" data-parent="#accordionReturn_value_subsys_allow_any_host" id="Return_value_subsys_allow_any_host">
+    <div class="card-body pl-5">
+    <h4>Allow Any Host</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Any host can access the storage associated with this subsystem (i.e. no access control).</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_subsys_pi_enable">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_subsys_pi_enable">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_subsys_pi_enable" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_subsys_pi_enable" data-toggle="collapse" onclick="setAnchor('#Return_value_subsys_pi_enable')" type="button"><span class="property-name">pi_enable</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_subsys_pi_enable" class="collapse property-definition-div" data-parent="#accordionReturn_value_subsys_pi_enable" id="Return_value_subsys_pi_enable">
+    <div class="card-body pl-5">
+    <h4>Pi Enable</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Enable Protection Information (PI) for data integrity checking.</p>
+    </span><div class="any-of-value" id="Return_value_subsys_pi_enable_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_subsys_pi_enable_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_subsys_pi_enable_anyOf_i0" id="Return_value_subsys_pi_enable_anyOf_i0" onclick="setAnchor('#Return_value_subsys_pi_enable_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_subsys_pi_enable_anyOf_i1" id="Return_value_subsys_pi_enable_anyOf_i1" onclick="setAnchor('#Return_value_subsys_pi_enable_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_subsys_pi_enable_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_subsys_pi_enable_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_subsys_qid_max">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_subsys_qid_max">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_subsys_qid_max" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_subsys_qid_max" data-toggle="collapse" onclick="setAnchor('#Return_value_subsys_qid_max')" type="button"><span class="property-name">qid_max</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_subsys_qid_max" class="collapse property-definition-div" data-parent="#accordionReturn_value_subsys_qid_max" id="Return_value_subsys_qid_max">
+    <div class="card-body pl-5">
+    <h4>Qid Max</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Maximum number of queue IDs allowed for this subsystem.</p>
+    </span><div class="any-of-value" id="Return_value_subsys_qid_max_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_subsys_qid_max_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_subsys_qid_max_anyOf_i0" id="Return_value_subsys_qid_max_anyOf_i0" onclick="setAnchor('#Return_value_subsys_qid_max_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_subsys_qid_max_anyOf_i1" id="Return_value_subsys_qid_max_anyOf_i1" onclick="setAnchor('#Return_value_subsys_qid_max_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_subsys_qid_max_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_subsys_qid_max_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_subsys_ieee_oui">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_subsys_ieee_oui">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_subsys_ieee_oui" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_subsys_ieee_oui" data-toggle="collapse" onclick="setAnchor('#Return_value_subsys_ieee_oui')" type="button"><span class="property-name">ieee_oui</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_subsys_ieee_oui" class="collapse property-definition-div" data-parent="#accordionReturn_value_subsys_ieee_oui" id="Return_value_subsys_ieee_oui">
+    <div class="card-body pl-5">
+    <h4>Ieee Oui</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>IEEE Organizationally Unique Identifier for the subsystem.</p>
+    </span><div class="any-of-value" id="Return_value_subsys_ieee_oui_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_subsys_ieee_oui_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_subsys_ieee_oui_anyOf_i0" id="Return_value_subsys_ieee_oui_anyOf_i0" onclick="setAnchor('#Return_value_subsys_ieee_oui_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_subsys_ieee_oui_anyOf_i1" id="Return_value_subsys_ieee_oui_anyOf_i1" onclick="setAnchor('#Return_value_subsys_ieee_oui_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_subsys_ieee_oui_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_subsys_ieee_oui_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_subsys_ana">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_subsys_ana">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_subsys_ana" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_subsys_ana" data-toggle="collapse" onclick="setAnchor('#Return_value_subsys_ana')" type="button"><span class="property-name">ana</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_subsys_ana" class="collapse property-definition-div" data-parent="#accordionReturn_value_subsys_ana" id="Return_value_subsys_ana">
+    <div class="card-body pl-5">
+    <h4>Ana</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>If set to either <code>True</code> or <code>False</code>, then <em>override</em> the global <code>ana</code> setting from <code>nvmet.global.config</code> for this     subsystem only.</p>
+    <p>If <code>null</code>, then the global <code>ana</code> setting will take effect.</p>
+    </span><div class="any-of-value" id="Return_value_subsys_ana_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_subsys_ana_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_subsys_ana_anyOf_i0" id="Return_value_subsys_ana_anyOf_i0" onclick="setAnchor('#Return_value_subsys_ana_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_subsys_ana_anyOf_i1" id="Return_value_subsys_ana_anyOf_i1" onclick="setAnchor('#Return_value_subsys_ana_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_subsys_ana_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_subsys_ana_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_subsys_hosts">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_subsys_hosts">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_subsys_hosts" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_subsys_hosts" data-toggle="collapse" onclick="setAnchor('#Return_value_subsys_hosts')" type="button"><span class="property-name">hosts</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_subsys_hosts" class="collapse property-definition-div" data-parent="#accordionReturn_value_subsys_hosts" id="Return_value_subsys_hosts">
+    <div class="card-body pl-5">
+    <h4>Hosts</h4> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>List of host ids which have access to this subsystem.</p>
+    <p>Only populated on query if <code>extra.options.verbose</code> is set.</p>
+    </span><div class="any-of-value" id="Return_value_subsys_hosts_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_subsys_hosts_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_subsys_hosts_anyOf_i0" id="Return_value_subsys_hosts_anyOf_i0" onclick="setAnchor('#Return_value_subsys_hosts_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_subsys_hosts_anyOf_i1" id="Return_value_subsys_hosts_anyOf_i1" onclick="setAnchor('#Return_value_subsys_hosts_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_subsys_hosts_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array of integer</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_subsys_hosts_anyOf_i0_items">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_subsys_hosts_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_subsys_namespaces">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_subsys_namespaces">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_subsys_namespaces" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_subsys_namespaces" data-toggle="collapse" onclick="setAnchor('#Return_value_subsys_namespaces')" type="button"><span class="property-name">namespaces</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_subsys_namespaces" class="collapse property-definition-div" data-parent="#accordionReturn_value_subsys_namespaces" id="Return_value_subsys_namespaces">
+    <div class="card-body pl-5">
+    <h4>Namespaces</h4> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>List of namespaces ids in this subsystem.</p>
+    <p>Only populated on query if <code>extra.options.verbose</code> is set.</p>
+    </span><div class="any-of-value" id="Return_value_subsys_namespaces_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_subsys_namespaces_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_subsys_namespaces_anyOf_i0" id="Return_value_subsys_namespaces_anyOf_i0" onclick="setAnchor('#Return_value_subsys_namespaces_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_subsys_namespaces_anyOf_i1" id="Return_value_subsys_namespaces_anyOf_i1" onclick="setAnchor('#Return_value_subsys_namespaces_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_subsys_namespaces_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array of integer</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_subsys_namespaces_anyOf_i0_items">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_subsys_namespaces_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_subsys_ports">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_subsys_ports">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_subsys_ports" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_subsys_ports" data-toggle="collapse" onclick="setAnchor('#Return_value_subsys_ports')" type="button"><span class="property-name">ports</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_subsys_ports" class="collapse property-definition-div" data-parent="#accordionReturn_value_subsys_ports" id="Return_value_subsys_ports">
+    <div class="card-body pl-5">
+    <h4>Ports</h4> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>List of ports ids on which this subsystem is available.</p>
+    <p>Only populated on query if <code>extra.options.verbose</code> is set.</p>
+    </span><div class="any-of-value" id="Return_value_subsys_ports_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_subsys_ports_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_subsys_ports_anyOf_i0" id="Return_value_subsys_ports_anyOf_i0" onclick="setAnchor('#Return_value_subsys_ports_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_subsys_ports_anyOf_i1" id="Return_value_subsys_ports_anyOf_i1" onclick="setAnchor('#Return_value_subsys_ports_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_subsys_ports_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array of integer</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_subsys_ports_anyOf_i0_items">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_subsys_ports_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* SHARING_NVME_TARGET_WRITE
+

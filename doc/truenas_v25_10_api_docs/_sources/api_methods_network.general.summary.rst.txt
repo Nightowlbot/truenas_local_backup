@@ -1,0 +1,204 @@
+network.general.summary
+=======================
+
+Retrieve general information for current Network.
+
+Returns a dictionary. For example:
+
+.. examples(websocket)::
+
+    :::javascript {
+        "ips": { "vtnet0": { "IPV4": [ "192.168.0.15/24" ]
+            } }, "default_routes": [ "192.168.0.1" ], "nameservers": [ "192.168.0.1" ]
+    }
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>NetworkGeneralSummaryResult</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>NetworkGeneralSummaryResult return fields.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_ips">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_ips">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_ips" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_ips" data-toggle="collapse" onclick="setAnchor('#Return_value_ips')" type="button"><span class="property-name">ips</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_ips" class="collapse property-definition-div" data-parent="#accordionReturn_value_ips" id="Return_value_ips">
+    <div class="card-body pl-5">
+    <h4>Ips</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Object mapping interface names to their IP address information.</p>
+    </span>
+    <div class="accordion" id="accordionReturn_value_ips_additionalProperties">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_ips_additionalProperties">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_ips_additionalProperties" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_ips_additionalProperties" data-toggle="collapse" onclick="setAnchor('#Return_value_ips_additionalProperties')" type="button"><em><span class="property-name">Additional Properties</span></em></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_ips_additionalProperties" class="collapse property-definition-div" data-parent="#accordionReturn_value_ips_additionalProperties" id="Return_value_ips_additionalProperties">
+    <div class="card-body pl-5"><p class="additional-properties">Each additional property must conform to the following schema</p>
+    <h4>NetworkGeneralSummaryIP</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_ips_additionalProperties_IPV4">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_ips_additionalProperties_IPV4">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_ips_additionalProperties_IPV4" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_ips_additionalProperties_IPV4" data-toggle="collapse" onclick="setAnchor('#Return_value_ips_additionalProperties_IPV4')" type="button"><span class="property-name">IPV4</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_ips_additionalProperties_IPV4" class="collapse property-definition-div" data-parent="#accordionReturn_value_ips_additionalProperties_IPV4" id="Return_value_ips_additionalProperties_IPV4">
+    <div class="card-body pl-5">
+    <h4>Ipv4</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of IPv4 addresses assigned to this interface.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_ips_additionalProperties_IPV4_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_ips_additionalProperties_IPV6">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_ips_additionalProperties_IPV6">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_ips_additionalProperties_IPV6" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_ips_additionalProperties_IPV6" data-toggle="collapse" onclick="setAnchor('#Return_value_ips_additionalProperties_IPV6')" type="button"><span class="property-name">IPV6</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_ips_additionalProperties_IPV6" class="collapse property-definition-div" data-parent="#accordionReturn_value_ips_additionalProperties_IPV6" id="Return_value_ips_additionalProperties_IPV6">
+    <div class="card-body pl-5">
+    <h4>Ipv6</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>Array of IPv6 addresses assigned to this interface.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_ips_additionalProperties_IPV6_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_default_routes">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_default_routes">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_default_routes" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_default_routes" data-toggle="collapse" onclick="setAnchor('#Return_value_default_routes')" type="button"><span class="property-name">default_routes</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_default_routes" class="collapse property-definition-div" data-parent="#accordionReturn_value_default_routes" id="Return_value_default_routes">
+    <div class="card-body pl-5">
+    <h4>Default Routes</h4><span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="description"><p>Array of default gateway addresses.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_default_routes_items">
+    <br/>
+    <div class="any-of-value" id="Return_value_default_routes_items_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_default_routes_items_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_default_routes_items_anyOf_i0" id="Return_value_default_routes_items_anyOf_i0" onclick="setAnchor('#Return_value_default_routes_items_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_default_routes_items_anyOf_i1" id="Return_value_default_routes_items_anyOf_i1" onclick="setAnchor('#Return_value_default_routes_items_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_default_routes_items_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_default_routes_items_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li></ul>
+    </div><span class="const-value" id="Return_value_default_routes_items_anyOf_i0_const">Specific value: <code>""</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_default_routes_items_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_nameservers">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_nameservers">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_nameservers" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_nameservers" data-toggle="collapse" onclick="setAnchor('#Return_value_nameservers')" type="button"><span class="property-name">nameservers</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_nameservers" class="collapse property-definition-div" data-parent="#accordionReturn_value_nameservers" id="Return_value_nameservers">
+    <div class="card-body pl-5">
+    <h4>Nameservers</h4><span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="description"><p>Array of configured DNS server addresses.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_nameservers_items">
+    <br/>
+    <div class="any-of-value" id="Return_value_nameservers_items_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_nameservers_items_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_nameservers_items_anyOf_i0" id="Return_value_nameservers_items_anyOf_i0" onclick="setAnchor('#Return_value_nameservers_items_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_nameservers_items_anyOf_i1" id="Return_value_nameservers_items_anyOf_i1" onclick="setAnchor('#Return_value_nameservers_items_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_nameservers_items_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: const</span><br/>
+    <div class="enum-value" id="Return_value_nameservers_items_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">""</li></ul>
+    </div><span class="const-value" id="Return_value_nameservers_items_anyOf_i0_const">Specific value: <code>""</code></span>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_nameservers_items_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* NETWORK_GENERAL_READ
+

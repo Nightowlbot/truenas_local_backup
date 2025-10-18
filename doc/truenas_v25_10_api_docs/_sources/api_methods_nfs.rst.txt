@@ -1,0 +1,11 @@
+nfs
+---
+
+.. toctree::
+
+   api_methods_nfs.bindip_choices
+   api_methods_nfs.client_count
+   api_methods_nfs.config
+   api_methods_nfs.get_nfs3_clients
+   api_methods_nfs.get_nfs4_clients
+   api_methods_nfs.update

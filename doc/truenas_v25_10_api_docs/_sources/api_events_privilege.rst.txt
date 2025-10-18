@@ -1,0 +1,6 @@
+privilege
+---------
+
+.. toctree::
+
+   api_events_privilege.query

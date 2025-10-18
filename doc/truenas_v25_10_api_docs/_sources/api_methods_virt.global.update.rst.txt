@@ -1,0 +1,416 @@
+virt.global.update
+==================
+
+Update global virtualization settings.
+
+`pool` which pool to use to store instances. None will disable the service.
+
+`bridge` which bridge interface to use by default. None means it will automatically create one.
+
+This method is a job.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: virt_global_update</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>virt_global_update</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>VirtGlobalUpdateArgs parameters.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_pool">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_pool">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_pool" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_pool" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_pool')" type="button"><span class="property-name">pool</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_pool" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_pool" id="Call_parameters_items_i0_pool">
+    <div class="card-body pl-5">
+    <h4>Pool</h4><br/>
+    <span class="description"><p>Default storage pool when creating new instances and volumes.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_pool_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_pool_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_pool_anyOf_i0" id="Call_parameters_items_i0_pool_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_pool_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_pool_anyOf_i1" id="Call_parameters_items_i0_pool_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_pool_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_pool_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_pool_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_pool_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_bridge">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_bridge">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_bridge" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_bridge" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_bridge')" type="button"><span class="property-name">bridge</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_bridge" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_bridge" id="Call_parameters_items_i0_bridge">
+    <div class="card-body pl-5">
+    <h4>Bridge</h4><br/>
+    <span class="description"><p>Network bridge interface for virtualized instance networking. <code>null</code> to disable.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_bridge_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_bridge_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_bridge_anyOf_i0" id="Call_parameters_items_i0_bridge_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_bridge_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_bridge_anyOf_i1" id="Call_parameters_items_i0_bridge_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_bridge_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_bridge_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_bridge_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_bridge_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_storage_pools">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_storage_pools">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_storage_pools" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_storage_pools" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_storage_pools')" type="button"><span class="property-name">storage_pools</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_storage_pools" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_storage_pools" id="Call_parameters_items_i0_storage_pools">
+    <div class="card-body pl-5">
+    <h4>Storage Pools</h4><br/>
+    <span class="description"><p>ZFS pools to use as storage pools.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_storage_pools_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_storage_pools_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_storage_pools_anyOf_i0" id="Call_parameters_items_i0_storage_pools_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_storage_pools_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_storage_pools_anyOf_i1" id="Call_parameters_items_i0_storage_pools_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_storage_pools_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_storage_pools_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_storage_pools_anyOf_i0_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_storage_pools_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_v4_network">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_v4_network">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_v4_network" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_v4_network" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_v4_network')" type="button"><span class="property-name">v4_network</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_v4_network" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_v4_network" id="Call_parameters_items_i0_v4_network">
+    <div class="card-body pl-5">
+    <h4>V4 Network</h4><br/>
+    <span class="description"><p>IPv4 network CIDR for the virtualization bridge network. <code>null</code> to use default.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_v4_network_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_v4_network_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_v4_network_anyOf_i0" id="Call_parameters_items_i0_v4_network_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_v4_network_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_v4_network_anyOf_i1" id="Call_parameters_items_i0_v4_network_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_v4_network_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_v4_network_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_v4_network_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_v6_network">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_v6_network">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_v6_network" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_v6_network" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_v6_network')" type="button"><span class="property-name">v6_network</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_v6_network" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_v6_network" id="Call_parameters_items_i0_v6_network">
+    <div class="card-body pl-5">
+    <h4>V6 Network</h4><br/>
+    <span class="description"><p>IPv6 network CIDR for the virtualization bridge network. <code>null</code> to use default.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_v6_network_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_v6_network_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_v6_network_anyOf_i0" id="Call_parameters_items_i0_v6_network_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_v6_network_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_v6_network_anyOf_i1" id="Call_parameters_items_i0_v6_network_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_v6_network_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_v6_network_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_v6_network_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>VirtGlobalEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>The updated virtualization global configuration.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the virtualization global configuration.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_pool">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_pool">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_pool" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_pool" data-toggle="collapse" onclick="setAnchor('#Return_value_pool')" type="button"><span class="property-name">pool</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_pool" class="collapse property-definition-div" data-parent="#accordionReturn_value_pool" id="Return_value_pool">
+    <div class="card-body pl-5">
+    <h4>Pool</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Default storage pool when creating new instances and volumes.</p>
+    </span><div class="any-of-value" id="Return_value_pool_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_pool_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_pool_anyOf_i0" id="Return_value_pool_anyOf_i0" onclick="setAnchor('#Return_value_pool_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_pool_anyOf_i1" id="Return_value_pool_anyOf_i1" onclick="setAnchor('#Return_value_pool_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_pool_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_pool_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_dataset">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_dataset">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_dataset" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_dataset" data-toggle="collapse" onclick="setAnchor('#Return_value_dataset')" type="button"><span class="property-name">dataset</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_dataset" class="collapse property-definition-div" data-parent="#accordionReturn_value_dataset" id="Return_value_dataset">
+    <div class="card-body pl-5">
+    <h4>Dataset</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>ZFS dataset path used for virtualization data storage. <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Return_value_dataset_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_dataset_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_dataset_anyOf_i0" id="Return_value_dataset_anyOf_i0" onclick="setAnchor('#Return_value_dataset_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_dataset_anyOf_i1" id="Return_value_dataset_anyOf_i1" onclick="setAnchor('#Return_value_dataset_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_dataset_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_dataset_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_storage_pools">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_storage_pools">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_storage_pools" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_storage_pools" data-toggle="collapse" onclick="setAnchor('#Return_value_storage_pools')" type="button"><span class="property-name">storage_pools</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_storage_pools" class="collapse property-definition-div" data-parent="#accordionReturn_value_storage_pools" id="Return_value_storage_pools">
+    <div class="card-body pl-5">
+    <h4>Storage Pools</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>ZFS pools to use as storage pools.</p>
+    </span><div class="any-of-value" id="Return_value_storage_pools_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_storage_pools_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_storage_pools_anyOf_i0" id="Return_value_storage_pools_anyOf_i0" onclick="setAnchor('#Return_value_storage_pools_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_storage_pools_anyOf_i1" id="Return_value_storage_pools_anyOf_i1" onclick="setAnchor('#Return_value_storage_pools_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_storage_pools_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Return_value_storage_pools_anyOf_i0_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_storage_pools_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_bridge">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_bridge">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_bridge" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_bridge" data-toggle="collapse" onclick="setAnchor('#Return_value_bridge')" type="button"><span class="property-name">bridge</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_bridge" class="collapse property-definition-div" data-parent="#accordionReturn_value_bridge" id="Return_value_bridge">
+    <div class="card-body pl-5">
+    <h4>Bridge</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Network bridge interface for virtualized instance networking. <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Return_value_bridge_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_bridge_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_bridge_anyOf_i0" id="Return_value_bridge_anyOf_i0" onclick="setAnchor('#Return_value_bridge_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_bridge_anyOf_i1" id="Return_value_bridge_anyOf_i1" onclick="setAnchor('#Return_value_bridge_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_bridge_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_bridge_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_v4_network">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_v4_network">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_v4_network" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_v4_network" data-toggle="collapse" onclick="setAnchor('#Return_value_v4_network')" type="button"><span class="property-name">v4_network</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_v4_network" class="collapse property-definition-div" data-parent="#accordionReturn_value_v4_network" id="Return_value_v4_network">
+    <div class="card-body pl-5">
+    <h4>V4 Network</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>IPv4 network CIDR for the virtualization bridge network. <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Return_value_v4_network_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_v4_network_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_v4_network_anyOf_i0" id="Return_value_v4_network_anyOf_i0" onclick="setAnchor('#Return_value_v4_network_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_v4_network_anyOf_i1" id="Return_value_v4_network_anyOf_i1" onclick="setAnchor('#Return_value_v4_network_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_v4_network_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_v4_network_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_v6_network">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_v6_network">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_v6_network" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_v6_network" data-toggle="collapse" onclick="setAnchor('#Return_value_v6_network')" type="button"><span class="property-name">v6_network</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_v6_network" class="collapse property-definition-div" data-parent="#accordionReturn_value_v6_network" id="Return_value_v6_network">
+    <div class="card-body pl-5">
+    <h4>V6 Network</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>IPv6 network CIDR for the virtualization bridge network. <code>null</code> if not configured.</p>
+    </span><div class="any-of-value" id="Return_value_v6_network_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_v6_network_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_v6_network_anyOf_i0" id="Return_value_v6_network_anyOf_i0" onclick="setAnchor('#Return_value_v6_network_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_v6_network_anyOf_i1" id="Return_value_v6_network_anyOf_i1" onclick="setAnchor('#Return_value_v6_network_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_v6_network_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_v6_network_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_state">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_state">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_state" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_state" data-toggle="collapse" onclick="setAnchor('#Return_value_state')" type="button"><span class="property-name">state</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_state" class="collapse property-definition-div" data-parent="#accordionReturn_value_state" id="Return_value_state">
+    <div class="card-body pl-5">
+    <h4>State</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Current operational state of the virtualization subsystem. <code>null</code> during initial setup.</p>
+    </span><div class="any-of-value" id="Return_value_state_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsReturn_value_state_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_state_anyOf_i0" id="Return_value_state_anyOf_i0" onclick="setAnchor('#Return_value_state_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Return_value_state_anyOf_i1" id="Return_value_state_anyOf_i1" onclick="setAnchor('#Return_value_state_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Return_value_state_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <div class="enum-value" id="Return_value_state_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"INITIALIZING"</li><li class="list-group-item enum-item">"INITIALIZED"</li><li class="list-group-item enum-item">"NO_POOL"</li><li class="list-group-item enum-item">"ERROR"</li><li class="list-group-item enum-item">"LOCKED"</li></ul>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Return_value_state_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* VIRT_GLOBAL_WRITE
+

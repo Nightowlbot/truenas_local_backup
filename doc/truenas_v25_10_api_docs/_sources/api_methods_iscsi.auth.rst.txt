@@ -1,0 +1,10 @@
+iscsi.auth
+----------
+
+.. toctree::
+
+   api_methods_iscsi.auth.create
+   api_methods_iscsi.auth.delete
+   api_methods_iscsi.auth.get_instance
+   api_methods_iscsi.auth.query
+   api_methods_iscsi.auth.update

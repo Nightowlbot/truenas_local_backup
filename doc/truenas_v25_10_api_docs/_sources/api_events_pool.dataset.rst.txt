@@ -1,0 +1,6 @@
+pool.dataset
+------------
+
+.. toctree::
+
+   api_events_pool.dataset.query

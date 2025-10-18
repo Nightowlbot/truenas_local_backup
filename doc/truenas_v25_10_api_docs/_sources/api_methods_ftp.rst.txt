@@ -1,0 +1,7 @@
+ftp
+---
+
+.. toctree::
+
+   api_methods_ftp.config
+   api_methods_ftp.update

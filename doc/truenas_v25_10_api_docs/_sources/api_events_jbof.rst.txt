@@ -1,0 +1,6 @@
+jbof
+----
+
+.. toctree::
+
+   api_events_jbof.query

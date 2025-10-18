@@ -1,0 +1,10 @@
+nvmet.subsys
+------------
+
+.. toctree::
+
+   api_methods_nvmet.subsys.create
+   api_methods_nvmet.subsys.delete
+   api_methods_nvmet.subsys.get_instance
+   api_methods_nvmet.subsys.query
+   api_methods_nvmet.subsys.update

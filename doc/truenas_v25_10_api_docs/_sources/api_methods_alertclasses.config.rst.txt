@@ -1,0 +1,148 @@
+alertclasses.config
+===================
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>AlertClassesEntry</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_id">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_id">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_id" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_id" data-toggle="collapse" onclick="setAnchor('#Return_value_id')" type="button"><span class="property-name">id</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_id" class="collapse property-definition-div" data-parent="#accordionReturn_value_id" id="Return_value_id">
+    <div class="card-body pl-5">
+    <h4>Id</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Unique identifier for the alert classes configuration.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_classes">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_classes">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_classes" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_classes" data-toggle="collapse" onclick="setAnchor('#Return_value_classes')" type="button"><span class="property-name">classes</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_classes" class="collapse property-definition-div" data-parent="#accordionReturn_value_classes" id="Return_value_classes">
+    <div class="card-body pl-5">
+    <h4>Classes</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Object mapping alert class names to their configuration settings.</p>
+    </span>
+    <div class="accordion" id="accordionReturn_value_classes_additionalProperties">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_classes_additionalProperties">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_classes_additionalProperties" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_classes_additionalProperties" data-toggle="collapse" onclick="setAnchor('#Return_value_classes_additionalProperties')" type="button"><em><span class="property-name">Additional Properties</span></em></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_classes_additionalProperties" class="collapse property-definition-div" data-parent="#accordionReturn_value_classes_additionalProperties" id="Return_value_classes_additionalProperties">
+    <div class="card-body pl-5"><p class="additional-properties">Each additional property must conform to the following schema</p>
+    <h4>AlertClassConfiguration</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionReturn_value_classes_additionalProperties_level">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_classes_additionalProperties_level">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_classes_additionalProperties_level" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_classes_additionalProperties_level" data-toggle="collapse" onclick="setAnchor('#Return_value_classes_additionalProperties_level')" type="button"><span class="property-name">level</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_classes_additionalProperties_level" class="collapse property-definition-div" data-parent="#accordionReturn_value_classes_additionalProperties_level" id="Return_value_classes_additionalProperties_level">
+    <div class="card-body pl-5">
+    <h4>Level</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Severity level for alerts of this class.</p>
+    </span><div class="enum-value" id="Return_value_classes_additionalProperties_level_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"INFO"</li><li class="list-group-item enum-item">"NOTICE"</li><li class="list-group-item enum-item">"WARNING"</li><li class="list-group-item enum-item">"ERROR"</li><li class="list-group-item enum-item">"CRITICAL"</li><li class="list-group-item enum-item">"ALERT"</li><li class="list-group-item enum-item">"EMERGENCY"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_classes_additionalProperties_policy">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_classes_additionalProperties_policy">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_classes_additionalProperties_policy" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_classes_additionalProperties_policy" data-toggle="collapse" onclick="setAnchor('#Return_value_classes_additionalProperties_policy')" type="button"><span class="property-name">policy</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_classes_additionalProperties_policy" class="collapse property-definition-div" data-parent="#accordionReturn_value_classes_additionalProperties_policy" id="Return_value_classes_additionalProperties_policy">
+    <div class="card-body pl-5">
+    <h4>Policy</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Notification policy for alerts of this class.</p>
+    <ul>
+    <li><code>IMMEDIATELY</code>: Send notifications as soon as alerts occur</li>
+    <li><code>HOURLY</code>: Batch notifications and send hourly</li>
+    <li><code>DAILY</code>: Batch notifications and send daily</li>
+    <li><code>NEVER</code>: Do not send notifications for this alert class</li>
+    </ul>
+    </span><div class="enum-value" id="Return_value_classes_additionalProperties_policy_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"IMMEDIATELY"</li><li class="list-group-item enum-item">"HOURLY"</li><li class="list-group-item enum-item">"DAILY"</li><li class="list-group-item enum-item">"NEVER"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value_classes_additionalProperties_proactive_support">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value_classes_additionalProperties_proactive_support">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value_classes_additionalProperties_proactive_support" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value_classes_additionalProperties_proactive_support" data-toggle="collapse" onclick="setAnchor('#Return_value_classes_additionalProperties_proactive_support')" type="button"><span class="property-name">proactive_support</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value_classes_additionalProperties_proactive_support" class="collapse property-definition-div" data-parent="#accordionReturn_value_classes_additionalProperties_proactive_support" id="Return_value_classes_additionalProperties_proactive_support">
+    <div class="card-body pl-5">
+    <h4>Proactive Support</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to include alerts of this class in proactive support reporting.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* ALERT_READ
+

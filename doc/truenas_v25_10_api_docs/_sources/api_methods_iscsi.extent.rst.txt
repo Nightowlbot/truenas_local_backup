@@ -1,0 +1,11 @@
+iscsi.extent
+------------
+
+.. toctree::
+
+   api_methods_iscsi.extent.create
+   api_methods_iscsi.extent.delete
+   api_methods_iscsi.extent.disk_choices
+   api_methods_iscsi.extent.get_instance
+   api_methods_iscsi.extent.query
+   api_methods_iscsi.extent.update

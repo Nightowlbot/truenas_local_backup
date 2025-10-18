@@ -1,0 +1,92 @@
+failover.reboot.other_node
+==========================
+
+Reboot the other node and wait for it to come back online.
+
+NOTE: This makes very few checks on HA systems. You need to know what you're doing before calling this.
+
+This method is a job.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: options</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>options</h4><span class="badge badge-dark value-type">Type: object</span> <div class="json-default-value">Default:<div class="value">{
+      "reason": "System upgrade",
+      "graceful": false
+    }</div></div><br/>
+    <span class="description"><p>Options for rebooting the other node.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_reason">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_reason">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_reason" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_reason" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_reason')" type="button"><span class="property-name">reason</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_reason" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_reason" id="Call_parameters_items_i0_reason">
+    <div class="card-body pl-5">
+    <h4>Reason</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "System upgrade"</span><br/>
+    <span class="description"><p>Reason for the system reboot.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_reason_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_graceful">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_graceful">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_graceful" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_graceful" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_graceful')" type="button"><span class="property-name">graceful</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_graceful" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_graceful" id="Call_parameters_items_i0_graceful">
+    <div class="card-body pl-5">
+    <h4>Graceful</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>If set, call <code>system.reboot</code> to gracefully reboot the other node. By default, <code>failover.become_passive</code> will be     called on the other node to forcefully reboot and simulate a failover event unless there were changes in the other     node's boot environment.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: null</span><br/>
+    <span class="description"><p>Returns <code>null</code> when the other node reboot is successfully initiated.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* FULL_ADMIN
+

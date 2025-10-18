@@ -1,0 +1,1333 @@
+replication.run_onetime
+=======================
+
+Run replication task without creating it.
+
+This method is a job.
+
+.. raw:: html
+
+    <div id="json-schema">
+    <span class="badge badge-dark value-type">Type: object</span><br/>
+    <div class="accordion" id="accordionCall_parameters">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters" data-toggle="collapse" onclick="setAnchor('#Call_parameters')" type="button"><span class="property-name">Call parameters</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters" class="collapse property-definition-div" data-parent="#accordionCall_parameters" id="Call_parameters">
+    <div class="card-body pl-5">
+    <span class="badge badge-dark value-type">Type: array</span><br/>
+    <span class="badge badge-info no-additional">No Additional Items</span><h4>Tuple Validation</h4>
+    <h5>Parameter 1: replication_run_onetime</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0">
+    <h4>replication_run_onetime</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>ReplicationRunOnetimeArgs parameters.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_direction">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_direction">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_direction" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_direction" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_direction')" type="button"><span class="property-name">direction</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_direction" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_direction" id="Call_parameters_items_i0_direction">
+    <div class="card-body pl-5">
+    <h4>Direction</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Whether task will <code>PUSH</code> or <code>PULL</code> snapshots.</p>
+    </span><div class="enum-value" id="Call_parameters_items_i0_direction_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"PUSH"</li><li class="list-group-item enum-item">"PULL"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_transport">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_transport">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_transport" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_transport" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_transport')" type="button"><span class="property-name">transport</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_transport" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_transport" id="Call_parameters_items_i0_transport">
+    <div class="card-body pl-5">
+    <h4>Transport</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Method of snapshots transfer.</p>
+    <ul>
+    <li><code>SSH</code> transfers snapshots via SSH connection. This method is supported everywhere but does not achieve       great performance.</li>
+    <li><code>SSH+NETCAT</code> uses unencrypted connection for data transfer. This can only be used in trusted networks       and requires a port (specified by range from <code>netcat_active_side_port_min</code> to <code>netcat_active_side_port_max</code>)       to be open on <code>netcat_active_side</code>.</li>
+    <li><code>LOCAL</code> replicates to or from localhost.</li>
+    </ul>
+    </span><div class="enum-value" id="Call_parameters_items_i0_transport_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"SSH"</li><li class="list-group-item enum-item">"SSH+NETCAT"</li><li class="list-group-item enum-item">"LOCAL"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_ssh_credentials">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_ssh_credentials">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_ssh_credentials" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_ssh_credentials" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_ssh_credentials')" type="button"><span class="property-name">ssh_credentials</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_ssh_credentials" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_ssh_credentials" id="Call_parameters_items_i0_ssh_credentials">
+    <div class="card-body pl-5">
+    <h4>Ssh Credentials</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Keychain Credential ID of type <code>SSH_CREDENTIALS</code>.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_ssh_credentials_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_ssh_credentials_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_ssh_credentials_anyOf_i0" id="Call_parameters_items_i0_ssh_credentials_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_ssh_credentials_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_ssh_credentials_anyOf_i1" id="Call_parameters_items_i0_ssh_credentials_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_ssh_credentials_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_ssh_credentials_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_ssh_credentials_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_netcat_active_side">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_netcat_active_side">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_netcat_active_side" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_netcat_active_side" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_netcat_active_side')" type="button"><span class="property-name">netcat_active_side</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_netcat_active_side" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_netcat_active_side" id="Call_parameters_items_i0_netcat_active_side">
+    <div class="card-body pl-5">
+    <h4>Netcat Active Side</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Which side actively establishes the netcat connection for <code>SSH+NETCAT</code> transport.</p>
+    <ul>
+    <li><code>LOCAL</code>: Local system initiates the connection</li>
+    <li><code>REMOTE</code>: Remote system initiates the connection</li>
+    <li><code>null</code>: Not applicable for other transport types</li>
+    </ul>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_netcat_active_side_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_netcat_active_side_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_netcat_active_side_anyOf_i0" id="Call_parameters_items_i0_netcat_active_side_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_netcat_active_side_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_netcat_active_side_anyOf_i1" id="Call_parameters_items_i0_netcat_active_side_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_netcat_active_side_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_netcat_active_side_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <div class="enum-value" id="Call_parameters_items_i0_netcat_active_side_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"LOCAL"</li><li class="list-group-item enum-item">"REMOTE"</li></ul>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_netcat_active_side_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_netcat_active_side_listen_address">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_netcat_active_side_listen_address">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_netcat_active_side_listen_address" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_netcat_active_side_listen_address" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_netcat_active_side_listen_address')" type="button"><span class="property-name">netcat_active_side_listen_address</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_netcat_active_side_listen_address" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_netcat_active_side_listen_address" id="Call_parameters_items_i0_netcat_active_side_listen_address">
+    <div class="card-body pl-5">
+    <h4>Netcat Active Side Listen Address</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>IP address for the active side to listen on for <code>SSH+NETCAT</code> transport. <code>null</code> if not applicable.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_netcat_active_side_listen_address_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_netcat_active_side_listen_address_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_netcat_active_side_listen_address_anyOf_i0" id="Call_parameters_items_i0_netcat_active_side_listen_address_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_netcat_active_side_listen_address_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_netcat_active_side_listen_address_anyOf_i1" id="Call_parameters_items_i0_netcat_active_side_listen_address_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_netcat_active_side_listen_address_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_netcat_active_side_listen_address_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_netcat_active_side_listen_address_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_netcat_active_side_port_min">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_netcat_active_side_port_min">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_netcat_active_side_port_min" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_netcat_active_side_port_min" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_netcat_active_side_port_min')" type="button"><span class="property-name">netcat_active_side_port_min</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_netcat_active_side_port_min" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_netcat_active_side_port_min" id="Call_parameters_items_i0_netcat_active_side_port_min">
+    <div class="card-body pl-5">
+    <h4>Netcat Active Side Port Min</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Minimum port number in the range for netcat connections. <code>null</code> if not applicable.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_netcat_active_side_port_min_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_netcat_active_side_port_min_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_netcat_active_side_port_min_anyOf_i0" id="Call_parameters_items_i0_netcat_active_side_port_min_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_netcat_active_side_port_min_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_netcat_active_side_port_min_anyOf_i1" id="Call_parameters_items_i0_netcat_active_side_port_min_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_netcat_active_side_port_min_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_netcat_active_side_port_min_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_netcat_active_side_port_min_anyOf_i0_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>65535</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_netcat_active_side_port_min_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_netcat_active_side_port_max">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_netcat_active_side_port_max">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_netcat_active_side_port_max" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_netcat_active_side_port_max" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_netcat_active_side_port_max')" type="button"><span class="property-name">netcat_active_side_port_max</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_netcat_active_side_port_max" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_netcat_active_side_port_max" id="Call_parameters_items_i0_netcat_active_side_port_max">
+    <div class="card-body pl-5">
+    <h4>Netcat Active Side Port Max</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Maximum port number in the range for netcat connections. <code>null</code> if not applicable.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_netcat_active_side_port_max_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_netcat_active_side_port_max_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_netcat_active_side_port_max_anyOf_i0" id="Call_parameters_items_i0_netcat_active_side_port_max_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_netcat_active_side_port_max_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_netcat_active_side_port_max_anyOf_i1" id="Call_parameters_items_i0_netcat_active_side_port_max_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_netcat_active_side_port_max_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_netcat_active_side_port_max_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_netcat_active_side_port_max_anyOf_i0_number">Value must be greater or equal to <code>1</code> and lesser or equal to <code>65535</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_netcat_active_side_port_max_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_netcat_passive_side_connect_address">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_netcat_passive_side_connect_address">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_netcat_passive_side_connect_address" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_netcat_passive_side_connect_address" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_netcat_passive_side_connect_address')" type="button"><span class="property-name">netcat_passive_side_connect_address</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_netcat_passive_side_connect_address" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_netcat_passive_side_connect_address" id="Call_parameters_items_i0_netcat_passive_side_connect_address">
+    <div class="card-body pl-5">
+    <h4>Netcat Passive Side Connect Address</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>IP address for the passive side to connect to for <code>SSH+NETCAT</code> transport. <code>null</code> if not applicable.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_netcat_passive_side_connect_address_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_netcat_passive_side_connect_address_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_netcat_passive_side_connect_address_anyOf_i0" id="Call_parameters_items_i0_netcat_passive_side_connect_address_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_netcat_passive_side_connect_address_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_netcat_passive_side_connect_address_anyOf_i1" id="Call_parameters_items_i0_netcat_passive_side_connect_address_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_netcat_passive_side_connect_address_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_netcat_passive_side_connect_address_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_netcat_passive_side_connect_address_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_sudo">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_sudo">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_sudo" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_sudo" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_sudo')" type="button"><span class="property-name">sudo</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_sudo" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_sudo" id="Call_parameters_items_i0_sudo">
+    <div class="card-body pl-5">
+    <h4>Sudo</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p><code>SSH</code> and <code>SSH+NETCAT</code> transports should use sudo (which is expected to be passwordless) to run <code>zfs</code>     command on the remote machine.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_source_datasets">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_source_datasets">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_source_datasets" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_source_datasets" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_source_datasets')" type="button"><span class="property-name">source_datasets</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_source_datasets" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_source_datasets" id="Call_parameters_items_i0_source_datasets">
+    <div class="card-body pl-5">
+    <h4>Source Datasets</h4><span class="badge badge-dark value-type">Type: array of string</span><br/>
+    <span class="description"><p>List of datasets to replicate snapshots from.</p>
+    </span>
+    <p><span class="badge badge-light restriction min-items-restriction" id="Call_parameters_items_i0_source_datasets_minItems">Must contain a minimum of <code>1</code> items</span></p> <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_source_datasets_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_target_dataset">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_target_dataset">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_target_dataset" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_target_dataset" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_target_dataset')" type="button"><span class="property-name">target_dataset</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_target_dataset" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_target_dataset" id="Call_parameters_items_i0_target_dataset">
+    <div class="card-body pl-5">
+    <h4>Target Dataset</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <span class="description"><p>Dataset to put snapshots into.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_recursive">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_recursive">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_recursive" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_recursive" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_recursive')" type="button"><span class="property-name">recursive</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_recursive" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_recursive" id="Call_parameters_items_i0_recursive">
+    <div class="card-body pl-5">
+    <h4>Recursive</h4><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <span class="description"><p>Whether to recursively replicate child datasets.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_exclude">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_exclude">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_exclude" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_exclude" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_exclude')" type="button"><span class="property-name">exclude</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_exclude" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_exclude" id="Call_parameters_items_i0_exclude">
+    <div class="card-body pl-5">
+    <h4>Exclude</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>Array of dataset patterns to exclude from replication.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_exclude_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_properties">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_properties">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_properties" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_properties" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_properties')" type="button"><span class="property-name">properties</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_properties" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_properties" id="Call_parameters_items_i0_properties">
+    <div class="card-body pl-5">
+    <h4>Properties</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Send dataset properties along with snapshots.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_properties_exclude">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_properties_exclude">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_properties_exclude" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_properties_exclude" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_properties_exclude')" type="button"><span class="property-name">properties_exclude</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_properties_exclude" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_properties_exclude" id="Call_parameters_items_i0_properties_exclude">
+    <div class="card-body pl-5">
+    <h4>Properties Exclude</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>Array of dataset property names to exclude from replication.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_properties_exclude_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_properties_exclude_items_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_properties_override">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_properties_override">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_properties_override" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_properties_override" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_properties_override')" type="button"><span class="property-name">properties_override</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_properties_override" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_properties_override" id="Call_parameters_items_i0_properties_override">
+    <div class="card-body pl-5">
+    <h4>Properties Override</h4><span class="badge badge-dark value-type">Type: object</span> <span class="badge badge-success default-value">Default: {}</span><br/>
+    <span class="description"><p>Object mapping dataset property names to override values during replication.</p>
+    </span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_properties_override_additionalProperties">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_properties_override_additionalProperties">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_properties_override_additionalProperties" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_properties_override_additionalProperties" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_properties_override_additionalProperties')" type="button"><em><span class="property-name">Additional Properties</span></em></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_properties_override_additionalProperties" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_properties_override_additionalProperties" id="Call_parameters_items_i0_properties_override_additionalProperties">
+    <div class="card-body pl-5"><p class="additional-properties">Each additional property must conform to the following schema</p>
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_replicate">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_replicate">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_replicate" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_replicate" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_replicate')" type="button"><span class="property-name">replicate</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_replicate" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_replicate" id="Call_parameters_items_i0_replicate">
+    <div class="card-body pl-5">
+    <h4>Replicate</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to use full ZFS replication.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_encryption">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_encryption">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_encryption" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_encryption" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_encryption')" type="button"><span class="property-name">encryption</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_encryption" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_encryption" id="Call_parameters_items_i0_encryption">
+    <div class="card-body pl-5">
+    <h4>Encryption</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Whether to enable encryption for the replicated datasets.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_encryption_inherit">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_encryption_inherit">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_encryption_inherit" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_encryption_inherit" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_encryption_inherit')" type="button"><span class="property-name">encryption_inherit</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_encryption_inherit" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_encryption_inherit" id="Call_parameters_items_i0_encryption_inherit">
+    <div class="card-body pl-5">
+    <h4>Encryption Inherit</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Whether replicated datasets should inherit encryption from parent. <code>null</code> if encryption is disabled.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_encryption_inherit_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_encryption_inherit_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_encryption_inherit_anyOf_i0" id="Call_parameters_items_i0_encryption_inherit_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_encryption_inherit_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_encryption_inherit_anyOf_i1" id="Call_parameters_items_i0_encryption_inherit_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_encryption_inherit_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_encryption_inherit_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: boolean</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_encryption_inherit_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_encryption_key">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_encryption_key">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_encryption_key" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_encryption_key" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_encryption_key')" type="button"><span class="property-name">encryption_key</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_encryption_key" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_encryption_key" id="Call_parameters_items_i0_encryption_key">
+    <div class="card-body pl-5">
+    <h4>Encryption Key</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Encryption key for replicated datasets. <code>null</code> if not specified.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_encryption_key_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_encryption_key_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_encryption_key_anyOf_i0" id="Call_parameters_items_i0_encryption_key_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_encryption_key_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_encryption_key_anyOf_i1" id="Call_parameters_items_i0_encryption_key_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_encryption_key_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_encryption_key_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_encryption_key_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_encryption_key_format">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_encryption_key_format">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_encryption_key_format" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_encryption_key_format" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_encryption_key_format')" type="button"><span class="property-name">encryption_key_format</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_encryption_key_format" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_encryption_key_format" id="Call_parameters_items_i0_encryption_key_format">
+    <div class="card-body pl-5">
+    <h4>Encryption Key Format</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Format of the encryption key.</p>
+    <ul>
+    <li><code>HEX</code>: Hexadecimal-encoded key</li>
+    <li><code>PASSPHRASE</code>: Text passphrase</li>
+    <li><code>null</code>: Not applicable when encryption is disabled</li>
+    </ul>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_encryption_key_format_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_encryption_key_format_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_encryption_key_format_anyOf_i0" id="Call_parameters_items_i0_encryption_key_format_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_encryption_key_format_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_encryption_key_format_anyOf_i1" id="Call_parameters_items_i0_encryption_key_format_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_encryption_key_format_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_encryption_key_format_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <div class="enum-value" id="Call_parameters_items_i0_encryption_key_format_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"HEX"</li><li class="list-group-item enum-item">"PASSPHRASE"</li></ul>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_encryption_key_format_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_encryption_key_location">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_encryption_key_location">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_encryption_key_location" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_encryption_key_location" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_encryption_key_location')" type="button"><span class="property-name">encryption_key_location</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_encryption_key_location" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_encryption_key_location" id="Call_parameters_items_i0_encryption_key_location">
+    <div class="card-body pl-5">
+    <h4>Encryption Key Location</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Filesystem path where encryption key is stored. <code>null</code> if not using key file.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_encryption_key_location_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_encryption_key_location_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_encryption_key_location_anyOf_i0" id="Call_parameters_items_i0_encryption_key_location_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_encryption_key_location_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_encryption_key_location_anyOf_i1" id="Call_parameters_items_i0_encryption_key_location_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_encryption_key_location_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_encryption_key_location_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_encryption_key_location_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_periodic_snapshot_tasks">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_periodic_snapshot_tasks">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_periodic_snapshot_tasks" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_periodic_snapshot_tasks" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_periodic_snapshot_tasks')" type="button"><span class="property-name">periodic_snapshot_tasks</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_periodic_snapshot_tasks" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_periodic_snapshot_tasks" id="Call_parameters_items_i0_periodic_snapshot_tasks">
+    <div class="card-body pl-5">
+    <h4>Periodic Snapshot Tasks</h4><span class="badge badge-dark value-type">Type: array of integer</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>List of periodic snapshot task IDs that are sources of snapshots for this replication task. Only push     replication tasks can be bound to periodic snapshot tasks.</p>
+    </span>
+    <p><span class="badge badge-light restriction unique-items-restriction" id="Call_parameters_items_i0_periodic_snapshot_tasks_uniqueItems">All items must be unique</span></p> <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_periodic_snapshot_tasks_items">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_naming_schema">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_naming_schema">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_naming_schema" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_naming_schema" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_naming_schema')" type="button"><span class="property-name">naming_schema</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_naming_schema" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_naming_schema" id="Call_parameters_items_i0_naming_schema">
+    <div class="card-body pl-5">
+    <h4>Naming Schema</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>List of naming schemas for pull replication.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_naming_schema_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_also_include_naming_schema">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_also_include_naming_schema">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_also_include_naming_schema" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_also_include_naming_schema" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_also_include_naming_schema')" type="button"><span class="property-name">also_include_naming_schema</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_also_include_naming_schema" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_also_include_naming_schema" id="Call_parameters_items_i0_also_include_naming_schema">
+    <div class="card-body pl-5">
+    <h4>Also Include Naming Schema</h4><span class="badge badge-dark value-type">Type: array of string</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>List of naming schemas for push replication.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_also_include_naming_schema_items">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_name_regex">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_name_regex">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_name_regex" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_name_regex" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_name_regex')" type="button"><span class="property-name">name_regex</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_name_regex" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_name_regex" id="Call_parameters_items_i0_name_regex">
+    <div class="card-body pl-5">
+    <h4>Name Regex</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Replicate all snapshots which names match specified regular expression.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_name_regex_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_name_regex_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_name_regex_anyOf_i0" id="Call_parameters_items_i0_name_regex_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_name_regex_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_name_regex_anyOf_i1" id="Call_parameters_items_i0_name_regex_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_name_regex_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_name_regex_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: string</span><br/>
+    <p><span class="badge badge-light restriction min-length-restriction" id="Call_parameters_items_i0_name_regex_anyOf_i0_minLength">Must be at least <code>1</code> characters long</span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_name_regex_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_restrict_schedule">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_restrict_schedule">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_restrict_schedule" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_restrict_schedule" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_restrict_schedule')" type="button"><span class="property-name">restrict_schedule</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_restrict_schedule" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_restrict_schedule" id="Call_parameters_items_i0_restrict_schedule">
+    <div class="card-body pl-5">
+    <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Restricts when replication task with bound periodic snapshot tasks runs. For example, you can have periodic     snapshot tasks that run every 15 minutes, but only run replication task every hour.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_restrict_schedule_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_restrict_schedule_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_restrict_schedule_anyOf_i0" id="Call_parameters_items_i0_restrict_schedule_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_restrict_schedule_anyOf_i0')" role="tab">ReplicationTimeCronModel</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_restrict_schedule_anyOf_i1" id="Call_parameters_items_i0_restrict_schedule_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_restrict_schedule_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_restrict_schedule_anyOf_i0" role="tabpanel">
+    <h4>ReplicationTimeCronModel</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_restrict_schedule_anyOf_i0_minute">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_restrict_schedule_anyOf_i0_minute">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_restrict_schedule_anyOf_i0_minute" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_restrict_schedule_anyOf_i0_minute" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_restrict_schedule_anyOf_i0_minute')" type="button"><span class="property-name">minute</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_restrict_schedule_anyOf_i0_minute" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_restrict_schedule_anyOf_i0_minute" id="Call_parameters_items_i0_restrict_schedule_anyOf_i0_minute">
+    <div class="card-body pl-5">
+    <h4>Minute</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "00"</span><br/>
+    <span class="description"><p>"00" - "59"</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_restrict_schedule_anyOf_i0_hour">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_restrict_schedule_anyOf_i0_hour">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_restrict_schedule_anyOf_i0_hour" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_restrict_schedule_anyOf_i0_hour" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_restrict_schedule_anyOf_i0_hour')" type="button"><span class="property-name">hour</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_restrict_schedule_anyOf_i0_hour" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_restrict_schedule_anyOf_i0_hour" id="Call_parameters_items_i0_restrict_schedule_anyOf_i0_hour">
+    <div class="card-body pl-5">
+    <h4>Hour</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "*"</span><br/>
+    <span class="description"><p>"00" - "23"</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_restrict_schedule_anyOf_i0_dom">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_restrict_schedule_anyOf_i0_dom">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_restrict_schedule_anyOf_i0_dom" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_restrict_schedule_anyOf_i0_dom" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_restrict_schedule_anyOf_i0_dom')" type="button"><span class="property-name">dom</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_restrict_schedule_anyOf_i0_dom" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_restrict_schedule_anyOf_i0_dom" id="Call_parameters_items_i0_restrict_schedule_anyOf_i0_dom">
+    <div class="card-body pl-5">
+    <h4>Dom</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "*"</span><br/>
+    <span class="description"><p>"1" - "31"</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_restrict_schedule_anyOf_i0_month">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_restrict_schedule_anyOf_i0_month">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_restrict_schedule_anyOf_i0_month" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_restrict_schedule_anyOf_i0_month" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_restrict_schedule_anyOf_i0_month')" type="button"><span class="property-name">month</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_restrict_schedule_anyOf_i0_month" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_restrict_schedule_anyOf_i0_month" id="Call_parameters_items_i0_restrict_schedule_anyOf_i0_month">
+    <div class="card-body pl-5">
+    <h4>Month</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "*"</span><br/>
+    <span class="description"><p>"1" (January) - "12" (December)</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_restrict_schedule_anyOf_i0_dow">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_restrict_schedule_anyOf_i0_dow">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_restrict_schedule_anyOf_i0_dow" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_restrict_schedule_anyOf_i0_dow" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_restrict_schedule_anyOf_i0_dow')" type="button"><span class="property-name">dow</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_restrict_schedule_anyOf_i0_dow" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_restrict_schedule_anyOf_i0_dow" id="Call_parameters_items_i0_restrict_schedule_anyOf_i0_dow">
+    <div class="card-body pl-5">
+    <h4>Dow</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "*"</span><br/>
+    <span class="description"><p>"1" (Monday) - "7" (Sunday)</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_restrict_schedule_anyOf_i0_begin">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_restrict_schedule_anyOf_i0_begin">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_restrict_schedule_anyOf_i0_begin" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_restrict_schedule_anyOf_i0_begin" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_restrict_schedule_anyOf_i0_begin')" type="button"><span class="property-name">begin</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_restrict_schedule_anyOf_i0_begin" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_restrict_schedule_anyOf_i0_begin" id="Call_parameters_items_i0_restrict_schedule_anyOf_i0_begin">
+    <div class="card-body pl-5">
+    <h4>Begin</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "00:00"</span><br/>
+    <span class="description"><p>Start time for the time window in HH:MM format.</p>
+    </span>
+    <br/>
+    <div class="badge badge-secondary">Examples:</div>
+    <br/><div class="jumbotron examples" id="Call_parameters_items_i0_restrict_schedule_anyOf_i0_begin_ex1"><div class="highlight"><pre><span></span><span class="s2">"00:00"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Call_parameters_items_i0_restrict_schedule_anyOf_i0_begin_ex2"><div class="highlight"><pre><span></span><span class="s2">"06:30"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Call_parameters_items_i0_restrict_schedule_anyOf_i0_begin_ex3"><div class="highlight"><pre><span></span><span class="s2">"18:00"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Call_parameters_items_i0_restrict_schedule_anyOf_i0_begin_ex4"><div class="highlight"><pre><span></span><span class="s2">"23:00"</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_restrict_schedule_anyOf_i0_end">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_restrict_schedule_anyOf_i0_end">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_restrict_schedule_anyOf_i0_end" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_restrict_schedule_anyOf_i0_end" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_restrict_schedule_anyOf_i0_end')" type="button"><span class="property-name">end</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_restrict_schedule_anyOf_i0_end" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_restrict_schedule_anyOf_i0_end" id="Call_parameters_items_i0_restrict_schedule_anyOf_i0_end">
+    <div class="card-body pl-5">
+    <h4>End</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "23:59"</span><br/>
+    <span class="description"><p>End time for the time window in HH:MM format.</p>
+    </span>
+    <br/>
+    <div class="badge badge-secondary">Examples:</div>
+    <br/><div class="jumbotron examples" id="Call_parameters_items_i0_restrict_schedule_anyOf_i0_end_ex1"><div class="highlight"><pre><span></span><span class="s2">"00:00"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Call_parameters_items_i0_restrict_schedule_anyOf_i0_end_ex2"><div class="highlight"><pre><span></span><span class="s2">"06:30"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Call_parameters_items_i0_restrict_schedule_anyOf_i0_end_ex3"><div class="highlight"><pre><span></span><span class="s2">"18:00"</span>
+    </pre></div>
+    </div><div class="jumbotron examples" id="Call_parameters_items_i0_restrict_schedule_anyOf_i0_end_ex4"><div class="highlight"><pre><span></span><span class="s2">"23:00"</span>
+    </pre></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_restrict_schedule_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_allow_from_scratch">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_allow_from_scratch">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_allow_from_scratch" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_allow_from_scratch" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_allow_from_scratch')" type="button"><span class="property-name">allow_from_scratch</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_allow_from_scratch" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_allow_from_scratch" id="Call_parameters_items_i0_allow_from_scratch">
+    <div class="card-body pl-5">
+    <h4>Allow From Scratch</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Will destroy all snapshots on target side and replicate everything from scratch if none of the snapshots on     target side matches source snapshots.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_readonly">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_readonly">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_readonly" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_readonly" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_readonly')" type="button"><span class="property-name">readonly</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_readonly" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_readonly" id="Call_parameters_items_i0_readonly">
+    <div class="card-body pl-5">
+    <h4>Readonly</h4><span class="badge badge-dark value-type">Type: enum (of string)</span> <span class="badge badge-success default-value">Default: "SET"</span><br/>
+    <span class="description"><p>Controls destination datasets readonly property.</p>
+    <ul>
+    <li><code>SET</code>: Set all destination datasets to readonly=on after finishing the replication.</li>
+    <li><code>REQUIRE</code>: Require all existing destination datasets to have readonly=on property.</li>
+    <li><code>IGNORE</code>: Avoid this kind of behavior.</li>
+    </ul>
+    </span><div class="enum-value" id="Call_parameters_items_i0_readonly_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"SET"</li><li class="list-group-item enum-item">"REQUIRE"</li><li class="list-group-item enum-item">"IGNORE"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_hold_pending_snapshots">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_hold_pending_snapshots">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_hold_pending_snapshots" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_hold_pending_snapshots" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_hold_pending_snapshots')" type="button"><span class="property-name">hold_pending_snapshots</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_hold_pending_snapshots" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_hold_pending_snapshots" id="Call_parameters_items_i0_hold_pending_snapshots">
+    <div class="card-body pl-5">
+    <h4>Hold Pending Snapshots</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Prevent source snapshots from being deleted by retention of replication fails for some reason.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_retention_policy">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_retention_policy">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_retention_policy" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_retention_policy" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_retention_policy')" type="button"><span class="property-name">retention_policy</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_retention_policy" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_retention_policy" id="Call_parameters_items_i0_retention_policy">
+    <div class="card-body pl-5">
+    <h4>Retention Policy</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>How to delete old snapshots on target side:</p>
+    <ul>
+    <li><code>SOURCE</code>: Delete snapshots that are absent on source side.</li>
+    <li><code>CUSTOM</code>: Delete snapshots that are older than <code>lifetime_value</code> and <code>lifetime_unit</code>.</li>
+    <li><code>NONE</code>: Do not delete any snapshots.</li>
+    </ul>
+    </span><div class="enum-value" id="Call_parameters_items_i0_retention_policy_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"SOURCE"</li><li class="list-group-item enum-item">"CUSTOM"</li><li class="list-group-item enum-item">"NONE"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_lifetime_value">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_lifetime_value">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_lifetime_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_lifetime_value" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_lifetime_value')" type="button"><span class="property-name">lifetime_value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_lifetime_value" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_lifetime_value" id="Call_parameters_items_i0_lifetime_value">
+    <div class="card-body pl-5">
+    <h4>Lifetime Value</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Number of time units to retain snapshots for custom retention policy. Only applies when <code>retention_policy</code> is     CUSTOM.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_lifetime_value_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_lifetime_value_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_lifetime_value_anyOf_i0" id="Call_parameters_items_i0_lifetime_value_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_lifetime_value_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_lifetime_value_anyOf_i1" id="Call_parameters_items_i0_lifetime_value_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_lifetime_value_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_lifetime_value_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_lifetime_value_anyOf_i0_number">Value must be greater or equal to <code>1</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_lifetime_value_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_lifetime_unit">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_lifetime_unit">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_lifetime_unit" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_lifetime_unit" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_lifetime_unit')" type="button"><span class="property-name">lifetime_unit</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_lifetime_unit" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_lifetime_unit" id="Call_parameters_items_i0_lifetime_unit">
+    <div class="card-body pl-5">
+    <h4>Lifetime Unit</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Time unit for snapshot retention for custom retention policy. Only applies when <code>retention_policy</code> is CUSTOM.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_lifetime_unit_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_lifetime_unit_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_lifetime_unit_anyOf_i0" id="Call_parameters_items_i0_lifetime_unit_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_lifetime_unit_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_lifetime_unit_anyOf_i1" id="Call_parameters_items_i0_lifetime_unit_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_lifetime_unit_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_lifetime_unit_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <div class="enum-value" id="Call_parameters_items_i0_lifetime_unit_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"HOUR"</li><li class="list-group-item enum-item">"DAY"</li><li class="list-group-item enum-item">"WEEK"</li><li class="list-group-item enum-item">"MONTH"</li><li class="list-group-item enum-item">"YEAR"</li></ul>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_lifetime_unit_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_lifetimes">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_lifetimes">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_lifetimes" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_lifetimes" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_lifetimes')" type="button"><span class="property-name">lifetimes</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_lifetimes" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_lifetimes" id="Call_parameters_items_i0_lifetimes">
+    <div class="card-body pl-5">
+    <h4>Lifetimes</h4><span class="badge badge-dark value-type">Type: array of object</span> <span class="badge badge-success default-value">Default: []</span><br/>
+    <span class="description"><p>Array of different retention schedules with their own cron schedules and lifetime settings.</p>
+    </span>
+    <span class="badge badge-info no-additional">No Additional Items</span><h5>Each item of this array must be:</h5>
+    <div class="card">
+    <div class="card-body items-definition" id="Call_parameters_items_i0_lifetimes_items">
+    <h4>ReplicationLifetimeModel</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_lifetimes_items_schedule">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_lifetimes_items_schedule">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_lifetimes_items_schedule" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_lifetimes_items_schedule" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_lifetimes_items_schedule')" type="button"><span class="property-name">schedule</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_lifetimes_items_schedule" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_lifetimes_items_schedule" id="Call_parameters_items_i0_lifetimes_items_schedule">
+    <div class="card-body pl-5">
+    <h4>CronModel</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <span class="description"><p>Cron schedule for when snapshot retention policies are applied.</p>
+    </span> <span class="badge badge-info no-additional">No Additional Properties</span>
+    <div class="accordion" id="accordionCall_parameters_items_i0_lifetimes_items_schedule_minute">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_lifetimes_items_schedule_minute">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_lifetimes_items_schedule_minute" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_lifetimes_items_schedule_minute" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_lifetimes_items_schedule_minute')" type="button"><span class="property-name">minute</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_lifetimes_items_schedule_minute" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_lifetimes_items_schedule_minute" id="Call_parameters_items_i0_lifetimes_items_schedule_minute">
+    <div class="card-body pl-5">
+    <h4>Minute</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "*"</span><br/>
+    <span class="description"><p>"00" - "59"</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_lifetimes_items_schedule_hour">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_lifetimes_items_schedule_hour">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_lifetimes_items_schedule_hour" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_lifetimes_items_schedule_hour" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_lifetimes_items_schedule_hour')" type="button"><span class="property-name">hour</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_lifetimes_items_schedule_hour" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_lifetimes_items_schedule_hour" id="Call_parameters_items_i0_lifetimes_items_schedule_hour">
+    <div class="card-body pl-5">
+    <h4>Hour</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "*"</span><br/>
+    <span class="description"><p>"00" - "23"</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_lifetimes_items_schedule_dom">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_lifetimes_items_schedule_dom">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_lifetimes_items_schedule_dom" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_lifetimes_items_schedule_dom" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_lifetimes_items_schedule_dom')" type="button"><span class="property-name">dom</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_lifetimes_items_schedule_dom" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_lifetimes_items_schedule_dom" id="Call_parameters_items_i0_lifetimes_items_schedule_dom">
+    <div class="card-body pl-5">
+    <h4>Dom</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "*"</span><br/>
+    <span class="description"><p>"1" - "31"</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_lifetimes_items_schedule_month">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_lifetimes_items_schedule_month">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_lifetimes_items_schedule_month" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_lifetimes_items_schedule_month" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_lifetimes_items_schedule_month')" type="button"><span class="property-name">month</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_lifetimes_items_schedule_month" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_lifetimes_items_schedule_month" id="Call_parameters_items_i0_lifetimes_items_schedule_month">
+    <div class="card-body pl-5">
+    <h4>Month</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "*"</span><br/>
+    <span class="description"><p>"1" (January) - "12" (December)</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_lifetimes_items_schedule_dow">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_lifetimes_items_schedule_dow">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_lifetimes_items_schedule_dow" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_lifetimes_items_schedule_dow" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_lifetimes_items_schedule_dow')" type="button"><span class="property-name">dow</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_lifetimes_items_schedule_dow" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_lifetimes_items_schedule_dow" id="Call_parameters_items_i0_lifetimes_items_schedule_dow">
+    <div class="card-body pl-5">
+    <h4>Dow</h4><span class="badge badge-dark value-type">Type: string</span> <span class="badge badge-success default-value">Default: "*"</span><br/>
+    <span class="description"><p>"1" (Monday) - "7" (Sunday)</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_lifetimes_items_lifetime_value">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_lifetimes_items_lifetime_value">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_lifetimes_items_lifetime_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_lifetimes_items_lifetime_value" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_lifetimes_items_lifetime_value')" type="button"><span class="property-name">lifetime_value</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_lifetimes_items_lifetime_value" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_lifetimes_items_lifetime_value" id="Call_parameters_items_i0_lifetimes_items_lifetime_value">
+    <div class="card-body pl-5">
+    <h4>Lifetime Value</h4><span class="badge badge-dark value-type">Type: integer</span><br/>
+    <span class="description"><p>Number of time units to retain snapshots.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_lifetimes_items_lifetime_value_number">Value must be greater or equal to <code>1</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_lifetimes_items_lifetime_unit">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_lifetimes_items_lifetime_unit">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_lifetimes_items_lifetime_unit" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_lifetimes_items_lifetime_unit" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_lifetimes_items_lifetime_unit')" type="button"><span class="property-name">lifetime_unit</span> <span class="badge badge-warning required-property">Required</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_lifetimes_items_lifetime_unit" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_lifetimes_items_lifetime_unit" id="Call_parameters_items_i0_lifetimes_items_lifetime_unit">
+    <div class="card-body pl-5">
+    <h4>Lifetime Unit</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <span class="description"><p>Time unit for snapshot retention.</p>
+    </span><div class="enum-value" id="Call_parameters_items_i0_lifetimes_items_lifetime_unit_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"HOUR"</li><li class="list-group-item enum-item">"DAY"</li><li class="list-group-item enum-item">"WEEK"</li><li class="list-group-item enum-item">"MONTH"</li><li class="list-group-item enum-item">"YEAR"</li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_compression">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_compression">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_compression" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_compression" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_compression')" type="button"><span class="property-name">compression</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_compression" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_compression" id="Call_parameters_items_i0_compression">
+    <div class="card-body pl-5">
+    <h4>Compression</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Compresses SSH stream. Available only for SSH transport.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_compression_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_compression_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_compression_anyOf_i0" id="Call_parameters_items_i0_compression_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_compression_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_compression_anyOf_i1" id="Call_parameters_items_i0_compression_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_compression_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_compression_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <div class="enum-value" id="Call_parameters_items_i0_compression_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"LZ4"</li><li class="list-group-item enum-item">"PIGZ"</li><li class="list-group-item enum-item">"PLZIP"</li></ul>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_compression_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_speed_limit">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_speed_limit">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_speed_limit" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_speed_limit" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_speed_limit')" type="button"><span class="property-name">speed_limit</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_speed_limit" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_speed_limit" id="Call_parameters_items_i0_speed_limit">
+    <div class="card-body pl-5">
+    <h4>Speed Limit</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Limits speed of SSH stream. Available only for SSH transport.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_speed_limit_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_speed_limit_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_speed_limit_anyOf_i0" id="Call_parameters_items_i0_speed_limit_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_speed_limit_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_speed_limit_anyOf_i1" id="Call_parameters_items_i0_speed_limit_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_speed_limit_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_speed_limit_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: integer</span><br/>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_speed_limit_anyOf_i0_number">Value must be greater or equal to <code>1</code></span></p>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_speed_limit_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_large_block">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_large_block">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_large_block" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_large_block" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_large_block')" type="button"><span class="property-name">large_block</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_large_block" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_large_block" id="Call_parameters_items_i0_large_block">
+    <div class="card-body pl-5">
+    <h4>Large Block</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Enable large block support for ZFS send streams.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_embed">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_embed">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_embed" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_embed" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_embed')" type="button"><span class="property-name">embed</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_embed" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_embed" id="Call_parameters_items_i0_embed">
+    <div class="card-body pl-5">
+    <h4>Embed</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>Enable embedded block support for ZFS send streams.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_compressed">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_compressed">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_compressed" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_compressed" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_compressed')" type="button"><span class="property-name">compressed</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_compressed" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_compressed" id="Call_parameters_items_i0_compressed">
+    <div class="card-body pl-5">
+    <h4>Compressed</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Enable compressed ZFS send streams.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_retries">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_retries">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_retries" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_retries" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_retries')" type="button"><span class="property-name">retries</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_retries" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_retries" id="Call_parameters_items_i0_retries">
+    <div class="card-body pl-5">
+    <h4>Retries</h4><span class="badge badge-dark value-type">Type: integer</span> <span class="badge badge-success default-value">Default: 5</span><br/>
+    <span class="description"><p>Number of retries before considering replication failed.</p>
+    </span>
+    <p><span class="badge badge-light restriction numeric-restriction" id="Call_parameters_items_i0_retries_number">Value must be greater or equal to <code>1</code></span></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_logging_level">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_logging_level">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_logging_level" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_logging_level" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_logging_level')" type="button"><span class="property-name">logging_level</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_logging_level" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_logging_level" id="Call_parameters_items_i0_logging_level">
+    <div class="card-body pl-5">
+    <h4>Logging Level</h4> <span class="badge badge-success default-value">Default: null</span><br/>
+    <span class="description"><p>Log level for replication task execution. Controls verbosity of replication logs.</p>
+    </span><div class="any-of-value" id="Call_parameters_items_i0_logging_level_anyOf"><h2 class="handle">
+    <label>Any of</label>
+    </h2><ul class="nav nav-tabs" id="tabsCall_parameters_items_i0_logging_level_anyOf_anyOf" role="tablist"><li class="nav-item">
+    <a class="nav-link active anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_logging_level_anyOf_i0" id="Call_parameters_items_i0_logging_level_anyOf_i0" onclick="setAnchor('#Call_parameters_items_i0_logging_level_anyOf_i0')" role="tab">Option 1</a>
+    </li><li class="nav-item">
+    <a class="nav-link anyOf-option" data-toggle="tab" href="#tab-pane_Call_parameters_items_i0_logging_level_anyOf_i1" id="Call_parameters_items_i0_logging_level_anyOf_i1" onclick="setAnchor('#Call_parameters_items_i0_logging_level_anyOf_i1')" role="tab">Option 2</a>
+    </li></ul>
+    <div class="tab-content card"><div class="tab-pane fade card-body active show" id="tab-pane_Call_parameters_items_i0_logging_level_anyOf_i0" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+    <div class="enum-value" id="Call_parameters_items_i0_logging_level_anyOf_i0_enum">
+    <h5>Must be one of:</h5>
+    <ul class="list-group"><li class="list-group-item enum-item">"DEBUG"</li><li class="list-group-item enum-item">"INFO"</li><li class="list-group-item enum-item">"WARNING"</li><li class="list-group-item enum-item">"ERROR"</li></ul>
+    </div>
+    </div><div class="tab-pane fade card-body" id="tab-pane_Call_parameters_items_i0_logging_level_anyOf_i1" role="tabpanel">
+    <span class="badge badge-dark value-type">Type: null</span><br/>
+    </div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_exclude_mountpoint_property">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_exclude_mountpoint_property">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_exclude_mountpoint_property" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_exclude_mountpoint_property" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_exclude_mountpoint_property')" type="button"><span class="property-name">exclude_mountpoint_property</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_exclude_mountpoint_property" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_exclude_mountpoint_property" id="Call_parameters_items_i0_exclude_mountpoint_property">
+    <div class="card-body pl-5">
+    <h4>Exclude Mountpoint Property</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Whether to exclude the mountpoint property from replication.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_only_from_scratch">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_only_from_scratch">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_only_from_scratch" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_only_from_scratch" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_only_from_scratch')" type="button"><span class="property-name">only_from_scratch</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_only_from_scratch" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_only_from_scratch" id="Call_parameters_items_i0_only_from_scratch">
+    <div class="card-body pl-5">
+    <h4>Only From Scratch</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+    <span class="description"><p>If <code>true</code> then replication will fail if target dataset already exists.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionCall_parameters_items_i0_mount">
+    <div class="card">
+    <div class="card-header" id="headingCall_parameters_items_i0_mount">
+    <h2 class="mb-0">
+    <button aria-controls="Call_parameters_items_i0_mount" aria-expanded="" class="btn btn-link property-name-button" data-target="#Call_parameters_items_i0_mount" data-toggle="collapse" onclick="setAnchor('#Call_parameters_items_i0_mount')" type="button"><span class="property-name">mount</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingCall_parameters_items_i0_mount" class="collapse property-definition-div" data-parent="#accordionCall_parameters_items_i0_mount" id="Call_parameters_items_i0_mount">
+    <div class="card-body pl-5">
+    <h4>Mount</h4><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: true</span><br/>
+    <span class="description"><p>Mount destination file system.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion" id="accordionReturn_value">
+    <div class="card">
+    <div class="card-header" id="headingReturn_value">
+    <h2 class="mb-0">
+    <button aria-controls="Return_value" aria-expanded="" class="btn btn-link property-name-button" data-target="#Return_value" data-toggle="collapse" onclick="setAnchor('#Return_value')" type="button"><span class="property-name">Return value</span></button>
+    </h2>
+    </div>
+    <div aria-labelledby="headingReturn_value" class="collapse property-definition-div" data-parent="#accordionReturn_value" id="Return_value">
+    <div class="card-body pl-5">
+    <h4>Result</h4><span class="badge badge-dark value-type">Type: null</span><br/>
+    <span class="description"><p>Returns <code>null</code> on successful one-time replication execution.</p>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
+
+*Required roles:* REPLICATION_TASK_WRITE
+
